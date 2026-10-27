@@ -46,6 +46,21 @@ OPIS: {fallback}"""
         print("Gemini sažetak nije uspio:", str(e)[:180])
         return {"t":title, "s":fallback[:450] or title, "body":fallback[:1200] or title, "conclusion":"Automatski zaključak nije dostupan jer izvor nije dao dovoljno podataka za pouzdanu procjenu."}
 
+def f1_schedule():
+    """F1 kalendar s Jolpica F1 API-ja za blok 'Nadolazeće utrke'."""
+    try:
+        r = requests.get("https://api.jolpi.ca/ergast/f1/current/races/?format=json&limit=40", headers={"User-Agent":UA}, timeout=20)
+        r.raise_for_status()
+        races = r.json()["MRData"]["RaceTable"]["Races"]
+    except Exception as e:
+        print("F1 kalendar nije dostupan:", str(e)[:120])
+        return []
+    out = []
+    for race in races:
+        loc = race.get("Circuit",{}).get("Location",{})
+        out.append({"date":race["date"], "title":"F1 – "+race["raceName"].replace("Grand Prix","GP"), "note":", ".join(x for x in [loc.get("locality"),loc.get("country")] if x)})
+    return out
+
 def main():
     cfg = json.load(open(FEEDS, encoding="utf-8"))
     now = datetime.now(timezone.utc)
@@ -95,7 +110,9 @@ def main():
         if item.get("u") not in {x["u"] for x in out} and item.get("date","")[:10] >= (now-timedelta(days=max_age)).date().isoformat() and len(out)<45:
             out.append(item)
     out.sort(key=lambda x:x.get("date",""),reverse=True)
-    with open(OUT,"w",encoding="utf-8") as f: json.dump({"updated":now.isoformat(timespec="minutes"),"items":out[:45]},f,ensure_ascii=False,indent=1)
-    print(f"Okretaji: spremljeno {min(len(out),45)} vijesti iz {len(cfg.get('feeds',[]))} RSS izvora.")
+    today = now.date().isoformat()
+    events = sorted((e for e in f1_schedule()+cfg.get("events",[]) if e.get("date","")>=today), key=lambda e:e["date"])[:6]
+    with open(OUT,"w",encoding="utf-8") as f: json.dump({"updated":now.isoformat(timespec="minutes"),"items":out[:45],"schedule":events},f,ensure_ascii=False,indent=1)
+    print(f"Okretaji: spremljeno {min(len(out),45)} vijesti iz {len(cfg.get('feeds',[]))} RSS izvora i {len(events)} nadolazećih događaja.")
 
 if __name__ == "__main__": main()
