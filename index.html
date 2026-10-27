@@ -80,6 +80,18 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
   @keyframes rev{0%{transform:rotate(-120deg)}55%{transform:rotate(108deg)}75%{transform:rotate(80deg)}100%{transform:rotate(30deg)}}
 }
 
+
+/* ---------- reasons to return ---------- */
+.return-section{padding-top:60px}
+.return-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.return-card{display:flex;flex-direction:column;min-height:245px;padding:22px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.return-kicker{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
+.return-card h3{font:800 1.65rem/1.05 "Big Shoulders Display",Impact,sans-serif;margin:12px 0}
+.return-card p{color:var(--muted);font-size:.95rem;margin:0 0 18px}
+.return-card a,.return-card button{margin-top:auto;align-self:flex-start;border:0;background:none;padding:0;color:var(--ink);font:700 .95rem/1.4 "Barlow",sans-serif;text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:4px;cursor:pointer}
+@media(max-width:900px){.return-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.return-grid{grid-template-columns:1fr}.return-card{min-height:0}}
+
 /* ---------- shared bits ---------- */
 .plate{display:inline-flex;align-items:center;font-weight:700;font-size:.78rem;letter-spacing:.02em;padding:3px 10px;border-radius:999px;color:#fff;background:var(--pc,var(--ink))}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .plate{color:#081923}}
@@ -294,7 +306,7 @@ footer p{margin:0 0 8px;max-width:80ch}
   <div class="wrap">
     <a class="mini" href="#vrh" aria-label="Okretaji – na vrh"><svg viewBox="0 0 100 70" aria-hidden="true"><path d="M14 58 A40 40 0 0 1 75 20" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/><path d="M75 20 A40 40 0 0 1 88 58" fill="none" stroke="var(--orange)" stroke-width="11" stroke-linecap="round"/></svg>Okretaji</a>
     <nav class="nav" aria-label="Rubrike">
-      <a href="#novosti">Novosti</a><a href="#utrka">Sljedeća utrka</a><a href="#brojke">U brojkama</a><a href="#vozaci">Iza kacige</a><a href="#rute">Motorute</a>
+      <a href="#novosti">Novosti</a><a href="#povratak">Vodiči i usporedbe</a><a href="#utrka">Sljedeća utrka</a><a href="#brojke">U brojkama</a><a href="#vozaci">Iza kacige</a><a href="#rute">Motorute</a>
     </nav>
   </div>
 </header>
@@ -410,6 +422,17 @@ footer p{margin:0 0 8px;max-width:80ch}
       </article>
     </div>
     <p class="editorial-note">Kratki vodiči za snalaženje u temi. Svaka tvrdnja ima izvor, a izmjerene podatke odvajamo od procjena i prognoza.</p>
+    </section>
+
+
+    <section id="povratak" class="return-section" aria-labelledby="h-povratak">
+      <div class="sh"><span class="gear" aria-hidden="true">↻</span><h2 id="h-povratak">Razlozi za povratak</h2><p>Više od dnevnih vijesti: korisni sadržaji koje vrijedi spremiti i ponovno otvoriti.</p></div>
+      <div class="return-grid">
+        <article class="return-card"><span class="return-kicker">Motosport</span><h3>MotoGP izbliza</h3><p>Vijesti, raspored utrka, vozači i ključne priče iz kraljevske klase motociklizma — uz zasebnu rubriku za F1.</p><button type="button" data-return-category="motogp">Otvori MotoGP vijesti →</button></article>
+        <article class="return-card"><span class="return-kicker">Kupnja bez nagađanja</span><h3>Usporedbe auta i motocikala</h3><p>Uspoređivat ćemo cijenu, potrošnju, performanse, održavanje i stvarnu namjenu. Jasno odvajamo podatke proizvođača od mjerenja.</p><a href="#sve-vijesti">Pregledaj najnovije →</a></article>
+        <article class="return-card"><span class="return-kicker">Garaža</span><h3>Praktični tehnički vodiči</h3><p>Održavanje, gume, kočnice, pogonski sklop, dijagnostika i električna vozila — korak po korak, uz izvore i sigurnosne napomene.</p><a href="#brojke">Tehnika i energija →</a></article>
+        <article class="return-card"><span class="return-kicker">Na cesti</span><h3>Istarske i alpske moto-rute</h3><p>Prijedlozi vožnji s približnom kilometražom, zanimljivim stajanjima, težinom i sezonskim upozorenjima.</p><a href="#rute">Odaberi rutu →</a></article>
+      </div>
     </section>
 
     <section id="sve-vijesti" aria-labelledby="h-novosti" style="padding-top:60px">
@@ -739,8 +762,14 @@ function setGear(id){const b=gears.find(g=>g.dataset.t===id);if(!b)return;knob.s
   document.querySelectorAll(".nav a").forEach(a=>a.setAttribute("aria-current",String(a.getAttribute("href")==="#"+id)));}
 gears.forEach(b=>b.addEventListener("click",()=>{const t=$(b.dataset.t);setGear(b.dataset.t);if(t&&!t.hidden)t.scrollIntoView();}));
 const io=new IntersectionObserver(es=>{for(const e of es) if(e.isIntersecting) setGear(e.target.id);},{rootMargin:"-45% 0px -50% 0px"});
-["vrh","novosti","utrka","brojke","vozaci","rute"].forEach(id=>{const x=$(id);if(x)io.observe(x);});
+["vrh","novosti","povratak","utrka","brojke","vozaci","rute"].forEach(id=>{const x=$(id);if(x)io.observe(x);});
 const NAVMAP={"sve-vijesti":"novosti"};
+// MotoGP shortcut from the editorial hub
+document.querySelectorAll("[data-return-category]").forEach(b=>b.addEventListener("click",()=>{
+  newsFilter=b.dataset.returnCategory;shown=6;renderNewsChips();renderNews();
+  document.getElementById("sve-vijesti").scrollIntoView({behavior:"smooth"});
+}));
+
 </script>
 
 <!-- Google Analytics 4: učitava se tek nakon izričitog pristanka korisnika -->
