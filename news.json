@@ -1,6 +1,136 @@
 {
- "updated": "2026-10-27T18:07+00:00",
+ "updated": "2026-10-27T22:22+00:00",
  "items": [
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/mercedes-admits-they-were-clueless-before-kimi-antonellis-austin-miracle-a-remarkable-turnaround/10868571",
+   "date": "2026-10-27T22:05+00:00",
+   "img_q": "Kimi Antonelli extends F1 title lead with US GP win Mercedes didn’t expect",
+   "t": "Antonelli povećao prednost pobjedom na Velikoj nagradi SAD-a",
+   "s": "Mladi Andrea Kimi Antonelli ostvario je iznenađujuću pobjedu na Velikoj nagradi SAD-a te dodatno učvrstio svoje vodstvo u prvenstvu nakon teškog početka vikenda.",
+   "body": "Nakon vrlo loših rezultata na slobodnim treninzima u petak, momčad Mercedesa suočila se s velikim problemima na bolidu, lošim balansom i neuspješnim aerodinamičkim nadogradnjama. Inženjeri u garaži u Brackleyju strahovali su od potpuno neuspješnog vikenda bez osvojenih bodova. Ipak, situacija se u potpunosti promijenila do nedjeljnog poslijepodneva, kada je devetnaestogodišnji Andrea Kimi Antonelli sjajnom vožnjom stigao do prve pozicije i pobjede, čime je dodatno povećao svoju prednost na vodećoj poziciji u poretku prvenstva.",
+   "conclusion": "Poznato je da je Antonelli pobijedio nakon loših treninga i povećao vodstvo u prvenstvu, dok još nisu potvrđeni detalji o tome kako je Mercedes riješio probleme s bolidom.",
+   "orig_t": "Kimi Antonelli extends F1 title lead with US GP win Mercedes didn’t expect",
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "Electrek",
+   "u": "https://electrek.co/2026/10/27/byds-10k-ev-blows-tire-nearly-90-mph-watch-what-happens",
+   "date": "2026-10-27T21:30+00:00",
+   "img_q": "BYD’s $10,000 EV blows a tire at nearly 90 mph — Watch what happens",
+   "t": "BYD testirao sustav stabilizacije pri pucanju gume",
+   "s": "Kineski proizvođač BYD ažurirao je svoj najpovoljniji električni automobil Seagull, čija cijena u Kini kreće od otprilike 10.000 dolara. Vozilo je opremljeno novim sustavom koji stabilizira automobil pri pucanju gume pri brzini od gotovo 145 kilometara na sat.",
+   "body": "Poznati proizvođač električnih vozila BYD predstavio je osvježenu verziju svog cjenovno najpristupačnijeg modela Seagull. Ovaj električni automobil na kineskom tržištu ima početnu cijenu od oko 10.000 dolara, a sada nudi i dodatnu opremu. Među novitetima ističe se napredni sigurnosni sustav dizajniran za stabilizaciju vozila u ekstremnim situacijama. Konkretno, ovaj sustav pomaže u održavanju kontrole nad automobilon tijekom iznenadnog pucanja gume pri visokim brzinama koje se približavaju granici od 90 milja na sat, odnosno gotovo 145 kilometara na sat.",
+   "conclusion": "Poznato je da novi BYD-ov sustav pomaže stabilizirati vozilo pri pucanju gume blizu brzine od 90 milja na sat. Još nije potvrđeno kako točno tehnologija funkcionira u praksi niti hoće li biti dostupna na globalnom tržištu izvan Kine.",
+   "orig_t": "BYD’s $10,000 EV blows a tire at nearly 90 mph — Watch what happens",
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "Electrek",
+   "u": "https://electrek.co/2026/10/27/rivian-electric-van-walmart-plus-livery-spotted",
+   "date": "2026-10-27T21:08+00:00",
+   "img_q": "Rivian electric van spotted in Walmart+ livery, hinting at a fleet deal",
+   "t": "Rivian električni dostavni kombi u Walmart+ dizajnu potiče glasine o novoj suradnji",
+   "s": "Na autocesti u Indiani snimljen je Rivianov električni kombi s oznakama Walmart+, što upućuje na moguću veliku poslovnu suradnju. Službena potvrda ugovora još uvijek nedostaje.",
+   "body": "Tijekom prijevoza na autocesti u sjeverozapadnoj Indiani primijećen je Rivianov električni dostavni kombi ukrašen prepoznatljivim vizualnim identitetom Walmart+. Ovaj događaj predstavlja prvu javnu naznaku da bi trgovački div mogao postati novi veliki kupac Rivianovih vozila, nakon što je to dosad bio uglavnom Amazon. Budući da su dva dosadašnja dobavljača električnih dostavnih vozila za Walmart napustila taj tržišni segment, Rivian se nameće kao jedan od rijetkih preostalih američkih proizvođača namjenskih električnih dostavnih kombija.",
+   "conclusion": "Poznato je da je vozilo s Walmartovim oznakama viđeno u transportu i da su prijašnji Walmartovi dobavljači prestali s poslovanjem. Još uvijek nije potvrđeno jesu li Rivian i Walmart sklopili službeni ugovor o suradnji.",
+   "orig_t": "Rivian electric van spotted in Walmart+ livery, hinting at a fleet deal",
+   "hr": true
+  },
+  {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth",
+   "date": "2026-10-27T20:25+00:00",
+   "img_q": "Code-execution flaw in UEFI firmware threatens most servers on planet Earth",
+   "t": "Opasna ranjivost u UEFI firmveru ugrožava većinu poslužitelja",
+   "s": "Kritičan propust u EDK2 paketu omogućuje napadačima izvršavanje koda već u ranoj fazi pokretanja sustava. Ova ozbiljna ranjivost prijeti većini poslužitelja diljem svijeta.",
+   "body": "Zabilježen je kritičan sigurnosni propust u EDK2 firmveru koji predstavlja opasnost za golemu većinu poslužitelja na globalnoj razini. Navedena mana u kôdu otvara mogućnost zlonamjernim akterima da pokrenu vlastiti kôd u izrazito ranom dijelu procesa pokretanja uređaja. Takav rani pristup sustavu pruža visoku razinu kontrole i može ugroziti cjelokupnu sigurnost zahvaćenih poslužitelja, što ovaj tehnički problem čini iznimno zabrinjavajućim za administratore i sigurnosne stručnjake.",
+   "conclusion": "Poznato je da kritična ranjivost u EDK2 omogućuje rano izvršavanje koda i prijeti većini poslužitelja. Još uvijek nije potvrđeno jesu li napadači iskoristili ovaj propust u stvarnim napadima te koji su točni koraci za njegovu sanaciju.",
+   "orig_t": "Code-execution flaw in UEFI firmware threatens most servers on planet Earth",
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "Electrek",
+   "u": "https://electrek.co/2026/10/27/vws-ev-recall-spreads-to-audi-owners-told-stop-at-80-charge",
+   "date": "2026-10-27T20:09+00:00",
+   "img_q": "Volkswagen’s EV recall spreads to Audi, and owners are told to stop at 80% charge",
+   "t": "Opasnost od požara širi se na Audi: Vlasnici moraju ograničiti punjenje baterija na 80 posto",
+   "s": "Najnoviji Volkswagenov opoziv električnih vozila širi se na marku Audi te obuhvaća preko devet tisuća modela Q4 E-Tron i Q4 Sportback E-Tron. Vlasnicima je naloženo privremeno ograničavanje punjenja baterije do osamdeset posto kapaciteta.",
+   "body": "Problemi s električnim vozilima njemačkog proizvođača nastavljaju se širiti nakon što je najnoviji opoziv službeno zahvatio i Audi. Ova sigurnosna mjera obuhvaća više od 9.000 primjeraka modela Q4 E-Tron i Q4 Sportback E-Tron. Slično kao i kod ranijeg slučaja s modelom ID.4, pogođeni vlasnici primili su upute da iz sigurnosnih razloga ograniče punjenje svojih baterija na maksimalno osamdeset posto kapaciteta dok se situacija u potpunosti ne riješi.",
+   "conclusion": "Poznato je da je opoziv zahvatio više od 9.000 Audi vozila modela Q4 E-Tron i Q4 Sportback E-Tron te da vlasnici moraju puniti baterije do 80 posto. Još uvijek nije potvrđeno koji je točan tehnički uzrok kvarova ni kada će biti dostupno trajno rješenje.",
+   "orig_t": "Volkswagen’s EV recall spreads to Audi, and owners are told to stop at 80% charge",
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "Electrek",
+   "u": "https://electrek.co/2026/10/27/waymo-expansion-250-square-miles-five-cities",
+   "date": "2026-10-27T19:55+00:00",
+   "img_q": "Waymo adds nearly 250 square miles of robotaxi coverage in 5 cities",
+   "t": "Waymo značajno širi područje rada robotaksi vozila u pet gradova",
+   "s": "Tvrtka Waymo uskoro širi svoje autonomne usluge na gotovo 250 četvornih milja u pet američkih gradova. Usluga se uvodi na lokacijama gdje vozila već prometuju bez vozača.",
+   "body": "Autonomna taksi služba Waymo uskoro će proširiti svoje područje pokrivanja za otprilike 250 četvornih milja. Novo širenje obuhvatit će pet različitih regija tijekom idućeg tjedna, a uključuje gradove Los Angeles, Nashville, Orlando, San Diego te područje zaljeva San Francisco. Ova nova površina otprilike odgovara veličini cjelokupnog Teslinog geofence područja za robotaksije u Houstonu nakon njihovog tjednog proširenja. Valja naglasiti da Waymo ovu uslugu uvodi na lokacijama na kojima već uspješno prometuju vozila bez vozača na vozačkom mjestu.",
+   "conclusion": "Poznato je da se područje širi za oko 250 četvornih milja u pet navedenih gradova gdje vozila već voze bez vozača. Još nije potvrđeno kakvi su točni financijski učinci niti koji su daljnji dugoročni planovi širenja tvrtke.",
+   "orig_t": "Waymo adds nearly 250 square miles of robotaxi coverage in 5 cities",
+   "hr": true
+  },
+  {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/gadgets/2026/10/googles-android-registered-app-stores-program-launches-dec-1-applications-now-open",
+   "date": "2026-10-27T19:32+00:00",
+   "img_q": "Google begins certifying Registered App Stores for Android, but not in the US",
+   "t": "Google pokreće certifikaciju neslužbenih trgovina aplikacija",
+   "s": "Google uvodi proces certifikacije za vanjske trgovine aplikacijama na Androidu, što će olakšati preuzimanje softvera. Ova novost trenutno se ne primjenjuje na Sjedinjene Američke Države.",
+   "body": "Tehnološki div Google započeo je s postupkom službenog certificiranja registriranih trgovina aplikacija trećih strana za operativni sustav Android. Takav korak donosi brojne promjene te će korisnicima značajno olakšati preuzimanje i instalaciju aplikacija putem alternativnih izvora. Ipak, ova važna novost za sada neće biti dostupna na području Sjedinjenih Američkih Država, što otvara brojna pitanja o daljnjem širenju i primjeni ovog sustava na ostala globalna tržišta u nadolazećem razdoblju.",
+   "conclusion": "Poznato je da Google pokreće certifikaciju vanjskih trgovina za lakšu instalaciju aplikacija izvan SAD-a. Još nije potvrđeno kada bi se ova mogućnost mogla proširiti i na američko tržište.",
+   "orig_t": "Google begins certifying Registered App Stores for Android, but not in the US",
+   "hr": true
+  },
+  {
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813444/koenigsegg-cc850-parking-brake-recall",
+   "date": "2026-10-27T19:00+00:00",
+   "img_q": "Koenigsegg Recalled Every CC850 In America. All Seven Of Them",
+   "t": "Koenigsegg opoziva sve isporučene primjerke modela CC850 u Sjedinjenim Američkim Državama",
+   "s": "Poznati proizvođač hiperautomobila Koenigsegg pokrenuo je izvanredni opoziv za sva vozila CC850 isporučena na američko tržište zbog uočenog tehničkog nedostatka.",
+   "body": "Američko tržište pogođeno je novim servisnim opozivom koji obuhvaća sve isporučene primjerke rijetkog hiperautomobila Koenigsegg CC850. Razlog za izvanredno povlačenje vozila je potencijalni kvar na ručnoj kočnici. Zbog tog tehničkog nedostatka postoji opasnost da se parkirani automobil sam pokrene i otkotrlja, što predstavlja ozbiljnu sigurnosnu prijetnju. Iako zvuči masovno, opoziv se zapravo odnosi na točno sedam automobila koji su dosad pronašli svoje vlasnike u SAD-u.",
+   "conclusion": "Poznato je da je svih sedam isporučenih automobila u SAD-u obuhvaćeno opozivom zbog problema s ručnom kočnicom, dok još nije potvrđeno na koji će način tvrtka izvršiti popravak tog kvara.",
+   "orig_t": "Koenigsegg Recalled Every CC850 In America. All Seven Of Them",
+   "hr": true
+  },
+  {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/science/2026/10/vibe-genes-naturalish-language-comes-to-protein-genome-design-software",
+   "date": "2026-10-27T18:49+00:00",
+   "img_q": "Vibe genes? Natural(ish) language comes to protein, genome design software",
+   "t": "Umjetna inteligencija sada stvara proteine prema jednostavnim opisima",
+   "s": "Novi softver za dizajn genoma i proteina omogućuje korisnicima zadavanje željenih svojstava kroz prirodni jezik. Umjetna inteligencija sada navodno može izrađivati proteine na temelju jednostavnih govornih uputa.",
+   "body": "Tehnološki svijet donosi novu mogućnost u području dizajna genoma i proteina. Prema dostupnim informacijama, razvijeni su alati umjetne inteligencije koji mogu generirati specifične proteine na temelju tekstualnih uputa pisanih prirodnim jezikom. Korisnici sada mogu jednostavno opisati kakav protein žele stvoriti, a sustav ga izrađuje prema tim smjernicama. Ova inovacija spaja naprednu tehnologiju i biotehnologiju, olakšavajući procese koji su dosad bili znatno složeniji i zahtjevniji za znanstvenike i istraživače diljem svijeta.",
+   "conclusion": "Poznato je da novi softver koristi umjetnu inteligenciju za izradu proteina putem uputa prirodnim jezikom. Još nije potvrđeno koje su točno platforme u pitanju niti kako funkcioniraju u praksi.",
+   "orig_t": "Vibe genes? Natural(ish) language comes to protein, genome design software",
+   "hr": true
+  },
+  {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/culture/2026/10/warner-bros-drops-final-trailer-for-dune-part-three",
+   "date": "2026-10-27T18:05+00:00",
+   "img_q": "Warner Bros. drops final trailer for Dune: Part Three",
+   "t": "Warner Bros. objavio završni trailer za film Dina: Drugi dio",
+   "s": "Warner Bros. predstavio je konačni video najavu za nastavak Dina: Drugi dio. U najavi glavni lik otkriva kako je postao tlačitelj.",
+   "body": "Filmski studio Warner Bros. pustio je u javnost završni najavni video za nadolazeći nastavak poznatog filmskog serijala Dina. Objavljeni materijal donosi dramatične trenutke kroz izjavu glavnog lika koji nakon godina ratovanja priznaje da se pretvorio u tlačitelja protiv kojeg se lik po imenu Chani zakleo boriti. Ova objava dodatno podiže iščekivanje obožavatelja diljem svijeta koji s nestrpljenjem prate svaku novu informaciju o ovom popularnom znanstveno-fantastičnom filmskom ostvarenju.",
+   "conclusion": "Poznato je da je Warner Bros. objavio posljednji trailer s izjavom o ratu i tlačenju, dok još nije potvrđeno hoće li film u potpunosti opravdati velika očekivanja publike.",
+   "orig_t": "Warner Bros. drops final trailer for Dune: Part Three",
+   "hr": true
+  },
   {
    "c": "auto",
    "src": "Motor1",
@@ -297,7 +427,14 @@
    "orig_t": "Police Recovered $54,000 Worth Of Hot Wheels After A Train Heist",
    "img_q": "Hot Wheels train",
    "hr": true,
-   "nb": true
+   "nb": true,
+   "img": {
+    "id": "e739a495-206f-44e1-a3f1-b904add08445",
+    "src": "https://api.openverse.org/v1/images/e739a495-206f-44e1-a3f1-b904add08445/thumb/",
+    "by": "philstephenrichards",
+    "lic": "BY-SA",
+    "link": "https://www.flickr.com/photos/13035092@N00/7463053428"
+   }
   },
   {
    "c": "motogp",
@@ -346,7 +483,14 @@
    "orig_t": "Kawasaki Wants Hydrogen Motorcycles. First, It Needs To Solve A Much Bigger Problem",
    "img_q": "Kawasaki hydrogen motorcycle",
    "hr": true,
-   "nb": true
+   "nb": true,
+   "img": {
+    "id": "94adf583-e30d-4447-8a19-f43bf43a807e",
+    "src": "https://api.openverse.org/v1/images/94adf583-e30d-4447-8a19-f43bf43a807e/thumb/",
+    "by": "Tokumeigakarinoaoshima",
+    "lic": "BY-SA",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=126495625"
+   }
   },
   {
    "c": "auto",
@@ -405,160 +549,6 @@
    }
   },
   {
-   "c": "auto",
-   "t": "Mitsubishi nastavlja održavati duh modela Lancer Evo kroz SUV druge tvrtke",
-   "s": "Mitsubishi nastavlja održavati nasljeđe svoje legendarne ikone nadahnute relijem oslanjajući se na SUV koji proizvodi druga tvrtka.",
-   "src": "Motor1",
-   "u": "https://www.motor1.com/news/813365/mitsubishi-evo-spirit-alive-suv/",
-   "date": "2026-10-27T10:23+00:00",
-   "orig_t": "Mitsubishi Is Keeping The Lancer Evo's Spirit Alive... In An SUV Built By Another Company",
-   "img_q": "",
-   "hr": true,
-   "nb": true,
-   "img": {
-    "id": "ac642f28-9fe6-4ab6-8c31-69235d2ebc2d",
-    "src": "https://api.openverse.org/v1/images/ac642f28-9fe6-4ab6-8c31-69235d2ebc2d/thumb/",
-    "by": "Dietmar Rabich",
-    "lic": "CC BY-SA 4.0",
-    "link": "https://commons.wikimedia.org/w/index.php?curid=71883821"
-   }
-  },
-  {
-   "c": "f1",
-   "t": "Red Bull objasnio zašto problemi Maxa Verstappena i Isacka Hadjara neće biti riješeni",
-   "s": "Max Verstappen osigurao je novo postolje, ali u momčadi Red Bulla nije bilo zadovoljstva zbog tehničkih i razvojnih poteškoća.",
-   "src": "Autosport",
-   "u": "https://www.autosport.com/f1/news/red-bull-explains-why-verstappen-and-hadjar-silly-problems-wont-be-fixed-in-2026/10868779/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-   "date": "2026-10-27T09:46+00:00",
-   "orig_t": "Red Bull explains why Verstappen and Hadjar's 'silly' problems won't all be fixed in 2026",
-   "img_q": "",
-   "hr": true,
-   "nb": true
-  },
-  {
-   "c": "f1",
-   "t": "Red Bull otkrio kada bi se mogli riješiti problemi s bolidom",
-   "s": "Iako je Max Verstappen stigao do postolja, u Red Bullu vlada nezadovoljstvo stanjem bolida i performansama. Tim traži rješenja za probleme s kojima se suočavaju vozači.",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/red-bull-reveals-when-silly-problems-affecting-max-verstappen-and-isack-hadjar-can-be-fixed/10868773/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "date": "2026-10-27T09:34+00:00",
-   "orig_t": "Red Bull reveals when 'silly' problems affecting Max Verstappen and Isack Hadjar can be fixed",
-   "img_q": "Max Verstappen Red Bull",
-   "hr": true,
-   "nb": true
-  },
-  {
-   "c": "auto",
-   "t": "Stiže nova tvornička nadogradnja za Jeep Gladiator",
-   "s": "Novi model 2027 Jeep Gladiator 35-inch Tire Launch Edition donosi tvorničko podizanje vozila, povećanu udaljenost od tla i poboljšani hardver za odabrane pakete opreme.",
-   "src": "Motor1",
-   "u": "https://www.motor1.com/news/813358/jeep-gladiator-35-inch-package/",
-   "date": "2026-10-27T08:56+00:00",
-   "orig_t": "Jeep’s Most Popular Gladiator Upgrade Is Finally Available From The Factory",
-   "img_q": "Jeep Gladiator truck",
-   "hr": true,
-   "nb": true
-  },
-  {
-   "c": "energy",
-   "t": "Audi planira novu tvornicu u SAD-u i prilagođava strategiju s hibridima",
-   "s": "Njemački proizvođač automobila Audi planira izgradnju nove tvornice u Georgiji vrijedne četiri milijarde dolara te uvodi plug-in hibridne modele za američko tržište dok se priprema za dugoročnu tranziciju na električna vozila.",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/26/audi-factory-us-plugin-hybrid-evs-trump-celebrates/",
-   "date": "2026-10-27T03:48+00:00",
-   "orig_t": "Wouldn’t It Be Funny If Audi Manufactures EVs In The US?",
-   "hr": true,
-   "body": "Njemački proizvođač automobila Audi najavio je planove za izgradnju nove tvornice vrijedne četiri milijarde dolara u Peach Countyju u Georgiji. Iskopavanje terena zakazano je za dvodisušnu dvodimičnu godinu, dok početak gradnje slijedi iduće godine, a potpuna proizvodnja očekuje se tek kasnije. Iako izvršni direktor Audija Gernot Döllner predviđa da će se sjevernoameričko tržište u idućem desetljeću ili dva i dalje oslanjati na motore s unutarnjim izgaranjem i hibride, marka se priprema za uvođenje plug-in hibridnih vozila na američko tržište. Prvi model s visokim performansama bit će novi Audi RS 5, koji donosi značajnu snagu i električni domet. Predsjednik Audija za Ameriku Vito Paladino potvrdio je da će brend nuditi hibride i izvan nadolazeće limuzine RS 5 i superautomobila Nuvolari. Planirana tvornica u Georgiji trebala bi biti prilagođena budućim proizvodnim zahtjevima s naglaskom na fleksibilnost i reakciju na potrebe kupaca, a guvernerova je objava istaknula i otvaranje novih radnih mjesta. Ipak, najava novog postrojenja i javno pojavljivanje izvršnog direktora izazvali su kritike unutar sindikata i kod dijela dionika zbog pitanja korporativne neutralnosti i komunikacije s nadzornim odborom.",
-   "img": {
-    "id": "21c16849-2dac-48f6-859e-8eecde2fd11a",
-    "src": "https://api.openverse.org/v1/images/21c16849-2dac-48f6-859e-8eecde2fd11a/thumb/",
-    "by": "Munro89",
-    "lic": "CC BY-SA 4.0",
-    "link": "https://commons.wikimedia.org/w/index.php?curid=101284300"
-   }
-  },
-  {
-   "c": "energy",
-   "t": "Cijena baterija pala ispod cijene barela nafte usred europske energetske debate",
-   "s": "Dok se Europska unija suočava s energetskom krizom i raspravlja o budućnosti automobilske industrije, cijena kapaciteta baterija pala je ispod cijene barela nafte, otvarajući nova pitanja o ovisnosti o fosilnim gorivima.",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/26/from-barrel-to-battery-what-will-europes-clean-car-debate-decide/",
-   "date": "2026-10-27T03:15+00:00",
-   "orig_t": "From Barrel to Battery: What Will Europe’s Clean Car Debate Decide",
-   "hr": true,
-   "body": "Europska unija ponovno vodi oštru raspravu o budućnosti automobilske industrije i tempu prijelaza na električne automobile. Dok su tijekom energetske krize cijene litij-ionskih baterija i nafte bile na visokim razinama, globalna cijena baterija znatno je pala. S druge strane, geopolitički sukobi ponovno su gurnuli cijene nafte prema gore. Ovakav razvoj događaja donosi simboličan trenutak u kojem jedan kilovatsat kapaciteta baterije košta manje od barela nafte. Dok automobili s motorima s unutarnjim izgaranjem tijekom svog vijeka potroše stotine barela nafte, električnom vozilu je potrebna znatno manja količina energije pohranjene u bateriji koja ostaje resurs za recikliranje. Vozači električnih vozila uvelike su pošteđeni rasta cijena energetske krize i plaćaju znatno jeftinije gorivo u usporedbi s vozačima klasičnih automobila. Unatoč tome, politički dužnosnici raspravljaju o ublažavanju ciljeva za čiste automobile i mogućem uvođenju rješenja poput biogoriva, što dio stručnjaka i koalicija industrijskih skupina smatra korakom unatrag. Tržište električnih automobila u ključnim zemljama poput Francuske i Njemačke bilježi rast, a zagovornici čistog prometa pozivaju na donošenje odluka koje će europsku industriju i potrošače zaštititi od budućih naftnih kriza.",
-   "img": {
-    "id": "2e5731d2-ddce-4c86-b484-eee3ad28ed4f",
-    "src": "https://api.openverse.org/v1/images/2e5731d2-ddce-4c86-b484-eee3ad28ed4f/thumb/",
-    "by": "Geographer",
-    "lic": "CC BY-SA 2.0",
-    "link": "https://commons.wikimedia.org/w/index.php?curid=130579071"
-   }
-  },
-  {
-   "c": "energy",
-   "t": "Novo izvješće kritizira utjecaj energetske komisije u Arizoni na račune građana",
-   "s": "Organizacija Sierra Club objavila je izvješće koje upozorava na politiku Arizonske korporacijske komisije, optužujući je za pogodovanje komunalnim tvrtkama i zanemarivanje interesa potrošača.",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/26/new-report-keeps-tabs-on-accs-utility-bias-that-ends-up-hurting-wallets/",
-   "date": "2026-10-27T02:53+00:00",
-   "orig_t": "New Report Keeps Tabs on ACC’s Utility Bias that Ends up Hurting Wallets",
-   "hr": true,
-   "body": "Organizacija Sierra Club objavila je novo izvješće pod nazivom koje preispituje utjecaj Arizonske korporacijske komisije na energetsku budućnost savezne države Arizone, javno zdravlje i rast računa za električnu energiju. Izvješće analizira ulogu komisije u poticanju plinskih projekata te ukazuje na etičke nedostatke unutar tijela. Dokument je objavljen u trenutku kada komisija razmatra nova povećanja cijena za energetske tvrtke poput Arizona Public Service i Tucson Electric Power, uključujući mehanizme koji bi im omogućili godišnje poskupljenje uz manje prilika za uključivanje javnosti. Prema navodima iz izvješća, Arizona ima neke od najviših računa za električnu energiju u zemlji, a komisija svojim odlukama podržava skupe projekte fosilnog plina te istovremeno smanjuje programe energetske učinkovitosti. Predstavnici organizacije ističu da su odluke komisije u suprotnosti s interesima građana te da daju prednost profitu i investitorima nauštrb zdravlja i dobrobiti lokalne zajednice. Uoči novih odluka o cijenama, iz Ureda državnog odvjetnika upućeni su pozivi da se pojedini članovi komisije izuzmu iz tekućih postupaka zbog spornih okolnosti i komunikacije s investitorima.",
-   "img": {
-    "id": "c0613a5c-f9fa-464a-871f-0a0121625455",
-    "src": "https://api.openverse.org/v1/images/c0613a5c-f9fa-464a-871f-0a0121625455/thumb/",
-    "by": "Our World In Data - Max Roser",
-    "lic": "CC BY-SA 4.0",
-    "link": "https://commons.wikimedia.org/w/index.php?curid=106244999"
-   }
-  },
-  {
-   "c": "energy",
-   "t": "EU pokazuje kako regionalna pomorska pravila mogu podržati globalni okvir pri IMO-u",
-   "s": "Europska unija predložila je izmjene sustava EU ETS kako bi se omogućilo usklađivanje s globalnim propisima Međunarodne pomorske organizacije i spriječilo dvostruko oporezivanje emisija.",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/26/the-eu-is-showing-how-regional-maritime-rules-can-support-a-global-framework-at-the-imo/",
-   "date": "2026-10-27T02:45+00:00",
-   "orig_t": "The EU Is Showing How Regional Maritime Rules Can Support A Global Framework At The IMO",
-   "img_q": "container ship ocean",
-   "hr": true,
-   "body": "U travnju dvije tisuće dvadeset i pete godine, vlade pri Međunarodnoj pomorskoj organizaciji postigle su dogovor o globalnoj regulativi poznatoj kao Net-Zero Framework s ciljem postizanja nulte neto stope u brodarstvu do dvije tisuće pedesete godine. Globalni pomorski sektor odgovoran je za otprilike tri posto globalnih emisija na godišnjoj razini. Iako je propis trebao biti usvojen, listopad dvije tisuće dvadeset i pete donio je zastoj, dijelom zbog zabrinutosti zemalja proizvođača nafte predvođenih Sjedinjenim Američkim Državama i Saudijskom Arabijom u vezi s preklapanjem regionalnih i globalnih mjera ugljičnog oporezivanja.\n\nEuropska unija je kao odgovor predložila važne promjene u sustavu EU ETS za brodarstvo kako bi pokazala da regionalna i globalna regulativa mogu postojati zajedno. Prvi ključni signal odnosi se na sprječavanje dvostrukog oporezivanja emisija, što znači da brodovi koji plove u međunarodnoj plovidbi neće morati dvaput plaćati za iste emisije ako IMO uspostavi sustav poput Net-Zero Frameworka. Analize pokazuju da je preklapanje trenutno minimalno. Drugi signal naglašava usklađivanje kroz suradnju, pri čemu bi predloženi model omogućio trgovinskim partnerima EU-a ostvarivanje prihoda putem postojećeg sustava bez dodatnih administrativnih opterećenja. Treći signal usmjeren je na pravednu tranziciju, uključujući izdvajanje sredstava za dekarbonizaciju brodarstva u ranjivim otočnim i slabije razvijenim zemljama.\n\nOčekuje se da će IMO ponovno raspravljati o usvajanju ovog okvira, dok EU svojim potezima otvara put suradnji i uklanja izgovore za slabo djelovanje na globalnoj razini.",
-   "body_words": 224
-  },
-  {
-   "c": "energy",
-   "t": "How the Swiss Want to Travel to the UK",
-   "s": "New rail services can give Switzerland its first high-speed direct trains to the UK. Polling in Switzerland Total sample size was 1,048 adults. Fieldwork was undertaken between 11th–24th September 2026. Nearly half of Swiss people use rail for other…",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/26/how-the-swiss-want-to-travel-to-the-uk/",
-   "date": "2026-10-27T02:38+00:00",
-   "orig_t": "How the Swiss Want to Travel to the UK",
-   "img": {
-    "id": "c1102994-60fa-4499-8b7b-cce965e0f072",
-    "src": "https://api.openverse.org/v1/images/c1102994-60fa-4499-8b7b-cce965e0f072/thumb/",
-    "by": "Annawjacobs",
-    "lic": "CC BY 3.0",
-    "link": "https://commons.wikimedia.org/w/index.php?curid=11263357"
-   }
-  },
-  {
-   "c": "energy",
-   "t": "New Whitepaper Shows How Grid Operators & Energy Regulators Can Use Solar & Storage to Secure the Grid, Boost Reliability & Reduce Energy Costs",
-   "s": "Report Shows How to Unlock the Full Potential of Distributed Energy Resources WASHINGTON D.C. — A new report released today by the Solar Energy Industries Association (SEIA) and Current Energy Group outlines how grid operators and regulators can deploy…",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/26/new-whitepaper-shows-how-grid-operators-energy-regulators-can-use-solar-storage-to-secure-the-grid-boost-reliability-reduce-energy-costs/",
-   "date": "2026-10-27T02:26+00:00",
-   "orig_t": "New Whitepaper Shows How Grid Operators & Energy Regulators Can Use Solar & Storage to Secure the Grid, Boost Reliability & Reduce Energy Costs",
-   "img": {
-    "id": "178e3398-521a-405a-94aa-0d1f3d2cee52",
-    "src": "https://api.openverse.org/v1/images/178e3398-521a-405a-94aa-0d1f3d2cee52/thumb/",
-    "by": "Radiotrefoil",
-    "lic": "CC BY-SA 4.0",
-    "link": "https://commons.wikimedia.org/w/index.php?curid=61477574"
-   }
-  },
-  {
    "c": "motogp",
    "src": "Motorsport.com",
    "u": "https://www.motorsport.com/motogp/news/ducati-aprilia-got-unlucky-in-australian-gp-can-win-every-race-from-now/10868527",
@@ -609,6 +599,38 @@
    "conclusion": "Poznato je da Jon Armstrong i Shane Byrne prekidaju partnerstvo te da će vozač u 2027. godini tražiti novog suvozača. Još nije potvrđeno tko će točno zamijeniti Byrnea na suvozačkom mjestu.",
    "orig_t": "Jon Armstrong announces WRC co-driver split for 2027",
    "hr": true
+  }
+ ],
+ "schedule": [
+  {
+   "date": "2026-11-01",
+   "title": "F1 – Mexico City GP",
+   "note": "Mexico City, Mexico"
+  },
+  {
+   "date": "2026-11-01",
+   "title": "MotoGP – VN Malezije",
+   "note": "Sepang"
+  },
+  {
+   "date": "2026-11-08",
+   "title": "F1 – Brazilian GP",
+   "note": "São Paulo, Brazil"
+  },
+  {
+   "date": "2026-11-08",
+   "title": "MotoGP – VN Katara",
+   "note": "Lusail"
+  },
+  {
+   "date": "2026-11-22",
+   "title": "F1 – Las Vegas GP",
+   "note": "Las Vegas, USA"
+  },
+  {
+   "date": "2026-11-29",
+   "title": "F1 – Qatar GP",
+   "note": "Lusail, Qatar"
   }
  ]
 }

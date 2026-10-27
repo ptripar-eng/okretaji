@@ -1,8 +1,20 @@
 {
  "https://www.motorsport.com/motogp/news/martins-incomplete-fracture-leaves-him-hopeful-of-racing-at-sepang/10868805/": null,
- "https://www.motor1.com/news/813387/54-000-hot-wheels-recovered/": null,
+ "https://www.motor1.com/news/813387/54-000-hot-wheels-recovered/": {
+  "id": "e739a495-206f-44e1-a3f1-b904add08445",
+  "src": "https://api.openverse.org/v1/images/e739a495-206f-44e1-a3f1-b904add08445/thumb/",
+  "by": "philstephenrichards",
+  "lic": "BY-SA",
+  "link": "https://www.flickr.com/photos/13035092@N00/7463053428"
+ },
  "https://www.motor1.com/news/813383/maserati-granturismo-one-off-gullwing/": null,
- "https://www.rideapart.com/news/813182/kawasaki-teams-up-with-transgaz-hydrogen-energy/": null,
+ "https://www.rideapart.com/news/813182/kawasaki-teams-up-with-transgaz-hydrogen-energy/": {
+  "id": "94adf583-e30d-4447-8a19-f43bf43a807e",
+  "src": "https://api.openverse.org/v1/images/94adf583-e30d-4447-8a19-f43bf43a807e/thumb/",
+  "by": "Tokumeigakarinoaoshima",
+  "lic": "BY-SA",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=126495625"
+ },
  "https://www.motor1.com/news/813375/toyota-corolla-60-year-anniversary/": null,
  "https://www.motor1.com/news/813371/audi-q4-e-tron-recall/": null,
  "https://www.motorsport.com/motogp/news/marc-marquez-ducati-guarantees-qatar-gp-tardozzi/10868659/": {
@@ -138,5 +150,15 @@
  "https://www.motorsport.com/motogp/news/ducati-aprilia-got-unlucky-in-australian-gp-can-win-every-race-from-now/10868527": null,
  "https://www.motorsport.com/wrc/news/sesks-tight-lipped-on-wrc-future-after-erc-season-finale-triumph/10868620": null,
  "https://www.motorsport.com/wrc/news/josh-mcerlean-to-test-2027-spec-m-sport-wrc-car-at-erc-finale/10867386": null,
- "https://www.motorsport.com/wrc/news/jon-armstrong-announces-wrc-co-driver-split-for-2027/10866937": null
+ "https://www.motorsport.com/wrc/news/jon-armstrong-announces-wrc-co-driver-split-for-2027/10866937": null,
+ "https://www.motorsport.com/f1/news/mercedes-admits-they-were-clueless-before-kimi-antonellis-austin-miracle-a-remarkable-turnaround/10868571": null,
+ "https://electrek.co/2026/10/27/byds-10k-ev-blows-tire-nearly-90-mph-watch-what-happens": null,
+ "https://electrek.co/2026/10/27/rivian-electric-van-walmart-plus-livery-spotted": null,
+ "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth": null,
+ "https://electrek.co/2026/10/27/vws-ev-recall-spreads-to-audi-owners-told-stop-at-80-charge": null,
+ "https://electrek.co/2026/10/27/waymo-expansion-250-square-miles-five-cities": null,
+ "https://arstechnica.com/gadgets/2026/10/googles-android-registered-app-stores-program-launches-dec-1-applications-now-open": null,
+ "https://www.motor1.com/news/813444/koenigsegg-cc850-parking-brake-recall": null,
+ "https://arstechnica.com/science/2026/10/vibe-genes-naturalish-language-comes-to-protein-genome-design-software": null,
+ "https://arstechnica.com/culture/2026/10/warner-bros-drops-final-trailer-for-dune-part-three": null
 }
