@@ -1,0 +1,212 @@
+{
+ "updated": "2026-10-27T12:00+00:00",
+ "items": [
+  {
+   "c": "f1",
+   "t": "Antonelli na korak od naslova",
+   "s": "Mercedesov 20-godišnjak pobijedio je u Austinu startajući s pole positiona, deveti put ove sezone. U Meksiku mu je dovoljno deveto mjesto da postane najmlađi prvak u povijesti F1.",
+   "src": "Sky Sports",
+   "u": "https://www.skysports.com/f1/news/13603603/united-states-gp-kimi-antonelli-wins-austin-race-to-move-to-brink-of-f1-world-title-after-dominant-drive",
+   "date": "2026-10-26T10:00+00:00",
+   "hr": true,
+   "orig_t": "seed"
+  },
+  {
+   "c": "f1",
+   "t": "Leclerc drugi nakon kasnog napada, Verstappen treći",
+   "s": "Antonelli je jedinom promjenom guma (medium pa hard) pobijedio vozače koji su stali dvaput. Russell je završio tek osmi, Hamilton četvrti, pa je borba za naslov matematički još otvorena.",
+   "src": "Formula1.com",
+   "u": "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j",
+   "date": "2026-10-26T12:00+00:00",
+   "hr": true,
+   "orig_t": "Leclerc drugi nakon kasnog napada, Verstappen treći"
+  },
+  {
+   "c": "motogp",
+   "t": "Otkazana posljednja utrka na Phillip Islandu",
+   "s": "Zbog loše vidljivosti medicinski helikopter nije mogao letjeti pa su otkazane utrke MotoGP-a, Moto2 i Moto3. Umjesto utrke vozači su odvezli oproštajni krug iza safety cara.",
+   "src": "The Race",
+   "u": "https://www.the-race.com/motogp/motogps-final-phillip-island-race-cancelled-replaced-with-parade-lap/",
+   "date": "2026-10-25T12:00+00:00",
+   "hr": true,
+   "orig_t": "Otkazana posljednja utrka na Phillip Islandu"
+  },
+  {
+   "c": "motogp",
+   "t": "Martin s napuklim zapešćem cilja povratak u Sepangu",
+   "s": "Jorge Martin pao je u sprintu i zaostaje deset bodova za Marcom Marquezom. Nove snimke isključile su drugu frakturu pa Aprilia za sada ne planira operaciju.",
+   "src": "Crash.net",
+   "u": "https://www.crash.net/motogp/news/1108412/1/injured-jorge-martin-targets-surprise-sepang-motogp-return",
+   "date": "2026-10-25T12:00+00:00",
+   "hr": true,
+   "orig_t": "Martin s napuklim zapešćem cilja povratak u Sepangu"
+  },
+  {
+   "c": "motogp",
+   "t": "Utrka u Kataru i dalje pod upitnikom",
+   "s": "Carlos Ezpeleta putuje u Dohu tražiti sigurnosna jamstva koja su zatražili vozači. MotoGP tvrdi da će se Katar voziti kao kraj trostrukog vikenda utrka.",
+   "src": "Crash.net",
+   "u": "https://www.crash.net/motogp/news/1108534/1/motogp-chief-travel-qatar-week-crunch-decision-race-looms",
+   "date": "2026-10-26T12:00+00:00",
+   "hr": true,
+   "orig_t": "Utrka u Kataru i dalje pod upitnikom"
+  },
+  {
+   "c": "auto",
+   "t": "Geely sprema prvi model samo za Europu – i rivala Defenderu",
+   "s": "Kineski proizvođač kaže da je naučio što europski kupci žele pa će osim novog modela osvježiti i postojeću ponudu.",
+   "src": "Autocar",
+   "u": "https://www.autocar.co.uk/car-news/new-cars",
+   "date": "2026-10-26T12:00+00:00",
+   "hr": true,
+   "orig_t": "Geely sprema prvi model samo za Europu – i rivala Defenderu"
+  },
+  {
+   "c": "auto",
+   "t": "Volvo EX60 kasni s proizvodnjom",
+   "s": "Za novi električni SUV skupljeno je 50.000 narudžbi, a od travnja je proizvedeno tek oko 5000 komada. Volvo najavljuje i jeftiniji EX50 za 2027.",
+   "src": "Autocar",
+   "u": "https://www.autocar.co.uk/car-news/new-cars",
+   "date": "2026-10-23T12:00+00:00",
+   "hr": true,
+   "orig_t": "Volvo EX60 kasni s proizvodnjom"
+  },
+  {
+   "c": "auto",
+   "t": "Tesla napokon pokazala novi Roadster",
+   "s": "Gotovo desetljeće nakon prvih uplata Musk je u Wacu predstavio Roadster s tehnologijom SpaceX-a. Cijena nije objavljena, a nije jasno ni hoće li biti homologiran za cestu.",
+   "src": "CNBC",
+   "u": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
+   "date": "2026-10-15T12:00+00:00",
+   "hr": true,
+   "orig_t": "Tesla napokon pokazala novi Roadster"
+  },
+  {
+   "c": "auto",
+   "t": "Fiat Koala: električni gradski auto ispod Pande",
+   "s": "Novi mali model dijelit će platformu s novim Citroënom 2CV. Očekuje se 2028. s cijenom oko 15.000 eura, po uzoru na japanske kei automobile.",
+   "src": "Auto Perspectives",
+   "u": "https://www.autoperspectives.net/post/news-roundup-oct-20-2026",
+   "date": "2026-10-20T12:00+00:00",
+   "hr": true,
+   "orig_t": "Fiat Koala: električni gradski auto ispod Pande"
+  },
+  {
+   "c": "auto",
+   "t": "Predstavljen BMW iX4",
+   "s": "Električni coupe-SUV zamjenjuje X4 i proizvodi se u novoj tvornici u Debrecenu, u Mađarskoj.",
+   "src": "Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/BMW_iX4",
+   "date": "2026-10-08T12:00+00:00",
+   "hr": true,
+   "orig_t": "Predstavljen BMW iX4"
+  },
+  {
+   "c": "moto",
+   "t": "Yamaha objavila ponudu za 2027.",
+   "s": "Bez velikih iznenađenja, uglavnom nove boje. Ténéré 700 Rally dobiva retro bijelu Heritage shemu, a standardni Ténéré novu sivu.",
+   "src": "Visordown",
+   "u": "https://www.visordown.com/news/yamaha-reveals-2027-motorcycle-and-scooter-line",
+   "date": "2026-10-26T12:00+00:00",
+   "hr": true,
+   "orig_t": "Yamaha objavila ponudu za 2027."
+  },
+  {
+   "c": "moto",
+   "t": "Honda CBR500R Four – potpuno novi četverocilindraš",
+   "s": "Honda je istog dana pokazala dva nova supersport modela, a CBR500R Four je potpuno nova konstrukcija.",
+   "src": "motorcycles.news",
+   "u": "https://www.motorcycles.news/en/eicma-2026-new-models-world-premieres/",
+   "date": "2026-10-20T12:00+00:00",
+   "hr": true,
+   "orig_t": "Honda CBR500R Four – potpuno novi četverocilindraš"
+  },
+  {
+   "c": "moto",
+   "t": "Moto Guzzi slavi 105 godina posebnom serijom",
+   "s": "Jubilarna izdanja dobivaju Stelvio, V100 Mandello, V85 Strada i V7 Stone. Prodaju se od listopada 2026. do kraja 2027.",
+   "src": "motorcycles.news",
+   "u": "https://www.motorcycles.news/en/motorcycles-2027/",
+   "date": "2026-10-01T12:00+00:00",
+   "hr": true,
+   "orig_t": "Moto Guzzi slavi 105 godina posebnom serijom"
+  },
+  {
+   "c": "moto",
+   "t": "Novi Kawasaki Versys 900 s radarom",
+   "s": "Dobiva četverocilindrični motor iz Z900 sa 122 KS i, prvi put u obitelji Versys, radarske sustave pomoći sprijeda i straga.",
+   "src": "motorcycles.news",
+   "u": "https://www.motorcycles.news/en/eicma-2026-new-models-world-premieres/",
+   "date": "2026-10-13T12:00+00:00",
+   "hr": true,
+   "orig_t": "Novi Kawasaki Versys 900 s radarom"
+  },
+  {
+   "c": "moto",
+   "t": "BMW F 450 RR i Ducati Panigale V4 za 2027.",
+   "s": "BMW je zaokružio obitelj 450 supersportašem od 48 KS (A2), a Ducati je istog dana predstavio Panigale V4 za 2027.",
+   "src": "motorcycles.news",
+   "u": "https://www.motorcycles.news/en/eicma-2026-new-models-world-premieres/",
+   "date": "2026-10-15T12:00+00:00",
+   "hr": true,
+   "orig_t": "BMW F 450 RR i Ducati Panigale V4 za 2027."
+  },
+  {
+   "c": "moto",
+   "t": "Triumph najavio Street Triple 798 i Bonneville T40",
+   "s": "Novi Street Triple koristi trocilindraš razvijen uz Moto2 motor za 2027. Bonneville T40 donosi ime Bonneville u klasu 400 ccm s 32 KS.",
+   "src": "motorcycles.news",
+   "u": "https://www.motorcycles.news/en/eicma-2026-new-models-world-premieres/",
+   "date": "2026-10-06T12:00+00:00",
+   "hr": true,
+   "orig_t": "Triumph najavio Street Triple 798 i Bonneville T40"
+  },
+  {
+   "c": "reli",
+   "t": "Elfyn Evans napokon svjetski prvak",
+   "s": "Nakon pet drugih mjesta u šest godina Evans i suvozač Scott Martin osvojili su naslov na Sardiniji, koja je postala finale sezone nakon otkazivanja Saudijske Arabije.",
+   "src": "Toyota UK Magazine",
+   "u": "https://mag.toyota.co.uk/wrc-2026-result/",
+   "date": "2026-10-01T12:00+00:00",
+   "hr": true,
+   "orig_t": "Elfyn Evans napokon svjetski prvak"
+  },
+  {
+   "c": "reli",
+   "t": "Croatia Rally ponovno u WRC kalendaru",
+   "s": "Hrvatski reli WRC-a vozi se od 8. do 11. travnja 2027.",
+   "src": "WRC.com",
+   "u": "https://www.wrc.com/en/events/wrc-rally-sweden-2026/wrc-rally-sweden-2026-results",
+   "date": "2026-10-01T12:00+00:00",
+   "hr": true,
+   "orig_t": "Croatia Rally ponovno u WRC kalendaru"
+  }
+ ],
+ "schedule": [
+  {
+   "date": "2026-11-01",
+   "title": "F1 – VN Meksika",
+   "note": "Mexico City"
+  },
+  {
+   "date": "2026-11-01",
+   "title": "MotoGP – VN Malezije",
+   "note": "Sepang"
+  },
+  {
+   "date": "2026-11-08",
+   "title": "F1 – VN Brazila",
+   "note": "São Paulo"
+  },
+  {
+   "date": "2026-11-08",
+   "title": "MotoGP – VN Katara",
+   "note": "Lusail"
+  },
+  {
+   "date": "2027-04-08",
+   "title": "WRC – Croatia Rally",
+   "note": "8. – 11. travnja"
+  }
+ ]
+}
