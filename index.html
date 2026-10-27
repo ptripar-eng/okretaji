@@ -742,5 +742,53 @@ const io=new IntersectionObserver(es=>{for(const e of es) if(e.isIntersecting) s
 ["vrh","novosti","utrka","brojke","vozaci","rute"].forEach(id=>{const x=$(id);if(x)io.observe(x);});
 const NAVMAP={"sve-vijesti":"novosti"};
 </script>
+
+<!-- Google Analytics 4: učitava se tek nakon izričitog pristanka korisnika -->
+<style>
+#okretaji-consent{position:fixed;z-index:9999;left:16px;right:16px;bottom:16px;max-width:760px;margin:auto;padding:18px;background:#fff;color:#0D2B3E;border:1px solid #D3E2EA;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.22);font:16px/1.5 system-ui,sans-serif}
+#okretaji-consent p{margin:0 0 12px}#okretaji-consent a{color:#1C5A86}
+#okretaji-consent .consent-actions{display:flex;gap:10px;flex-wrap:wrap}
+#okretaji-consent button{padding:10px 14px;border-radius:8px;border:1px solid #0D2B3E;font-weight:700;cursor:pointer}
+#okretaji-consent .accept{background:#0D2B3E;color:#fff}#okretaji-consent .reject{background:#fff;color:#0D2B3E}
+</style>
+<div id="okretaji-consent" role="dialog" aria-label="Postavke analitike" aria-live="polite" hidden>
+  <p><strong>Analitika posjeta</strong><br>Uz tvoju privolu koristimo Google Analytics kako bismo razumjeli posjećenost portala. Analitički alati neće se učitati ako odbiješ.</p>
+  <p><a href="privatnost.html">Pročitaj informacije o privatnosti</a></p>
+  <div class="consent-actions">
+    <button class="accept" type="button" id="okretaji-consent-yes">Prihvaćam analitiku</button>
+    <button class="reject" type="button" id="okretaji-consent-no">Odbijam</button>
+  </div>
+</div>
+<script>
+(function(){
+  var key='okretaji_analytics_consent';
+  function loadAnalytics(){
+    if(window.__okretajiAnalyticsLoaded)return;
+    window.__okretajiAnalyticsLoaded=true;
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){window.dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js',new Date());
+    gtag('config','G-426646FTQH',{anonymize_ip:true});
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-426646FTQH';
+    document.head.appendChild(s);
+  }
+  var banner=document.getElementById('okretaji-consent');
+  try{
+    var saved=localStorage.getItem(key);
+    if(saved==='granted')loadAnalytics();
+    else if(saved!=='denied')banner.hidden=false;
+    document.getElementById('okretaji-consent-yes').addEventListener('click',function(){
+      localStorage.setItem(key,'granted');banner.hidden=true;loadAnalytics();
+    });
+    document.getElementById('okretaji-consent-no').addEventListener('click',function(){
+      localStorage.setItem(key,'denied');banner.hidden=true;
+    });
+  }catch(e){banner.hidden=false;}
+})();
+</script>
+
 </body>
 </html>
