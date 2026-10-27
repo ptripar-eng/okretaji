@@ -1,192 +1,372 @@
 {
- "updated": "2026-10-27T12:00+00:00",
+ "updated": "2026-10-27T11:03+00:00",
  "items": [
   {
+   "c": "motogp",
+   "t": "Ducati: “Marc Marquez has asked for guarantees to go to Qatar, while others stay silent”",
+   "s": "Davide Tardozzi has defended Marc Marquez amid the uncertainty surrounding MotoGP’s upcoming visit to Qatar, for which riders have asked the championship organisers to provide guarantees over their safety. MotoGP faces several challenges as the 2026 season…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/marc-marquez-ducati-guarantees-qatar-gp-tardozzi/10868659/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
+   "date": "2026-10-27T10:32+00:00",
+   "orig_t": "Ducati: “Marc Marquez has asked for guarantees to go to Qatar, while others stay silent”"
+  },
+  {
+   "c": "auto",
+   "t": "Audi Q4 E-Tron Recall Affects 9,048 EVs Over Battery Fire Risk",
+   "s": "Volkswagen Group of America flags 9,048 Audi Q4 E-Tron models while engineers work on a permanent high-voltage battery remedy.",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813371/audi-q4-e-tron-recall/",
+   "date": "2026-10-27T10:44+00:00",
+   "orig_t": "Audi Q4 E-Tron Recall Affects 9,048 EVs Over Battery Fire Risk"
+  },
+  {
+   "c": "auto",
+   "t": "Mitsubishi Is Keeping The Lancer Evo's Spirit Alive... In An SUV Built By Another Company",
+   "s": "Mitsubishi wants to keep its rally-bred icon's legacy alive, even if it means borrowing someone else's SUV to do it.",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813365/mitsubishi-evo-spirit-alive-suv/",
+   "date": "2026-10-27T10:23+00:00",
+   "orig_t": "Mitsubishi Is Keeping The Lancer Evo's Spirit Alive... In An SUV Built By Another Company"
+  },
+  {
    "c": "f1",
-   "t": "Antonelli na korak od naslova",
-   "s": "Mercedesov 20-godišnjak pobijedio je u Austinu startajući s pole positiona, deveti put ove sezone. U Meksiku mu je dovoljno deveto mjesto da postane najmlađi prvak u povijesti F1.",
-   "src": "Sky Sports",
-   "u": "https://www.skysports.com/f1/news/13603603/united-states-gp-kimi-antonelli-wins-austin-race-to-move-to-brink-of-f1-world-title-after-dominant-drive",
+   "t": "Red Bull explains why Verstappen and Hadjar's 'silly' problems won't all be fixed in 2026",
+   "s": "Although Max Verstappen once again secured a podium finish, something that seemed to be the maximum achievable for much of this Formula 1 season, there was certainly little satisfaction in the Red Bull hospitality on Sunday evening. Several team members…",
+   "src": "Autosport",
+   "u": "https://www.autosport.com/f1/news/red-bull-explains-why-verstappen-and-hadjar-silly-problems-wont-be-fixed-in-2026/10868779/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "date": "2026-10-27T09:46+00:00",
+   "orig_t": "Red Bull explains why Verstappen and Hadjar's 'silly' problems won't all be fixed in 2026"
+  },
+  {
+   "c": "f1",
+   "t": "Red Bull reveals when 'silly' problems affecting Max Verstappen and Isack Hadjar can be fixed",
+   "s": "Although Max Verstappen once again secured a podium finish, something that seemed to be the maximum achievable for much of this Formula 1 season, there was certainly little satisfaction in the Red Bull hospitality on Sunday evening. Several team members…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/red-bull-reveals-when-silly-problems-affecting-max-verstappen-and-isack-hadjar-can-be-fixed/10868773/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "date": "2026-10-27T09:34+00:00",
+   "orig_t": "Red Bull reveals when 'silly' problems affecting Max Verstappen and Isack Hadjar can be fixed"
+  },
+  {
+   "c": "auto",
+   "t": "Jeep’s Most Popular Gladiator Upgrade Is Finally Available From The Factory",
+   "s": "The 2027 Jeep Gladiator 35-inch Tire Launch Edition adds a factory lift, 12.9 inches of clearance, and upgraded hardware on Willys, Rubicon, and Rubicon X.",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813358/jeep-gladiator-35-inch-package/",
+   "date": "2026-10-27T08:56+00:00",
+   "orig_t": "Jeep’s Most Popular Gladiator Upgrade Is Finally Available From The Factory"
+  },
+  {
+   "c": "auto",
+   "t": "The Volkswagen Group Reportedly Wants To Put Chinese Software In European Cars To Cut Costs",
+   "s": "Internal calculations suggest the company could save up to €5 billion on its most important model, but VW refuses to comment.",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813348/vw-report-chinese-software-european-cars/",
+   "date": "2026-10-27T08:49+00:00",
+   "orig_t": "The Volkswagen Group Reportedly Wants To Put Chinese Software In European Cars To Cut Costs"
+  },
+  {
+   "c": "auto",
+   "t": "Chevy Wants The Next Corvette To Stay Affordable, Even With More Power",
+   "s": "Tony Roma wants the next Chevrolet Corvette to outperform the C8 while keeping pricing clear of Ferrari and Lamborghini territory.",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813343/gm-c9-corvette-plans-focus/",
+   "date": "2026-10-27T07:56+00:00",
+   "orig_t": "Chevy Wants The Next Corvette To Stay Affordable, Even With More Power"
+  },
+  {
+   "c": "auto",
+   "t": "Audi Reveals Which Models It Plans To Build In America",
+   "s": "Naturally, all will be large SUVs.",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813334/audi-reveals-models-made-in-usa/",
+   "date": "2026-10-27T07:26+00:00",
+   "orig_t": "Audi Reveals Which Models It Plans To Build In America"
+  },
+  {
+   "c": "energy",
+   "t": "Wouldn’t It Be Funny If Audi Manufactures EVs In The US?",
+   "s": "The German automaker Audi has dialed back its full EV plans for the US market, but its strategy still include plug-in hybrids and a new factory in Georgia, too. The post Wouldn’t It Be Funny If Audi Manufactures EVs In The US? appeared first on CleanTechnica .",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/26/audi-factory-us-plugin-hybrid-evs-trump-celebrates/",
+   "date": "2026-10-27T03:48+00:00",
+   "orig_t": "Wouldn’t It Be Funny If Audi Manufactures EVs In The US?"
+  },
+  {
+   "c": "energy",
+   "t": "From Barrel to Battery: What Will Europe’s Clean Car Debate Decide",
+   "s": "The new energy reality: 1 kWh of battery is cheaper than a barrel of oil The EU is fiercely debating the future of the automotive industry and how far the transition to battery electric cars will be slowed down. Last time we had this debate back in 2022,…",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/26/from-barrel-to-battery-what-will-europes-clean-car-debate-decide/",
+   "date": "2026-10-27T03:15+00:00",
+   "orig_t": "From Barrel to Battery: What Will Europe’s Clean Car Debate Decide"
+  },
+  {
+   "c": "energy",
+   "t": "New Report Keeps Tabs on ACC’s Utility Bias that Ends up Hurting Wallets",
+   "s": "Phoenix — The Sierra Club today published a new report, “Asleep at the Switch: How the ACC is Letting Utilities Fleece Ratepayers,” that considers the power the Arizona Corporation Commission (ACC) has over the future of Arizona’s energy landscape, public…",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/26/new-report-keeps-tabs-on-accs-utility-bias-that-ends-up-hurting-wallets/",
+   "date": "2026-10-27T02:53+00:00",
+   "orig_t": "New Report Keeps Tabs on ACC’s Utility Bias that Ends up Hurting Wallets"
+  },
+  {
+   "c": "energy",
+   "t": "The EU Is Showing How Regional Maritime Rules Can Support A Global Framework At The IMO",
+   "s": "Carbon pricing in a global context In April 2025, governments at the International Maritime Organization (IMO) agreed on a historic global regulation, the Net-Zero Framework (NZF). It was designed to set global shipping on a course to net-zero by 2050 in a…",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/26/the-eu-is-showing-how-regional-maritime-rules-can-support-a-global-framework-at-the-imo/",
+   "date": "2026-10-27T02:45+00:00",
+   "orig_t": "The EU Is Showing How Regional Maritime Rules Can Support A Global Framework At The IMO"
+  },
+  {
+   "c": "energy",
+   "t": "How the Swiss Want to Travel to the UK",
+   "s": "New rail services can give Switzerland its first high-speed direct trains to the UK. Polling in Switzerland Total sample size was 1,048 adults. Fieldwork was undertaken between 11th–24th September 2026. Nearly half of Swiss people use rail for other…",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/26/how-the-swiss-want-to-travel-to-the-uk/",
+   "date": "2026-10-27T02:38+00:00",
+   "orig_t": "How the Swiss Want to Travel to the UK"
+  },
+  {
+   "c": "energy",
+   "t": "New Whitepaper Shows How Grid Operators & Energy Regulators Can Use Solar & Storage to Secure the Grid, Boost Reliability & Reduce Energy Costs",
+   "s": "Report Shows How to Unlock the Full Potential of Distributed Energy Resources WASHINGTON D.C. — A new report released today by the Solar Energy Industries Association (SEIA) and Current Energy Group outlines how grid operators and regulators can deploy…",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/26/new-whitepaper-shows-how-grid-operators-energy-regulators-can-use-solar-storage-to-secure-the-grid-boost-reliability-reduce-energy-costs/",
+   "date": "2026-10-27T02:26+00:00",
+   "orig_t": "New Whitepaper Shows How Grid Operators & Energy Regulators Can Use Solar & Storage to Secure the Grid, Boost Reliability & Reduce Energy Costs"
+  },
+  {
+   "c": "tech",
+   "t": "Microsoft offers to buy out a quarter of its workforce",
+   "s": "Employees in the US, Canada, India, and the UK may receive offers to leave MS today.",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/gadgets/2026/10/microsoft-offers-voluntary-buyouts-to-60000-employees/",
+   "date": "2026-10-26T22:36+00:00",
+   "orig_t": "Microsoft offers to buy out a quarter of its workforce"
+  },
+  {
+   "c": "f1",
+   "t": "Naomi Schiff warns Red Bull over \"knife's edge\" F1 car after US GP struggles",
+   "s": "Broadcaster Naomi Schiff has warned that Red Bull's narrow set-up window could be compromising Max Verstappen and Isack Hadjar's 2026 Formula 1 campaigns. At the United States Grand Prix, both drivers' races were derailed in the opening stages. Hadjar…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/naomi-schiff-warns-red-bull-over-knifes-edge-f1-car-after-us-gp-struggles/10868723/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "date": "2026-10-26T22:06+00:00",
+   "orig_t": "Naomi Schiff warns Red Bull over \"knife's edge\" F1 car after US GP struggles"
+  },
+  {
+   "c": "f1",
+   "t": "Fred Vasseur reveals two costly moments that denied Ferrari US GP double podium",
+   "s": "The United States Grand Prix was a wildly successful weekend for Ferrari, if you strictly go off the timing sheets. The newly upgraded car possessed blazing-fast race pace, tyre degradation was fully under control, and Charles Leclerc dragged his machine to a…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/fred-vasseur-blames-a-q3-disaster-and-a-broken-cadillac-for-robbing-ferrari-of-a-us-gp-win/10868569/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "date": "2026-10-26T21:37+00:00",
+   "orig_t": "Fred Vasseur reveals two costly moments that denied Ferrari US GP double podium"
+  },
+  {
+   "c": "f1",
+   "t": "Red Bull reveals damage behind Max Verstappen's US GP struggles",
+   "s": "When your star driver gets out of the car after grabbing a podium and immediately tells the global broadcast that the pitstops, tyres, and engine braking were all complete garbage, it is up to the team principal to jump on the nearest microphone and put out…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/mekies-explains-the-invisible-debris-that-cost-max-verstappen-2nd-place-in-austin/10868579/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "date": "2026-10-26T21:16+00:00",
+   "orig_t": "Red Bull reveals damage behind Max Verstappen's US GP struggles"
+  },
+  {
+   "c": "tech",
+   "t": "Worms mate in man's eyes, get plucked out right before larvae burst out",
+   "s": "Case study gives a whole new meaning to \"bedroom eyes.\"",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/health/2026/10/whats-worse-than-having-eye-worms-having-eye-worms-with-babies/",
+   "date": "2026-10-26T20:27+00:00",
+   "orig_t": "Worms mate in man's eyes, get plucked out right before larvae burst out"
+  },
+  {
+   "c": "tech",
+   "t": "Meet the real-life Scottish surgeon who inspired Sherlock Holmes",
+   "s": "Lindsey Fitzharris chats with Ars about her new book, Sleuth-Hound: The Case of the Real Sherlock Holmes .",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/science/2026/10/meet-the-real-life-scottish-surgeon-who-inspired-sherlock-holmes/",
+   "date": "2026-10-26T20:15+00:00",
+   "orig_t": "Meet the real-life Scottish surgeon who inspired Sherlock Holmes"
+  },
+  {
+   "c": "tech",
+   "t": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",
+   "s": "Included is the ability to limit which applications Siri can directly access.",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
+   "date": "2026-10-26T20:04+00:00",
+   "orig_t": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo"
+  },
+  {
+   "c": "tech",
+   "t": "Apple reveals updated iPad mini with a bigger OLED screen for $700",
+   "s": "Apple claims this is the most significant update ever for the iPad mini line.",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/apple/2026/10/apple-reveals-updated-ipad-mini-with-a-bigger-oled-screen-for-700/",
+   "date": "2026-10-26T19:04+00:00",
+   "orig_t": "Apple reveals updated iPad mini with a bigger OLED screen for $700"
+  },
+  {
+   "c": "tech",
+   "t": "ICE plan to buy robot dogs spurs protest from hundreds of Boston Dynamics employees",
+   "s": "US robotics company stands by ICE deal as more than 300 employees warn of risk.",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/",
+   "date": "2026-10-26T18:50+00:00",
+   "orig_t": "ICE plan to buy robot dogs spurs protest from hundreds of Boston Dynamics employees"
+  },
+  {
+   "c": "f1",
+   "t": "David Coulthard rejects F1 regulation excuses with Ayrton Senna and Michael Schumacher comparison",
+   "s": "Former Formula 1 driver David Coulthard has dismissed the narrative that drivers can blame poor performance on the championship's new 2026 regulations, insisting the all-time greats successfully adapt to any machinery. F1 introduced a major regulation change…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/david-coulthard-rejects-f1-regulation-excuses-with-ayrton-senna-and-michael-schumacher-comparison/10868708/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "date": "2026-10-26T18:48+00:00",
+   "orig_t": "David Coulthard rejects F1 regulation excuses with Ayrton Senna and Michael Schumacher comparison"
+  },
+  {
+   "c": "motogp",
+   "t": "Ducati: Aprilia got “unlucky” in Australian GP, can win every race from now",
+   "s": "Ducati believes Aprilia got “unlucky” with weather changes over the Australian Grand Prix weekend, citing the RS-GP’s superior pace in dry conditions. Aprilia was expected to dominate proceedings at Phillip Island after Marco Bezzecchi led a 1-2-4-5 result…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/ducati-aprilia-got-unlucky-in-australian-gp-can-win-every-race-from-now/10868527/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
+   "date": "2026-10-26T14:45+00:00",
+   "orig_t": "Ducati: Aprilia got “unlucky” in Australian GP, can win every race from now"
+  },
+  {
+   "c": "moto",
+   "t": "Former World Champion Motorcyclist Says Marquez Is “Infinitely Faster” Than Rossi",
+   "s": "During a recent interview, Jorge Martínez Aspar weighed in on the comparison between Marc Marquez and Valentino Rossi, stating that Marquez is \"infinitely faster\".",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813051/four-time-gp-world-champion-says-marquez-is-infinitely-faster-than-rossi-but-less-well-roundedt/",
+   "date": "2026-10-26T13:46+00:00",
+   "orig_t": "Former World Champion Motorcyclist Says Marquez Is “Infinitely Faster” Than Rossi"
+  },
+  {
+   "c": "moto",
+   "t": "This ATV Lock Ensures Your Vehicle Can't Be Stolen",
+   "s": "Thieves won't be able to work around this one.",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813119/fryars-keyless-atv-wheel-lock/",
+   "date": "2026-10-26T12:56+00:00",
+   "orig_t": "This ATV Lock Ensures Your Vehicle Can't Be Stolen"
+  },
+  {
+   "c": "reli",
+   "t": "Sesks tight-lipped on WRC future after ERC season finale triumph",
+   "s": "Martins Sesks remains tight-lipped on his World Rally Championship future after claiming a confidence-boosting victory in the European Rally Championship season finale. The M-Sport-Ford WRC driver produced an impressive display on Portugal’s famous gravel…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/wrc/news/sesks-tight-lipped-on-wrc-future-after-erc-season-finale-triumph/10868620/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-WRC&utm_term=News&utm_content=www",
+   "date": "2026-10-26T12:24+00:00",
+   "orig_t": "Sesks tight-lipped on WRC future after ERC season finale triumph"
+  },
+  {
+   "c": "moto",
+   "t": "Limited Edition Aprilia RS 660 Graphic Says How We're All Feeling About Phillip Island",
+   "s": "This special edition RS 660 features a beautiful green and white graphic dedicated to Aprilia's many racing victories at the iconic Australian circuit.",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813118/aprilia-rs-660-phillip-island-limited-edition-goodbye-australia/",
+   "date": "2026-10-26T12:20+00:00",
+   "orig_t": "Limited Edition Aprilia RS 660 Graphic Says How We're All Feeling About Phillip Island"
+  },
+  {
+   "c": "moto",
+   "t": "This Augmented Reality Motorcycle Helmet Looks....Unsafe",
+   "s": "I want fewer distractions, not more.",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813114/aegis-rider-vision-headsup-display-augment-reality-motorcycle-helmet/",
+   "date": "2026-10-26T11:41+00:00",
+   "orig_t": "This Augmented Reality Motorcycle Helmet Looks....Unsafe"
+  },
+  {
+   "c": "moto",
+   "t": "MotoGP Came to Its Senses and Created a Motogp Academy To Help Tackle Spanish Grid Dominance",
+   "s": "MotoGP is launching a MotoGP Academy as part of the Road to MotoGP development structure. This should help grassroots racing in the countries that are underrepresented on the grid.",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/812971/motogp-creates-motogp-academy-to-help-tackle-spanish-grid-dominance/",
+   "date": "2026-10-26T11:33+00:00",
+   "orig_t": "MotoGP Came to Its Senses and Created a Motogp Academy To Help Tackle Spanish Grid Dominance"
+  },
+  {
+   "c": "moto",
+   "t": "LiveWire's Most Important Electric Motorcycle Ever Is Coming to EICMA",
+   "s": "This bike could make or break LiveWire for good.",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/812975/2027-livewire-dust-hightail-ev-dirt-bike-eicma-debut-harley-davidson/",
+   "date": "2026-10-26T11:18+00:00",
+   "orig_t": "LiveWire's Most Important Electric Motorcycle Ever Is Coming to EICMA"
+  },
+  {
+   "c": "motogp",
+   "t": "Inside Jorge Martin’s recovery plan to get fit for Sepang MotoGP",
+   "s": "If taking on Marc Marquez in a closely fought battle for the MotoGP world title is already difficult enough, Martín’s challenge has become even more complicated following his crash during the sprint at the Australian Grand Prix. The incident came as he was…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/inside-jorge-martins-recovery-plan-to-get-fit-for-sepang-motogp/10868543/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
    "date": "2026-10-26T10:00+00:00",
-   "hr": true,
-   "orig_t": "seed"
-  },
-  {
-   "c": "f1",
-   "t": "Leclerc drugi nakon kasnog napada, Verstappen treći",
-   "s": "Antonelli je jedinom promjenom guma (medium pa hard) pobijedio vozače koji su stali dvaput. Russell je završio tek osmi, Hamilton četvrti, pa je borba za naslov matematički još otvorena.",
-   "src": "Formula1.com",
-   "u": "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j",
-   "date": "2026-10-26T12:00+00:00",
-   "hr": true,
-   "orig_t": "Leclerc drugi nakon kasnog napada, Verstappen treći"
+   "orig_t": "Inside Jorge Martin’s recovery plan to get fit for Sepang MotoGP"
   },
   {
    "c": "motogp",
-   "t": "Otkazana posljednja utrka na Phillip Islandu",
-   "s": "Zbog loše vidljivosti medicinski helikopter nije mogao letjeti pa su otkazane utrke MotoGP-a, Moto2 i Moto3. Umjesto utrke vozači su odvezli oproštajni krug iza safety cara.",
-   "src": "The Race",
-   "u": "https://www.the-race.com/motogp/motogps-final-phillip-island-race-cancelled-replaced-with-parade-lap/",
-   "date": "2026-10-25T12:00+00:00",
-   "hr": true,
-   "orig_t": "Otkazana posljednja utrka na Phillip Islandu"
+   "t": "Francesco Bagnaia: MotoGP riders not consulted over Australian GP cancellation",
+   "s": "Francesco Bagnaia has revealed that MotoGP riders were not consulted before the championship cancelled Sunday’s Australian Grand Prix at Phillip Island, but said they had to respect the decision because safety was at stake. The iconic Australian circuit was…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/bagnaia-riders-not-consulted-australian-gp-cancellation/10868510/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
+   "date": "2026-10-26T07:42+00:00",
+   "orig_t": "Francesco Bagnaia: MotoGP riders not consulted over Australian GP cancellation"
   },
   {
    "c": "motogp",
-   "t": "Martin s napuklim zapešćem cilja povratak u Sepangu",
-   "s": "Jorge Martin pao je u sprintu i zaostaje deset bodova za Marcom Marquezom. Nove snimke isključile su drugu frakturu pa Aprilia za sada ne planira operaciju.",
-   "src": "Crash.net",
-   "u": "https://www.crash.net/motogp/news/1108412/1/injured-jorge-martin-targets-surprise-sepang-motogp-return",
-   "date": "2026-10-25T12:00+00:00",
-   "hr": true,
-   "orig_t": "Martin s napuklim zapešćem cilja povratak u Sepangu"
+   "t": "Why MotoGP didn’t move Australian GP to Saturday despite bad weather forecast",
+   "s": "MotoGP's final appearance at the Phillip Island Circuit ended in the worst possible way with no track action on Sunday. The poor weather forecast, which had been available since the start of the week, came to pass and the championship bid farewell to one of…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/why-phillip-island-race-was-not-moved-to-saturday/10868251/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
+   "date": "2026-10-25T14:00+00:00",
+   "orig_t": "Why MotoGP didn’t move Australian GP to Saturday despite bad weather forecast"
   },
   {
    "c": "motogp",
-   "t": "Utrka u Kataru i dalje pod upitnikom",
-   "s": "Carlos Ezpeleta putuje u Dohu tražiti sigurnosna jamstva koja su zatražili vozači. MotoGP tvrdi da će se Katar voziti kao kraj trostrukog vikenda utrka.",
-   "src": "Crash.net",
-   "u": "https://www.crash.net/motogp/news/1108534/1/motogp-chief-travel-qatar-week-crunch-decision-race-looms",
-   "date": "2026-10-26T12:00+00:00",
-   "hr": true,
-   "orig_t": "Utrka u Kataru i dalje pod upitnikom"
-  },
-  {
-   "c": "auto",
-   "t": "Geely sprema prvi model samo za Europu – i rivala Defenderu",
-   "s": "Kineski proizvođač kaže da je naučio što europski kupci žele pa će osim novog modela osvježiti i postojeću ponudu.",
-   "src": "Autocar",
-   "u": "https://www.autocar.co.uk/car-news/new-cars",
-   "date": "2026-10-26T12:00+00:00",
-   "hr": true,
-   "orig_t": "Geely sprema prvi model samo za Europu – i rivala Defenderu"
-  },
-  {
-   "c": "auto",
-   "t": "Volvo EX60 kasni s proizvodnjom",
-   "s": "Za novi električni SUV skupljeno je 50.000 narudžbi, a od travnja je proizvedeno tek oko 5000 komada. Volvo najavljuje i jeftiniji EX50 za 2027.",
-   "src": "Autocar",
-   "u": "https://www.autocar.co.uk/car-news/new-cars",
-   "date": "2026-10-23T12:00+00:00",
-   "hr": true,
-   "orig_t": "Volvo EX60 kasni s proizvodnjom"
-  },
-  {
-   "c": "auto",
-   "t": "Tesla napokon pokazala novi Roadster",
-   "s": "Gotovo desetljeće nakon prvih uplata Musk je u Wacu predstavio Roadster s tehnologijom SpaceX-a. Cijena nije objavljena, a nije jasno ni hoće li biti homologiran za cestu.",
-   "src": "CNBC",
-   "u": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
-   "date": "2026-10-15T12:00+00:00",
-   "hr": true,
-   "orig_t": "Tesla napokon pokazala novi Roadster"
-  },
-  {
-   "c": "auto",
-   "t": "Fiat Koala: električni gradski auto ispod Pande",
-   "s": "Novi mali model dijelit će platformu s novim Citroënom 2CV. Očekuje se 2028. s cijenom oko 15.000 eura, po uzoru na japanske kei automobile.",
-   "src": "Auto Perspectives",
-   "u": "https://www.autoperspectives.net/post/news-roundup-oct-20-2026",
-   "date": "2026-10-20T12:00+00:00",
-   "hr": true,
-   "orig_t": "Fiat Koala: električni gradski auto ispod Pande"
-  },
-  {
-   "c": "auto",
-   "t": "Predstavljen BMW iX4",
-   "s": "Električni coupe-SUV zamjenjuje X4 i proizvodi se u novoj tvornici u Debrecenu, u Mađarskoj.",
-   "src": "Wikipedia",
-   "u": "https://en.wikipedia.org/wiki/BMW_iX4",
-   "date": "2026-10-08T12:00+00:00",
-   "hr": true,
-   "orig_t": "Predstavljen BMW iX4"
-  },
-  {
-   "c": "moto",
-   "t": "Yamaha objavila ponudu za 2027.",
-   "s": "Bez velikih iznenađenja, uglavnom nove boje. Ténéré 700 Rally dobiva retro bijelu Heritage shemu, a standardni Ténéré novu sivu.",
-   "src": "Visordown",
-   "u": "https://www.visordown.com/news/yamaha-reveals-2027-motorcycle-and-scooter-line",
-   "date": "2026-10-26T12:00+00:00",
-   "hr": true,
-   "orig_t": "Yamaha objavila ponudu za 2027."
-  },
-  {
-   "c": "moto",
-   "t": "Honda CBR500R Four – potpuno novi četverocilindraš",
-   "s": "Honda je istog dana pokazala dva nova supersport modela, a CBR500R Four je potpuno nova konstrukcija.",
-   "src": "motorcycles.news",
-   "u": "https://www.motorcycles.news/en/eicma-2026-new-models-world-premieres/",
-   "date": "2026-10-20T12:00+00:00",
-   "hr": true,
-   "orig_t": "Honda CBR500R Four – potpuno novi četverocilindraš"
-  },
-  {
-   "c": "moto",
-   "t": "Moto Guzzi slavi 105 godina posebnom serijom",
-   "s": "Jubilarna izdanja dobivaju Stelvio, V100 Mandello, V85 Strada i V7 Stone. Prodaju se od listopada 2026. do kraja 2027.",
-   "src": "motorcycles.news",
-   "u": "https://www.motorcycles.news/en/motorcycles-2027/",
-   "date": "2026-10-01T12:00+00:00",
-   "hr": true,
-   "orig_t": "Moto Guzzi slavi 105 godina posebnom serijom"
-  },
-  {
-   "c": "moto",
-   "t": "Novi Kawasaki Versys 900 s radarom",
-   "s": "Dobiva četverocilindrični motor iz Z900 sa 122 KS i, prvi put u obitelji Versys, radarske sustave pomoći sprijeda i straga.",
-   "src": "motorcycles.news",
-   "u": "https://www.motorcycles.news/en/eicma-2026-new-models-world-premieres/",
-   "date": "2026-10-13T12:00+00:00",
-   "hr": true,
-   "orig_t": "Novi Kawasaki Versys 900 s radarom"
-  },
-  {
-   "c": "moto",
-   "t": "BMW F 450 RR i Ducati Panigale V4 za 2027.",
-   "s": "BMW je zaokružio obitelj 450 supersportašem od 48 KS (A2), a Ducati je istog dana predstavio Panigale V4 za 2027.",
-   "src": "motorcycles.news",
-   "u": "https://www.motorcycles.news/en/eicma-2026-new-models-world-premieres/",
-   "date": "2026-10-15T12:00+00:00",
-   "hr": true,
-   "orig_t": "BMW F 450 RR i Ducati Panigale V4 za 2027."
-  },
-  {
-   "c": "moto",
-   "t": "Triumph najavio Street Triple 798 i Bonneville T40",
-   "s": "Novi Street Triple koristi trocilindraš razvijen uz Moto2 motor za 2027. Bonneville T40 donosi ime Bonneville u klasu 400 ccm s 32 KS.",
-   "src": "motorcycles.news",
-   "u": "https://www.motorcycles.news/en/eicma-2026-new-models-world-premieres/",
-   "date": "2026-10-06T12:00+00:00",
-   "hr": true,
-   "orig_t": "Triumph najavio Street Triple 798 i Bonneville T40"
+   "t": "Winners and losers from MotoGP’s cancelled Australian GP weekend",
+   "s": "The Australian Grand Prix was cancelled after poor visibility prevented the medical helicopter from operating between Phillip Island and mainland Melbourne. But while the grand prix itself was washed out, Saturday’s sprint still counted for points and had a…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/winner-and-losers-from-motogps-cancelled-australian-gp-weekend/10868231/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
+   "date": "2026-10-25T13:35+00:00",
+   "orig_t": "Winners and losers from MotoGP’s cancelled Australian GP weekend"
   },
   {
    "c": "reli",
-   "t": "Elfyn Evans napokon svjetski prvak",
-   "s": "Nakon pet drugih mjesta u šest godina Evans i suvozač Scott Martin osvojili su naslov na Sardiniji, koja je postala finale sezone nakon otkazivanja Saudijske Arabije.",
-   "src": "Toyota UK Magazine",
-   "u": "https://mag.toyota.co.uk/wrc-2026-result/",
-   "date": "2026-10-01T12:00+00:00",
-   "hr": true,
-   "orig_t": "Elfyn Evans napokon svjetski prvak"
+   "t": "Josh McErlean to test 2027-spec M-Sport WRC car at ERC finale",
+   "s": "M-Sport is continuing the development of its 2027 World Rally Championship challenger at this weekend’s European Rally Championship finale in Portugal. The British squad will field an example of its newly developed Ford Fiesta Rally2 kit car at the ERC Rally…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/wrc/news/josh-mcerlean-to-test-2027-spec-m-sport-wrc-car-at-erc-finale/10867386/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-WRC&utm_term=News&utm_content=www",
+   "date": "2026-10-23T12:41+00:00",
+   "orig_t": "Josh McErlean to test 2027-spec M-Sport WRC car at ERC finale"
   },
   {
    "c": "reli",
-   "t": "Croatia Rally ponovno u WRC kalendaru",
-   "s": "Hrvatski reli WRC-a vozi se od 8. do 11. travnja 2027.",
-   "src": "WRC.com",
-   "u": "https://www.wrc.com/en/events/wrc-rally-sweden-2026/wrc-rally-sweden-2026-results",
-   "date": "2026-10-01T12:00+00:00",
-   "hr": true,
-   "orig_t": "Croatia Rally ponovno u WRC kalendaru"
+   "t": "Jon Armstrong announces WRC co-driver split for 2027",
+   "s": "World Rally Championship rookie Jon Armstrong will compete with a different co-driver in 2027 after announcing plans to split with Shane Byrne after two seasons. The M-Sport-Ford driver announced on social media that the pair had agreed to part ways following…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/wrc/news/jon-armstrong-announces-wrc-co-driver-split-for-2027/10866937/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-WRC&utm_term=News&utm_content=www",
+   "date": "2026-10-22T11:00+00:00",
+   "orig_t": "Jon Armstrong announces WRC co-driver split for 2027"
+  },
+  {
+   "c": "reli",
+   "t": "WRC star Thierry Neuville makes successful historic circuit racing debut",
+   "s": "World Rally Championship driver Thierry Neuville took victory on his historic circuit racing debut at the Imola Classic. The 2024 WRC champion swapped rally machinery for a Ford Escort RS1600 and his own BMW M3 E30, competing in the Heritage Touring Car Cup…",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/wrc/news/wrc-star-thierry-neuville-makes-successful-historic-circuit-racing-debut/10866477/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-WRC&utm_term=News&utm_content=www",
+   "date": "2026-10-20T12:30+00:00",
+   "orig_t": "WRC star Thierry Neuville makes successful historic circuit racing debut"
   }
  ],
  "schedule": [
   {
    "date": "2026-11-01",
-   "title": "F1 – VN Meksika",
-   "note": "Mexico City"
+   "title": "F1 – Mexico City GP",
+   "note": "Mexico City, Mexico"
   },
   {
    "date": "2026-11-01",
@@ -195,8 +375,8 @@
   },
   {
    "date": "2026-11-08",
-   "title": "F1 – VN Brazila",
-   "note": "São Paulo"
+   "title": "F1 – Brazilian GP",
+   "note": "São Paulo, Brazil"
   },
   {
    "date": "2026-11-08",
@@ -204,9 +384,14 @@
    "note": "Lusail"
   },
   {
-   "date": "2027-04-08",
-   "title": "WRC – Croatia Rally",
-   "note": "8. – 11. travnja"
+   "date": "2026-11-22",
+   "title": "F1 – Las Vegas GP",
+   "note": "Las Vegas, USA"
+  },
+  {
+   "date": "2026-11-29",
+   "title": "F1 – Qatar GP",
+   "note": "Lusail, Qatar"
   }
  ]
 }
