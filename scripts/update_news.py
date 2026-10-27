@@ -149,8 +149,14 @@ def translate(items, old_by_link):
     todo = []
     for it in items:
         old = old_by_link.get(it["u"])
-        if old and old.get("hr") and old.get("orig_t") == it["orig_t"] and old.get("body"):
-            it["t"], it["s"], it["body"], it["hr"] = old["t"], old["s"], old["body"], True
+        if old and old.get("hr") and old.get("orig_t") == it["orig_t"] and (old.get("body") or old.get("nb")):
+            it["t"], it["s"], it["hr"] = old["t"], old["s"], True
+            if old.get("body"):
+                it["body"] = old["body"]
+            else:
+                it["nb"] = True
+            if old.get("img_q"):
+                it["img_q"] = old["img_q"]
         else:
             # Zadrži stari prijevod sažetka, ali pokušaj nadograditi ga člankom ako ga nema.
             if old and old.get("hr") and old.get("orig_t") == it["orig_t"]:
@@ -181,7 +187,9 @@ def translate(items, old_by_link):
             "nemoj umjetno produžavati tekst. Parafraziraj, ne prevodi rečenicu po rečenicu. "
             "Sačuvaj točne nazive vozača, timova, modela, tvrtki, jedinice i brojke. "
             "Ne izmišljaj citate. Bez senzacionalizma. Vrati SAMO JSON listu objekata "
-            "{\"id\":0,\"t\":\"...\",\"s\":\"...\",\"body\":\"...\"}. "
+            "{\"id\":0,\"t\":\"...\",\"s\":\"...\",\"body\":\"...\",\"q\":\"...\"}. "
+            "Polje q je kratak ENGLESKI upit za pretragu ilustrativne fotografije (2–4 riječi, npr. ime vozača, tima, "
+            "modela automobila ili motocikla, ili općeniti pojam poput 'rally car forest'). "
             "Ne uključuj URL-ove ni bibliografiju u body; izvorna poveznica prikazuje se zasebno.\n\n"
             + json.dumps(payload, ensure_ascii=False)
         )
@@ -206,6 +214,7 @@ def translate(items, old_by_link):
                     continue
                 it = batch[idx]
                 title = clean(row.get("t", ""), 180)
+                it["img_q"] = clean(row.get("q", ""), 60)
                 summary = clean(row.get("s", ""), 400)
                 body = (row.get("body") or "").strip()
                 wc = word_count(body)
@@ -216,6 +225,7 @@ def translate(items, old_by_link):
                     it["body_words"] = wc
                 else:
                     it.pop("body", None)
+                    it["nb"] = True
                     it.pop("body_words", None)
                     print(f"  ! {it['src']}: nema dovoljno provjerljivih podataka za članak 150–300 riječi (dobiveno {wc}); prikazat će se samo sažetak.")
         except Exception as e:
