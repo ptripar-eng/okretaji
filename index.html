@@ -1,3 +1,4 @@
+index.html
 <!DOCTYPE html>
 <html lang="hr">
 <head>
@@ -62,7 +63,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .nav::-webkit-scrollbar{display:none}
 .nav a{white-space:nowrap;text-decoration:none;font-weight:600;font-size:.95rem;padding:6px 12px;border-radius:999px;color:var(--muted)}
 .nav a:hover,.nav a[aria-current="true"]{color:var(--ink);background:var(--card)}
-.upd{font-size:.82rem;color:var(--muted);white-space:nowrap}
+.upd{font-size:.78rem;color:#6F8C9E;margin-top:14px}
 
 /* ---------- masthead ---------- */
 .mast{position:relative;overflow:hidden;padding:26px 0 8px}
@@ -182,9 +183,39 @@ section{padding:70px 0 0}
 .card details summary{cursor:pointer;font-weight:700;font-size:.9rem;color:var(--orange)}
 .card details div{margin-top:8px;font-size:.95rem;white-space:pre-line}
 .card .src{margin-top:auto;padding-top:6px}
+.subh{font:800 1.6rem/1 "Big Shoulders Display",Impact,sans-serif;margin:0 0 14px}
+.dgrid{margin-bottom:34px}
 .empty{background:var(--card);padding:28px;border-radius:10px;color:var(--muted)}
 .more{display:flex;justify-content:center;margin-top:26px}
 .more button{font:700 1rem "Barlow",sans-serif;background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:11px 22px;cursor:pointer}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.stat{background:var(--card);border-radius:10px;padding:24px 26px;box-shadow:var(--shadow)}
+.stat.wide{grid-column:1/-1}
+.stat .eyebrow{margin:0;font-weight:700;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--orange)}
+.stat h3{margin:6px 0 16px;font:900 2rem/1 "Big Shoulders Display",Impact,sans-serif}
+.sbars{display:grid;gap:9px}
+.sbar{display:grid;grid-template-columns:150px 1fr 80px;align-items:center;gap:12px}
+.sbar .l{font-weight:600}
+.sbar .t{height:22px;background:var(--bg);border-radius:4px;overflow:hidden}
+.sbar .f{height:100%;width:0;background:var(--powder);border-radius:4px;transition:width 1.2s cubic-bezier(.3,.7,.2,1)}
+.sbar.hl .f{background:var(--orange)}
+.sbar.hl .l,.sbar.hl .v{color:var(--orange)}
+.sbar .v{white-space:nowrap;text-align:right;font:800 1.35rem/1 "Big Shoulders Display",Impact,sans-serif}
+.stack .barline{display:flex;height:34px;border-radius:6px;overflow:hidden}
+.stack .seg{height:100%;width:0;transition:width 1.2s cubic-bezier(.3,.7,.2,1)}
+.stack .leg{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 14px;font-size:.92rem}
+.stack .leg li{display:flex;align-items:center;gap:8px}
+.stack .leg i{width:12px;height:12px;border-radius:3px;flex:none}
+.stack .leg b{margin-left:auto;font:800 1.15rem/1 "Big Shoulders Display",Impact,sans-serif}
+.big3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.big3 div{border-top:3px solid var(--orange);padding-top:8px}
+.big3 b{display:block;font:900 clamp(2rem,4vw,2.8rem)/1 "Big Shoulders Display",Impact,sans-serif}
+.big3 span{font-size:.86rem;color:var(--muted);line-height:1.3;display:block;margin-top:4px}
+.snote{margin:16px 0 0;font-size:.95rem}
+.ssrc{margin:10px 0 0;font-size:.8rem;color:var(--muted)}
+.ssrc a{color:inherit}
 
 /* ---------- explainers, people, routes ---------- */
 .explain-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
@@ -240,10 +271,10 @@ footer p{margin:0 0 8px;max-width:80ch}
   .hero{grid-template-columns:1fr}
   .side{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
   .rgrid{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr}
   .route{grid-template-columns:1fr}
 }
 @media (max-width:620px){
-  .bar .upd{display:none}
   .lead{min-height:420px}
   .lead .txt{padding:22px 20px 20px}
   .mini-card{grid-template-columns:110px 1fr}
@@ -254,6 +285,8 @@ footer p{margin:0 0 8px;max-width:80ch}
   .shifter{right:10px;transform:scale(.8);transform-origin:bottom right}
   .person .ini{font-size:6rem}
   .brow{grid-template-columns:20px 44px 1fr 46px;gap:8px}
+  .sbar{grid-template-columns:96px 1fr 62px;gap:8px}
+  .sbar .l{font-size:.88rem}
 }
 </style>
 </head>
@@ -262,9 +295,8 @@ footer p{margin:0 0 8px;max-width:80ch}
   <div class="wrap">
     <a class="mini" href="#vrh" aria-label="Okretaji – na vrh"><svg viewBox="0 0 100 70" aria-hidden="true"><path d="M14 58 A40 40 0 0 1 75 20" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/><path d="M75 20 A40 40 0 0 1 88 58" fill="none" stroke="var(--orange)" stroke-width="11" stroke-linecap="round"/></svg>Okretaji</a>
     <nav class="nav" aria-label="Rubrike">
-      <a href="#novosti">Novosti</a><a href="#utrka">Sljedeća utrka</a><a href="#vozaci">Iza kacige</a><a href="#rute">Motorute</a><a href="#tehnika-energija">Tehnika i energija</a>
+      <a href="#novosti">Novosti</a><a href="#utrka">Sljedeća utrka</a><a href="#brojke">U brojkama</a><a href="#vozaci">Iza kacige</a><a href="#rute">Motorute</a>
     </nav>
-    <span class="upd" id="updated"></span>
   </div>
 </header>
 
@@ -292,7 +324,7 @@ footer p{margin:0 0 8px;max-width:80ch}
 
   <section class="race" id="utrka" aria-labelledby="h-utrka" hidden>
     <div class="wrap">
-      <div class="sh"><span class="gear" aria-hidden="true">2</span><h2 id="h-utrka">Sljedeća utrka</h2><p id="raceSub"></p></div>
+      <div class="sh"><span class="gear" aria-hidden="true">2</span><h2 id="h-utrka">Sljedeća utrka</h2><p>Formula 1 – staza, brojke i raspored vikenda.</p></div>
       <div class="rgrid">
         <div class="rcard">
           <div class="rmeta" id="raceRound"></div>
@@ -316,26 +348,46 @@ footer p{margin:0 0 8px;max-width:80ch}
   </section>
 
   <div class="wrap">
-    <section id="sve-vijesti" aria-labelledby="h-novosti" style="padding-top:60px">
-      <div class="sh"><span class="gear" aria-hidden="true">1</span><h2 id="h-novosti">Sve vijesti</h2><p>Automatski se osvježava svaka tri sata.</p></div>
-      <div class="chips" id="newsChips" role="group" aria-label="Filtriraj novosti"></div>
-      <div class="grid" id="newsList"></div>
-      <div class="more" id="moreWrap" hidden><button type="button" id="moreBtn">Prikaži još</button></div>
-    </section>
-
-    <section id="vozaci" aria-labelledby="h-vozaci">
-      <div class="sh"><span class="gear" aria-hidden="true">3</span><h2 id="h-vozaci">Iza kacige</h2><p>Što voze kad nisu na stazi i čime se bave u slobodno vrijeme.</p></div>
-      <div class="people" id="peopleList"></div>
-    </section>
-
-    <section id="rute" aria-labelledby="h-rute">
-      <div class="sh"><span class="gear" aria-hidden="true">4</span><h2 id="h-rute">Motorute</h2><p>Od istarskih brežuljaka do najviših alpskih prijevoja.</p></div>
-      <div class="chips" id="routeChips" role="group" aria-label="Filtriraj rute"></div>
-      <div class="routes" id="routeList"></div>
-    </section>
-
-    <section id="tehnika-energija" aria-labelledby="h-te">
-      <div class="sh"><span class="gear" aria-hidden="true">5</span><h2 id="h-te">Tehnika i energija</h2><p>Što se krije iza tehnologije – bez zelenog marketinga i bez senzacionalizma.</p></div>
+    <section id="brojke" aria-labelledby="h-brojke">
+      <div class="sh"><span class="gear" aria-hidden="true">3</span><h2 id="h-brojke">U brojkama</h2><p>Promet, emisije i električna vozila – činjenice bez navijanja.</p></div>
+      <div class="stats">
+        <article class="stat wide">
+          <p class="eyebrow">Emisije stakleničkih plinova, 2024.</p>
+          <h3>Tko zagađuje svijet?</h3>
+          <div class="sbars" data-bars='[["Kina",29.2],["SAD",11.1],["Indija",8.2],["Europska unija",5.9],["Ostatak svijeta",45.6]]' data-hl="Europska unija" data-unit="%"></div>
+          <p class="snote">Svijet je 2024. ispustio rekordnih 53,2 milijarde tona CO₂e (+1,3 %). EU je jedno od rijetkih velikih gospodarstava koje je smanjilo emisije (−1,8 %) i sad je 35 % ispod razine iz 1990.</p>
+          <p class="ssrc">Izvor: <a href="https://edgar.jrc.ec.europa.eu/report_2025" target="_blank" rel="noopener">EDGAR / JRC, 2025.</a></p>
+        </article>
+        <article class="stat">
+          <p class="eyebrow">Novi automobili u EU, 2025.</p>
+          <h3>Što Europljani kupuju?</h3>
+          <div class="stack" data-stack='[["Hibridi",34.5,"var(--blue)"],["Benzin",26.6,"var(--muted)"],["Električni",17.4,"var(--green)"],["Plug-in hibridi",9.4,"var(--powder)"],["Dizel",8.9,"var(--ink)"],["Ostalo",3.2,"var(--line)"]]'></div>
+          <p class="snote">Benzin i dizel zajedno pali su na 35,5 % tržišta, s 45,2 % godinu ranije.</p>
+          <p class="ssrc">Izvor: <a href="https://www.acea.auto/pc-registrations/new-car-registrations-1-8-in-2025-battery-electric-17-4-market-share/" target="_blank" rel="noopener">ACEA, 2026.</a></p>
+        </article>
+        <article class="stat">
+          <p class="eyebrow">Udio električnih među novim autima, 2025.</p>
+          <h3>Europa u dvije brzine</h3>
+          <div class="big3">
+            <div><b>96 %</b><span>Norveška</span></div>
+            <div><b>17,4 %</b><span>prosjek EU</span></div>
+            <div><b>6 %</b><span>Italija</span></div>
+          </div>
+          <p class="ssrc">Izvor: ACEA, prema <a href="https://www.best-selling-cars.com/europe/2025-full-year-europe-bev-electric-car-sales-per-european-country/" target="_blank" rel="noopener">best-selling-cars.com</a></p>
+        </article>
+        <article class="stat">
+          <p class="eyebrow">Promet i klima u EU, 2023.</p>
+          <h3>Koliko zagađuje promet?</h3>
+          <div class="big3">
+            <div><b>31 %</b><span>svih emisija EU dolazi iz prometa</span></div>
+            <div><b>73 %</b><span>prometnih emisija nastaje na cestama</span></div>
+            <div><b>52 %</b><span>prometnih emisija čine automobili i kombiji</span></div>
+          </div>
+          <p class="snote">Za razliku od industrije i energetike, emisije prometa danas su veće nego 1990.</p>
+          <p class="ssrc">Izvor: <a href="https://www.eea.europa.eu/en/analysis/publications/sustainability-of-europes-mobility-systems-2025/climate" target="_blank" rel="noopener">Europska agencija za okoliš, 2025.</a></p>
+        </article>
+      </div>
+      <h3 class="subh" style="margin-top:34px">Tehnika i energija – vodiči</h3>
       <div class="explain-grid">
       <article class="explain" style="--pc:var(--blue)">
         <p class="eyebrow">Tehnologija</p><h3>Električni ili benzinski pogon?</h3>
@@ -358,10 +410,29 @@ footer p{margin:0 0 8px;max-width:80ch}
         <a href="https://ourworldindata.org/energy" target="_blank" rel="noopener">Our World in Data: energija</a>
       </article>
     </div>
-    <p class="editorial-note">Ove su kartice uvodni vodiči, a ne tvrdnja da je svaka tehnologija jednako dobra ili loša. Buduće vijesti u rubrici moraju povezivati izvore i razlikovati izmjerene podatke od procjena.</p>
-  
-      <p class="editorial-note">Ove su kartice uvodni vodiči, a ne tvrdnja da je svaka tehnologija jednako dobra ili loša. Buduće vijesti u rubrici moraju povezivati izvore i razlikovati izmjerene podatke od procjena.</p>
+    <p class="editorial-note">Kratki vodiči za snalaženje u temi. Svaka tvrdnja ima izvor, a izmjerene podatke odvajamo od procjena i prognoza.</p>
     </section>
+
+    <section id="sve-vijesti" aria-labelledby="h-novosti" style="padding-top:60px">
+      <div class="sh"><span class="gear" aria-hidden="true">1</span><h2 id="h-novosti">Sve vijesti</h2><p>Izbor najvažnijeg iz auto-moto svijeta i motosporta.</p></div>
+      <div class="chips" id="newsChips" role="group" aria-label="Filtriraj novosti"></div>
+      <div class="grid" id="newsList"></div>
+      <div class="more" id="moreWrap" hidden><button type="button" id="moreBtn">Prikaži još</button></div>
+    </section>
+
+    <section id="vozaci" aria-labelledby="h-vozaci">
+      <div class="sh"><span class="gear" aria-hidden="true">4</span><h2 id="h-vozaci">Iza kacige</h2><p>Što voze kad nisu na stazi, čime se bave i što sami objavljuju.</p></div>
+      <div id="driverNewsWrap" hidden><h3 class="subh">Najnovije iz života vozača</h3><div class="grid dgrid" id="driverNews"></div></div>
+      <div class="people" id="peopleList"></div>
+    </section>
+
+    <section id="rute" aria-labelledby="h-rute">
+      <div class="sh"><span class="gear" aria-hidden="true">5</span><h2 id="h-rute">Motorute</h2><p>Od istarskih brežuljaka do najviših alpskih prijevoja.</p></div>
+      <div class="chips" id="routeChips" role="group" aria-label="Filtriraj rute"></div>
+      <div class="routes" id="routeList"></div>
+    </section>
+
+
   </div>
 </main>
 
@@ -370,6 +441,7 @@ footer p{margin:0 0 8px;max-width:80ch}
     <p>Vijesti se automatski prikupljaju iz RSS izvora navedenih uz svaku vijest; sažeci su orijentacija, a cijeli kontekst je u izvornom članku.</p>
     <p>Ilustrativne fotografije su slike pod licencama Creative Commons pronađene preko Openversea, uz navedenog autora i licencu. Ne prikazuju nužno točno događaj iz vijesti.</p>
     <p>Kilometraže ruta su približne. Prije alpskih prijevoja provjeri je li cesta otvorena – većina se zatvara od studenog do svibnja.</p>
+    <p class="upd" id="updated"></p>
     <nav class="footerlinks" aria-label="Informacije o portalu"><a href="o-nama.html">O nama</a><a href="kontakt.html">Kontakt</a><a href="privatnost.html">Privatnost</a></nav>
   </div>
 </footer>
@@ -380,9 +452,9 @@ footer p{margin:0 0 8px;max-width:80ch}
     <span class="knob" id="knob"></span>
     <button type="button" data-t="novosti" data-n="1: Novosti" style="left:22px;top:14px" aria-label="Novosti">1</button>
     <button type="button" data-t="utrka" data-n="2: Sljedeća utrka" style="left:22px;top:82px" aria-label="Sljedeća utrka">2</button>
-    <button type="button" data-t="vozaci" data-n="3: Iza kacige" style="left:66px;top:14px" aria-label="Iza kacige">3</button>
-    <button type="button" data-t="rute" data-n="4: Motorute" style="left:66px;top:82px" aria-label="Motorute">4</button>
-    <button type="button" data-t="tehnika-energija" data-n="5: Tehnika i energija" style="left:110px;top:14px" aria-label="Tehnika i energija">5</button>
+    <button type="button" data-t="brojke" data-n="3: U brojkama" style="left:66px;top:14px" aria-label="U brojkama">3</button>
+    <button type="button" data-t="vozaci" data-n="4: Iza kacige" style="left:66px;top:82px" aria-label="Iza kacige">4</button>
+    <button type="button" data-t="rute" data-n="5: Motorute" style="left:110px;top:14px" aria-label="Motorute">5</button>
     <button type="button" data-t="vrh" data-n="R: na vrh" style="left:110px;top:82px" aria-label="Na vrh stranice">R</button>
   </div>
   <div class="gearname" id="gearname">N: start</div>
@@ -396,7 +468,8 @@ const CATS = {
   moto:{name:"Motocikli",color:"var(--yellow)",short:"Moto"},
   reli:{name:"Reli",color:"var(--green)",short:"Reli"},
   tech:{name:"Tehnologija",color:"var(--blue)",short:"Tech"},
-  energy:{name:"Energija",color:"var(--green)",short:"Energija"}
+  energy:{name:"Energija",color:"var(--green)",short:"Energija"},
+  kaciga:{name:"Iza kacige",color:"var(--yellow)",short:"Iza kacige"}
 };
 const CAT_FALLBACK={name:"Vijesti",color:"var(--orange)",short:"Vijesti"};
 const REGIONS = {istra:"Istra i Kvarner", hr:"Ostatak Hrvatske", slo:"Slovenija", ita:"Italija"};
@@ -474,7 +547,7 @@ const PEOPLE = [
 ];
 
 
-let NEWS=[], newsFilter="all", routeFilter="all", shown=12;
+let NEWS=[], DRIVERS=[], newsFilter="all", routeFilter="all", shown=6;
 const $=id=>document.getElementById(id);
 function fmt(iso){const d=new Date(iso);return isNaN(d)?"":d.getDate()+". "+(d.getMonth()+1)+".";}
 function el(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;}
@@ -537,8 +610,8 @@ function renderNews(){
   }
   $("moreWrap").hidden=items.length<=shown;
 }
-$("newsChips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;newsFilter=b.dataset.v;shown=12;renderNewsChips();renderNews();});
-$("moreBtn").addEventListener("click",()=>{shown+=12;renderNews();});
+$("newsChips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;newsFilter=b.dataset.v;shown=6;renderNewsChips();renderNews();});
+$("moreBtn").addEventListener("click",()=>{shown+=6;renderNews();});
 
 /* ---------- race ---------- */
 const SESS={FirstPractice:"1. trening",SecondPractice:"2. trening",ThirdPractice:"3. trening",SprintQualifying:"Sprint kvalifikacije",SprintShootout:"Sprint kvalifikacije",Sprint:"Sprint",Qualifying:"Kvalifikacije"};
@@ -546,7 +619,6 @@ function when(d,t){return new Date(d+"T"+(t||"12:00:00Z"));}
 function renderRace(r,schedule){
   if(!r||!r.name) return;
   $("utrka").hidden=false;
-  $("raceSub").textContent="Statistika i obris staze – osvježava se automatski.";
   $("raceRound").textContent=`Formula 1 · ${r.round}. od ${r.rounds} utrka sezone ${r.season}`;
   $("raceName").textContent=r.name.replace("Grand Prix","GP");
   const start=when(r.date,r.time);
@@ -607,6 +679,18 @@ function renderSchedule(list){
 }
 
 /* ---------- people & routes ---------- */
+function renderDriverNews(){
+  const box=$("driverNews"); box.innerHTML="";
+  const items=DRIVERS.slice(0,4); $("driverNewsWrap").hidden=!items.length;
+  for(const n of items){
+    const card=el("article","card");
+    card.append(photo(n,false));
+    const b=el("div","body"); const h=el("h3"); const a=el("a",null,n.t); a.href=n.u; a.target="_blank"; a.rel="noopener"; h.append(a);
+    b.append(el("div","dt",fmt(n.date)),h,el("p",null,n.s),srcLine(n));
+    if(n.img){const cr=el("div","credit");cr.append("Foto: ");const ca=el("a",null,n.img.by);ca.href=n.img.link||n.img.src;ca.target="_blank";ca.rel="noopener";cr.append(ca,", "+n.img.lic+" (ilustracija)");b.append(cr);}
+    card.append(b); box.append(card);
+  }
+}
 function renderPeople(){const list=$("peopleList");list.innerHTML="";for(const p of PEOPLE){const e=el("article","person");e.style.setProperty("--pc",p.c);
   e.innerHTML=`<span class="ini" aria-hidden="true"></span><h3></h3><p class="team"></p><dl><div><dt>Što vozi privatno</dt><dd class="a"></dd></div><div><dt>Hobiji</dt><dd class="b"></dd></div><div><dt>Zanimljivost</dt><dd class="f"></dd></div></dl><span class="src">Izvor: <a target="_blank" rel="noopener"></a></span>`;
   e.querySelector(".ini").textContent=p.n.split(" ").map(w=>w[0]).join("");e.querySelector("h3").textContent=p.n;e.querySelector(".team").textContent=p.team;
@@ -617,14 +701,35 @@ function renderRoutes(){const list=$("routeList");list.innerHTML="";for(const r 
   e.querySelector("h3").textContent=r.n;const ol=e.querySelector(".line");for(const p of r.pts) ol.append(el("li",null,p));e.querySelector(".desc").textContent=r.desc;if(r.warn)e.querySelector(".warn").textContent=r.warn;e.querySelector(".go").href=gm(r.pts);list.append(e);}}
 $("routeChips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;routeFilter=b.dataset.v;renderRouteChips();renderRoutes();});
 
+/* ---------- stats ---------- */
+function hr(n){return String(n).replace(".",",");}
+function renderStats(){
+  document.querySelectorAll(".sbars").forEach(box=>{
+    const data=JSON.parse(box.dataset.bars), max=Math.max(...data.map(d=>d[1])), hl=box.dataset.hl, u=box.dataset.unit||"";
+    for(const [l,v] of data){const r=el("div","sbar"+(l===hl?" hl":""));const t=el("div","t"),f=el("div","f");f.dataset.w=(v/max*100);t.append(f);r.append(el("span","l",l),t,el("span","v",hr(v)+" "+u));box.append(r);}
+  });
+  document.querySelectorAll(".stack").forEach(box=>{
+    const data=JSON.parse(box.dataset.stack); const line=el("div","barline"); line.setAttribute("role","img");
+    line.setAttribute("aria-label",data.map(d=>d[0]+" "+hr(d[1])+" %").join(", "));
+    const leg=el("ul","leg");
+    for(const [l,v,c] of data){const sg=el("div","seg");sg.style.background=c;sg.dataset.w=v;sg.title=l+": "+hr(v)+" %";line.append(sg);
+      const li=el("li");const i=el("i");i.style.background=c;li.append(i,l,el("b",null,hr(v)+" %"));leg.append(li);}
+    box.append(line,leg);
+  });
+  const grow=root=>root.querySelectorAll("[data-w]").forEach(x=>x.style.width=x.dataset.w+"%");
+  const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){grow(e.target);so.unobserve(e.target);}}),{threshold:.3});
+  document.querySelectorAll(".stat").forEach(x=>so.observe(x));
+}
+renderStats();
+
 /* ---------- load ---------- */
 async function getJSON(f){const r=await fetch(f+"?v="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error(r.status);return r.json();}
 async function load(){
   let sched=[];
-  try{const d=await getJSON("news.json");NEWS=d.items||[];sched=d.schedule||[];
-    const u=new Date(d.updated);if(!isNaN(u))$("updated").textContent="Osvježeno "+u.toLocaleString("hr-HR",{day:"numeric",month:"numeric",hour:"2-digit",minute:"2-digit"});
+  try{const d=await getJSON("news.json");const all=d.items||[];DRIVERS=all.filter(n=>n.c==="kaciga");NEWS=all.filter(n=>n.c!=="kaciga");sched=d.schedule||[];
+    const u=new Date(d.updated);if(!isNaN(u))$("updated").textContent="Vijesti osvježene "+u.toLocaleString("hr-HR",{day:"numeric",month:"numeric",hour:"2-digit",minute:"2-digit"});
   }catch(e){}
-  renderHero();renderNewsChips();renderNews();
+  renderHero();renderNewsChips();renderNews();renderDriverNews();
   try{renderRace(await getJSON("race.json"),sched);}catch(e){}
 }
 renderPeople();renderRouteChips();renderRoutes();load();
@@ -635,8 +740,490 @@ function setGear(id){const b=gears.find(g=>g.dataset.t===id);if(!b)return;knob.s
   document.querySelectorAll(".nav a").forEach(a=>a.setAttribute("aria-current",String(a.getAttribute("href")==="#"+id)));}
 gears.forEach(b=>b.addEventListener("click",()=>{const t=$(b.dataset.t);setGear(b.dataset.t);if(t&&!t.hidden)t.scrollIntoView();}));
 const io=new IntersectionObserver(es=>{for(const e of es) if(e.isIntersecting) setGear(e.target.id);},{rootMargin:"-45% 0px -50% 0px"});
-["vrh","novosti","utrka","vozaci","rute","tehnika-energija"].forEach(id=>{const x=$(id);if(x)io.observe(x);});
+["vrh","novosti","utrka","brojke","vozaci","rute"].forEach(id=>{const x=$(id);if(x)io.observe(x);});
 const NAVMAP={"sve-vijesti":"novosti"};
 </script>
 </body>
 </html>
+
+feeds.json
+{
+  "feeds": [
+    {
+      "url": "https://www.motorsport.com/rss/f1/news/",
+      "cat": "f1",
+      "source": "Motorsport.com"
+    },
+    {
+      "url": "https://www.autosport.com/rss/f1/news/",
+      "cat": "f1",
+      "source": "Autosport"
+    },
+    {
+      "url": "https://www.motorsport.com/rss/motogp/news/",
+      "cat": "motogp",
+      "source": "Motorsport.com"
+    },
+    {
+      "url": "https://www.motorsport.com/rss/wrc/news/",
+      "cat": "reli",
+      "source": "Motorsport.com"
+    },
+    {
+      "url": "https://www.motor1.com/rss/news/all/",
+      "cat": "auto",
+      "source": "Motor1"
+    },
+    {
+      "url": "https://www.rideapart.com/rss/news/all/",
+      "cat": "moto",
+      "source": "RideApart"
+    },
+    {
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "cat": "tech",
+      "source": "Ars Technica"
+    },
+    {
+      "url": "https://electrek.co/feed/",
+      "cat": "energy",
+      "source": "Electrek"
+    },
+    {
+      "url": "https://www.carbonbrief.org/feed/",
+      "cat": "energy",
+      "source": "Carbon Brief"
+    },
+    {
+      "url": "https://cleantechnica.com/feed/",
+      "cat": "energy",
+      "source": "CleanTechnica"
+    },
+    {
+      "url": "https://news.google.com/rss/search?q=%28Verstappen%20OR%20Hamilton%20OR%20Leclerc%20OR%20Norris%20OR%20Alonso%20OR%20Antonelli%20OR%20Piastri%20OR%20%22Marc%20Marquez%22%20OR%20%22Valentino%20Rossi%22%29%20%28hobby%20OR%20golf%20OR%20music%20OR%20Instagram%20OR%20%22car%20collection%22%20OR%20charity%20OR%20%22off%20track%22%20OR%20fashion%20OR%20%22social%20media%22%29&hl=en-US&gl=US&ceid=US:en",
+      "cat": "kaciga",
+      "source": "Google News",
+      "use_item_source": true
+    }
+  ],
+  "max_age_days": 7,
+  "max_per_category": 4,
+  "events": [
+    {
+      "date": "2026-11-01",
+      "title": "MotoGP – VN Malezije",
+      "note": "Sepang"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "MotoGP – VN Katara",
+      "note": "Lusail"
+    },
+    {
+      "date": "2027-04-08",
+      "title": "WRC – Croatia Rally",
+      "note": "8. – 11. travnja"
+    }
+  ]
+}
+scripts/update_news.py
+"""Okretaji – automatsko osvježavanje vijesti.
+
+Čita RSS izvore, dohvaća tekst članka kad je dostupan i uz Gemini izrađuje
+hrvatski naslov, sažetak i originalno formuliranu vijest od 150–300 riječi.
+Izvorni tekst koristi se samo kao kontekst; na portal se sprema AI-urednički tekst i poveznica na izvor.
+"""
+import html, json, os, re, sys, time, unicodedata
+from datetime import datetime, timedelta, timezone
+
+import feedparser
+import requests
+import trafilatura
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+FEEDS = os.path.join(ROOT, "feeds.json")
+OUT = os.path.join(ROOT, "news.json")
+UA = "Mozilla/5.0 (Okretaji news bot; +https://github.com)"
+NOW = datetime.now(timezone.utc)
+
+
+def clean(text, limit=260):
+    text = html.unescape(re.sub(r"<[^>]+>", " ", text or ""))
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(text) > limit:
+        text = text[:limit].rsplit(" ", 1)[0] + "…"
+    return text
+
+
+def norm(title):
+    # Normalizacija dijakritike pomaže ukloniti duplikate među izvorima.
+    title = unicodedata.normalize("NFKD", title.lower())
+    title = "".join(ch for ch in title if not unicodedata.combining(ch))
+    return re.sub(r"[^a-z0-9]", "", title)[:80]
+
+
+def load_old():
+    try:
+        with open(OUT, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {"items": []}
+
+
+def extract_rss_text(entry):
+    """Uzima najdulji tekst koji RSS već isporučuje; bez dodatnog HTTP poziva."""
+    chunks = []
+    for part in entry.get("content", []) or []:
+        value = clean(part.get("value", ""), 12000)
+        if value:
+            chunks.append(value)
+    summary = clean(entry.get("summary") or entry.get("description"), 12000)
+    if summary:
+        chunks.append(summary)
+    return max(chunks, key=len, default="")[:10000]
+
+
+def extract_page_text(link, current_text=""):
+    """Dohvaća stranicu samo za članke koji se stvarno šalju na AI obradu."""
+    text = current_text or ""
+    if len(text) >= 900:
+        return text[:10000]
+    try:
+        response = requests.get(link, headers={"User-Agent": UA}, timeout=18)
+        response.raise_for_status()
+        extracted = trafilatura.extract(
+            response.text, include_comments=False, include_tables=False,
+            favor_precision=True, deduplicate=True
+        )
+        if extracted and len(extracted) > len(text):
+            text = extracted
+    except Exception as exc:
+        print(f"  ! tekst članka nije dohvaćen ({link}): {exc}", file=sys.stderr)
+    return clean(text, 10000)
+
+
+def word_count(text):
+    return len(re.findall(r"\b[\wÀ-ž]+(?:[’'-][\wÀ-ž]+)*\b", text or ""))
+
+
+def fetch_feed(feed, max_age):
+    items = []
+    try:
+        r = requests.get(feed["url"], headers={"User-Agent": UA}, timeout=20)
+        r.raise_for_status()
+        parsed = feedparser.parse(r.content)
+    except Exception as e:
+        print(f"  ! {feed['url']}: {e}", file=sys.stderr)
+        return items
+    for e in parsed.entries[:20]:
+        t = e.get("published_parsed") or e.get("updated_parsed")
+        when = datetime.fromtimestamp(time.mktime(t), timezone.utc) if t else NOW
+        if NOW - when > timedelta(days=max_age) or when > NOW + timedelta(days=1):
+            continue
+        title = clean(e.get("title"), 200)
+        link = e.get("link")
+        if not title or not link:
+            continue
+        items.append({
+            "c": feed["cat"], "t": title, "s": clean(e.get("summary") or e.get("description")),
+            "src": ((e.get("source") or {}).get("title") if feed.get("use_item_source") else None) or feed["source"], "u": link, "date": when.isoformat(timespec="minutes"),
+            "orig_t": title,
+            "_source_text": extract_rss_text(e),
+        })
+    print(f"  {feed['source']} ({feed['cat']}): {len(items)}")
+    return items
+
+
+def call_gemini(prompt):
+    """Gemini API; koristi se besplatna kvota ako je dostupna za projekt/model."""
+    key = os.environ.get("GEMINI_API_KEY")
+    if not key:
+        raise RuntimeError("GEMINI_API_KEY nije postavljen")
+    model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash-lite")
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+    r = requests.post(
+        url,
+        headers={"x-goog-api-key": key, "content-type": "application/json"},
+        json={
+            "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+            "generationConfig": {"temperature": 0.2, "maxOutputTokens": 6500,
+                             "responseMimeType": "application/json"},
+        },
+        timeout=120,
+    )
+    r.raise_for_status()
+    data = r.json()
+    return "".join(part.get("text", "") for part in data["candidates"][0]["content"]["parts"])
+
+
+def call_claude(prompt):
+    """Plaćena rezervna opcija; radi samo ako je izričito omogućena."""
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    if not key:
+        raise RuntimeError("ANTHROPIC_API_KEY nije postavljen za rezervnu opciju")
+    r = requests.post(
+        "https://api.anthropic.com/v1/messages",
+        headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+        json={"model": os.environ.get("CLAUDE_MODEL", "claude-haiku-4-5"), "max_tokens": 6500,
+              "messages": [{"role": "user", "content": prompt}]},
+        timeout=120,
+    )
+    r.raise_for_status()
+    return "".join(b.get("text", "") for b in r.json()["content"])
+
+
+def translate(items, old_by_link):
+    """Gemini prvo; Claude se može uključiti kao rezervna opcija uz izričitu postavku."""
+    key = os.environ.get("GEMINI_API_KEY")
+    todo = []
+    for it in items:
+        old = old_by_link.get(it["u"])
+        if old and old.get("hr") and old.get("orig_t") == it["orig_t"] and (old.get("body") or old.get("nb")):
+            it["t"], it["s"], it["hr"] = old["t"], old["s"], True
+            if old.get("body"):
+                it["body"] = old["body"]
+            else:
+                it["nb"] = True
+            if old.get("img_q"):
+                it["img_q"] = old["img_q"]
+        else:
+            # Zadrži stari prijevod sažetka, ali pokušaj nadograditi ga člankom ako ga nema.
+            if old and old.get("hr") and old.get("orig_t") == it["orig_t"]:
+                it["t"], it["s"] = old["t"], old["s"]
+            todo.append(it)
+    if not key or not todo:
+        if not key:
+            print("  ! GEMINI_API_KEY nije postavljen; nove vijesti ostaju bez AI prijevoda.")
+        return
+    # Ograničenja čuvaju trošak i sprječavaju da jedan workflow postane predug.
+    if len(todo) > 12:
+        print(f"  ! Za kontrolu troška prevodim 12 od {len(todo)} novih članaka u ovom pokretanju.")
+        todo = todo[:12]
+    # Manji batchovi smanjuju rizik od neispravnog JSON-a kod dugih članaka.
+    for i in range(0, len(todo), 3):
+        batch = todo[i:i + 3]
+        payload = []
+        for n, it in enumerate(batch):
+            source_text = extract_page_text(it["u"], it.get("_source_text") or it.get("s"))
+            payload.append({"id": n, "title": it["orig_t"], "rss_summary": it.get("s", ""), "source_text": source_text})
+        prompt = (
+            "Ti si hrvatski urednik regionalnog auto-moto, tehnologija i energetika portala Okretaji. "
+            "Za svaku stavku napiši: t (precizan, prirodan hrvatski naslov), s (sažetak od 1–2 rečenice, do 45 riječi) "
+            "i body (originalno formulirana kratka vijest od 150 do 300 riječi na hrvatskom jeziku). "
+            "Koristi samo činjenice koje izričito podupire dostavljeni naslov, RSS sažetak i tekst izvora. "
+            "Ne dodaj pozadinske tvrdnje, datume, brojke, citate ili zaključke koji nisu u izvoru. "
+            "Ako izvor nema dovoljno podataka za vjerodostojan tekst od najmanje 150 riječi, vrati body kao prazan niz; "
+            "nemoj umjetno produžavati tekst. Parafraziraj, ne prevodi rečenicu po rečenicu. "
+            "Sačuvaj točne nazive vozača, timova, modela, tvrtki, jedinice i brojke. "
+            "Ne izmišljaj citate. Bez senzacionalizma. Vrati SAMO JSON listu objekata "
+            "{\"id\":0,\"t\":\"...\",\"s\":\"...\",\"body\":\"...\",\"q\":\"...\"}. "
+            "Polje q je kratak ENGLESKI upit za pretragu ilustrativne fotografije (2–4 riječi, npr. ime vozača, tima, "
+            "modela automobila ili motocikla, ili općeniti pojam poput 'rally car forest'). "
+            "Ne uključuj URL-ove ni bibliografiju u body; izvorna poveznica prikazuje se zasebno.\n\n"
+            + json.dumps(payload, ensure_ascii=False)
+        )
+        try:
+            try:
+                text = call_gemini(prompt)
+                provider = "Gemini"
+            except Exception as gemini_error:
+                # Nikada ne pokreći plaćeni Claude fallback bez eksplicitne dozvole.
+                if os.environ.get("ENABLE_CLAUDE_FALLBACK", "false").lower() == "true" and os.environ.get("ANTHROPIC_API_KEY"):
+                    print(f"  ! Gemini nije uspio ({gemini_error}); pokušavam izričito omogućeni Claude fallback.", file=sys.stderr)
+                    text = call_claude(prompt)
+                    provider = "Claude fallback"
+                else:
+                    raise gemini_error
+            text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip()).strip()
+            rows = json.loads(text)
+            print(f"  AI obrada uspješna: {provider}")
+            for row in rows:
+                idx = int(row["id"])
+                if idx < 0 or idx >= len(batch):
+                    continue
+                it = batch[idx]
+                title = clean(row.get("t", ""), 180)
+                it["img_q"] = clean(row.get("q", ""), 60)
+                summary = clean(row.get("s", ""), 400)
+                body = (row.get("body") or "").strip()
+                wc = word_count(body)
+                if title and summary:
+                    it["t"], it["s"], it["hr"] = title, summary, True
+                if 150 <= wc <= 300:
+                    it["body"] = body
+                    it["body_words"] = wc
+                else:
+                    it.pop("body", None)
+                    it["nb"] = True
+                    it.pop("body_words", None)
+                    print(f"  ! {it['src']}: nema dovoljno provjerljivih podataka za članak 150–300 riječi (dobiveno {wc}); prikazat će se samo sažetak.")
+        except Exception as e:
+            print(f"  ! AI obrada nije uspjela: {e}", file=sys.stderr)
+    # Interni tekst izvora ne smije završiti u javnom news.json.
+    for it in items:
+        it.pop("_source_text", None)
+
+
+def f1_schedule():
+    try:
+        r = requests.get("https://api.jolpi.ca/ergast/f1/current/races/?format=json",
+                         headers={"User-Agent": UA}, timeout=20)
+        r.raise_for_status()
+        races = r.json()["MRData"]["RaceTable"]["Races"]
+    except Exception as e:
+        print(f"  ! F1 kalendar: {e}", file=sys.stderr)
+        return []
+    out = []
+    for race in races:
+        loc = race.get("Circuit", {}).get("Location", {})
+        out.append({"date": race["date"], "title": "F1 – " + race["raceName"].replace("Grand Prix", "GP"),
+                    "note": ", ".join(x for x in [loc.get("locality"), loc.get("country")] if x)})
+    return out
+
+
+def main():
+    cfg = json.load(open(FEEDS, encoding="utf-8"))
+    old = load_old()
+    old_by_link = {it["u"]: it for it in old.get("items", [])}
+
+    items, seen = [], set()
+    for feed in cfg["feeds"]:
+        for it in fetch_feed(feed, cfg.get("max_age_days", 10)):
+            k = norm(it["t"])
+            if it["u"] in seen or k in seen:
+                continue
+            seen.update([it["u"], k])
+            items.append(it)
+
+    if not items:
+        print("Nijedan izvor nije vratio vijesti – news.json ostaje nepromijenjen.")
+        return
+
+    items.sort(key=lambda x: x["date"], reverse=True)
+    per_cat, kept = {}, []
+    for it in items:
+        per_cat[it["c"]] = per_cat.get(it["c"], 0) + 1
+        if per_cat[it["c"]] <= cfg.get("max_per_category", 9):
+            kept.append(it)
+
+    # glavna vijest: najnovija iz F1 ili MotoGP-a
+    lead = next((it for it in kept if it["c"] in ("f1", "motogp")), kept[0])
+    kept.remove(lead)
+    kept.insert(0, lead)
+
+    translate(kept, old_by_link)
+    for it in kept:
+        it.pop("_source_text", None)
+
+    today = NOW.date().isoformat()
+    events = [e for e in f1_schedule() + cfg.get("events", []) if e["date"] >= today]
+    events.sort(key=lambda e: e["date"])
+
+    data = {"updated": NOW.isoformat(timespec="minutes"), "items": kept, "schedule": events[:6]}
+    with open(OUT, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=1)
+    print(f"Zapisano {len(kept)} vijesti i {len(events[:6])} događaja.")
+
+
+if __name__ == "__main__":
+    main()
+
+scripts/add_images.py
+"""Dodaje ilustrativne fotografije vijestima u news.json.
+
+Fotografije se traže na Openverseu (openverse.org) – samo slike pod
+Creative Commons licencama, uz autora i licencu koje stranica prikazuje.
+Pronađene slike pamte se u images.json pa se ista vijest ne pretražuje ponovno.
+"""
+import json, os, re, sys, time
+import requests
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+NEWS = os.path.join(ROOT, "news.json")
+CACHE = os.path.join(ROOT, "images.json")
+UA = "Okretaji/1.0 (https://okretaji.com)"
+API = "https://api.openverse.org/v1/images/"
+
+FALLBACK_Q = {
+    "f1": "formula one car", "motogp": "motogp motorcycle racing", "auto": "sports car",
+    "moto": "motorcycle road", "reli": "rally car", "tech": "technology circuit board",
+    "energy": "wind turbines solar",
+    "kaciga": "racing driver portrait",
+}
+
+
+def load(path, default):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return default
+
+
+def search(q, used):
+    params = {"q": q, "page_size": 12, "mature": "false",
+              "license_type": "all-cc", "aspect_ratio": "wide", "size": "large"}
+    r = requests.get(API, params=params, headers={"User-Agent": UA}, timeout=20)
+    r.raise_for_status()
+    for res in r.json().get("results", []):
+        if res.get("id") in used or not res.get("thumbnail"):
+            continue
+        lic = (res.get("license") or "").upper()
+        ver = res.get("license_version") or ""
+        lic = "CC0" if lic == "CC0" else ("Javno vlasništvo" if lic == "PDM" else f"CC {lic} {ver}".strip())
+        return {
+            "id": res["id"],
+            "src": res["thumbnail"],
+            "by": (res.get("creator") or "nepoznat autor")[:60],
+            "lic": lic,
+            "link": res.get("foreign_landing_url") or res.get("url"),
+        }
+    return None
+
+
+def main():
+    data = load(NEWS, None)
+    if not data:
+        print("news.json ne postoji"); return
+    cache = load(CACHE, {})
+    used = {v["id"] for v in cache.values() if v}
+    found = calls = 0
+    for it in data.get("items", []):
+        key = it["u"].split("?")[0]
+        if key in cache:
+            if cache[key]:
+                it["img"] = cache[key]
+            continue
+        if calls >= 25:      # pristojno prema besplatnom API-ju
+            continue
+        queries = [q for q in [it.get("img_q"), FALLBACK_Q.get(it["c"])] if q]
+        img, failed = None, False
+        for q in queries:
+            try:
+                calls += 1
+                img = search(q, used)
+                time.sleep(1.2)
+            except Exception as e:
+                print(f"  ! Openverse ({q}): {e}", file=sys.stderr)
+                failed = True
+                break
+            if img:
+                break
+        if failed:           # greška API-ja: pokušaj ponovno u sljedećem pokretanju
+            continue
+        cache[key] = img
+        if img:
+            used.add(img["id"]); it["img"] = img; found += 1
+    # stari unosi koji više nisu u vijestima brišu se iz predmemorije
+    live = {it["u"].split("?")[0] for it in data.get("items", [])}
+    cache = {k: v for k, v in cache.items() if k in live}
+    with open(CACHE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=1)
+    with open(NEWS, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=1)
+    print(f"Fotografije: {found} novih, {calls} upita.")
+
+
+if __name__ == "__main__":
+    main()
+
