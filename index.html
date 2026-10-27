@@ -575,19 +575,53 @@ function fmt(iso){const d=new Date(iso);return isNaN(d)?"":d.getDate()+". "+(d.g
 function el(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;}
 function cat(n){return CATS[n.c]||CAT_FALLBACK;}
 
+const imageLookupInFlight=new Set();
+function attachPhoto(n,box){
+  if(n.img&&n.img.src)return;
+  if(!n.img_q||imageLookupInFlight.has(n.u))return;
+  imageLookupInFlight.add(n.u);
+  const cacheKey="okretaji_photo_"+n.u;
+  let cached=null;
+  try{cached=JSON.parse(sessionStorage.getItem(cacheKey)||"null");}catch(e){}
+  const apply=(img)=>{
+    if(!img||!img.src)return;
+    n.img=img;
+    const im=new Image();im.loading="lazy";im.decoding="async";im.alt="Ilustrativna fotografija: "+(n.img_q||n.t);
+    im.onerror=()=>{im.remove();box.classList.add("fallback");box.appendChild(el("span","fb",cat(n).short));};
+    im.src=img.src;box.innerHTML="";box.classList.remove("fallback");box.appendChild(im);
+    const credit=el("div","credit");
+    credit.append("Foto: ");
+    const a=el("a",null,img.by||"autor");a.href=img.link||img.src;a.target="_blank";a.rel="noopener noreferrer";credit.append(a,", "+(img.lic||"licenca navedena na izvoru")+" · ilustracija");
+    box.appendChild(credit);
+  };
+  if(cached){apply(cached);return;}
+  fetch("https://api.openverse.org/v1/images/?q="+encodeURIComponent(n.img_q)+"&page_size=5&license_type=commercial",{headers:{Accept:"application/json"}})
+    .then(r=>{if(!r.ok)throw new Error("image search");return r.json();})
+    .then(d=>{
+      const results=(d.results||[]).filter(x=>x.thumbnail&&x.url&&x.license&&x.creator);
+      if(!results.length)return;
+      const x=results[0];
+      const img={src:x.thumbnail,by:x.creator,lic:String(x.license).toUpperCase().replace("CC","CC "),link:x.foreign_landing_url||x.url};
+      try{sessionStorage.setItem(cacheKey,JSON.stringify(img));}catch(e){}
+      apply(img);
+    }).catch(()=>{}).finally(()=>imageLookupInFlight.delete(n.u));
+}
 function photo(n,withCredit){
   const c=cat(n), box=el("div","ph"); box.style.setProperty("--pc",c.color);
   const frag=document.createDocumentFragment(); frag.appendChild(box);
   if(n.img&&n.img.src){
-    const im=new Image(); im.loading="lazy"; im.decoding="async"; im.alt=""; im.src=n.img.src;
+    const im=new Image(); im.loading="lazy"; im.decoding="async"; im.alt="Ilustrativna fotografija: "+(n.img_q||n.t); im.src=n.img.src;
     im.onerror=()=>{im.remove();box.classList.add("fallback");box.appendChild(el("span","fb",c.short));};
     box.appendChild(im);
     if(withCredit){
       const cr=el("div","credit"); cr.append("Foto: ");
-      const a=el("a",null,n.img.by); a.href=n.img.link||n.img.src; a.target="_blank"; a.rel="noopener";
-      cr.append(a, ", "+n.img.lic+" (ilustracija)"); frag.appendChild(cr);
+      const a=el("a",null,n.img.by||"autor"); a.href=n.img.link||n.img.src; a.target="_blank"; a.rel="noopener noreferrer";
+      cr.append(a, ", "+(n.img.lic||"licenca navedena na izvoru")+" (ilustracija)"); frag.appendChild(cr);
     }
-  } else { box.classList.add("fallback"); box.appendChild(el("span","fb",c.short)); }
+  } else {
+    box.classList.add("fallback"); box.appendChild(el("span","fb",c.short));
+    attachPhoto(n,box);
+  }
   return frag;
 }
 function srcLine(n){const p=el("div","src");p.append("Izvor: ");const a=el("a",null,n.src);a.href=n.u;a.target="_blank";a.rel="noopener";p.append(a," · "+fmt(n.date));return p;}
