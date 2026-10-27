@@ -25,6 +25,7 @@ jobs:
       - run: python scripts/update_news.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-flash-lite-latest
       - name: Spremi promjene
         run: |
           git config user.name "okretaji-bot"
