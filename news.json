@@ -1,17 +1,291 @@
 {
- "updated": "2026-10-27T11:52+00:00",
+ "updated": "2026-10-27T18:07+00:00",
  "items": [
   {
-   "c": "motogp",
-   "t": "Jorge Martin uoči VN Malezije očekuje svog fizioterapeuta",
-   "s": "Vozač Aprilije Jorge Martin nada se nastupu na Velikoj nagradi Malezije. Očekuje dolazak svog fizioterapeuta Aitora Tomasa koji je pripremio plan oporavka.",
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813415/ktm-x-bow-gt-xr",
+   "date": "2026-10-27T18:00+00:00",
+   "img_q": "KTM's Lightweight Supercar Is Finally Coming To America",
+   "t": "Lagani sportski automobil marke KTM uskoro stiže na američko tržište",
+   "s": "Novi KTM X-Bow GT-XA omogućuje rezervacije u SAD-u uz najavu odobrenja za cestovnu vožnju. Istovremeno, inačica Factory 600 donosi pojačanje snage na 592 konjske snage.",
+   "body": "Američki kupci sada mogu rezervirati novu varijantu KTM X-Bow GT-XA, dok se ujedno planira njezino službeno odobrenje za kretanje javnim prometnicama. Uz ovu novost za tržište SAD-a, model KTM X-Bow GT-XR dobiva tvorničku nadogradnju oznake Factory 600. Ova specifična dorada podiže ukupnu snagu vozila na impresivnih 592 konjskih snaga, čime se dodatno naglašava iznimne performanse ovog laganog sportskog automobila visoke snage i unikatnog dizajna.",
+   "conclusion": "Poznato je da su rezervacije za američku varijantu otvorene i da Factory 600 donosi 592 konjske snage. Još uvijek nije službeno potvrđeno kada će točno model dobiti puno odobrenje za legalnu vožnju na cestama.",
+   "orig_t": "KTM's Lightweight Supercar Is Finally Coming To America",
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "Electrek",
+   "u": "https://electrek.co/2026/10/27/anker-s5000-5024wh-power-station-exclusive-lectric-xp-lite3-e-bike-more",
+   "date": "2026-10-27T18:00+00:00",
+   "img_q": "Anker launches ‘world’s longest lasting’ 5,024Wh power station with $2,150 exclusive savings, Lectri",
+   "t": "Anker predstavio novu prijenosnu elektranu s velikim uštedama",
+   "s": "Portal Okretaji donosi pregled novih zelenih ponuda koje uključuju Ankerovu prijenosnu elektranu Solix S5000, Lectric električne bicikle te popuste na pametne solarne kamere i punjače za električna vozila.",
+   "body": "Najnovije izdanje zelenih popusta donosi službeno predstavljanje snažne Ankerove prijenosne elektrane Solix S5000 uz ekskluzivne uštede. Pored toga, na tržište stižu i laki sklopivi električni bicikli Lectric XP Lite3 koji dolaze s besplatnom opremom. Kupci mogu ostvariti i značajne popuste na Baseus vanjsku solarnu sigurnosnu kameru opremljenu umjetnom inteligencijom te na Autel punjač razine 2 namijenjen električnim vozilima.",
+   "conclusion": "Poznato je da Ankerova nova elektrana i Lectric bicikli kreću s prodajom uz popuste i dodatne pogodnosti, dok još nije potvrđeno koliko dugo će ove promotivne cijene i ekskluzivne uštede biti dostupne kupcima.",
+   "orig_t": "Anker launches ‘world’s longest lasting’ 5,024Wh power station with $2,150 exclusive savings, Lectric XP Lite3 e-bike launch, more",
+   "hr": true
+  },
+  {
+   "c": "f1",
    "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/motogp/news/martins-incomplete-fracture-leaves-him-hopeful-of-racing-at-sepang/10868805/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
-   "date": "2026-10-27T11:30+00:00",
-   "orig_t": "Jorge Martin hopeful of racing in Malaysia after \"not complete\" fracture diagnosis",
-   "img_q": "Jorge Martin MotoGP",
-   "hr": true,
-   "nb": true
+   "u": "https://www.motorsport.com/f1/news/wolff-admits-its-painful-watching-george-russell-struggle-while-kimi-antonelli-walks-on-water/10868566",
+   "date": "2026-10-27T17:58+00:00",
+   "img_q": "Toto Wolff takes blame for George Russell's US GP struggles",
+   "t": "Toto Wolff preuzima krivicu za probleme Georgea Russella na Velikoj nagradi SAD-a",
+   "s": "Šef Mercedesa Toto Wolff preuzeo je odgovornost za teške trenutke Georgea Russella tijekom nedjeljne utrke u SAD-om, dok je momčadski kolega slavio pobjedu.",
+   "body": "Nakon utrke za Veliku nagradu SAD-a u Mercedesovoj su garaži vladale potpuno suprotne scene. Dok je Andrea Kimi Antonelli slavio dominantnu pobjedu, George Russell proživio je iznimno tešku nedjelju. Njegov nastup bio je ozbiljno naručen već u prvom krugu kada je zaradio čudnu vremensku kaznu, što je rezultiralo velikim mukama na stazi. Šef momčadi Toto Wolff javno je preuzeo krivicu za probleme s kojima se Russell suočavao tijekom cijelog vikenda.",
+   "conclusion": "Poznato je da je Wolff preuzeo odgovornost za Russellove probleme i da je Antonelli ostvario pobjedu, no još nije potvrđeno koji su točno tehnički ili taktički razlozi doveli do kazne u prvom krugu.",
+   "orig_t": "Toto Wolff takes blame for George Russell's US GP struggles",
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/27/shipping-factsheet-future-cleantech-architects",
+   "date": "2026-10-27T17:49+00:00",
+   "img_q": "Future Cleantech Architects Has a Shipping Factsheet Worth Reading",
+   "t": "Novi informativni dokument organizacije Future Cleantech Architects o dekarbonizaciji pomorstva",
+   "s": "Njemačka neprofitna organizacija Future Cleantech Architects objavila je pregledni dokument o dekarbonizaciji brodarstva, analizirajući brojna konkurentska rješenja poput baterija, goriva i tehnologija s različitim primjenama za plovila.",
+   "body": "Politika dekarbonizacije u sektoru pomorstva suočava se s velikim brojem različitih mogućnosti i tehnologija koje se natječu za pažnju. Njemački neprofitni think tank Future Cleantech Architects, koji se bavi procjenom klimatskih opcija, pripremio je dokument s činjenicama o brodarstvu koji razmatra različite pristupe. Među spomenutim opcijama nalaze se baterije, biogoriva, metanol, amonijak, vododik, pomoćna energija vjetra, opskrba električnom energijom s obale, nuklearni pogon i hvatanje ugljika na brodovima, iako svaka od ovih tehnologija služi za specifične vrste plovila i operativne zahtjeve.",
+   "conclusion": "Poznato je da njemački think tank Future Cleantech Architects nudi pregled različitih opcija za dekarbonizaciju pomorstva, dok još nije potvrđeno koji će od ponuđenih tehnoloških pristupa prevladati u praksi.",
+   "orig_t": "Future Cleantech Architects Has a Shipping Factsheet Worth Reading",
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/valtteri-bottas-denies-he-might-lose-his-cadillac-seat-for-f1-2027/10868664",
+   "date": "2026-10-27T17:29+00:00",
+   "img_q": "Valtteri Bottas denies he might lose his Cadillac seat for F1 2027",
+   "t": "Bottas oprao glasine: Siguran sam u Cadillacovo mjesto za F1 2027.",
+   "s": "Valtteri Bottas odbacio je nedavne glasine o gubitku mjesta u Cadillacu za 2027. godinu te tvrdi da je njegov ugovor potpuno uredan. Unatoč lošijem tempu, momčad je navodno zadovoljna njime.",
+   "body": "Nakon što su u medijima počela nagađanja o njegovoj F1 budućnosti zbog slabijeg tempa u kvalifikacijama i utrkama, Valtteri Bottas javno je negirao mogućnost da ostane bez svog sjedala u Cadillacu za 2027. godinu. Finski vozač inzistira na tome da je momčad zadovoljna njegovim uslugama i da je aktualni ugovor u potpunosti u redu. U javnosti se kao potencijalni kandidat spominjao Esteban Ocon, koji je u međuvremenu ostao bez svog mjesta u momčadi Haasa u korist Rafaela Camare.",
+   "conclusion": "Poznato je da Bottas tvrdi kako mu je ugovor za 2027. siguran i da momčad nema zamjerki, dok još nije potvrđeno hoće li doista zadržati svoje mjesto s obzirom na medijska nagađanja i konkurenciju.",
+   "orig_t": "Valtteri Bottas denies he might lose his Cadillac seat for F1 2027",
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "Autosport",
+   "u": "https://www.autosport.com/f1/news/mercedes-has-a-russell-sized-problem-and-it-is-sharing-responsibility/10868909",
+   "date": "2026-10-27T16:57+00:00",
+   "img_q": "Mercedes has a Russell-sized problem and it is sharing responsibility",
+   "t": "Mercedes ima ozbiljan problem s Georgeom Russellom i dijeli odgovornost",
+   "s": "Forma Georgea Russella pala je na novu nisku razinu tijekom Velike nagrade Sjedinjenih Američkih Država u Austinu. Dok se on mučio, njegov mlađi momčadski kolega Kimi Antonelli nastavio je dominirati prema tituli.",
+   "body": "Na Velikoj nagradi Sjedinjenih Američkih Država u Austinu, vozač Mercedesa George Russell zabilježio je izrazito loš rezultat unatoč nedavnim naznakama napretka u Formuli 1. U kvalifikacijama je zaostao više od četiri desetinke sekunde za momčadskim kolegom Kimijem Antonellijem te je nedjeljnu utrku završio tek na osmom mjestu. S druge strane, mladi dvadesetogodišnjak ostvario je svoju devetu pobjedu u sezoni 2026. i dodatno se približio osvajanju svjetskog naslova, dok su za Russellov novi podbačaj postojale određene olakotne okolnosti.",
+   "conclusion": "Poznato je da je Russell ostvario slabiji rezultat u odnosu na pobjedničkog kolegu Antoneelija u Austinu, dok još nije službeno potvrđeno u kojoj su mjeri olakotne okolnosti utjecale na njegov konačni plasman i podijeljenu odgovornost unutar momčadi.",
+   "orig_t": "Mercedes has a Russell-sized problem and it is sharing responsibility",
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "Carbon Brief",
+   "u": "https://www.carbonbrief.org/qa-why-are-uk-energy-bills-so-high-and-how-could-they-be-lowered",
+   "date": "2026-10-27T16:47+00:00",
+   "img_q": "Q&A: Why are UK energy bills so high – and how could they be lowered?",
+   "t": "Zašto su računi za energiju u UK-u visoki i kako se mogu smanjiti?",
+   "s": "Računi za energiju u Ujedinjenom Kraljevstvu nastavili su rasti i tijekom 2026. godine, što je potaknulo brojne rasprave o mogućim rješenjima za njihovo snižavanje.",
+   "body": "Tijekom 2026. godine troškovi energije u Ujedinjenom Kraljevstvu i dalje snažno rastu. Ova situacija izazvala je žustre rasprave u javnosti i stručnim krugovima o temeljnim uzrocima visokih cijena. Također se aktivno razmatraju različite mjere i načini kojima bi se ovi financijski tereti mogli smanjiti za kućanstva i gospodarstvo.",
+   "conclusion": "Poznato je da računi za energiju u UK-u snažno rastu u 2026. godini i da traju rasprave o rješenjima. Još nije potvrđeno na koji će se točno način cijene uspjeti sniziti.",
+   "orig_t": "Q&A: Why are UK energy bills so high – and how could they be lowered?",
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/27/xpeng-tops-customer-satisfaction-ranking-for-second-year-beating-tesla",
+   "date": "2026-10-27T16:38+00:00",
+   "img_q": "XPENG Tops Customer Satisfaction Ranking For Second Year, Beating Tesla",
+   "t": "XPENG drugi put zaredom pobjednik europskog istraživanja zadovoljstva električnim vozilima",
+   "s": "Marka XPENG ponovno je zauzela prvo mjesto u europskom istraživanju zadovoljstva električnim vozilima, ostvarivši viši rezultat nego prethodne godine i nadmašivši prosjek industrije.",
+   "body": "Proizvođač električnih automobila XPENG već drugu godinu zaredom drži vodeću poziciju na ljestvici europskog istraživanja USCALE o zadovoljstvu kupaca. Njihov rezultat dodatno je porastao u odnosu na lanjsku godinu. S impresivnom stopom preporuke od 82 posto, XPENG se nalazi daleko iznad industrijskog prosjeka koji iznosi 53 posto, čime su potvrdili svoj status na tržištu i ostavili konkurenciju iza sebe.",
+   "conclusion": "Poznato je da je XPENG osvojio prvo mjesto u europskom istraživanju zadovoljstva s visokom stopom preporuke. Još nije potvrđeno koji su točno ostali proizvođači zauzeli preostala mjesta u poretku.",
+   "orig_t": "XPENG Tops Customer Satisfaction Ranking For Second Year, Beating Tesla",
+   "hr": true
+  },
+  {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/cars/2026/10/ford-builds-bidrectional-charging-into-its-30k-electric-truck",
+   "date": "2026-10-27T16:17+00:00",
+   "img_q": "Ford simplifies using your EV as a home battery with the $30K Fathom",
+   "t": "Ford olakšava korištenje električnih vozila kao kućne baterije uz Fathom",
+   "s": "Ford predstavlja novi dodatak Fathom vrijedan 30.000 dolara koji omogućuje napajanje kuće električnim vozilom. Ovaj sustav uklanja potrebu za zasebnim zidnim inverterom te isporučuje deset kilovata snage.",
+   "body": "Američki proizvođač automobila Ford pojednostavljuje način na koji vlasnici električnih vozila mogu koristiti svoja vozila kao rezervni izvor energije za kućanstvo. Uz novi proizvod pod nazivom Fathom, čija je cijena 30.000 dolara, pick-up vozila više neće trebati tradicionalni zidni inverter kako bi isporučila snagu od 10 kW u kuću. Ova inovacija donosi praktičnije rješenje za korištenje automobila kao kućne baterije u situacijama nestanka struje ili potrebe za dodatnom energijom.",
+   "conclusion": "Poznato je da Fathom omogućuje snagu od 10 kW bez zidnog invertera i košta 30.000 dolara, dok još nije potvrđeno na kojim će sve modelima vozila biti u potpunosti podržan ni kada kreće službena prodaja.",
+   "orig_t": "Ford simplifies using your EV as a home battery with the $30K Fathom",
+   "hr": true
+  },
+  {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations",
+   "date": "2026-10-27T16:00+00:00",
+   "img_q": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
+   "t": "DeepMind predstavlja Genie 4 model svijeta s naprednom fizikom",
+   "s": "DeepMind najavljuje dolazak modela Genie 4 koji donosi napredniju fiziku i realističnije prikaze ljudi. Ovaj sustav uskoro postaje dostupan programerima i pretplatnicima usluge Google AI Ultra.",
+   "body": "Googleov DeepMind službeno je predstavio Genie 4, novi napredni model svijeta koji obećava znatno realističnije simuliranje zakona fizike i ljudskih likova. Prema dostupnim informacijama, ova inovacija uskoro kreće prema korisnicima te će biti dostupna razvojnim inženjerima i pretplatnicima Google AI Ultra platforme. Iako točan datum izlaska još nije preciziran, objava naglašava brzi dolazak tehnologije na tržište i njezinu dostupnost ključnim korisničkim skupinama koje se bave razvojem naprednih umjetnih inteligencija.",
+   "conclusion": "Poznato je da Genie 4 donosi realističniju fiziku te da stiže programerima i Google AI Ultra pretplatnicima. Još uvijek nije potvrđen točan datum službenog izlaska ni sve tehničke specifikacije.",
+   "orig_t": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/franco-colapinto-george-russell-to-sit-out-fp1-at-f1-mexico-gp/10868889",
+   "date": "2026-10-27T15:50+00:00",
+   "img_q": "Franco Colapinto, George Russell to sit out FP1 at F1 Mexico GP",
+   "t": "Gabriele Mini debitirat će na vikendu VN Meksika umjesto Franca Colapinta",
+   "s": "Gabriele Mini debitirat će tijekom prvog slobodnog treninga na Velikoj nagradi Meksika vozeći bolid momčadi Alpine koji inače pripada Francu Colapintu.",
+   "body": "Predstojeća Velika nagrada Meksika donosi značajnu promjenu na prvom slobodnom treningu jer će mladi vozač Gabriele Mini prvi put sudjelovati u jednom Formula 1 vikendu. On će sjesti u Alpineov bolid koji obično vozi Franco Colapinto. Mini je bivši vodeći vozač Formule 2, a trenutno se nalazi na četvrtom mjestu ukupnog poretka s malim izgledima za osvajanje naslova. Član je Alpineove vozačke akademije još od početka 2023. godine, nakon što je ostvario zapažen uspjeh u prethodnoj natjecateljskoj sezoni.",
+   "conclusion": "Poznato je da će Gabriele Mini voziti na prvom slobodnom treningu u Meksiku umjesto Colapinta, dok detalji o daljnjim nastupima ili konačnom raspletu sezone u Formuli 2 još uvijek nisu službeno potvrđeni.",
+   "orig_t": "Franco Colapinto, George Russell to sit out FP1 at F1 Mexico GP",
+   "hr": true
+  },
+  {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/gadgets/2026/10/from-cheap-tool-to-premium-subscription-when-a-beloved-apps-price-skyrockets",
+   "date": "2026-10-27T15:50+00:00",
+   "img_q": "From cheap tool to premium subscription: When a beloved app's price skyrockets",
+   "t": "Poskupljenje popularnih aplikacija: Kako povoljni alati prelaze na skupe pretplate",
+   "s": "Ogromna poskupljenja popularnih aplikacija prisiljavaju vjerne korisnike da ponovno razmisle o korištenju svojih omiljenih alata. Prelazak s povoljnih rješenja na skupe pretplate izaziva brojne rasprave u svijetu tehnologije.",
+   "body": "Nekada povoljni ili čak besplatni digitalni alati sve češće postaju skupocjene pretplate, što teško pada njihovim dugogodišnjim korisnicima. Zbog naglih i velikih skokova cijena, ljudi koji se oslanjaju na ove aplikacije u svakodnevnom radu sada moraju pažljivo procijeniti isplate li im se one i dalje. Dok se tehnološke tvrtke okreću naplati kako bi povećale prihod, korisnici ostaju suočeni s teškim izborom između plaćanja visokih iznosa ili traženja alternative.",
+   "conclusion": "Poznato je da drastičan porast cijena prisiljava korisnike na preispitivanje odabira aplikacija, no još nije potvrđeno koje će konkretne aplikacije najviše izgubiti korisnike niti hoće li ovaj trend masovno utjecati na tržište.",
+   "orig_t": "From cheap tool to premium subscription: When a beloved app's price skyrockets",
+   "hr": true
+  },
+  {
+   "c": "reli",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/wrc/news/rally-us-reveals-further-details-ahead-of-wrc-2027-return-/10868887",
+   "date": "2026-10-27T15:49+00:00",
+   "img_q": "Rally US reveals further details ahead of WRC 2027 return",
+   "t": "Knoxville domaćin povratka WRC-a u Sjedinjene Američke Države 2027. godine",
+   "s": "Knoxville je službeno izabran za grad domaćin Svjetskog reli prvenstva koje se 2027. godine vraća u Sjedinjene Američke Države. Makadamsko natjecanje održat će se kao jedanaesta stanica kalendara krajem kolovoza.",
+   "body": "Organizatori su otkrili dodatne pojedinosti uoči dugoočekivanog povratka Svjetskog reli prvenstva u Sjedinjene Američke Države. Grad Knoxville imenovan je domaćinom ovog velikog sportskog događaja koji označava prvi dolazak WRC-a u SAD još od 1988. godine i natjecanja Olympus Rally. Prema novom proširenom kalendaru koji obuhvaća petnaest postaja, američki reli na rasporedu je kao jedanaesta ovosezonska utrka u terminu od 26. do 29. kolovoza. Potvrđeno je kako će se ova uzbudljiva i iščekivana utrka voziti na makadamskoj podlozi.",
+   "conclusion": "Poznato je da će Knoxville ugostiti WRC na makadamu od 26. do 29. kolovoza 2027. godine kao jedanaestu utrku kalendara, dok još nisu objavljeni svi detalji staze i pratećeg programa.",
+   "orig_t": "Rally US reveals further details ahead of WRC 2027 return",
+   "hr": true
+  },
+  {
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813395/turo-tesla-self-driving-rental",
+   "date": "2026-10-27T15:00+00:00",
+   "img_q": "Turo Now Lets You Rent A Tesla With Full Self-Driving",
+   "t": "Turo omogućuje najam Teslinih vozila s naprednim sustavom autonomne vožnje",
+   "s": "Američki gosti platforme Turo od 28. listopada mogu rezervirati najam automobila marke Tesla koji imaju potvrđen pristup potpunom samostalnom upravljanju.",
+   "body": "Poznata platforma za dijeljenje automobila Turo uvodi novu mogućnost za svoje korisnike u Sjedinjenim Američkim Državama. Početkom listopada, točnije od 28. u mjesecu, korisnicima će na raspolaganju biti vozila marke Tesla opremljena provjerenim sustavom za potpuno samostalnu vožnju. Ova opcija omogućuje vozačima isprobavanje napredne tehnologije tijekom najma, što predstavlja značajan korak naprijed u ponudi ove platforme na američkom tržištu.",
+   "conclusion": "Poznato je da usluga kreće 28. listopada u SAD-u i uključuje Teslina vozila s FSD-om, dok još nije potvrđeno hoće li se i kada ova pogodnost proširiti na ostala globalna tržišta.",
+   "orig_t": "Turo Now Lets You Rent A Tesla With Full Self-Driving",
+   "hr": true
+  },
+  {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/gadgets/2026/10/apple-iphone-duo-review-two-screens-two-experiences-two-thousand-dollars",
+   "date": "2026-10-27T14:20+00:00",
+   "img_q": "Apple iPhone Duo review: Two screens, two experiences, two thousand dollars",
+   "t": "Recenzija Apple iPhone Duo: Dva ekrana i visoka cijena",
+   "s": "Nova recenzija donosi prve dojmove o Appleovom prvom preklopnom pametnom telefonu. Uređaj nudi dva zaslona i cijenu od dvije tisuće dolara, ali ostavlja podijeljene osjećaje.",
+   "body": "Poznati proizvođač predstavio je svoj prvi preklopni uređaj pod nazivom iPhone Duo. Recenzent ističe poštovanje prema ovom prvom pokušaju ulaska u kategoriju preklopnih telefona, no istovremeno izražava sumnju u svrhovitost takvog dizajna. Telefon posjeduje dva različita ekrana koja nude dvostruko iskustvo korištenja. Cijena uređaja iznosi visokih dvjesto tisuća dolara, odnosno dvije tisuće dolara prema dostupnim podacima iz opisa. Iako su osnovne karakteristike dizajna i cijena poznate, detaljnije tehničke specifikacije i dugotrajna izdržljivost još nisu potvrđeni u ovom trenutku.",
+   "conclusion": "Poznato je da uređaj ima dva ekrana i cijenu od dvije tisuće dolara, dok još nije potvrđeno hoće li se ovakav koncept svidjeti široj publici i kakve su mu točne tehničke specifikacije.",
+   "orig_t": "Apple iPhone Duo review: Two screens, two experiences, two thousand dollars",
+   "hr": true
+  },
+  {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813184/novus-electric-motorcycles-coming-soon-to-america",
+   "date": "2026-10-27T13:32+00:00",
+   "img_q": "This Electric Motorcycle Was Almost Vaporware. Now It Wants To Conquer America",
+   "t": "Električni motocikl Novus konačno kreće u osvajanje američkog tržišta",
+   "s": "Nakon višegodišnjih kašnjenja, tvrtka Novus osigurala je svježa financijska sredstva i spremna je ponuditi svoje električne motocikle kupcima u Sjedinjenim Američkim Državama.",
+   "body": "Projekt električnog motocikla brenda Novus bio je pred odustajanjem i mnogi su ga smatrali neostvarivim. Ipak, nakon dugog razdoblja obilježenog značajnim odgodiama, situacija se promijenila u korist proizvođača. Uz novu financijsku injekciju, tvrtka sada posjeduje stvarne primjerke motocikala te ambiciozno planira prodor na američko tržište. Iako su planovi službeno potvrđeni, u tekstu se postavlja pitanje kakav će biti stvarni ishod ovog poslovnog pothvata s obzirom na dosadašnje prepreke.",
+   "conclusion": "Poznato je da tvrtka ima financije, gotove motocikle i planove za SAD nakon dugih kašnjenja. Još nije potvrđeno kako će proći njihovo stvarno uvođenje i prihvaćanje na američkom tržištu.",
+   "orig_t": "This Electric Motorcycle Was Almost Vaporware. Now It Wants To Conquer America",
+   "hr": true
+  },
+  {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813289/king-of-the-hammers-barstow-needles-ohv-trail-project-no-bid-contract",
+   "date": "2026-10-27T13:24+00:00",
+   "img_q": "Not Everyone's Happy About King of the Hammers' New Proposed OHV Trail",
+   "t": "Novi planirani izvanputni Trail na natjecanju King of the Hammers izazvao nezadovoljstvo",
+   "s": "Stanovnici kalifornijske visoke pustinje protive se novom prijedlogu izvanputne staze za King of the Hammers. Posebno su ogorčeni zbog dodjele ugovora bez javnog nadmetanja.",
+   "body": "Dio stanovnika u pustinjskim predjelima Kalifornije izrazio je veliko nezadovoljstvo vezano uz nedavno predloženu izvanputnu stazu za popularno natjecanje King of the Hammers. Glavni izvor njihovog gnjeva jest sporni ugovor koji je sklopljen bez uobičajenog postupka javnog nadmetanja. Iako su detalji o samoj trasi i daljnjim koracima organizatora još uvijek rijetki, lokalna zajednica već sada otvoreno pokazuje neslaganje s ovakvim načinom donošenja odluka i sklapanja poslova.",
+   "conclusion": "Poznato je da lokalni stanovnici u Kaliforniji negoduju zbog načina dodjele ugovora bez nadmetanja za novu stazu, dok još nije potvrđeno hoće li se projekt staze zbog ovih prosvjeda mijenjati ili potpuno obustaviti.",
+   "orig_t": "Not Everyone's Happy About King of the Hammers' New Proposed OHV Trail",
+   "hr": true
+  },
+  {
+   "c": "motogp",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/mir-returns-without-revealing-illness-that-kept-him-out-for-44-days-it-hasnt-been-an-easy-period/10868849",
+   "date": "2026-10-27T13:19+00:00",
+   "img_q": "Joan Mir returns without revealing illness that kept him out for 44 days: \"It hasn't been an easy pe",
+   "t": "Joan Mir se vraća na stazu za VN Malezije nakon duge stanke",
+   "s": "Vozač Hondine tvorničke momčadi Joan Mir vraća se u MotoGP natjecanje na predstojećoj VN Malezije. Prošlo je gotovo sedam tjedana od njegovog povlačenja s VN San Marina.",
+   "body": "Nakon što se povukao već u petom krugu utrke za Veliku nagradu San Marina, vozač Hondine tvorničke momčadi Joan Mir spreman je ponovno sesti na svoj RC213V motocikl. Njegov povratak na stazu očekuje se ove srijede, odnosno u petak na početku Velike nagrade Malezije. To znači kraj njegovog izbivanja koje je trajalo četrdeset i četiri dana, odnosno gotovo sedam tjedana. Uoči pauze, točnije u subotu na stazi Misano, Mir je izjavio kako se osjećao potpuno bez snage i energije, no tada nije želio ulaziti u detaljne razloge koji su doveli do takvog zdravstvenog stanja.",
+   "conclusion": "Poznato je da se Mir vraća na motocikl za VN Malezije nakon stanke duge četrdeset i četiri dana i manjka snage u Misanu. Još uvijek nije potvrđeno koji su točni zdravstveni razlozi uzrokovali njegovo dugotrajno izbivanje s natjecanja.",
+   "orig_t": "Joan Mir returns without revealing illness that kept him out for 44 days: \"It hasn't been an easy period\"",
+   "hr": true
+  },
+  {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813309/your-project-dreams-can-come-true-if-you-dont-forget-them",
+   "date": "2026-10-27T13:04+00:00",
+   "img_q": "This Giant Scooter Proves Why You Shouldn't Give Up On Your Projects",
+   "t": "Divovski skuter kao dokaz da se isplati završiti započete projekte",
+   "s": "Jedinstveni veliki skuter podsjeća na važnost dovršavanja starih projekata koji već dugo skupljaju prašinu u kutu. Iako su detalji šturi, ova priča potiče na rad.",
+   "body": "Zanimljiv i neobičan golemi skuter služi kao savršen podsjetnik da ne treba odustati od vlastitih ideja i planova. Autor teksta poziva vlasnike da posvete malo pažnje onim poludovršenim projektima koje su započeli prije mnogo vremena, a sada nezapaženo stoje u kutu. Iako specifikacije skutera, ime autora i tehnički detalji nisu navedeni u dostupnim podacima, sama poruka o važnosti ustrajnosti i dovršavanja započetog posla jasno je istaknuta.",
+   "conclusion": "Poznato je da neobičan veliki skuter potiče na dovršavanje starih projekata iz kuta, dok tehnički detalji o samom vozilu i njegovom nastanku još nisu potvrđeni.",
+   "orig_t": "This Giant Scooter Proves Why You Shouldn't Give Up On Your Projects",
+   "hr": true
+  },
+  {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813284/2027-dakar-rally-official-no-saudi-arabia-due-to-iran-us-war-safety",
+   "date": "2026-10-27T12:58+00:00",
+   "img_q": "The Dakar Rally Is Officially Leaving Saudi Arabia Because of The US's Active War",
+   "t": "Reljefni zaokret: Reli Dakar napušta Saudijsku Arabiju",
+   "s": "Najopasnija utrka na svijetu službeno napušta Saudijsku Arabiju zbog aktivnog rata u Sjedinjenim Američkim Državama. Razlog odlaska leži u procjeni da je regija postala preopasna.",
+   "body": "Poznati Reli Dakar službeno seli iz Saudijske Arabije. Prema dostupnim informacijama, odluka je donesena zbog aktivnog rata u Sjedinjenim Američkim Državama, što je utjecalo na sigurnosnu procjenu natjecanja. Iako je riječ o najopasnijoj utrci na svijetu, organizatori su zaključili da je trenutna situacija u regiji ipak preopasna za održavanje ove prestižne moto manifestacije. Nove lokacije i detalji o budućnosti rute za sada nisu službeno objavljeni u ovim izvorima.",
+   "conclusion": "Poznato je da se utrka seli iz sigurnosnih razloga povezanih s aktivnim ratom, dok još nije potvrđeno kamo točno seli Reli Dakar niti tko su novi domaćini.",
+   "orig_t": "The Dakar Rally Is Officially Leaving Saudi Arabia Because of The US's Active War",
+   "hr": true
+  },
+  {
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813322/toyota-snowhunter-concepts-sema-2026",
+   "date": "2026-10-27T12:00+00:00",
+   "img_q": "Toyota Put Snow Tracks On Five Of Its Trucks and SUVs. Because Why Not?",
+   "t": "Toyota postavila gusjenice za snijeg na pet popularnih modela",
+   "s": "Toyota je pripremila posebne zimske prerade za pet svojih poznatih terenca i kamioneta. Ovi zanimljivi modeli bit će izloženi na nadolazećem sajmu SEMA.",
+   "body": "Poznati japanski proizvođač automobila odlučio je opremiti svoja vozila Tundra, Tacoma, 4Runner, Land Cruiser i Sequoia gusjenicama za snijeg. Ove radikalne zimske prerade nastale su povodom nadolazećeg SEMA sajma, koji se održava 2026. godine. Sva spomenuta vozila dobila su ekstremni izgled prilagođen kretanju po najtežim snježnim terenima, što dodatno naglašava njihov avanturistički i terenski karakter. Toyota je ovim potezom još jednom pokazala kreativnost u pripremi vozila za specijalizirane automobilske izložbe.",
+   "conclusion": "Poznato je da će pet Toyotinih modela s gusjenicama za snijeg biti prikazano na sajmu SEMA 2026. godine, dok još nije potvrđeno hoće li ovakvi paketi opreme biti dostupni u redovnoj prodaji.",
+   "orig_t": "Toyota Put Snow Tracks On Five Of Its Trucks and SUVs. Because Why Not?",
+   "hr": true
+  },
+  {
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813321/mazda-cx70-dead-two-row-cx90-replacement",
+   "date": "2026-10-27T12:00+00:00",
+   "img_q": "Mazda Drops The CX-70 For A Two-Row CX-90",
+   "t": "Mazda gasi model CX-70 i uvodi izvedbe s dva reda sjedala za CX-90",
+   "s": "Mazda je najavila povlačenje imena CX-70 za 2027. godinu te će umjesto njega kupcima ponuditi nove pakete opreme s dva reda sjedala za model CX-90.",
+   "body": "Prema najnovijim informacijama, Mazda planira ukinuti naziv CX-70 početkom 2027. godine. Umjesto samostalnog modela, ponuda će se proširiti uvođenjem novih opcija s dva reda sjedala koje će nositi oznaku CX-90. Ova strateška promjena unutar Mazdinog asortimana SUV vozila donosi prilagodbu ponude za kupce koji traže prostranost modela CX-90, ali uz konfiguraciju s dva reda sjedala koja je dosad bila vezana uz naziv CX-70.",
+   "conclusion": "Poznato je da se naziv CX-70 gasi 2027. godine i zamjenjuje novim opcijama s dva reda za CX-90, dok još nije potvrđeno kakve će sve točno specifikacije i cijene imati nove izvedbe.",
+   "orig_t": "Mazda Drops The CX-70 For A Two-Row CX-90",
+   "hr": true
   },
   {
    "c": "auto",
@@ -22,6 +296,31 @@
    "date": "2026-10-27T11:41+00:00",
    "orig_t": "Police Recovered $54,000 Worth Of Hot Wheels After A Train Heist",
    "img_q": "Hot Wheels train",
+   "hr": true,
+   "nb": true
+  },
+  {
+   "c": "motogp",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/martins-incomplete-fracture-leaves-him-hopeful-of-racing-at-sepang/10868805",
+   "date": "2026-10-27T11:30+00:00",
+   "img_q": "Jorge Martin hopeful of racing in Malaysia after \"not complete\" fracture diagnosis",
+   "t": "Jorge Martin se nada nastupu u Maleziji nakon dijagnoze frakture",
+   "s": "Vozač Aprilije Jorge Martin nada se nastupu na predstojećoj Velikoj nagradi Malezije. Uz pomoć svog fizioterapeuta i liječničkog tima čini sve kako bi bio spreman za prvi slobodni trening na Sepangu.",
+   "body": "Vozač Aprilije Jorge Martin očekuje skorašnji dolazak svog provjerenog fizioterapeuta Aitora Tomasa u Maleziju. Tomas je osmislio poseban oporavak koji bi Aprilijinom vozaču trebao omogućiti dolazak u optimalno stanje za nastup u MotoGP utrci. Uz to, liječnički direktor MotoGP-a dr. Angel Charte također će učiniti sve što je u njegovoj moći kako bi osigurao da Martin u petak uspješno izađe na stazu tijekom prvog slobodnog treninga u Sepangu, iako detalji o samoj težini ozljede ostaju ograničeni na dijagnozu nepotpune frakture.",
+   "conclusion": "Poznato je da Martin ima plan oporavka uz fizioterapeuta i podršku liječničkog tima te da želi voziti u petak. Još uvijek nije potvrđeno hoće li uspjeti odvoziti prvi slobodni trening i nastupiti na utrci.",
+   "orig_t": "Jorge Martin hopeful of racing in Malaysia after \"not complete\" fracture diagnosis",
+   "hr": true
+  },
+  {
+   "c": "motogp",
+   "t": "Jorge Martin uoči VN Malezije očekuje svog fizioterapeuta",
+   "s": "Vozač Aprilije Jorge Martin nada se nastupu na Velikoj nagradi Malezije. Očekuje dolazak svog fizioterapeuta Aitora Tomasa koji je pripremio plan oporavka.",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/martins-incomplete-fracture-leaves-him-hopeful-of-racing-at-sepang/10868805/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
+   "date": "2026-10-27T11:30+00:00",
+   "orig_t": "Jorge Martin hopeful of racing in Malaysia after \"not complete\" fracture diagnosis",
+   "img_q": "Jorge Martin MotoGP",
    "hr": true,
    "nb": true
   },
@@ -72,6 +371,19 @@
    "img_q": "Audi Q4 E-Tron",
    "hr": true,
    "nb": true
+  },
+  {
+   "c": "motogp",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/marc-marquez-ducati-guarantees-qatar-gp-tardozzi/10868659",
+   "date": "2026-10-27T10:32+00:00",
+   "img_q": "Ducati: “Marc Marquez has asked for guarantees to go to Qatar, while others stay silent”",
+   "t": "Ducati stao u obranu Marca Marqueza zbog sigurnosnih upita oko utrke u Kataru",
+   "s": "Davide Tardozzi je stao u obranu Marca Marqueza nakon što je zatražio sigurnosna jamstva za nadolazeći MotoGP posjet Kataru, dok su drugi vozači ostali tihi.",
+   "body": "Kako se završetak sezone približava, MotoGP se suočava s raznim izazovima, a među najhitnijima je nesigurnost oko predstojećeg odlaska u Katar. Vozači su od organizatora prvenstva zatražili konkretna jamstva za svoju sigurnost. U toj situaciji, Davide Tardozzi iz Ducatija stao je u obranu Marca Marqueza. Prema njegovim riječima, Marquez je bio taj koji je zatražio potrebna jamstva za putovanje, dok su ostali vozači u potpunosti šutjeli o toj osjetljivoj temi.",
+   "conclusion": "Poznato je da je Marc Marquez zatražio sigurnosna jamstva za Katar i da ga je Tardozzi branio, dok ostali vozači šute. Još nije potvrđeno kakav će biti konačni odgovor organizatora prvenstva na ove sigurnosne zahtjeve.",
+   "orig_t": "Ducati: “Marc Marquez has asked for guarantees to go to Qatar, while others stay silent”",
+   "hr": true
   },
   {
    "c": "motogp",
@@ -247,292 +559,56 @@
    }
   },
   {
-   "c": "tech",
-   "t": "Microsoft offers to buy out a quarter of its workforce",
-   "s": "Employees in the US, Canada, India, and the UK may receive offers to leave MS today.",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/gadgets/2026/10/microsoft-offers-voluntary-buyouts-to-60000-employees/",
-   "date": "2026-10-26T22:36+00:00",
-   "orig_t": "Microsoft offers to buy out a quarter of its workforce"
-  },
-  {
-   "c": "f1",
-   "t": "Naomi Schiff warns Red Bull over \"knife's edge\" F1 car after US GP struggles",
-   "s": "Broadcaster Naomi Schiff has warned that Red Bull's narrow set-up window could be compromising Max Verstappen and Isack Hadjar's 2026 Formula 1 campaigns. At the United States Grand Prix, both drivers' races were derailed in the opening stages. Hadjar…",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/naomi-schiff-warns-red-bull-over-knifes-edge-f1-car-after-us-gp-struggles/10868723/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "date": "2026-10-26T22:06+00:00",
-   "orig_t": "Naomi Schiff warns Red Bull over \"knife's edge\" F1 car after US GP struggles",
-   "img": {
-    "id": "4ddf2564-8183-4289-bd8c-8ab092a8c636",
-    "src": "https://api.openverse.org/v1/images/4ddf2564-8183-4289-bd8c-8ab092a8c636/thumb/",
-    "by": "Jen Ross",
-    "lic": "CC BY 2.0",
-    "link": "https://commons.wikimedia.org/w/index.php?curid=108280423"
-   }
-  },
-  {
-   "c": "f1",
-   "t": "Fred Vasseur reveals two costly moments that denied Ferrari US GP double podium",
-   "s": "The United States Grand Prix was a wildly successful weekend for Ferrari, if you strictly go off the timing sheets. The newly upgraded car possessed blazing-fast race pace, tyre degradation was fully under control, and Charles Leclerc dragged his machine to a…",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/fred-vasseur-blames-a-q3-disaster-and-a-broken-cadillac-for-robbing-ferrari-of-a-us-gp-win/10868569/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "date": "2026-10-26T21:37+00:00",
-   "orig_t": "Fred Vasseur reveals two costly moments that denied Ferrari US GP double podium",
-   "img": {
-    "id": "e84d1253-5f67-4224-85d1-484477e6705d",
-    "src": "https://api.openverse.org/v1/images/e84d1253-5f67-4224-85d1-484477e6705d/thumb/",
-    "by": "Stephen Grimes",
-    "lic": "CC BY-SA 2.0",
-    "link": "https://commons.wikimedia.org/w/index.php?curid=61442877"
-   }
-  },
-  {
-   "c": "f1",
-   "t": "Red Bull reveals damage behind Max Verstappen's US GP struggles",
-   "s": "When your star driver gets out of the car after grabbing a podium and immediately tells the global broadcast that the pitstops, tyres, and engine braking were all complete garbage, it is up to the team principal to jump on the nearest microphone and put out…",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/mekies-explains-the-invisible-debris-that-cost-max-verstappen-2nd-place-in-austin/10868579/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "date": "2026-10-26T21:16+00:00",
-   "orig_t": "Red Bull reveals damage behind Max Verstappen's US GP struggles",
-   "img": {
-    "id": "47aae811-068c-4c55-a7d3-b8589ede6566",
-    "src": "https://api.openverse.org/v1/images/47aae811-068c-4c55-a7d3-b8589ede6566/thumb/",
-    "by": "Marcin Wichary",
-    "lic": "CC BY 2.0",
-    "link": "https://commons.wikimedia.org/w/index.php?curid=3869926"
-   }
-  },
-  {
-   "c": "tech",
-   "t": "Worms mate in man's eyes, get plucked out right before larvae burst out",
-   "s": "Case study gives a whole new meaning to \"bedroom eyes.\"",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/health/2026/10/whats-worse-than-having-eye-worms-having-eye-worms-with-babies/",
-   "date": "2026-10-26T20:27+00:00",
-   "orig_t": "Worms mate in man's eyes, get plucked out right before larvae burst out",
-   "img": {
-    "id": "b2756772-d7b4-46ef-bd24-6ad3faca82ac",
-    "src": "https://api.openverse.org/v1/images/b2756772-d7b4-46ef-bd24-6ad3faca82ac/thumb/",
-    "by": "Jim Berlin",
-    "lic": "CC BY-SA 3.0",
-    "link": "https://commons.wikimedia.org/w/index.php?curid=5138148"
-   }
-  },
-  {
-   "c": "tech",
-   "t": "Meet the real-life Scottish surgeon who inspired Sherlock Holmes",
-   "s": "Lindsey Fitzharris chats with Ars about her new book, Sleuth-Hound: The Case of the Real Sherlock Holmes .",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/science/2026/10/meet-the-real-life-scottish-surgeon-who-inspired-sherlock-holmes/",
-   "date": "2026-10-26T20:15+00:00",
-   "orig_t": "Meet the real-life Scottish surgeon who inspired Sherlock Holmes",
-   "img": {
-    "id": "19daba01-5098-4366-b9bb-1ee8b1dba814",
-    "src": "https://api.openverse.org/v1/images/19daba01-5098-4366-b9bb-1ee8b1dba814/thumb/",
-    "by": "Steve Jurvetson from Los Altos, USA",
-    "lic": "CC BY 2.0",
-    "link": "https://commons.wikimedia.org/w/index.php?curid=105132764"
-   }
-  },
-  {
-   "c": "tech",
-   "t": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",
-   "s": "Included is the ability to limit which applications Siri can directly access.",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
-   "date": "2026-10-26T20:04+00:00",
-   "orig_t": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",
-   "img": {
-    "id": "9a73efb3-b79e-44f4-8922-515ee5858691",
-    "src": "https://api.openverse.org/v1/images/9a73efb3-b79e-44f4-8922-515ee5858691/thumb/",
-    "by": "PantheraLeo1359531",
-    "lic": "CC BY 4.0",
-    "link": "https://commons.wikimedia.org/w/index.php?curid=147172515"
-   }
-  },
-  {
-   "c": "tech",
-   "t": "Apple reveals updated iPad mini with a bigger OLED screen for $700",
-   "s": "Apple claims this is the most significant update ever for the iPad mini line.",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/apple/2026/10/apple-reveals-updated-ipad-mini-with-a-bigger-oled-screen-for-700/",
-   "date": "2026-10-26T19:04+00:00",
-   "orig_t": "Apple reveals updated iPad mini with a bigger OLED screen for $700",
-   "img": {
-    "id": "51c3a377-fee7-41c4-b861-9b4099de9f10",
-    "src": "https://api.openverse.org/v1/images/51c3a377-fee7-41c4-b861-9b4099de9f10/thumb/",
-    "by": "Charly Whisky",
-    "lic": "CC BY-SA 4.0",
-    "link": "https://commons.wikimedia.org/w/index.php?curid=35085057"
-   }
-  },
-  {
-   "c": "tech",
-   "t": "ICE plan to buy robot dogs spurs protest from hundreds of Boston Dynamics employees",
-   "s": "US robotics company stands by ICE deal as more than 300 employees warn of risk.",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/",
-   "date": "2026-10-26T18:50+00:00",
-   "orig_t": "ICE plan to buy robot dogs spurs protest from hundreds of Boston Dynamics employees"
-  },
-  {
-   "c": "f1",
-   "t": "David Coulthard rejects F1 regulation excuses with Ayrton Senna and Michael Schumacher comparison",
-   "s": "Former Formula 1 driver David Coulthard has dismissed the narrative that drivers can blame poor performance on the championship's new 2026 regulations, insisting the all-time greats successfully adapt to any machinery. F1 introduced a major regulation change…",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/david-coulthard-rejects-f1-regulation-excuses-with-ayrton-senna-and-michael-schumacher-comparison/10868708/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "date": "2026-10-26T18:48+00:00",
-   "orig_t": "David Coulthard rejects F1 regulation excuses with Ayrton Senna and Michael Schumacher comparison"
-  },
-  {
    "c": "motogp",
-   "t": "Ducati: Aprilia got “unlucky” in Australian GP, can win every race from now",
-   "s": "Ducati believes Aprilia got “unlucky” with weather changes over the Australian Grand Prix weekend, citing the RS-GP’s superior pace in dry conditions. Aprilia was expected to dominate proceedings at Phillip Island after Marco Bezzecchi led a 1-2-4-5 result…",
    "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/motogp/news/ducati-aprilia-got-unlucky-in-australian-gp-can-win-every-race-from-now/10868527/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
+   "u": "https://www.motorsport.com/motogp/news/ducati-aprilia-got-unlucky-in-australian-gp-can-win-every-race-from-now/10868527",
    "date": "2026-10-26T14:45+00:00",
-   "orig_t": "Ducati: Aprilia got “unlucky” in Australian GP, can win every race from now"
-  },
-  {
-   "c": "moto",
-   "t": "Former World Champion Motorcyclist Says Marquez Is “Infinitely Faster” Than Rossi",
-   "s": "During a recent interview, Jorge Martínez Aspar weighed in on the comparison between Marc Marquez and Valentino Rossi, stating that Marquez is \"infinitely faster\".",
-   "src": "RideApart",
-   "u": "https://www.rideapart.com/news/813051/four-time-gp-world-champion-says-marquez-is-infinitely-faster-than-rossi-but-less-well-roundedt/",
-   "date": "2026-10-26T13:46+00:00",
-   "orig_t": "Former World Champion Motorcyclist Says Marquez Is “Infinitely Faster” Than Rossi"
-  },
-  {
-   "c": "moto",
-   "t": "This ATV Lock Ensures Your Vehicle Can't Be Stolen",
-   "s": "Thieves won't be able to work around this one.",
-   "src": "RideApart",
-   "u": "https://www.rideapart.com/news/813119/fryars-keyless-atv-wheel-lock/",
-   "date": "2026-10-26T12:56+00:00",
-   "orig_t": "This ATV Lock Ensures Your Vehicle Can't Be Stolen"
+   "img_q": "Ducati: Aprilia got “unlucky” in Australian GP, can win every race from now",
+   "t": "Ducati: Aprilia je imala nesreću na Phillip Islandu i može pobijediti do kraja sezone",
+   "s": "Iz tabora Ducatija poručuju kako je Aprilia imala nesreću zbog vremenskih uvjeta na Velikoj nagradi Australije. Ipak, talijanski proizvođač i dalje ima potencijal za pobjede na svakoj idućoj utrci.",
+   "body": "Nakon što je Marco Bezzecchi dominantno predvodio rezultate momčadi iz Noalea tijekom petka na Phillip Islandu, Aprilia je slovila za glavnog favorita vikenda. Ipak, subotnji program na Velikoj nagradi Australije pokvarile su nepovoljne promjene vremena. Iz Ducatija smatraju da je upravo ta vremenska nestabilnost oštetila njihove rivale čiji je model RS-GP pokazao iznimnu brzinu na suhoj stazi. Unatoč tim subotnjim poteškoćama, konkurencija vjeruje kako je Aprilijin paket dovoljno snažan da se bori za pobjede na svim preostalim nadmetanjima u kalendaru.",
+   "conclusion": "Poznato je da je Aprilia bila najbrža na suhom u petak te da su vremenske promjene utjecale na subotu. Još nije potvrđeno hoće li doista dominirati na preostalim stazama do kraja sezone.",
+   "orig_t": "Ducati: Aprilia got “unlucky” in Australian GP, can win every race from now",
+   "hr": true
   },
   {
    "c": "reli",
-   "t": "Sesks tight-lipped on WRC future after ERC season finale triumph",
-   "s": "Martins Sesks remains tight-lipped on his World Rally Championship future after claiming a confidence-boosting victory in the European Rally Championship season finale. The M-Sport-Ford WRC driver produced an impressive display on Portugal’s famous gravel…",
    "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/wrc/news/sesks-tight-lipped-on-wrc-future-after-erc-season-finale-triumph/10868620/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-WRC&utm_term=News&utm_content=www",
+   "u": "https://www.motorsport.com/wrc/news/sesks-tight-lipped-on-wrc-future-after-erc-season-finale-triumph/10868620",
    "date": "2026-10-26T12:24+00:00",
-   "orig_t": "Sesks tight-lipped on WRC future after ERC season finale triumph"
-  },
-  {
-   "c": "moto",
-   "t": "Limited Edition Aprilia RS 660 Graphic Says How We're All Feeling About Phillip Island",
-   "s": "This special edition RS 660 features a beautiful green and white graphic dedicated to Aprilia's many racing victories at the iconic Australian circuit.",
-   "src": "RideApart",
-   "u": "https://www.rideapart.com/news/813118/aprilia-rs-660-phillip-island-limited-edition-goodbye-australia/",
-   "date": "2026-10-26T12:20+00:00",
-   "orig_t": "Limited Edition Aprilia RS 660 Graphic Says How We're All Feeling About Phillip Island"
-  },
-  {
-   "c": "moto",
-   "t": "This Augmented Reality Motorcycle Helmet Looks....Unsafe",
-   "s": "I want fewer distractions, not more.",
-   "src": "RideApart",
-   "u": "https://www.rideapart.com/news/813114/aegis-rider-vision-headsup-display-augment-reality-motorcycle-helmet/",
-   "date": "2026-10-26T11:41+00:00",
-   "orig_t": "This Augmented Reality Motorcycle Helmet Looks....Unsafe"
-  },
-  {
-   "c": "moto",
-   "t": "MotoGP Came to Its Senses and Created a Motogp Academy To Help Tackle Spanish Grid Dominance",
-   "s": "MotoGP is launching a MotoGP Academy as part of the Road to MotoGP development structure. This should help grassroots racing in the countries that are underrepresented on the grid.",
-   "src": "RideApart",
-   "u": "https://www.rideapart.com/news/812971/motogp-creates-motogp-academy-to-help-tackle-spanish-grid-dominance/",
-   "date": "2026-10-26T11:33+00:00",
-   "orig_t": "MotoGP Came to Its Senses and Created a Motogp Academy To Help Tackle Spanish Grid Dominance"
-  },
-  {
-   "c": "motogp",
-   "t": "Inside Jorge Martin’s recovery plan to get fit for Sepang MotoGP",
-   "s": "If taking on Marc Marquez in a closely fought battle for the MotoGP world title is already difficult enough, Martín’s challenge has become even more complicated following his crash during the sprint at the Australian Grand Prix. The incident came as he was…",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/motogp/news/inside-jorge-martins-recovery-plan-to-get-fit-for-sepang-motogp/10868543/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
-   "date": "2026-10-26T10:00+00:00",
-   "orig_t": "Inside Jorge Martin’s recovery plan to get fit for Sepang MotoGP"
-  },
-  {
-   "c": "motogp",
-   "t": "Francesco Bagnaia: MotoGP riders not consulted over Australian GP cancellation",
-   "s": "Francesco Bagnaia has revealed that MotoGP riders were not consulted before the championship cancelled Sunday’s Australian Grand Prix at Phillip Island, but said they had to respect the decision because safety was at stake. The iconic Australian circuit was…",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/motogp/news/bagnaia-riders-not-consulted-australian-gp-cancellation/10868510/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
-   "date": "2026-10-26T07:42+00:00",
-   "orig_t": "Francesco Bagnaia: MotoGP riders not consulted over Australian GP cancellation"
-  },
-  {
-   "c": "motogp",
-   "t": "Why MotoGP didn’t move Australian GP to Saturday despite bad weather forecast",
-   "s": "MotoGP's final appearance at the Phillip Island Circuit ended in the worst possible way with no track action on Sunday. The poor weather forecast, which had been available since the start of the week, came to pass and the championship bid farewell to one of…",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/motogp/news/why-phillip-island-race-was-not-moved-to-saturday/10868251/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
-   "date": "2026-10-25T14:00+00:00",
-   "orig_t": "Why MotoGP didn’t move Australian GP to Saturday despite bad weather forecast"
+   "img_q": "Sesks tight-lipped on WRC future after ERC season finale triumph",
+   "t": "Sesks tajanstven o WRC budućnosti nakon pobjede",
+   "s": "Mārtiņš Sesks ostao je tajnovit o nastavku karijere u Svjetskom reli prvenstvu nakon što je trijumfirao na finalu Europskog prvenstva u Portugalu.",
+   "body": "Nakon pobjede na završnici Europskog reli prvenstva, vozač M-Sport-Ford WRC-a Mārtiņš Sesks nije želio otkriti planove vezane uz svoju budućnost u Svjetskom reli prvenstvu. Sjajnim nastupom na makadamskim stazama u Portugalu ostvario je pobjedu na reliju 6 gradova sjevernog Portugala, nastupajući za momčad Team MRF Tyres. Ova pobjeda dala mu je veliko samopouzdanje, no konkretne informacije o idućim koracima u WRC-u za sada nisu poznate.",
+   "conclusion": "Poznato je da je Sesks ostvario pobjedu na završnici ERC-a u Portugalu, dok njegova daljnja WRC budućnost još uvijek nije službeno potvrđena.",
+   "orig_t": "Sesks tight-lipped on WRC future after ERC season finale triumph",
+   "hr": true
   },
   {
    "c": "reli",
-   "t": "Josh McErlean to test 2027-spec M-Sport WRC car at ERC finale",
-   "s": "M-Sport is continuing the development of its 2027 World Rally Championship challenger at this weekend’s European Rally Championship finale in Portugal. The British squad will field an example of its newly developed Ford Fiesta Rally2 kit car at the ERC Rally…",
    "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/wrc/news/josh-mcerlean-to-test-2027-spec-m-sport-wrc-car-at-erc-finale/10867386/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-WRC&utm_term=News&utm_content=www",
+   "u": "https://www.motorsport.com/wrc/news/josh-mcerlean-to-test-2027-spec-m-sport-wrc-car-at-erc-finale/10867386",
    "date": "2026-10-23T12:41+00:00",
-   "orig_t": "Josh McErlean to test 2027-spec M-Sport WRC car at ERC finale"
+   "img_q": "Josh McErlean to test 2027-spec M-Sport WRC car at ERC finale",
+   "t": "Josh McErlean testirat će M-Sportov WRC bolid za 2027. na finalu ERC-a",
+   "s": "M-Sport nastavlja razvoj svog WRC bolida za 2027. godinu na predstojećem finalu Europskog reli prvenstva u Portugalu. Britanska momčad tamo će predstaviti novo ažurirano vozilo.",
+   "body": "Britanska momčad M-Sport nastavlja s razvojem svog novog WRC izazivača za 2027. godinu. Testiranja i promocija održat će se tijekom vikenda na finalu Europskog reli prvenstva u Portugalu. Na makadamskom reli događaju Six Cities North of Portugal nastupit će s novim primjerkom Ford Fiesta Rally2 kit automobila. Ažurirano vozilo, koje već uključuje novi FIA-in paket nadogradnji, javnosti je predstavljeno već prošlog tjedna.",
+   "conclusion": "Poznato je da M-Sport razvija novi automobil za 2027. i da ga testira na reliju u Portugalu uz nastup Josha McErleana. Još nije potvrđeno kakvi su točni tehnički detalji kompletnog paketa ni kakvi su dugoročni planovi momčadi.",
+   "orig_t": "Josh McErlean to test 2027-spec M-Sport WRC car at ERC finale",
+   "hr": true
   },
   {
    "c": "reli",
-   "t": "Jon Armstrong announces WRC co-driver split for 2027",
-   "s": "World Rally Championship rookie Jon Armstrong will compete with a different co-driver in 2027 after announcing plans to split with Shane Byrne after two seasons. The M-Sport-Ford driver announced on social media that the pair had agreed to part ways following…",
    "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/wrc/news/jon-armstrong-announces-wrc-co-driver-split-for-2027/10866937/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-WRC&utm_term=News&utm_content=www",
+   "u": "https://www.motorsport.com/wrc/news/jon-armstrong-announces-wrc-co-driver-split-for-2027/10866937",
    "date": "2026-10-22T11:00+00:00",
-   "orig_t": "Jon Armstrong announces WRC co-driver split for 2027"
-  },
-  {
-   "c": "reli",
-   "t": "WRC star Thierry Neuville makes successful historic circuit racing debut",
-   "s": "World Rally Championship driver Thierry Neuville took victory on his historic circuit racing debut at the Imola Classic. The 2024 WRC champion swapped rally machinery for a Ford Escort RS1600 and his own BMW M3 E30, competing in the Heritage Touring Car Cup…",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/wrc/news/wrc-star-thierry-neuville-makes-successful-historic-circuit-racing-debut/10866477/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-WRC&utm_term=News&utm_content=www",
-   "date": "2026-10-20T12:30+00:00",
-   "orig_t": "WRC star Thierry Neuville makes successful historic circuit racing debut"
-  }
- ],
- "schedule": [
-  {
-   "date": "2026-11-01",
-   "title": "F1 – Mexico City GP",
-   "note": "Mexico City, Mexico"
-  },
-  {
-   "date": "2026-11-01",
-   "title": "MotoGP – VN Malezije",
-   "note": "Sepang"
-  },
-  {
-   "date": "2026-11-08",
-   "title": "F1 – Brazilian GP",
-   "note": "São Paulo, Brazil"
-  },
-  {
-   "date": "2026-11-08",
-   "title": "MotoGP – VN Katara",
-   "note": "Lusail"
-  },
-  {
-   "date": "2026-11-22",
-   "title": "F1 – Las Vegas GP",
-   "note": "Las Vegas, USA"
-  },
-  {
-   "date": "2026-11-29",
-   "title": "F1 – Qatar GP",
-   "note": "Lusail, Qatar"
+   "img_q": "Jon Armstrong announces WRC co-driver split for 2027",
+   "t": "Jon Armstrong i Shane Byrne prekidaju suradnju za 2027.",
+   "s": "Vozač WRC-a Jon Armstrong objavio je da će se on i suvozač Shane Byrne razići nakon dvije zajedničke sezone u reli natjecanjima, što uključuje i njihovu debitantsku godinu u najvišem rangu natjecanja.",
+   "body": "M-Sport-Fordov vozač Jon Armstrong objavio je putem društvenih mreža da su se on i suvozač Shane Byrne dogovorili o prekidu suradnje. Ova odluka znači da će se WRC debitant u predstojećoj sezoni natjecati s novim suvozačem. Njihovo partnerstvo započelo je 2025. godine, a proteklo je razdoblje obilježeno natjecanjem u najvišem rangu Svjetskog reli prvenstva, gdje su odvozili svoju prvu zajedničku vrhunsku sezonu prije nego što su odlučili krenuti svatko svojim putem.",
+   "conclusion": "Poznato je da Jon Armstrong i Shane Byrne prekidaju partnerstvo te da će vozač u 2027. godini tražiti novog suvozača. Još nije potvrđeno tko će točno zamijeniti Byrnea na suvozačkom mjestu.",
+   "orig_t": "Jon Armstrong announces WRC co-driver split for 2027",
+   "hr": true
   }
  ]
 }
