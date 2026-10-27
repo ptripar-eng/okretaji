@@ -2,7 +2,7 @@ name: Osvježi vijesti
 
 on:
   schedule:
-    - cron: "17 */3 * * *"   # svaka 3 sata
+    - cron: "17 */6 * * *"   # svaka 6 sati
   workflow_dispatch:          # ručno pokretanje iz kartice Actions
 
 permissions:
