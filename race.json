@@ -1,0 +1,156 @@
+{
+ "updated": "2026-10-27T11:57+00:00",
+ "season": "2026",
+ "round": 19,
+ "rounds": 23,
+ "name": "Mexico City Grand Prix",
+ "date": "2026-11-01",
+ "time": "20:00:00Z",
+ "circuit": "Autódromo Hermanos Rodríguez",
+ "locality": "Mexico City",
+ "country": "Mexico",
+ "sessions": {
+  "FirstPractice": {
+   "date": "2026-10-30",
+   "time": "18:30:00Z"
+  },
+  "SecondPractice": {
+   "date": "2026-10-30",
+   "time": "22:00:00Z"
+  },
+  "ThirdPractice": {
+   "date": "2026-10-31",
+   "time": "17:30:00Z"
+  },
+  "Qualifying": {
+   "date": "2026-10-31",
+   "time": "21:00:00Z"
+  }
+ },
+ "winners": [
+  {
+   "season": "2025",
+   "driver": "Lando Norris",
+   "team": "McLaren",
+   "grid": "1"
+  },
+  {
+   "season": "2024",
+   "driver": "Carlos Sainz",
+   "team": "Ferrari",
+   "grid": "1"
+  },
+  {
+   "season": "2023",
+   "driver": "Max Verstappen",
+   "team": "Red Bull",
+   "grid": "3"
+  },
+  {
+   "season": "2022",
+   "driver": "Max Verstappen",
+   "team": "Red Bull",
+   "grid": "1"
+  },
+  {
+   "season": "2021",
+   "driver": "Max Verstappen",
+   "team": "Red Bull",
+   "grid": "3"
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "driver": "Andrea Kimi Antonelli",
+   "code": "ANT",
+   "team": "Mercedes",
+   "points": 365.0,
+   "wins": 9
+  },
+  {
+   "pos": 2,
+   "driver": "George Russell",
+   "code": "RUS",
+   "team": "Mercedes",
+   "points": 242.0,
+   "wins": 3
+  },
+  {
+   "pos": 3,
+   "driver": "Lewis Hamilton",
+   "code": "HAM",
+   "team": "Ferrari",
+   "points": 241.0,
+   "wins": 1
+  },
+  {
+   "pos": 4,
+   "driver": "Max Verstappen",
+   "code": "VER",
+   "team": "Red Bull",
+   "points": 236.0,
+   "wins": 2
+  },
+  {
+   "pos": 5,
+   "driver": "Charles Leclerc",
+   "code": "LEC",
+   "team": "Ferrari",
+   "points": 233.0,
+   "wins": 1
+  },
+  {
+   "pos": 6,
+   "driver": "Lando Norris",
+   "code": "NOR",
+   "team": "McLaren",
+   "points": 211.0,
+   "wins": 2
+  },
+  {
+   "pos": 7,
+   "driver": "Oscar Piastri",
+   "code": "PIA",
+   "team": "McLaren",
+   "points": 144.0,
+   "wins": 0
+  },
+  {
+   "pos": 8,
+   "driver": "Isack Hadjar",
+   "code": "HAD",
+   "team": "Red Bull",
+   "points": 105.0,
+   "wins": 0
+  },
+  {
+   "pos": 9,
+   "driver": "Liam Lawson",
+   "code": "LAW",
+   "team": "RB F1 Team",
+   "points": 77.0,
+   "wins": 0
+  },
+  {
+   "pos": 10,
+   "driver": "Pierre Gasly",
+   "code": "GAS",
+   "team": "Alpine F1 Team",
+   "points": 42.0,
+   "wins": 0
+  }
+ ],
+ "standings_round": "18",
+ "track": {
+  "path": "M214.4 187.9 L437.7 218.9 L510.1 228.4 L586.4 235.3 L623.2 239.9 L718.0 253.2 L883.4 277.8 L917.5 284.7 L923.3 287.0 L926.4 289.6 L927.9 293.8 L928.3 297.7 L922.1 338.6 L922.9 342.3 L924.9 345.5 L942.3 354.9 L947.3 357.6 L950.0 361.8 L950.0 365.8 L946.5 391.3 L941.1 414.2 L932.6 436.4 L922.9 456.4 L847.0 585.2 L756.0 728.1 L750.2 737.9 L749.4 743.8 L750.6 748.7 L753.3 752.3 L780.4 769.0 L783.1 771.6 L783.5 775.8 L781.6 779.4 L776.9 783.7 L726.2 822.0 L721.1 824.2 L716.9 824.9 L713.0 823.5 L703.7 817.7 L702.1 813.8 L702.1 805.9 L725.4 624.7 L725.0 619.2 L722.7 614.0 L719.2 609.7 L713.8 605.8 L686.7 589.1 L677.0 580.3 L671.2 574.4 L665.4 563.3 L659.2 546.9 L653.0 537.1 L646.0 530.2 L638.3 525.3 L627.8 520.7 L544.1 508.0 L534.8 505.1 L529.1 500.1 L526.3 496.9 L524.0 492.3 L513.2 458.7 L509.7 452.1 L504.3 445.9 L490.7 437.7 L428.8 404.3 L410.9 396.8 L385.0 390.6 L177.4 360.5 L173.1 358.9 L170.9 356.3 L168.9 352.0 L168.5 346.5 L165.0 293.1 L160.8 256.2 L159.2 252.0 L156.1 249.0 L151.9 247.1 L146.4 247.7 L140.6 253.0 L133.2 264.1 L129.0 267.3 L123.9 269.3 L118.2 269.0 L111.6 266.0 L103.8 262.4 L96.5 260.1 L61.3 256.2 L55.4 254.3 L52.7 252.0 L50.4 247.7 L50.0 243.5 L52.3 233.3 L57.3 219.9 L63.9 208.8 L73.6 195.4 L84.9 186.2 L99.2 179.0 L112.4 175.5 L125.1 175.1 L143.7 177.4 L214.4 187.9 Z",
+  "start": [
+   214.4,
+   187.9
+  ],
+  "length_m": 4304,
+  "opened": 1962,
+  "firstgp": 1963,
+  "altitude": 2232
+ }
+}

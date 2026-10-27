@@ -1,95 +1,151 @@
 {
- "updated": "2026-10-27T11:05+00:00",
+ "updated": "2026-10-27T11:52+00:00",
  "items": [
   {
    "c": "motogp",
-   "t": "Ducati stao u obranu Marca Marqueza zbog situacije s Katarom",
-   "s": "Davide Tardozzi stao je u obranu Marca Marqueza nakon što su vozači zatražili sigurnosna jamstva za nadolazeći posjet Kataru.",
+   "t": "Jorge Martin uoči VN Malezije očekuje svog fizioterapeuta",
+   "s": "Vozač Aprilije Jorge Martin nada se nastupu na Velikoj nagradi Malezije. Očekuje dolazak svog fizioterapeuta Aitora Tomasa koji je pripremio plan oporavka.",
    "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/motogp/news/marc-marquez-ducati-guarantees-qatar-gp-tardozzi/10868659/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
-   "date": "2026-10-27T10:32+00:00",
-   "orig_t": "Ducati: “Marc Marquez has asked for guarantees to go to Qatar, while others stay silent”",
-   "hr": true
+   "u": "https://www.motorsport.com/motogp/news/martins-incomplete-fracture-leaves-him-hopeful-of-racing-at-sepang/10868805/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
+   "date": "2026-10-27T11:30+00:00",
+   "orig_t": "Jorge Martin hopeful of racing in Malaysia after \"not complete\" fracture diagnosis",
+   "img_q": "Jorge Martin MotoGP",
+   "hr": true,
+   "nb": true
   },
   {
    "c": "auto",
-   "t": "Opoziv modela Audi Q4 E-Tron obuhvaća 9048 električnih vozila zbog rizika od požara baterije",
+   "t": "Policija pronašla Hot Wheels autiće vrijedne 54.000 dolara",
+   "s": "Nakon poziva upućenog u 3 sata ujutro, policijski službenici pronašli su 350 zapakiranih Hot Wheels autića na teretnom vlakom u Coltonu.",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813387/54-000-hot-wheels-recovered/",
+   "date": "2026-10-27T11:41+00:00",
+   "orig_t": "Police Recovered $54,000 Worth Of Hot Wheels After A Train Heist",
+   "img_q": "Hot Wheels train",
+   "hr": true,
+   "nb": true
+  },
+  {
+   "c": "auto",
+   "t": "Bakreni Maserati GFG Peralta D ističe se izgledom",
+   "s": "Model GFG Peralta D je jedinstveni 2+2 Gran Turismo kupe izrađen od ručno rađenog bakra koji se u potpunosti izdvaja na cesti.",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813383/maserati-granturismo-one-off-gullwing/",
+   "date": "2026-10-27T11:24+00:00",
+   "orig_t": "This Copper Maserati Looks Like Nothing Else On The Road",
+   "img_q": "Maserati copper coupe",
+   "hr": true,
+   "nb": true
+  },
+  {
+   "c": "moto",
+   "t": "Kawasaki razvija vodikove motocikle, ali suočava se s velikim izazovom",
+   "s": "Izrada motocikla na vodikov pogon samo je dio plana, dok je rješavanje logistike opskrbe vodikom puno veći zadatak.",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813182/kawasaki-teams-up-with-transgaz-hydrogen-energy/",
+   "date": "2026-10-27T11:22+00:00",
+   "orig_t": "Kawasaki Wants Hydrogen Motorcycles. First, It Needs To Solve A Much Bigger Problem",
+   "img_q": "Kawasaki hydrogen motorcycle",
+   "hr": true,
+   "nb": true
+  },
+  {
+   "c": "auto",
+   "t": "Šezdeset godina Toyote Corolle i pregled svih generacija",
+   "s": "Toyota Corolla obilježava 60 godina postojanja, a dosad je proizvedeno nevjerojatnih 57 milijuna primjeraka.",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813375/toyota-corolla-60-year-anniversary/",
+   "date": "2026-10-27T11:15+00:00",
+   "orig_t": "60 Years Of The Toyota Corolla: These Are All The Generations",
+   "img_q": "Toyota Corolla generations",
+   "hr": true,
+   "nb": true
+  },
+  {
+   "c": "auto",
+   "t": "Opoziv za 9048 primjeraka modela Audi Q4 E-Tron zbog rizika od požara",
    "s": "Volkswagen Group of America izdao je opoziv za 9048 primjeraka modela Audi Q4 E-Tron dok inženjeri rade na trajnom rješenju za visokonaponsku bateriju.",
    "src": "Motor1",
    "u": "https://www.motor1.com/news/813371/audi-q4-e-tron-recall/",
    "date": "2026-10-27T10:44+00:00",
    "orig_t": "Audi Q4 E-Tron Recall Affects 9,048 EVs Over Battery Fire Risk",
-   "hr": true
+   "img_q": "Audi Q4 E-Tron",
+   "hr": true,
+   "nb": true
+  },
+  {
+   "c": "motogp",
+   "t": "Ducati stao u obranu Marca Marqueza zbog sigurnosnih jamstava za Katar",
+   "s": "Davide Tardozzi podržao je Marca Marqueza nakon što su vozači zatražili sigurnosna jamstva organizatora prvenstva uoči posjeta Kataru.",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/marc-marquez-ducati-guarantees-qatar-gp-tardozzi/10868659/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
+   "date": "2026-10-27T10:32+00:00",
+   "orig_t": "Ducati: “Marc Marquez has asked for guarantees to go to Qatar, while others stay silent”",
+   "img_q": "",
+   "hr": true,
+   "nb": true,
+   "img": {
+    "id": "562398a9-cfc9-4507-b1fb-2601d401e55e",
+    "src": "https://api.openverse.org/v1/images/562398a9-cfc9-4507-b1fb-2601d401e55e/thumb/",
+    "by": "Thermos",
+    "lic": "CC BY-SA 4.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=3492651"
+   }
   },
   {
    "c": "auto",
-   "t": "Mitsubishi održava duh modela Lancer Evo kroz SUV drugog proizvođača",
-   "s": "Mitsubishi želi očuvati nasljeđe svog relijem inspiriranog modela, pa čak i ako za to mora posuditi SUV koji je izgradila druga tvrtka.",
+   "t": "Mitsubishi nastavlja održavati duh modela Lancer Evo kroz SUV druge tvrtke",
+   "s": "Mitsubishi nastavlja održavati nasljeđe svoje legendarne ikone nadahnute relijem oslanjajući se na SUV koji proizvodi druga tvrtka.",
    "src": "Motor1",
    "u": "https://www.motor1.com/news/813365/mitsubishi-evo-spirit-alive-suv/",
    "date": "2026-10-27T10:23+00:00",
    "orig_t": "Mitsubishi Is Keeping The Lancer Evo's Spirit Alive... In An SUV Built By Another Company",
-   "hr": true
+   "img_q": "",
+   "hr": true,
+   "nb": true,
+   "img": {
+    "id": "ac642f28-9fe6-4ab6-8c31-69235d2ebc2d",
+    "src": "https://api.openverse.org/v1/images/ac642f28-9fe6-4ab6-8c31-69235d2ebc2d/thumb/",
+    "by": "Dietmar Rabich",
+    "lic": "CC BY-SA 4.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=71883821"
+   }
   },
   {
    "c": "f1",
-   "t": "Red Bull objasnio zašto se problemi Maxa Verstappena i Isacka Hadjara neće riješiti",
-   "s": "Iako je Max Verstappen osvojio novo postolje, u momčadi Red Bulla vladalo je nezadovoljstvo zbog tehničkih i razvojnih poteškoća s kojima se suočavaju vozači.",
+   "t": "Red Bull objasnio zašto problemi Maxa Verstappena i Isacka Hadjara neće biti riješeni",
+   "s": "Max Verstappen osigurao je novo postolje, ali u momčadi Red Bulla nije bilo zadovoljstva zbog tehničkih i razvojnih poteškoća.",
    "src": "Autosport",
    "u": "https://www.autosport.com/f1/news/red-bull-explains-why-verstappen-and-hadjar-silly-problems-wont-be-fixed-in-2026/10868779/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
    "date": "2026-10-27T09:46+00:00",
    "orig_t": "Red Bull explains why Verstappen and Hadjar's 'silly' problems won't all be fixed in 2026",
-   "hr": true
+   "img_q": "",
+   "hr": true,
+   "nb": true
   },
   {
    "c": "f1",
-   "t": "Red Bull otkrio kada će biti riješeni problemi Maxa Verstappena i Isacka Hadjara",
-   "s": "Nakon nove utrke u kojoj je Max Verstappen stigao do postolja, u redovima Red Bulla izraženo je nezadovoljstvo stanjem bolida i performansama na stazi.",
+   "t": "Red Bull otkrio kada bi se mogli riješiti problemi s bolidom",
+   "s": "Iako je Max Verstappen stigao do postolja, u Red Bullu vlada nezadovoljstvo stanjem bolida i performansama. Tim traži rješenja za probleme s kojima se suočavaju vozači.",
    "src": "Motorsport.com",
    "u": "https://www.motorsport.com/f1/news/red-bull-reveals-when-silly-problems-affecting-max-verstappen-and-isack-hadjar-can-be-fixed/10868773/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
    "date": "2026-10-27T09:34+00:00",
    "orig_t": "Red Bull reveals when 'silly' problems affecting Max Verstappen and Isack Hadjar can be fixed",
-   "hr": true
+   "img_q": "Max Verstappen Red Bull",
+   "hr": true,
+   "nb": true
   },
   {
    "c": "auto",
-   "t": "Jeep predstavio najpopularniju nadogradnju za model Gladiator iz tvornice",
-   "s": "Novi model 2027 Jeep Gladiator 35-inch Tire Launch Edition donosi tvorničko podizanje vozila, povećanu udaljenost od tla i poboljšani hardver.",
+   "t": "Stiže nova tvornička nadogradnja za Jeep Gladiator",
+   "s": "Novi model 2027 Jeep Gladiator 35-inch Tire Launch Edition donosi tvorničko podizanje vozila, povećanu udaljenost od tla i poboljšani hardver za odabrane pakete opreme.",
    "src": "Motor1",
    "u": "https://www.motor1.com/news/813358/jeep-gladiator-35-inch-package/",
    "date": "2026-10-27T08:56+00:00",
    "orig_t": "Jeep’s Most Popular Gladiator Upgrade Is Finally Available From The Factory",
-   "hr": true
-  },
-  {
-   "c": "auto",
-   "t": "Volkswagen navodno razmatra uvođenje kineskog softvera u europske automobile radi uštede",
-   "s": "Interni izračuni pokazuju da bi Volkswagen mogao uštedjeti do pet milijardi eura na svom najvažnijem modelu, no iz tvrtke odbijaju komentirati ove navode.",
-   "src": "Motor1",
-   "u": "https://www.motor1.com/news/813348/vw-report-chinese-software-european-cars/",
-   "date": "2026-10-27T08:49+00:00",
-   "orig_t": "The Volkswagen Group Reportedly Wants To Put Chinese Software In European Cars To Cut Costs",
-   "hr": true
-  },
-  {
-   "c": "auto",
-   "t": "Chevrolet želi zadržati pristupačnu cijenu iduće Corvette usprkos većoj snazi",
-   "s": "Tony Roma izjavio je kako želi da iduća Chevrolet Corvette nadmaši model C8, ali da istovremeno zadrži cijenu daleko od razine koju drže proizvođači poput Ferrarija i Lamborghinija.",
-   "src": "Motor1",
-   "u": "https://www.motor1.com/news/813343/gm-c9-corvette-plans-focus/",
-   "date": "2026-10-27T07:56+00:00",
-   "orig_t": "Chevy Wants The Next Corvette To Stay Affordable, Even With More Power",
-   "hr": true
-  },
-  {
-   "c": "auto",
-   "t": "Audi otkrio planove o proizvodnji svojih modela u Americi",
-   "s": "Iz Audija su otkrili koje modele planiraju graditi u Sjedinjenim Američkim Državama, a prema najavama, riječ je isključivo o velikim SUV vozilima.",
-   "src": "Motor1",
-   "u": "https://www.motor1.com/news/813334/audi-reveals-models-made-in-usa/",
-   "date": "2026-10-27T07:26+00:00",
-   "orig_t": "Audi Reveals Which Models It Plans To Build In America",
-   "hr": true
+   "img_q": "Jeep Gladiator truck",
+   "hr": true,
+   "nb": true
   },
   {
    "c": "energy",
@@ -101,7 +157,13 @@
    "orig_t": "Wouldn’t It Be Funny If Audi Manufactures EVs In The US?",
    "hr": true,
    "body": "Njemački proizvođač automobila Audi najavio je planove za izgradnju nove tvornice vrijedne četiri milijarde dolara u Peach Countyju u Georgiji. Iskopavanje terena zakazano je za dvodisušnu dvodimičnu godinu, dok početak gradnje slijedi iduće godine, a potpuna proizvodnja očekuje se tek kasnije. Iako izvršni direktor Audija Gernot Döllner predviđa da će se sjevernoameričko tržište u idućem desetljeću ili dva i dalje oslanjati na motore s unutarnjim izgaranjem i hibride, marka se priprema za uvođenje plug-in hibridnih vozila na američko tržište. Prvi model s visokim performansama bit će novi Audi RS 5, koji donosi značajnu snagu i električni domet. Predsjednik Audija za Ameriku Vito Paladino potvrdio je da će brend nuditi hibride i izvan nadolazeće limuzine RS 5 i superautomobila Nuvolari. Planirana tvornica u Georgiji trebala bi biti prilagođena budućim proizvodnim zahtjevima s naglaskom na fleksibilnost i reakciju na potrebe kupaca, a guvernerova je objava istaknula i otvaranje novih radnih mjesta. Ipak, najava novog postrojenja i javno pojavljivanje izvršnog direktora izazvali su kritike unutar sindikata i kod dijela dionika zbog pitanja korporativne neutralnosti i komunikacije s nadzornim odborom.",
-   "body_words": 176
+   "img": {
+    "id": "21c16849-2dac-48f6-859e-8eecde2fd11a",
+    "src": "https://api.openverse.org/v1/images/21c16849-2dac-48f6-859e-8eecde2fd11a/thumb/",
+    "by": "Munro89",
+    "lic": "CC BY-SA 4.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=101284300"
+   }
   },
   {
    "c": "energy",
@@ -113,7 +175,13 @@
    "orig_t": "From Barrel to Battery: What Will Europe’s Clean Car Debate Decide",
    "hr": true,
    "body": "Europska unija ponovno vodi oštru raspravu o budućnosti automobilske industrije i tempu prijelaza na električne automobile. Dok su tijekom energetske krize cijene litij-ionskih baterija i nafte bile na visokim razinama, globalna cijena baterija znatno je pala. S druge strane, geopolitički sukobi ponovno su gurnuli cijene nafte prema gore. Ovakav razvoj događaja donosi simboličan trenutak u kojem jedan kilovatsat kapaciteta baterije košta manje od barela nafte. Dok automobili s motorima s unutarnjim izgaranjem tijekom svog vijeka potroše stotine barela nafte, električnom vozilu je potrebna znatno manja količina energije pohranjene u bateriji koja ostaje resurs za recikliranje. Vozači električnih vozila uvelike su pošteđeni rasta cijena energetske krize i plaćaju znatno jeftinije gorivo u usporedbi s vozačima klasičnih automobila. Unatoč tome, politički dužnosnici raspravljaju o ublažavanju ciljeva za čiste automobile i mogućem uvođenju rješenja poput biogoriva, što dio stručnjaka i koalicija industrijskih skupina smatra korakom unatrag. Tržište električnih automobila u ključnim zemljama poput Francuske i Njemačke bilježi rast, a zagovornici čistog prometa pozivaju na donošenje odluka koje će europsku industriju i potrošače zaštititi od budućih naftnih kriza.",
-   "body_words": 174
+   "img": {
+    "id": "2e5731d2-ddce-4c86-b484-eee3ad28ed4f",
+    "src": "https://api.openverse.org/v1/images/2e5731d2-ddce-4c86-b484-eee3ad28ed4f/thumb/",
+    "by": "Geographer",
+    "lic": "CC BY-SA 2.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=130579071"
+   }
   },
   {
    "c": "energy",
@@ -125,16 +193,26 @@
    "orig_t": "New Report Keeps Tabs on ACC’s Utility Bias that Ends up Hurting Wallets",
    "hr": true,
    "body": "Organizacija Sierra Club objavila je novo izvješće pod nazivom koje preispituje utjecaj Arizonske korporacijske komisije na energetsku budućnost savezne države Arizone, javno zdravlje i rast računa za električnu energiju. Izvješće analizira ulogu komisije u poticanju plinskih projekata te ukazuje na etičke nedostatke unutar tijela. Dokument je objavljen u trenutku kada komisija razmatra nova povećanja cijena za energetske tvrtke poput Arizona Public Service i Tucson Electric Power, uključujući mehanizme koji bi im omogućili godišnje poskupljenje uz manje prilika za uključivanje javnosti. Prema navodima iz izvješća, Arizona ima neke od najviših računa za električnu energiju u zemlji, a komisija svojim odlukama podržava skupe projekte fosilnog plina te istovremeno smanjuje programe energetske učinkovitosti. Predstavnici organizacije ističu da su odluke komisije u suprotnosti s interesima građana te da daju prednost profitu i investitorima nauštrb zdravlja i dobrobiti lokalne zajednice. Uoči novih odluka o cijenama, iz Ureda državnog odvjetnika upućeni su pozivi da se pojedini članovi komisije izuzmu iz tekućih postupaka zbog spornih okolnosti i komunikacije s investitorima.",
-   "body_words": 163
+   "img": {
+    "id": "c0613a5c-f9fa-464a-871f-0a0121625455",
+    "src": "https://api.openverse.org/v1/images/c0613a5c-f9fa-464a-871f-0a0121625455/thumb/",
+    "by": "Our World In Data - Max Roser",
+    "lic": "CC BY-SA 4.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=106244999"
+   }
   },
   {
    "c": "energy",
-   "t": "The EU Is Showing How Regional Maritime Rules Can Support A Global Framework At The IMO",
-   "s": "Carbon pricing in a global context In April 2025, governments at the International Maritime Organization (IMO) agreed on a historic global regulation, the Net-Zero Framework (NZF). It was designed to set global shipping on a course to net-zero by 2050 in a…",
+   "t": "EU pokazuje kako regionalna pomorska pravila mogu podržati globalni okvir pri IMO-u",
+   "s": "Europska unija predložila je izmjene sustava EU ETS kako bi se omogućilo usklađivanje s globalnim propisima Međunarodne pomorske organizacije i spriječilo dvostruko oporezivanje emisija.",
    "src": "CleanTechnica",
    "u": "https://cleantechnica.com/2026/10/26/the-eu-is-showing-how-regional-maritime-rules-can-support-a-global-framework-at-the-imo/",
    "date": "2026-10-27T02:45+00:00",
-   "orig_t": "The EU Is Showing How Regional Maritime Rules Can Support A Global Framework At The IMO"
+   "orig_t": "The EU Is Showing How Regional Maritime Rules Can Support A Global Framework At The IMO",
+   "img_q": "container ship ocean",
+   "hr": true,
+   "body": "U travnju dvije tisuće dvadeset i pete godine, vlade pri Međunarodnoj pomorskoj organizaciji postigle su dogovor o globalnoj regulativi poznatoj kao Net-Zero Framework s ciljem postizanja nulte neto stope u brodarstvu do dvije tisuće pedesete godine. Globalni pomorski sektor odgovoran je za otprilike tri posto globalnih emisija na godišnjoj razini. Iako je propis trebao biti usvojen, listopad dvije tisuće dvadeset i pete donio je zastoj, dijelom zbog zabrinutosti zemalja proizvođača nafte predvođenih Sjedinjenim Američkim Državama i Saudijskom Arabijom u vezi s preklapanjem regionalnih i globalnih mjera ugljičnog oporezivanja.\n\nEuropska unija je kao odgovor predložila važne promjene u sustavu EU ETS za brodarstvo kako bi pokazala da regionalna i globalna regulativa mogu postojati zajedno. Prvi ključni signal odnosi se na sprječavanje dvostrukog oporezivanja emisija, što znači da brodovi koji plove u međunarodnoj plovidbi neće morati dvaput plaćati za iste emisije ako IMO uspostavi sustav poput Net-Zero Frameworka. Analize pokazuju da je preklapanje trenutno minimalno. Drugi signal naglašava usklađivanje kroz suradnju, pri čemu bi predloženi model omogućio trgovinskim partnerima EU-a ostvarivanje prihoda putem postojećeg sustava bez dodatnih administrativnih opterećenja. Treći signal usmjeren je na pravednu tranziciju, uključujući izdvajanje sredstava za dekarbonizaciju brodarstva u ranjivim otočnim i slabije razvijenim zemljama.\n\nOčekuje se da će IMO ponovno raspravljati o usvajanju ovog okvira, dok EU svojim potezima otvara put suradnji i uklanja izgovore za slabo djelovanje na globalnoj razini.",
+   "body_words": 224
   },
   {
    "c": "energy",
@@ -143,7 +221,14 @@
    "src": "CleanTechnica",
    "u": "https://cleantechnica.com/2026/10/26/how-the-swiss-want-to-travel-to-the-uk/",
    "date": "2026-10-27T02:38+00:00",
-   "orig_t": "How the Swiss Want to Travel to the UK"
+   "orig_t": "How the Swiss Want to Travel to the UK",
+   "img": {
+    "id": "c1102994-60fa-4499-8b7b-cce965e0f072",
+    "src": "https://api.openverse.org/v1/images/c1102994-60fa-4499-8b7b-cce965e0f072/thumb/",
+    "by": "Annawjacobs",
+    "lic": "CC BY 3.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=11263357"
+   }
   },
   {
    "c": "energy",
@@ -152,7 +237,14 @@
    "src": "CleanTechnica",
    "u": "https://cleantechnica.com/2026/10/26/new-whitepaper-shows-how-grid-operators-energy-regulators-can-use-solar-storage-to-secure-the-grid-boost-reliability-reduce-energy-costs/",
    "date": "2026-10-27T02:26+00:00",
-   "orig_t": "New Whitepaper Shows How Grid Operators & Energy Regulators Can Use Solar & Storage to Secure the Grid, Boost Reliability & Reduce Energy Costs"
+   "orig_t": "New Whitepaper Shows How Grid Operators & Energy Regulators Can Use Solar & Storage to Secure the Grid, Boost Reliability & Reduce Energy Costs",
+   "img": {
+    "id": "178e3398-521a-405a-94aa-0d1f3d2cee52",
+    "src": "https://api.openverse.org/v1/images/178e3398-521a-405a-94aa-0d1f3d2cee52/thumb/",
+    "by": "Radiotrefoil",
+    "lic": "CC BY-SA 4.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=61477574"
+   }
   },
   {
    "c": "tech",
@@ -170,7 +262,14 @@
    "src": "Motorsport.com",
    "u": "https://www.motorsport.com/f1/news/naomi-schiff-warns-red-bull-over-knifes-edge-f1-car-after-us-gp-struggles/10868723/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
    "date": "2026-10-26T22:06+00:00",
-   "orig_t": "Naomi Schiff warns Red Bull over \"knife's edge\" F1 car after US GP struggles"
+   "orig_t": "Naomi Schiff warns Red Bull over \"knife's edge\" F1 car after US GP struggles",
+   "img": {
+    "id": "4ddf2564-8183-4289-bd8c-8ab092a8c636",
+    "src": "https://api.openverse.org/v1/images/4ddf2564-8183-4289-bd8c-8ab092a8c636/thumb/",
+    "by": "Jen Ross",
+    "lic": "CC BY 2.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=108280423"
+   }
   },
   {
    "c": "f1",
@@ -179,7 +278,14 @@
    "src": "Motorsport.com",
    "u": "https://www.motorsport.com/f1/news/fred-vasseur-blames-a-q3-disaster-and-a-broken-cadillac-for-robbing-ferrari-of-a-us-gp-win/10868569/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
    "date": "2026-10-26T21:37+00:00",
-   "orig_t": "Fred Vasseur reveals two costly moments that denied Ferrari US GP double podium"
+   "orig_t": "Fred Vasseur reveals two costly moments that denied Ferrari US GP double podium",
+   "img": {
+    "id": "e84d1253-5f67-4224-85d1-484477e6705d",
+    "src": "https://api.openverse.org/v1/images/e84d1253-5f67-4224-85d1-484477e6705d/thumb/",
+    "by": "Stephen Grimes",
+    "lic": "CC BY-SA 2.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=61442877"
+   }
   },
   {
    "c": "f1",
@@ -188,7 +294,14 @@
    "src": "Motorsport.com",
    "u": "https://www.motorsport.com/f1/news/mekies-explains-the-invisible-debris-that-cost-max-verstappen-2nd-place-in-austin/10868579/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
    "date": "2026-10-26T21:16+00:00",
-   "orig_t": "Red Bull reveals damage behind Max Verstappen's US GP struggles"
+   "orig_t": "Red Bull reveals damage behind Max Verstappen's US GP struggles",
+   "img": {
+    "id": "47aae811-068c-4c55-a7d3-b8589ede6566",
+    "src": "https://api.openverse.org/v1/images/47aae811-068c-4c55-a7d3-b8589ede6566/thumb/",
+    "by": "Marcin Wichary",
+    "lic": "CC BY 2.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=3869926"
+   }
   },
   {
    "c": "tech",
@@ -197,7 +310,14 @@
    "src": "Ars Technica",
    "u": "https://arstechnica.com/health/2026/10/whats-worse-than-having-eye-worms-having-eye-worms-with-babies/",
    "date": "2026-10-26T20:27+00:00",
-   "orig_t": "Worms mate in man's eyes, get plucked out right before larvae burst out"
+   "orig_t": "Worms mate in man's eyes, get plucked out right before larvae burst out",
+   "img": {
+    "id": "b2756772-d7b4-46ef-bd24-6ad3faca82ac",
+    "src": "https://api.openverse.org/v1/images/b2756772-d7b4-46ef-bd24-6ad3faca82ac/thumb/",
+    "by": "Jim Berlin",
+    "lic": "CC BY-SA 3.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=5138148"
+   }
   },
   {
    "c": "tech",
@@ -206,7 +326,14 @@
    "src": "Ars Technica",
    "u": "https://arstechnica.com/science/2026/10/meet-the-real-life-scottish-surgeon-who-inspired-sherlock-holmes/",
    "date": "2026-10-26T20:15+00:00",
-   "orig_t": "Meet the real-life Scottish surgeon who inspired Sherlock Holmes"
+   "orig_t": "Meet the real-life Scottish surgeon who inspired Sherlock Holmes",
+   "img": {
+    "id": "19daba01-5098-4366-b9bb-1ee8b1dba814",
+    "src": "https://api.openverse.org/v1/images/19daba01-5098-4366-b9bb-1ee8b1dba814/thumb/",
+    "by": "Steve Jurvetson from Los Altos, USA",
+    "lic": "CC BY 2.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=105132764"
+   }
   },
   {
    "c": "tech",
@@ -215,7 +342,14 @@
    "src": "Ars Technica",
    "u": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
    "date": "2026-10-26T20:04+00:00",
-   "orig_t": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo"
+   "orig_t": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",
+   "img": {
+    "id": "9a73efb3-b79e-44f4-8922-515ee5858691",
+    "src": "https://api.openverse.org/v1/images/9a73efb3-b79e-44f4-8922-515ee5858691/thumb/",
+    "by": "PantheraLeo1359531",
+    "lic": "CC BY 4.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=147172515"
+   }
   },
   {
    "c": "tech",
@@ -224,7 +358,14 @@
    "src": "Ars Technica",
    "u": "https://arstechnica.com/apple/2026/10/apple-reveals-updated-ipad-mini-with-a-bigger-oled-screen-for-700/",
    "date": "2026-10-26T19:04+00:00",
-   "orig_t": "Apple reveals updated iPad mini with a bigger OLED screen for $700"
+   "orig_t": "Apple reveals updated iPad mini with a bigger OLED screen for $700",
+   "img": {
+    "id": "51c3a377-fee7-41c4-b861-9b4099de9f10",
+    "src": "https://api.openverse.org/v1/images/51c3a377-fee7-41c4-b861-9b4099de9f10/thumb/",
+    "by": "Charly Whisky",
+    "lic": "CC BY-SA 4.0",
+    "link": "https://commons.wikimedia.org/w/index.php?curid=35085057"
+   }
   },
   {
    "c": "tech",
@@ -308,15 +449,6 @@
    "orig_t": "MotoGP Came to Its Senses and Created a Motogp Academy To Help Tackle Spanish Grid Dominance"
   },
   {
-   "c": "moto",
-   "t": "LiveWire's Most Important Electric Motorcycle Ever Is Coming to EICMA",
-   "s": "This bike could make or break LiveWire for good.",
-   "src": "RideApart",
-   "u": "https://www.rideapart.com/news/812975/2027-livewire-dust-hightail-ev-dirt-bike-eicma-debut-harley-davidson/",
-   "date": "2026-10-26T11:18+00:00",
-   "orig_t": "LiveWire's Most Important Electric Motorcycle Ever Is Coming to EICMA"
-  },
-  {
    "c": "motogp",
    "t": "Inside Jorge Martin’s recovery plan to get fit for Sepang MotoGP",
    "s": "If taking on Marc Marquez in a closely fought battle for the MotoGP world title is already difficult enough, Martín’s challenge has become even more complicated following his crash during the sprint at the Australian Grand Prix. The incident came as he was…",
@@ -342,15 +474,6 @@
    "u": "https://www.motorsport.com/motogp/news/why-phillip-island-race-was-not-moved-to-saturday/10868251/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
    "date": "2026-10-25T14:00+00:00",
    "orig_t": "Why MotoGP didn’t move Australian GP to Saturday despite bad weather forecast"
-  },
-  {
-   "c": "motogp",
-   "t": "Winners and losers from MotoGP’s cancelled Australian GP weekend",
-   "s": "The Australian Grand Prix was cancelled after poor visibility prevented the medical helicopter from operating between Phillip Island and mainland Melbourne. But while the grand prix itself was washed out, Saturday’s sprint still counted for points and had a…",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/motogp/news/winner-and-losers-from-motogps-cancelled-australian-gp-weekend/10868231/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-MOTOGP&utm_term=News&utm_content=www",
-   "date": "2026-10-25T13:35+00:00",
-   "orig_t": "Winners and losers from MotoGP’s cancelled Australian GP weekend"
   },
   {
    "c": "reli",

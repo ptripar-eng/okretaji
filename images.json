@@ -1,0 +1,111 @@
+{
+ "https://www.motorsport.com/motogp/news/martins-incomplete-fracture-leaves-him-hopeful-of-racing-at-sepang/10868805/": null,
+ "https://www.motor1.com/news/813387/54-000-hot-wheels-recovered/": null,
+ "https://www.motor1.com/news/813383/maserati-granturismo-one-off-gullwing/": null,
+ "https://www.rideapart.com/news/813182/kawasaki-teams-up-with-transgaz-hydrogen-energy/": null,
+ "https://www.motor1.com/news/813375/toyota-corolla-60-year-anniversary/": null,
+ "https://www.motor1.com/news/813371/audi-q4-e-tron-recall/": null,
+ "https://www.motorsport.com/motogp/news/marc-marquez-ducati-guarantees-qatar-gp-tardozzi/10868659/": {
+  "id": "562398a9-cfc9-4507-b1fb-2601d401e55e",
+  "src": "https://api.openverse.org/v1/images/562398a9-cfc9-4507-b1fb-2601d401e55e/thumb/",
+  "by": "Thermos",
+  "lic": "CC BY-SA 4.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=3492651"
+ },
+ "https://www.motor1.com/news/813365/mitsubishi-evo-spirit-alive-suv/": {
+  "id": "ac642f28-9fe6-4ab6-8c31-69235d2ebc2d",
+  "src": "https://api.openverse.org/v1/images/ac642f28-9fe6-4ab6-8c31-69235d2ebc2d/thumb/",
+  "by": "Dietmar Rabich",
+  "lic": "CC BY-SA 4.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=71883821"
+ },
+ "https://www.autosport.com/f1/news/red-bull-explains-why-verstappen-and-hadjar-silly-problems-wont-be-fixed-in-2026/10868779/": null,
+ "https://www.motorsport.com/f1/news/red-bull-reveals-when-silly-problems-affecting-max-verstappen-and-isack-hadjar-can-be-fixed/10868773/": null,
+ "https://www.motor1.com/news/813358/jeep-gladiator-35-inch-package/": null,
+ "https://cleantechnica.com/2026/10/26/audi-factory-us-plugin-hybrid-evs-trump-celebrates/": {
+  "id": "21c16849-2dac-48f6-859e-8eecde2fd11a",
+  "src": "https://api.openverse.org/v1/images/21c16849-2dac-48f6-859e-8eecde2fd11a/thumb/",
+  "by": "Munro89",
+  "lic": "CC BY-SA 4.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=101284300"
+ },
+ "https://cleantechnica.com/2026/10/26/from-barrel-to-battery-what-will-europes-clean-car-debate-decide/": {
+  "id": "2e5731d2-ddce-4c86-b484-eee3ad28ed4f",
+  "src": "https://api.openverse.org/v1/images/2e5731d2-ddce-4c86-b484-eee3ad28ed4f/thumb/",
+  "by": "Geographer",
+  "lic": "CC BY-SA 2.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=130579071"
+ },
+ "https://cleantechnica.com/2026/10/26/new-report-keeps-tabs-on-accs-utility-bias-that-ends-up-hurting-wallets/": {
+  "id": "c0613a5c-f9fa-464a-871f-0a0121625455",
+  "src": "https://api.openverse.org/v1/images/c0613a5c-f9fa-464a-871f-0a0121625455/thumb/",
+  "by": "Our World In Data - Max Roser",
+  "lic": "CC BY-SA 4.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=106244999"
+ },
+ "https://cleantechnica.com/2026/10/26/the-eu-is-showing-how-regional-maritime-rules-can-support-a-global-framework-at-the-imo/": null,
+ "https://cleantechnica.com/2026/10/26/how-the-swiss-want-to-travel-to-the-uk/": {
+  "id": "c1102994-60fa-4499-8b7b-cce965e0f072",
+  "src": "https://api.openverse.org/v1/images/c1102994-60fa-4499-8b7b-cce965e0f072/thumb/",
+  "by": "Annawjacobs",
+  "lic": "CC BY 3.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=11263357"
+ },
+ "https://cleantechnica.com/2026/10/26/new-whitepaper-shows-how-grid-operators-energy-regulators-can-use-solar-storage-to-secure-the-grid-boost-reliability-reduce-energy-costs/": {
+  "id": "178e3398-521a-405a-94aa-0d1f3d2cee52",
+  "src": "https://api.openverse.org/v1/images/178e3398-521a-405a-94aa-0d1f3d2cee52/thumb/",
+  "by": "Radiotrefoil",
+  "lic": "CC BY-SA 4.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=61477574"
+ },
+ "https://arstechnica.com/gadgets/2026/10/microsoft-offers-voluntary-buyouts-to-60000-employees/": null,
+ "https://www.motorsport.com/f1/news/naomi-schiff-warns-red-bull-over-knifes-edge-f1-car-after-us-gp-struggles/10868723/": {
+  "id": "4ddf2564-8183-4289-bd8c-8ab092a8c636",
+  "src": "https://api.openverse.org/v1/images/4ddf2564-8183-4289-bd8c-8ab092a8c636/thumb/",
+  "by": "Jen Ross",
+  "lic": "CC BY 2.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=108280423"
+ },
+ "https://www.motorsport.com/f1/news/fred-vasseur-blames-a-q3-disaster-and-a-broken-cadillac-for-robbing-ferrari-of-a-us-gp-win/10868569/": {
+  "id": "e84d1253-5f67-4224-85d1-484477e6705d",
+  "src": "https://api.openverse.org/v1/images/e84d1253-5f67-4224-85d1-484477e6705d/thumb/",
+  "by": "Stephen Grimes",
+  "lic": "CC BY-SA 2.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=61442877"
+ },
+ "https://www.motorsport.com/f1/news/mekies-explains-the-invisible-debris-that-cost-max-verstappen-2nd-place-in-austin/10868579/": {
+  "id": "47aae811-068c-4c55-a7d3-b8589ede6566",
+  "src": "https://api.openverse.org/v1/images/47aae811-068c-4c55-a7d3-b8589ede6566/thumb/",
+  "by": "Marcin Wichary",
+  "lic": "CC BY 2.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=3869926"
+ },
+ "https://arstechnica.com/health/2026/10/whats-worse-than-having-eye-worms-having-eye-worms-with-babies/": {
+  "id": "b2756772-d7b4-46ef-bd24-6ad3faca82ac",
+  "src": "https://api.openverse.org/v1/images/b2756772-d7b4-46ef-bd24-6ad3faca82ac/thumb/",
+  "by": "Jim Berlin",
+  "lic": "CC BY-SA 3.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=5138148"
+ },
+ "https://arstechnica.com/science/2026/10/meet-the-real-life-scottish-surgeon-who-inspired-sherlock-holmes/": {
+  "id": "19daba01-5098-4366-b9bb-1ee8b1dba814",
+  "src": "https://api.openverse.org/v1/images/19daba01-5098-4366-b9bb-1ee8b1dba814/thumb/",
+  "by": "Steve Jurvetson from Los Altos, USA",
+  "lic": "CC BY 2.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=105132764"
+ },
+ "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/": {
+  "id": "9a73efb3-b79e-44f4-8922-515ee5858691",
+  "src": "https://api.openverse.org/v1/images/9a73efb3-b79e-44f4-8922-515ee5858691/thumb/",
+  "by": "PantheraLeo1359531",
+  "lic": "CC BY 4.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=147172515"
+ },
+ "https://arstechnica.com/apple/2026/10/apple-reveals-updated-ipad-mini-with-a-bigger-oled-screen-for-700/": {
+  "id": "51c3a377-fee7-41c4-b861-9b4099de9f10",
+  "src": "https://api.openverse.org/v1/images/51c3a377-fee7-41c4-b861-9b4099de9f10/thumb/",
+  "by": "Charly Whisky",
+  "lic": "CC BY-SA 4.0",
+  "link": "https://commons.wikimedia.org/w/index.php?curid=35085057"
+ }
+}
