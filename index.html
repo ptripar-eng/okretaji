@@ -578,7 +578,7 @@ function cat(n){return CATS[n.c]||CAT_FALLBACK;}
 const imageLookupInFlight=new Set();
 function attachPhoto(n,box){
   if(n.img&&n.img.src)return;
-  if(!n.img_q||imageLookupInFlight.has(n.u))return;
+  if(!(n.img_q||n.t)||imageLookupInFlight.has(n.u))return;
   imageLookupInFlight.add(n.u);
   const cacheKey="okretaji_photo_"+n.u;
   let cached=null;
@@ -595,7 +595,7 @@ function attachPhoto(n,box){
     box.appendChild(credit);
   };
   if(cached){apply(cached);return;}
-  fetch("https://api.openverse.org/v1/images/?q="+encodeURIComponent(n.img_q)+"&page_size=5&license_type=commercial",{headers:{Accept:"application/json"}})
+  fetch("https://api.openverse.org/v1/images/?q="+encodeURIComponent(n.img_q||n.t)+"&page_size=5&license_type=commercial",{headers:{Accept:"application/json"}})
     .then(r=>{if(!r.ok)throw new Error("image search");return r.json();})
     .then(d=>{
       const results=(d.results||[]).filter(x=>x.thumbnail&&x.url&&x.license&&x.creator);
