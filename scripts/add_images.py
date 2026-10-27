@@ -65,7 +65,7 @@ def main():
         if calls >= 25:      # pristojno prema besplatnom API-ju
             continue
         queries = [q for q in [it.get("img_q"), FALLBACK_Q.get(it["c"])] if q]
-        img = None
+        img, failed = None, False
         for q in queries:
             try:
                 calls += 1
@@ -73,9 +73,12 @@ def main():
                 time.sleep(1.2)
             except Exception as e:
                 print(f"  ! Openverse ({q}): {e}", file=sys.stderr)
+                failed = True
                 break
             if img:
                 break
+        if failed:           # greška API-ja: pokušaj ponovno u sljedećem pokretanju
+            continue
         cache[key] = img
         if img:
             used.add(img["id"]); it["img"] = img; found += 1
