@@ -277,6 +277,8 @@ footer p{margin:0 0 8px;max-width:80ch}
 .knob{position:absolute;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;background:var(--orange);z-index:1;left:110px;top:82px;box-shadow:inset 0 -3px 0 rgba(0,0,0,.2)}
 @media (prefers-reduced-motion:no-preference){.knob{transition:left .28s cubic-bezier(.5,0,.2,1),top .28s cubic-bezier(.5,0,.2,1)}}
 .gearname{margin-top:6px;font-weight:700;font-size:.8rem;text-align:center}
+.shtoggle{display:none;align-items:center;gap:10px;border:0;background:transparent;color:inherit;font:700 .85rem Barlow,system-ui,sans-serif;padding:8px 14px 8px 8px;min-height:48px;cursor:pointer;border-radius:14px}
+.shtoggle .kn{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--orange);color:#fff;font:800 1rem "Big Shoulders Display",Impact,sans-serif;box-shadow:inset 0 -3px 0 rgba(0,0,0,.2)}
 
 @media (max-width:980px){
   .hero{grid-template-columns:1fr}
@@ -293,7 +295,11 @@ footer p{margin:0 0 8px;max-width:80ch}
   .line::before{left:7px;right:auto;top:9px;bottom:9px;width:4px;height:auto}
   .line li{padding:0 0 0 30px;text-align:left!important}
   .line li:last-child::before{left:0;right:auto}
-  .shifter{right:10px;transform:scale(.8);transform-origin:bottom right}
+  .shifter{right:10px;padding:0}
+  .shtoggle{display:flex}
+  .shifter:not(.open) .gate,.shifter .gearname{display:none}
+  .shifter.open .gate{margin:14px 16px 4px}
+  .gate button{width:40px;height:40px;margin:-20px 0 0 -20px}
   .person .ini{font-size:6rem}
   .brow{grid-template-columns:20px 44px 1fr 46px;gap:8px}
   .sbar{grid-template-columns:96px 1fr 62px;gap:8px}
@@ -480,6 +486,7 @@ footer p{margin:0 0 8px;max-width:80ch}
     <button type="button" data-t="vrh" data-n="R: na vrh" style="left:110px;top:82px" aria-label="Na vrh stranice">R</button>
   </div>
   <div class="gearname" id="gearname">N: start</div>
+  <button type="button" class="shtoggle" id="shtoggle" aria-expanded="false" aria-label="Otvori mjenjač – navigacija po sekcijama"><span class="kn" id="shkn">N</span><span id="shname">Mjenjač</span></button>
 </nav>
 
 <script>
@@ -800,9 +807,14 @@ renderPeople();renderRouteChips();renderRoutes();load();
 
 /* ---------- gear shifter ---------- */
 const knob=$("knob"),gname=$("gearname"),gears=[...document.querySelectorAll(".gate button")];
-function setGear(id){const b=gears.find(g=>g.dataset.t===id);if(!b)return;knob.style.left=b.style.left;knob.style.top=b.style.top;gears.forEach(g=>g.setAttribute("aria-current",String(g===b)));gname.textContent=b.dataset.n;
+function setGear(id){const b=gears.find(g=>g.dataset.t===id);if(!b)return;knob.style.left=b.style.left;knob.style.top=b.style.top;gears.forEach(g=>g.setAttribute("aria-current",String(g===b)));gname.textContent=b.dataset.n;$("shkn").textContent=b.textContent;$("shname").textContent=b.dataset.n.replace(/^.+?:\s*/,"");
   document.querySelectorAll(".nav a").forEach(a=>a.setAttribute("aria-current",String(a.getAttribute("href")==="#"+id)));}
-gears.forEach(b=>b.addEventListener("click",()=>{const t=$(b.dataset.t);setGear(b.dataset.t);if(t&&!t.hidden)t.scrollIntoView();}));
+const shifter=document.querySelector(".shifter"),shtoggle=$("shtoggle");
+function shOpen(o){shifter.classList.toggle("open",o);shtoggle.setAttribute("aria-expanded",String(o));shtoggle.setAttribute("aria-label",(o?"Zatvori":"Otvori")+" mjenjač – navigacija po sekcijama");}
+shtoggle.addEventListener("click",()=>shOpen(!shifter.classList.contains("open")));
+document.addEventListener("click",e=>{if(!shifter.contains(e.target))shOpen(false);});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&shifter.classList.contains("open")){shOpen(false);shtoggle.focus();}});
+gears.forEach(b=>b.addEventListener("click",()=>{const t=$(b.dataset.t);setGear(b.dataset.t);shOpen(false);if(t&&!t.hidden)t.scrollIntoView();}));
 const io=new IntersectionObserver(es=>{for(const e of es) if(e.isIntersecting) setGear(e.target.id);},{rootMargin:"-45% 0px -50% 0px"});
 ["vrh","novosti","povratak","utrka","brojke","vozaci","rute"].forEach(id=>{const x=$(id);if(x)io.observe(x);});
 const NAVMAP={"sve-vijesti":"novosti"};
