@@ -1,6 +1,30 @@
 {
- "updated": "2026-10-29T13:14+00:00",
+ "updated": "2026-10-29T15:19+00:00",
  "items": [
+  {
+   "c": "energy",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/29/scaling-european-battery-recycling-via-the-circular-economy-act",
+   "date": "2026-10-29T14:08+00:00",
+   "img_q": "Scaling European Battery Recycling via the Circular Economy Act",
+   "t": "Širenje europskog recikliranja baterija kroz Zakon o kružnom gospodarstvu",
+   "s": "Organizacije su uputile zajednički dopis uoči donošenja Zakona o kružnom gospodarstvu s pozivom na konkretne mjere kojima bi se podržalo širenje europskih kapaciteta za oporabu materijala i recikliranje baterija te smanjilo ovisnost o uvozu.",
+   "orig_t": "Scaling European Battery Recycling via the Circular Economy Act",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "Electrek",
+   "u": "https://electrek.co/2026/10/29/byd-q3-2026-earnings-profit-exports-inventory",
+   "date": "2026-10-29T14:00+00:00",
+   "img_q": "BYD (BYDDY) Q3 profit jumps 28% on exports, but inventory balloons 60%",
+   "t": "BYD u trećem tromjesečju bilježi rast dobiti uz snažan skok izvoza",
+   "s": "Kineski proizvođač automobila BYD ostvario je u trećem tromjesečju skok neto dobiti od 28 posto na temelju velikog broja isporučenih vozila u inozemstvo. Ipak, financijsko izvješće pokazuje i značajan porast zaliha te smanjenje raspoložive gotovine.",
+   "orig_t": "BYD (BYDDY) Q3 profit jumps 28% on exports, but inventory balloons 60%",
+   "summary_version": 3,
+   "hr": true
+  },
   {
    "c": "f1",
    "src": "Motorsport.com",
@@ -138,10 +162,10 @@
    "src": "Motor1",
    "u": "https://www.motor1.com/news/813667/vw-group-electric-cars-less-profitable",
    "date": "2026-10-29T09:35+00:00",
-   "img_q": "The Volkswagen Group Says The Quiet Part Out Loud: EVs Are Still Less Profitable Than Gas Cars",
+   "img_q": "VW Group Says The Quiet Part Out Loud: EVs Are Still Less Profitable Than Gas Cars",
    "t": "Volkswagen Group priznaje: Električni automobili još uvijek donose manju zaradu od benzinskih",
    "s": "Iz Volkswagena navode kako rastuća prodaja električnih vozila stvara dodatni pritisak na financijske rezultate tvrtke. Zbog toga su električni automobili trenutačno manje profitabilni u usporedbi s vozilima na benzin.",
-   "orig_t": "The Volkswagen Group Says The Quiet Part Out Loud: EVs Are Still Less Profitable Than Gas Cars",
+   "orig_t": "VW Group Says The Quiet Part Out Loud: EVs Are Still Less Profitable Than Gas Cars",
    "summary_version": 3,
    "hr": true
   },
@@ -514,18 +538,6 @@
    "t": "Josh McErlean testirat će M-Sportov WRC automobil za 2027. na finalu ERC-a",
    "s": "M-Sport nastavlja razvoj svog natjecateljskog automobila za Svjetsko reli prvenstvo iz 2027. godine na predstojećem finalu Europskog reli prvenstva u Portugalu. Britanska momčad na makadamskom će rallyju izvesti novorazvijeni model s ažuriranim paketom.",
    "orig_t": "Josh McErlean to test 2027-spec M-Sport WRC car at ERC finale",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "reli",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/wrc/news/jon-armstrong-announces-wrc-co-driver-split-for-2027/10866937",
-   "date": "2026-10-22T11:00+00:00",
-   "img_q": "Jon Armstrong announces WRC co-driver split for 2027",
-   "t": "Jon Armstrong najavio prekid suradnje sa suvozačem za 2027.",
-   "s": "Vozač WRC-a Jon Armstrong objavio je na društvenim mrežama da se razilazi sa svojim suvozačem Shaneom Byrneom nakon dvije sezone suradnje. Planiraju se natjecati s drugim suvozačem.",
-   "orig_t": "Jon Armstrong announces WRC co-driver split for 2027",
    "summary_version": 3,
    "hr": true
   }
