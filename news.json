@@ -1,6 +1,18 @@
 {
- "updated": "2026-10-29T16:33+00:00",
+ "updated": "2026-10-29T17:01+00:00",
  "items": [
+  {
+   "c": "energy",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/29/grid-flexibility-location-ireland-naas",
+   "date": "2026-10-29T16:59+00:00",
+   "img_q": "Ireland’s Grid Flexibility Assessment Shows Why Location Matters",
+   "t": "Procjena fleksibilnosti irske mreže pokazuje važnost lokacije",
+   "s": "Irska procjena potreba za fleksibilnošću mreže ističe važnost usklađivanja baterija i opterećenja s lokacijom te vremenom i uvjetima ograničenja. Primjer trafostanice Naas pokazuje da lokacija priključka presudno utječe na rješavanje mrežnih opterećenja.",
+   "orig_t": "Ireland’s Grid Flexibility Assessment Shows Why Location Matters",
+   "summary_version": 3,
+   "hr": true
+  },
   {
    "c": "moto",
    "src": "RideApart",
@@ -58,6 +70,18 @@
    "t": "BYD u trećem tromjesečju bilježi rast dobiti uz snažan skok izvoza",
    "s": "Kineski proizvođač automobila BYD ostvario je u trećem tromjesečju skok neto dobiti od 28 posto na temelju velikog broja isporučenih vozila u inozemstvo. Ipak, financijsko izvješće pokazuje i značajan porast zaliha te smanjenje raspoložive gotovine.",
    "orig_t": "BYD (BYDDY) Q3 profit jumps 28% on exports, but inventory balloons 60%",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813469/yamaha-r3-r25-colors-70th-anniversary-graphics",
+   "date": "2026-10-29T13:44+00:00",
+   "img_q": "If You Love Yamaha's 70th Anniversary Livery, You Can Get It On Its Tiny Sportbikes Now",
+   "t": "Yamahin prepoznatljiv dizajn povodom 70. obljetnice stiže na male sportske modele",
+   "s": "Yamaha je ponudila posebne vizuale povodom svoje obljetnice za male sportske motocikle R3 i R25, čime su obuhvaćeni i obožavatelji motocikala manje kubikaže.",
+   "orig_t": "If You Love Yamaha's 70th Anniversary Livery, You Can Get It On Its Tiny Sportbikes Now",
    "summary_version": 3,
    "hr": true
   },
@@ -454,30 +478,6 @@
    "t": "Peptidni lobisti slave dok RFK Jr. jednostrano odobrava pristup i zaobilazi FDA",
    "s": "Šest nedokazanih peptida popularnih među pokretom MAHA sada se nalazi pod novom politikom diskrecijskog provođenja mjera, nakon što je odobren njihov pristup.",
    "orig_t": "Peptide peddlers cheer as RFK Jr. unilaterally grants access, overruling FDA",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "auto",
-   "src": "Motor1",
-   "u": "https://www.motor1.com/news/813563/toyota-sienna-hybrid-recall-targets",
-   "date": "2026-10-28T22:00+00:00",
-   "img_q": "Toyota Recalls 228,000 Sienna Vans Over Seat Backs That May Unlock In A Crash",
-   "t": "Toyota povlači 228.000 Sienna zbog naslona sjedala",
-   "s": "Toyota provodi opoziv modela Sienna iz razdoblja od 2022. do 2026. godine zbog nedostatka na naslonu sjedala koji se može otključati u sudaru. Vlasnicima su osigurani besplatni popravci ovisno o opremi vozila.",
-   "orig_t": "Toyota Recalls 228,000 Sienna Vans Over Seat Backs That May Unlock In A Crash",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "tech",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling",
-   "date": "2026-10-28T19:30+00:00",
-   "img_q": "Trump admin sues Utah to save Kalshi from the state's total ban on gambling",
-   "t": "Trumpova administracija tužila Utah zbog zabrane kockanja",
-   "s": "Američka agencija tužila je deset saveznih država, uključujući Utah, zbog pokušaja zaustavljanja kockanja na tržištima predviđanja. Time se nastoji zaštititi Kalshi od potpune zabrane u toj saveznoj državi.",
-   "orig_t": "Trump admin sues Utah to save Kalshi from the state's total ban on gambling",
    "summary_version": 3,
    "hr": true
   },
