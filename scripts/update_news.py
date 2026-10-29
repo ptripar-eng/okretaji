@@ -18,6 +18,15 @@ def clean_url(url):
     q = [(k,v) for k,v in parse_qsl(p.query) if not k.lower().startswith("utm_") and k.lower() not in {"ref","fbclid","gclid"}]
     return urlunparse((p.scheme,p.netloc,p.path.rstrip("/"),p.params,urlencode(q), ""))
 
+def likely_croatian(text):
+    """Conservative language check used to preserve already edited Croatian summaries."""
+    words = re.findall(r"[a-zčćđšž]+", (text or "").lower())
+    hr = {"je","su","u","na","za","od","do","koji","koja","koje","što","prema","nakon","novi","novog","godine","vozač","utrke","motor","model","može","zbog","više","kao","nije","ima","imao","imaju","predstavlja","vraća","tijekom","među","godini","između"}
+    en = {"the","and","is","are","with","from","after","new","will","has","have","could","its","their","than","for","to","of","in","on","as","by","this","that","more","over","around","about"}
+    h = sum(w in hr for w in words)
+    e = sum(w in en for w in words)
+    return h > 0 and h >= e
+
 def summarize(title, description, category):
     """Create a concise Croatian summary. Failed AI requests are retried on the next run."""
     from html import unescape
@@ -117,7 +126,7 @@ def main():
         prev=old.get(item["u"],{})
         # Preserve an existing title/summary while the source title is unchanged.
         # Legacy expanded body/conclusion fields are intentionally not carried forward.
-        if prev.get("summary_version")==3 and prev.get("orig_t")==item["raw_t"] and prev.get("s"):
+        if prev.get("summary_version") in (2, 3) and prev.get("orig_t")==item["raw_t"] and prev.get("s") and (prev.get("summary_version")==3 or likely_croatian(prev.get("t", "") + " " + prev.get("s", ""))):
             summary={"t":prev.get("t", item["raw_t"]), "s":prev["s"]}
         else:
             # Regenerate legacy summaries once under the stricter no-invention prompt.
