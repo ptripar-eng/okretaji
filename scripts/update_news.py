@@ -19,32 +19,35 @@ def clean_url(url):
     return urlunparse((p.scheme,p.netloc,p.path.rstrip("/"),p.params,urlencode(q), ""))
 
 def summarize(title, description, category):
+    # Use only the supplied RSS title and description. Never invent missing facts.
     fallback = re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", description or "")).strip()
-    fallback = fallback[:650]
+    fallback = fallback[:500]
     if not API_KEY:
-        return {"t":title, "s":fallback or title, "body":fallback or title, "conclusion":"Ovo je kratki sažetak dostupnih informacija. Za dodatne detalje provjerite navedeni izvor."}
+        return {"t": title, "s": fallback or title}
     prompt = f"""Pišeš za regionalni portal Okretaji na razumljivom hrvatskom jeziku. Kategorija: {category}.
-Na temelju ISKLJUČIVO podataka u naslovu i opisu napiši:
+Koristi ISKLJUČIVO činjenice iz naslova i opisa RSS-a. Ne dodaj kontekst, uzroke, brojke, izjave ni detalje kojih ondje nema.
+Vrati samo valjani JSON objekt s ključevima:
 1) t: jasan naslov na hrvatskom, najviše 95 znakova
-2) s: sažetak 1-2 rečenice, 30-45 riječi
-3) body: prošireni sažetak od 70-110 riječi, bez izmišljanja podataka
-4) conclusion: kratak zaključak od 1-2 rečenice, jasno označi što je poznato, a što još nije potvrđeno.
-Vrati samo valjani JSON objekt s ključevima t,s,body,conclusion. Ne kopiraj rečenice doslovno. Ako nema dovoljno informacija, reci to.
+2) s: sažetak od 1–2 rečenice, približno 25–45 riječi, vlastitim riječima.
+Ako opis ne sadrži dovoljno podataka, napiši kratak i oprezan sažetak bez nagađanja.
 NASLOV: {title}
 OPIS: {fallback}"""
     try:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={API_KEY}"
-        r = requests.post(url, json={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"responseMimeType":"application/json","temperature":0.25}}, timeout=35)
+        r = requests.post(url, json={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"responseMimeType":"application/json","temperature":0.1}}, timeout=35)
         r.raise_for_status()
         text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
         data = json.loads(text[text.find("{"):text.rfind("}")+1])
-        for k,limit in (("t",140),("s",500),("body",1600),("conclusion",500)):
-            data[k] = re.sub(r"\s+"," ",str(data.get(k,""))).strip()[:limit]
-        if not data["t"] or not data["s"]: raise ValueError("empty summary")
+        data = {
+            "t": re.sub(r"\s+", " ", str(data.get("t", ""))).strip()[:140],
+            "s": re.sub(r"\s+", " ", str(data.get("s", ""))).strip()[:500],
+        }
+        if not data["t"] or not data["s"]:
+            raise ValueError("empty title or summary")
         return data
     except Exception as e:
         print("Gemini sažetak nije uspio:", str(e)[:180])
-        return {"t":title, "s":fallback[:450] or title, "body":fallback[:1200] or title, "conclusion":"Automatski zaključak nije dostupan jer izvor nije dao dovoljno podataka za pouzdanu procjenu."}
+        return {"t": title, "s": fallback[:450] or title}
 
 def f1_schedule():
     """F1 kalendar s Jolpica F1 API-ja za blok 'Nadolazeće utrke'."""
@@ -95,9 +98,10 @@ def main():
         cat=item["c"]
         if counts.get(cat,0)>=per_cat: continue
         prev=old.get(item["u"],{})
-        # Preserve a previously generated, edited translation while its source item remains unchanged.
-        if prev.get("orig_t")==item["raw_t"] and prev.get("s") and prev.get("body") and prev.get("conclusion"):
-            summary={k:prev[k] for k in ("t","s","body","conclusion")}
+        # Preserve an existing title/summary while the source title is unchanged.
+        # Legacy expanded body/conclusion fields are intentionally not carried forward.
+        if prev.get("orig_t")==item["raw_t"] and prev.get("s"):
+            summary={"t":prev.get("t", item["raw_t"]), "s":prev["s"]}
         else:
             summary=summarize(item["raw_t"],item["desc"],cat)
         record={k:item[k] for k in ("c","src","u","date","img_q")}
@@ -108,6 +112,8 @@ def main():
     # Keep current articles if feeds temporarily fail, up to max age and 45 items.
     for item in old.values():
         if item.get("u") not in {x["u"] for x in out} and item.get("date","")[:10] >= (now-timedelta(days=max_age)).date().isoformat() and len(out)<45:
+            # Remove legacy expanded text from cached articles as well.
+            item = {k:v for k,v in item.items() if k not in ("body", "conclusion")}
             out.append(item)
     out.sort(key=lambda x:x.get("date",""),reverse=True)
     today = now.date().isoformat()
