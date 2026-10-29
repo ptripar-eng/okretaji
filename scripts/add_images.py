@@ -42,7 +42,12 @@ def relevant(image, story_terms):
     return len(overlap) >= 2, sorted(overlap)
 
 
-def search_image(query, used_ids):
+def source_key(value):
+    """Normalize a URL so query strings and trailing slashes cannot hide duplicates."""
+    return re.sub(r"[?#].*$", "", str(value or "").strip()).rstrip("/").lower()
+
+
+def search_image(query, used_ids, used_sources):
     """Return a licensed image only when its title/tags match the actual story."""
     story_terms = terms(query)
     if len(story_terms) < 2:
@@ -62,7 +67,7 @@ def search_image(query, used_ids):
             creator = x.get("creator")
             lic = x.get("license")
             link = x.get("foreign_landing_url") or x.get("url")
-            if not image_id or image_id in used_ids:
+            if not image_id or image_id in used_ids or source_key(src) in used_sources:
                 continue
             if not (src and src.startswith("https://") and creator and lic and link):
                 continue
@@ -94,6 +99,7 @@ def main():
 
     items = data.get("items", [])
     used_ids = set()
+    used_sources = set()
     changed = 0
     for item in items:
         url = item.get("u", "")
@@ -104,8 +110,10 @@ def main():
         current = item.get("img")
         if current:
             valid_terms = set(current.get("match_terms") or [])
-            if current.get("id") and len(valid_terms & story_terms) >= 2 and current.get("id") not in used_ids:
+            if (current.get("id") and current.get("src") and len(valid_terms & story_terms) >= 2
+                    and current.get("id") not in used_ids and source_key(current.get("src")) not in used_sources):
                 used_ids.add(current["id"])
+                used_sources.add(source_key(current.get("src")))
                 continue
             item.pop("img", None)
 
@@ -115,18 +123,21 @@ def main():
                 {"title": cached.get("title", ""), "tags": cached.get("match_terms", [])},
                 story_terms,
             )
-            if cached.get("id") not in used_ids and ok and cached.get("match_terms"):
+            if (cached.get("id") not in used_ids and source_key(cached.get("src")) not in used_sources
+                    and ok and cached.get("match_terms")):
                 item["img"] = cached
                 used_ids.add(cached["id"])
+                used_sources.add(source_key(cached.get("src")))
                 continue
 
-        chosen = search_image(query, used_ids) if query else None
+        chosen = search_image(query, used_ids, used_sources) if query else None
         if chosen:
             # Store the query/title to allow future cache validation.
             chosen["title"] = query
             item["img"] = chosen
             cache[url] = chosen
             used_ids.add(chosen["id"])
+            used_sources.add(source_key(chosen.get("src")))
             changed += 1
         else:
             # No generic photo fallback: the site will show its branded placeholder.
@@ -139,9 +150,11 @@ def main():
         json.dump(cache, f, ensure_ascii=False, indent=1)
 
     total = sum(bool(x.get("img", {}).get("src")) for x in items)
-    unique = len({x.get("img", {}).get("id") for x in items if x.get("img", {}).get("id")})
+    unique = len({source_key(x.get("img", {}).get("src")) for x in items if x.get("img", {}).get("src")})
     print(f"Fotografije: {total}/{len(items)} vijesti imaju relevantnu sliku s atribucijom.")
-    print(f"Jedinstvene slike: {unique}; nove dodane u ovom ciklusu: {changed}.")
+    print(f"Jedinstvene slike po URL-u: {unique}; nove dodane u ovom ciklusu: {changed}.")
+    if total != unique:
+        print("UPOZORENJE: postoje ponovljene slike; provjerite Openverse izvore.")
     print("Za vijesti bez relevantne slike prikazuje se brendirana ilustracija Okretaji.")
 
 
