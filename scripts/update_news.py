@@ -35,11 +35,13 @@ def summarize(title, description, category):
     if not API_KEY:
         print("Gemini ključ nije postavljen; preskačem vijest bez hrvatskog sažetka.")
         return {"t": title, "s": fallback or title, "_ok": False}
-    prompt = f"""Pišeš za regionalni portal Okretaji na prirodnom, gramatički ispravnom hrvatskom jeziku.
-Koristi ISKLJUČIVO provjerljive činjenice iz naslova, RSS opisa i teksta izvornog članka koji je priložen kao kontekst. Ne dodaj uzroke, brojke, izjave ni detalje kojih u izvoru nema.
-Napiši vlastitim riječima; ne kopiraj rečenice, ne koristi duge citate i ne stvaraj članak koji oponaša izvor. Ako je naslov na engleskom, prevedi ga na hrvatski. Vrati samo valjani JSON objekt:
-1) t: jasan naslov na hrvatskom, najviše 95 znakova
-2) s: sažetak od 1–2 rečenice, približno 25–45 riječi, vlastitim riječima.
+    prompt = f"""Pišeš za regionalni portal Okretaji. Piši isključivo prirodnim, standardnim i gramatički ispravnim hrvatskim jezikom.
+Prije odgovora obavezno lektoriraj naslov i sažetak: provjeri pravopis, padeže, slaganje riječi, red riječi, interpunkciju i prirodnost izraza. Izbjegavaj doslovne prijevode s engleskog, anglizme kad postoji uobičajen hrvatski izraz, nespretne konstrukcije i senzacionalističke tvrdnje.
+Koristi ISKLJUČIVO provjerljive činjenice iz naslova, RSS opisa i teksta izvornog članka koji je priložen kao kontekst. Ne dodaj uzroke, brojke, izjave, tehničke specifikacije ni detalje kojih u izvoru nema. Ako nešto nije jasno potvrđeno, izostavi to ili jasno navedi da je riječ o mogućnosti, procjeni ili prijedlogu.
+Napiši vlastitim riječima; ne kopiraj rečenice, ne koristi duge citate i ne oponašaj stil izvora. Ako je naslov na engleskom, prevedi značenje na prirodan hrvatski, a ne riječ po riječ. Ne izmišljaj značenje naziva modela, tehničkih pojmova ili kratica.
+Vrati samo valjani JSON objekt:
+1) t: jasan, konkretan naslov na hrvatskom, najviše 95 znakova; bez nepotrebnih riječi poput „donosi nove detalje” ako izvor navodi što se konkretno mijenja
+2) s: sažetak od 1–2 jasne rečenice, približno 25–45 riječi, vlastitim riječima; čitatelju objasni što se dogodilo i zašto je to važno, ali samo ako izvor to podupire.
 Ako izvori ne sadrže dovoljno podataka, sažmi samo ono što je potvrđeno. Poveznica na izvor ostaje obavezna.
 NASLOV: {title}
 IZVORNI OPIS ILI TEKST: {source_context[:7500]}"""
