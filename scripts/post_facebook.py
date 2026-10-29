@@ -73,15 +73,9 @@ def main():
             "message": message,
         })
 
-    # Prefer F1, then MotoGP and other motorcycle news; within a category prefer newer items.
-    candidates.sort(
-        key=lambda x: (PREFERRED.get(x["category"], 99), x["date"]),
-        reverse=False,
-    )
-    # Re-sort by category priority then newest date within that category.
-    candidates.sort(
-        key=lambda x: (PREFERRED.get(x["category"], 99), x["date"]),
-    )
+    # Newest first within each category, with F1/MotoGP/moto categories prioritized.
+    candidates.sort(key=lambda x: x["date"], reverse=True)
+    candidates.sort(key=lambda x: PREFERRED.get(x["category"], 99))
     selected = candidates[:slots]
     print(
         f"Facebook plan | mode={'DRY_RUN' if DRY_RUN else 'LIVE'} | "
@@ -125,7 +119,7 @@ def main():
         print("Objavljeno. Meta post ID:", payload["id"])
         newly_posted.append({
             "url": article["url"],
-            "posted_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "posted_at": datetime.now(TZ).isoformat(timespec="seconds"),
             "post_id": payload["id"],
             "category": article["category"],
             "title": article["title"],
