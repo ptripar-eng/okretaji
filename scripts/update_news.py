@@ -19,45 +19,52 @@ def clean_url(url):
     return urlunparse((p.scheme,p.netloc,p.path.rstrip("/"),p.params,urlencode(q), ""))
 
 def summarize(title, description, category):
-    # Use only the supplied RSS title and description. Never invent missing facts.
-    fallback = re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", description or "")).strip()
-    fallback = fallback[:500]
+    """Create a concise Croatian summary. Failed AI requests are retried on the next run."""
+    from html import unescape
+    fallback = unescape(re.sub(r"\\s+", " ", re.sub(r"<[^>]+>", " ", description or ""))).strip()[:500]
     if not API_KEY:
-        return {"t": title, "s": fallback or title}
-    prompt = f"""Pišeš za regionalni portal Okretaji na razumljivom hrvatskom jeziku. Kategorija: {category}.
+        print("Gemini ključ nije postavljen; preskačem vijest bez hrvatskog sažetka.")
+        return {"t": title, "s": fallback or title, "_ok": False}
+    prompt = f"""Pišeš za regionalni portal Okretaji na prirodnom, gramatički ispravnom hrvatskom jeziku.
 Koristi ISKLJUČIVO činjenice iz naslova i opisa RSS-a. Ne dodaj kontekst, uzroke, brojke, izjave ni detalje kojih ondje nema.
-Vrati samo valjani JSON objekt s ključevima:
+Ako je naslov na engleskom, prevedi ga na hrvatski. Vrati samo valjani JSON objekt:
 1) t: jasan naslov na hrvatskom, najviše 95 znakova
 2) s: sažetak od 1–2 rečenice, približno 25–45 riječi, vlastitim riječima.
-Ako opis ne sadrži dovoljno podataka, napiši kratak i oprezan sažetak bez nagađanja.
+Ako opis ne sadrži dovoljno podataka, sažmi samo ono što je potvrđeno naslovom.
 NASLOV: {title}
 OPIS: {fallback}"""
-    try:
-        # Keep within typical free-tier request limits and never put the API key in the URL.
-        time.sleep(4)
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
-        payload = {"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"responseMimeType":"application/json","temperature":0.1}}
-        r = requests.post(url, headers={"x-goog-api-key": API_KEY}, json=payload, timeout=35)
-        if r.status_code == 429:
-            print("Gemini ograničenje zahtjeva (429); pokušavam još jednom nakon 15 sekundi.")
-            time.sleep(15)
-            r = requests.post(url, headers={"x-goog-api-key": API_KEY}, json=payload, timeout=35)
-        r.raise_for_status()
-        response_text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-        data = json.loads(response_text[response_text.find("{"):response_text.rfind("}")+1])
-        data = {
-            "t": re.sub(r"\s+", " ", str(data.get("t", ""))).strip()[:140],
-            "s": re.sub(r"\s+", " ", str(data.get("s", ""))).strip()[:500],
-        }
-        if not data["t"] or not data["s"]:
-            raise ValueError("empty title or summary")
-        return data
-    except Exception as e:
-        # Never print request URLs or exception text that could contain credentials.
-        status = getattr(getattr(e, "response", None), "status_code", None)
-        detail = f"HTTP {status}" if status else type(e).__name__
-        print("Gemini sažetak nije uspio:", detail)
-        return {"t": title, "s": fallback[:450] or title}
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+    payload = {"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"responseMimeType":"application/json","temperature":0.1}}
+    # Keep below typical free-tier request rates; never put the API key in a URL.
+    time.sleep(7)
+    for attempt in range(2):
+        try:
+            r = requests.post(url, headers={"x-goog-api-key": API_KEY}, json=payload, timeout=12)
+            if r.status_code == 429:
+                print("Gemini ograničenje zahtjeva (429); vijest će se pokušati ponovno u sljedećem ciklusu.")
+                return {"t": title, "s": fallback or title, "_ok": False}
+            r.raise_for_status()
+            response_text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+            data = json.loads(response_text[response_text.find("{"):response_text.rfind("}")+1])
+            result = {
+                "t": re.sub(r"\\s+", " ", str(data.get("t", ""))).strip()[:140],
+                "s": re.sub(r"\\s+", " ", str(data.get("s", ""))).strip()[:500],
+            }
+            if not result["t"] or not result["s"]:
+                raise ValueError("empty title or summary")
+            result["_ok"] = True
+            return result
+        except requests.exceptions.ReadTimeout:
+            if attempt == 0:
+                print("Gemini je prekoračio vrijeme čekanja; ponavljam zahtjev jednom.")
+                time.sleep(3)
+                continue
+            print("Gemini nije odgovorio nakon ponovnog pokušaja; vijest će se pokušati ponovno u sljedećem ciklusu.")
+        except Exception as e:
+            status = getattr(getattr(e, "response", None), "status_code", None)
+            print("Gemini sažetak nije uspio:", f"HTTP {status}" if status else type(e).__name__)
+            break
+    return {"t": title, "s": fallback or title, "_ok": False}
 
 def f1_schedule():
     """F1 kalendar s Jolpica F1 API-ja za blok 'Nadolazeće utrke'."""
@@ -110,20 +117,26 @@ def main():
         prev=old.get(item["u"],{})
         # Preserve an existing title/summary while the source title is unchanged.
         # Legacy expanded body/conclusion fields are intentionally not carried forward.
-        if prev.get("summary_version")==2 and prev.get("orig_t")==item["raw_t"] and prev.get("s"):
+        if prev.get("summary_version")==3 and prev.get("orig_t")==item["raw_t"] and prev.get("s"):
             summary={"t":prev.get("t", item["raw_t"]), "s":prev["s"]}
         else:
             # Regenerate legacy summaries once under the stricter no-invention prompt.
             summary=summarize(item["raw_t"],item["desc"],cat)
+            if not summary.pop("_ok", False):
+                # Do not publish an English RSS fallback as if it were an edited Croatian summary.
+                if prev.get("summary_version")==3 and prev.get("s"):
+                    summary={"t":prev.get("t", item["raw_t"]), "s":prev["s"]}
+                else:
+                    continue
         record={k:item[k] for k in ("c","src","u","date","img_q")}
         record.update(summary)
         record["orig_t"]=item["raw_t"]
-        record["summary_version"]=2
+        record["summary_version"]=3
         record["hr"]=True
         out.append(record); counts[cat]=counts.get(cat,0)+1
     # Keep current articles if feeds temporarily fail, up to max age and 45 items.
     for item in old.values():
-        if item.get("u") not in {x["u"] for x in out} and item.get("date","")[:10] >= (now-timedelta(days=max_age)).date().isoformat() and len(out)<45 and item.get("summary_version")==2:
+        if item.get("u") not in {x["u"] for x in out} and item.get("date","")[:10] >= (now-timedelta(days=max_age)).date().isoformat() and len(out)<45 and item.get("summary_version")==3:
             # Keep only articles already processed under the strict summary rules.
             item = {k:v for k,v in item.items() if k not in ("body", "conclusion")}
             out.append(item)
