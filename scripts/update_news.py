@@ -35,13 +35,13 @@ def summarize(title, description, category):
         print("Gemini ključ nije postavljen; preskačem vijest bez hrvatskog sažetka.")
         return {"t": title, "s": fallback or title, "_ok": False}
     prompt = f"""Pišeš za regionalni portal Okretaji na prirodnom, gramatički ispravnom hrvatskom jeziku.
-Koristi ISKLJUČIVO činjenice iz naslova i opisa RSS-a. Ne dodaj kontekst, uzroke, brojke, izjave ni detalje kojih ondje nema.
-Ako je naslov na engleskom, prevedi ga na hrvatski. Vrati samo valjani JSON objekt:
+Koristi ISKLJUČIVO provjerljive činjenice iz naslova, RSS opisa i teksta izvornog članka koji je priložen kao kontekst. Ne dodaj uzroke, brojke, izjave ni detalje kojih u izvoru nema.
+Napiši vlastitim riječima; ne kopiraj rečenice, ne koristi duge citate i ne stvaraj članak koji oponaša izvor. Ako je naslov na engleskom, prevedi ga na hrvatski. Vrati samo valjani JSON objekt:
 1) t: jasan naslov na hrvatskom, najviše 95 znakova
 2) s: sažetak od 1–2 rečenice, približno 25–45 riječi, vlastitim riječima.
-Ako opis ne sadrži dovoljno podataka, sažmi samo ono što je potvrđeno naslovom.
+Ako izvori ne sadrže dovoljno podataka, sažmi samo ono što je potvrđeno. Poveznica na izvor ostaje obavezna.
 NASLOV: {title}
-OPIS: {fallback}"""
+IZVORNI OPIS ILI TEKST: {fallback}"""
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
     payload = {"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"responseMimeType":"application/json","temperature":0.1}}
     # Keep below typical free-tier request rates; never put the API key in a URL.
@@ -75,6 +75,24 @@ OPIS: {fallback}"""
             break
     return {"t": title, "s": fallback or title, "_ok": False}
 
+def read_article(url):
+    """Read a limited number of linked publisher articles for context; never republish their text."""
+    try:
+        import trafilatura
+        response = requests.get(url, headers={"User-Agent": UA}, timeout=(4, 8), allow_redirects=True)
+        if response.status_code != 200 or "text/html" not in response.headers.get("Content-Type", "").lower():
+            return ""
+        extracted = trafilatura.extract(
+            response.text,
+            include_comments=False,
+            include_tables=False,
+            favor_precision=True,
+        ) or ""
+        return re.sub(r"\s+", " ", extracted).strip()[:6000]
+    except Exception as e:
+        print("Puni tekst izvora nije dostupan; koristim RSS opis:", type(e).__name__)
+        return ""
+
 def f1_schedule():
     """F1 kalendar s Jolpica F1 API-ja za blok 'Nadolazeće utrke'."""
     try:
@@ -98,7 +116,7 @@ def main():
     candidates, seen = [], set()
     # Google News can return unrelated stories for broad personality searches.
     # Keep the "Iza kacige" section tied to actual motorsport people/topics.
-    kaciga_relevance = ("verstappen", "hamilton", "leclerc", "norris", "alonso", "antonelli", "piastri", "marquez", "márquez", "rossi", "ricciardo", "horner", "webber", "bagnaia", "martin", "f1", "formula 1", "formula one", "motogp", "red bull", "ferrari", "racing", "motorsport", "grand prix", "le mans", "wrc", "rally", "dakar", "vozač", "vozači", "utrka", "utrke")
+    kaciga_relevance = ("bottas", "verstappen", "hamilton", "leclerc", "norris", "alonso", "antonelli", "piastri", "marquez", "márquez", "stoner", "rossi", "ricciardo", "horner", "webber", "bagnaia", "martin", "tiffany cromwell", "f1", "formula 1", "formula one", "motogp", "red bull", "ferrari", "racing", "motorsport", "grand prix", "le mans", "wrc", "rally", "dakar", "vozač", "vozači", "utrka", "utrke")
     for feed in cfg.get("feeds", []):
         try:
             parsed = feedparser.parse(feed["url"], request_headers={"User-Agent":UA})
@@ -122,6 +140,8 @@ def main():
         except Exception as e: print("Feed nije dostupan:",feed.get("url"),str(e)[:120])
     candidates.sort(key=lambda x:x["date"], reverse=True)
     counts, out = {}, []
+    full_articles_read = 0
+    max_full_articles_per_run = 12
     old = {}
     if os.path.exists(OUT):
         try: old={x.get("u"):x for x in json.load(open(OUT,encoding="utf-8")).get("items",[])}
@@ -135,8 +155,16 @@ def main():
         if prev.get("summary_version") in (2, 3) and prev.get("orig_t")==item["raw_t"] and prev.get("s") and (prev.get("summary_version")==3 or likely_croatian(prev.get("t", "") + " " + prev.get("s", ""))):
             summary={"t":prev.get("t", item["raw_t"]), "s":prev["s"]}
         else:
+            # Read the linked publisher article for richer context, but cap requests per run.
+            # The generated output remains a short original summary with the source link attached.
+            context = item["desc"]
+            if full_articles_read < max_full_articles_per_run:
+                full_text = read_article(item["u"])
+                if full_text:
+                    context = "RSS OPIS:\n" + str(item["desc"])[:1500] + "\n\nTEKST IZVORNOG ČLANKA (samo za provjeru činjenica):\n" + full_text
+                    full_articles_read += 1
             # Regenerate legacy summaries once under the stricter no-invention prompt.
-            summary=summarize(item["raw_t"],item["desc"],cat)
+            summary=summarize(item["raw_t"],context,cat)
             if not summary.pop("_ok", False):
                 # Do not publish an English RSS fallback as if it were an edited Croatian summary.
                 if prev.get("summary_version")==3 and prev.get("s"):
