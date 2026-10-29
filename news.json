@@ -1,6 +1,30 @@
 {
- "updated": "2026-10-29T15:19+00:00",
+ "updated": "2026-10-29T16:33+00:00",
  "items": [
+  {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813445/exod-inflatable-tent-wants-to-replace-your-rooftop",
+   "date": "2026-10-29T16:20+00:00",
+   "img_q": "Could This Inflatable Tent Replace Your Rooftop Tent?",
+   "t": "Može li ovaj nahtuhni šator zamijeniti klasični krovni šator?",
+   "s": "Na tržištu se pojavila nova vrsta napuhnog šatora koja se predstavlja kao moderna alternativa tradicionalnim krovnim šatorima iz prošlog desetljeća, nudeći drugačiji pristup kampiranju.",
+   "orig_t": "Could This Inflatable Tent Replace Your Rooftop Tent?",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/the-10-key-moments-that-defined-sergio-perezs-f1-career/10869046",
+   "date": "2026-10-29T15:00+00:00",
+   "img_q": "The 10 key moments that defined Sergio Perez's F1 career",
+   "t": "Ključni trenuci karijere Sergia Pereza u Formuli 1",
+   "s": "Vikend uoči utrke donosi ulazak Sergia Pereza u rijedak klub vozača s najmanje tristo nastupa u Formuli 1. Među istaknutim trenucima njegove karijere ističe se debitantski nastup na Velikoj nagradi Australije.",
+   "orig_t": "The 10 key moments that defined Sergio Perez's F1 career",
+   "summary_version": 3,
+   "hr": true
+  },
   {
    "c": "energy",
    "src": "CleanTechnica",
@@ -10,6 +34,18 @@
    "t": "Širenje europskog recikliranja baterija kroz Zakon o kružnom gospodarstvu",
    "s": "Organizacije su uputile zajednički dopis uoči donošenja Zakona o kružnom gospodarstvu s pozivom na konkretne mjere kojima bi se podržalo širenje europskih kapaciteta za oporabu materijala i recikliranje baterija te smanjilo ovisnost o uvozu.",
    "orig_t": "Scaling European Battery Recycling via the Circular Economy Act",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/29/what-europe-can-learn-from-china-if-it-wants-to-save-its-industry",
+   "date": "2026-10-29T14:04+00:00",
+   "img_q": "What Europe Can Learn From China If It Wants To Save Its Industry",
+   "t": "Što Europa može naučiti od Kine ako želi spasiti svoju industriju",
+   "s": "Posjet Kini i promatranje tamošnjih trendova mobilnosti pružaju europskim zemljama uvid u načine na koje mogu unaprijediti i spasiti vlastitu industriju učenjem od uspješnijih.",
+   "orig_t": "What Europe Can Learn From China If It Wants To Save Its Industry",
    "summary_version": 3,
    "hr": true
   },
@@ -118,6 +154,18 @@
    "t": "SpaceX je sve manje ovisan o NASA-i, što predstavlja izazov za američku svemirsku agenciju",
    "s": "Tijekom godina odnos između SpaceX-a i američke vlade značajno se promijenio. Tvrtka sada postaje sve neovisnija o državnim ugovorima, što utječe na buduće planove svemirske agencije.",
    "orig_t": "SpaceX no longer needs NASA, and that's a problem for America's space agency",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813688/karma-teases-winged-performance-car",
+   "date": "2026-10-29T10:40+00:00",
+   "img_q": "Karma Teases A Winged, Track-Ready Coupe For Halloween Reveal In Las Vegas",
+   "t": "Karma najavljuje kupe za stazu uz premijeru u Las Vegasu",
+   "s": "Marka Karma objavila je najavni video plavog krilatog kupea koji juri stazom. Vozilo će biti predstavljeno u sklopu događaja Concours at Wynn u Las Vegasu.",
+   "orig_t": "Karma Teases A Winged, Track-Ready Coupe For Halloween Reveal In Las Vegas",
    "summary_version": 3,
    "hr": true
   },
@@ -434,42 +482,6 @@
    "hr": true
   },
   {
-   "c": "moto",
-   "src": "RideApart",
-   "u": "https://www.rideapart.com/news/813587/exploring-the-sonoran-desert-in-can-am-maverick-side-by-sides",
-   "date": "2026-10-28T15:27+00:00",
-   "img_q": "Off-Roading The Sonoran Desert Is Just Waiting For You To Fall In Love With It",
-   "t": "Terenska vožnja pustinjom Sonora čeka da se zaljubite u nju",
-   "s": "Javne su površine iznimno lijepe, stoga iskoristite priliku i posjetite ih te uživajte u prirodi na bilo koji način koji vam odgovara.",
-   "orig_t": "Off-Roading The Sonoran Desert Is Just Waiting For You To Fall In Love With It",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "moto",
-   "src": "RideApart",
-   "u": "https://www.rideapart.com/news/813423/zontes-zt903r-triple-naked-bike-design-leak",
-   "date": "2026-10-28T14:56+00:00",
-   "img_q": "Zontes' Upcoming Triple-Cylinder Streetfighter Motorcycle Shows How Fast China Is Catching Up",
-   "t": "Nadolazeći trocilindrični streetfighter motocikl marke Zontes dokazuje brzi napredak Kine",
-   "s": "Zontes razvija veći i snažniji trocilindrični streetfighter motocikl. Time se potvrđuje da kineska industrija motocikala nema namjeru usporavati svoj razvoj.",
-   "orig_t": "Zontes' Upcoming Triple-Cylinder Streetfighter Motorcycle Shows How Fast China Is Catching Up",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "moto",
-   "src": "RideApart",
-   "u": "https://www.rideapart.com/news/813433/sanrivatti-hypercar-motorcycle-like-controls-and-seating-position",
-   "date": "2026-10-28T13:42+00:00",
-   "img_q": "That Weird-Ass Motorcycle-Cockpit Hypercar Is Coming Soon. Supposedly",
-   "t": "Stiže neobični hiperautomobil s kokpitom nalik motociklu",
-   "s": "Novi hiperautomobil koji kombinira automobilsku karoseriju i položaj sjedenja vozača kao na motociklu navodno bi se uskoro mogao pojaviti na tržištu.",
-   "orig_t": "That Weird-Ass Motorcycle-Cockpit Hypercar Is Coming Soon. Supposedly",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
    "c": "kaciga",
    "src": "Pest Control Technology",
    "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5DcDZMV0pRdUdCcTV4LWFNUTNRWl9sZWxiSXdxVU4weDZSVFZHQnlrb2JLRHAxd0pqNWxjaE5yODZjeERRRy1xcnJ1OXlvRGdNYXRnZG1pd0Qwd0ZxZER6NjRVbklVZ0IxSGY2a3E5WUZIS01WUnNNS2h5alNKVjg?oc=5",
@@ -478,18 +490,6 @@
    "t": "Heather King Alonso nova je članica tvrtke Hawx Pest Control",
    "s": "Tvrtka Hawx Pest Control objavila je da im se pridružila Heather King Alonso. Informaciju je prenio magazin Pest Control Technology.",
    "orig_t": "Hawx Pest Control Adds Heather King Alonso - Pest Control Technology",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "kaciga",
-   "src": "Motorcycle Sports",
-   "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVi1rTVNoN2wyUnNDb2hoM3d0OGc3bnJNeXQ4bHoxcWZpRWNFLW50a0duYlR4V2xhaG5fLXBxYmE4VzV2SEFMbmRIOVNSWUdaendvVFVvQ0J2QUNUTWRHeFY3Mng5bFYteGpTNmVKZnVZb1M4NnRVVGxDcDFsZU1wSEFnaHJzZzFyQzdHU0NuZGxaTVdVdmdzWVVn?oc=5",
-   "date": "2026-10-28T09:44+00:00",
-   "img_q": "Dovizioso on Phillip Island cancellation and Márquez’s Sprint win - Motorcycle Sports",
-   "t": "Dovizioso komentirao otkazivanje u Phillip Islandu i pobjedu Marqueza",
-   "s": "Dovizioso je komentirao otkazivanje utrke na stazi Phillip Island te pobjedu Marqueza u sprintu, prema izvješću portala Motorcycle Sports.",
-   "orig_t": "Dovizioso on Phillip Island cancellation and Márquez’s Sprint win - Motorcycle Sports",
    "summary_version": 3,
    "hr": true
   },
