@@ -48,8 +48,18 @@ jobs:
           DRY_RUN: ${{ secrets.FB_PAGE_ID != '' && secrets.FB_PAGE_TOKEN != '' && '0' || '1' }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
-      - name: Spremi evidenciju Facebook objava
-        if: always() && hashFiles('posted.json') != ''
+      - name: Instagram (automatski ako su Meta pristupni podaci postavljeni)
+        run: python scripts/post_instagram.py
+        continue-on-error: true
+        env:
+          # Potreban je profesionalni Instagram račun povezan s Facebook stranicom.
+          IG_DRY_RUN: ${{ secrets.IG_USER_ID != '' && secrets.IG_ACCESS_TOKEN != '' && '0' || '1' }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+
+      - name: Spremi evidenciju društvenih objava
+        if: always() && (hashFiles('posted.json') != '' || hashFiles('instagram_posted.json') != '')
         run: |
-          git add posted.json
-          git diff --cached --quiet || (git commit -m "Ažuriraj evidenciju društvenih objava" && git pull --rebase && git push)
+          [ -f posted.json ] && git add posted.json || true
+          [ -f instagram_posted.json ] && git add instagram_posted.json || true
+          git diff --cached --quiet || (git config user.name "okretaji-bot" && git config user.email "okretaji-bot@users.noreply.github.com" && git commit -m "Ažuriraj evidenciju društvenih objava" && git pull --rebase && git push)
