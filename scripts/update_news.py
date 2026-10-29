@@ -119,7 +119,8 @@ def main():
     candidates, seen = [], set()
     # Google News can return unrelated stories for broad personality searches.
     # Keep the "Iza kacige" section tied to actual motorsport people/topics.
-    kaciga_relevance = ("bottas", "verstappen", "hamilton", "leclerc", "norris", "alonso", "antonelli", "piastri", "marquez", "márquez", "stoner", "rossi", "ricciardo", "horner", "webber", "bagnaia", "martin", "tiffany cromwell", "f1", "formula 1", "formula one", "motogp", "red bull", "ferrari", "racing", "motorsport", "grand prix", "le mans", "wrc", "rally", "dakar", "vozač", "vozači", "utrka", "utrke")
+    # Require explicit motorsport context. A surname such as "Alonso" alone can match unrelated news.
+    kaciga_relevance = ("f1", "formula 1", "formula one", "motogp", "motorsport", "grand prix", "le mans", "wrc", "rally", "dakar", "racing", "race driver", "racing driver", "motocross", "nascar", "indycar", "vozač", "vozači", "utrka", "utrke", "utrkivanje", "motosport")
     for feed in cfg.get("feeds", []):
         try:
             parsed = feedparser.parse(feed["url"], request_headers={"User-Agent":UA})
