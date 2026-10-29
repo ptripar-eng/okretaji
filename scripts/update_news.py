@@ -100,19 +100,21 @@ def main():
         prev=old.get(item["u"],{})
         # Preserve an existing title/summary while the source title is unchanged.
         # Legacy expanded body/conclusion fields are intentionally not carried forward.
-        if prev.get("orig_t")==item["raw_t"] and prev.get("s"):
+        if prev.get("summary_version")==2 and prev.get("orig_t")==item["raw_t"] and prev.get("s"):
             summary={"t":prev.get("t", item["raw_t"]), "s":prev["s"]}
         else:
+            # Regenerate legacy summaries once under the stricter no-invention prompt.
             summary=summarize(item["raw_t"],item["desc"],cat)
         record={k:item[k] for k in ("c","src","u","date","img_q")}
         record.update(summary)
         record["orig_t"]=item["raw_t"]
+        record["summary_version"]=2
         record["hr"]=True
         out.append(record); counts[cat]=counts.get(cat,0)+1
     # Keep current articles if feeds temporarily fail, up to max age and 45 items.
     for item in old.values():
-        if item.get("u") not in {x["u"] for x in out} and item.get("date","")[:10] >= (now-timedelta(days=max_age)).date().isoformat() and len(out)<45:
-            # Remove legacy expanded text from cached articles as well.
+        if item.get("u") not in {x["u"] for x in out} and item.get("date","")[:10] >= (now-timedelta(days=max_age)).date().isoformat() and len(out)<45 and item.get("summary_version")==2:
+            # Keep only articles already processed under the strict summary rules.
             item = {k:v for k,v in item.items() if k not in ("body", "conclusion")}
             out.append(item)
     out.sort(key=lambda x:x.get("date",""),reverse=True)
