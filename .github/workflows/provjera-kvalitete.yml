@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Instaliraj ovisnosti društvenih objava
+        run: pip install requests
       - name: Provjeri JSON konfiguraciju i vijesti
         run: |
           python -m json.tool feeds.json > /dev/null
@@ -26,3 +28,11 @@ jobs:
         run: python -m py_compile scripts/*.py
       - name: Provjeri vijesti i ukloni duple slike u radnom prostoru
         run: python scripts/check_news.py
+      - name: Test Facebooka u probnom načinu rada
+        env:
+          DRY_RUN: "1"
+        run: python scripts/post_facebook.py
+      - name: Test Instagrama u probnom načinu rada
+        env:
+          IG_DRY_RUN: "1"
+        run: python scripts/post_instagram.py
