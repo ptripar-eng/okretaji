@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-"""Prepare or publish a small number of Okretaji Facebook page posts.
+"""Prepare or publish a small number of useful, varied Okretaji Facebook posts.
 
-Safety: DRY_RUN defaults to 1. In dry-run mode this script never calls Meta's API
-and never writes posted.json. Live mode requires explicit DRY_RUN=0 and credentials.
+Safety: DRY_RUN defaults to 1. Live mode requires DRY_RUN=0 and valid Meta Page credentials.
 """
 import json
 import os
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -21,14 +20,102 @@ DRY_RUN = os.getenv("DRY_RUN", "1").strip().lower() not in {"0", "false", "no"}
 API_VERSION = os.getenv("FB_GRAPH_API_VERSION", "v24.0").strip()
 DAILY_LIMIT = 2
 TZ = ZoneInfo("Europe/Zagreb")
-PREFERRED = {"f1": 0, "motogp": 1, "moto": 2, "auto": 3, "tech": 4, "energy": 5}
+
+CATEGORY = {
+    "f1": {
+        "tag": "#Formula1 #F1",
+        "question": "Što vi mislite o ovoj priči — je li ovo dobar potez?",
+        "follow": "Pratite Okretaje za najvažnije vijesti iz Formule 1.",
+    },
+    "motogp": {
+        "tag": "#MotoGP #Motorsport",
+        "question": "Kako vi gledate na ovu odluku? Napišite svoje mišljenje.",
+        "follow": "Pratite Okretaje za MotoGP novosti i utrke.",
+    },
+    "reli": {
+        "tag": "#WRC #Rally",
+        "question": "Koji vozač ili posada bi po vama mogli iznenaditi?",
+        "follow": "Pratite Okretaje za rally i regionalni motosport.",
+    },
+    "moto": {
+        "tag": "#Motocikli #Moto",
+        "question": "Biste li vi odabrali ovakav motocikl? Zašto?",
+        "follow": "Pratite Okretaje za moto novosti i teme za vozače.",
+    },
+    "auto": {
+        "tag": "#Automobili #AutoMoto",
+        "question": "Što mislite — dobar izbor ili biste odabrali nešto drugo?",
+        "follow": "Pratite Okretaje za automobilske novosti i praktične usporedbe.",
+    },
+    "tech": {
+        "tag": "#Tehnologija #Tech",
+        "question": "Je li ovo stvarni napredak ili više marketinška priča?",
+        "follow": "Pratite Okretaje za tehnologiju koja mijenja promet i svakodnevicu.",
+    },
+    "energy": {
+        "tag": "#Energija #Tehnologija",
+        "question": "Što mislite — može li ovo donijeti mjerljivu promjenu?",
+        "follow": "Pratite Okretaje za tehnologiju i energetiku bez uljepšavanja.",
+    },
+    "kaciga": {
+        "tag": "#Motorsport #IzaKacige",
+        "question": "Koju biste priču izvan staze voljeli pročitati sljedeću?",
+        "follow": "Pratite Okretaje za priče iz svijeta vozača i motosporta.",
+    },
+}
+SPORT = {"f1", "motogp", "reli", "moto"}
 
 
 def read_json(path, default):
     try:
         return json.loads(path.read_text(encoding="utf-8"))
-    except FileNotFoundError:
+    except (FileNotFoundError, json.JSONDecodeError):
         return default
+
+
+def make_message(article):
+    category = str(article.get("c") or "").lower()
+    meta = CATEGORY.get(category, {
+        "tag": "#Okretaji #AutoMoto",
+        "question": "Što vi mislite? Napišite svoje mišljenje.",
+        "follow": "Pratite Okretaje za nove priče iz svijeta vozila i tehnologije.",
+    })
+    title = " ".join(str(article.get("t") or "").split()).strip()
+    summary = " ".join(str(article.get("s") or "").split()).strip()
+    source = str(article.get("src") or "izvor").strip()
+    source_url = (article.get("u") or "").strip()
+    return (
+        f"🏁 {title}\n\n{summary}\n\n"
+        f"💬 {meta['question']}\n\n"
+        f"👉 {meta['follow']}\n"
+        f"🌐 Sve novosti: https://okretaji.com/#novosti\n"
+        f"Izvor: {source} — {source_url}\n\n"
+        f"{meta['tag']} #Okretaji"
+    )
+
+
+def choose_candidates(candidates, slots):
+    """Favor one fresh motorsport item and one different category each day."""
+    remaining = sorted(candidates, key=lambda x: x["date"], reverse=True)
+    selected = []
+    if slots <= 0:
+        return selected
+
+    sports = [x for x in remaining if x["category"] in SPORT]
+    first = sports[0] if sports else (remaining[0] if remaining else None)
+    if first:
+        selected.append(first)
+        remaining.remove(first)
+
+    while remaining and len(selected) < slots:
+        used_categories = {x["category"] for x in selected}
+        different = [x for x in remaining if x["category"] not in used_categories]
+        non_sports = [x for x in different if x["category"] not in SPORT]
+        pool = non_sports or different or remaining
+        choice = pool[0]
+        selected.append(choice)
+        remaining.remove(choice)
+    return selected
 
 
 def main():
@@ -54,29 +141,23 @@ def main():
         title = " ".join(str(article.get("t") or "").split()).strip()
         summary = " ".join(str(article.get("s") or "").split()).strip()
         category = str(article.get("c") or "").lower()
-        if not url.startswith(("https://", "http://")) or not title or not summary:
+        if not url.startswith("https://") or not title or not summary:
             continue
-        if url in posted_urls:
+        if url in posted_urls or category not in CATEGORY:
             continue
-        if category not in PREFERRED:
+        if article.get("hr") is not True or article.get("summary_version") != 3:
             continue
-        source = str(article.get("src") or "izvor").strip()
-        published = str(article.get("date") or "")
-        message = (
-            f"🏁 {title}\n\n{summary}\n\n"
-            f"Više vijesti: https://okretaji.com/\n"
-            f"Izvor: {source} — {url}"
-        )
         candidates.append({
-            "url": url, "title": title, "summary": summary,
-            "category": category, "source": source, "date": published,
-            "message": message,
+            "url": url,
+            "title": title,
+            "summary": summary,
+            "category": category,
+            "source": str(article.get("src") or "izvor").strip(),
+            "date": str(article.get("date") or ""),
+            "message": make_message(article),
         })
 
-    # Newest first within each category, with F1/MotoGP/moto categories prioritized.
-    candidates.sort(key=lambda x: x["date"], reverse=True)
-    candidates.sort(key=lambda x: PREFERRED.get(x["category"], 99))
-    selected = candidates[:slots]
+    selected = choose_candidates(candidates, slots)
     print(
         f"Facebook plan | mode={'DRY_RUN' if DRY_RUN else 'LIVE'} | "
         f"today={today} | already_today={already_today} | "
@@ -102,7 +183,7 @@ def main():
             endpoint,
             data={
                 "message": article["message"],
-                "link": "https://okretaji.com/",
+                "link": "https://okretaji.com/#novosti",
                 "access_token": PAGE_TOKEN,
             },
             timeout=30,
@@ -126,7 +207,6 @@ def main():
         })
 
     if newly_posted:
-        # Preserve history for duplicate protection, capped to the most recent 500 posts.
         state["items"] = (posted + newly_posted)[-500:]
         POSTED_PATH.write_text(
             json.dumps(state, ensure_ascii=False, indent=2) + "\n",
