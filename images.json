@@ -132,7 +132,6 @@
  "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations": null,
  "https://www.motorsport.com/f1/news/franco-colapinto-george-russell-to-sit-out-fp1-at-f1-mexico-gp/10868889": null,
  "https://arstechnica.com/gadgets/2026/10/from-cheap-tool-to-premium-subscription-when-a-beloved-apps-price-skyrockets": null,
- "https://www.motorsport.com/wrc/news/rally-us-reveals-further-details-ahead-of-wrc-2027-return-/10868887": null,
  "https://www.motor1.com/news/813395/turo-tesla-self-driving-rental": null,
  "https://arstechnica.com/gadgets/2026/10/apple-iphone-duo-review-two-screens-two-experiences-two-thousand-dollars": null,
  "https://www.rideapart.com/news/813184/novus-electric-motorcycles-coming-soon-to-america": null,
@@ -148,16 +147,6 @@
  "https://www.autosport.com/f1/news/red-bull-explains-why-verstappen-and-hadjar-silly-problems-wont-be-fixed-in-2026/10868779/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk": null,
  "https://www.motorsport.com/f1/news/red-bull-reveals-when-silly-problems-affecting-max-verstappen-and-isack-hadjar-can-be-fixed/10868773/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www": null,
  "https://www.motorsport.com/motogp/news/ducati-aprilia-got-unlucky-in-australian-gp-can-win-every-race-from-now/10868527": null,
- "https://www.motorsport.com/wrc/news/sesks-tight-lipped-on-wrc-future-after-erc-season-finale-triumph/10868620": null,
- "https://www.motorsport.com/wrc/news/josh-mcerlean-to-test-2027-spec-m-sport-wrc-car-at-erc-finale/10867386": null,
- "https://www.motorsport.com/wrc/news/jon-armstrong-announces-wrc-co-driver-split-for-2027/10866937": {
-  "id": "3191c2b8-3e0b-47df-804f-7ad8e6ac1c99",
-  "src": "https://api.openverse.org/v1/images/3191c2b8-3e0b-47df-804f-7ad8e6ac1c99/thumb/",
-  "by": "dez&john3313",
-  "lic": "BY",
-  "link": "https://www.flickr.com/photos/25349554@N03/4317736806",
-  "illustrative": true
- },
  "https://www.motorsport.com/f1/news/mercedes-admits-they-were-clueless-before-kimi-antonellis-austin-miracle-a-remarkable-turnaround/10868571": null,
  "https://electrek.co/2026/10/27/byds-10k-ev-blows-tire-nearly-90-mph-watch-what-happens": null,
  "https://electrek.co/2026/10/27/rivian-electric-van-walmart-plus-livery-spotted": null,
@@ -201,25 +190,9 @@
  "https://www.carbonbrief.org/revealed-uk-relied-on-2bn-of-questionable-accounting-to-hit-its-climate-aid-goal": null,
  "https://www.carbonbrief.org/analysis-how-the-uk-spent-more-than-11-6bn-on-climate-aid-since-2021": null,
  "https://electrek.co/2026/10/28/dutch-startup-elysian-says-electric-flight-may-be-closer-than-you-think": null,
- "https://www.motor1.com/news/813563/toyota-sienna-hybrid-recall-targets": {
-  "id": "a0a70354-fa2f-4f9a-b931-4550d0c84e04",
-  "src": "https://api.openverse.org/v1/images/a0a70354-fa2f-4f9a-b931-4550d0c84e04/thumb/",
-  "by": "Alexandre Prevot",
-  "lic": "BY-SA",
-  "link": "https://www.flickr.com/photos/32569229@N06/52469910493",
-  "illustrative": true
- },
  "https://electrek.co/2026/10/28/used-evs-suddenly-hot-sellers-top-suvs-for-under-25000": null,
  "https://www.motor1.com/news/813606/audi-a8-concept-c-rendering": null,
  "https://electrek.co/2026/10/28/15000-ev-tax-credit-bill-landsman-no-chance": null,
- "https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling": {
-  "id": "cb434a73-2ab7-44ad-a798-ab8ed9d9a1cd",
-  "src": "https://api.openverse.org/v1/images/cb434a73-2ab7-44ad-a798-ab8ed9d9a1cd/thumb/",
-  "by": "University of Salford",
-  "lic": "BY",
-  "link": "https://www.flickr.com/photos/32104790@N02/6964010157",
-  "illustrative": true
- },
  "https://arstechnica.com/space/2026/10/the-last-best-hope-for-space-tourism-just-rolled-onto-a-runway-in-arizona": null,
  "https://arstechnica.com/apple/2026/10/touchscreen-macbook-pro-hands-on-oled-looks-great-on-a-mac": null,
  "https://www.motor1.com/news/813597/tesla-roadster-reto-user-interface": null,
@@ -230,115 +203,10 @@
  "https://www.motorsport.com/f1/news/five-things-to-look-out-for-at-the-f1-mexico-gp/10868922": null,
  "https://www.motorsport.com/f1/news/max-verstappen-sits-out-for-red-bull-in-mexico-gp-fp1/10869125": null,
  "https://www.motorsport.com/motogp/news/motogp-seeks-compromise-with-riders-over-qatar-grand-prix-/10869091": null,
- "https://www.rideapart.com/news/813587/exploring-the-sonoran-desert-in-can-am-maverick-side-by-sides": {
-  "id": "d0067c19-1e6a-4a15-8713-40ee7c372cd2",
-  "src": "https://api.openverse.org/v1/images/d0067c19-1e6a-4a15-8713-40ee7c372cd2/thumb/",
-  "by": "“Caveman Chuck” Coker",
-  "lic": "BY-ND",
-  "link": "https://www.flickr.com/photos/28402283@N07/4626799569",
-  "illustrative": true
- },
  "https://www.autosport.com/f1/news/f1-publishes-first-social-impact-report-key-student-scholarship-renewed/10869116": null,
- "https://www.rideapart.com/news/813423/zontes-zt903r-triple-naked-bike-design-leak": {
-  "id": "d0067c19-1e6a-4a15-8713-40ee7c372cd2",
-  "src": "https://api.openverse.org/v1/images/d0067c19-1e6a-4a15-8713-40ee7c372cd2/thumb/",
-  "by": "“Caveman Chuck” Coker",
-  "lic": "BY-ND",
-  "link": "https://www.flickr.com/photos/28402283@N07/4626799569",
-  "illustrative": true
- },
- "https://www.rideapart.com/news/813433/sanrivatti-hypercar-motorcycle-like-controls-and-seating-position": {
-  "id": "d0067c19-1e6a-4a15-8713-40ee7c372cd2",
-  "src": "https://api.openverse.org/v1/images/d0067c19-1e6a-4a15-8713-40ee7c372cd2/thumb/",
-  "by": "“Caveman Chuck” Coker",
-  "lic": "BY-ND",
-  "link": "https://www.flickr.com/photos/28402283@N07/4626799569",
-  "illustrative": true
- },
  "https://www.rideapart.com/news/813315/lime-scooter-ebike-medieval-jousting-video": null,
- "https://www.motorsport.com/f1/news/horner-reflects-on-ricciardos-prime-red-bull-era-he-never-stopped-overtaking/10869056": {
-  "id": "1e2492be-b5dc-4c47-8d96-7d2934880f96",
-  "src": "https://api.openverse.org/v1/images/1e2492be-b5dc-4c47-8d96-7d2934880f96/thumb/",
-  "by": "Renzopaso",
-  "lic": "BY-SA",
-  "link": "https://www.flickr.com/photos/105731165@N07/46259315605",
-  "illustrative": true
- },
- "https://www.motorsport.com/f1/news/christian-horner-admits-netflix-hijacked-his-f1-reputation-i-was-the-villain/10869051": {
-  "id": "1e2492be-b5dc-4c47-8d96-7d2934880f96",
-  "src": "https://api.openverse.org/v1/images/1e2492be-b5dc-4c47-8d96-7d2934880f96/thumb/",
-  "by": "Renzopaso",
-  "lic": "BY-SA",
-  "link": "https://www.flickr.com/photos/105731165@N07/46259315605",
-  "illustrative": true
- },
- "https://cleantechnica.com/2026/10/28/construction-materials-stand-out-at-greenbuild-2026": {
-  "id": "cd0e39f6-6381-451e-924f-368bf372f0dd",
-  "src": "https://api.openverse.org/v1/images/cd0e39f6-6381-451e-924f-368bf372f0dd/thumb/",
-  "by": "moonjazz",
-  "lic": "PDM",
-  "link": "https://www.flickr.com/photos/8398907@N02/8628436785",
-  "illustrative": true
- },
- "https://electrek.co/2026/10/28/when-one-door-closes-polestar-2-production-ends-and-what-might-come-next": {
-  "id": "cd0e39f6-6381-451e-924f-368bf372f0dd",
-  "src": "https://api.openverse.org/v1/images/cd0e39f6-6381-451e-924f-368bf372f0dd/thumb/",
-  "by": "moonjazz",
-  "lic": "PDM",
-  "link": "https://www.flickr.com/photos/8398907@N02/8628436785",
-  "illustrative": true
- },
- "https://cleantechnica.com/2026/10/28/nearly-half-of-eu-cities-do-not-yet-meet-new-clean-air-standards-report-shows-collaboration-is-key": {
-  "id": "cd0e39f6-6381-451e-924f-368bf372f0dd",
-  "src": "https://api.openverse.org/v1/images/cd0e39f6-6381-451e-924f-368bf372f0dd/thumb/",
-  "by": "moonjazz",
-  "lic": "PDM",
-  "link": "https://www.flickr.com/photos/8398907@N02/8628436785",
-  "illustrative": true
- },
  "https://cleantechnica.com/2026/10/28/trump-rolling-back-methane-pollution-safeguards": null,
- "https://www.motorsport.com/f1/news/daniel-ricciardo-opens-door-to-racing-return-with-max-verstappen-at-le-mans/10869169": {
-  "id": "1e2492be-b5dc-4c47-8d96-7d2934880f96",
-  "src": "https://api.openverse.org/v1/images/1e2492be-b5dc-4c47-8d96-7d2934880f96/thumb/",
-  "by": "Renzopaso",
-  "lic": "BY-SA",
-  "link": "https://www.flickr.com/photos/105731165@N07/46259315605",
-  "illustrative": true
- },
  "https://www.motorsport.com/f1/news/daniel-ricciardo-reveals-major-regret-over-2018-red-bull-departure/10869167": null,
- "https://www.rideapart.com/news/813634/indian-motorcycle-hires-70-employees-after-letting-go-of-70-employees": null,
- "https://arstechnica.com/space/2026/10/ulas-vulcan-rocket-is-set-to-return-to-flight-on-friday-the-13th": null,
- "https://arstechnica.com/gadgets/2026/10/as-us-ties-fray-europe-plans-first-undersea-cable-link-to-greenland": null,
- "https://arstechnica.com/health/2026/10/peptide-peddlers-cheer-as-rfk-jr-unilaterally-grants-access-overruling-fda": null,
- "https://www.motor1.com/news/813649/forgotten-1928-bentley-barn-find": null,
- "https://www.carbonbrief.org/analysis-chinas-clean-tech-exports-in-2026-to-avoid-as-much-co2-as-brazil-emits-in-a-year": null,
- "https://www.motorsport.com/f1/news/will-christian-horner-buy-his-own-f1-team-the-sacked-boss-speaks-out/10869059": null,
- "https://www.motor1.com/news/813641/michelotto-gruppo-4-tributo-ferrari": null,
- "https://www.motorsport.com/motogp/news/jorge-martin-braced-for-really-difficult-painful-motogp-weekend-with-broken-arm/10869197": {
-  "id": "5a41abf6-f8e9-4753-b38f-2897853a3060",
-  "src": "https://api.openverse.org/v1/images/5a41abf6-f8e9-4753-b38f-2897853a3060/thumb/",
-  "by": "Smudge 9000",
-  "lic": "BY-SA",
-  "link": "https://www.flickr.com/photos/7599112@N08/9678855611",
-  "illustrative": true
- },
- "https://www.motorsport.com/motogp/news/alex-marquez-moves-to-end-motogp-qatar-gp-speculation-the-race-is-confirmed/10869189": {
-  "id": "5a41abf6-f8e9-4753-b38f-2897853a3060",
-  "src": "https://api.openverse.org/v1/images/5a41abf6-f8e9-4753-b38f-2897853a3060/thumb/",
-  "by": "Smudge 9000",
-  "lic": "BY-SA",
-  "link": "https://www.flickr.com/photos/7599112@N08/9678855611",
-  "illustrative": true
- },
- "https://www.motorsport.com/motogp/news/jorge-martin-declared-fit-to-start-malaysian-gp-by-motogp-doctor/10869191": {
-  "id": "5a41abf6-f8e9-4753-b38f-2897853a3060",
-  "src": "https://api.openverse.org/v1/images/5a41abf6-f8e9-4753-b38f-2897853a3060/thumb/",
-  "by": "Smudge 9000",
-  "lic": "BY-SA",
-  "link": "https://www.flickr.com/photos/7599112@N08/9678855611",
-  "illustrative": true
- },
- "https://www.motor1.com/news/813639/toyota-new-platform-gas-engine": null,
  "__category_images__": {
   "motogp": {
    "id": "5a41abf6-f8e9-4753-b38f-2897853a3060",

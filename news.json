@@ -1,6 +1,162 @@
 {
- "updated": "2026-10-29T08:52+00:00",
+ "updated": "2026-10-29T13:14+00:00",
  "items": [
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/cadillac-honoured-to-have-sergio-perez-as-special-300th-race-celebration-planned-for-mexico-gp/10869136",
+   "date": "2026-10-29T13:00+00:00",
+   "img_q": "Cadillac 'honoured' to have Sergio Perez as special 300th race celebration planned for Mexico GP",
+   "t": "Cadillac počašćen Sergiom Perezom uoči njegove 300. utrke",
+   "s": "Predsjednik General Motorsa Mark Reuss izjavio je kako im je čast što Sergio Perez vozi za Cadillac. Meksički će vozač na Velikoj nagradi Meksika upisati svoju tristotu utrku u Formuli 1.",
+   "orig_t": "Cadillac 'honoured' to have Sergio Perez as special 300th race celebration planned for Mexico GP",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/sebastian-vettel-reveals-why-bmw-didnt-want-him-but-red-bull-did/10869300",
+   "date": "2026-10-29T12:18+00:00",
+   "img_q": "Sebastian Vettel reveals why BMW didn't want him – but Red Bull did",
+   "t": "Sebastian Vettel otkrio zašto ga BMW nije htio, ali Red Bull jest",
+   "s": "U novoj dokumentarnoj seriji, četverostruki svjetski prvak u Formuli 1 Sebastian Vettel prisjetio se početaka karijere i objasnio kako mu je BMW dao podršku, ali ga na kraju ipak nije zadržao.",
+   "orig_t": "Sebastian Vettel reveals why BMW didn't want him – but Red Bull did",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "Electrek",
+   "u": "https://electrek.co/2026/10/29/new-trek-e-bike-is-first-to-get-boschs-new-motor-with-a-major-power-upgrade",
+   "date": "2026-10-29T12:00+00:00",
+   "img_q": "New Trek e-bike is first to get Bosch’s new motor with a major power upgrade",
+   "t": "Novi Trek Marlin+ prvi u Sjevernoj Americi dobio Boschov motor",
+   "s": "Trek je predstavio novu verziju električnog brdskog bicikla Marlin+ koja je prva u Sjevernoj Americi opremljena dorađenim Boschovim motorom Active Line Plus. Ažurirani pogonski sustav donosi manju težinu, kompaktnije dimenzije i veći radni učinak.",
+   "orig_t": "New Trek e-bike is first to get Bosch’s new motor with a major power upgrade",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813464/hayabusa-truck-bed-go-kart-build-video",
+   "date": "2026-10-29T11:42+00:00",
+   "img_q": "Is This The Suzuki Hayabusa Swapped Kids Bed a Dream? It Might Be",
+   "t": "Je li dječji krevet s ugrađenim motorom Suzuki Hayabusa ostvarenje snova?",
+   "s": "Na internetu je predstavljen neobičan dječji krevet koji uključuje prepoznatljiv motor poznat iz drugih viralnih projekata. Ovaj zanimljiv koncept privukao je pozornost javnosti na društvenim mrežama.",
+   "orig_t": "Is This The Suzuki Hayabusa Swapped Kids Bed a Dream? It Might Be",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813697/2027-jeep-compass-pricing-equipment",
+   "date": "2026-10-29T11:27+00:00",
+   "img_q": "2027 Jeep Compass Gets A Price Hike As Standard Features Improve",
+   "t": "Model Jeep Compass za 2027. godinu poskupljuje uz bogatiju opremu",
+   "s": "Nova modelska godina donosi više serijske opreme, uključujući prilagodljivi tempomat u osnovnim paketima, te cjenovne promjene usmjerene kupcima koji traže bolju vrijednost.",
+   "orig_t": "2027 Jeep Compass Gets A Price Hike As Standard Features Improve",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813685/mercedes-e-class-electric-details",
+   "date": "2026-10-29T11:19+00:00",
+   "img_q": "Mercedes Boss Talks Electric E-Class, Developed From A 'White Sheet Of Paper'",
+   "t": "Šef Mercedesa najavio dolazak električne E-Klase",
+   "s": "Prva električna E-Klasa stiže sljedeće godine te će zamijeniti dosadašnji model EQE. Vozilo je razvijeno u potpunosti ispočetka.",
+   "orig_t": "Mercedes Boss Talks Electric E-Class, Developed From A 'White Sheet Of Paper'",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813442/what-new-adventure-motorcycle-does-honda-have-up-its-sleve-teaser",
+   "date": "2026-10-29T11:03+00:00",
+   "img_q": "What New Adventure Bike Does Honda Have Up Its Sleeve?",
+   "t": "Honda UK najavila novu avanturističku motociklističku premijeru",
+   "s": "Britanski ogranak Honde najavio je predstavljanje novog motocikla namijenjenog avanturističkoj vožnji. Svi detalji bit će službeno objavljeni 2. studenog.",
+   "orig_t": "What New Adventure Bike Does Honda Have Up Its Sleeve?",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/space/2026/10/spacex-no-longer-needs-nasa-and-thats-a-problem-for-americas-space-agency",
+   "date": "2026-10-29T11:00+00:00",
+   "img_q": "SpaceX no longer needs NASA, and that's a problem for America's space agency",
+   "t": "SpaceX je sve manje ovisan o NASA-i, što predstavlja izazov za američku svemirsku agenciju",
+   "s": "Tijekom godina odnos između SpaceX-a i američke vlade značajno se promijenio. Tvrtka sada postaje sve neovisnija o državnim ugovorima, što utječe na buduće planove svemirske agencije.",
+   "orig_t": "SpaceX no longer needs NASA, and that's a problem for America's space agency",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/kimi-antonelli-wants-to-build-a-racing-academy-and-team-up-with-his-dad-in-gt3/10869239",
+   "date": "2026-10-29T09:53+00:00",
+   "img_q": "Kimi Antonelli reveals plans to launch his own racing academy outside F1",
+   "t": "Kimi Antonelli planira pokrenuti vlastitu trkaću akademiju izvan Formule 1",
+   "s": "Mladi vozač Formule 1 Andrea Kimi Antonelli najavio je planove za osnivanje vlastite trkaće akademije izvan natjecanja Formule 1, čime priprema novi poslovni potez unatoč svojim uspjesima u prvenstvu.",
+   "orig_t": "Kimi Antonelli reveals plans to launch his own racing academy outside F1",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813672/ford-f-150-demand-holds",
+   "date": "2026-10-29T09:51+00:00",
+   "img_q": "Ford’s Strong Profits Show High Gas Prices Aren’t Keeping F-150 Buyers Away",
+   "t": "Visoke cijene goriva ne umanjuju potražnju za Fordovim modelom F-150",
+   "s": "Financijski rezultati tvrtke Ford za treće tromjesečje 2026. godine potvrđuju snažnu potražnju za vozilima F-150. Ostvareno je 49,5 milijardi dolara prihoda uz strože smjernice poslovanja usprkos padu neto dobiti.",
+   "orig_t": "Ford’s Strong Profits Show High Gas Prices Aren’t Keeping F-150 Buyers Away",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "motogp",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/marc-marquez-wary-of-title-rival-jorge-martin-at-sepang-adrenaline-is-the-best-painkiller/10869241",
+   "date": "2026-10-29T09:36+00:00",
+   "img_q": "Marc Marquez wary of MotoGP title rival Jorge Martin at Sepang: \"Adrenaline is the best painkiller\"",
+   "t": "Marc Marquez oprezan je uoči Sepanga zbog Jorgea Martina i borbe za naslov",
+   "s": "Vodeći u poretku MotoGP-a Marc Marquez oprezan je uoči vikenda u Sepangu zbog potencijala Jorgea Martina, koji je dobio dozvolu za nastup nakon ozljede zgloba.",
+   "orig_t": "Marc Marquez wary of MotoGP title rival Jorge Martin at Sepang: \"Adrenaline is the best painkiller\"",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813667/vw-group-electric-cars-less-profitable",
+   "date": "2026-10-29T09:35+00:00",
+   "img_q": "The Volkswagen Group Says The Quiet Part Out Loud: EVs Are Still Less Profitable Than Gas Cars",
+   "t": "Volkswagen Group priznaje: Električni automobili još uvijek donose manju zaradu od benzinskih",
+   "s": "Iz Volkswagena navode kako rastuća prodaja električnih vozila stvara dodatni pritisak na financijske rezultate tvrtke. Zbog toga su električni automobili trenutačno manje profitabilni u usporedbi s vozilima na benzin.",
+   "orig_t": "The Volkswagen Group Says The Quiet Part Out Loud: EVs Are Still Less Profitable Than Gas Cars",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "motogp",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/joan-mir-has-a-lot-of-answers-about-crash-strewn-2026-motogp-campaign-as-he-explains-illness/10869228",
+   "date": "2026-10-29T08:58+00:00",
+   "img_q": "Joan Mir \"has a lot of answers\" about crash­-strewn 2026 MotoGP campaign as he explains illness",
+   "t": "Joan Mir se vraća na stazu u Maleziji nakon bolesti",
+   "s": "Vozač Honde Joan Mir vraća se u akciju ovog vikenda u Maleziji nakon što je propustio četiri utrke zbog zdravstvenog stanja koje ranije nije bilo javno otkriveno.",
+   "orig_t": "Joan Mir \"has a lot of answers\" about crash­-strewn 2026 MotoGP campaign as he explains illness",
+   "summary_version": 3,
+   "hr": true
+  },
   {
    "c": "motogp",
    "src": "Motorsport.com",
@@ -83,15 +239,7 @@
    "s": "Vozač Aprilije Jorge Martin nastupit će na vikendu Velike nagrade Malezije unatoč očekivanjima da će mu vožnja sa slomljenom rukom biti vrlo teška i bolna. Nakon pada na prošlotjednoj utrci u Australiji prošao je intenzivan program oporavka.",
    "orig_t": "Jorge Martin braced for “really difficult, painful” MotoGP weekend with broken arm",
    "summary_version": 3,
-   "hr": true,
-   "img": {
-    "id": "5a41abf6-f8e9-4753-b38f-2897853a3060",
-    "src": "https://api.openverse.org/v1/images/5a41abf6-f8e9-4753-b38f-2897853a3060/thumb/",
-    "by": "Smudge 9000",
-    "lic": "BY-SA",
-    "link": "https://www.flickr.com/photos/7599112@N08/9678855611",
-    "illustrative": true
-   }
+   "hr": true
   },
   {
    "c": "motogp",
@@ -127,15 +275,7 @@
    "s": "Christian Horner se u nedavnom intervjuu osvrnuo na rad Australaca Marka Webbera i Daniela Ricciarda u Red Bull Racingu. Webber je pomogao izgraditi pobjedničke temelje momčadi, dok je Ricciardo preuzeo vodstvo na početku turbo-hibridne ere.",
    "orig_t": "Mark Webber's Red Bull exit branded \"disrespectful\" as Daniel Ricciardo praised",
    "summary_version": 3,
-   "hr": true,
-   "img": {
-    "id": "1e2492be-b5dc-4c47-8d96-7d2934880f96",
-    "src": "https://api.openverse.org/v1/images/1e2492be-b5dc-4c47-8d96-7d2934880f96/thumb/",
-    "by": "Renzopaso",
-    "lic": "BY-SA",
-    "link": "https://www.flickr.com/photos/105731165@N07/46259315605",
-    "illustrative": true
-   }
+   "hr": true
   },
   {
    "c": "f1",
@@ -159,15 +299,7 @@
    "s": "Autor bilježi svoje dojmove s nedavne međunarodne konferencije i izložbe Greenbuild 2026 održane u New Yorku, ističući kako su građevinski materijali posebno privukli pažnju.",
    "orig_t": "Construction Materials Stand Out At Greenbuild 2026",
    "summary_version": 3,
-   "hr": true,
-   "img": {
-    "id": "cd0e39f6-6381-451e-924f-368bf372f0dd",
-    "src": "https://api.openverse.org/v1/images/cd0e39f6-6381-451e-924f-368bf372f0dd/thumb/",
-    "by": "moonjazz",
-    "lic": "PDM",
-    "link": "https://www.flickr.com/photos/8398907@N02/8628436785",
-    "illustrative": true
-   }
+   "hr": true
   },
   {
    "c": "energy",
@@ -263,15 +395,7 @@
    "s": "Toyota provodi opoziv modela Sienna iz razdoblja od 2022. do 2026. godine zbog nedostatka na naslonu sjedala koji se može otključati u sudaru. Vlasnicima su osigurani besplatni popravci ovisno o opremi vozila.",
    "orig_t": "Toyota Recalls 228,000 Sienna Vans Over Seat Backs That May Unlock In A Crash",
    "summary_version": 3,
-   "hr": true,
-   "img": {
-    "id": "a0a70354-fa2f-4f9a-b931-4550d0c84e04",
-    "src": "https://api.openverse.org/v1/images/a0a70354-fa2f-4f9a-b931-4550d0c84e04/thumb/",
-    "by": "Alexandre Prevot",
-    "lic": "BY-SA",
-    "link": "https://www.flickr.com/photos/32569229@N06/52469910493",
-    "illustrative": true
-   }
+   "hr": true
   },
   {
    "c": "tech",
@@ -283,15 +407,7 @@
    "s": "Američka agencija tužila je deset saveznih država, uključujući Utah, zbog pokušaja zaustavljanja kockanja na tržištima predviđanja. Time se nastoji zaštititi Kalshi od potpune zabrane u toj saveznoj državi.",
    "orig_t": "Trump admin sues Utah to save Kalshi from the state's total ban on gambling",
    "summary_version": 3,
-   "hr": true,
-   "img": {
-    "id": "cb434a73-2ab7-44ad-a798-ab8ed9d9a1cd",
-    "src": "https://api.openverse.org/v1/images/cb434a73-2ab7-44ad-a798-ab8ed9d9a1cd/thumb/",
-    "by": "University of Salford",
-    "lic": "BY",
-    "link": "https://www.flickr.com/photos/32104790@N02/6964010157",
-    "illustrative": true
-   }
+   "hr": true
   },
   {
    "c": "moto",
@@ -303,15 +419,7 @@
    "s": "Javne su površine iznimno lijepe, stoga iskoristite priliku i posjetite ih te uživajte u prirodi na bilo koji način koji vam odgovara.",
    "orig_t": "Off-Roading The Sonoran Desert Is Just Waiting For You To Fall In Love With It",
    "summary_version": 3,
-   "hr": true,
-   "img": {
-    "id": "d0067c19-1e6a-4a15-8713-40ee7c372cd2",
-    "src": "https://api.openverse.org/v1/images/d0067c19-1e6a-4a15-8713-40ee7c372cd2/thumb/",
-    "by": "“Caveman Chuck” Coker",
-    "lic": "BY-ND",
-    "link": "https://www.flickr.com/photos/28402283@N07/4626799569",
-    "illustrative": true
-   }
+   "hr": true
   },
   {
    "c": "moto",
@@ -334,6 +442,30 @@
    "t": "Stiže neobični hiperautomobil s kokpitom nalik motociklu",
    "s": "Novi hiperautomobil koji kombinira automobilsku karoseriju i položaj sjedenja vozača kao na motociklu navodno bi se uskoro mogao pojaviti na tržištu.",
    "orig_t": "That Weird-Ass Motorcycle-Cockpit Hypercar Is Coming Soon. Supposedly",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "kaciga",
+   "src": "Pest Control Technology",
+   "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5DcDZMV0pRdUdCcTV4LWFNUTNRWl9sZWxiSXdxVU4weDZSVFZHQnlrb2JLRHAxd0pqNWxjaE5yODZjeERRRy1xcnJ1OXlvRGdNYXRnZG1pd0Qwd0ZxZER6NjRVbklVZ0IxSGY2a3E5WUZIS01WUnNNS2h5alNKVjg?oc=5",
+   "date": "2026-10-28T12:59+00:00",
+   "img_q": "Hawx Pest Control Adds Heather King Alonso - Pest Control Technology",
+   "t": "Heather King Alonso nova je članica tvrtke Hawx Pest Control",
+   "s": "Tvrtka Hawx Pest Control objavila je da im se pridružila Heather King Alonso. Informaciju je prenio magazin Pest Control Technology.",
+   "orig_t": "Hawx Pest Control Adds Heather King Alonso - Pest Control Technology",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "kaciga",
+   "src": "Motorcycle Sports",
+   "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVi1rTVNoN2wyUnNDb2hoM3d0OGc3bnJNeXQ4bHoxcWZpRWNFLW50a0duYlR4V2xhaG5fLXBxYmE4VzV2SEFMbmRIOVNSWUdaendvVFVvQ0J2QUNUTWRHeFY3Mng5bFYteGpTNmVKZnVZb1M4NnRVVGxDcDFsZU1wSEFnaHJzZzFyQzdHU0NuZGxaTVdVdmdzWVVn?oc=5",
+   "date": "2026-10-28T09:44+00:00",
+   "img_q": "Dovizioso on Phillip Island cancellation and Márquez’s Sprint win - Motorcycle Sports",
+   "t": "Dovizioso komentirao otkazivanje u Phillip Islandu i pobjedu Marqueza",
+   "s": "Dovizioso je komentirao otkazivanje utrke na stazi Phillip Island te pobjedu Marqueza u sprintu, prema izvješću portala Motorcycle Sports.",
+   "orig_t": "Dovizioso on Phillip Island cancellation and Márquez’s Sprint win - Motorcycle Sports",
    "summary_version": 3,
    "hr": true
   },
@@ -362,6 +494,18 @@
    "hr": true
   },
   {
+   "c": "kaciga",
+   "src": "Malay Mail",
+   "u": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQRWtiQl9vVUQzZktfLVozWGxIeTNCNUl2NTNwbEZxalU2WGhUMnFpenVrRlVhRWZBMVIwcllGM0ZSSTlndDdzdzc1UmZaTDdFQ2lTUXNfNzg3OTcyTmR5V3VCS1A4bTI4aFdUNTR0cjBvQV9WeFhmREliS19TcTB4TkwxN3RsMHoyMVBCYWVpX2tqUjZndDBscWJ3TWhudDhkTGpHT0xFZU5UdHMyd2lOSXMzdXc1N3FraWUySEFYeW9ndVFlRzdQV2VHUy1udlJnWkNkakJKUTZDaGIzSUsteU9aVkVYQllPcks5XzNR0gHzAUFVX3lxTE1ncjVBY2JyNHNJTkYwTzNRaThWNzNEcUJBOHZlaVJ1aERMRk5FallxLTk4TVBIT1VfbVROSk5YWFR4V05Scm52ZG9EYWltaDRpSy1VRDYwYXBOT0RXc1UyQmxrOU9YVHg1Tjc5NGQyVERzM0FUUnduYTdoU0FneGlHTGNSbUFGN1JuWkZ0ei13dG9jcnFzbVB1YnU3ODdLN2dqc3dpR0t5X3RuTDZjMDFiU1JuRHg3ZTNJV0dBUEJOWnJCdzJyN1lDTHotTE1tRFZZZXoxWHNod25raWRsOG9GYW4ySXBScDlrTlg1cksxbXYtTQ?oc=5",
+   "date": "2026-10-24T05:24+00:00",
+   "img_q": "Big brother Marc Marquez crashes, hops on spare bike and still beats Alex to pole at Australian Moto",
+   "t": "Marc Marquez osvojio pole position na Velikoj nagradi Australije",
+   "s": "Tijekom kvalifikacija za Veliku nagradu Australije u moto-utrkama, Marc Marquez je doživio pad, sjeo na rezervni motocikl te uspio izboriti prvu startnu poziciju ispred svog brata Alexa.",
+   "orig_t": "Big brother Marc Marquez crashes, hops on spare bike and still beats Alex to pole at Australian MotoGP - Malay Mail",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
    "c": "reli",
    "src": "Motorsport.com",
    "u": "https://www.motorsport.com/wrc/news/josh-mcerlean-to-test-2027-spec-m-sport-wrc-car-at-erc-finale/10867386",
@@ -383,15 +527,7 @@
    "s": "Vozač WRC-a Jon Armstrong objavio je na društvenim mrežama da se razilazi sa svojim suvozačem Shaneom Byrneom nakon dvije sezone suradnje. Planiraju se natjecati s drugim suvozačem.",
    "orig_t": "Jon Armstrong announces WRC co-driver split for 2027",
    "summary_version": 3,
-   "hr": true,
-   "img": {
-    "id": "3191c2b8-3e0b-47df-804f-7ad8e6ac1c99",
-    "src": "https://api.openverse.org/v1/images/3191c2b8-3e0b-47df-804f-7ad8e6ac1c99/thumb/",
-    "by": "dez&john3313",
-    "lic": "BY",
-    "link": "https://www.flickr.com/photos/25349554@N03/4317736806",
-    "illustrative": true
-   }
+   "hr": true
   }
  ],
  "schedule": [
