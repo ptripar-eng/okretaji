@@ -31,22 +31,22 @@ CATEGORY = {
     },
     "motogp": {
         "tag": "#MotoGP #Motorsport",
-        "question": "Kako vi gledate na ovu odluku? Napišite svoje mišljenje.",
+        "question": "Kako vi gledate na ovo? Napišite svoje mišljenje.",
         "follow": "Pratite Okretaje za MotoGP novosti i utrke.",
     },
     "reli": {
         "tag": "#WRC #Rally",
-        "question": "Koji vozač ili posada bi po vama mogli iznenaditi?",
+        "question": "Što vi mislite o ovome? Napišite nam u komentarima.",
         "follow": "Pratite Okretaje za rally i regionalni motosport.",
     },
     "moto": {
         "tag": "#Motocikli #Moto",
-        "question": "Biste li vi odabrali ovakav motocikl? Zašto?",
+        "question": "Što mislite o ovome? Napišite nam u komentarima.",
         "follow": "Pratite Okretaje za moto novosti i teme za vozače.",
     },
     "auto": {
         "tag": "#Automobili #AutoMoto",
-        "question": "Što mislite — dobar izbor ili biste odabrali nešto drugo?",
+        "question": "Što mislite — dobar potez ili promašaj?",
         "follow": "Pratite Okretaje za automobilske novosti i praktične usporedbe.",
     },
     "tech": {
