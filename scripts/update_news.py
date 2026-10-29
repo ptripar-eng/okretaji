@@ -21,7 +21,7 @@ def clean_url(url):
 def summarize(title, description, category):
     """Create a concise Croatian summary. Failed AI requests are retried on the next run."""
     from html import unescape
-    fallback = unescape(re.sub(r"\\s+", " ", re.sub(r"<[^>]+>", " ", description or ""))).strip()[:500]
+    fallback = unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", description or ""))).strip()[:500]
     if not API_KEY:
         print("Gemini ključ nije postavljen; preskačem vijest bez hrvatskog sažetka.")
         return {"t": title, "s": fallback or title, "_ok": False}
@@ -47,8 +47,8 @@ OPIS: {fallback}"""
             response_text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
             data = json.loads(response_text[response_text.find("{"):response_text.rfind("}")+1])
             result = {
-                "t": re.sub(r"\\s+", " ", str(data.get("t", ""))).strip()[:140],
-                "s": re.sub(r"\\s+", " ", str(data.get("s", ""))).strip()[:500],
+                "t": re.sub(r"\s+", " ", str(data.get("t", ""))).strip()[:140],
+                "s": re.sub(r"\s+", " ", str(data.get("s", ""))).strip()[:500],
             }
             if not result["t"] or not result["s"]:
                 raise ValueError("empty title or summary")
