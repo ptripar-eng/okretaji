@@ -69,8 +69,9 @@ def main():
         url = n.get("u", "")
         if not url or n.get("img", {}).get("src"):
             continue
-        if cache.get(url, {}).get("src"):
-            n["img"] = cache[url]
+        cached = cache.get(url)
+        if isinstance(cached, dict) and cached.get("src"):
+            n["img"] = cached
             continue
 
         query = (n.get("img_q") or n.get("t") or "").strip()
