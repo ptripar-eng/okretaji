@@ -61,12 +61,14 @@ jobs:
           DRY_RUN: ${{ secrets.FB_PAGE_ID != '' && secrets.FB_PAGE_TOKEN != '' && '0' || '1' }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
-      - name: Instagram (automatski ako su Meta pristupni podaci postavljeni)
+      - name: Instagram (uživo kad je varijabla IG_LIVE = 1)
         run: python scripts/post_instagram.py
         continue-on-error: true
         env:
-          # Potreban je profesionalni Instagram račun povezan s Facebook stranicom.
-          IG_DRY_RUN: ${{ secrets.IG_USER_ID != '' && secrets.IG_ACCESS_TOKEN != '' && '0' || '1' }}
+          # Instagram koristi isti Meta token kao Facebook; IG_USER_ID se dohvaća sa stranice.
+          IG_DRY_RUN: ${{ vars.IG_LIVE == '1' && secrets.FB_PAGE_ID != '' && secrets.FB_PAGE_TOKEN != '' && '0' || '1' }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
 
