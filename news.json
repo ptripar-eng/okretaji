@@ -1,6 +1,30 @@
 {
- "updated": "2026-10-29T17:01+00:00",
+ "updated": "2026-10-29T17:24+00:00",
  "items": [
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/unwell-kimi-antonelli-skips-f1-mexico-gp-media-day/10869366",
+   "date": "2026-10-29T17:05+00:00",
+   "img_q": "Unwell Kimi Antonelli skips F1 Mexico GP media day",
+   "t": "Kimi Antonelli preskače medijski dan na VN Meksika zbog bolesti",
+   "s": "Vozač Formule 1 Kimi Antonelli propustio je medijske obveze u četvrtku uoči Velike nagrade Meksika. Iz momčadi Mercedesa potvrdili su da se oporavlja od viroze, zbog čega je dobio opravdanje FIA-e.",
+   "orig_t": "Unwell Kimi Antonelli skips F1 Mexico GP media day",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813754/2027-fiat-topolino-street-legal-upgrades",
+   "date": "2026-10-29T17:00+00:00",
+   "img_q": "Fiat's $14,000 Topolino Is Finally Street Legal In The US (Within Reason)",
+   "t": "Fiatov Topolino za 2027. godinu donosi nove detalje",
+   "s": "Fiatov model Topolino za 2027. godinu dobiva izvedbu Open Air, novu digitalnu instrumentnu ploču te dvije nove boje karoserije.",
+   "orig_t": "Fiat's $14,000 Topolino Is Finally Street Legal In The US (Within Reason)",
+   "summary_version": 3,
+   "hr": true
+  },
   {
    "c": "energy",
    "src": "CleanTechnica",
@@ -26,6 +50,54 @@
    "hr": true
   },
   {
+   "c": "energy",
+   "src": "Electrek",
+   "u": "https://electrek.co/2026/10/29/ex-tesla-autopilot-head-vision-only-weird-religious-stance",
+   "date": "2026-10-29T16:10+00:00",
+   "img_q": "Ex-Tesla Autopilot head calls vision-only a ‘weird religious stance’",
+   "t": "Bivši šef Teslinog Autopilota kritizirao izbacivanje radara",
+   "s": "Glavni direktor za proizvode u GM-u Sterling Anderson kritizirao je Teslinu odluku o prelasku na sustav vožnje temeljen isključivo na kamerama, nazvavši je zanemarivanjem fizike. Anderson, koji je ranije vodio Teslin program Autopilot, ističe da kamere imaju ograničenja u lošim vremenskim uvjetima.",
+   "orig_t": "Ex-Tesla Autopilot head calls vision-only a ‘weird religious stance’",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/wec/news/why-daniel-ricciardo-would-consider-a-comeback-at-le-mans/10869318",
+   "date": "2026-10-29T16:00+00:00",
+   "img_q": "Why Daniel Ricciardo would consider a comeback at Le Mans",
+   "t": "Daniel Ricciardo razmatra povratak utrkama na Le Mansu",
+   "s": "Iako je njegov odlazak iz Formule 1 trajao i završio se prije dvije godine, osmerostruki pobjednik velikih nagrada otkriva da bi mogao biti zainteresiran za nastup na legendarnom natjecanju u Le Mansu.",
+   "orig_t": "Why Daniel Ricciardo would consider a comeback at Le Mans",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813482/honda-considering-expanding-off-road-motorcycle-lineup-india",
+   "date": "2026-10-29T15:19+00:00",
+   "img_q": "India Has Some Incredible Off-Road Motorcycling. Honda Wants In",
+   "t": "Honda želi ući na indijsko tržište terenskih motocikala",
+   "s": "Indija nudi planine, blato i sve snažniju scenu motocikala za vožnju po zemljanim terenima. Honda bi ondje napokon mogla ponuditi odgovarajuće modele.",
+   "orig_t": "India Has Some Incredible Off-Road Motorcycling. Honda Wants In",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813735/mazda-skyactiv-x-compression-ignition-engine-future",
+   "date": "2026-10-29T15:02+00:00",
+   "img_q": "Mazda Is Quietly Killing One Of Its Most Unusual Engines",
+   "t": "Mazda navodno gasi neobičan motor Skyactiv-X",
+   "s": "Mazda priprema gašenje motora Skyactiv-X, dok njegova eksperimentalna tehnologija izgaranja postavlja temelj za nadolazeći hibridni sustav Skyactiv-Z.",
+   "orig_t": "Mazda Is Quietly Killing One Of Its Most Unusual Engines",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
    "c": "f1",
    "src": "Motorsport.com",
    "u": "https://www.motorsport.com/f1/news/the-10-key-moments-that-defined-sergio-perezs-f1-career/10869046",
@@ -34,6 +106,42 @@
    "t": "Ključni trenuci karijere Sergia Pereza u Formuli 1",
    "s": "Vikend uoči utrke donosi ulazak Sergia Pereza u rijedak klub vozača s najmanje tristo nastupa u Formuli 1. Među istaknutim trenucima njegove karijere ističe se debitantski nastup na Velikoj nagradi Australije.",
    "orig_t": "The 10 key moments that defined Sergio Perez's F1 career",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813447/bridgestone-pulls-the-cover-off-the-new-battlax-adventure-a42",
+   "date": "2026-10-29T14:47+00:00",
+   "img_q": "Bridgestone Pulls the Cover off the New BATTLAX ADVENTURE A42 Motorcycle Tire",
+   "t": "Bridgestone predstavio novi motociklistički pneumatik BATTLAX ADVENTURE A42",
+   "s": "Tvrtka Bridgestone najavila je potpuno novi model motociklističke gume BATTLAX ADVENTURE A42 za 2027. godinu. Ovaj pneumatik namijenjen je cestovnoj avanturističkoj vožnji i dugim putovanjima.",
+   "orig_t": "Bridgestone Pulls the Cover off the New BATTLAX ADVENTURE A42 Motorcycle Tire",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/29/battman-batteries-evs-energy-storage-us-trump",
+   "date": "2026-10-29T14:25+00:00",
+   "img_q": "Sure Looks Like Trump Loves EVs After All",
+   "t": "Ministarstvo energetike SAD-a pokrenulo akcelerator BattMan",
+   "s": "Usprkos prethodnim kritikama električnih vozila, američko Ministarstvo energetike pokrenulo je novi akcelerator inovacija za baterije nazvan BattMan, pod vodstvom stručnjaka iz nacionalnog laboratorija.",
+   "orig_t": "Sure Looks Like Trump Loves EVs After All",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "Electrek",
+   "u": "https://electrek.co/2026/10/29/ford-escape-ev-uev-platform-update",
+   "date": "2026-10-29T14:13+00:00",
+   "img_q": "The Ford Escape may return as an EV based on the UEV platform [Update]",
+   "t": "Ford Escape bi se mogao vratiti na tržište kao električno vozilo",
+   "s": "Iako je proizvodnja modela Escape obustavljena prošle godine nakon četvrt stoljeća, popularni crossover bi se mogao ponovno pojaviti u obliku električnog automobila na novoj platformi.",
+   "orig_t": "The Ford Escape may return as an EV based on the UEV platform [Update]",
    "summary_version": 3,
    "hr": true
   },
@@ -50,6 +158,18 @@
    "hr": true
   },
   {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813476/exeet-mr-bmw-m1000r-quad",
+   "date": "2026-10-29T14:06+00:00",
+   "img_q": "You Totally Want A BMW M1000R ATV, And These Guys Make Your Superbike Quad Dreams Real",
+   "t": "Njemačka tvrtka pretvara BMW-ov superbike u neobičan quad",
+   "s": "Iako BMW ne proizvodi quad vozila, jedna njemačka tvrtka preuzela je taj zadatak i stvara vozilo inspirirano njihovim superbike motociklom.",
+   "orig_t": "You Totally Want A BMW M1000R ATV, And These Guys Make Your Superbike Quad Dreams Real",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
    "c": "energy",
    "src": "CleanTechnica",
    "u": "https://cleantechnica.com/2026/10/29/what-europe-can-learn-from-china-if-it-wants-to-save-its-industry",
@@ -58,6 +178,18 @@
    "t": "Što Europa može naučiti od Kine ako želi spasiti svoju industriju",
    "s": "Posjet Kini i promatranje tamošnjih trendova mobilnosti pružaju europskim zemljama uvid u načine na koje mogu unaprijediti i spasiti vlastitu industriju učenjem od uspješnijih.",
    "orig_t": "What Europe Can Learn From China If It Wants To Save Its Industry",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/does-daniel-ricciardo-regret-leaving-red-bull-for-renault/10869294",
+   "date": "2026-10-29T14:03+00:00",
+   "img_q": "Does Daniel Ricciardo regret leaving Red Bull for Renault?",
+   "t": "Žali li Daniel Ricciardo zbog odlaska iz Red Bulla u Renault?",
+   "s": "Daniel Ricciardo proveo je desetljeće u obitelji Red Bulla kao jedan od vodećih vozača u Formuli 1, a onda je prihvatio ponudu Cyrila Abiteboula i prešao u Renault.",
+   "orig_t": "Does Daniel Ricciardo regret leaving Red Bull for Renault?",
    "summary_version": 3,
    "hr": true
   },
@@ -94,6 +226,18 @@
    "t": "Cadillac počašćen Sergiom Perezom uoči njegove 300. utrke",
    "s": "Predsjednik General Motorsa Mark Reuss izjavio je kako im je čast što Sergio Perez vozi za Cadillac. Meksički će vozač na Velikoj nagradi Meksika upisati svoju tristotu utrku u Formuli 1.",
    "orig_t": "Cadillac 'honoured' to have Sergio Perez as special 300th race celebration planned for Mexico GP",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/security/2026/10/massive-leak-exposes-41000-dhs-workers-and-undercover-ice-agents",
+   "date": "2026-10-29T12:58+00:00",
+   "img_q": "Massive leak exposes 41,000 DHS workers and undercover ICE agents",
+   "t": "Masovno curenje podataka otkrilo tisuće radnika DHS-a i tajne agente",
+   "s": "Nezakonito curenje informacija otkrilo je brojne radnike Agencije za domovinsku sigurnost te tajne agente i osjetljive podatke o nadzornim skupinama.",
+   "orig_t": "Massive leak exposes 41,000 DHS workers and undercover ICE agents",
    "summary_version": 3,
    "hr": true
   },
@@ -302,30 +446,6 @@
    "hr": true
   },
   {
-   "c": "f1",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/will-christian-horner-buy-his-own-f1-team-the-sacked-boss-speaks-out/10869059",
-   "date": "2026-10-29T07:05+00:00",
-   "img_q": "Christian Horner admits he doesn't need F1 return after £67 million Red Bull payout",
-   "t": "Christian Horner priznaje da mu povratak u Formulu 1 nije potreban nakon isplate",
-   "s": "Nakon odlaska iz Red Bull Racinga, Christian Horner osiguran je velikom financijskom isplatom. Zbog toga 52-godišnjak uopće ne mora žuriti s traženjem nove uloge u svijetu Formule 1.",
-   "orig_t": "Christian Horner admits he doesn't need F1 return after £67 million Red Bull payout",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "auto",
-   "src": "Motor1",
-   "u": "https://www.motor1.com/news/813641/michelotto-gruppo-4-tributo-ferrari",
-   "date": "2026-10-29T07:05+00:00",
-   "img_q": "Ferrari 308 Tribute Brings Back Manual V8 And Carbon Body",
-   "t": "Ferrari 308 Tribute vraća ručni mjenjač, V8 motor i karbonsku karoseriju",
-   "s": "AC Motorsport predstavlja model Ferrari 308 Tribute s atmosferskim V8 motorom, klasičnim ručnim mjenjačem i potpuno karbonskom karoserijom u potrazi za manjom težinom i velikom snagom.",
-   "orig_t": "Ferrari 308 Tribute Brings Back Manual V8 And Carbon Body",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
    "c": "motogp",
    "src": "Motorsport.com",
    "u": "https://www.motorsport.com/motogp/news/jorge-martin-braced-for-really-difficult-painful-motogp-weekend-with-broken-arm/10869197",
@@ -334,114 +454,6 @@
    "t": "Jorge Martin spreman za težak vikend na Velikoj nagradi Malezije sa slomljenom rukom",
    "s": "Vozač Aprilije Jorge Martin nastupit će na vikendu Velike nagrade Malezije unatoč očekivanjima da će mu vožnja sa slomljenom rukom biti vrlo teška i bolna. Nakon pada na prošlotjednoj utrci u Australiji prošao je intenzivan program oporavka.",
    "orig_t": "Jorge Martin braced for “really difficult, painful” MotoGP weekend with broken arm",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "motogp",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/motogp/news/alex-marquez-moves-to-end-motogp-qatar-gp-speculation-the-race-is-confirmed/10869189",
-   "date": "2026-10-29T06:15+00:00",
-   "img_q": "Alex Marquez moves to end MotoGP Qatar GP speculation: 'The race is confirmed'",
-   "t": "Alex Marquez: VN Qatara u MotoGP-u je potvrđena",
-   "s": "Vozač Gresini Ducatija Alex Marquez izjavio je kako će se Velika nagrada Qatara idućeg tjedna održati prema planu. Organizatori nastavljaju s pripremama usprkos zahtjevima vozača za dodatnim jamstvima prije odlaska u Dohu.",
-   "orig_t": "Alex Marquez moves to end MotoGP Qatar GP speculation: 'The race is confirmed'",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "motogp",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/motogp/news/jorge-martin-declared-fit-to-start-malaysian-gp-by-motogp-doctor/10869191",
-   "date": "2026-10-29T06:14+00:00",
-   "img_q": "Jorge Martin declared fit to start Malaysian GP weekend",
-   "t": "Jorge Martin spreman za početak vikenda Velike nagrade Malezije",
-   "s": "Jorge Martin dobio je liječničko odobrenje za sudjelovanje na prvom treningu Velike nagrade Malezije nakon uspješno položenih testova fizičke spremnosti. Vozač Aprilije morat će proći dodatnu procjenu nakon petstotog treninga.",
-   "orig_t": "Jorge Martin declared fit to start Malaysian GP weekend",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "f1",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/horner-reflects-on-ricciardos-prime-red-bull-era-he-never-stopped-overtaking/10869056",
-   "date": "2026-10-29T05:05+00:00",
-   "img_q": "Mark Webber's Red Bull exit branded \"disrespectful\" as Daniel Ricciardo praised",
-   "t": "Odlazak Marka Webbera iz Red Bulla nazvan nepoštovanjem",
-   "s": "Christian Horner se u nedavnom intervjuu osvrnuo na rad Australaca Marka Webbera i Daniela Ricciarda u Red Bull Racingu. Webber je pomogao izgraditi pobjedničke temelje momčadi, dok je Ricciardo preuzeo vodstvo na početku turbo-hibridne ere.",
-   "orig_t": "Mark Webber's Red Bull exit branded \"disrespectful\" as Daniel Ricciardo praised",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "f1",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/christian-horner-admits-netflix-hijacked-his-f1-reputation-i-was-the-villain/10869051",
-   "date": "2026-10-29T03:05+00:00",
-   "img_q": "Christian Horner reveals why Netflix made him the villain of \"Drive to Survive\"",
-   "t": "Christian Horner otkrio zašto ga je Netflix prikazao kao negativca u seriji",
-   "s": "Dolazak Netflixovih kamera u svijet Formule 1 u potpunosti je promijenio javnu percepciju šefova momčadi. Christian Horner je od tstaloženog direktora postao jedan od najprepoznatljivijih i najžešće osporavanih negativaca globalne scene.",
-   "orig_t": "Christian Horner reveals why Netflix made him the villain of \"Drive to Survive\"",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "energy",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/28/construction-materials-stand-out-at-greenbuild-2026",
-   "date": "2026-10-29T01:25+00:00",
-   "img_q": "Construction Materials Stand Out At Greenbuild 2026",
-   "t": "Građevinski materijali u fokusu na sajmu Greenbuild 2026",
-   "s": "Autor bilježi svoje dojmove s nedavne međunarodne konferencije i izložbe Greenbuild 2026 održane u New Yorku, ističući kako su građevinski materijali posebno privukli pažnju.",
-   "orig_t": "Construction Materials Stand Out At Greenbuild 2026",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "energy",
-   "src": "Electrek",
-   "u": "https://electrek.co/2026/10/28/when-one-door-closes-polestar-2-production-ends-and-what-might-come-next",
-   "date": "2026-10-29T01:20+00:00",
-   "img_q": "When one door closes: Polestar 2 production ends, and what might come next",
-   "t": "Završetak proizvodnje električnog automobila Polestar 2",
-   "s": "Model Polestar 2, električni automobil koji je pomogao definirati marku kao samostalni brend, privodi se kraju proizvodnje dok se marka povlači iz Sjedinjenih Američkih Država i preusmjerava fokus na ostatak svijeta.",
-   "orig_t": "When one door closes: Polestar 2 production ends, and what might come next",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "energy",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/28/nearly-half-of-eu-cities-do-not-yet-meet-new-clean-air-standards-report-shows-collaboration-is-key",
-   "date": "2026-10-29T00:46+00:00",
-   "img_q": "Nearly Half of EU Cities Do Not Yet Meet New Clean Air Standards: Report Shows Collaboration Is Key",
-   "t": "Gotovo polovina gradova u EU još ne ispunjava nove standarde čistog zraka",
-   "s": "Novo izvješće pokazuje kako gotovo polovina europskih gradova premašuje dopuštene granice onečišćenja zraka. Ističe se zabrinutost zbog razine pripremljenosti gradova te potreba za suradnjom i promjenama.",
-   "orig_t": "Nearly Half of EU Cities Do Not Yet Meet New Clean Air Standards: Report Shows Collaboration Is Key",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "f1",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/daniel-ricciardo-opens-door-to-racing-return-with-max-verstappen-at-le-mans/10869169",
-   "date": "2026-10-29T00:41+00:00",
-   "img_q": "Daniel Ricciardo opens door to racing return with Max Verstappen at Le Mans",
-   "t": "Daniel Ricciardo otvoren za nastup na Le Mansu s Maxom Verstappenom",
-   "s": "Bivši vozač Formule 1 Daniel Ricciardo izjavio je kako bi razmotrio jednokratni nastup na utrci 24 sata Le Mansa te je naveo Maxa Verstappena kao svog prvog izbora za suvozača.",
-   "orig_t": "Daniel Ricciardo opens door to racing return with Max Verstappen at Le Mans",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "moto",
-   "src": "RideApart",
-   "u": "https://www.rideapart.com/news/813634/indian-motorcycle-hires-70-employees-after-letting-go-of-70-employees",
-   "date": "2026-10-28T23:57+00:00",
-   "img_q": "Indian Motorcycle Does The Math, Is Hiring 70 New Employees After Letting Go Of 70 Others",
-   "t": "Indian Motorcycle zapošljava 70 novih radnika u proizvodnji",
-   "s": "Tvrtka Indian Motorcycle zapošljava sedamdeset novih djelatnika. Većina novih radnih mjesta bit će otvorena u proizvodnji u sjedištu marke u Spirit Lakeu u saveznoj državi Iowa.",
-   "orig_t": "Indian Motorcycle Does The Math, Is Hiring 70 New Employees After Letting Go Of 70 Others",
    "summary_version": 3,
    "hr": true
   },
@@ -466,18 +478,6 @@
    "t": "Europa planira prvu podmorsku kabelsku vezu s Grenlandom",
    "s": "Europski panearktički kabel zaobići će Sjedinjene Američke Države kako bi povezao Kanadu, Japan i Južnu Koreju dok se veze sa SAD-om pogoršavaju.",
    "orig_t": "As US ties fray, Europe plans first undersea cable link to Greenland",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "tech",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/health/2026/10/peptide-peddlers-cheer-as-rfk-jr-unilaterally-grants-access-overruling-fda",
-   "date": "2026-10-28T22:17+00:00",
-   "img_q": "Peptide peddlers cheer as RFK Jr. unilaterally grants access, overruling FDA",
-   "t": "Peptidni lobisti slave dok RFK Jr. jednostrano odobrava pristup i zaobilazi FDA",
-   "s": "Šest nedokazanih peptida popularnih među pokretom MAHA sada se nalazi pod novom politikom diskrecijskog provođenja mjera, nakon što je odobren njihov pristup.",
-   "orig_t": "Peptide peddlers cheer as RFK Jr. unilaterally grants access, overruling FDA",
    "summary_version": 3,
    "hr": true
   },
