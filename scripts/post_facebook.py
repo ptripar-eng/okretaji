@@ -19,6 +19,8 @@ PAGE_TOKEN = os.getenv("FB_PAGE_TOKEN", "").strip()
 DRY_RUN = os.getenv("DRY_RUN", "1").strip().lower() not in {"0", "false", "no"}
 API_VERSION = os.getenv("FB_GRAPH_API_VERSION", "v24.0").strip()
 DAILY_LIMIT = 2
+# Najviše jedna objava po pokretanju: dvije dnevne objave razmaknute su barem 6 sati.
+MAX_PER_RUN = max(1, int(os.getenv("FB_MAX_PER_RUN", "1") or "1"))
 TZ = ZoneInfo("Europe/Zagreb")
 
 CATEGORY = {
@@ -118,6 +120,39 @@ def choose_candidates(candidates, slots):
     return selected
 
 
+def publish(article):
+    """Objavi fotografiju s brendiranom karticom; bez kartice objavi poveznicu."""
+    base = f"https://graph.facebook.com/{API_VERSION}/{PAGE_ID}"
+    try:
+        import tempfile
+        from social_card import make_card
+        card = Path(tempfile.mkdtemp()) / "okretaji-card.jpg"
+        make_card(article["raw"], card)
+    except Exception as exc:  # Pillow ili fontovi nedostaju
+        print("Kartica nije izrađena, objavljujem poveznicu:", type(exc).__name__, exc)
+        return requests.post(
+            f"{base}/feed",
+            data={
+                "message": article["message"],
+                "link": "https://okretaji.com/#novosti",
+                "access_token": PAGE_TOKEN,
+            },
+            timeout=30,
+        )
+    print("Kartica:", card)
+    with open(card, "rb") as fh:
+        return requests.post(
+            f"{base}/photos",
+            data={
+                "caption": article["message"],
+                "published": "true",
+                "access_token": PAGE_TOKEN,
+            },
+            files={"source": ("okretaji-card.jpg", fh, "image/jpeg")},
+            timeout=60,
+        )
+
+
 def main():
     news = read_json(NEWS_PATH, {})
     articles = news.get("items", []) if isinstance(news, dict) else []
@@ -155,9 +190,10 @@ def main():
             "source": str(article.get("src") or "izvor").strip(),
             "date": str(article.get("date") or ""),
             "message": make_message(article),
+            "raw": article,
         })
 
-    selected = choose_candidates(candidates, slots)
+    selected = choose_candidates(candidates, min(slots, MAX_PER_RUN))
     print(
         f"Facebook plan | mode={'DRY_RUN' if DRY_RUN else 'LIVE'} | "
         f"today={today} | already_today={already_today} | "
@@ -178,30 +214,22 @@ def main():
             print("DRY_RUN: objava nije poslana i članak nije označen kao objavljen.")
             continue
 
-        endpoint = f"https://graph.facebook.com/{API_VERSION}/{PAGE_ID}/feed"
-        response = requests.post(
-            endpoint,
-            data={
-                "message": article["message"],
-                "link": "https://okretaji.com/#novosti",
-                "access_token": PAGE_TOKEN,
-            },
-            timeout=30,
-        )
+        response = publish(article)
         try:
             payload = response.json()
         except ValueError:
             payload = {"error": {"message": response.text[:500]}}
-        if not response.ok or payload.get("error") or not payload.get("id"):
+        post_id = payload.get("post_id") or payload.get("id")
+        if not response.ok or payload.get("error") or not post_id:
             raise RuntimeError(
                 "Meta Graph API nije prihvatio objavu: "
                 + json.dumps(payload.get("error", payload), ensure_ascii=False)[:700]
             )
-        print("Objavljeno. Meta post ID:", payload["id"])
+        print("Objavljeno. Meta post ID:", post_id)
         newly_posted.append({
             "url": article["url"],
             "posted_at": datetime.now(TZ).isoformat(timespec="seconds"),
-            "post_id": payload["id"],
+            "post_id": post_id,
             "category": article["category"],
             "title": article["title"],
         })
