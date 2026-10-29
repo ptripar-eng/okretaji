@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install feedparser requests trafilatura
+      - run: pip install feedparser requests trafilatura pillow
       - name: Vijesti
         run: python scripts/update_news.py
         env:
@@ -45,6 +45,14 @@ jobs:
           [ -f images.json ] && git add images.json
           [ -f race.json ] && git add race.json
           git diff --cached --quiet || (git commit -m "Automatsko osvježavanje vijesti" && git pull --rebase && git push)
+      - name: Fontovi za kartice društvenih mreža
+        continue-on-error: true
+        run: |
+          mkdir -p .fonts
+          base=https://raw.githubusercontent.com/google/fonts/main/ofl
+          curl -fsSL -o .fonts/BigShouldersDisplay.ttf "$base/bigshouldersdisplay/BigShouldersDisplay%5Bwght%5D.ttf"
+          curl -fsSL -o .fonts/Barlow-Medium.ttf "$base/barlow/Barlow-Medium.ttf"
+          curl -fsSL -o .fonts/Barlow-Bold.ttf "$base/barlow/Barlow-Bold.ttf"
       - name: Facebook (automatski ako su Meta pristupni podaci postavljeni)
         run: python scripts/post_facebook.py
         continue-on-error: true
