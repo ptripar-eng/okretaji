@@ -51,7 +51,19 @@
       "source": "CleanTechnica"
     },
     {
-      "url": "https://news.google.com/rss/search?q=%28Verstappen%20OR%20Hamilton%20OR%20Leclerc%20OR%20Norris%20OR%20Alonso%20OR%20Antonelli%20OR%20Piastri%20OR%20%22Marc%20Marquez%22%20OR%20%22Valentino%20Rossi%22%29%20%28hobby%20OR%20golf%20OR%20music%20OR%20Instagram%20OR%20%22car%20collection%22%20OR%20charity%20OR%20%22off%20track%22%20OR%20fashion%20OR%20%22social%20media%22%29&hl=en-US&gl=US&ceid=US:en",
+      "url": "https://news.google.com/rss/search?q=%28%22Valtteri+Bottas%22+OR+Verstappen+OR+Hamilton+OR+Leclerc+OR+Norris+OR+Alonso+OR+Piastri+OR+Antonelli+OR+%22Marc+Marquez%22+OR+%22Valentino+Rossi%22+OR+%22Casey+Stoner%22%29+%28cycling+OR+bike+OR+bicycle+OR+training+OR+Instagram+OR+social+media+OR+off-track+OR+hobby+OR+charity+OR+family%29&hl=en-US&gl=US&ceid=US:en",
+      "cat": "kaciga",
+      "source": "Google News",
+      "use_item_source": true
+    },
+    {
+      "url": "https://news.google.com/rss/search?q=%28%22Casey+Stoner%22+AND+%22Marc+Marquez%22%29+%28cornering+OR+style+OR+Phillip+Island+OR+technique+OR+data%29&hl=en-US&gl=US&ceid=US:en",
+      "cat": "motogp",
+      "source": "Google News",
+      "use_item_source": true
+    },
+    {
+      "url": "https://news.google.com/rss/search?q=%28MotoGP+OR+%22Formula+1%22+OR+WRC%29+%28%22driver+posts%22+OR+%22rider+posts%22+OR+Instagram+OR+cycling+OR+training+OR+behind+the+scenes%29&hl=en-US&gl=US&ceid=US:en",
       "cat": "kaciga",
       "source": "Google News",
       "use_item_source": true
