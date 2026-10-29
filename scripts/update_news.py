@@ -96,6 +96,9 @@ def main():
     max_age = int(cfg.get("max_age_days", 7))
     per_cat = int(cfg.get("max_per_category", 4))
     candidates, seen = [], set()
+    # Google News can return unrelated stories for broad personality searches.
+    # Keep the "Iza kacige" section tied to actual motorsport people/topics.
+    kaciga_relevance = ("verstappen", "hamilton", "leclerc", "norris", "alonso", "antonelli", "piastri", "marquez", "márquez", "rossi", "ricciardo", "horner", "webber", "bagnaia", "martin", "f1", "formula 1", "formula one", "motogp", "red bull", "ferrari", "racing", "motorsport", "grand prix", "le mans", "wrc", "rally", "dakar", "vozač", "vozači", "utrka", "utrke")
     for feed in cfg.get("feeds", []):
         try:
             parsed = feedparser.parse(feed["url"], request_headers={"User-Agent":UA})
@@ -107,6 +110,9 @@ def main():
                 title = re.sub(r"\s+"," ",e.get("title","")).strip()
                 desc = e.get("summary","") or e.get("description","")
                 if not title: continue
+                if feed.get("cat") == "kaciga" and not any(term in title.lower() for term in kaciga_relevance):
+                    print("Preskačem nepovezanu vijest u rubrici Iza kacige:", title[:100])
+                    continue
                 dt = e.get("published_parsed") or e.get("updated_parsed")
                 date = datetime.fromtimestamp(time.mktime(dt), timezone.utc) if dt else now
                 if now-date > timedelta(days=max_age) or date-now > timedelta(days=1): continue
