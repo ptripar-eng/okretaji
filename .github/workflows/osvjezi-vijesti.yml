@@ -30,6 +30,10 @@ jobs:
       - name: Fotografije
         run: python scripts/add_images.py
         continue-on-error: true
+      - name: Provjera vijesti i jedinstvenosti fotografija
+        run: python scripts/check_news.py
+      - name: Provjera sintakse Python skripti
+        run: python -m py_compile scripts/*.py
       - name: Najava utrke
         run: python scripts/race_preview.py
         continue-on-error: true
