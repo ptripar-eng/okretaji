@@ -120,7 +120,27 @@ def choose_candidates(candidates, slots):
     return selected
 
 
-def publish(article):
+def resolve_page_token():
+    """Vrati token stranice. Prihvaća i korisnički token osobe koja upravlja stranicom:
+    iz njega se dohvaća token stranice (iz dugotrajnog korisničkog tokena ne istječe)."""
+    api = f"https://graph.facebook.com/{API_VERSION}"
+    me = requests.get(f"{api}/me", params={"fields": "id,name", "access_token": PAGE_TOKEN}, timeout=20).json()
+    if me.get("error"):
+        raise RuntimeError("Meta token nije valjan: " + json.dumps(me["error"], ensure_ascii=False)[:400])
+    if str(me.get("id")) == PAGE_ID:
+        print("Token: token stranice", me.get("name", ""))
+        return PAGE_TOKEN
+    page = requests.get(f"{api}/{PAGE_ID}", params={"fields": "name,access_token", "access_token": PAGE_TOKEN}, timeout=20).json()
+    if page.get("error") or not page.get("access_token"):
+        raise RuntimeError(
+            "Korisnički token ne daje pristup stranici: "
+            + json.dumps(page.get("error", {"message": "nema access_token"}), ensure_ascii=False)[:400]
+        )
+    print("Token: korisnički token, dohvaćen token stranice", page.get("name", ""))
+    return page["access_token"]
+
+
+def publish(article, token):
     """Objavi fotografiju s brendiranom karticom; bez kartice objavi poveznicu."""
     base = f"https://graph.facebook.com/{API_VERSION}/{PAGE_ID}"
     try:
@@ -135,7 +155,7 @@ def publish(article):
             data={
                 "message": article["message"],
                 "link": "https://okretaji.com/#novosti",
-                "access_token": PAGE_TOKEN,
+                "access_token": token,
             },
             timeout=30,
         )
@@ -146,7 +166,7 @@ def publish(article):
             data={
                 "caption": article["message"],
                 "published": "true",
-                "access_token": PAGE_TOKEN,
+                "access_token": token,
             },
             files={"source": ("okretaji-card.jpg", fh, "image/jpeg")},
             timeout=60,
@@ -206,6 +226,7 @@ def main():
     if not DRY_RUN and (not PAGE_ID or not PAGE_TOKEN):
         raise SystemExit("LIVE mode zahtijeva FB_PAGE_ID i FB_PAGE_TOKEN u GitHub Secrets.")
 
+    token = None if DRY_RUN else resolve_page_token()
     newly_posted = []
     for article in selected:
         print(f"\n[{article['category'].upper()}] {article['title']}")
@@ -214,7 +235,7 @@ def main():
             print("DRY_RUN: objava nije poslana i članak nije označen kao objavljen.")
             continue
 
-        response = publish(article)
+        response = publish(article, token)
         try:
             payload = response.json()
         except ValueError:
