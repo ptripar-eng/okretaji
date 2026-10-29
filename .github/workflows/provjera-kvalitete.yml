@@ -1,0 +1,28 @@
+name: Provjera kvalitete portala
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Provjeri JSON konfiguraciju i vijesti
+        run: |
+          python -m json.tool feeds.json > /dev/null
+          python -m json.tool news.json > /dev/null
+      - name: Provjeri sintaksu Python skripti
+        run: python -m py_compile scripts/*.py
+      - name: Provjeri vijesti i ukloni duple slike u radnom prostoru
+        run: python scripts/check_news.py
