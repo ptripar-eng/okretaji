@@ -30,7 +30,8 @@ def likely_croatian(text):
 def summarize(title, description, category):
     """Create a concise Croatian summary. Failed AI requests are retried on the next run."""
     from html import unescape
-    fallback = unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", description or ""))).strip()[:500]
+    source_context = unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", description or ""))).strip()
+    fallback = source_context[:500]
     if not API_KEY:
         print("Gemini ključ nije postavljen; preskačem vijest bez hrvatskog sažetka.")
         return {"t": title, "s": fallback or title, "_ok": False}
@@ -41,7 +42,7 @@ Napiši vlastitim riječima; ne kopiraj rečenice, ne koristi duge citate i ne s
 2) s: sažetak od 1–2 rečenice, približno 25–45 riječi, vlastitim riječima.
 Ako izvori ne sadrže dovoljno podataka, sažmi samo ono što je potvrđeno. Poveznica na izvor ostaje obavezna.
 NASLOV: {title}
-IZVORNI OPIS ILI TEKST: {fallback}"""
+IZVORNI OPIS ILI TEKST: {source_context[:7500]}"""
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
     payload = {"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"responseMimeType":"application/json","temperature":0.1}}
     # Keep below typical free-tier request rates; never put the API key in a URL.
