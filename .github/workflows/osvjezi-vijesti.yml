@@ -47,6 +47,7 @@ jobs:
           git diff --cached --quiet || (git commit -m "Automatsko osvježavanje vijesti" && git pull --rebase && git push)
       - name: Facebook (automatski ako su Meta pristupni podaci postavljeni)
         run: python scripts/post_facebook.py
+        continue-on-error: true
         env:
           # Objavljuj uživo samo kad su oba Meta secreta postavljena; inače ostani u DRY_RUN.
           DRY_RUN: ${{ secrets.FB_PAGE_ID != '' && secrets.FB_PAGE_TOKEN != '' && '0' || '1' }}
