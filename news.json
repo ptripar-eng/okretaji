@@ -1,16 +1,28 @@
 {
- "updated": "2026-10-29T08:37+00:00",
+ "updated": "2026-10-29T08:52+00:00",
  "items": [
+  {
+   "c": "motogp",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/francesco-bagnaia-calls-sepang-his-best-chance-and-vows-to-risk-more/10869211",
+   "date": "2026-10-29T08:48+00:00",
+   "img_q": "Francesco Bagnaia calls Sepang his “best chance” and vows to “risk more”",
+   "t": "Francesco Bagnaia: Sepang je moja najbolja prilika i moram više riskirati",
+   "s": "Francesco Bagnaia izjavio je kako je spreman preuzeti veće rizike na predstojećoj Velikoj nagradi Malezije. Sepang smatra svojom najboljom prilikom za ostvarivanje snažnog rezultata prije odlaska iz Dukatija.",
+   "orig_t": "Francesco Bagnaia calls Sepang his “best chance” and vows to “risk more”",
+   "summary_version": 3,
+   "hr": true
+  },
   {
    "c": "auto",
    "src": "Motor1",
    "u": "https://www.motor1.com/news/813639/toyota-new-platform-gas-engine",
    "date": "2026-10-29T08:27+00:00",
    "img_q": "Toyota Pairs New Platform With Next-Gen Hybrid Built Around All-New Gas Engine",
-   "t": "Toyota Pairs New Platform With Next-Gen Hybrid Built Around All-New Gas Engine",
-   "s": "The smaller, lighter hybrid system targets more than 15 percent better fuel economy.",
+   "t": "Toyota kombinira novu platformu i hibridni sustav nove generacije s posve novim benzinskim motorom",
+   "s": "Toyota je predstavila novu platformu i hibridni sustav nove generacije. Manji i lakši hibridni sklop, razvijen oko posve novog benzinskog motora, cilja na više od 15 posto bolju ekonomičnost potrošnje goriva.",
    "orig_t": "Toyota Pairs New Platform With Next-Gen Hybrid Built Around All-New Gas Engine",
-   "summary_version": 2,
+   "summary_version": 3,
    "hr": true
   },
   {
@@ -22,7 +34,7 @@
    "t": "Rijedak primjerak Bentleyja iz 1928. godine mogao bi vrijediti više od milijun dolara",
    "s": "Rijetki pronađeni automobil iz 1928. godine s očuvanom karoserijom i malim brojem primjeraka mogao bi postići vrijednost veću od milijun dolara, na temelju prijašnjih prodaja sličnih modela.",
    "orig_t": "Rare 1928 Bentley Barn Find Could Be Worth Over $1 Million",
-   "summary_version": 2,
+   "summary_version": 3,
    "hr": true
   },
   {
@@ -34,7 +46,7 @@
    "t": "Analiza: Kineski izvoz čiste tehnologije u 2026. smanjit će emisije CO2",
    "s": "Prema analizi, izvoz kineskih tehnologija čiste energije u 2026. godini, poput solarnih panela, baterija i električnih vozila, na dobrom je putu da ostvari veliko smanjenje emisija ugljičnog dioksida.",
    "orig_t": "Analysis: China’s clean-tech exports in 2026 to avoid as much CO2 as Brazil emits in a year",
-   "summary_version": 2,
+   "summary_version": 3,
    "hr": true
   },
   {
@@ -46,7 +58,7 @@
    "t": "Christian Horner priznaje da mu povratak u Formulu 1 nije potreban nakon isplate",
    "s": "Nakon odlaska iz Red Bull Racinga, Christian Horner osiguran je velikom financijskom isplatom. Zbog toga 52-godišnjak uopće ne mora žuriti s traženjem nove uloge u svijetu Formule 1.",
    "orig_t": "Christian Horner admits he doesn't need F1 return after £67 million Red Bull payout",
-   "summary_version": 2,
+   "summary_version": 3,
    "hr": true
   },
   {
@@ -58,7 +70,7 @@
    "t": "Ferrari 308 Tribute vraća ručni mjenjač, V8 motor i karbonsku karoseriju",
    "s": "AC Motorsport predstavlja model Ferrari 308 Tribute s atmosferskim V8 motorom, klasičnim ručnim mjenjačem i potpuno karbonskom karoserijom u potrazi za manjom težinom i velikom snagom.",
    "orig_t": "Ferrari 308 Tribute Brings Back Manual V8 And Carbon Body",
-   "summary_version": 2,
+   "summary_version": 3,
    "hr": true
   },
   {
@@ -70,8 +82,16 @@
    "t": "Jorge Martin spreman za težak vikend na Velikoj nagradi Malezije sa slomljenom rukom",
    "s": "Vozač Aprilije Jorge Martin nastupit će na vikendu Velike nagrade Malezije unatoč očekivanjima da će mu vožnja sa slomljenom rukom biti vrlo teška i bolna. Nakon pada na prošlotjednoj utrci u Australiji prošao je intenzivan program oporavka.",
    "orig_t": "Jorge Martin braced for “really difficult, painful” MotoGP weekend with broken arm",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "5a41abf6-f8e9-4753-b38f-2897853a3060",
+    "src": "https://api.openverse.org/v1/images/5a41abf6-f8e9-4753-b38f-2897853a3060/thumb/",
+    "by": "Smudge 9000",
+    "lic": "BY-SA",
+    "link": "https://www.flickr.com/photos/7599112@N08/9678855611",
+    "illustrative": true
+   }
   },
   {
    "c": "motogp",
@@ -82,8 +102,16 @@
    "t": "Alex Marquez: VN Qatara u MotoGP-u je potvrđena",
    "s": "Vozač Gresini Ducatija Alex Marquez izjavio je kako će se Velika nagrada Qatara idućeg tjedna održati prema planu. Organizatori nastavljaju s pripremama usprkos zahtjevima vozača za dodatnim jamstvima prije odlaska u Dohu.",
    "orig_t": "Alex Marquez moves to end MotoGP Qatar GP speculation: 'The race is confirmed'",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "5a41abf6-f8e9-4753-b38f-2897853a3060",
+    "src": "https://api.openverse.org/v1/images/5a41abf6-f8e9-4753-b38f-2897853a3060/thumb/",
+    "by": "Smudge 9000",
+    "lic": "BY-SA",
+    "link": "https://www.flickr.com/photos/7599112@N08/9678855611",
+    "illustrative": true
+   }
   },
   {
    "c": "motogp",
@@ -94,8 +122,16 @@
    "t": "Jorge Martin spreman za početak vikenda Velike nagrade Malezije",
    "s": "Jorge Martin dobio je liječničko odobrenje za sudjelovanje na prvom treningu Velike nagrade Malezije nakon uspješno položenih testova fizičke spremnosti. Vozač Aprilije morat će proći dodatnu procjenu nakon petstotog treninga.",
    "orig_t": "Jorge Martin declared fit to start Malaysian GP weekend",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "5a41abf6-f8e9-4753-b38f-2897853a3060",
+    "src": "https://api.openverse.org/v1/images/5a41abf6-f8e9-4753-b38f-2897853a3060/thumb/",
+    "by": "Smudge 9000",
+    "lic": "BY-SA",
+    "link": "https://www.flickr.com/photos/7599112@N08/9678855611",
+    "illustrative": true
+   }
   },
   {
    "c": "f1",
@@ -106,8 +142,16 @@
    "t": "Odlazak Marka Webbera iz Red Bulla nazvan nepoštovanjem",
    "s": "Christian Horner se u nedavnom intervjuu osvrnuo na rad Australaca Marka Webbera i Daniela Ricciarda u Red Bull Racingu. Webber je pomogao izgraditi pobjedničke temelje momčadi, dok je Ricciardo preuzeo vodstvo na početku turbo-hibridne ere.",
    "orig_t": "Mark Webber's Red Bull exit branded \"disrespectful\" as Daniel Ricciardo praised",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "1e2492be-b5dc-4c47-8d96-7d2934880f96",
+    "src": "https://api.openverse.org/v1/images/1e2492be-b5dc-4c47-8d96-7d2934880f96/thumb/",
+    "by": "Renzopaso",
+    "lic": "BY-SA",
+    "link": "https://www.flickr.com/photos/105731165@N07/46259315605",
+    "illustrative": true
+   }
   },
   {
    "c": "f1",
@@ -118,8 +162,16 @@
    "t": "Christian Horner otkrio zašto ga je Netflix prikazao kao negativca u seriji",
    "s": "Dolazak Netflixovih kamera u svijet Formule 1 u potpunosti je promijenio javnu percepciju šefova momčadi. Christian Horner je od tstaloženog direktora postao jedan od najprepoznatljivijih i najžešće osporavanih negativaca globalne scene.",
    "orig_t": "Christian Horner reveals why Netflix made him the villain of \"Drive to Survive\"",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "1e2492be-b5dc-4c47-8d96-7d2934880f96",
+    "src": "https://api.openverse.org/v1/images/1e2492be-b5dc-4c47-8d96-7d2934880f96/thumb/",
+    "by": "Renzopaso",
+    "lic": "BY-SA",
+    "link": "https://www.flickr.com/photos/105731165@N07/46259315605",
+    "illustrative": true
+   }
   },
   {
    "c": "energy",
@@ -130,8 +182,16 @@
    "t": "Građevinski materijali u fokusu na sajmu Greenbuild 2026",
    "s": "Autor bilježi svoje dojmove s nedavne međunarodne konferencije i izložbe Greenbuild 2026 održane u New Yorku, ističući kako su građevinski materijali posebno privukli pažnju.",
    "orig_t": "Construction Materials Stand Out At Greenbuild 2026",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "cd0e39f6-6381-451e-924f-368bf372f0dd",
+    "src": "https://api.openverse.org/v1/images/cd0e39f6-6381-451e-924f-368bf372f0dd/thumb/",
+    "by": "moonjazz",
+    "lic": "PDM",
+    "link": "https://www.flickr.com/photos/8398907@N02/8628436785",
+    "illustrative": true
+   }
   },
   {
    "c": "energy",
@@ -142,8 +202,16 @@
    "t": "Završetak proizvodnje električnog automobila Polestar 2",
    "s": "Model Polestar 2, električni automobil koji je pomogao definirati marku kao samostalni brend, privodi se kraju proizvodnje dok se marka povlači iz Sjedinjenih Američkih Država i preusmjerava fokus na ostatak svijeta.",
    "orig_t": "When one door closes: Polestar 2 production ends, and what might come next",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "cd0e39f6-6381-451e-924f-368bf372f0dd",
+    "src": "https://api.openverse.org/v1/images/cd0e39f6-6381-451e-924f-368bf372f0dd/thumb/",
+    "by": "moonjazz",
+    "lic": "PDM",
+    "link": "https://www.flickr.com/photos/8398907@N02/8628436785",
+    "illustrative": true
+   }
   },
   {
    "c": "energy",
@@ -154,8 +222,16 @@
    "t": "Gotovo polovina gradova u EU još ne ispunjava nove standarde čistog zraka",
    "s": "Novo izvješće pokazuje kako gotovo polovina europskih gradova premašuje dopuštene granice onečišćenja zraka. Ističe se zabrinutost zbog razine pripremljenosti gradova te potreba za suradnjom i promjenama.",
    "orig_t": "Nearly Half of EU Cities Do Not Yet Meet New Clean Air Standards: Report Shows Collaboration Is Key",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "cd0e39f6-6381-451e-924f-368bf372f0dd",
+    "src": "https://api.openverse.org/v1/images/cd0e39f6-6381-451e-924f-368bf372f0dd/thumb/",
+    "by": "moonjazz",
+    "lic": "PDM",
+    "link": "https://www.flickr.com/photos/8398907@N02/8628436785",
+    "illustrative": true
+   }
   },
   {
    "c": "f1",
@@ -166,8 +242,16 @@
    "t": "Daniel Ricciardo otvoren za nastup na Le Mansu s Maxom Verstappenom",
    "s": "Bivši vozač Formule 1 Daniel Ricciardo izjavio je kako bi razmotrio jednokratni nastup na utrci 24 sata Le Mansa te je naveo Maxa Verstappena kao svog prvog izbora za suvozača.",
    "orig_t": "Daniel Ricciardo opens door to racing return with Max Verstappen at Le Mans",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "1e2492be-b5dc-4c47-8d96-7d2934880f96",
+    "src": "https://api.openverse.org/v1/images/1e2492be-b5dc-4c47-8d96-7d2934880f96/thumb/",
+    "by": "Renzopaso",
+    "lic": "BY-SA",
+    "link": "https://www.flickr.com/photos/105731165@N07/46259315605",
+    "illustrative": true
+   }
   },
   {
    "c": "moto",
@@ -178,7 +262,7 @@
    "t": "Indian Motorcycle zapošljava 70 novih radnika u proizvodnji",
    "s": "Tvrtka Indian Motorcycle zapošljava sedamdeset novih djelatnika. Većina novih radnih mjesta bit će otvorena u proizvodnji u sjedištu marke u Spirit Lakeu u saveznoj državi Iowa.",
    "orig_t": "Indian Motorcycle Does The Math, Is Hiring 70 New Employees After Letting Go Of 70 Others",
-   "summary_version": 2,
+   "summary_version": 3,
    "hr": true
   },
   {
@@ -190,7 +274,7 @@
    "t": "Vulcan raketa kompanije ULA priprema se za povratak letovima",
    "s": "Raketa Vulcan spremna je za novi let koji će se održati u petak trinaestog. Predstojeće lansiranje bit će prvo u kojem će se koristiti svih šest potisnika na čvrsto gorivo.",
    "orig_t": "ULA's Vulcan rocket is set to return to flight on Friday the 13th",
-   "summary_version": 2,
+   "summary_version": 3,
    "hr": true
   },
   {
@@ -199,10 +283,10 @@
    "u": "https://arstechnica.com/gadgets/2026/10/as-us-ties-fray-europe-plans-first-undersea-cable-link-to-greenland",
    "date": "2026-10-28T22:35+00:00",
    "img_q": "As US ties fray, Europe plans first undersea cable link to Greenland",
-   "t": "As US ties fray, Europe plans first undersea cable link to Greenland",
-   "s": "Europe's Pan-Arctic Cable will bypass US to link Canada, Japan, and South Korea.",
+   "t": "Europa planira prvu podmorsku kabelsku vezu s Grenlandom",
+   "s": "Europski panearktički kabel zaobići će Sjedinjene Američke Države kako bi povezao Kanadu, Japan i Južnu Koreju dok se veze sa SAD-om pogoršavaju.",
    "orig_t": "As US ties fray, Europe plans first undersea cable link to Greenland",
-   "summary_version": 2,
+   "summary_version": 3,
    "hr": true
   },
   {
@@ -214,7 +298,7 @@
    "t": "Peptidni lobisti slave dok RFK Jr. jednostrano odobrava pristup i zaobilazi FDA",
    "s": "Šest nedokazanih peptida popularnih među pokretom MAHA sada se nalazi pod novom politikom diskrecijskog provođenja mjera, nakon što je odobren njihov pristup.",
    "orig_t": "Peptide peddlers cheer as RFK Jr. unilaterally grants access, overruling FDA",
-   "summary_version": 2,
+   "summary_version": 3,
    "hr": true
   },
   {
@@ -226,20 +310,16 @@
    "t": "Toyota povlači 228.000 Sienna zbog naslona sjedala",
    "s": "Toyota provodi opoziv modela Sienna iz razdoblja od 2022. do 2026. godine zbog nedostatka na naslonu sjedala koji se može otključati u sudaru. Vlasnicima su osigurani besplatni popravci ovisno o opremi vozila.",
    "orig_t": "Toyota Recalls 228,000 Sienna Vans Over Seat Backs That May Unlock In A Crash",
-   "summary_version": 2,
-   "hr": true
-  },
-  {
-   "c": "auto",
-   "src": "Motor1",
-   "u": "https://www.motor1.com/news/813606/audi-a8-concept-c-rendering",
-   "date": "2026-10-28T20:00+00:00",
-   "img_q": "The Audi A8 Gets A Concept C Makeover, And It Looks Fantastic",
-   "t": "Novi koncept dizajnera Luce Serafinija spaja stil Audija Concept C i klasične proporcije A8",
-   "s": "Dizajner Luca Serafini spojio je minimalistički stil modela Audi Concept C s klasičnim proporcijama limuzine A8 te stvorio upečatljivo luksuzno vozilo.",
-   "orig_t": "The Audi A8 Gets A Concept C Makeover, And It Looks Fantastic",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "a0a70354-fa2f-4f9a-b931-4550d0c84e04",
+    "src": "https://api.openverse.org/v1/images/a0a70354-fa2f-4f9a-b931-4550d0c84e04/thumb/",
+    "by": "Alexandre Prevot",
+    "lic": "BY-SA",
+    "link": "https://www.flickr.com/photos/32569229@N06/52469910493",
+    "illustrative": true
+   }
   },
   {
    "c": "tech",
@@ -247,23 +327,19 @@
    "u": "https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling",
    "date": "2026-10-28T19:30+00:00",
    "img_q": "Trump admin sues Utah to save Kalshi from the state's total ban on gambling",
-   "t": "Trump admin sues Utah to save Kalshi from the state's total ban on gambling",
-   "s": "US agency has sued 10 states for trying to stop gambling on prediction markets.",
+   "t": "Trumpova administracija tužila Utah zbog zabrane kockanja",
+   "s": "Američka agencija tužila je deset saveznih država, uključujući Utah, zbog pokušaja zaustavljanja kockanja na tržištima predviđanja. Time se nastoji zaštititi Kalshi od potpune zabrane u toj saveznoj državi.",
    "orig_t": "Trump admin sues Utah to save Kalshi from the state's total ban on gambling",
-   "summary_version": 2,
-   "hr": true
-  },
-  {
-   "c": "motogp",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/motogp/news/motogp-seeks-compromise-with-riders-over-qatar-grand-prix-/10869091",
-   "date": "2026-10-28T15:30+00:00",
-   "img_q": "MotoGP seeks compromise with riders over Qatar Grand Prix",
-   "t": "MotoGP seeks compromise with riders over Qatar Grand Prix",
-   "s": "After months of uncertainty and several weeks of mounting tension, the stand-off between most of the MotoGP grid and the championship promoter over the Qatar Grand Prix is expected to be resolved within the next 48 hours. Ideally, an agreement could be reached as early as Thursday, once Carlos Ezpeleta, deputy managing director of MotoGP Sports Entertainment Group (MGPSEG), the company that ... Keep reading",
-   "orig_t": "MotoGP seeks compromise with riders over Qatar Grand Prix",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "cb434a73-2ab7-44ad-a798-ab8ed9d9a1cd",
+    "src": "https://api.openverse.org/v1/images/cb434a73-2ab7-44ad-a798-ab8ed9d9a1cd/thumb/",
+    "by": "University of Salford",
+    "lic": "BY",
+    "link": "https://www.flickr.com/photos/32104790@N02/6964010157",
+    "illustrative": true
+   }
   },
   {
    "c": "moto",
@@ -271,11 +347,19 @@
    "u": "https://www.rideapart.com/news/813587/exploring-the-sonoran-desert-in-can-am-maverick-side-by-sides",
    "date": "2026-10-28T15:27+00:00",
    "img_q": "Off-Roading The Sonoran Desert Is Just Waiting For You To Fall In Love With It",
-   "t": "Off-Roading The Sonoran Desert Is Just Waiting For You To Fall In Love With It",
-   "s": "Our public lands are so beautiful, and if you haven't visited before (or lately), consider this your sign to get out and enjoy them any way you can.",
+   "t": "Terenska vožnja pustinjom Sonora čeka da se zaljubite u nju",
+   "s": "Javne su površine iznimno lijepe, stoga iskoristite priliku i posjetite ih te uživajte u prirodi na bilo koji način koji vam odgovara.",
    "orig_t": "Off-Roading The Sonoran Desert Is Just Waiting For You To Fall In Love With It",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "d0067c19-1e6a-4a15-8713-40ee7c372cd2",
+    "src": "https://api.openverse.org/v1/images/d0067c19-1e6a-4a15-8713-40ee7c372cd2/thumb/",
+    "by": "“Caveman Chuck” Coker",
+    "lic": "BY-ND",
+    "link": "https://www.flickr.com/photos/28402283@N07/4626799569",
+    "illustrative": true
+   }
   },
   {
    "c": "moto",
@@ -283,11 +367,19 @@
    "u": "https://www.rideapart.com/news/813423/zontes-zt903r-triple-naked-bike-design-leak",
    "date": "2026-10-28T14:56+00:00",
    "img_q": "Zontes' Upcoming Triple-Cylinder Streetfighter Motorcycle Shows How Fast China Is Catching Up",
-   "t": "Zontes' Upcoming Triple-Cylinder Streetfighter Motorcycle Shows How Fast China Is Catching Up",
-   "s": "Zontes is developing a bigger, badder 3-cylinder streetfighter, proving China's motorcycle industry has no intention of slowing down.",
+   "t": "Nadolazeći trocilindrični streetfighter motocikl marke Zontes dokazuje brzi napredak Kine",
+   "s": "Zontes razvija veći i snažniji trocilindrični streetfighter motocikl. Time se potvrđuje da kineska industrija motocikala nema namjeru usporavati svoj razvoj.",
    "orig_t": "Zontes' Upcoming Triple-Cylinder Streetfighter Motorcycle Shows How Fast China Is Catching Up",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "d0067c19-1e6a-4a15-8713-40ee7c372cd2",
+    "src": "https://api.openverse.org/v1/images/d0067c19-1e6a-4a15-8713-40ee7c372cd2/thumb/",
+    "by": "“Caveman Chuck” Coker",
+    "lic": "BY-ND",
+    "link": "https://www.flickr.com/photos/28402283@N07/4626799569",
+    "illustrative": true
+   }
   },
   {
    "c": "moto",
@@ -295,11 +387,19 @@
    "u": "https://www.rideapart.com/news/813433/sanrivatti-hypercar-motorcycle-like-controls-and-seating-position",
    "date": "2026-10-28T13:42+00:00",
    "img_q": "That Weird-Ass Motorcycle-Cockpit Hypercar Is Coming Soon. Supposedly",
-   "t": "That Weird-Ass Motorcycle-Cockpit Hypercar Is Coming Soon. Supposedly",
-   "s": "A cager but sit like a motorcyclist? Eh...",
+   "t": "Stiže neobični hiperautomobil s kokpitom nalik motociklu",
+   "s": "Novi hiperautomobil koji kombinira automobilsku karoseriju i položaj sjedenja vozača kao na motociklu navodno bi se uskoro mogao pojaviti na tržištu.",
    "orig_t": "That Weird-Ass Motorcycle-Cockpit Hypercar Is Coming Soon. Supposedly",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "d0067c19-1e6a-4a15-8713-40ee7c372cd2",
+    "src": "https://api.openverse.org/v1/images/d0067c19-1e6a-4a15-8713-40ee7c372cd2/thumb/",
+    "by": "“Caveman Chuck” Coker",
+    "lic": "BY-ND",
+    "link": "https://www.flickr.com/photos/28402283@N07/4626799569",
+    "illustrative": true
+   }
   },
   {
    "c": "reli",
@@ -307,10 +407,10 @@
    "u": "https://www.motorsport.com/wrc/news/rally-us-reveals-further-details-ahead-of-wrc-2027-return-/10868887",
    "date": "2026-10-27T15:49+00:00",
    "img_q": "Rally US reveals further details ahead of WRC 2027 return",
-   "t": "Rally US reveals further details ahead of WRC 2027 return",
-   "s": "Knoxville has been announced as the host city for the World Rally Championship’s long awaited return to the United States next year. Earlier this month the WRC released its expanded 15-round 2027 calendar, which includes a trip to America for the first time since Olympus Rally in 1988. It will be round 11 on 26-29 August and organisers have now confirmed that the gravel rally will have its ... Keep reading",
+   "t": "Rally US otkriva detalje uoči povratka WRC-a 2027. godine",
+   "s": "Knoxville je potvrđen kao grad domaćin povratka Svjetskog prvenstva u reliju u Sjedinjene Američke Države. Makadamski reli održat će se kao jedanaesta runda prvenstva krajem kolovoza 2027. godine.",
    "orig_t": "Rally US reveals further details ahead of WRC 2027 return",
-   "summary_version": 2,
+   "summary_version": 3,
    "hr": true
   },
   {
@@ -319,10 +419,10 @@
    "u": "https://www.motorsport.com/wrc/news/sesks-tight-lipped-on-wrc-future-after-erc-season-finale-triumph/10868620",
    "date": "2026-10-26T12:24+00:00",
    "img_q": "Sesks tight-lipped on WRC future after ERC season finale triumph",
-   "t": "Sesks tight-lipped on WRC future after ERC season finale triumph",
-   "s": "Martins Sesks remains tight-lipped on his World Rally Championship future after claiming a confidence-boosting victory in the European Rally Championship season finale. The M-Sport-Ford WRC driver produced an impressive display on Portugal’s famous gravel stages on his way to victory at Rally 6 Cities North of Portugal, after receiving a call to join the Team MRF Tyres squad. Sesks built ... Keep reading",
+   "t": "Sesks tajnovit o svojoj WRC budućnosti nakon pobjede na završnici ERC-a",
+   "s": "Martins Sesks ostao je tajnovit o nastavku svoje karijere u Svjetskom reli prvenstvu nakon što je ostvario pobjedu na posljednjoj utrci sezone Europskog reli prvenstva u Portugalu.",
    "orig_t": "Sesks tight-lipped on WRC future after ERC season finale triumph",
-   "summary_version": 2,
+   "summary_version": 3,
    "hr": true
   },
   {
@@ -331,10 +431,10 @@
    "u": "https://www.motorsport.com/wrc/news/josh-mcerlean-to-test-2027-spec-m-sport-wrc-car-at-erc-finale/10867386",
    "date": "2026-10-23T12:41+00:00",
    "img_q": "Josh McErlean to test 2027-spec M-Sport WRC car at ERC finale",
-   "t": "Josh McErlean to test 2027-spec M-Sport WRC car at ERC finale",
-   "s": "M-Sport is continuing the development of its 2027 World Rally Championship challenger at this weekend’s European Rally Championship finale in Portugal. The British squad will field an example of its newly developed Ford Fiesta Rally2 kit car at the ERC Rally Six Cities North of Portugal gravel event. The updated Rally2 car, featuring the FIA’s new update kit, broke cover last week courtesy ... Keep reading",
+   "t": "Josh McErlean testirat će M-Sportov WRC automobil za 2027. na finalu ERC-a",
+   "s": "M-Sport nastavlja razvoj svog natjecateljskog automobila za Svjetsko reli prvenstvo iz 2027. godine na predstojećem finalu Europskog reli prvenstva u Portugalu. Britanska momčad na makadamskom će rallyju izvesti novorazvijeni model s ažuriranim paketom.",
    "orig_t": "Josh McErlean to test 2027-spec M-Sport WRC car at ERC finale",
-   "summary_version": 2,
+   "summary_version": 3,
    "hr": true
   },
   {
@@ -343,11 +443,19 @@
    "u": "https://www.motorsport.com/wrc/news/jon-armstrong-announces-wrc-co-driver-split-for-2027/10866937",
    "date": "2026-10-22T11:00+00:00",
    "img_q": "Jon Armstrong announces WRC co-driver split for 2027",
-   "t": "Jon Armstrong announces WRC co-driver split for 2027",
-   "s": "World Rally Championship rookie Jon Armstrong will compete with a different co-driver in 2027 after announcing plans to split with Shane Byrne after two seasons. The M-Sport-Ford driver announced on social media that the pair had agreed to part ways following a maiden season competing in the WRC’s top tier. Armstrong and Byrne first joined forces in 2025 after the former’s co-driver ... Keep reading",
+   "t": "Jon Armstrong najavio prekid suradnje sa suvozačem za 2027.",
+   "s": "Vozač WRC-a Jon Armstrong objavio je na društvenim mrežama da se razilazi sa svojim suvozačem Shaneom Byrneom nakon dvije sezone suradnje. Planiraju se natjecati s drugim suvozačem.",
    "orig_t": "Jon Armstrong announces WRC co-driver split for 2027",
-   "summary_version": 2,
-   "hr": true
+   "summary_version": 3,
+   "hr": true,
+   "img": {
+    "id": "3191c2b8-3e0b-47df-804f-7ad8e6ac1c99",
+    "src": "https://api.openverse.org/v1/images/3191c2b8-3e0b-47df-804f-7ad8e6ac1c99/thumb/",
+    "by": "dez&john3313",
+    "lic": "BY",
+    "link": "https://www.flickr.com/photos/25349554@N03/4317736806",
+    "illustrative": true
+   }
   }
  ],
  "schedule": [
