@@ -151,6 +151,8 @@ def main():
         out.append(record); counts[cat]=counts.get(cat,0)+1
     # Keep current articles if feeds temporarily fail, up to max age and 45 items.
     for item in old.values():
+        if item.get("c") == "kaciga" and not any(term in (item.get("orig_t") or item.get("t") or "").lower() for term in kaciga_relevance):
+            continue
         if item.get("u") not in {x["u"] for x in out} and item.get("date","")[:10] >= (now-timedelta(days=max_age)).date().isoformat() and len(out)<45 and item.get("summary_version")==3:
             # Keep only articles already processed under the strict summary rules.
             item = {k:v for k,v in item.items() if k not in ("body", "conclusion")}
