@@ -673,8 +673,6 @@ function renderNews(){
     const b=el("div","body");
     const h=el("h3"); h.textContent=n.t;
     b.append(el("div","dt",fmt(n.date)), h, el("p","summary",n.s));
-    const detail=n.body||n.conclusion;
-    if(detail){const d=el("details");d.append(el("summary",null,"Sažetak i zaključak"),el("div","article-summary",detail));b.append(d);}
     b.append(srcLine(n));
     if(n.img){const cr=el("div","credit");cr.append("Foto: ");const ca=el("a",null,n.img.by);ca.href=n.img.link||n.img.src;ca.target="_blank";ca.rel="noopener";cr.append(ca,", "+n.img.lic+" (ilustracija)");b.append(cr);}
     card.append(b); list.append(card);
