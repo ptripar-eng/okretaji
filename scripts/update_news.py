@@ -33,11 +33,18 @@ Ako opis ne sadrži dovoljno podataka, napiši kratak i oprezan sažetak bez nag
 NASLOV: {title}
 OPIS: {fallback}"""
     try:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={API_KEY}"
-        r = requests.post(url, json={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"responseMimeType":"application/json","temperature":0.1}}, timeout=35)
+        # Keep within typical free-tier request limits and never put the API key in the URL.
+        time.sleep(4)
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+        payload = {"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"responseMimeType":"application/json","temperature":0.1}}
+        r = requests.post(url, headers={"x-goog-api-key": API_KEY}, json=payload, timeout=35)
+        if r.status_code == 429:
+            print("Gemini ograničenje zahtjeva (429); pokušavam još jednom nakon 15 sekundi.")
+            time.sleep(15)
+            r = requests.post(url, headers={"x-goog-api-key": API_KEY}, json=payload, timeout=35)
         r.raise_for_status()
-        text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-        data = json.loads(text[text.find("{"):text.rfind("}")+1])
+        response_text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+        data = json.loads(response_text[response_text.find("{"):response_text.rfind("}")+1])
         data = {
             "t": re.sub(r"\s+", " ", str(data.get("t", ""))).strip()[:140],
             "s": re.sub(r"\s+", " ", str(data.get("s", ""))).strip()[:500],
@@ -46,7 +53,10 @@ OPIS: {fallback}"""
             raise ValueError("empty title or summary")
         return data
     except Exception as e:
-        print("Gemini sažetak nije uspio:", str(e)[:180])
+        # Never print request URLs or exception text that could contain credentials.
+        status = getattr(getattr(e, "response", None), "status_code", None)
+        detail = f"HTTP {status}" if status else type(e).__name__
+        print("Gemini sažetak nije uspio:", detail)
         return {"t": title, "s": fallback[:450] or title}
 
 def f1_schedule():
