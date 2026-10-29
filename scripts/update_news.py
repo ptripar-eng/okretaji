@@ -20,7 +20,7 @@ def clean_url(url):
 
 def summarize(title, description, category):
     # Use only the supplied RSS title and description. Never invent missing facts.
-    fallback = re.sub(r"\\s+", " ", re.sub("<[^>]+>", " ", description or "")).strip()
+    fallback = re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", description or "")).strip()
     fallback = fallback[:500]
     if not API_KEY:
         return {"t": title, "s": fallback or title}
@@ -39,8 +39,8 @@ OPIS: {fallback}"""
         text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
         data = json.loads(text[text.find("{"):text.rfind("}")+1])
         data = {
-            "t": re.sub(r"\\s+", " ", str(data.get("t", ""))).strip()[:140],
-            "s": re.sub(r"\\s+", " ", str(data.get("s", ""))).strip()[:500],
+            "t": re.sub(r"\s+", " ", str(data.get("t", ""))).strip()[:140],
+            "s": re.sub(r"\s+", " ", str(data.get("s", ""))).strip()[:500],
         }
         if not data["t"] or not data["s"]:
             raise ValueError("empty title or summary")
