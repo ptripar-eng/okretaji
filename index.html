@@ -267,6 +267,12 @@ footer{margin-top:90px;padding:30px 0 130px;background:var(--deep);color:#A9C3D2
 footer p{margin:0 0 8px;max-width:80ch}
 .footerlinks{display:flex;gap:18px;margin-top:14px}
 .footerlinks a{color:#fff;font-weight:600}
+.social-follow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:18px 0 16px;padding:16px 18px;border:1px solid rgba(169,211,235,.25);border-radius:12px;background:rgba(255,255,255,.04)}
+.social-follow strong{color:#fff;margin-right:4px}
+.social-follow a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:var(--orange);color:#fff;text-decoration:none;font-weight:800;line-height:1.2}
+.social-follow a:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.social-follow .ig{background:#7C3AED}
+.social-follow .social-note{flex-basis:100%;font-size:.82rem;color:#A9C3D2;margin:0}
 
 /* ---------- gear shifter ---------- */
 .shifter{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:20;background:#0D2B3E;color:#A9D3EB;border-radius:14px;padding:12px 14px 10px;box-shadow:0 10px 30px -10px rgba(5,25,40,.6);border:1px solid rgba(169,211,235,.25)}
@@ -470,6 +476,12 @@ footer p{margin:0 0 8px;max-width:80ch}
     <p>Ilustrativne fotografije su slike pod licencama Creative Commons pronađene preko Openversea, uz navedenog autora i licencu. Ne prikazuju nužno točno događaj iz vijesti.</p>
     <p>Kilometraže ruta su približne. Prije alpskih prijevoja provjeri je li cesta otvorena – većina se zatvara od studenog do svibnja.</p>
     <p class="upd" id="updated"></p>
+    <div class="social-follow" aria-label="Pratite Okretaje na društvenim mrežama">
+      <strong>Pratite Okretaje</strong>
+      <a href="https://www.facebook.com/okretaji/?locale=hr_HR" target="_blank" rel="noopener noreferrer" aria-label="Pratite Okretaje na Facebooku">f&nbsp; Facebook</a>
+      <a class="ig" href="https://www.instagram.com/okretaji/" target="_blank" rel="noopener noreferrer" aria-label="Pratite Okretaje na Instagramu">◎&nbsp; Instagram</a>
+      <p class="social-note">Nove vijesti, motosport, tehnika i energija — pratite nas i uključite se u raspravu.</p>
+    </div>
     <nav class="footerlinks" aria-label="Informacije o portalu"><a href="o-nama.html">O nama</a><a href="kontakt.html">Kontakt</a><a href="privatnost.html">Privatnost</a></nav>
   </div>
 </footer>
