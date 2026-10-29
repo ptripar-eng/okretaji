@@ -205,8 +205,8 @@ def main():
             "category": article["category"],
             "title": article["title"],
         })
-
-    if newly_posted:
+        # Persist each successful post immediately so a later API error cannot
+        # cause already-published content to be posted again on the next run.
         state["items"] = (posted + newly_posted)[-500:]
         POSTED_PATH.write_text(
             json.dumps(state, ensure_ascii=False, indent=2) + "\n",
