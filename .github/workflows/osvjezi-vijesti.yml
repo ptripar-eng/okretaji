@@ -41,10 +41,11 @@ jobs:
           [ -f images.json ] && git add images.json
           [ -f race.json ] && git add race.json
           git diff --cached --quiet || (git commit -m "Automatsko osvježavanje vijesti" && git pull --rebase && git push)
-      - name: Facebook (sigurni DRY_RUN)
+      - name: Facebook (automatski ako su Meta pristupni podaci postavljeni)
         run: python scripts/post_facebook.py
         env:
-          DRY_RUN: "1"
+          # Objavljuj uživo samo kad su oba Meta secreta postavljena; inače ostani u DRY_RUN.
+          DRY_RUN: ${{ secrets.FB_PAGE_ID != '' && secrets.FB_PAGE_TOKEN != '' && '0' || '1' }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
       - name: Spremi evidenciju Facebook objava
