@@ -159,10 +159,10 @@ def main():
             # The generated output remains a short original summary with the source link attached.
             context = item["desc"]
             if full_articles_read < max_full_articles_per_run:
+                full_articles_read += 1  # Count attempts too, so blocked sites cannot trigger unlimited requests.
                 full_text = read_article(item["u"])
                 if full_text:
                     context = "RSS OPIS:\n" + str(item["desc"])[:1500] + "\n\nTEKST IZVORNOG ČLANKA (samo za provjeru činjenica):\n" + full_text
-                    full_articles_read += 1
             # Regenerate legacy summaries once under the stricter no-invention prompt.
             summary=summarize(item["raw_t"],context,cat)
             if not summary.pop("_ok", False):
