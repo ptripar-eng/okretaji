@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Provjeri JSON konfiguraciju i vijesti
+      - name: Instaliraj ovisnosti društvenih objava\n        run: pip install requests\n      - name: Provjeri JSON konfiguraciju i vijesti
         run: |
           python -m json.tool feeds.json > /dev/null
           python -m json.tool news.json > /dev/null
