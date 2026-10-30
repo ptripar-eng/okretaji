@@ -40,23 +40,11 @@
     root.append(section);
    }
   } else {
-  const context=el("section","panel");context.append(el("h2","","Zašto je ova vijest važna"));
-  const explain={
-   f1:"U Formuli 1 rezultat nikad ne ovisi samo o brzini bolida. Strategija, upravljanje gumama, razvoj tijekom sezone i odluke momčadi mogu promijeniti odnos snaga. Ovu priču treba promatrati u kontekstu prvenstva i onoga što slijedi na stazi.",
-   motogp:"U MotoGP-u forma vozača, ponašanje motocikla, izbor guma i rad momčadi međusobno su povezani. Pojedinačna vijest dobiva puni smisao tek kada se usporedi s aktualnim poretkom i razvojem prvenstva.",
-   reli:"U reliju se brzina mjeri kroz različite podloge, vremenske uvjete i zahtjevne brzinske ispite. Tehnička priprema i preciznost posade jednako su važne kao sirova brzina.",
-   auto:"Automobilske novosti treba promatrati kroz stvarnu namjenu, tehničke značajke, cijenu i utjecaj na vozače. Marketinške tvrdnje proizvođača nisu isto što i neovisno mjerenje.",
-   moto:"Motociklistička industrija brzo se mijenja, ali novost ima smisla tek kada znamo kako utječe na sigurnost, održavanje, performanse i svakodnevnu uporabu.",
-   tech:"Tehnološku novost vrijedi procijeniti prema tome rješava li stvaran problem, koliko je dostupna i kakve kompromise donosi korisniku.",
-   energy:"Energetske teme zahtijevaju širu sliku: izvor energije, proizvodnju, infrastrukturu, troškove i emisije tijekom cijelog životnog ciklusa. Jedna brojka rijetko opisuje cijeli učinak.",
-   kaciga:"Priče o ljudima iz motosporta ne svode se samo na rezultat. Važni su kontekst, odluke, priprema i okolnosti koje su dovele do događaja."
-  };
-  context.append(el("p","",explain[item.c]||"Vijest je potrebno pratiti u širem kontekstu i provjeravati kako se razvija."));
-  root.append(context);
+  root.append(el("p","notice","Sažetak vijesti prema navedenom izvornom članku. Za dodatne pojedinosti otvorite izvor."));
   }
   const source=el("section","panel");source.append(el("h2","","Izvor i urednička napomena"));
   const p=el("p","");p.append("Izvorna objava: ");const a=el("a","",item.src||"otvori izvor");a.href=item.u;a.target="_blank";a.rel="noopener noreferrer";p.append(a);source.append(p);
-  source.append(el("p","notice",item.body?"Članak sadrži autorski osvrt Okretaja. Tehnički podaci i najavljeni rokovi temelje se na službenoj objavi proizvođača; procjene su urednički komentar.":"Ovo je urednički sažetak Okretaja. Činjenice se pripisuju navedenom izvoru."));
+  source.append(el("p","notice",item.body?"Autorski članak Okretaja. Činjenice i izvori navedeni su u tekstu.":"Automatski sažetak izvornog članka; nije autorski tekst Okretaja."));
   root.append(source);
  }catch(e){root.textContent="Članak trenutačno nije moguće učitati. Vratite se na naslovnicu."}
 })();
