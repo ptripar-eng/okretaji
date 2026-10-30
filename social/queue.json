@@ -1,11 +1,11 @@
 {
-  "upute": "Uredi tekstove i postavi approved: true samo za objavu koju želiš odobriti. Zatim GitHub → Actions → Objavi odobrenu objavu → Run workflow. Nema automatskog objavljivanja.",
+  "upute": "Pripremljeni su tekstovi za Facebook i Instagram. Sve objave ostaju nacrti (approved: false) i neće se objaviti dok ih urednik izričito ne odobri. Za objavu koristi GitHub → Actions → Objavi odobrenu objavu.",
   "items": [
     {
       "article": "stoner-marquez-zavoji.html",
       "title": "Stoner i Márquez: isti instinkt, drukčije doba MotoGP-a",
-      "facebook": "🏁 STONER I MÁRQUEZ: ISTI INSTINKT, DRUKČIJE DOBA MOTOGP-a\n\nŠto povezuje Caseyja Stonera i Marca Márqueza? Obojica su pomicala granice načina na koji se motocikl vozi kroz zavoj, ali u različitim tehničkim i natjecateljskim razdobljima.\n\nU novoj analizi Okretaja uspoređujemo njihov stil, zavoje ulijevo i utjecaj dirt-tracka.\n\nPročitajte analizu: https://okretaji.com/stoner-marquez-zavoji.html\n\n#Okretaji #MotoGP #CaseyStoner #MarcMarquez #Motorsport",
-      "instagram": "🏁 STONER I MÁRQUEZ – ISTI INSTINKT, DRUKČIJE DOBA.\n\nDva iznimna vozača, različite generacije i motocikli. Što ih povezuje u načinu prolaska kroz zavoj i koliko je dirt-track utjecao na njihov stil?\n\nPročitajte novu analizu na Okretaji.com – poveznica je u opisu profila.\n\n#Okretaji #MotoGP #CaseyStoner #MarcMarquez #Motorsport",
+      "facebook": "🏁 STONER I MÁRQUEZ: ISTI INSTINKT, DRUKČIJE DOBA MOTOGP-a\n\nDva prvaka, dvije generacije motocikala i nešto što ih povezuje: izniman osjećaj za motocikl na samoj granici prianjanja.\n\nZašto su obojica toliko uspješna na stazama sa zavojima ulijevo? Koliko je dirt-track utjecao na njihov stil i što je Márquez naučio proučavajući Stonerove podatke?\n\nUsporedili smo statistiku, njihove izjave i tehničke razlike između generacija MotoGP motocikala.\n\nPročitajte analizu: https://okretaji.com/stoner-marquez-zavoji.html\n\n#Okretaji #MotoGP #CaseyStoner #MarcMarquez #MotoRacing",
+      "instagram": "🏁 STONER I MÁRQUEZ. ISTI INSTINKT, DRUKČIJE DOBA.\n\nJedan je obilježio eru Ducatija, drugi je pomicao i nastavlja pomicati granice MotoGP-a.\n\nŠto ih povezuje u prolasku kroz zavoj? Zašto su toliko jaki na stazama koje se voze suprotno smjeru kazaljke na satu? I kakvu je ulogu imao dirt-track?\n\nAnalizirali smo njihove stilove, statistiku i Márquezove izjave o proučavanju Stonerove vožnje.\n\nCijeli članak na Okretaji.com – poveznica u opisu profila.\n\n#Okretaji #MotoGP #CaseyStoner #MarcMarquez #MotoGPHistory #MotoRacing #DirtTrack #MotorcycleRacing #RacingLegends #Motorsport",
       "slug": "stoner-marquez-zavoji",
       "approved": false,
       "status": "draft",
@@ -15,8 +15,8 @@
     {
       "article": "pucanj-u-nogu-europske-unije-nuklearne-elektrane.html",
       "title": "Pucanj u nogu Europske unije: nuklearke, mreža i industrija",
-      "facebook": "⚡ NUKLEARNA ENERGIJA, ELEKTRIČNA MREŽA I EUROPSKA INDUSTRIJA\n\nEnergetska tranzicija ne svodi se samo na solarne panele i vjetroturbine. Važni su stabilni izvori električne energije, prijenosna mreža, troškovi i konkurentnost industrije.\n\nU autorskoj analizi Okretaja otvaramo pitanje europskih odluka o nuklearnoj energiji.\n\nPročitajte: https://okretaji.com/pucanj-u-nogu-europske-unije-nuklearne-elektrane.html\n\n#Okretaji #Energetika #NuklearnaEnergija #Europa #Tehnologija",
-      "instagram": "⚡ ENERGETSKA TRANZICIJA JE VIŠE OD SOLARNIH PANELA.\n\nStabilnost opskrbe, elektroenergetska mreža, cijena energije i konkurentnost industrije međusobno su povezani.\n\nU novoj analizi Okretaja otvaramo pitanje europske politike prema nuklearnoj energiji.\n\nCijeli tekst na Okretaji.com – poveznica u opisu profila.\n\n#Okretaji #Energetika #NuklearnaEnergija #Europa #Tehnologija",
+      "facebook": "⚡ EUROPA, NUKLEARKE I CIJENA ENERGETSKE TRANZICIJE\n\nEnergetska tranzicija nije samo pitanje solarnih panela i vjetroturbina.\n\nIndustriji trebaju stabilna opskrba, pouzdana elektroenergetska mreža i konkurentna cijena električne energije.\n\nNjemačka je ugasila posljednje nuklearne reaktore 2023., dok Europa istodobno mora ulagati stotine milijardi eura u modernizaciju mreže.\n\nJesmo li dovoljno dobro isplanirali prijelaz na novi energetski sustav?\n\nPročitajte analizu: https://okretaji.com/pucanj-u-nogu-europske-unije-nuklearne-elektrane.html\n\n#Okretaji #Energetika #NuklearnaEnergija #EnergetskaTranzicija #Europa",
+      "instagram": "⚡ ČISTA ENERGIJA NIJE SAMO PITANJE SOLARNIH PANELA.\n\nŠto se događa kada se zatvore stabilni izvori električne energije, a mreža nije spremna za novu proizvodnju?\n\nNuklearna energija, obnovljivi izvori, skladištenje, prijenosna mreža i industrijska konkurentnost povezani su dijelovi istog problema.\n\nU novoj analizi Okretaja istražujemo europske odluke i stvarne izazove energetske tranzicije.\n\nCijeli članak na Okretaji.com – poveznica u opisu profila.\n\n#Okretaji #Energetika #NuklearnaEnergija #NuclearEnergy #EnergyTransition #ObnovljiviIzvori #Elektroenergetika #EnergyPolicy #EuropeanIndustry #EnergySecurity #Tehnologija",
       "slug": "pucanj-u-nogu-europske-unije-nuklearne-elektrane",
       "approved": false,
       "status": "draft",
@@ -27,8 +27,8 @@
       "article": "moto-guzzi-the-trip.html",
       "slug": "moto-guzzi-the-trip",
       "title": "Moto Guzzi The Trip: novi 500-kubični roadster za A2 kategoriju",
-      "facebook": "🏍️ MOTO GUZZI THE TRIP: NOVI ROADSTER ZA A2 KATEGORIJU\n\nMoto Guzzi priprema novi roadster s paralelnim dvocilindrašem od 500 cm³ i oko 48 KS. Najavljeni paket uključuje ride-by-wire, tri načina vožnje, TFT zaslon i povezivanje s telefonom.\n\nPrve isporuke najavljene su za početak 2027. Što očekivati od novog modela?\n\nPročitajte autorski pregled: https://okretaji.com/moto-guzzi-the-trip.html\n\n#Okretaji #MotoGuzzi #Motocikli #A2",
-      "instagram": "🏍️ MOTO GUZZI THE TRIP – 500 cm³ I A2 KATEGORIJA.\n\nNovi roadster donosi paralelni dvocilindraš, oko 48 KS i modernu elektroniku. Najavljeni su TFT zaslon, ride-by-wire i tri načina vožnje.\n\nPrve isporuke očekuju se početkom 2027. Cijeli pregled na Okretaji.com – poveznica u opisu profila.\n\n#Okretaji #MotoGuzzi #Moto #A2 #Motocikli",
+      "facebook": "🏍️ MOTO GUZZI THE TRIP: NOVI ROADSTER ZA A2 KATEGORIJU\n\nMoto Guzzi ulazi u zanimljivu 500-kubičnu klasu.\n\nThe Trip donosi paralelni dvocilindraš, oko 48 KS i paket moderne elektronike: ride-by-wire, tri načina vožnje i TFT zaslon.\n\nMože li novi model ponuditi prepoznatljiv karakter Moto Guzzija u pristupačnijem pakiranju?\n\nPrve isporuke najavljene su za početak 2027. godine.\n\nPročitajte pregled: https://okretaji.com/moto-guzzi-the-trip.html\n\n#Okretaji #MotoGuzzi #TheTrip #Motocikli #A2",
+      "instagram": "🏍️ 500 cm³. OKO 48 KS. MOTO GUZZI.\n\nThe Trip cilja vozače A2 kategorije i donosi zanimljivu kombinaciju roadster izgleda i moderne tehnologije.\n\nParalelni dvocilindraš, ride-by-wire, tri načina vožnje i TFT zaslon.\n\nJe li ovo recept za uspješan ulazak Moto Guzzija u pristupačniju klasu?\n\nCijeli pregled na Okretaji.com – poveznica u opisu profila.\n\n#Okretaji #MotoGuzzi #MotoGuzziTheTrip #TheTrip #A2License #A2Motorcycle #Motorcycle #Roadster #NewMotorcycle #MotoNews #Motocikli",
       "approved": false,
       "status": "draft",
       "category": "moto",
