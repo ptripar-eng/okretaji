@@ -79,7 +79,9 @@ def main():
     item=next((x for x in items if x.get("slug")==slug),None)
     if not item: raise SystemExit("Nacrt nije pronađen: "+slug)
     if item.get("approved") is not True: raise SystemExit("Objava nije odobrena. U social/queue.json postavi approved: true.")
-    if item.get("status")=="published": raise SystemExit("Ovaj nacrt je već objavljen; zaštita od duplikata je aktivna.")
+    already=item.get("published_to",{})
+    requested={"facebook","instagram"} if target=="both" else {target}
+    if requested.issubset(set(already)): raise SystemExit("Odabrani kanal(i) već imaju objavu; zaštita od duplikata je aktivna.")
     if not item.get("title") or not item.get("facebook") or not item.get("instagram"): raise SystemExit("Nedostaje naslov ili tekst objave.")
     article_url="https://okretaji.com/"+item.get("article","")
     if not item.get("article","").endswith(".html"): raise SystemExit("Neispravna poveznica članka.")
@@ -89,7 +91,8 @@ def main():
         token=page_token()
     image_path=make_card(item)
     if target in ("facebook","both"):
-        post_id=publish_facebook(item,token,image_path)
+        post_id=(item.get("published_to",{}).get("facebook") or {}).get("id")
+        if not post_id: post_id=publish_facebook(item,token,image_path)
         if not post_id: raise RuntimeError("Facebook nije vratio ID objave.")
         item.setdefault("published_to",{})["facebook"]={"id":post_id,"at":datetime.now(TZ).isoformat(timespec="seconds")}
         save(data); print("Facebook objavljeno:",post_id)
@@ -99,7 +102,8 @@ def main():
             IG_USER=(page.get("instagram_business_account") or {}).get("id","")
         if not IG_USER: raise SystemExit("Nije pronađen povezani Instagram poslovni račun. Postavi IG_USER_ID ili poveži račun sa stranicom.")
         ig_token=IG_TOKEN or token
-        media_id=publish_instagram(item,ig_token,IG_USER,image_path)
+        media_id=(item.get("published_to",{}).get("instagram") or {}).get("id")
+        if not media_id: media_id=publish_instagram(item,ig_token,IG_USER,image_path)
         if not media_id: raise RuntimeError("Instagram nije vratio ID objave.")
         item.setdefault("published_to",{})["instagram"]={"id":media_id,"at":datetime.now(TZ).isoformat(timespec="seconds")}
         save(data); print("Instagram objavljeno:",media_id)
