@@ -5,7 +5,7 @@ on:
       project:
         description: "JSON projekt iz assets/reels/projects/"
         required: true
-        default: "reel-primjer.json"
+        default: "reel-povijest-speedwaya.json"
 permissions:
   contents: read
 jobs:
@@ -15,12 +15,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Instaliraj FFmpeg
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
-      - uses: actions/setup-python@v5
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      - name: Preuzmi arhivski kadar s javnom domenom
+        run: |
+          mkdir -p assets/reels/clips
+          curl --fail --location --retry 3 --retry-delay 2 \
+            "https://openbeelden.nl/files/57/57244.57230.WEEKNUMMER310-HRE00015643.mp4" \
+            --output assets/reels/clips/grasstrack-1931.mp4
+          test -s assets/reels/clips/grasstrack-1931.mp4
+          ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 assets/reels/clips/grasstrack-1931.mp4
+      - name: Postavi Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Renderiraj video
-        run: python scripts/render_reel.py "\${{ inputs.project }}"
+        run: python scripts/render_reel.py "${{ inputs.project }}"
       - name: Prenesi MP4 i evidenciju licenci
         uses: actions/upload-artifact@v4
         with:
