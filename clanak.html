@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0D2B3E">
+<title>Članak | Okretaji</title>
+<meta name="description" content="Urednički članak portala Okretaji.">
+<link rel="canonical" href="https://okretaji.com/clanak.html">
+<style>
+:root{--bg:#eaf3f8;--card:#fff;--ink:#0d2b3e;--muted:#4f6979;--line:#d3e2ea;--orange:#f05a1a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 system-ui,sans-serif}.wrap{max-width:850px;margin:auto;padding:0 22px}.top{padding:18px 0;border-bottom:1px solid var(--line)}.brand{font-weight:900;text-decoration:none;color:var(--ink)}main{padding:35px 0 70px}.kicker{color:var(--orange);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem}h1{font-size:clamp(2.2rem,7vw,4.5rem);line-height:1.02;letter-spacing:-.04em;margin:10px 0 18px}.dek{font-size:1.2rem;color:var(--muted)}.hero{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin:25px 0;background:#0d2b3e}.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;margin:20px 0}.panel h2{margin-top:0;font-size:1.35rem}.source{font-size:.9rem;color:var(--muted)}a{color:#1c5a86}.notice{font-size:.9rem;color:var(--muted);border-left:3px solid var(--orange);padding-left:14px}
+@media(max-width:600px){.wrap{padding:0 16px}.panel{padding:18px}}
+</style></head>
+<body><header class="top"><div class="wrap"><a class="brand" href="index.html">← OKRETAJI</a></div></header>
+<main class="wrap" id="article"><p>Učitavanje članka…</p></main>
+<script>
+(async()=>{
+ const root=document.getElementById("article");
+ const params=new URLSearchParams(location.search),url=params.get("u");
+ if(!url){root.textContent="Članak nije pronađen.";return}
+ try{
+  const response=await fetch("news.json?v="+Date.now(),{cache:"no-store"});
+  if(!response.ok)throw Error("Vijesti nisu dostupne");
+  const data=await response.json(),item=(data.items||[]).find(x=>x.u===url);
+  if(!item){root.textContent="Ovaj članak više nije u aktualnoj arhivi. Vratite se na naslovnicu.";return}
+  const cats={f1:"Formula 1",motogp:"MotoGP",reli:"Reli",auto:"Automobili",moto:"Motocikli",tech:"Tehnologija",energy:"Energija",kaciga:"Iza kacige"};
+  const el=(tag,cls,txt)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(txt)n.textContent=txt;return n};
+  root.innerHTML="";
+  root.append(el("div","kicker",cats[item.c]||"Okretaji"),el("h1","",item.t),el("p","dek",item.s));
+  root.append(el("p","source",new Date(item.date).toLocaleDateString("hr-HR",{day:"numeric",month:"long",year:"numeric"})+" · "+(item.src||"Izvor")));
+  if(item.img&&item.img.src){
+   const img=el("img","hero");img.src=item.img.src;img.alt="Ilustrativna fotografija uz članak";img.loading="eager";root.append(img);
+   if(item.img.by){const cr=el("p","source","Foto: "+item.img.by+" · "+(item.img.lic||"licenca na izvoru"));root.append(cr)}
+  }
+  const context=el("section","panel");context.append(el("h2","","Zašto je ova vijest važna"));
+  const explain={
+   f1:"U Formuli 1 rezultat nikad ne ovisi samo o brzini bolida. Strategija, upravljanje gumama, razvoj tijekom sezone i odluke momčadi mogu promijeniti odnos snaga. Ovu priču treba promatrati u kontekstu prvenstva i onoga što slijedi na stazi.",
+   motogp:"U MotoGP-u forma vozača, ponašanje motocikla, izbor guma i rad momčadi međusobno su povezani. Pojedinačna vijest dobiva puni smisao tek kada se usporedi s aktualnim poretkom i razvojem prvenstva.",
+   reli:"U reliju se brzina mjeri kroz različite podloge, vremenske uvjete i zahtjevne brzinske ispite. Tehnička priprema i preciznost posade jednako su važne kao sirova brzina.",
+   auto:"Automobilske novosti treba promatrati kroz stvarnu namjenu, tehničke značajke, cijenu i utjecaj na vozače. Marketinške tvrdnje proizvođača nisu isto što i neovisno mjerenje.",
+   moto:"Motociklistička industrija brzo se mijenja, ali novost ima smisla tek kada znamo kako utječe na sigurnost, održavanje, performanse i svakodnevnu uporabu.",
+   tech:"Tehnološku novost vrijedi procijeniti prema tome rješava li stvaran problem, koliko je dostupna i kakve kompromise donosi korisniku.",
+   energy:"Energetske teme zahtijevaju širu sliku: izvor energije, proizvodnju, infrastrukturu, troškove i emisije tijekom cijelog životnog ciklusa. Jedna brojka rijetko opisuje cijeli učinak.",
+   kaciga:"Priče o ljudima iz motosporta ne svode se samo na rezultat. Važni su kontekst, odluke, priprema i okolnosti koje su dovele do događaja."
+  };
+  context.append(el("p","",explain[item.c]||"Vijest je potrebno pratiti u širem kontekstu i provjeravati kako se razvija."));
+  root.append(context);
+  const follow=el("section","panel");follow.append(el("h2","","Što dalje pratiti"));
+  follow.append(el("p","","Pratit ćemo službene objave, rezultate i dodatne informacije. Ako se pojave nove potvrđene činjenice, članak će biti ažuriran. Podatke koji još nisu potvrđeni nećemo predstavljati kao činjenice."));
+  root.append(follow);
+  const source=el("section","panel");source.append(el("h2","","Izvor i urednička napomena"));
+  const p=el("p","");p.append("Izvorna objava: ");const a=el("a","",item.src||"otvori izvor");a.href=item.u;a.target="_blank";a.rel="noopener noreferrer";p.append(a);source.append(p);
+  source.append(el("p","notice","Ovo je izvorni urednički sažetak Okretaja, a ne reprodukcija izvornog članka. Činjenice se pripisuju navedenom izvoru; dodatna analiza i kontekst jasno su odvojeni od potvrđenih informacija."));
+  root.append(source);
+ }catch(e){root.textContent="Članak trenutačno nije moguće učitati. Vratite se na naslovnicu."}
+})();
+</script></body></html>
