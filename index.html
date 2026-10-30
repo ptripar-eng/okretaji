@@ -659,7 +659,7 @@ function renderHero(){
   const n=NEWS[0], lead=$("lead"); lead.innerHTML=""; if(!n){lead.append(el("div","txt","Vijesti se trenutno ne mogu učitati."));return;}
   const ph=photo(n,false); lead.append(ph);
   const t=el("div","txt"); t.append(plate(n));
-  const h=el("h2"); h.textContent=n.t; t.append(h, el("p",null,n.s));
+  const h=el("h2"); const headline=el("a",null,n.t); headline.href="clanak.html?u="+encodeURIComponent(n.u); h.append(headline); t.append(h, el("p",null,n.s));
   if(n.img){const cr=el("div","credit");cr.append("Foto: ");const ca=el("a",null,n.img.by);ca.href=n.img.link||n.img.src;ca.target="_blank";ca.rel="noopener";cr.append(ca,", "+n.img.lic+" (ilustracija)");t.append(cr);}
   lead.append(t);
   const side=$("side"); side.innerHTML="";
@@ -668,7 +668,7 @@ function renderHero(){
   for(const x of NEWS.slice(1)){ if(!seen.has(x.c)){seen.add(x.c);picks.push(x);} if(picks.length===3)break; }
   for(const x of picks){
     const a=el("article","mini-card");
-    a.append(photo(x,false)); const tt=el("div","t"); tt.append(plate(x), el("h3",null,x.t), el("p",null,x.s), srcLine(x)); a.append(tt);
+    a.append(photo(x,false)); const tt=el("div","t"); const mh=el("h3"); const ml=el("a",null,x.t); ml.href="clanak.html?u="+encodeURIComponent(x.u); mh.append(ml); tt.append(plate(x), mh, el("p",null,x.s), srcLine(x)); a.append(tt);
     side.append(a);
   }
   window._heroIds=new Set([n.u,...picks.map(p=>p.u)]);
