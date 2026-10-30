@@ -1,0 +1,18 @@
+{
+  "slug": "reel-primjer",
+  "format": "vertical-9x16",
+  "segments": [
+    {
+      "clip": "clip-001.mp4",
+      "start": 0,
+      "duration": 3.5,
+      "overlay": "NASLOV REELSA"
+    },
+    {
+      "clip": "clip-002.mp4",
+      "start": 1,
+      "duration": 4,
+      "overlay": "KRATKA ČINJENICA"
+    }
+  ]
+}
