@@ -1,0 +1,19 @@
+{
+  "_comment": "Popuniti isključivo nakon provjere konkretne stranice i licencnih uvjeta. reviewed=true je urednička potvrda, ne automatska pretpostavka.",
+  "clip-001.mp4": {
+    "source_url": "",
+    "creator": "",
+    "license": "",
+    "commercial_use": false,
+    "attribution_required": true,
+    "reviewed": false
+  },
+  "clip-002.mp4": {
+    "source_url": "",
+    "creator": "",
+    "license": "",
+    "commercial_use": false,
+    "attribution_required": true,
+    "reviewed": false
+  }
+}
