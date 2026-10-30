@@ -1,19 +1,17 @@
 {
-  "_comment": "Popuniti isključivo nakon provjere konkretne stranice i licencnih uvjeta. reviewed=true je urednička potvrda, ne automatska pretpostavka.",
-  "clip-001.mp4": {
-    "source_url": "",
-    "creator": "",
-    "license": "",
-    "commercial_use": false,
-    "attribution_required": true,
-    "reviewed": false
-  },
-  "clip-002.mp4": {
-    "source_url": "",
-    "creator": "",
-    "license": "",
-    "commercial_use": false,
-    "attribution_required": true,
-    "reviewed": false
+  "_comment": "Licenca je provjerena na stranici izvora; pregled sadržaja datoteke i konačni urednički pregled ostaju obvezni prije objave.",
+  "grasstrack-1931.mp4": {
+    "source_url": "https://openbeelden.nl/media/57231/Grasbaanraces.en",
+    "direct_download_url": "https://openbeelden.nl/files/57/57244.57230.WEEKNUMMER310-HRE00015643.mp4",
+    "creator": "Polygoon-Profilti (producer) / Netherlands Institute for Sound and Vision (curator)",
+    "title": "Grasstrack races",
+    "date": "1931-04-11",
+    "license": "Public Domain Mark 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "commercial_use": true,
+    "attribution_required": false,
+    "credit_recommended": "Grasstrack races (1931), Polygoon-Profilti / Netherlands Institute for Sound and Vision, Open Beelden",
+    "reviewed": true,
+    "notes": "Povijesna snimka speedway/grasstrack utrke; koristiti samo u povijesnom kontekstu, ne prikazivati kao suvremeni MotoGP."
   }
 }
