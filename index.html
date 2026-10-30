@@ -311,6 +311,7 @@ footer p{margin:0 0 8px;max-width:80ch}
   .sbar{grid-template-columns:96px 1fr 62px;gap:8px}
   .sbar .l{font-size:.88rem}
 }
+ .read-more{display:inline-block;margin:8px 0 10px;color:var(--orange);font-weight:800;text-decoration:none}.read-more:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -684,8 +685,8 @@ function renderNews(){
     const card=el("article","card");
     const ph=photo(n,false); card.append(ph); card.querySelector(".ph").append(plate(n));
     const b=el("div","body");
-    const h=el("h3"); h.textContent=n.t;
-    b.append(el("div","dt",fmt(n.date)), h, el("p","summary",n.s));
+    const h=el("h3"); const read=el("a",null,n.t); read.href="clanak.html?u="+encodeURIComponent(n.u); h.append(read);
+    b.append(el("div","dt",fmt(n.date)), h, el("p","summary",n.s)); const more=el("a","read-more","Pročitaj članak →"); more.href="clanak.html?u="+encodeURIComponent(n.u); b.append(more);
     b.append(srcLine(n));
     if(n.img){const cr=el("div","credit");cr.append("Foto: ");const ca=el("a",null,n.img.by);ca.href=n.img.link||n.img.src;ca.target="_blank";ca.rel="noopener";cr.append(ca,", "+n.img.lic+" (ilustracija)");b.append(cr);}
     card.append(b); list.append(card);
@@ -767,8 +768,8 @@ function renderDriverNews(){
   for(const n of items){
     const card=el("article","card");
     card.append(photo(n,false));
-    const b=el("div","body"); const h=el("h3"); const a=el("a",null,n.t); a.href=n.u; a.target="_blank"; a.rel="noopener"; h.append(a);
-    b.append(el("div","dt",fmt(n.date)),h,el("p",null,n.s),srcLine(n));
+    const b=el("div","body"); const h=el("h3"); const a=el("a",null,n.t); a.href="clanak.html?u="+encodeURIComponent(n.u); h.append(a);
+    b.append(el("div","dt",fmt(n.date)),h,el("p",null,n.s)); const more=el("a","read-more","Pročitaj članak →"); more.href="clanak.html?u="+encodeURIComponent(n.u); b.append(more,srcLine(n));
     if(n.img){const cr=el("div","credit");cr.append("Foto: ");const ca=el("a",null,n.img.by);ca.href=n.img.link||n.img.src;ca.target="_blank";ca.rel="noopener";cr.append(ca,", "+n.img.lic+" (ilustracija)");b.append(cr);}
     card.append(b); box.append(card);
   }
