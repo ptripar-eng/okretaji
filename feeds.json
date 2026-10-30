@@ -67,6 +67,36 @@
       "cat": "kaciga",
       "source": "Google News",
       "use_item_source": true
+    },
+    {
+      "url": "https://news.google.com/rss/search?q=site%3Athe-race.com%2Fformula-1%2F+OR+site%3Athe-race.com%2Fmotorsport%2F+Formula+1&hl=en-GB&gl=GB&ceid=GB:en",
+      "cat": "f1",
+      "source": "The Race",
+      "use_item_source": true
+    },
+    {
+      "url": "https://news.google.com/rss/search?q=site%3Acrash.net%2Fmotogp+OR+site%3Amotogp.com%2Fen%2Fnews+MotoGP&hl=en-GB&gl=GB&ceid=GB:en",
+      "cat": "motogp",
+      "source": "MotoGP / Crash.net",
+      "use_item_source": true
+    },
+    {
+      "url": "https://news.google.com/rss/search?q=site%3Adirtfish.com+WRC+OR+Rally&hl=en-GB&gl=GB&ceid=GB:en",
+      "cat": "reli",
+      "source": "DirtFish",
+      "use_item_source": true
+    },
+    {
+      "url": "https://news.google.com/rss/search?q=site%3Aautosport.com+motorsport+technology+OR+technical+analysis&hl=en-GB&gl=GB&ceid=GB:en",
+      "cat": "tech",
+      "source": "Autosport",
+      "use_item_source": true
+    },
+    {
+      "url": "https://news.google.com/rss/search?q=site%3Arideapart.com+motorcycle+technology+OR+engineering+OR+industry&hl=en-GB&gl=GB&ceid=GB:en",
+      "cat": "moto",
+      "source": "RideApart",
+      "use_item_source": true
     }
   ],
   "max_age_days": 7,
