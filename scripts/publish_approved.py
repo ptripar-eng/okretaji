@@ -45,7 +45,7 @@ def make_card(item):
     sha=git("rev-parse","HEAD")
     url=f"https://raw.githubusercontent.com/{REPO}/{sha}/{rel}"
     for _ in range(12):
-        if requests.head(url,timeout=15).status_code==200: return url
+        if requests.head(url,timeout=15).status_code==200: return path,url
         time.sleep(3)
     raise RuntimeError("Javna URL adresa vizuala nije dostupna nakon commita.")
 
@@ -89,7 +89,7 @@ def main():
     if target in ("facebook","both","instagram"):
         if not PAGE_ID or not PAGE_TOKEN: raise SystemExit("Nedostaju GitHub Secrets FB_PAGE_ID i FB_PAGE_TOKEN.")
         token=page_token()
-    image_path=make_card(item)
+    image_path,image_url=make_card(item)
     if target in ("facebook","both"):
         post_id=(item.get("published_to",{}).get("facebook") or {}).get("id")
         if not post_id: post_id=publish_facebook(item,token,image_path)
@@ -103,7 +103,7 @@ def main():
         if not IG_USER: raise SystemExit("Nije pronađen povezani Instagram poslovni račun. Postavi IG_USER_ID ili poveži račun sa stranicom.")
         ig_token=IG_TOKEN or token
         media_id=(item.get("published_to",{}).get("instagram") or {}).get("id")
-        if not media_id: media_id=publish_instagram(item,ig_token,IG_USER,image_path)
+        if not media_id: media_id=publish_instagram(item,ig_token,IG_USER,image_url)
         if not media_id: raise RuntimeError("Instagram nije vratio ID objave.")
         item.setdefault("published_to",{})["instagram"]={"id":media_id,"at":datetime.now(TZ).isoformat(timespec="seconds")}
         save(data); print("Instagram objavljeno:",media_id)
