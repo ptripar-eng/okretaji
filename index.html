@@ -312,7 +312,7 @@ footer p{margin:0 0 8px;max-width:80ch}
   .sbar .l{font-size:.88rem}
 }
  .read-more{display:inline-block;margin:8px 0 10px;color:var(--orange);font-weight:800;text-decoration:none}.read-more:hover{text-decoration:underline}
-</style>
+.hero{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(280px,1fr);gap:24px;align-items:start}.lead{display:block;min-width:0}.editorial-ph{aspect-ratio:16/9;background:linear-gradient(135deg,#0D2B3E 0%,#174B68 58%,#F05A1A 58%,#F05A1A 62%,#0D2B3E 62%);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(22px,4vw,48px);color:#fff;border-radius:14px}.editorial-mark{font:900 clamp(2rem,5vw,4.5rem)/1 "Big Shoulders Display",sans-serif;letter-spacing:.04em}.editorial-category{font-weight:800;letter-spacing:.16em}.lead .txt{padding:20px 4px}.lead .txt h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.04}.side{display:block;min-width:0}.side-heading{margin:0 0 12px;font:900 1.35rem "Barlow",sans-serif;border-bottom:3px solid var(--orange);padding-bottom:10px}.side .mini-card{display:block;padding:14px 0;border-bottom:1px solid var(--line)}.side .mini-card .ph{display:none}.side .mini-card .t{padding:0}.side .mini-card h3{font-size:1.05rem;line-height:1.2;margin:7px 0}.side .mini-card p{font-size:.9rem;margin:6px 0}.side .mini-card .src{font-size:.75rem}@media(max-width:760px){.hero{grid-template-columns:1fr}.side{margin-top:16px}.side .mini-card{padding:12px 0}}</style>
 </head>
 <body>
 <header class="bar">
@@ -449,7 +449,7 @@ footer p{margin:0 0 8px;max-width:80ch}
       </div>
     </section>
 
-    <section id="sve-vijesti" aria-labelledby="h-novosti" style="padding-top:60px">
+    <section id="sve-vijesti" aria-labelledby="h-novosti" style="padding-top:60px" hidden>
       <div class="sh"><span class="gear" aria-hidden="true">1</span><h2 id="h-novosti">Sve vijesti</h2><p>Izbor najvažnijeg iz auto-moto svijeta i motosporta.</p></div>
       <div class="chips" id="newsChips" role="group" aria-label="Filtriraj novosti"></div>
       <div class="grid" id="newsList"></div>
@@ -655,25 +655,18 @@ function photo(n,withCredit){
 function srcLine(n){const p=el("div","src");p.append("Izvorni članak: ");const a=el("a",null,n.src||"otvori izvor");a.href=n.u;a.target="_blank";a.rel="noopener noreferrer";p.append(a," · "+fmt(n.date));return p;}
 function plate(n){const c=cat(n),p=el("span","plate",c.name);p.style.setProperty("--pc",c.color);return p;}
 
+const EDITORIAL = [
+ {t:"Stoner i Márquez: isti instinkt, drukčije doba MotoGP-a",s:"Što povezuje Caseyja Stonera i Marca Márqueza? Analiza vožnje, zavoja ulijevo, dirt-tracka i promjena MotoGP motocikala.",href:"stoner-marquez-zavoji.html"},
+ {t:"Pucanj u nogu Europske unije: nuklearke, mreža i industrija",s:"Je li Europa prebrzo odustala od nuklearne energije? Uspoređujemo emisije, elektroenergetske mreže i rizike za industrijsku konkurentnost.",href:"pucanj-u-nogu-europske-unije-nuklearne-elektrane.html"}
+];
 function renderHero(){
-  const n=NEWS[0], lead=$("lead"); lead.innerHTML=""; if(!n){lead.append(el("div","txt","Vijesti se trenutno ne mogu učitati."));return;}
-  const ph=photo(n,false); lead.append(ph);
-  const t=el("div","txt"); t.append(plate(n));
-  const h=el("h2"); const headline=el("a",null,n.t); headline.href="clanak.html?u="+encodeURIComponent(n.u); h.append(headline); t.append(h, el("p",null,n.s));
-  if(n.img){const cr=el("div","credit");cr.append("Foto: ");const ca=el("a",null,n.img.by);ca.href=n.img.link||n.img.src;ca.target="_blank";ca.rel="noopener";cr.append(ca,", "+n.img.lic+" (ilustracija)");t.append(cr);}
-  lead.append(t);
-  const side=$("side"); side.innerHTML="";
-  // sekundarne vijesti: po jedna iz različitih kategorija
-  const seen=new Set([n.c]), picks=[];
-  for(const x of NEWS.slice(1)){ if(!seen.has(x.c)){seen.add(x.c);picks.push(x);} if(picks.length===3)break; }
-  for(const x of picks){
-    const a=el("article","mini-card");
-    a.append(photo(x,false)); const tt=el("div","t"); const mh=el("h3"); const ml=el("a",null,x.t); ml.href="clanak.html?u="+encodeURIComponent(x.u); mh.append(ml); tt.append(plate(x), mh, el("p",null,x.s), srcLine(x)); a.append(tt);
-    side.append(a);
-  }
-  window._heroIds=new Set([n.u,...picks.map(p=>p.u)]);
+ const lead=$("lead");lead.innerHTML="";const main=EDITORIAL[0];
+ const ph=el("div","ph editorial-ph");ph.innerHTML='<span class="editorial-mark">OKRETAJI</span><span class="editorial-category">ANALIZA · MOTOGP</span>';lead.append(ph);
+ const t=el("div","txt");t.append(el("span","plate","AUTORSKI ČLANAK"));const h=el("h2");const a=el("a",null,main.t);a.href=main.href;h.append(a);t.append(h,el("p",null,main.s));const more=el("a","read-more","Pročitaj našu analizu →");more.href=main.href;t.append(more);lead.append(t);
+ const side=$("side");side.innerHTML="";side.append(el("h2","side-heading","Ukratko iz svijeta"));
+ for(const n of NEWS.slice(0,6)){const card=el("article","mini-card"),tt=el("div","t");tt.append(plate(n));const mh=el("h3"),ml=el("a",null,n.t);ml.href=n.u;ml.target="_blank";ml.rel="noopener noreferrer";mh.append(ml);tt.append(mh,el("p",null,n.s),srcLine(n));card.append(tt);side.append(card);}
+ window._heroIds=new Set(NEWS.map(n=>n.u));
 }
-
 function chip(label,val,cur,color){const b=el("button","chip");b.type="button";b.dataset.v=val;b.setAttribute("aria-pressed",String(val===cur));if(color){const s=el("span","dot");s.style.background=color;b.append(s);}b.append(label);return b;}
 function renderNewsChips(){const box=$("newsChips");box.innerHTML="";box.append(chip("Sve","all",newsFilter));const present=new Set(NEWS.map(n=>n.c));for(const [k,v] of Object.entries(CATS)) if(present.has(k)) box.append(chip(v.name,k,newsFilter,v.color));}
 function renderNews(){
