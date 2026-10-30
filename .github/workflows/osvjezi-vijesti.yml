@@ -72,9 +72,19 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
 
+      - name: Instagram Story (jedna dnevno, automatski)
+        run: python scripts/post_instagram_story.py
+        continue-on-error: true
+        env:
+          IG_LIVE: ${{ vars.IG_LIVE == '1' && secrets.FB_PAGE_ID != '' && secrets.FB_PAGE_TOKEN != '' && '1' || '0' }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
       - name: Spremi evidenciju društvenih objava
-        if: always() && (hashFiles('posted.json') != '' || hashFiles('instagram_posted.json') != '')
+        if: always() && (hashFiles('posted.json') != '' || hashFiles('instagram_posted.json') != '' || hashFiles('instagram_stories.json') != '')
         run: |
           [ -f posted.json ] && git add posted.json || true
           [ -f instagram_posted.json ] && git add instagram_posted.json || true
+          [ -f instagram_stories.json ] && git add instagram_stories.json || true
           git diff --cached --quiet || (git config user.name "okretaji-bot" && git config user.email "okretaji-bot@users.noreply.github.com" && git commit -m "Ažuriraj evidenciju društvenih objava" && git pull --rebase && git push)
