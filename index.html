@@ -109,6 +109,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 a.card:hover .ph img,.lead:hover .ph img{transform:scale(1.04)}
 
 /* ---------- hero ---------- */
+.editorial-ph{display:block;background:#102b3d}.editorial-photos{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;gap:3px;background:#0d2b3e}.editorial-photos img{width:100%;height:100%;min-width:0;object-fit:cover;filter:saturate(.9)}.editorial-photos img:first-child{object-position:48% center}.editorial-photos img:last-child{object-position:52% center}.editorial-ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,20,30,.04) 18%,rgba(5,20,30,.16) 38%,rgba(5,20,30,.94) 100%)}.editorial-side{display:block;padding:17px 18px;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);text-decoration:none}.editorial-side h3{font:800 1.55rem/1.02 "Big Shoulders Display",Impact,sans-serif;margin:8px 0}.editorial-side p{font-size:.92rem;color:var(--muted);margin:0 0 10px}.editorial-tag{font-size:.72rem;font-weight:800;letter-spacing:.08em;color:var(--orange)}.side-heading:not(:first-child){margin-top:8px}
+@media(max-width:760px){.lead{min-height:430px}.lead .txt{padding:22px}.editorial-photos img{object-position:center}.side{gap:12px}.editorial-side{padding:14px 16px}}
 .hero{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:22px;margin:30px 0 0}
 .lead{position:relative;border-radius:10px;overflow:hidden;box-shadow:var(--shadow);background:var(--deep);min-height:480px;display:flex;align-items:flex-end;color:#fff}
 .lead .ph{position:absolute;inset:0;aspect-ratio:auto}
@@ -656,15 +658,24 @@ function srcLine(n){const p=el("div","src");p.append("Izvorni članak: ");const 
 function plate(n){const c=cat(n),p=el("span","plate",c.name);p.style.setProperty("--pc",c.color);return p;}
 
 const EDITORIAL = [
- {t:"Stoner i Márquez: isti instinkt, drukčije doba MotoGP-a",s:"Što povezuje Caseyja Stonera i Marca Márqueza? Analiza vožnje, zavoja ulijevo, dirt-tracka i promjena MotoGP motocikala.",href:"stoner-marquez-zavoji.html"},
- {t:"Pucanj u nogu Europske unije: nuklearke, mreža i industrija",s:"Je li Europa prebrzo odustala od nuklearne energije? Uspoređujemo emisije, elektroenergetske mreže i rizike za industrijsku konkurentnost.",href:"pucanj-u-nogu-europske-unije-nuklearne-elektrane.html"}
+ {t:"Stoner i Márquez: isti instinkt, drukčije doba MotoGP-a",s:"Dva prvaka, dvije generacije motocikala i ista opsesija savršenim prolaskom kroz zavoj. Što ih stvarno povezuje?",href:"stoner-marquez-zavoji.html",tag:"MOTOGP · ANALIZA",images:[
+  {src:"https://commons.wikimedia.org/wiki/Special:FilePath/MotoGP_Qatar_2010_-_Casey_Stoner.jpg?width=1100",alt:"Casey Stoner na Ducatiju tijekom VN Katara 2010.",credit:"D@LY3D / Wikimedia Commons, CC BY 2.0",link:"https://commons.wikimedia.org/wiki/File:MotoGP_Qatar_2010_-_Casey_Stoner.jpg"},
+  {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Marc_M%C3%A1rquez._MotoGP._Australia_2015._-_Flickr_-_Box_Repsol.jpg?width=1100",alt:"Marc Márquez na MotoGP motociklu u Australiji 2015.",credit:"Box Repsol / Wikimedia Commons",link:"https://commons.wikimedia.org/wiki/Category:Cornering_(motorcycle)"}
+ ]},
+ {t:"Moto Guzzi The Trip: novi 500-kubični roadster za A2 kategoriju",s:"Moto Guzzi širi ponudu novim roadsterom s paralelnim dvocilindrašem, oko 48 KS i naglaskom na pristupačnu svakodnevnu vožnju.",href:"moto-guzzi-the-trip.html",tag:"MOTOCIKLI · NOVI MODEL",images:[]},
+ {t:"Pucanj u nogu Europske unije: nuklearke, mreža i industrija",s:"Je li Europa prebrzo odustala od nuklearne energije? Uspoređujemo emisije, elektroenergetske mreže i rizike za industrijsku konkurentnost.",href:"pucanj-u-nogu-europske-unije-nuklearne-elektrane.html",tag:"ENERGIJA · ANALIZA",images:[]}
 ];
 function renderHero(){
  const lead=$("lead");lead.innerHTML="";const main=EDITORIAL[0];
- const ph=el("div","ph editorial-ph");ph.innerHTML='<span class="editorial-mark">OKRETAJI</span><span class="editorial-category">ANALIZA · MOTOGP</span>';lead.append(ph);
- const t=el("div","txt");t.append(el("span","plate","AUTORSKI ČLANAK"));const h=el("h2");const a=el("a",null,main.t);a.href=main.href;h.append(a);t.append(h,el("p",null,main.s));const more=el("a","read-more","Pročitaj našu analizu →");more.href=main.href;t.append(more);lead.append(t);
- const side=$("side");side.innerHTML="";side.append(el("h2","side-heading","Ukratko iz svijeta"));
- for(const n of NEWS.slice(0,6)){const card=el("article","mini-card"),tt=el("div","t");tt.append(plate(n));const mh=el("h3"),ml=el("a",null,n.t);ml.href=n.u;ml.target="_blank";ml.rel="noopener noreferrer";mh.append(ml);tt.append(mh,el("p",null,n.s),srcLine(n));card.append(tt);side.append(card);}
+ const ph=el("div","ph editorial-ph");
+ const pics=el("div","editorial-photos");
+ for(const image of main.images){const im=el("img");im.src=image.src;im.alt=image.alt;im.loading="eager";pics.append(im);}
+ ph.append(pics);
+ const t=el("div","txt");t.append(el("span","plate","AUTORSKI ČLANAK"));const h=el("h2");const a=el("a",null,main.t);a.href=main.href;h.append(a);t.append(h,el("p",null,main.s));const more=el("a","read-more","Pročitaj našu analizu →");more.href=main.href;t.append(more);lead.append(ph,t);
+ const side=$("side");side.innerHTML="";side.append(el("h2","side-heading","Iz uredništva"));
+ for(const item of EDITORIAL.slice(1)){const card=el("a","editorial-side");card.href=item.href;card.append(el("span","editorial-tag",item.tag),el("h3",null,item.t),el("p",null,item.s),el("span","read-more","Pročitaj članak →"));side.append(card);}
+ const newsTitle=el("h2","side-heading","Ukratko iz svijeta");side.append(newsTitle);
+ for(const n of NEWS.slice(0,4)){const card=el("article","mini-card"),tt=el("div","t");tt.append(plate(n));const mh=el("h3"),ml=el("a",null,n.t);ml.href=n.u;ml.target="_blank";ml.rel="noopener noreferrer";mh.append(ml);tt.append(mh,srcLine(n));card.append(tt);side.append(card);}
  window._heroIds=new Set(NEWS.map(n=>n.u));
 }
 function chip(label,val,cur,color){const b=el("button","chip");b.type="button";b.dataset.v=val;b.setAttribute("aria-pressed",String(val===cur));if(color){const s=el("span","dot");s.style.background=color;b.append(s);}b.append(label);return b;}
