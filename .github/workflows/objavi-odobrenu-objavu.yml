@@ -1,0 +1,66 @@
+name: Objavi odobrenu objavu
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Slug nacrta iz social/queue.json (npr. stoner-marquez-zavoji)"
+        required: true
+        type: string
+      target:
+        description: "Gdje objaviti"
+        required: true
+        type: choice
+        options:
+          - facebook
+          - instagram
+          - both
+      confirm:
+        description: "Potvrđujem da je nacrt pregledan i odobren"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: objavi-odobrenu-objavu
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: ${{ inputs.confirm == true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instaliraj ovisnosti
+        run: pip install requests pillow
+      - name: Preuzmi fontove
+        run: |
+          mkdir -p .fonts
+          base=https://raw.githubusercontent.com/google/fonts/main/ofl
+          curl -fsSL -o .fonts/BigShouldersDisplay.ttf "$base/bigshouldersdisplay/BigShouldersDisplay%5Bwght%5D.ttf"
+          curl -fsSL -o .fonts/Barlow-Medium.ttf "$base/barlow/Barlow-Medium.ttf"
+          curl -fsSL -o .fonts/Barlow-Bold.ttf "$base/barlow/Barlow-Bold.ttf"
+      - name: Objavi samo odobreni nacrt
+        run: python scripts/publish_approved.py "${{ inputs.slug }}" "${{ inputs.target }}"
+        env:
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+      - name: Spremi status objave
+        run: |
+          git config user.name "okretaji-bot"
+          git config user.email "okretaji-bot@users.noreply.github.com"
+          git add social/queue.json social/cards
+          git diff --cached --quiet || git commit -m "Zabilježi ručno odobrenu objavu"
+          git push
