@@ -1,18 +1,24 @@
 {
-  "slug": "reel-primjer",
+  "slug": "povijest-speedwaya-1931",
   "format": "vertical-9x16",
   "segments": [
     {
-      "clip": "clip-001.mp4",
+      "clip": "grasstrack-1931.mp4",
       "start": 0,
-      "duration": 3.5,
-      "overlay": "NASLOV REELSA"
+      "duration": 5,
+      "overlay": "PRIJE MODERNOG MOTOGP-a"
     },
     {
-      "clip": "clip-002.mp4",
-      "start": 1,
-      "duration": 4,
-      "overlay": "KRATKA ČINJENICA"
+      "clip": "grasstrack-1931.mp4",
+      "start": 18,
+      "duration": 5,
+      "overlay": "SPEEDWAY 1931. GODINE"
+    },
+    {
+      "clip": "grasstrack-1931.mp4",
+      "start": 42,
+      "duration": 5,
+      "overlay": "POVIJEST JE BRŽA NEGO ŠTO MISLIŠ"
     }
   ]
 }
