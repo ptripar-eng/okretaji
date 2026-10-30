@@ -45,9 +45,6 @@
   };
   context.append(el("p","",explain[item.c]||"Vijest je potrebno pratiti u širem kontekstu i provjeravati kako se razvija."));
   root.append(context);
-  const follow=el("section","panel");follow.append(el("h2","","Što dalje pratiti"));
-  follow.append(el("p","","Pratit ćemo službene objave, rezultate i dodatne informacije. Ako se pojave nove potvrđene činjenice, članak će biti ažuriran. Podatke koji još nisu potvrđeni nećemo predstavljati kao činjenice."));
-  root.append(follow);
   const source=el("section","panel");source.append(el("h2","","Izvor i urednička napomena"));
   const p=el("p","");p.append("Izvorna objava: ");const a=el("a","",item.src||"otvori izvor");a.href=item.u;a.target="_blank";a.rel="noopener noreferrer";p.append(a);source.append(p);
   source.append(el("p","notice","Ovo je izvorni urednički sažetak Okretaja, a ne reprodukcija izvornog članka. Činjenice se pripisuju navedenom izvoru; dodatna analiza i kontekst jasno su odvojeni od potvrđenih informacija."));
