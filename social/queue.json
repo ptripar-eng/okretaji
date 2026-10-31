@@ -33,6 +33,69 @@
       "status": "draft",
       "category": "moto",
       "summary": "Novi roadster s paralelnim dvocilindrašem od 500 cm³, oko 48 KS i modernom elektronikom cilja A2 kategoriju."
+    },
+    {
+      "article": "motogp-sepang-acosta-sprint-alex-marquez-pole-2026.html",
+      "slug": "motogp-sepang-acosta-sprint-alex-marquez-pole-2026",
+      "title": "Acosta slavio u sprintu, Alex Márquez osvojio pole na Sepangu",
+      "category": "motogp",
+      "summary": "Alex Márquez osvojio je pole position, a Pedro Acosta pobijedio u sprintu ispred Marca Márqueza i Marca Bezzecchija.",
+      "facebook": "BRAĆA MÁRQUEZ NA VRHU, A ACOSTA UZIMA SPRINT! 🏁\n\nAlex Márquez osvojio je pole position u Sepangu, samo 0,070 sekundi ispred brata Marca. U sprintu je Alex pao iz vodstva, a Pedro Acosta iskoristio priliku i pobijedio ispred Marca Márqueza i Marca Bezzecchija.\n\n#MotoGP #Sepang #Okretaji",
+      "instagram": "ACOSTA SLAVIO U SPRINTU, A ALEX MÁRQUEZ OSVOJIO POLE! 🏁\n\nSubota u Sepangu donijela je preokret: Alex je pao iz vodstva, a Acosta slavio ispred Marca Márqueza i Bezzecchija. Marc je povećao prednost u prvenstvu na 19 bodova.\n\n#MotoGP #Sepang #AlexMarquez #MarcMarquez #PedroAcosta #Okretaji",
+      "approved": false,
+      "status": "published",
+      "published_to": {
+        "facebook": {
+          "id": "1430056876857240_122095893813539294",
+          "at": "2026-10-31T18:29:08+01:00"
+        },
+        "instagram": {
+          "id": "18096083768652236",
+          "at": "2026-10-31T18:29:08+01:00"
+        }
+      }
+    },
+    {
+      "article": "f1-kimi-antonelli-meksiko-naslov-2026.html",
+      "slug": "f1-kimi-antonelli-meksiko-naslov-2026",
+      "title": "Antonelli u Meksiku može osigurati naslov, Ferrari zasad najbrži",
+      "category": "f1",
+      "summary": "Dva boda dijele Kimija Antonellija od naslova, dok je Charles Leclerc bio najbrži u oba petkova treninga.",
+      "facebook": "ANTONELLI JE BRZ, ALI FERRARI JE ZASAD NAJBRŽI U MEKSIKU 🇲🇽\n\nCharles Leclerc završio je oba petka treninga na prvom mjestu. Kimi Antonelli bio je drugi u FP1, a četvrti u FP2. Za naslov mu trebaju još dva boda.\n\n#F1 #MexicoGP #KimiAntonelli #Okretaji",
+      "instagram": "ANTONELLI JE NA DVA BODA OD NASLOVA! 🇮🇹\n\nKimi Antonelli u Meksiku može postati najmlađi svjetski prvak Formule 1. Petak je pripao Ferrariju: Charles Leclerc bio je najbrži u oba treninga.\n\n#F1 #Formula1 #KimiAntonelli #MexicoGP #Okretaji",
+      "approved": false,
+      "status": "published",
+      "published_to": {
+        "facebook": {
+          "id": "1430056876857240_122095893861539294",
+          "at": "2026-10-31T18:29:18+01:00"
+        },
+        "instagram": {
+          "id": "18121484075072505",
+          "at": "2026-10-31T18:29:18+01:00"
+        }
+      }
+    },
+    {
+      "article": "zasto-je-meksiko-poseban-za-f1-visina-aerodinamika-2026.html",
+      "slug": "zasto-je-meksiko-poseban-za-f1-visina-aerodinamika-2026",
+      "title": "Zašto je Meksiko tehnički izazov za bolide Formule 1?",
+      "category": "tech",
+      "summary": "Rjeđi zrak na više od 2200 metara mijenja aerodinamički potisak, otpor, hlađenje i rad turbopunjača.",
+      "facebook": "ZAŠTO JE MEKSIKO JEDNA OD NAJVEĆIH AERODINAMIČKIH ZAGONETKI F1? 🌬️\n\nStaza Hermanos Rodríguez nalazi se na oko 2.250 metara nadmorske visine. Rjeđi zrak smanjuje potisak i otežava hlađenje, dok turbopunjači rade intenzivnije.\n\n#F1 #MexicoGP #Tehnika #Okretaji",
+      "instagram": "ZAŠTO JE MEKSIKO TEHNIČKI IZAZOV ZA F1? 🌬️\n\nRjeđi zrak na više od 2.200 metara smanjuje aerodinamički potisak i otpor, otežava hlađenje i mijenja rad turbopunjača.\n\n#F1 #MexicoGP #Aerodinamika #Tehnika #Okretaji",
+      "approved": false,
+      "status": "published",
+      "published_to": {
+        "facebook": {
+          "id": "1430056876857240_122095893939539294",
+          "at": "2026-10-31T18:29:23+01:00"
+        },
+        "instagram": {
+          "id": "18118424341823166",
+          "at": "2026-10-31T18:29:23+01:00"
+        }
+      }
     }
   ]
 }
