@@ -664,6 +664,9 @@ const EDITORIAL = [
   {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Casey_Stoner_2010_TT_Assen.jpg?width=1400",alt:"Casey Stoner na Ducatiju tijekom TT Assena 2010.",credit:"Morten Jensen / Wikimedia Commons, CC BY 2.0",link:"https://commons.wikimedia.org/wiki/File:Casey_Stoner_2010_TT_Assen.jpg"},
   {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Marc_M%C3%A1rquez_2015_Misano_2.jpeg?width=1400",alt:"Marc Márquez na Repsol Hondi tijekom VN San Marina 2015.",credit:"Box Repsol / Wikimedia Commons, CC BY 2.0",link:"https://commons.wikimedia.org/wiki/File:Marc_M%C3%A1rquez_2015_Misano_2.jpeg"}
  ]},
+ {t:"Acosta slavio u sprintu, Alex Márquez osvojio pole na Sepangu",s:"Alex Márquez bio je najbrži u kvalifikacijama, a Pedro Acosta pobijedio je u kišnom sprintu ispred Marca Márqueza.",href:"motogp-sepang-acosta-sprint-alex-marquez-pole-2026.html",tag:"MOTOGP · VN MALEZIJE",images:[]},
+ {t:"Antonelli u Meksiku može osigurati naslov, Ferrari zasad najbrži",s:"Dva boda dijele Kimija Antonellija od naslova, ali Charles Leclerc bio je najbrži na oba petkova treninga.",href:"f1-kimi-antonelli-meksiko-naslov-2026.html",tag:"FORMULA 1 · BORBA ZA NASLOV",images:[]},
+ {t:"Zašto je Meksiko tehnički izazov za bolide Formule 1?",s:"Rjeđi zrak na više od 2200 metara mijenja aerodinamiku, hlađenje i rad turbopunjača.",href:"zasto-je-meksiko-poseban-za-f1-visina-aerodinamika-2026.html",tag:"F1 · TEHNIKA",images:[]},
  {t:"Moto Guzzi The Trip: novi 500-kubični roadster za A2 kategoriju",s:"Moto Guzzi širi ponudu novim roadsterom s paralelnim dvocilindrašem, oko 48 KS i naglaskom na pristupačnu svakodnevnu vožnju.",href:"moto-guzzi-the-trip.html",tag:"MOTOCIKLI · NOVI MODEL",images:[]},
  {t:"Pucanj u nogu Europske unije: nuklearke, mreža i industrija",s:"Je li Europa prebrzo odustala od nuklearne energije? Uspoređujemo emisije, elektroenergetske mreže i rizike za industrijsku konkurentnost.",href:"pucanj-u-nogu-europske-unije-nuklearne-elektrane.html",tag:"ENERGIJA · ANALIZA",images:[]}
 ];
@@ -691,8 +694,9 @@ function renderNews(){
     const card=el("article","card");
     const ph=photo(n,false); card.append(ph); card.querySelector(".ph").append(plate(n));
     const b=el("div","body");
-    const h=el("h3"); const read=el("a",null,n.t); read.href="clanak.html?u="+encodeURIComponent(n.u); h.append(read);
-    b.append(el("div","dt",fmt(n.date)), h, el("p","summary",n.s)); const more=el("a","read-more","Pročitaj članak →"); more.href="clanak.html?u="+encodeURIComponent(n.u); b.append(more);
+    const articleHref=n.article||("clanak.html?u="+encodeURIComponent(n.u));
+    const h=el("h3"); const read=el("a",null,n.t); read.href=articleHref; h.append(read);
+    b.append(el("div","dt",fmt(n.date)), h, el("p","summary",n.s)); const more=el("a","read-more","Pročitaj članak →"); more.href=articleHref; b.append(more);
     b.append(srcLine(n));
     if(n.img){const cr=el("div","credit");cr.append("Foto: ");const ca=el("a",null,n.img.by);ca.href=n.img.link||n.img.src;ca.target="_blank";ca.rel="noopener";cr.append(ca,", "+n.img.lic+" (ilustracija)");b.append(cr);}
     card.append(b); list.append(card);
