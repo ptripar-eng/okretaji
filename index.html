@@ -611,12 +611,12 @@ function attachPhoto(n,box){
   const apply=(img)=>{
     if(!img||!img.src)return;
     n.img=img;
-    const im=new Image();im.loading="lazy";im.decoding="async";im.alt="Ilustrativna fotografija: "+(n.img_q||n.t);
+    const im=new Image();im.loading="lazy";im.decoding="async";im.alt="Fotografija: "+(n.img_q||n.t);
     im.onerror=()=>{im.remove();box.classList.add("fallback");box.appendChild(el("span","fb",cat(n).short));};
     im.src=img.src;box.innerHTML="";box.classList.remove("fallback");box.appendChild(im);
     const credit=el("div","credit");
     credit.append("Foto: ");
-    const a=el("a",null,img.by||"autor");a.href=img.link||img.src;a.target="_blank";a.rel="noopener noreferrer";credit.append(a,", "+(img.lic||"licenca navedena na izvoru")+" · ilustracija");
+    const a=el("a",null,img.by||"autor");a.href=img.link||img.src;a.target="_blank";a.rel="noopener noreferrer";credit.append(a,", "+(img.lic||"licenca navedena na izvoru")+(img.archival?" · arhivska fotografija":" · fotografija"));
     box.appendChild(credit);
   };
   if(cached){apply(cached);return;}
@@ -641,7 +641,7 @@ function photo(n,withCredit){
   const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675"><rect width="1200" height="675" fill="'+bg+'"/><path d="M0 520 L1200 300 L1200 675 L0 675Z" fill="#F05A1A"/><path d="M0 565 L1200 345" stroke="#EAF3F8" stroke-width="9" opacity=".8"/><circle cx="875" cy="270" r="145" fill="none" stroke="#EAF3F8" stroke-width="18" opacity=".22"/><circle cx="875" cy="270" r="90" fill="none" stroke="#EAF3F8" stroke-width="8" opacity=".25"/><text x="68" y="150" fill="#EAF3F8" font-family="Arial,sans-serif" font-weight="900" font-size="42" letter-spacing="10">OKRETAJI</text><text x="65" y="440" fill="#FFFFFF" font-family="Arial,sans-serif" font-weight="900" font-size="94">'+category+'</text><text x="70" y="490" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="25" opacity=".9">AUTO · MOTO · TEHNIKA · ENERGIJA</text></svg>';
   const fallback = "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg);
   const addImage=(src,credit)=>{
-    const im=new Image(); im.loading="lazy"; im.decoding="async"; im.alt="Ilustrativna fotografija: "+(n.img_q||n.t); im.src=src;
+    const im=new Image(); im.loading="lazy"; im.decoding="async"; im.alt="Fotografija: "+(n.img_q||n.t); im.src=src;
     im.onerror=()=>{im.remove();box.classList.add("fallback");box.appendChild(el("span","fb",c.short));};
     box.appendChild(im);
     if(withCredit&&credit){const cr=el("div","credit");cr.textContent=credit;frag.appendChild(cr);}
