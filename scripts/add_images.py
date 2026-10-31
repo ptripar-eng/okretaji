@@ -80,6 +80,8 @@ def search_image(query, used_ids, used_sources):
                 "by": creator,
                 "lic": str(lic).upper().replace("CC", "CC "),
                 "link": link,
+                "width": int(x.get("width") or 0),
+                "height": int(x.get("height") or 0),
                 "illustrative": True,
                 "match_terms": matched,
             }
