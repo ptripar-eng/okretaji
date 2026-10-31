@@ -1,6 +1,81 @@
 {
- "updated": "2026-10-31T12:43+00:00",
+ "updated": "2026-10-31T17:42+00:00",
  "items": [
+  {
+   "c": "motogp",
+   "src": "Red Bull KTM / MotoGP",
+   "u": "https://press.ktm.com/news-victory-for-acosta-in-malaysian-motogp-sprint-ktm-sportmotorcycle?id=251234&imageid=1000713&l=international&menueid=7311",
+   "date": "2026-10-31T17:35+00:00",
+   "t": "Acosta slavio u sprintu, Alex Márquez osvojio pole na Sepangu",
+   "s": "Pedro Acosta pobijedio je u sprintu VN Malezije ispred Marca Márqueza i Marca Bezzecchija. Alex Márquez ranije je osvojio pole, ali je pao iz vodstva u sprintu.",
+   "summary_version": 3,
+   "hr": true,
+   "article": "motogp-sepang-acosta-sprint-alex-marquez-pole-2026.html",
+   "img": {
+    "id": "commons-alex-marquez-sepang-2025",
+    "src": "https://commons.wikimedia.org/wiki/Special:FilePath/MotoGP_2025_Malaysian_Grand_Prix_-_Gresini_Racing_-_%C3%81lex_M%C3%A1rquez.jpg?width=1600",
+    "by": "Liauzh",
+    "lic": "CC BY-SA 4.0",
+    "link": "https://commons.wikimedia.org/wiki/File:MotoGP_2025_Malaysian_Grand_Prix_-_Gresini_Racing_-_Álex_Márquez.jpg",
+    "illustrative": true,
+    "match_terms": [
+     "Alex",
+     "Marquez",
+     "MotoGP",
+     "Sepang"
+    ]
+   }
+  },
+  {
+   "c": "f1",
+   "src": "FIA / Reuters",
+   "u": "https://www.fia.com/news/f1-leclerc-continues-set-pace-mexico-ahead-norris-and-russell",
+   "date": "2026-10-31T17:34+00:00",
+   "t": "Antonelli u Meksiku može osigurati naslov, Ferrari zasad najbrži",
+   "s": "Kimi Antonelli treba još dva boda za matematičku potvrdu naslova. Charles Leclerc bio je najbrži u oba petkova treninga, dok je Antonelli završio drugi i četvrti.",
+   "summary_version": 3,
+   "hr": true,
+   "article": "f1-kimi-antonelli-meksiko-naslov-2026.html",
+   "img": {
+    "id": "commons-kimi-antonelli-bahrain-2026",
+    "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2026_Bahrain_GP_-_Mercedes_-_Kimi_Antonelli_-_Race.jpg?width=1600",
+    "by": "Liauzh",
+    "lic": "CC BY-SA 4.0",
+    "link": "https://commons.wikimedia.org/wiki/File:2026_Bahrain_GP_-_Mercedes_-_Kimi_Antonelli_-_Race.jpg",
+    "illustrative": true,
+    "match_terms": [
+     "Kimi",
+     "Antonelli",
+     "Mercedes",
+     "F1"
+    ]
+   }
+  },
+  {
+   "c": "tech",
+   "src": "Mercedes-AMG F1",
+   "u": "https://www.mercedesamgf1.com/news/in-pictures-the-best-images-from-mexico-city-2026",
+   "date": "2026-10-31T17:33+00:00",
+   "t": "Zašto je Meksiko tehnički izazov za bolide Formule 1?",
+   "s": "Staza u Mexico Cityju nalazi se na više od 2200 metara nadmorske visine. Rjeđi zrak smanjuje aerodinamički potisak i otežava hlađenje, a turbopunjač mora raditi u zahtjevnijim uvjetima.",
+   "summary_version": 3,
+   "hr": true,
+   "article": "zasto-je-meksiko-poseban-za-f1-visina-aerodinamika-2026.html",
+   "img": {
+    "id": "commons-autodromo-aerial-2025",
+    "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_01.jpg?width=1600",
+    "by": "ProtoplasmaKid",
+    "lic": "CC BY-SA 4.0",
+    "link": "https://commons.wikimedia.org/wiki/File:Vista_aérea_del_Autódromo_Hermanos_Rodríguez_01.jpg",
+    "illustrative": true,
+    "match_terms": [
+     "Autodromo",
+     "Mexico",
+     "F1",
+     "track"
+    ]
+   }
+  },
   {
    "c": "motogp",
    "src": "Motorsport.com",
