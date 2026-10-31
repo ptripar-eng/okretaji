@@ -1,6 +1,126 @@
 {
- "updated": "2026-10-31T05:53+00:00",
+ "updated": "2026-10-31T12:43+00:00",
  "items": [
+  {
+   "c": "motogp",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/i-can-do-much-better-than-this-laments-francesco-bagnaia-after-smashing-windscreen/10870040",
+   "date": "2026-10-31T12:30+00:00",
+   "img_q": "\"I can do much better than this,\" laments Francesco Bagnaia after smashing windscreen",
+   "t": "Bagnaia razočaran nakon incidenta s vjetrobranskim staklom u Maleziji",
+   "s": "Francesco Bagnaia izrazio je veliko nezadovoljstvo tijekom subotnjih kvalifikacija na Velikoj nagradi Malezije. Talijanski vozač je u završnici kvalifikacijskih vožnji udario vjetrobransko staklo na svom motociklu nakon što je umalo izgubio kontrolu.",
+   "orig_t": "\"I can do much better than this,\" laments Francesco Bagnaia after smashing windscreen",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/red-bull-finds-disconnect-in-rb22-in-f1-mexico-gp-practice/10870035",
+   "date": "2026-10-31T12:00+00:00",
+   "img_q": "Red Bull finds ‘disconnect’ in RB22 in F1 Mexico GP practice",
+   "t": "Red Bull uoči VN Meksika traži rješenja za probleme s bolidom",
+   "s": "Nakon slobodnih treninga u Ciudad de Mexicu, u momčadi Red Bulla priznaju da moraju dodatno raditi na prilagodbi bolida. Max Verstappen zauzeo je peto mjesto, a tijekom dana oštetio je bolid u incidentu s Liamom Lawsonom.",
+   "orig_t": "Red Bull finds ‘disconnect’ in RB22 in F1 Mexico GP practice",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "motogp",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/motogp-malaysian-gp-full-starting-grid-after-jorge-martins-withdrawal/10870103",
+   "date": "2026-10-31T11:48+00:00",
+   "img_q": "MotoGP Malaysian GP: Full starting grid after Jorge Martin's withdrawal",
+   "t": "Alex Marquez osvojio pole position za VN Malezije",
+   "s": "Alex Marquez startat će s najbolje startne pozicije na Velikoj nagradi Malezije nakon najbržeg vremena u kvalifikacijama. Uz njega će u prvom redu biti njegov brat Marc Marquez.",
+   "orig_t": "MotoGP Malaysian GP: Full starting grid after Jorge Martin's withdrawal",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "motogp",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/porque-se-ha-disparado-la-tension-entre-motogp-y-sus-pilotos/10870086",
+   "date": "2026-10-31T11:32+00:00",
+   "img_q": "Why tensions between MotoGP and riders have escalated amid Qatar row",
+   "t": "Promijenilo se stajalište vozača MotoGP-a o odlasku u Katar",
+   "s": "Većina vozača MotoGP-a promijenila je mišljenje o putovanju na Veliku nagradu Katara tijekom proteklih nekoliko dana. Dok se tjedan dana ranije većina protivila odlasku, taj se broj znatno smanjio.",
+   "orig_t": "Why tensions between MotoGP and riders have escalated amid Qatar row",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/science/2026/10/seabirds-racing-home-over-the-ocean-can-get-jet-lagged",
+   "date": "2026-10-31T11:15+00:00",
+   "img_q": "Seabirds racing home over the ocean can get jet-lagged",
+   "t": "Morske ptice koje lete preko oceana mogu doživjeti jet-lag",
+   "s": "Nova studija pokazala je da morske ptice zovoji patuljasti tijekom dugih letova preko oceana mogu poremetiti svoj unutarnji sat. Taj poremećaj utječe na njihovo kretanje jer se pri navigaciji oslanjaju na položaj Sunca.",
+   "orig_t": "Seabirds racing home over the ocean can get jet-lagged",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/science/2026/10/the-fda-wants-to-pull-its-approval-of-a-drug-its-not-so-easy",
+   "date": "2026-10-31T11:02+00:00",
+   "img_q": "The FDA wants to pull its approval of a drug. It’s not so easy.",
+   "t": "FDA želi povući odobrenje za lijek Tavneos zbog sumnje u manipulaciju podacima",
+   "s": "Američka agencija za hranu i lijekove predložila je povlačenje lijeka Tavneos s tržišta nakon što su otkriveni dokazi o mogućoj manipulaciji podatcima iz ključnih kliničkih ispitivanja.",
+   "orig_t": "The FDA wants to pull its approval of a drug. It’s not so easy.",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "motogp",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/alex-marquez-considera-operarse-la-proxima-semana-y-no-correr-en-qatar/10870064",
+   "date": "2026-10-31T10:51+00:00",
+   "img_q": "Alex Marquez considering surgery next week, could miss Qatar GP",
+   "t": "Alex Marquez razmatra operaciju ključne kosti",
+   "s": "Vozač Gresinia Alex Marquez razmišlja o ranijem zahvatu na desnoj ključnoj kosti zbog kojeg bi mogao propustiti nadolazeću Veliku nagradu Katara.",
+   "orig_t": "Alex Marquez considering surgery next week, could miss Qatar GP",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/lewis-hamilton-praying-for-ferrari-power-unit-after-mexico-fp2-failure/10870069",
+   "date": "2026-10-31T10:41+00:00",
+   "img_q": "Lewis Hamilton \"praying\" for Ferrari power unit after Mexico FP2 failure",
+   "t": "Hamilton zbog kvara na motoru ranije završio drugi trening u Meksiku",
+   "s": "Lewis Hamilton morao je prijevremeno završiti drugi slobodni trening u Meksiku zbog iznenadnog gubitka snage na pogonskoj jedinici. Sedmerostruki svjetski prvak nada se popravku kvara uoči nastavka vikenda.",
+   "orig_t": "Lewis Hamilton \"praying\" for Ferrari power unit after Mexico FP2 failure",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/f1-fans-defend-isack-hadjar-after-paddock-selfie-row-leads-to-fia-summons/10870067",
+   "date": "2026-10-31T10:34+00:00",
+   "img_q": "F1 fans rush to defend Isack Hadjar after controversial Mexican GP incident",
+   "t": "Navijači brane Isacka Hadjara nakon incidenta na VN Meksika",
+   "s": "Pobornici vozača Formule 1 Isacka Hadjara stali su u njegovu obranu nakon što je pozvan pred suce zbog navodnog neprimjerenog ponašanja tijekom vikenda za Veliku nagradu Meksika. Snimka incidenta brzo se proširila društvenim mrežama.",
+   "orig_t": "F1 fans rush to defend Isack Hadjar after controversial Mexican GP incident",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/isack-hadjar-summoned-to-mexico-gp-stewards-for-misconduct-in-f1-paddock/10870033",
+   "date": "2026-10-31T09:40+00:00",
+   "img_q": "Isack Hadjar summoned to Mexico GP stewards for \"misconduct\" in F1 paddock",
+   "t": "Isack Hadjar pozvan pred suce zbog incidenta u boksu",
+   "s": "Vozač momčadi Red Bull Isack Hadjar pozvan je na razgovor kod sudaca Velike nagrade Meksika zbog navodnog neprimjerenog ponašanja u boksu nakon slobodnog treninga.",
+   "orig_t": "Isack Hadjar summoned to Mexico GP stewards for \"misconduct\" in F1 paddock",
+   "summary_version": 3,
+   "hr": true
+  },
   {
    "c": "motogp",
    "src": "Motorsport.com",
@@ -254,30 +374,6 @@
    "hr": true
   },
   {
-   "c": "energy",
-   "src": "Electrek",
-   "u": "https://electrek.co/2026/10/30/byd-reveals-flashy-new-feature-upcoming-luxury-ev",
-   "date": "2026-10-30T20:19+00:00",
-   "img_q": "BYD reveals a flashy new feature on its upcoming luxury EV",
-   "t": "BYD predstavio luksuzni model Yangwang Altior s posebnim vratima",
-   "s": "Marka Yangwang najavila je svoju novu luksuznu električnu limuzinu Altior koja se ističe vratima s otvaranjem gotovo 90 stupnjeva i maskom inspiriranom draguljima. Očekuje se da će model imati svoju globalnu premijeru u Ujedinjenim Arapskim Emiratima.",
-   "orig_t": "BYD reveals a flashy new feature on its upcoming luxury EV",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "tech",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/health/2026/10/over-25-of-people-lie-to-get-antibiotics-and-their-lies-arent-even-good",
-   "date": "2026-10-30T20:17+00:00",
-   "img_q": "Over 25% of people lie to get antibiotics—and their lies aren't even good",
-   "t": "Više od četvrtine pacijenata laže liječnicima kako bi dobilo antibiotike",
-   "s": "Istraživanje je pokazalo da mnogi pacijenti lažno prikazuju simptome prehlada i viroza kako bi došli do recepata za antibiotike, iako oni ne liječe virusne infekcije. Ipak, ti su postupci u većini slučajeva bili uspješni kod liječnika.",
-   "orig_t": "Over 25% of people lie to get antibiotics—and their lies aren't even good",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
    "c": "auto",
    "src": "Motor1",
    "u": "https://www.motor1.com/news/813942/general-motors-privacy-settlement-36-states",
@@ -290,54 +386,6 @@
    "hr": true
   },
   {
-   "c": "tech",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far",
-   "date": "2026-10-30T19:30+00:00",
-   "img_q": "Basically no one is using AI agents for their DoorDash orders",
-   "t": "Korisnici rijetko koriste umjetnu inteligenciju za naručivanje hrane putem aplikacije DoorDash",
-   "s": "Izvršni direktor DoorDasha Tony Xu potvrdio je da umjetna inteligencija generira tek zanemariv broj narudžbi na toj platformi. Iako tvrtka nedavno uvela novi konektor, korisnici jednostavne zadatke poput naručivanja hrane i dalje obavljaju izravno.",
-   "orig_t": "Basically no one is using AI agents for their DoorDash orders",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "energy",
-   "src": "Electrek",
-   "u": "https://electrek.co/2026/10/30/podcast-rivian-earnings-waymo-partners-with-toyota-ford-bets-on-v2h-for-fathom-and-more",
-   "date": "2026-10-30T19:30+00:00",
-   "img_q": "Podcast: Rivian earnings, Waymo partners with Toyota, Ford bets on V2H for Fathom, and more",
-   "t": "Novi podcast donosi vijesti o Rivianu, Waymu i Fordu",
-   "s": "Najnovija epizoda podcasta posvećena je aktualnim vijestima iz područja održivog prometa i energetike. Raspravlja se o financijskim rezultatima Riviana, suradnji Wayma i Toyote te Fordovim planovima vezanim uz električna vozila.",
-   "orig_t": "Podcast: Rivian earnings, Waymo partners with Toyota, Ford bets on V2H for Fathom, and more",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "energy",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/30/fuel-from-bamboo-costs-just-2-75-per-gallon",
-   "date": "2026-10-30T19:04+00:00",
-   "img_q": "Fuel From Bamboo Costs Just $2.75 Per Gallon",
-   "t": "Istraživanje pokazuje: gorivo od bambusa moglo bi stajati 2,75 dolara po galonu",
-   "s": "Istraživači s instituta Worcester Polytechnic Institute navode kako bi gorivo proizvedeno od bambusa moglo biti isplativo uz cijenu od 2,75 dolara po galonu te imati znatno nižu emisiju štetnih plinova u usporedbi s dizelom.",
-   "orig_t": "Fuel From Bamboo Costs Just $2.75 Per Gallon",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "motogp",
-   "src": "Crash.net",
-   "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSDRkZkpEM2tMeWgxcWVDYXRZVG5HOWhOVnZQcjRqbHNtM093b3loc1RHMWlxOEhUenBSNllDNE1NejVLekt6YklJZDVFTXBuWlRha25oWkZWWDNNS2JaMmh3X3o5WnpLWTdyQnJPT1VTcmktTzJSeFAwTDdnWllaRVAzOXlwVUEtR1BhTWZVZVZKVHhtczZNbDhxQW5pTVZqQXVUQw?oc=5",
-   "date": "2026-10-30T18:53+00:00",
-   "img_q": "PICS: Marco Bezzecchi debuts new Aprilia aero at Sepang MotoGP - Crash.net",
-   "t": "Marco Bezzecchi isprobao novu Aprilijinu aerodinamiku na Sepangu",
-   "s": "Vozač Marco Bezzecchi prvi je put isprobao novi aerodinamički paket motocikla Aprilia tijekom testiranja na stazi Sepang.",
-   "orig_t": "PICS: Marco Bezzecchi debuts new Aprilia aero at Sepang MotoGP - Crash.net",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
    "c": "moto",
    "src": "RideApart.com",
    "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPLWg4T0ZHNVdKOFBHVnBHT044MVRzTWs4T2lPa0NESmw2YUhKc0szVkJBUW94LVFZdHRlVzU3WUJseXBqRkRDZW9QV3Z5MlNUV1BES1llMFFEeGs0NUQ4TlZOSFgwZkNsRGhkT09TNC1xd0RjUUdKNlVvdlFGWkh6bVUtZ3RNbFFob1Vpa0Z6V0hyWGpCeVFnaXZseUV0Zw?oc=5",
@@ -346,30 +394,6 @@
    "t": "Izvršni direktor Harley-Davidsona poručio da marka neće spašavati LiveWire",
    "s": "Izvršni direktor Harley-Davidsona izjavio je kako tvrtka neće spašavati svoj električni brend LiveWire. Ova odluka može utjecati na daljnji razvoj i poslovanje spomenutog proizvođača električnih motocikala.",
    "orig_t": "Harley-Davidson Isn't Going To Save LiveWire, Says CEO - RideApart.com",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "tech",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/science/2026/10/rare-meteorite-from-mars-gives-us-a-view-into-its-ancient-crust",
-   "date": "2026-10-30T18:13+00:00",
-   "img_q": "Rare meteorite from Mars gives us a view into its ancient crust",
-   "t": "Rijedak meteorit s Marsa otkriva podatke o njegovoj drevnoj kori",
-   "s": "Meteorit pronađen u Sahari rijedak je primjerak drevne marsovske kore. Otkriće omogućuje bolji uvid u prošlost i sastav Crvenog planeta.",
-   "orig_t": "Rare meteorite from Mars gives us a view into its ancient crust",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "energy",
-   "src": "Electrek",
-   "u": "https://electrek.co/2026/10/30/tesla-referral-program-fsd-car-rewards-dropped",
-   "date": "2026-10-30T18:02+00:00",
-   "img_q": "Tesla drops car referral rewards, now pays owners in FSD for referrals",
-   "t": "Tesla ukinula novčane nagrade za preporuke i uvela probni period sustava FSD",
-   "s": "Tesla je u Sjedinjenim Američkim Državama pokrenula novi program preporuka koji kupcima i vlasnicima umjesto prodajnih nagrada donosi besplatno korištenje sustava Full Self-Driving. Kupnja novog vozila više ne donosi klasične pogodnosti kroz preporuke.",
-   "orig_t": "Tesla drops car referral rewards, now pays owners in FSD for referrals",
    "summary_version": 3,
    "hr": true
   },
@@ -422,18 +446,6 @@
    "hr": true
   },
   {
-   "c": "motogp",
-   "src": "Crash.net",
-   "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYW5Cdmg1QmlENkNEdUEzZGNDTFlScmllZ0pYNTl0RExIU0M3ZkpoSHhYd1FoRUFocjk0ZUFhOG5RTWRQb0VUblhaQktMRFpxak9LOF9fUmctai1WQnpwbUZSbHd1WVZpc0JiVVc3MEo4YlhzNFlna2V1UWhGa1dlMllnYU9rcFRMRU1IWVlSRGlxU1l6WlVsNVN4Yi1sZE5mQXluaGpkR3hxT3kxSHVKSXRIZ1hvTVIxdFYw?oc=5",
-   "date": "2026-10-30T14:19+00:00",
-   "img_q": "Maverick Vinales could sacrifice Sepang MotoGP Sprint despite strong Friday speed - Crash.net",
-   "t": "Maverick Vinales mogao bi propustiti sprint utrku u Sepangu unatoč dobroj brzini",
-   "s": "Vozač Maverick Vinales razmatra mogućnost preskakanja sprint utrke na stazi Sepang. Ovu odluku razmatra unatoč dobroj brzini koju je pokazao tijekom petodnevnih treninga.",
-   "orig_t": "Maverick Vinales could sacrifice Sepang MotoGP Sprint despite strong Friday speed - Crash.net",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
    "c": "auto",
    "src": "Motor1",
    "u": "https://www.motor1.com/news/813897/honda-ridgeline-designer-explains-truck",
@@ -442,30 +454,6 @@
    "t": "Honda nikada nije željela da Ridgeline bude klasični kamionet",
    "s": "Dizajner Don Herner prisjetio se kako se koncept usmjeren na prostranost unutrašnjosti SUV-a razvio u Hondin nekonvencionalan kamionet Ridgeline.",
    "orig_t": "Honda Never Wanted The Ridgeline To Be A Traditional Pickup, Says Designer",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "energy",
-   "src": "Electrek",
-   "u": "https://electrek.co/2026/10/30/wheel-e-podcast-new-amflow-trek-e-bikes-also-runs-out-of-charge-more",
-   "date": "2026-10-30T12:51+00:00",
-   "img_q": "Wheel-e Podcast: New Amflow, Trek e-bikes, ALSO runs out of charge, more",
-   "t": "Novi podcast o električnim biciklima donosi vijesti o modelima Amflow i Trek",
-   "s": "Najnovija epizoda podcasta Wheel-E donosi pregled najvažnijih vijesti iz svijeta električnih bicikala i netradicionalnih vozila, uključujući nove modele marki Amflow i Trek te Boschov motor.",
-   "orig_t": "Wheel-e Podcast: New Amflow, Trek e-bikes, ALSO runs out of charge, more",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "energy",
-   "src": "Electrek",
-   "u": "https://electrek.co/2026/10/30/jasion-poki-review-the-electric-minibike-that-packs-heavy-duty-fun",
-   "date": "2026-10-30T12:42+00:00",
-   "img_q": "Jasion Poki review: The Electric Minibike that packs heavy-duty fun",
-   "t": "Recenzija električnog minibicikla Jasion Poki",
-   "s": "Recenzija električnog minibicikla Jasion Poki ističe veliku snagu, snažan okretni moment i ugrađeni zvučnik, ali i upozorava na veliku težinu i rizike pri visokim brzinama.",
-   "orig_t": "Jasion Poki review: The Electric Minibike that packs heavy-duty fun",
    "summary_version": 3,
    "hr": true
   },
@@ -496,24 +484,24 @@
   {
    "c": "reli",
    "src": "DirtFish",
-   "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE53YkFHQTNORFVDWHBud2JTNDBfOVM2VWh3X0phQlBsdFdraWI3eEpwV1NPT0JuejlUYnhpeHV5d2JsSndMSDZnS3RQVzBHUm9vT0t0LS1tMEdZUFlNdi1KSENTY2R5ZTRPelBicEpOWlQ1RXc?oc=5",
-   "date": "2026-10-30T09:23+00:00",
-   "img_q": "Fiorio Cup to commemorate Alex Fiorio - DirtFish",
-   "t": "Fiorio Cup posvećen Alexu Fioriju",
-   "s": "Nadolazeće natjecanje Fiorio Cup bit će posvećeno Alexu Fioriju, čime se odaje počast njegovom nasljeđu i doprinosu automobilskom sportu, navodi se u objavi.",
-   "orig_t": "Fiorio Cup to commemorate Alex Fiorio - DirtFish",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "reli",
-   "src": "DirtFish",
    "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYnNzTTNoMlFzVlVHUTZfZGRkLXBHWXFkRW1DOW54U2ZPWUt4SnlFMW8yb2pNb20wUDlvclI2SVZoUWRVQlE3UHcwR2Uwd2t6Qy1ESWxvcGtXU1ozZ3FNWDIzbko3N1RZNUZuQXdZbkl0V0xILUpPeDM1a3VMclpJLTl2TQ?oc=5",
    "date": "2026-10-29T08:21+00:00",
    "img_q": "McErlean working out his best option for 2027 - DirtFish",
    "t": "McErlean razmatra najbolje opcije za nastavak karijere 2027. godine",
    "s": "Vozač Josh McErlean trenutno procjenjuje svoje mogućnosti i planira daljnje korake za natjecateljsku sezonu 2027. godine.",
    "orig_t": "McErlean working out his best option for 2027 - DirtFish",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "kaciga",
+   "src": "inkl",
+   "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVTZyTlhOaGdRelJYa1ZPVG9JOHQ0M1BNMzFfeHEwa0VRam5EenNXeEU1MVhqRDExRnlHZ2ZOYlB0MjVyQmNhWEtranFDQ2JDeURVWXlsLXRpVFB2SWRFWlFTR2d3YWZ4OHh5M0hjVWJmLXkwRG90cm1uYUh6UkcxNHI3Yzg0Z2daYVM4SDY0bWZUaDlxSTI3d2tRZE1zeXFmUFhN?oc=5",
+   "date": "2026-10-29T06:30+00:00",
+   "img_q": "Alex Marquez moves to end MotoGP Qatar GP speculation: 'The race is confirmed' - inkl",
+   "t": "Alex Marquez stao na kraj nagađanjima oko VN Katara",
+   "s": "Vozač Alex Marquez potvrdio je kako će se utrka za Veliku nagradu Katara sigurno održati, čime je prekinuo glasine o mogućem otkazivanju.",
+   "orig_t": "Alex Marquez moves to end MotoGP Qatar GP speculation: 'The race is confirmed' - inkl",
    "summary_version": 3,
    "hr": true
   },
@@ -538,6 +526,18 @@
    "t": "Rally US otkriva detalje uoči povratka WRC-a 2027. godine",
    "s": "Knoxville je potvrđen kao grad domaćin povratka Svjetskog prvenstva u reliju u Sjedinjene Američke Države. Makadamski reli održat će se kao jedanaesta runda prvenstva krajem kolovoza 2027. godine.",
    "orig_t": "Rally US reveals further details ahead of WRC 2027 return",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "reli",
+   "src": "DirtFish",
+   "u": "https://news.google.com/rss/articles/CBMiekFVX3lxTE81Ym11NXE2UThfTGxjZVdzdEo1ZmpKSWF5bTJHYmE5WmtBN0dneTltSlMtRDNYanFYSFJ3TVltaTREd2tuZ09uM2VlTmZGWjdYUXlTak1jaWFreGxsYzlSV3pYTGdfM2hEY0pXVENEMGVRWFNSQloxalRR?oc=5",
+   "date": "2026-10-27T15:07+00:00",
+   "img_q": "What we know about WRC Rally US so far - DirtFish",
+   "t": "Što je do sada poznato o reliju WRC SAD",
+   "s": "Dostupne su prve informacije o predstojećem WRC reliju u Sjedinjenim Američkim Državama. Iako detalji još nisu u potpunosti razjašnjeni, ovaj događaj privlači pozornost ljubitelja autosporta.",
+   "orig_t": "What we know about WRC Rally US so far - DirtFish",
    "summary_version": 3,
    "hr": true
   }
