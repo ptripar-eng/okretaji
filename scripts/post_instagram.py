@@ -78,12 +78,14 @@ def caption(article):
     category = str(article.get("c") or "").lower()
     source = clean(article.get("src")) or "izvor"
     source_url = str(article.get("u") or "").strip()
+    article_path = str(article.get("article") or "").strip().lstrip("/")
+    article_url = f"https://okretaji.com/{article_path}" if article_path else "https://okretaji.com/#novosti"
     image = article.get("img") or {}
     photo_credit = f"📷 Foto: {image.get('by')} · {image.get('lic')} · {image.get('link')}"
     return (
         f"🏁 {clean(article.get('t'))}\n\n{clean(article.get('s'))}\n\n"
         "Pratite @okretaji za auto-moto sport, tehnologiju i energiju. "
-        "Sve vijesti s poveznicama na izvore: okretaji.com (poveznica u profilu).\n\n"
+        f"Cijeli članak: {article_url} (poveznica je i u opisu profila).\n\n"
         f"Izvor: {source} · {source_url}\n"
         f"{photo_credit}\n\n{TAGS.get(category, '#Okretaji #AutoMoto')} #Okretaji"
     )[:2200]
