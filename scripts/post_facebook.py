@@ -83,7 +83,7 @@ def usable_photo(article):
     link = str(image.get("link") or "").strip()
     return (
         src.startswith("https://") and creator and link.startswith("https://")
-        and (license_name.startswith("CC") or "PUBLIC DOMAIN" in license_name)
+        and (license_name.startswith("CC") or license_name in {"BY", "BY-SA", "BY-ND", "CC0", "PDM", "PUBLIC DOMAIN"})
     )
 
 
