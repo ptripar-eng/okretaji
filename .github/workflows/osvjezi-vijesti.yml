@@ -58,7 +58,7 @@ jobs:
         continue-on-error: true
         env:
           # Objavljuj uživo samo kad su oba Meta secreta postavljena; inače ostani u DRY_RUN.
-          DRY_RUN: '1'
+          DRY_RUN: ${{ secrets.FB_PAGE_ID != '' && secrets.FB_PAGE_TOKEN != '' && '0' || '1' }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
       - name: Instagram (uživo kad je varijabla IG_LIVE = 1)
@@ -66,7 +66,7 @@ jobs:
         continue-on-error: true
         env:
           # Instagram koristi isti Meta token kao Facebook; IG_USER_ID se dohvaća sa stranice.
-          IG_DRY_RUN: '1'
+          IG_DRY_RUN: ${{ secrets.FB_PAGE_ID != '' && secrets.FB_PAGE_TOKEN != '' && '0' || '1' }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
