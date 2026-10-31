@@ -75,6 +75,18 @@ def read_json(path, default):
         return default
 
 
+def usable_photo(article):
+    image = article.get("img") or {}
+    src = str(image.get("src") or "").strip()
+    creator = str(image.get("by") or "").strip()
+    license_name = str(image.get("lic") or "").strip().upper()
+    link = str(image.get("link") or "").strip()
+    return (
+        src.startswith("https://") and creator and link.startswith("https://")
+        and (license_name.startswith("CC") or "PUBLIC DOMAIN" in license_name)
+    )
+
+
 def make_message(article):
     category = str(article.get("c") or "").lower()
     meta = CATEGORY.get(category, {
@@ -86,12 +98,15 @@ def make_message(article):
     summary = " ".join(str(article.get("s") or "").split()).strip()
     source = str(article.get("src") or "izvor").strip()
     source_url = (article.get("u") or "").strip()
+    image = article.get("img") or {}
+    photo_credit = f"📷 Foto: {image.get('by')} · {image.get('lic')} · {image.get('link')}"
     return (
         f"🏁 {title}\n\n{summary}\n\n"
         f"💬 {meta['question']}\n\n"
         f"👉 {meta['follow']}\n"
         f"🌐 Sve novosti: https://okretaji.com/#novosti\n"
-        f"Izvor: {source} — {source_url}\n\n"
+        f"Izvor: {source} — {source_url}\n"
+        f"{photo_credit}\n\n"
         f"{meta['tag']} #Okretaji"
     )
 
@@ -141,36 +156,20 @@ def resolve_page_token():
 
 
 def publish(article, token):
-    """Objavi fotografiju s brendiranom karticom; bez kartice objavi poveznicu."""
+    """Objavi stvarnu, licenciranu fotografiju uz urednički opis."""
     base = f"https://graph.facebook.com/{API_VERSION}/{PAGE_ID}"
-    try:
-        import tempfile
-        from social_card import make_card
-        card = Path(tempfile.mkdtemp()) / "okretaji-card.jpg"
-        make_card(article["raw"], card)
-    except Exception as exc:  # Pillow ili fontovi nedostaju
-        print("Kartica nije izrađena, objavljujem poveznicu:", type(exc).__name__, exc)
-        return requests.post(
-            f"{base}/feed",
-            data={
-                "message": article["message"],
-                "link": "https://okretaji.com/#novosti",
-                "access_token": token,
-            },
-            timeout=30,
-        )
-    print("Kartica:", card)
-    with open(card, "rb") as fh:
-        return requests.post(
-            f"{base}/photos",
-            data={
-                "caption": article["message"],
-                "published": "true",
-                "access_token": token,
-            },
-            files={"source": ("okretaji-card.jpg", fh, "image/jpeg")},
-            timeout=60,
-        )
+    image = article["raw"].get("img") or {}
+    if not usable_photo(image):
+        raise RuntimeError("Članak nema provjerenu fotografiju s navedenom licencom i autorom.")
+    return requests.post(
+        f"{base}/photos",
+        data={
+            "url": image["src"],
+            "caption": article["message"],
+            "access_token": token,
+        },
+        timeout=60,
+    )
 
 
 def main():
@@ -201,6 +200,8 @@ def main():
         if url in posted_urls or category not in CATEGORY:
             continue
         if article.get("hr") is not True or article.get("summary_version") != 3:
+            continue
+        if not usable_photo(article):
             continue
         candidates.append({
             "url": url,
