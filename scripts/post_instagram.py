@@ -56,15 +56,36 @@ def clean(value):
     return " ".join(str(value or "").split()).strip()
 
 
+def usable_photo(article):
+    image = article.get("img") or {}
+    src = str(image.get("src") or "").strip()
+    creator = str(image.get("by") or "").strip()
+    license_name = str(image.get("lic") or "").strip().upper()
+    link = str(image.get("link") or "").strip()
+    try:
+        width, height = int(image.get("width", 0)), int(image.get("height", 0))
+        ratio = width / height if height else 0
+    except (TypeError, ValueError, ZeroDivisionError):
+        ratio = 0
+    return (
+        src.startswith("https://") and creator and link.startswith("https://")
+        and (license_name.startswith("CC") or "PUBLIC DOMAIN" in license_name)
+        and 0.8 <= ratio <= 1.91
+    )
+
+
 def caption(article):
     category = str(article.get("c") or "").lower()
     source = clean(article.get("src")) or "izvor"
     source_url = str(article.get("u") or "").strip()
+    image = article.get("img") or {}
+    photo_credit = f"📷 Foto: {image.get('by')} · {image.get('lic')} · {image.get('link')}"
     return (
         f"🏁 {clean(article.get('t'))}\n\n{clean(article.get('s'))}\n\n"
         "Pratite @okretaji za auto-moto sport, tehnologiju i energiju. "
         "Sve vijesti s poveznicama na izvore: okretaji.com (poveznica u profilu).\n\n"
-        f"Izvor: {source} · {source_url}\n\n{TAGS.get(category, '#Okretaji #AutoMoto')} #Okretaji"
+        f"Izvor: {source} · {source_url}\n"
+        f"{photo_credit}\n\n{TAGS.get(category, '#Okretaji #AutoMoto')} #Okretaji"
     )[:2200]
 
 
@@ -84,6 +105,8 @@ def choose_article(articles, state, now):
             continue
         if item.get("hr") is not True or item.get("summary_version") != 3:
             continue
+        if not usable_photo(item):
+            continue
         candidates.append(item)
     if not candidates:
         return None, "Nema novog članka za Instagram."
@@ -94,26 +117,6 @@ def choose_article(articles, state, now):
 
 def git(*args):
     return subprocess.run(["git", *args], cwd=ROOT, check=True, capture_output=True, text=True).stdout.strip()
-
-
-def publish_card(article):
-    """Izradi karticu, commitaj je i vrati javni URL vezan uz commit."""
-    from social_card import make_card
-    name = f"{datetime.now(TZ):%Y%m%d-%H%M}-{abs(hash(article['u'])) % 10**8}.jpg"
-    path = make_card(article, CARDS_DIR / name)
-    rel = path.relative_to(ROOT).as_posix()
-    git("add", rel)
-    git("commit", "-m", "Instagram kartica: " + clean(article.get("t"))[:60])
-    git("pull", "--rebase", "--autostash")
-    git("push")
-    sha = git("rev-parse", "HEAD")
-    url = f"https://raw.githubusercontent.com/{REPO}/{sha}/{rel}"
-    for _ in range(10):  # pričekaj da raw poslužitelj vidi novi commit
-        if requests.head(url, timeout=15).status_code == 200:
-            break
-        time.sleep(3)
-    print("Kartica:", url)
-    return url
 
 
 def api_post(endpoint, data):
@@ -180,7 +183,7 @@ def main():
         user_id = (page.get("instagram_business_account") or {}).get("id", "")
         if not user_id:
             raise RuntimeError("Facebook stranica nema povezan Instagram poslovni račun.")
-    image_url = publish_card(article)
+    image_url = article["img"]["src"]
     media_id = publish(user_id, token, image_url, text)
     state.setdefault("items", []).append({
         "url": article["u"],
