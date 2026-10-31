@@ -159,7 +159,7 @@ def publish(article, token):
     """Objavi stvarnu, licenciranu fotografiju uz urednički opis."""
     base = f"https://graph.facebook.com/{API_VERSION}/{PAGE_ID}"
     image = article["raw"].get("img") or {}
-    if not usable_photo(image):
+    if not usable_photo(article["raw"]):
         raise RuntimeError("Članak nema provjerenu fotografiju s navedenom licencom i autorom.")
     return requests.post(
         f"{base}/photos",
