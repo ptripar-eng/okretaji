@@ -98,13 +98,15 @@ def make_message(article):
     summary = " ".join(str(article.get("s") or "").split()).strip()
     source = str(article.get("src") or "izvor").strip()
     source_url = (article.get("u") or "").strip()
+    article_path = str(article.get("article") or "").strip().lstrip("/")
+    article_url = f"https://okretaji.com/{article_path}" if article_path else "https://okretaji.com/#novosti"
     image = article.get("img") or {}
     photo_credit = f"📷 Foto: {image.get('by')} · {image.get('lic')} · {image.get('link')}"
     return (
         f"🏁 {title}\n\n{summary}\n\n"
         f"💬 {meta['question']}\n\n"
         f"👉 {meta['follow']}\n"
-        f"🌐 Sve novosti: https://okretaji.com/#novosti\n"
+        f"🌐 Pročitajte na Okretajima: {article_url}\n"
         f"Izvor: {source} — {source_url}\n"
         f"{photo_credit}\n\n"
         f"{meta['tag']} #Okretaji"
