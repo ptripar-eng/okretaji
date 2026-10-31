@@ -82,7 +82,6 @@ def search_image(query, used_ids, used_sources):
                 "link": link,
                 "width": int(x.get("width") or 0),
                 "height": int(x.get("height") or 0),
-                "illustrative": True,
                 "match_terms": matched,
             }
     except (requests.RequestException, ValueError, TypeError) as e:
@@ -112,7 +111,8 @@ def main():
         current = item.get("img")
         if current:
             valid_terms = set(current.get("match_terms") or [])
-            if (current.get("id") and current.get("src") and len(valid_terms & story_terms) >= 2
+            if (current.get("id") and current.get("src") and current.get("width") and current.get("height")
+                    and len(valid_terms & story_terms) >= 2
                     and current.get("id") not in used_ids and source_key(current.get("src")) not in used_sources):
                 used_ids.add(current["id"])
                 used_sources.add(source_key(current.get("src")))
@@ -126,6 +126,7 @@ def main():
                 story_terms,
             )
             if (cached.get("id") not in used_ids and source_key(cached.get("src")) not in used_sources
+                    and cached.get("width") and cached.get("height")
                     and ok and cached.get("match_terms")):
                 item["img"] = cached
                 used_ids.add(cached["id"])
