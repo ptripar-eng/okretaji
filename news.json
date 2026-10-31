@@ -1,6 +1,102 @@
 {
- "updated": "2026-10-31T17:42+00:00",
+ "updated": "2026-10-31T21:42+00:00",
  "items": [
+  {
+   "c": "f1",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/f1/news/max-verstappen-will-have-no-say-in-2027-racing-bulls-driver-line-up-says-red-bull-boss/10870282",
+   "date": "2026-10-31T21:24+00:00",
+   "img_q": "Max Verstappen will have no say in 2027 Racing Bulls driver line-up, says Red Bull boss",
+   "t": "Laurent Mekies: Max Verstappen neće imati utjecaja na vozačku postavu Racing Bullsa",
+   "s": "Glavni izvršni direktor Red Bull Racinga Laurent Mekies izjavio je da će momčad Racing Bulls samostalno odlučivati o svojim vozačima za 2027. godinu, istaknuvši da Max Verstappen u tome neće imati nikakvu ulogu.",
+   "orig_t": "Max Verstappen will have no say in 2027 Racing Bulls driver line-up, says Red Bull boss",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813939/james-may-drives-slate-truck-video",
+   "date": "2026-10-31T20:00+00:00",
+   "img_q": "James May Drove Slate's Tiny Electric Truck And Says He'd Buy One: Video",
+   "t": "James May vozio maleni električni kamionet marke Slate",
+   "s": "Nakon što je isprobao maleni električni kamionet tvrtke Slate, poznati voditelj James May izjavio je kako bi mogao kupiti jedan takav automobil.",
+   "orig_t": "James May Drove Slate's Tiny Electric Truck And Says He'd Buy One: Video",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "kaciga",
+   "src": "GPblog",
+   "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSE9rT3JDT29TZWYyc3FVcmpZZlBDWGlYUU9lZEctUk1PenA5MTJYcGVyZ3dJZ0lVSjVMWTJCSWFmRmRnNnh4WlpWaGlVX0xQRUhLT1FFdkFzVDFRTXliYmZkaXpTRWxJYTQwR05tZjJKWWo2WmVTcXhiY2ZzZlFwZUxkc0I4cmVHT3NfTExZSQ?oc=5",
+   "date": "2026-10-31T19:33+00:00",
+   "img_q": "'Marc Marquez leads rebellion against MotoGP over Qatar Grand Prix' - GPblog",
+   "t": "Marc Marquez predvodi pobunu u MotoGP-u zbog Velike nagrade Katara",
+   "s": "Vozač Marc Marquez stao je na čelo nezadovoljnih vozača u MotoGP-u. Tema neslaganja s vodstvom prvenstva je Velika nagrada Katara.",
+   "orig_t": "'Marc Marquez leads rebellion against MotoGP over Qatar Grand Prix' - GPblog",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "The Race",
+   "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOX3VTT2d3c09XVWdEQ0NLMGVMWDJkbkVEUEcyWjdxZncwNk82U29NVUREQWJMY3F1UnlKRG1wQjFmUFZscFFGVHpWaDIySjRubVl3RGN2bG5YUkpCbnFYanZiMmo3UFp3STEtWlItNk1LYU9XVFBIdmNVTWZrQlRPVEtZYlU2UQ?oc=5",
+   "date": "2026-10-31T19:02+00:00",
+   "img_q": "F1 2026 Mexican Grand Prix practice results - The Race",
+   "t": "Rezultati slobodnih treninga za Veliku nagradu Meksika Formule 1 2026.",
+   "s": "Dostupni su službeni rezultati slobodnih treninga uoči utrke za Veliku nagradu Meksika Formule 1 u sezoni 2026. godine.",
+   "orig_t": "F1 2026 Mexican Grand Prix practice results - The Race",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "The Race",
+   "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQ1ZqZDFYNjY0NGNhbG1LMTNvVFNKSjVPbWZuNlNPdm5TbG02aU92N1BuRU5PYkJ4a3JGQ0s4a3Q5aUt5VnM0YWZRamFxTVNnRWJJd3ZuczVRZzdwOE1TTThRZDhtUHpBNGVESzh4U0htdFVJbm95QURtZjVmR3ZaQXdzZDE?oc=5",
+   "date": "2026-10-31T18:58+00:00",
+   "img_q": "What happened in F1 Mexican GP final practice - The Race",
+   "t": "Što se dogodilo na posljednjem treningu za Veliku nagradu Meksika u Formuli 1",
+   "s": "Analiza događaja s posljednjeg slobodnog treninga uoči utrke za Veliku nagradu Meksika donosi pregled ključnih trenutaka i stanja na stazi prema izvještaju portala The Race.",
+   "orig_t": "What happened in F1 Mexican GP final practice - The Race",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "f1",
+   "src": "Autosport",
+   "u": "https://www.autosport.com/f1/news/f1-mexico-gp-norris-tops-final-practice-by-0001s-from-antonelli/10870228",
+   "date": "2026-10-31T18:44+00:00",
+   "img_q": "F1 Mexico GP: Norris tops final practice by 0.001s from Antonelli",
+   "t": "Norris najbrži na posljednjem treningu Velike nagrade Meksika",
+   "s": "Aktualni svjetski prvak Lando Norris ostvario je najbolje vrijeme na posljednjem slobodnom treningu uoči utrke za Veliku nagradu Meksika, tijesno nadmašivši vodećeg u prvenstvu Kimija Antonellija na stazi Autodromo Hermanos Rodriguez.",
+   "orig_t": "F1 Mexico GP: Norris tops final practice by 0.001s from Antonelli",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/31/record-demand-catches-some-oems-with-their-pants-down-europe-september-2026",
+   "date": "2026-10-31T18:43+00:00",
+   "img_q": "Record Demand Catches (Some) OEMs with Their Pants Down — Europe September 2026",
+   "t": "Europsko tržište u rujnu zabilježilo rekordni udio električnih automobila",
+   "s": "U europskim je državama tijekom rujna zabilježen rekordni udio potpuno električnih automobila od 31 posto uz 422.000 registracija, čime su ujedno ostvarili najbržu stopu rasta u posljednje tri godine.",
+   "orig_t": "Record Demand Catches (Some) OEMs with Their Pants Down — Europe September 2026",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/31/elon-musks-attack-ads-are-backfiring-as-midterms-near",
+   "date": "2026-10-31T17:54+00:00",
+   "img_q": "Elon Musk’s Attack Ads Are Backfiring As Midterms Near",
+   "t": "Elon Musk donirao milijune za republikance, no njegovi predizborni oglasi izazivaju otpor",
+   "s": "Podaci Američke savezne izborne komisije pokazuju da je Elon Musk donirao stotine milijuna dolara republikanskim političkim skupinama. Njegovi pokušaji utjecaja na izbore putem televizijskih oglasa i objava na društvenim mrežama naišli su na oštre kritike i otpor birača.",
+   "orig_t": "Elon Musk’s Attack Ads Are Backfiring As Midterms Near",
+   "summary_version": 3,
+   "hr": true
+  },
   {
    "c": "motogp",
    "src": "Red Bull KTM / MotoGP",
@@ -10,23 +106,7 @@
    "s": "Pedro Acosta pobijedio je u sprintu VN Malezije ispred Marca Márqueza i Marca Bezzecchija. Alex Márquez ranije je osvojio pole, ali je pao iz vodstva u sprintu.",
    "summary_version": 3,
    "hr": true,
-   "article": "motogp-sepang-acosta-sprint-alex-marquez-pole-2026.html",
-   "img": {
-    "id": "commons-alex-marquez-sepang-2025",
-    "src": "https://commons.wikimedia.org/wiki/Special:FilePath/MotoGP_2025_Malaysian_Grand_Prix_-_Gresini_Racing_-_%C3%81lex_M%C3%A1rquez.jpg?width=1600",
-    "by": "Liauzh",
-    "lic": "CC BY-SA 4.0",
-    "link": "https://commons.wikimedia.org/wiki/File:MotoGP_2025_Malaysian_Grand_Prix_-_Gresini_Racing_-_Álex_Márquez.jpg",
-    "match_terms": [
-     "Alex",
-     "Marquez",
-     "MotoGP",
-     "Sepang"
-    ],
-    "width": 3758,
-    "height": 2506,
-    "archival": true
-   }
+   "article": "motogp-sepang-acosta-sprint-alex-marquez-pole-2026.html"
   },
   {
    "c": "f1",
@@ -37,23 +117,7 @@
    "s": "Kimi Antonelli treba još dva boda za matematičku potvrdu naslova. Charles Leclerc bio je najbrži u oba petkova treninga, dok je Antonelli završio drugi i četvrti.",
    "summary_version": 3,
    "hr": true,
-   "article": "f1-kimi-antonelli-meksiko-naslov-2026.html",
-   "img": {
-    "id": "commons-kimi-antonelli-bahrain-2026",
-    "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2026_Bahrain_GP_-_Mercedes_-_Kimi_Antonelli_-_Race.jpg?width=1600",
-    "by": "Liauzh",
-    "lic": "CC BY-SA 4.0",
-    "link": "https://commons.wikimedia.org/wiki/File:2026_Bahrain_GP_-_Mercedes_-_Kimi_Antonelli_-_Race.jpg",
-    "match_terms": [
-     "Kimi",
-     "Antonelli",
-     "Mercedes",
-     "F1"
-    ],
-    "width": 4138,
-    "height": 2327,
-    "archival": true
-   }
+   "article": "f1-kimi-antonelli-meksiko-naslov-2026.html"
   },
   {
    "c": "tech",
@@ -64,23 +128,103 @@
    "s": "Staza u Mexico Cityju nalazi se na više od 2200 metara nadmorske visine. Rjeđi zrak smanjuje aerodinamički potisak i otežava hlađenje, a turbopunjač mora raditi u zahtjevnijim uvjetima.",
    "summary_version": 3,
    "hr": true,
-   "article": "zasto-je-meksiko-poseban-za-f1-visina-aerodinamika-2026.html",
-   "img": {
-    "id": "commons-autodromo-aerial-2025",
-    "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vista_a%C3%A9rea_del_Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_01.jpg?width=1600",
-    "by": "ProtoplasmaKid",
-    "lic": "CC BY-SA 4.0",
-    "link": "https://commons.wikimedia.org/wiki/File:Vista_aérea_del_Autódromo_Hermanos_Rodríguez_01.jpg",
-    "match_terms": [
-     "Autodromo",
-     "Mexico",
-     "F1",
-     "track"
-    ],
-    "width": 4021,
-    "height": 2262,
-    "archival": true
-   }
+   "article": "zasto-je-meksiko-poseban-za-f1-visina-aerodinamika-2026.html"
+  },
+  {
+   "c": "motogp",
+   "src": "Crash.net",
+   "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQjlEdkUtSG5RVDJrMDN0U1hWczQ5WkZRcXlIa1NEUTktZEVtTV85TVZqamtYM0wwT2tjd0szYXNjYS1VZTc2eEJPNVNYSGxsNkRzRjQ2OFpnRmEwNDU1TjdDLUp6S0dzSHFXQUdoZzV4NUNSZm1nRVpqNENFZUU0U0ltclZ0ZzRGZ1dmd3ZadVBaTFpubFFiVjhfNlJHU21pT1QzVElVYUNSNkdJUTlJR2xsU3ZqUQ?oc=5",
+   "date": "2026-10-31T17:30+00:00",
+   "img_q": "Jorge Martin stopped due to \"big risk\" at Malaysian MotoGP, expects Marc Marquez maximum - Crash.net",
+   "t": "Jorge Martin stao zbog velikog rizika na Velikoj nagradi Malezije",
+   "s": "Jorge Martin je prekinuo vožnju na utrci u Maleziji zbog procijenjenog velikog rizika te u nastavku očekuje maksimalan učinak Marca Marqueza.",
+   "orig_t": "Jorge Martin stopped due to \"big risk\" at Malaysian MotoGP, expects Marc Marquez maximum - Crash.net",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "CleanTechnica",
+   "u": "https://cleantechnica.com/2026/10/31/antwerp-electric-mobile-harbour-cranes",
+   "date": "2026-10-31T17:02+00:00",
+   "img_q": "Antwerp’s Electric Cranes Can Handle More Than Today’s Cargo",
+   "t": "Električne dizalice u Antwerpenu za fleksibilniji pretovar tereta",
+   "s": "Tvrtka Katoen Natie uvela je električne mobilne dizalice u luci Antwerpen kako bi smanjila potrošnju dizela i lakše se prilagodila promjenama u pomorskom prometu i vrstama tereta.",
+   "orig_t": "Antwerp’s Electric Cranes Can Handle More Than Today’s Cargo",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "auto",
+   "src": "Motor1",
+   "u": "https://www.motor1.com/news/813623/ford-le-mans-hypercar-coyote-v8-engine-track-sounds",
+   "date": "2026-10-31T16:00+00:00",
+   "img_q": "Listen To Ford's New V8 Hypercar Tear Up The Track: Video",
+   "t": "Poslušajte zvuk novog Fordovog hibridnog V8 hiperautomobila na stazi u Monzi",
+   "s": "Novi Fordov LMDh prototip opremljen je hibridnim V8 motorom temeljenim na Coyote pogonskoj jedinici. Nova snimka prikazuje vozilo tijekom testiranja na stazi u Monzi.",
+   "orig_t": "Listen To Ford's New V8 Hypercar Tear Up The Track: Video",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "motogp",
+   "src": "Crash.net",
+   "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONWhwZEsxNDRLUko1NHl6clRhendUa3hJcnNUdkZlU21QbjV6V0RSZ3phc19Oby1rTVdXd29QMTYwMl9lNEVDcExSdzBwYmZXVTJuTG9JcTJPMVkzNGR6RTZEMjM1SHpENTlqVUxicFg4Q0xScExIZzNFUTlRUXFoNHRLU3BoNm9QUzZwQUY4blB5YW4yS3piLTZndmpzR2w4RUpsTEZuTzYxTnJnQmx0S0o0a3huZw?oc=5",
+   "date": "2026-10-31T14:13+00:00",
+   "img_q": "Ex-MotoGP champion says Marc Marquez rivals can’t “withstand his pressure” - Crash.net",
+   "t": "Bivši prvak: Suparnici Marca Marqueza ne mogu izdržati njegov pritisak",
+   "s": "Bivši prvak u MotoGP-u izjavio je kako se suparnici Marca Marqueza ne mogu nositi s pritiskom koji on stvara na stazi.",
+   "orig_t": "Ex-MotoGP champion says Marc Marquez rivals can’t “withstand his pressure” - Crash.net",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "motogp",
+   "src": "Motorsport.com",
+   "u": "https://www.motorsport.com/motogp/news/ai-ogura-explains-marc-marquez-battle-in-malaysia-sprint-denies-aprilia-team-orders/10870057",
+   "date": "2026-10-31T13:30+00:00",
+   "img_q": "Ai Ogura explains Marc Marquez battle in Malaysia sprint, denies Aprilia team orders",
+   "t": "Ai Ogura opisao borbu s Marcom Marquezom u Maleziji i opovgnuo naredbe Aprilije",
+   "s": "Vozač Trackhousea Ai Ogura prepričao je tijesnu borbu s Marcom Marquezom tijekom sprint utrke za Veliku nagradu Malezije te je odbacio nagađanja o primanju bilo kakvih proizvođačkih naredbi od Aprilije.",
+   "orig_t": "Ai Ogura explains Marc Marquez battle in Malaysia sprint, denies Aprilia team orders",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "energy",
+   "src": "Carbon Brief",
+   "u": "https://www.carbonbrief.org/cop17-key-outcomes-agreed-at-the-un-biodiversity-conference-in-yerevan",
+   "date": "2026-10-31T13:30+00:00",
+   "img_q": "COP17: Key outcomes agreed at the UN biodiversity conference in Yerevan",
+   "t": "Ključni zaključci UN-ove konferencije o bioraznolikosti u Erevanu",
+   "s": "Na UN-ovoj konferenciji o bioraznolikosti održanoj u Erevanu države su završile prvu globalnu ocjenu napretka u zaustavljanju gubitka prirode do 2030. godine.",
+   "orig_t": "COP17: Key outcomes agreed at the UN biodiversity conference in Yerevan",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "motogp",
+   "src": "Crash.net",
+   "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNajlJaXh0VG9BYXU5ZDRrY1NaOHVyRjBZY3hzSUE2TVlyNHBEN0FqNzlFUWRWdHVMZDR0S3BvSlNCOEJEVGEtaWxNS0hGTU9HdmhycGJMc0I5Y2hMM0h5NmVQTm1rSmp6dlk2R2hkV2xRZ0Y3NU5nSjZfdno4c0NPYzdhY1VQSHNYS0JjNy1ma0pLOThTR2ZTaG9KZjc0UFl3Vndv?oc=5",
+   "date": "2026-10-31T13:01+00:00",
+   "img_q": "Alex Marquez could skip Qatar MotoGP amid surgery reports - Crash.net",
+   "t": "Alex Marquez mogao bi propustiti VN Qatara zbog operacije",
+   "s": "Prema izvješćima, vozač Alexa Marqueza mogao bi izostati s nadolazeće utrke MotoGP-a u Kataru zbog mogućeg operativnog zahvata.",
+   "orig_t": "Alex Marquez could skip Qatar MotoGP amid surgery reports - Crash.net",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813793/livewire-stock-price-plummets-due-to-q3-disclosure-ceo-resignation",
+   "date": "2026-10-31T12:59+00:00",
+   "img_q": "LiveWire's Stock Has Absolutely Tanked",
+   "t": "Dionice LiveWirea drastično pale",
+   "s": "Marka električnih motocikala povukla je svoje financijske prognoze za ovu godinu i izrazila sumnju u vlastitu održivost poslovanja, što je izazvalo veliki pad vrijednosti dionica.",
+   "orig_t": "LiveWire's Stock Has Absolutely Tanked",
+   "summary_version": 3,
+   "hr": true
   },
   {
    "c": "motogp",
@@ -179,6 +323,18 @@
    "hr": true
   },
   {
+   "c": "moto",
+   "src": "RideApart.com",
+   "u": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8wdUN5RW81RENFZm50dkhoVEhvT3M4UjlwX3ZQMUpiUUlTcW5sQllEeElxZTYybjFiNDZiMXAya1g2VVdWZHc?oc=5",
+   "date": "2026-10-31T10:37+00:00",
+   "img_q": "Motorcycle News and Opinion - RideApart.com",
+   "t": "Novosti i mišljenja o motociklima na portalu RideApart",
+   "s": "Portal RideApart donosi redovite novosti, recenzije i mišljenja o svijetu motocikala, pružajući čitateljima aktualne informacije o moto industriji.",
+   "orig_t": "Motorcycle News and Opinion - RideApart.com",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
    "c": "f1",
    "src": "Motorsport.com",
    "u": "https://www.motorsport.com/f1/news/f1-fans-defend-isack-hadjar-after-paddock-selfie-row-leads-to-fia-summons/10870067",
@@ -239,114 +395,6 @@
    "hr": true
   },
   {
-   "c": "motogp",
-   "src": "Crash.net",
-   "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOR0VGbW11TGdQUHFKNmYxcnBDdE1Sdl8yZko0YUxVVnh5SHE3aF82RnJiMFUxSGVZOFpMci1JVnNBTU5XNjJhVmlONEdCa0lESk9POTk5M3IzRE13VlA5WE9DdDVwNXBiVEJrTnFmc1l4MUkxRmJJQXFWU2VKeGNlSWdjMzQ4aFBiUUNsag?oc=5",
-   "date": "2026-10-31T04:03+00:00",
-   "img_q": "Alex Marquez snatches Sepang MotoGP pole - Crash.net",
-   "t": "Alex Marquez osvojio pole position za VN Sepanga",
-   "s": "Alex Marquez osigurao je prvu startnu poziciju za utrku MotoGP-a u Sepangu, ostvarivši najbolje vrijeme u kvalifikacijama. To je važan uspjeh za njegovu momčad uoči glavnog natjecanja.",
-   "orig_t": "Alex Marquez snatches Sepang MotoGP pole - Crash.net",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "energy",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/30/hyundai-ioniq-3-named-european-car-of-the-year-2027-finalist",
-   "date": "2026-10-31T03:30+00:00",
-   "img_q": "Hyundai IONIQ 3 Named European Car of the Year 2027 Finalist",
-   "t": "Hyundai IONIQ 3 među sedam je finalista za automobil 2027. godine",
-   "s": "Model Hyundai IONIQ 3 ušao je u uži izbor za prestižnu europsku nagradu. Pobjednik će biti proglašen u siječnju 2027. godine na sajmu u Bruxellesu.",
-   "orig_t": "Hyundai IONIQ 3 Named European Car of the Year 2027 Finalist",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "f1",
-   "src": "Autosport",
-   "u": "https://www.autosport.com/f1/news/max-verstappen-and-liam-lawson-handed-f1-mexico-gp-grid-penalties-after-practice-clash/10869942",
-   "date": "2026-10-31T03:22+00:00",
-   "img_q": "Stewards penalize Verstappen, Lawson after “unacceptable” F1 Mexico GP practice clash",
-   "t": "Max Verstappen i Liam Lawson kažnjeni zbog incidenta na treningu",
-   "s": "Sudci su kaznili Maxa Verstappena i Liama Lawsona zbog bliskog susreta i pretjecanja tijekom drugog slobodnog treninga za Veliku nagradu Meksika u Formula 1 prvenstvu.",
-   "orig_t": "Stewards penalize Verstappen, Lawson after “unacceptable” F1 Mexico GP practice clash",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "f1",
-   "src": "The Race",
-   "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaXV6c3VfNHlFNWt2RzFCUVZDQ3Y1M09LWlUtVDR4Z1NxWTluQVVLTHE3YTBtR2JnWi1wZHVSR0pUYm0wb1BpRElxNldXaHZtMkVLWk94X2FTcVdWVzF2THc0T2ZhVEUweVJYT2M2ZDZxSzc4M096dFVyN0Q0dDBYaGpLSjhVQW1fS2YxTVh3MEI?oc=5",
-   "date": "2026-10-31T03:20+00:00",
-   "img_q": "Hadjar summoned for alleged paddock misconduct - The Race",
-   "t": "Hadjar pozvan na razgovor zbog navodnog nedopuštenog ponašanja u boksu",
-   "s": "Vozač Hadjar pozvan je na razgovor zbog sumnje na nedopušteno ponašanje u prostoru boksova. Službeni razlozi i posljedice poziva bit će poznati nakon istrage.",
-   "orig_t": "Hadjar summoned for alleged paddock misconduct - The Race",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "f1",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/max-verstappen-and-liam-lawson-both-handed-grid-penalties-after-clash-in-mexico-f1-practice/10869933",
-   "date": "2026-10-31T03:15+00:00",
-   "img_q": "Max Verstappen, Liam Lawson handed F1 Mexico GP grid penalties after practice clash",
-   "t": "Verstappen i Lawson kažnjeni pomicanjem na startu VN Meksika",
-   "s": "Vozači Formule 1 Max Verstappen i Liam Lawson kažnjeni su pomicanjem na startu utrke za Veliku nagradu Meksika nakon incidenta na slobodnom treningu.",
-   "orig_t": "Max Verstappen, Liam Lawson handed F1 Mexico GP grid penalties after practice clash",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "energy",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/30/toyota-waymo-advance-autonomous-driving-collaboration-for-safer-streets-and-freedom-of-movement-for-all",
-   "date": "2026-10-31T03:08+00:00",
-   "img_q": "Toyota & Waymo Advance Autonomous Driving Collaboration for Safer Streets and Freedom of Movement fo",
-   "t": "Toyota i Waymo proširuju suradnju na razvoju autonomnih vozila",
-   "s": "Toyota i Waymo najavili su novu fazu suradnje u razvoju autonomne vožnje. U Japanu će 2027. započeti testiranje flote modela bZ4X, uz planirano širenje na Ujedinjeno Kraljevstvo i druga tržišta.",
-   "orig_t": "Toyota & Waymo Advance Autonomous Driving Collaboration for Safer Streets and Freedom of Movement for All",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "energy",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/30/the-share-of-solar-generation-with-co-located-battery-storage-is-increasing",
-   "date": "2026-10-31T02:27+00:00",
-   "img_q": "The Share of Solar Generation with Co-located Battery Storage Is Increasing",
-   "t": "Raste udio sunčanih elektrana s ugrađenim baterijskim spremnicima",
-   "s": "Sve više velikih sunčanih elektrana gradi se zajedno s baterijskim spremnicima energije. Podaci pokazuju značajan porast takvih postrojenja, što investitorima omogućuje bolje upravljanje isporukom električne struje ovisno o kretanju veleprodajnih cijena.",
-   "orig_t": "The Share of Solar Generation with Co-located Battery Storage Is Increasing",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "f1",
-   "src": "The Race",
-   "u": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9iVXlveXFIRWNTOFJyRzlDTTg2OFdYdWsxRExKQXNEQlZ3QUN0c04za1lLY3JWZXRla3FKZHhZQ0xPVTQxX3lXZlBvT3k0Mml5SDdPWUcyWjRKanJWdlVIZXZ5VUpHTkVuMDhBZ0JKWUtTUHd1MG1sVVFxVmlyUQ?oc=5",
-   "date": "2026-10-31T01:55+00:00",
-   "img_q": "Winners and losers from Mexico's Friday F1 action - The Race",
-   "t": "Pobjednici i gubitnici petstokrakih treninga Formule 1 u Meksiku",
-   "s": "Analiza uspješnih i neuspješnih vozača te momčadi nakon održanih petkovih treninga uoči utrke Formule 1 za Veliku nagradu Meksika.",
-   "orig_t": "Winners and losers from Mexico's Friday F1 action - The Race",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "energy",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/30/homepower-1000-plus-v2-portable-power-put-to-use",
-   "date": "2026-10-31T01:27+00:00",
-   "img_q": "HomePower 1000 Plus v2: Portable Power Put To Use",
-   "t": "Jackery HomePower 1000 Plus v2 u svakodnevnoj primjeni u stanu",
-   "s": "Iskustvo korištenja prijenosne baterije Jackery HomePower 1000 Plus v2 u gradskom stanu pokazuje njezinu praktičnost za napajanje kućanskih uređaja, radnog prostora i održavanje rada opreme tijekom nestanka struje.",
-   "orig_t": "HomePower 1000 Plus v2: Portable Power Put To Use",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
    "c": "tech",
    "src": "Ars Technica",
    "u": "https://arstechnica.com/space/2026/10/think-you-can-save-the-hubble-space-telescope-nasa-wants-to-know",
@@ -367,90 +415,6 @@
    "t": "Parazitske muhe se šire u SAD-u i napadaju kućne ljubimce",
    "s": "Ministarstvo poljoprivrede Sjedinjenih Američkih Država potvrdilo je brojne slučajeve zaraze parazitskim muhama kod životinja, pozivajući na oprez i praćenje situacije na terenu.",
    "orig_t": "Flesh-eating screwworms spread to third state and are attacking pets",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "tech",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/culture/2026/10/oh-captain-our-captain-ars-staff-remembers-patrick-stewart",
-   "date": "2026-10-30T22:21+00:00",
-   "img_q": "Oh captain, our captain: Ars staff remembers Patrick Stewart",
-   "t": "Osoblje Ars Technice prisjeća se uloge Patricka Stewarta",
-   "s": "Novinari portala Ars Technica prisjetili su se uloge Patricka Stewarta i njegova značaja kroz lik Jeana-Luca Picarda za brojne gledatelje.",
-   "orig_t": "Oh captain, our captain: Ars staff remembers Patrick Stewart",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "f1",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/whats-behind-absolute-nonsense-bearman-contract-rumours/10869831",
-   "date": "2026-10-30T22:12+00:00",
-   "img_q": "What's behind \"absolute nonsense\" Oliver Bearman contract rumours",
-   "t": "Glasine o ugovoru Olivera Bearmana izazvale pažnju uoči VN Meksika",
-   "s": "Uoči vikenda Velike nagrade Meksika pojavile su se neobične glasine o preostalim vozačkim ugovorima. Iako je momčad Haas već ranije potvrdila promjene u sastavu, pojavila su se nagađanja o statusu Olivera Bearmana.",
-   "orig_t": "What's behind \"absolute nonsense\" Oliver Bearman contract rumours",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "tech",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029",
-   "date": "2026-10-30T21:41+00:00",
-   "img_q": "Supersonic airliner in doubt as company shifts to powering AI data centers",
-   "t": "Budućnost nadzvučnog putničkog zrakoplova pod znakom pitanja",
-   "s": "Tvrtka zadužena za razvoj nadzvučnog zrakoplova našla se u neizvjesnosti nakon što se preorijentirala na podatkovne centre, dok je istovremeno izgubila važnog poslovnog partnera.",
-   "orig_t": "Supersonic airliner in doubt as company shifts to powering AI data centers",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "f1",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/red-bull-f1-boss-laurent-mekies-hits-back-at-christian-horners-lost-its-mojo-claim/10869825",
-   "date": "2026-10-30T21:30+00:00",
-   "img_q": "Red Bull F1 boss Laurent Mekies hits back at Christian Horner's \"lost its mojo\" claim",
-   "t": "Laurent Mekies odgovorio na tvrdnje Christiana Horner da je Red Bull izgubio prepoznatljiv duh",
-   "s": "Glavni direktor Red Bulla Laurent Mekies odbacio je tvrdnje bivšeg šefa momčadi Christiana Horner da je ekipa izgubila svoj prepoznatljiv duh nakon njegovog odlaska. Mekies ističe kako je upravo momčadski duh potaknuo izniman preokret i oporavak.",
-   "orig_t": "Red Bull F1 boss Laurent Mekies hits back at Christian Horner's \"lost its mojo\" claim",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "f1",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/red-bull-reveals-when-its-long-awaited-new-f1-wind-tunnel-will-be-operational/10869820",
-   "date": "2026-10-30T21:28+00:00",
-   "img_q": "Red Bull reveals when its long-awaited new F1 wind tunnel will be operational",
-   "t": "Novi Red Bullov zračni tunel bit će spreman tijekom 2027. godine",
-   "s": "Vodstvo momčadi potvrdilo je da će novi zračni tunel u Milton Keynesu biti operativan tijekom sezone 2027. godine. Ova dugo očekivana zamjena za postojeći pogon u Bedfordu trebala bi unaprijediti rad momčadi u Formuli 1.",
-   "orig_t": "Red Bull reveals when its long-awaited new F1 wind tunnel will be operational",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "f1",
-   "src": "Motorsport.com",
-   "u": "https://www.motorsport.com/f1/news/guenther-steiner-warns-mercedes-will-make-changes-if-george-russell-struggles-in-2027/10869809",
-   "date": "2026-10-30T20:53+00:00",
-   "img_q": "Guenther Steiner warns Mercedes will make \"changes\" if George Russell struggles in 2027",
-   "t": "Steiner: Mercedes bi mogao mijenjati vozače ako se Russell muči",
-   "s": "Bivši šef momčadi Haas upozorava da bi Mercedes mogao promijeniti vozačku postavu ako George Russell nastavi s poteškoćama do kraja sljedeće sezone, dok njegov kolega Kimi Antonelli ostvaruje zapažene rezultate.",
-   "orig_t": "Guenther Steiner warns Mercedes will make \"changes\" if George Russell struggles in 2027",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "tech",
-   "src": "Ars Technica",
-   "u": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job",
-   "date": "2026-10-30T20:40+00:00",
-   "img_q": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
-   "t": "Prorektor Dartmoutha dao ostavku zbog neprijavljene uporabe umjetne inteligencije",
-   "s": "Santiago Schnell podnio je ostavku na dužnost prorektora na Dartmouth Collegeu nakon što je utvrđeno da nije prijavio korištenje umjetne inteligencije u akademskom radu i autorskom tekstu.",
-   "orig_t": "Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job",
    "summary_version": 3,
    "hr": true
   },
@@ -491,18 +455,6 @@
    "hr": true
   },
   {
-   "c": "moto",
-   "src": "RideApart",
-   "u": "https://www.rideapart.com/news/813930/harley-davidson-will-not-save-livewire-ev-motorcycle-maker",
-   "date": "2026-10-30T17:33+00:00",
-   "img_q": "Harley-Davidson Isn't Going To Save LiveWire, Says CEO",
-   "t": "Harley-Davidson neće spašavati LiveWire, izjavio izvršni direktor",
-   "s": "Izvršni direktor Harley-Davidsona poručio je da će se brend električnih motocikala LiveWire morati samostalno nositi sa svojim poslovnim izazovima na tržištu.",
-   "orig_t": "Harley-Davidson Isn't Going To Save LiveWire, Says CEO",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
    "c": "auto",
    "src": "Motor1",
    "u": "https://www.motor1.com/news/813910/audi-quattro-restomod-10000-rpm-v8",
@@ -511,42 +463,6 @@
    "t": "Audacious IV: Moderni Audi Quattro s V8 motorom",
    "s": "Automobil Audacious IV kombinira klasičnu karoseriju modela Quattro te podvozje i pogon iz RS4, uz mogućnost ugradnje kompresorskog V8 motora.",
    "orig_t": "A Modern Audi Quattro With A 10,000-RPM V8? Yes, Please",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "moto",
-   "src": "RideApart",
-   "u": "https://www.rideapart.com/news/813626/battery-tender-just-dropped-some-new-powersports-maintainers-just-in-time-for-winter",
-   "date": "2026-10-30T15:35+00:00",
-   "img_q": "Battery Tender Just Dropped Some New Powersports Maintainers Just In Time For Winter",
-   "t": "Battery Tender predstavio četiri nova uređaja za punjenje uoči zime",
-   "s": "Marka Battery Tender obogatila je svoju ponudu s četiri nova uređaja za pokretanje i održavanje akumulatora. Ova oprema stiže na tržište u pravo vrijeme za pripremu vozila pred zimske uvjete.",
-   "orig_t": "Battery Tender Just Dropped Some New Powersports Maintainers Just In Time For Winter",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "auto",
-   "src": "Motor1",
-   "u": "https://www.motor1.com/news/813897/honda-ridgeline-designer-explains-truck",
-   "date": "2026-10-30T14:00+00:00",
-   "img_q": "Honda Never Wanted The Ridgeline To Be A Traditional Pickup, Says Designer",
-   "t": "Honda nikada nije željela da Ridgeline bude klasični kamionet",
-   "s": "Dizajner Don Herner prisjetio se kako se koncept usmjeren na prostranost unutrašnjosti SUV-a razvio u Hondin nekonvencionalan kamionet Ridgeline.",
-   "orig_t": "Honda Never Wanted The Ridgeline To Be A Traditional Pickup, Says Designer",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "auto",
-   "src": "Motor1",
-   "u": "https://www.motor1.com/news/813889/datsun-s30-concept-blends-240z",
-   "date": "2026-10-30T12:03+00:00",
-   "img_q": "Classic Datsun 240Z Gets Twin-Turbo Power And Carbon Fiber Body",
-   "t": "Klasični Datsun 240Z dobio dvostruki turbopunjač i karoseriju od ugljičnih vlakana",
-   "s": "Jedinstveni Datsun S30 prerađen je uz uporabu dijelova marke Nismo i motora s dvostrukim turbopunjačem, čime je stvoren potpun konceptni prikaz novog Nissana Z.",
-   "orig_t": "Classic Datsun 240Z Gets Twin-Turbo Power And Carbon Fiber Body",
    "summary_version": 3,
    "hr": true
   },
