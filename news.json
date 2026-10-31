@@ -17,7 +17,6 @@
     "by": "Liauzh",
     "lic": "CC BY-SA 4.0",
     "link": "https://commons.wikimedia.org/wiki/File:MotoGP_2025_Malaysian_Grand_Prix_-_Gresini_Racing_-_Álex_Márquez.jpg",
-    "illustrative": true,
     "match_terms": [
      "Alex",
      "Marquez",
@@ -25,7 +24,8 @@
      "Sepang"
     ],
     "width": 3758,
-    "height": 2506
+    "height": 2506,
+    "archival": true
    }
   },
   {
@@ -44,7 +44,6 @@
     "by": "Liauzh",
     "lic": "CC BY-SA 4.0",
     "link": "https://commons.wikimedia.org/wiki/File:2026_Bahrain_GP_-_Mercedes_-_Kimi_Antonelli_-_Race.jpg",
-    "illustrative": true,
     "match_terms": [
      "Kimi",
      "Antonelli",
@@ -52,7 +51,8 @@
      "F1"
     ],
     "width": 4138,
-    "height": 2327
+    "height": 2327,
+    "archival": true
    }
   },
   {
@@ -71,7 +71,6 @@
     "by": "ProtoplasmaKid",
     "lic": "CC BY-SA 4.0",
     "link": "https://commons.wikimedia.org/wiki/File:Vista_aérea_del_Autódromo_Hermanos_Rodríguez_01.jpg",
-    "illustrative": true,
     "match_terms": [
      "Autodromo",
      "Mexico",
@@ -79,7 +78,8 @@
      "track"
     ],
     "width": 4021,
-    "height": 2262
+    "height": 2262,
+    "archival": true
    }
   },
   {
