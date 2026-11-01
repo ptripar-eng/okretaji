@@ -1,0 +1,45 @@
+name: Prevedi stranice (EN/DE)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.html"
+      - "i18n/**"
+      - "scripts/translate_site.py"
+      - "scripts/translate_news.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prevedi-stranice
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Prijevod stranica
+        run: python scripts/translate_site.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-flash-lite-latest
+      - name: Prijevod vijesti
+        run: python scripts/translate_news.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-flash-lite-latest
+      - name: Spremi prijevode
+        run: |
+          git config user.name "okretaji-bot"
+          git config user.email "okretaji-bot@users.noreply.github.com"
+          git add en de i18n news_en.json news_de.json sitemap.xml *.html
+          git diff --cached --quiet || (git commit -m "Automatski prijevod stranica (EN/DE)" && git pull --rebase && git push)
