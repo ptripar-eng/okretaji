@@ -37,6 +37,12 @@ jobs:
       - name: Najava utrke
         run: python scripts/race_preview.py
         continue-on-error: true
+      - name: Prijevod vijesti (EN/DE)
+        run: python scripts/translate_news.py
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-flash-lite-latest
       - name: Spremi promjene
         run: |
           git config user.name "okretaji-bot"
@@ -44,6 +50,7 @@ jobs:
           git add news.json
           [ -f images.json ] && git add images.json
           [ -f race.json ] && git add race.json
+          for f in news_en.json news_de.json i18n/news-en.json i18n/news-de.json; do [ -f "$f" ] && git add "$f" || true; done
           git diff --cached --quiet || (git commit -m "Automatsko osvježavanje vijesti" && git pull --rebase && git push)
       - name: Fontovi za kartice društvenih mreža
         continue-on-error: true
