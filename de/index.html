@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Okretaji – Auto, Moto, Motorsport, Technologie und Energie</title>
+<meta name="description" content="Okretaji bringt Neuigkeiten aus der Auto- und Motorradwelt, Formel-1-Vorschauen mit Statistiken und Streckenumrissen, Geschichten hinter dem Helm sowie Motorradtouren durch Kroatien und die Region.">
+<meta name="theme-color" content="#0D2B3E">
+<link rel="canonical" href="https://okretaji.com/de/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Okretaji – wir wecken Neugier">
+<meta property="og:description" content="Auto, Moto, Motorsport, Technologie und Energie unter der Lupe.">
+<meta property="og:url" content="https://okretaji.com/de/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EAF3F8; --card:#FFFFFF; --ink:#0D2B3E; --muted:#4F6979; --line:#D3E2EA;
+  --orange:#F05A1A; --powder:#A9D3EB; --navy:#0D2B3E; --deep:#0D2B3E;
+  --red:#D7261E; --blue:#1C5A86; --yellow:#E8890C; --green:#23794A;
+  --onorange:#FFFFFF; --shadow:0 1px 2px rgba(13,43,62,.06),0 8px 24px -12px rgba(13,43,62,.25);
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#081923; --card:#10283A; --ink:#E7F1F7; --muted:#93AEC0; --line:#1E3B4E;
+    --orange:#FF7433; --powder:#6FAED3; --navy:#E7F1F7; --deep:#0B2232;
+    --red:#FF5A4F; --blue:#7DBCE6; --yellow:#FFB347; --green:#5FCB8B;
+    --onorange:#081923; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -14px rgba(0,0,0,.7);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#081923; --card:#10283A; --ink:#E7F1F7; --muted:#93AEC0; --line:#1E3B4E;
+  --orange:#FF7433; --powder:#6FAED3; --navy:#E7F1F7; --deep:#0B2232;
+  --red:#FF5A4F; --blue:#7DBCE6; --yellow:#FFB347; --green:#5FCB8B;
+  --onorange:#081923; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -14px rgba(0,0,0,.7);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+.D{font-family:"Big Shoulders Display","Arial Narrow",Impact,sans-serif}
+.wrap{max-width:1240px;margin:0 auto;padding:0 22px}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+
+/* ---------- top bar ---------- */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:31;background:var(--bg)}
+.bar .wrap{display:flex;align-items:center;gap:22px;height:56px}
+.mini{font:900 1.6rem/1 "Big Shoulders Display",Impact,sans-serif;text-decoration:none;display:flex;align-items:center;gap:6px;flex:none}
+.mini img{width:28px;height:28px;display:block;flex:none;border-radius:6px}
+.nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1}
+.nav::-webkit-scrollbar{display:none}
+.nav a{white-space:nowrap;text-decoration:none;font-weight:600;font-size:.95rem;padding:6px 12px;border-radius:999px;color:var(--muted)}
+.nav a:hover,.nav a[aria-current="true"]{color:var(--ink);background:var(--card)}
+.upd{font-size:.78rem;color:#6F8C9E;margin-top:14px}
+
+/* ---------- masthead ---------- */
+.mast{position:relative;overflow:hidden;padding:26px 0 8px}
+.livery{position:absolute;left:-10%;right:-10%;top:58px;height:96px;transform:skewY(-4deg);pointer-events:none}
+.livery i{display:block;height:50%}
+.livery i:first-child{background:var(--orange)}
+.livery i:last-child{background:var(--powder);opacity:.85}
+.mast .wrap{position:relative}
+.logo{margin:0;display:block;max-width:900px}\n.logo img{display:block;width:100%;height:auto;max-height:300px;object-fit:contain;object-position:left center}
+.tag{margin:22px 0 0;font-weight:600;font-size:1.02rem;color:var(--muted);max-width:60ch}
+#needle{transform-origin:50px 54px;transform:rotate(30deg)}
+@media (prefers-reduced-motion:no-preference){
+  #needle{animation:rev 1.6s cubic-bezier(.3,.7,.2,1) .2s both}
+  @keyframes rev{0%{transform:rotate(-120deg)}55%{transform:rotate(108deg)}75%{transform:rotate(80deg)}100%{transform:rotate(30deg)}}
+}
+
+
+/* ---------- reasons to return ---------- */
+.return-section{padding-top:60px}
+.return-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.return-card{display:flex;flex-direction:column;min-height:245px;padding:22px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.return-kicker{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
+.return-card h3{font:800 1.65rem/1.05 "Big Shoulders Display",Impact,sans-serif;margin:12px 0}
+.return-card p{color:var(--muted);font-size:.95rem;margin:0 0 18px}
+.return-card a,.return-card button{margin-top:auto;align-self:flex-start;border:0;background:none;padding:0;color:var(--ink);font:700 .95rem/1.4 "Barlow",sans-serif;text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:4px;cursor:pointer}
+@media(max-width:900px){.return-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.return-grid{grid-template-columns:1fr}.return-card{min-height:0}}
+
+/* ---------- shared bits ---------- */
+.plate{display:inline-flex;align-items:center;font-weight:700;font-size:.78rem;letter-spacing:.02em;padding:3px 10px;border-radius:999px;color:#fff;background:var(--pc,var(--ink))}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .plate{color:#081923}}
+:root[data-theme="dark"] .plate{color:#081923}
+.src{font-size:.85rem;color:var(--muted)}
+.src a{color:var(--ink);font-weight:600;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:3px}
+.credit{font-size:.72rem;color:var(--muted);line-height:1.3;margin-top:6px}
+.credit a{color:inherit}
+.ph{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--deep)}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.ph.fallback{background:repeating-linear-gradient(-28deg,var(--pc,var(--orange)) 0 26px,color-mix(in srgb,var(--pc,var(--orange)) 70%,var(--deep)) 26px 52px)}
+.ph.fallback > .fb{position:absolute;inset:0;display:grid;place-items:center;font:900 clamp(2.2rem,5vw,3.4rem)/1 "Big Shoulders Display",Impact,sans-serif;color:#fff;text-shadow:0 2px 0 rgba(0,0,0,.15)}
+.mini-card .ph.fallback > .fb{font-size:1.5rem}
+.lead .ph.fallback > .fb{display:none}
+a.card:hover .ph img,.lead:hover .ph img{transform:scale(1.04)}
+
+/* ---------- hero ---------- */
+.editorial-ph{display:block;background:#102b3d}.editorial-photos{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;gap:3px;background:#0d2b3e}.editorial-photos img{width:100%;height:100%;min-width:0;object-fit:cover;filter:saturate(.9)}.editorial-photos img:first-child{object-position:48% center}.editorial-photos img:last-child{object-position:52% center}.editorial-ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,20,30,.04) 18%,rgba(5,20,30,.16) 38%,rgba(5,20,30,.94) 100%)}.editorial-side{display:block;padding:17px 18px;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);text-decoration:none}.editorial-side h3{font:800 1.55rem/1.02 "Big Shoulders Display",Impact,sans-serif;margin:8px 0}.editorial-side p{font-size:.92rem;color:var(--muted);margin:0 0 10px}.editorial-tag{font-size:.72rem;font-weight:800;letter-spacing:.08em;color:var(--orange)}.side-heading:not(:first-child){margin-top:8px}
+@media(max-width:760px){.lead{min-height:430px}.lead .txt{padding:22px}.editorial-photos img{object-position:center}.side{gap:12px}.editorial-side{padding:14px 16px}}
+.hero{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:22px;margin:30px 0 0}
+.lead{position:relative;border-radius:10px;overflow:hidden;box-shadow:var(--shadow);background:var(--deep);min-height:480px;display:flex;align-items:flex-end;color:#fff}
+.lead .ph{position:absolute;inset:0;aspect-ratio:auto}
+.lead .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,20,30,0) 25%,rgba(5,20,30,.55) 55%,rgba(5,20,30,.92) 100%)}
+.lead .txt{position:relative;padding:30px 32px 26px;z-index:1}
+.lead h2{font:900 clamp(2.3rem,4.6vw,3.9rem)/.92 "Big Shoulders Display",Impact,sans-serif;margin:14px 0 12px;max-width:18ch;text-wrap:balance}
+.lead h2 a{text-decoration:none}
+.lead p{margin:0 0 12px;max-width:60ch;font-size:1.07rem;color:#E3EEF5}
+.lead .src,.lead .src a,.lead .credit{color:#C8DCE8}
+.side{display:grid;gap:22px;align-content:start}
+.mini-card{display:grid;grid-template-columns:140px 1fr;gap:14px;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);text-decoration:none}
+.mini-card .ph{aspect-ratio:auto;height:100%;min-height:120px}
+.mini-card .t{padding:14px 14px 14px 0}
+.mini-card h3{margin:8px 0 0;font:800 1.35rem/1.02 "Big Shoulders Display",Impact,sans-serif}
+
+/* ---------- sections ---------- */
+section{padding:70px 0 0}
+.sh{display:grid;grid-template-columns:auto 1fr;align-items:end;gap:6px 18px;margin-bottom:22px}
+.gear{font:900 clamp(4.6rem,10vw,7.5rem)/.75 "Big Shoulders Display",Impact,sans-serif;color:var(--orange);grid-row:span 2}
+.sh h2{margin:0;font:900 clamp(2.3rem,4.6vw,3.4rem)/.9 "Big Shoulders Display",Impact,sans-serif}
+.sh p{margin:0;color:var(--muted);font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 20px}
+.chip{font:600 .92rem "Barlow",sans-serif;border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:6px 14px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip .dot{width:9px;height:9px;border-radius:50%}
+
+/* ---------- race preview band ---------- */
+.race{background:var(--deep);color:#E7F1F7;margin-top:70px;padding:56px 0 60px;position:relative;overflow:hidden}
+.race::before{content:"";position:absolute;right:-8%;top:-30px;width:55%;height:46px;background:var(--orange);transform:skewY(-4deg)}
+.race .sh h2{color:#fff}.race .sh p{color:#9FBBCC}
+.rgrid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px}
+.rcard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:22px 24px}
+.rcard h3{margin:0 0 14px;font:800 1.5rem/1 "Big Shoulders Display",Impact,sans-serif;color:#fff}
+.rname{font:900 clamp(2.2rem,4.4vw,3.4rem)/.9 "Big Shoulders Display",Impact,sans-serif;margin:6px 0 6px;color:#fff}
+.rmeta{color:#A9C3D2;font-weight:500}
+.count{display:flex;gap:10px;margin:18px 0 6px}
+.count div{background:rgba(255,255,255,.07);border-radius:6px;padding:8px 12px 6px;min-width:70px;text-align:center}
+.count b{display:block;font:900 2.4rem/.9 "Big Shoulders Display",Impact,sans-serif;color:var(--orange)}
+.count span{font-size:.78rem;color:#A9C3D2}
+.track{position:relative;margin-top:10px}
+.track svg{width:100%;height:auto;max-height:380px;display:block}
+.track path.base{fill:none;stroke:rgba(255,255,255,.12);stroke-width:26;stroke-linejoin:round;stroke-linecap:round}
+.track path.line{fill:none;stroke:#fff;stroke-width:9;stroke-linejoin:round;stroke-linecap:round}
+.track path.run{fill:none;stroke:var(--orange);stroke-width:9;stroke-linejoin:round;stroke-linecap:round}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin-top:8px}
+.facts div{border-top:2px solid var(--orange);padding-top:6px}
+.facts b{display:block;font:800 1.6rem/1 "Big Shoulders Display",Impact,sans-serif;color:#fff}
+.facts span{font-size:.8rem;color:#A9C3D2}
+.sess{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:.95rem}
+.sess li{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed rgba(255,255,255,.12);padding-bottom:6px}
+.sess span{color:#A9C3D2}
+.winners{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.winners li{display:grid;grid-template-columns:70px 1fr auto;align-items:baseline;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.winners .y{font:900 1.7rem/1 "Big Shoulders Display",Impact,sans-serif;color:var(--orange)}
+.winners .n{font-weight:700;color:#fff}
+.winners .tm{font-size:.85rem;color:#A9C3D2;text-align:right}
+.bars{display:grid;gap:7px}
+.brow{display:grid;grid-template-columns:22px 52px 1fr 54px;align-items:center;gap:10px;font-size:.9rem}
+.brow .p{color:#A9C3D2;text-align:right;font-weight:600}
+.brow .c{font:800 1.15rem/1 "Big Shoulders Display",Impact,sans-serif;color:#fff}
+.brow .tr{height:16px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden}
+.brow .f{height:100%;width:0;background:#6FAED3;border-radius:3px;transition:width 1.1s cubic-bezier(.3,.7,.2,1)}
+.brow:first-child .f{background:var(--orange)}
+.brow .pt{text-align:right;font-weight:700;color:#fff}
+.rnote{font-size:.78rem;color:#86A3B5;margin:14px 0 0}
+.rnote a{color:inherit}
+.sched{list-style:none;margin:0;padding:0}
+.sched li{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.sched .d{background:var(--orange);color:#fff;font:800 1.05rem/1 "Big Shoulders Display",Impact,sans-serif;text-align:center;padding:6px 4px;border-radius:4px}
+.sched .w{font-weight:600;line-height:1.2;color:#fff}
+.sched small{display:block;font-weight:400;color:#A9C3D2;font-size:.82rem}
+
+/* ---------- news grid ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:22px}
+.card{background:var(--card);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.card .ph .plate{position:absolute;left:12px;top:12px;z-index:1}
+.card .body{padding:16px 18px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card .dt{font-size:.8rem;color:var(--muted);font-weight:600}
+.card h3{margin:0;font:800 1.5rem/1 "Big Shoulders Display",Impact,sans-serif}
+.card h3 a{text-decoration:none}
+.card h3 a:hover{text-decoration:underline;text-decoration-color:var(--orange)}
+.card p{margin:0;font-size:.96rem}
+.card details summary{cursor:pointer;font-weight:700;font-size:.9rem;color:var(--orange)}
+.card details div{margin-top:8px;font-size:.95rem;white-space:pre-line}
+.card .src{margin-top:auto;padding-top:6px}
+.subh{font:800 1.6rem/1 "Big Shoulders Display",Impact,sans-serif;margin:0 0 14px}
+.dgrid{margin-bottom:34px}
+.empty{background:var(--card);padding:28px;border-radius:10px;color:var(--muted)}
+.more{display:flex;justify-content:center;margin-top:26px}
+.more button{font:700 1rem "Barlow",sans-serif;background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:11px 22px;cursor:pointer}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.stat{background:var(--card);border-radius:10px;padding:24px 26px;box-shadow:var(--shadow)}
+.stat.wide{grid-column:1/-1}
+.stat .eyebrow{margin:0;font-weight:700;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--orange)}
+.stat h3{margin:6px 0 16px;font:900 2rem/1 "Big Shoulders Display",Impact,sans-serif}
+.sbars{display:grid;gap:9px}
+.sbar{display:grid;grid-template-columns:150px 1fr 80px;align-items:center;gap:12px}
+.sbar .l{font-weight:600}
+.sbar .t{height:22px;background:var(--bg);border-radius:4px;overflow:hidden}
+.sbar .f{height:100%;width:0;background:var(--powder);border-radius:4px;transition:width 1.2s cubic-bezier(.3,.7,.2,1)}
+.sbar.hl .f{background:var(--orange)}
+.sbar.hl .l,.sbar.hl .v{color:var(--orange)}
+.sbar .v{white-space:nowrap;text-align:right;font:800 1.35rem/1 "Big Shoulders Display",Impact,sans-serif}
+.stack .barline{display:flex;height:34px;border-radius:6px;overflow:hidden}
+.stack .seg{height:100%;width:0;transition:width 1.2s cubic-bezier(.3,.7,.2,1)}
+.stack .leg{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 14px;font-size:.92rem}
+.stack .leg li{display:flex;align-items:center;gap:8px}
+.stack .leg i{width:12px;height:12px;border-radius:3px;flex:none}
+.stack .leg b{margin-left:auto;font:800 1.15rem/1 "Big Shoulders Display",Impact,sans-serif}
+.big3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.big3 div{border-top:3px solid var(--orange);padding-top:8px}
+.big3 b{display:block;font:900 clamp(2rem,4vw,2.8rem)/1 "Big Shoulders Display",Impact,sans-serif}
+.big3 span{font-size:.86rem;color:var(--muted);line-height:1.3;display:block;margin-top:4px}
+.snote{margin:16px 0 0;font-size:.95rem}
+.ssrc{margin:10px 0 0;font-size:.8rem;color:var(--muted)}
+.ssrc a{color:inherit}
+
+/* ---------- explainers, people, routes ---------- */
+.explain-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.explain{background:var(--card);border-radius:10px;padding:22px;box-shadow:var(--shadow);border-top:5px solid var(--pc)}
+.explain .eyebrow{margin:0;font-weight:700;font-size:.8rem;color:var(--pc);text-transform:uppercase;letter-spacing:.06em}
+.explain h3{margin:6px 0 8px;font:800 1.6rem/1 "Big Shoulders Display",Impact,sans-serif}
+.explain p{margin:0 0 12px;font-size:.96rem}
+.explain a{font-weight:700;font-size:.9rem;text-decoration-color:var(--pc)}
+.editorial-note{color:var(--muted);font-size:.88rem;margin-top:16px;max-width:80ch}
+.people{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+.person{background:var(--card);border-radius:10px;padding:22px 24px 20px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.person .ini{position:absolute;right:-6px;top:-18px;font:900 8rem/1 "Big Shoulders Display",Impact,sans-serif;color:transparent;-webkit-text-stroke:2px var(--pc);opacity:.4;pointer-events:none}
+.person h3{position:relative;margin:0;font:900 2.2rem/.9 "Big Shoulders Display",Impact,sans-serif;max-width:9ch}
+.person .team{position:relative;margin:8px 0 16px;font-weight:600;font-size:.9rem;color:var(--pc)}
+.person dl{margin:0;display:grid;gap:12px;position:relative}
+.person dt{font-weight:700;font-size:.9rem}
+.person dd{margin:2px 0 0;font-size:.95rem}
+.person .src{display:block;margin-top:16px}
+.routes{display:grid;gap:18px}
+.route{background:var(--card);border-radius:10px;padding:24px 26px;display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:10px 30px;box-shadow:var(--shadow)}
+.route header{grid-column:1/-1;display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 16px}
+.route h3{margin:0;font:900 2rem/.95 "Big Shoulders Display",Impact,sans-serif}
+.route .km{font:800 1.25rem "Big Shoulders Display",Impact,sans-serif;color:var(--orange)}
+.line{list-style:none;margin:18px 0;padding:0;display:flex;position:relative}
+.line::before{content:"";position:absolute;left:9px;right:9px;top:7px;height:4px;background:var(--orange);border-radius:2px}
+.line li{flex:1;position:relative;padding-top:24px;font-size:.86rem;font-weight:600;line-height:1.2;padding-right:6px}
+.line li::before{content:"";position:absolute;top:0;left:0;width:18px;height:18px;border-radius:50%;background:var(--card);border:4px solid var(--orange)}
+.line li:last-child{flex:0 0 auto;text-align:right;padding-right:0}
+.line li:last-child::before{left:auto;right:0;background:var(--orange)}
+.route .desc{margin:0;max-width:64ch}
+.rfacts{list-style:none;margin:0;padding:0;font-size:.92rem;align-self:start}
+.rfacts li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid var(--line)}
+.rfacts span{color:var(--muted)}
+.go{display:inline-block;margin-top:14px;font-weight:700;font-size:.95rem;text-decoration:none;background:var(--orange);color:#fff;padding:9px 16px;border-radius:999px}
+.warn{display:inline-block;margin-top:12px;font-size:.84rem;font-weight:700;padding:3px 10px;border-radius:3px;border:2px dashed var(--orange)}
+
+footer{margin-top:90px;padding:30px 0 130px;background:var(--deep);color:#A9C3D2;font-size:.9rem}
+footer p{margin:0 0 8px;max-width:80ch}
+.footerlinks{display:flex;gap:18px;margin-top:14px}
+.footerlinks a{color:#fff;font-weight:600}
+.social-follow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:18px 0 16px;padding:16px 18px;border:1px solid rgba(169,211,235,.25);border-radius:12px;background:rgba(255,255,255,.04)}
+.social-follow strong{color:#fff;margin-right:4px}
+.social-follow a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:var(--orange);color:#fff;text-decoration:none;font-weight:800;line-height:1.2}
+.social-follow a:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.social-follow .ig{background:#7C3AED}
+.social-follow .social-note{flex-basis:100%;font-size:.82rem;color:#A9C3D2;margin:0}
+
+/* ---------- gear shifter ---------- */
+.shifter{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:20;background:#0D2B3E;color:#A9D3EB;border-radius:14px;padding:12px 14px 10px;box-shadow:0 10px 30px -10px rgba(5,25,40,.6);border:1px solid rgba(169,211,235,.25)}
+.gate{position:relative;width:132px;height:96px}
+.gate svg{position:absolute;inset:0}
+.gate button{position:absolute;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;border:0;background:transparent;color:inherit;font:800 .95rem "Big Shoulders Display",Impact,sans-serif;cursor:pointer;z-index:2;display:grid;place-items:center}
+.gate button[aria-current="true"]{color:#fff}
+.knob{position:absolute;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;background:radial-gradient(circle at 35% 28%,#ffb17d 0 8%,var(--orange) 38%,#b83c0b 100%);z-index:1;left:110px;top:82px;box-shadow:inset 0 -3px 0 rgba(0,0,0,.2),0 2px 5px rgba(0,0,0,.35)}
+.knob::before{content:"";position:absolute;left:12px;top:19px;width:6px;height:17px;border-radius:2px;background:linear-gradient(90deg,#6f8795,#e5edf1 45%,#718896);box-shadow:0 1px 2px rgba(0,0,0,.35);z-index:-1}
+.knob::after{content:"";position:absolute;left:8px;top:31px;width:14px;height:4px;border-radius:3px;background:#8299a5;box-shadow:0 1px 2px rgba(0,0,0,.3);z-index:-1}
+@media (prefers-reduced-motion:no-preference){.knob{transition:left .28s cubic-bezier(.5,0,.2,1),top .28s cubic-bezier(.5,0,.2,1)}}
+.gearname{margin-top:6px;font-weight:700;font-size:.8rem;text-align:center}
+.shtoggle{display:none;align-items:center;gap:10px;border:0;background:transparent;color:inherit;font:700 .85rem Barlow,system-ui,sans-serif;padding:8px 14px 8px 8px;min-height:48px;cursor:pointer;border-radius:14px}
+.shtoggle .kn{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--orange);color:#fff;font:800 1rem "Big Shoulders Display",Impact,sans-serif;box-shadow:inset 0 -3px 0 rgba(0,0,0,.2)}
+
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr}
+  .side{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .rgrid{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr}
+  .route{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  .lead{min-height:420px}
+  .lead .txt{padding:22px 20px 20px}
+  .mini-card{grid-template-columns:110px 1fr}
+  .line{flex-direction:column;gap:12px;margin:14px 0}
+  .line::before{left:7px;right:auto;top:9px;bottom:9px;width:4px;height:auto}
+  .line li{padding:0 0 0 30px;text-align:left!important}
+  .line li:last-child::before{left:0;right:auto}
+  .shifter{right:10px;padding:0}
+  .shtoggle{display:flex}
+  .shifter:not(.open) .gate,.shifter .gearname{display:none}
+  .shifter.open .gate{margin:14px 16px 4px}
+  .gate button{width:40px;height:40px;margin:-20px 0 0 -20px}
+  .person .ini{font-size:6rem}
+  .brow{grid-template-columns:20px 44px 1fr 46px;gap:8px}
+  .sbar{grid-template-columns:96px 1fr 62px;gap:8px}
+  .sbar .l{font-size:.88rem}
+}
+ .read-more{display:inline-block;margin:8px 0 10px;color:var(--orange);font-weight:800;text-decoration:none}.read-more:hover{text-decoration:underline}
+.hero{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(280px,1fr);gap:24px;align-items:start}.lead{display:block;min-width:0}.editorial-ph{aspect-ratio:16/9;background:linear-gradient(135deg,#0D2B3E 0%,#174B68 58%,#F05A1A 58%,#F05A1A 62%,#0D2B3E 62%);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(22px,4vw,48px);color:#fff;border-radius:14px}.editorial-mark{font:900 clamp(2rem,5vw,4.5rem)/1 "Big Shoulders Display",sans-serif;letter-spacing:.04em}.editorial-category{font-weight:800;letter-spacing:.16em}.lead .txt{padding:20px 4px}.lead .txt h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.04}.side{display:block;min-width:0}.side-heading{margin:0 0 12px;font:900 1.35rem "Barlow",sans-serif;border-bottom:3px solid var(--orange);padding-bottom:10px}.side .mini-card{display:block;padding:14px 0;border-bottom:1px solid var(--line)}.side .mini-card .ph{display:none}.side .mini-card .t{padding:0}.side .mini-card h3{font-size:1.05rem;line-height:1.2;margin:7px 0}.side .mini-card p{font-size:.9rem;margin:6px 0}.side .mini-card .src{font-size:.75rem}@media(max-width:760px){.hero{grid-template-columns:1fr}.side{margin-top:16px}.side .mini-card{padding:12px 0}}</style>
+<!--hreflang--><link rel="alternate" hreflang="hr" href="https://okretaji.com/"><link rel="alternate" hreflang="en" href="https://okretaji.com/en/"><link rel="alternate" hreflang="de" href="https://okretaji.com/de/"><link rel="alternate" hreflang="x-default" href="https://okretaji.com/"><style id="lang-sw-css">.lang-sw{display:flex;justify-content:flex-end;gap:4px;padding:5px 16px;background:#0D2B3E;border-bottom:1px solid #ffffff14;font:700 .74rem/1.4 Barlow,system-ui,sans-serif;letter-spacing:.08em}.lang-sw a{color:#cfe3ef;text-decoration:none;padding:2px 8px;border-radius:999px}.lang-sw a:hover,.lang-sw a:focus-visible{color:#fff;background:#ffffff1f}.lang-sw a[aria-current=true]{background:var(--orange,#F05A1A);color:#fff}</style><!--/hreflang--></head>
+<body><!--lang-sw--><nav class="lang-sw" aria-label="Sprache"><a href="/" hreflang="hr" lang="hr">HR</a><a href="/en/" hreflang="en" lang="en">EN</a><a href="/de/" hreflang="de" lang="de" aria-current="true">DE</a></nav><script>document.querySelectorAll('.lang-sw a').forEach(function(a){a.href=a.getAttribute('href')+location.search+location.hash})</script><!--/lang-sw-->
+<header class="bar">
+  <div class="wrap">
+    <a class="mini" href="#vrh" aria-label="Okretaji – nach oben"><img src="/favicon.svg" alt="" width="28" height="28">Okretaji</a>
+    <nav class="nav" aria-label="Hauptkategorien">
+      <a href="#novosti" aria-current="true">Neueste</a><a href="rubrika.html?k=motorsport">Motorsport</a><a href="rubrika.html?k=automobili">Autos</a><a href="rubrika.html?k=motocikli">Motorräder</a><a href="rubrika.html?k=tehnika">Technik</a><a href="rubrika.html?k=energija">Energie & Mobilität</a><a href="rubrika.html?k=regija">Region</a>
+    </nav>
+  </div>
+</header>
+
+<div class="mast" id="vrh">
+  <div class="livery" aria-hidden="true"><i></i><i></i></div>
+  <div class="wrap">
+    <h1 class="logo"><img src="/brand-logo.svg" alt="Okretaji — Auto, Moto, Sport"></h1>
+    <p class="tag">Auto, Moto & Motorsport, Technologie und Energie – plus Straßen, die man gefahren haben muss.</p>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+    <div class="hero" id="novosti">
+      <article class="lead" id="lead"></article>
+      <div class="side" id="side"></div>
+    </div>
+  </div>
+
+  <section class="race" id="utrka" aria-labelledby="h-utrka" hidden>
+    <div class="wrap">
+      <div class="sh"><span class="gear" aria-hidden="true">2</span><h2 id="h-utrka">Nächstes Rennen</h2><p>Formel 1 – Strecke, Zahlen und Zeitplan für das Wochenende.</p></div>
+      <div class="rgrid">
+        <div class="rcard">
+          <div class="rmeta" id="raceRound"></div>
+          <div class="rname" id="raceName"></div>
+          <div class="rmeta" id="raceWhere"></div>
+          <div class="count" id="count" aria-live="polite"></div>
+          <div class="track" id="track"></div>
+          <div class="facts" id="trackFacts"></div>
+        </div>
+        <div style="display:grid;gap:22px;align-content:start">
+          <div class="rcard"><h3>Die Sieger hier – die letzten 5 Rennen</h3><ol class="winners" id="winners"></ol></div>
+          <div class="rcard"><h3 id="standTitle">Meisterschaftsstand</h3><div class="bars" id="bars"></div></div>
+        </div>
+      </div>
+      <div class="rgrid" style="margin-top:22px">
+        <div class="rcard"><h3>Zeitplan fürs Wochenende (Ihre Zeit)</h3><ul class="sess" id="sess"></ul></div>
+        <div class="rcard"><h3>Kommende Rennen</h3><ol class="sched" id="sched"></ol></div>
+      </div>
+      <p class="rnote">Daten: <a href="https://github.com/jolpica/jolpica-f1" target="_blank" rel="noopener">Jolpica F1 API</a>; Streckenlayout: <a href="https://github.com/bacinger/f1-circuits" target="_blank" rel="noopener">bacinger/f1-circuits</a> (MIT-Lizenz).</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section id="brojke" aria-labelledby="h-brojke">
+      <div class="sh"><span class="gear" aria-hidden="true">3</span><h2 id="h-brojke">In Zahlen</h2><p>Verkehr, Emissionen und Elektrofahrzeuge – Fakten ohne Schönfärberei.</p></div>
+      <div class="stats">
+        <article class="stat wide">
+          <p class="eyebrow">Treibhausgasemissionen, 2024.</p>
+          <h3>Wer verschmutzt die Welt?</h3>
+          <div class="sbars" data-bars='[["China",29.2],["USA",11.1],["Indien",8.2],["Europäische Union",5.9],["Rest der Welt",45.6]]' data-hl="Europäische Union" data-unit="%"></div>
+          <p class="snote">Die Welt hat 2024 rekordverdächtige 53,2 Milliarden Tonnen CO₂e ausgestoßen (+1,3 %). Die EU gehört zu den wenigen großen Volkswirtschaften, die ihre Emissionen reduziert haben (−1,8 %) und liegt nun 35 % unter dem Niveau von 1990.</p>
+          <p class="ssrc">Quelle: <a href="https://edgar.jrc.ec.europa.eu/report_2025" target="_blank" rel="noopener">EDGAR / JRC, 2025.</a></p>
+        </article>
+        <article class="stat">
+          <p class="eyebrow">Neuwagen in der EU, 2025.</p>
+          <h3>Was kaufen die Europäer?</h3>
+          <div class="stack" data-stack='[["Hybride",34.5,"var(--blue)"],["Benzin",26.6,"var(--muted)"],["Elektrisch",17.4,"var(--green)"],["Plug-in-Hybride",9.4,"var(--powder)"],["Diesel",8.9,"var(--ink)"],["Sonstige",3.2,"var(--line)"]]'></div>
+          <p class="snote">Benzin und Diesel zusammen fielen auf 35,5 % des Marktes, nach 45,2 % im Vorjahr.</p>
+          <p class="ssrc">Quelle: <a href="https://www.acea.auto/pc-registrations/new-car-registrations-1-8-in-2025-battery-electric-17-4-market-share/" target="_blank" rel="noopener">ACEA, 2026.</a></p>
+        </article>
+        <article class="stat">
+          <p class="eyebrow">Anteil der Elektroautos bei den Neuzulassungen, 2025.</p>
+          <h3>Europa in zwei Geschwindigkeiten</h3>
+          <div class="big3">
+            <div><b>96 %</b><span>Norwegen</span></div>
+            <div><b>17,4 %</b><span>EU-Durchschnitt</span></div>
+            <div><b>6 %</b><span>Italien</span></div>
+          </div>
+          <p class="ssrc">Quelle: ACEA, via <a href="https://www.best-selling-cars.com/europe/2025-full-year-europe-bev-electric-car-sales-per-european-country/" target="_blank" rel="noopener">best-selling-cars.com</a></p>
+        </article>
+        <article class="stat">
+          <p class="eyebrow">Verkehr und Klima in der EU, 2023.</p>
+          <h3>Wie stark belastet der Verkehr die Umwelt?</h3>
+          <div class="big3">
+            <div><b>31 %</b><span>aller EU-Emissionen stammen aus dem Verkehr</span></div>
+            <div><b>73 %</b><span>der Verkehrsemissionen entstehen auf der Straße</span></div>
+            <div><b>52 %</b><span>der Verkehrsemissionen entfallen auf Autos und Lieferwagen</span></div>
+          </div>
+          <p class="snote">Im Gegensatz zu Industrie und Energiewirtschaft sind die Verkehrsemissionen heute höher als 1990.</p>
+          <p class="ssrc">Quelle: <a href="https://www.eea.europa.eu/en/analysis/publications/sustainability-of-europes-mobility-systems-2025/climate" target="_blank" rel="noopener">Europäische Umweltagentur, 2025.</a></p>
+        </article>
+      </div>
+      <h3 class="subh" style="margin-top:34px">Technik und Energie – Ratgeber</h3>
+      <div class="explain-grid">
+      <article class="explain" style="--pc:var(--blue)">
+        <p class="eyebrow">Technologie</p><h3>Elektro- oder Benzinantrieb?</h3>
+        <p>Ein Vergleich ergibt erst dann Sinn, wenn der gesamte Lebenszyklus, die Fahrzeuggröße, die Fahrleistung und die Stromquelle betrachtet werden – und nicht nur die Auspuffemissionen.</p>
+        <a href="https://www.iea.org/reports/global-ev-outlook-2024" target="_blank" rel="noopener">Daten und Analysen der IEA</a>
+      </article>
+      <article class="explain" style="--pc:var(--green)">
+        <p class="eyebrow">Energie</p><h3>Wie grün ist Energie wirklich?</h3>
+        <p>Solargewinnungs- und Windkraftanlagen verursachen bei Produktion, Bau und Entsorgung Emissionen. Für einen fairen Vergleich müssen die Emissionen pro erzeugter Kilowattstunde über die gesamte Lebensdauer berechnet werden.</p>
+        <a href="https://www.ipcc.ch/report/ar6/wg3/" target="_blank" rel="noopener">IPCC: Minderung des Klimawandels</a>
+      </article>
+      <article class="explain" style="--pc:var(--orange)">
+        <p class="eyebrow">Batterien</p><h3>Was passiert mit der Batterie?</h3>
+        <p>Bergbau, Raffination und Batterieproduktion haben Auswirkungen auf die Umwelt. Wichtig sind auch Langlebigkeit, Reparatur, Wiederverwendung sowie die tatsächliche Recyclingquote – und nicht nur die theoretische Möglichkeit.</p>
+        <a href="https://www.iea.org/topics/batteries-and-secure-energy-transitions" target="_blank" rel="noopener">IEA: Batterien und Energiewende</a>
+      </article>
+      <article class="explain" style="--pc:var(--red)">
+        <p class="eyebrow">Faktencheck</p><h3>Zahlen vor Slogans</h3>
+        <p>Wir unterscheiden zwischen direkten Emissionen, Lebenszyklusemissionen, Energieverbrauch und lokaler Luftverschmutzung. Jede Behauptung sollte eine Quelle, ein Jahr und eine klare Methodik aufweisen.</p>
+        <a href="https://ourworldindata.org/energy" target="_blank" rel="noopener">Our World in Data: Energie</a>
+      </article>
+    </div>
+    <p class="editorial-note">Kurzratgeber zur Orientierung im Thema. Jede Behauptung hat eine Quelle, und gemessene Daten werden von Schätzungen und Prognosen getrennt.</p>
+    </section>
+
+
+    <section id="povratak" class="return-section" aria-labelledby="h-povratak">
+      <div class="sh"><span class="gear" aria-hidden="true">↻</span><h2 id="h-povratak">Gründe für die Rückkehr</h2><p>Mehr als Tagesnachrichten: nützliche Inhalte, die es wert sind, gespeichert und wieder aufgerufen zu werden.</p></div>
+      <div class="return-grid">
+        <article class="return-card"><span class="return-kicker">Motorsport</span><h3>MotoGP hautnah</h3><p>Neuigkeiten, Rennkalender, Fahrer und die wichtigsten Geschichten aus der Königsklasse des Motorradsports – mit einer eigenen Rubrik für die F1.</p><a href="motogp.html">MotoGP-Rennkalender →</a><button type="button" data-return-category="motogp">MotoGP-News →</button></article>
+        <article class="return-card"><span class="return-kicker">Früher und heute</span><h3>Stoner und Márquez: Wie fahren sie durch die Kurve?</h3><p>Vergleich von Fahrstilen, Statistiken und den Auswirkungen von Änderungen an MotoGP-Motorrädern – mit Quellen und einer klaren Unterscheidung zwischen Daten und Schlussfolgerungen.</p><a href="stoner-marquez-zavoji.html">Analyse lesen →</a></article>
+        <article class="return-card"><span class="return-kicker">Kauf ohne Rätselraten</span><h3>Auto- und Motorradvergleiche</h3><p>Wir vergleichen Preis, Verbrauch, Leistung, Wartung und den tatsächlichen Einsatzzweck. Herstellerangaben und Messwerte werden klar voneinander getrennt.</p><a href="usporedbe.html">Vergleichsratgeber öffnen →</a></article>
+        <article class="return-card"><span class="return-kicker">Garage</span><h3>Praktische Technik-Ratgeber</h3><p>Wartung, Reifen, Bremsen, Antriebsstrang, Diagnose und Elektrofahrzeuge – Schritt für Schritt, mit Quellen und Sicherheitshinweisen.</p><a href="tehnicki-vodici.html">Technische Anleitungen öffnen →</a></article>
+        <article class="return-card"><span class="return-kicker">Unterwegs</span><h3>Istrische und alpine Motorradrouten</h3><p>Tourenvorschläge mit ungefährer Kilometerzahl, interessanten Zwischenstopps, Schwierigkeitsgrad und saisonalen Hinweisen.</p><a href="#rute">Route wählen →</a></article>
+      </div>
+    </section>
+
+    <section id="sve-vijesti" aria-labelledby="h-novosti" style="padding-top:60px" hidden>
+      <div class="sh"><span class="gear" aria-hidden="true">1</span><h2 id="h-novosti">Alle Nachrichten</h2><p>Auswahl des Wichtigsten aus der Auto-Moto-Welt und dem Motorsport.</p></div>
+      <div class="chips" id="newsChips" role="group" aria-label="Nachrichten filtern"></div>
+      <div class="grid" id="newsList"></div>
+      <div class="more" id="moreWrap" hidden><button type="button" id="moreBtn">Mehr anzeigen</button></div>
+    </section>
+
+    <section id="vozaci" aria-labelledby="h-vozaci">
+      <div class="sh"><span class="gear" aria-hidden="true">4</span><h2 id="h-vozaci">Hinter dem Helm</h2><p>Was sie fahren, wenn sie nicht auf der Strecke sind, womit sie sich beschäftigen und was sie selbst veröffentlichen.</p></div>
+      <div id="driverNewsWrap" hidden><h3 class="subh">Neuestes aus dem Leben der Fahrer</h3><div class="grid dgrid" id="driverNews"></div></div>
+      <div class="people" id="peopleList"></div>
+    </section>
+
+    <section id="rute" aria-labelledby="h-rute">
+      <div class="sh"><span class="gear" aria-hidden="true">5</span><h2 id="h-rute">Motorradrouten</h2><p>Von den istrischen Hügeln bis zu den höchsten Alpenpässen.</p></div>
+      <div class="chips" id="routeChips" role="group" aria-label="Routen filtern"></div>
+      <div class="routes" id="routeList"></div>
+    </section>
+
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Bei jeder Nachricht ist die Quelle angegeben. Okretaji bringt eine Auswahl von Themen aus der Welt der Autos, Motorräder, des Motorsports, der Technik und Energie.</p>
+    
+    <p>Die Kilometerzahlen der Routen sind ungefähr. Vor den Alpenpässen prüfen, ob die Straße geöffnet ist – die meisten werden von November bis Mai gesperrt.</p>
+    <p class="upd" id="updated"></p>
+    <div class="social-follow" aria-label="Folgen Sie Okretaji in den sozialen Medien">
+      <strong>Folgen Sie Okretaji</strong> <a href="https://www.facebook.com/okretaji/?locale=hr_HR" target="_blank" rel="noopener noreferrer" aria-label="Pratite Okretaje na Facebooku">f&nbsp; Facebook</a> <a class="ig" href="https://www.instagram.com/okretaji/" target="_blank" rel="noopener noreferrer" aria-label="Pratite Okretaje na Instagramu">◎&nbsp; Instagram</a>
+      <p class="social-note">Neue Nachrichten, Motorsport, Technik und Energie — folgen Sie uns und beteiligen Sie sich an der Diskussion.</p>
+    </div>
+    <nav class="footerlinks" aria-label="Informationen über das Portal"><a href="o-nama.html">Über uns</a><a href="kontakt.html">Kontakt</a><a href="privatnost.html">Datenschutz</a></nav>
+  </div>
+</footer>
+
+<nav class="shifter" aria-label="Getriebe – Sektionsnavigation">
+  <div class="gate">
+    <svg viewBox="0 0 132 96" aria-hidden="true"><path d="M22 14 V82 M66 14 V82 M110 14 V82 M22 48 H110" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="5" stroke-linecap="round"/></svg>
+    <span class="knob" id="knob"></span>
+    <button type="button" data-t="novosti" data-n="1: Nachrichten" style="left:22px;top:14px" aria-label="Nachrichten">1</button>
+    <button type="button" data-t="utrka" data-n="2: Nächstes Rennen" style="left:22px;top:82px" aria-label="Nächstes Rennen">2</button>
+    <button type="button" data-t="brojke" data-n="3: In Zahlen" style="left:66px;top:14px" aria-label="In Zahlen">3</button>
+    <button type="button" data-t="vozaci" data-n="4: Hinter dem Helm" style="left:66px;top:82px" aria-label="Hinter dem Helm">4</button>
+    <button type="button" data-t="rute" data-n="5: Motorradrouten" style="left:110px;top:14px" aria-label="Motorradrouten">5</button>
+    <button type="button" data-t="vrh" data-n="R: nach oben" style="left:110px;top:82px" aria-label="Seitenanfang">R</button>
+  </div>
+  <div class="gearname" id="gearname">N: Start</div>
+  <button type="button" class="shtoggle" id="shtoggle" aria-expanded="false" aria-label="Getriebe öffnen – Sektionsnavigation"><span class="kn" id="shkn">N</span><span id="shname">Getriebe</span></button>
+</nav>
+
+<script>
+const CATS = {
+  f1:{name:"Formel 1",color:"var(--red)",short:"F1"},
+  motogp:{name:"MotoGP",color:"var(--blue)",short:"MotoGP"},
+  auto:{name:"Autos",color:"var(--orange)",short:"Auto"},
+  moto:{name:"Motorräder",color:"var(--yellow)",short:"Moto"},
+  reli:{name:"Rallye",color:"var(--green)",short:"Rallye"},
+  tech:{name:"Technologie",color:"var(--blue)",short:"Tech"},
+  energy:{name:"Energie",color:"var(--green)",short:"Energie"},
+  kaciga:{name:"Hinter dem Helm",color:"var(--yellow)",short:"Hinter dem Helm"}
+};
+const CAT_FALLBACK={name:"Nachrichten",color:"var(--orange)",short:"Nachrichten"};
+const REGIONS = {istra:"Istrien und Kvarner", hr:"Rest von Kroatien", slo:"Slowenien", ita:"Italien"};
+
+function gm(points){
+  const enc = p => encodeURIComponent(p);
+  const o = points[0], d = points[points.length-1], w = points.slice(1,-1);
+  return "https://www.google.com/maps/dir/?api=1&travelmode=driving&origin="+enc(o)+"&destination="+enc(d)+(w.length?"&waypoints="+w.map(enc).join("%7C"):"");
+}
+
+const ROUTES = [
+  {r:"istra", n:"Hügelstädte", km:"70", pts:["Žminj","Pazin","Motovun","Grožnjan","Buje"],
+   desc:"Klassische Runde durch das innere Istrien: Serpentinen nach Motovun, die Steinhäuser von Grožnjan und Blick auf das Mirnatal. Wenig Verkehr in der Nachsaison, reichlich Gelegenheit für Kaffee und Trüffel.",
+   tip:"Zavoji, sela", season:"Ganzjährig", diff:"Gemütlich"},
+  {r:"istra", n:"Učka und Küste von Plomin", km:"75", pts:["Lupoglav","Poklon, Učka","Lovran","Mošćenička Draga","Plomin","Labin"],
+   desc:"Über den Pass Poklon geht es hinab an die Opatija-Riviera und dann entlang des Meeres nach Plomin und Labin. Der obere Teil des Učka bietet waldreiche Kurven und einen freien Blick auf den Kvarner.",
+   tip:"Prijevoj, obala", season:"März – November", diff:"Mittel"},
+  {r:"istra", n:"Cres und Lošinj", km:"80", pts:["Porozina","Cres","Osor","Mali Lošinj"],
+   desc:"Mit der Fähre von Brestova nach Porozina, dann über den Inselrücken durch Karstlandschaft und Weiden. Bei Osor überquert man die Brücke nach Lošinj.",
+   tip:"Otok, trajekt", season:"April – Oktober", diff:"Gemütlich"},
+  {r:"de", n:"Küstenstraße und Velebit", km:"200", pts:["Rijeka","Senj","Karlobag","Baške Oštarije","Gospić"],
+   desc:"Jadranska magistrala von Rijeka nach Karlobag mit dem Meer auf der ganzen Strecke zur Rechten, gefolgt vom Serpentinenanstieg nach Baške Oštarije. Vorsicht vor der Bora – auf diesem Abschnitt kann sie gefährlich sein.",
+   tip:"Obala, prijevoj", season:"April – Oktober", diff:"Mittel", warn:"Bura – HAK vor Abfahrt prüfen"},
+  {r:"de", n:"Gorski kotar und Kupa-Tal", km:"90", pts:["Grobnik","Fužine","Lokve","Delnice","Brod na Kupi"],
+   desc:"Šumske ceste kroz Gorski kotar, uz jezera Bajer i Lokvarka, pa spust u dolinu Kupe uz granicu sa Slovenijom. Ljeti osvježenje, ujesen prekrasne boje.",
+   tip:"Šuma, rijeka", season:"Svibanj – listopad", diff:"Gemütlich"},
+  {r:"de", n:"Biokovo – Sveti Jure", km:"25", pts:["Makarska","Park prirode Biokovo","Sveti Jure, Biokovo"],
+   desc:"Uska cesta do 1762 m iznad Makarske, s jednim od najljepših pogleda na Jadran. Naplata ulaza u park, promet ograničen.",
+   tip:"Planinska cesta", season:"Svibanj – listopad", diff:"Zahtjevno"},
+  {r:"slo", n:"Vršič", km:"50", pts:["Kranjska Gora","Vršič","Trenta","Bovec"],
+   desc:"Najviši cestovni prijevoj u Sloveniji, 1611 m, s 50 numeriranih serpentina – na sjevernoj strani popločenih kockom. Spust prema Trenti vodi u dolinu Soče.",
+   tip:"Prijevoj, serpentine", season:"Svibanj – listopad", diff:"Zahtjevno", warn:"Zimi zatvoren"},
+  {r:"slo", n:"Mangartsko sedlo", km:"12", pts:["Log pod Mangartom","Mangartsko sedlo"],
+   desc:"Najviša cesta Slovenije penje se do oko 2050 m kroz tunele isklesane u stijeni. Kratka, ali spektakularna; lako se spaja s Vršičem i Predilom.",
+   tip:"Visokoplaninska", season:"Lipanj – listopad", diff:"Zahtjevno", warn:"Cestarina, zimi zatvoren"},
+  {r:"ita", n:"Sella Ronda, Dolomiti", km:"55", pts:["Passo Sella","Passo Pordoi","Passo Campolongo","Passo Gardena"],
+   desc:"Krug oko masiva Sella preko četiri prijevoja iznad 1800 m. Dolomiti u punom sjaju, ali ljeti vrlo prometno – kreni rano ujutro.",
+   tip:"Četiri prijevoja", season:"Lipanj – rujan", diff:"Mittel", warn:"Zimi zatvoreno"},
+  {r:"ita", n:"Passo dello Stelvio", km:"50", pts:["Prato allo Stelvio","Passo dello Stelvio","Bormio"],
+   desc:"Legendarni prijevoj na 2757 m s 48 serpentina na strani od Prata. Spust prema Bormiu je brži i otvoreniji. Za motoriste obavezna stanica barem jednom.",
+   tip:"Legenda Alpa", season:"Lipanj – rujan", diff:"Zahtjevno", warn:"Zimi zatvoren"}
+];
+
+const PEOPLE = [
+  {n:"Max Verstappen", team:"F1, Red Bull – četverostruki prvak", c:"var(--blue)",
+   car:"Er hat kein festes Alltagsauto, sondern wechselt aus seiner Sammlung ab: Aston Martin Valkyrie, Porsche 911 GT3 RS, Honda NSX Type S (Hondas Geschenk für den zweiten Titel). Sein erstes Auto war ein gelber Renault Clio.",
+   hobby:"Sim-Racing. Seit 2015 fährt er für das virtuelle Team Redline und absolviert Rennen sogar im Hotelzimmer an Rennwochenenden. Der Simulator zu Hause ist Zehntausende von Dollars wert.",
+   fact:"Er möchte über ein eigenes GT3-Team talentierte Sim-Fahrer in den echten Motorsport bringen, da sich viele Karting nicht leisten können.",
+   src:"PlanetF1", u:"https://www.planetf1.com/features/max-verstappen-car-collection"},
+  {n:"Charles Leclerc", team:"F1, Ferrari", c:"var(--red)",
+   car:"Als Ferrari-Fahrer fährt er öffentlich Ferrari-Modelle.",
+   hobby:"Klavier und Komposition. Er hat eine EP mit dem französischen Pianisten Sofiane Pamart veröffentlicht und Stücke wie MC24 und SIN24 seinen Siegen gewidmet. Er ist ein leidenschaftlicher Schachspieler.",
+   fact:"Er hat seine eigene kalorienarme Eismarke LEC, die 2024 gemeinsam mit dem italienischen Unternehmen Grom gegründet wurde.",
+   src:"PlanetF1", u:"https://www.planetf1.com/news/charles-leclerc-releases-new-music-2024-season"},
+  {n:"Lewis Hamilton", team:"F1, Ferrari – siebenmaliger Weltmeister", c:"var(--red)",
+   car:"Er sammelte jahrelang seltene Autos, verkaufte jedoch 2019 seinen Privatjet und betont seither einen umweltbewussteren Lebensstil.",
+   hobby:"Musik – er produziert seine eigenen Songs und spielt Klavier und Gitarre. Dazu kommen Mode und Design.",
+   fact:"Einer der wenigen Fahrer mit ernsthaften musikalischen Aktivitäten außerhalb der Strecke, neben Leclerc.",
+   src:"PlanetF1", u:"https://www.planetf1.com/news/charles-leclerc-music-release-hint"},
+  {n:"Fernando Alonso", team:"F1, Aston Martin – zweimaliger Weltmeister", c:"var(--green)",
+   car:"Der Großteil seiner Sammlung – Boliden, Karts und Trophäen – ist öffentlich in einem Museum in seiner Heimat Asturien ausgestellt.",
+   hobby:"Radfahren. Er fährt Rennrad für die Kondition und ist ein großer Fan dieses Sports.",
+   fact:"Das Museum und die Kartbahn in Llanera bei Oviedo umfassen mehr als 300 Exponate, vom Kart, mit dem er im Alter von drei Jahren begann, bis hin zum F1-Boliden. Die Strecke hat er selbst mitgestaltet.",
+   src:"Wikipedia", u:"https://en.wikipedia.org/wiki/Fernando_Alonso_Sports_Complex"},
+  {n:"Lando Norris", team:"F1, McLaren", c:"var(--yellow)",
+   car:"Als McLaren-Fahrer zeigt er sich in der Öffentlichkeit in McLaren-Straßenautos.",
+   hobby:"Gaming und Streaming. Daraus ist Quadrant hervorgegangen, seine Gaming- und Lifestyle-Marke.",
+   fact:"Quadrant ist eines der erfolgreichsten Beispiele dafür, wie ein Fahrer seine eigene Marke außerhalb der F1 aufbaut.",
+   src:"The Paddock Journal", u:"https://thepaddockjournal.substack.com/p/charles-leclercs-side-quests-how"},
+  {n:"Valentino Rossi", team:"MotoGP-Legende, Team-Besitzer von VR46", c:"var(--yellow)",
+   car:"Er fährt weiterhin Rennen – er hat seinen Vertrag mit BMW um drei Jahre für die GT World Challenge Europe verlängert. WEC und Überseerennen hat er aufgegeben, um mehr Zeit mit seiner Familie zu verbringen.",
+   hobby:"Das Fahren auf seiner Ranch in Tavullia, einer Dirt-Track-Strecke zwischen Weinbergen und Olivenhainen, die er selbst entworfen hat.",
+   fact:"Auf der Ranch trainiert die VR46 Academy – Bagnaia, Bezzecchi und Morbidelli liefern sich dort zwischen den MotoGP-Rennen regelmäßig Duelle mit ihm.",
+   src:"Moto.it", u:"https://www.moto.it/MotoGP/bagnaia-e-bezzecchi-al-ranch-di-valentino-rossi-allenamento-in-vista-del-gp-del-brasile.html"}
+];
+
+
+let NEWS=[], DRIVERS=[], newsFilter="all", routeFilter="all", shown=6;
+const $=id=>document.getElementById(id);
+function fmt(iso){const d=new Date(iso);return isNaN(d)?"":d.getDate()+". "+(d.getMonth()+1)+".";}
+function el(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;}
+function cat(n){return CATS[n.c]||CAT_FALLBACK;}
+
+const imageLookupInFlight=new Set();
+function attachPhoto(n,box){
+  if(n.img&&n.img.src)return;
+  if(!(n.img_q||n.t)||imageLookupInFlight.has(n.u))return;
+  imageLookupInFlight.add(n.u);
+  const cacheKey="okretaji_photo_"+n.u;
+  let cached=null;
+  try{cached=JSON.parse(sessionStorage.getItem(cacheKey)||"null");}catch(e){}
+  const apply=(img)=>{
+    if(!img||!img.src)return;
+    n.img=img;
+    const im=new Image();im.loading="lazy";im.decoding="async";im.alt="Foto: "+(n.img_q||n.t);
+    im.onerror=()=>{im.remove();box.classList.add("fallback");box.appendChild(el("span","fb",cat(n).short));};
+    im.src=img.src;box.innerHTML="";box.classList.remove("fallback");box.appendChild(im);
+    const credit=el("div","credit");
+    credit.append("Foto: ");
+    const a=el("a",null,img.by||"autor");a.href=img.link||img.src;a.target="_blank";a.rel="noopener noreferrer";credit.append(a,", "+(img.lic||"Lizenz an der Quelle angegeben")+(img.archival?" · Archivfoto":" · Foto"));
+    box.appendChild(credit);
+  };
+  if(cached){apply(cached);return;}
+  fetch("https://api.openverse.org/v1/images/?q="+encodeURIComponent(n.img_q||n.t)+"&page_size=5&license_type=commercial",{headers:{Accept:"application/json"}})
+    .then(r=>{if(!r.ok)throw new Error("image search");return r.json();})
+    .then(d=>{
+      const results=(d.results||[]).filter(x=>x.thumbnail&&x.url&&x.license&&x.creator);
+      if(!results.length)return;
+      const x=results[0];
+      const img={src:x.thumbnail,by:x.creator,lic:String(x.license).toUpperCase().replace("CC","CC "),link:x.foreign_landing_url||x.url};
+      try{sessionStorage.setItem(cacheKey,JSON.stringify(img));}catch(e){}
+      apply(img);
+    }).catch(()=>{}).finally(()=>imageLookupInFlight.delete(n.u));
+}
+function photo(n,withCredit){
+  const c=cat(n), box=el("div","ph"); box.style.setProperty("--pc",c.color);
+  const frag=document.createDocumentFragment(); frag.appendChild(box);
+  // Prioritet: licencirana slika spremljena u news.json, zatim Openverse, pa tematska ilustracija.
+  const category = n.c==="f1" ? "F1" : n.c==="motogp" ? "MotoGP" : n.c==="moto" ? "MOTO" : n.c==="auto" ? "AUTO" : n.c==="tech" ? "TECH" : n.c==="energy" ? "ENERGIE" : c.short;
+  const bg = n.c==="energy" ? "#174D38" : n.c==="tech" ? "#174B68" : n.c==="auto" ? "#8B3B1B" : "#0D2B3E";
+  // Ugrađena SVG ilustracija radi i kad vanjski servisi za fotografije ne rade.
+  const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675"><rect width="1200" height="675" fill="'+bg+'"/><path d="M0 520 L1200 300 L1200 675 L0 675Z" fill="#F05A1A"/><path d="M0 565 L1200 345" stroke="#EAF3F8" stroke-width="9" opacity=".8"/><circle cx="875" cy="270" r="145" fill="none" stroke="#EAF3F8" stroke-width="18" opacity=".22"/><circle cx="875" cy="270" r="90" fill="none" stroke="#EAF3F8" stroke-width="8" opacity=".25"/><text x="68" y="150" fill="#EAF3F8" font-family="Arial,sans-serif" font-weight="900" font-size="42" letter-spacing="10">OKRETAJI</text><text x="65" y="440" fill="#FFFFFF" font-family="Arial,sans-serif" font-weight="900" font-size="94">'+category+'</text><text x="70" y="490" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="25" opacity=".9">AUTO · MOTO · TECHNIK · ENERGIE</text></svg>';
+  const fallback = "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg);
+  const addImage=(src,credit)=>{
+    const im=new Image(); im.loading="lazy"; im.decoding="async"; im.alt="Foto: "+(n.img_q||n.t); im.src=src;
+    im.onerror=()=>{im.remove();box.classList.add("fallback");box.appendChild(el("span","fb",c.short));};
+    box.appendChild(im);
+    if(withCredit&&credit){const cr=el("div","credit");cr.textContent=credit;frag.appendChild(cr);}
+  };
+  if(n.img&&n.img.src){
+    addImage(n.img.src,withCredit?("Foto: "+(n.img.by||"autor")+", "+(n.img.lic||"Lizenz an der Quelle angegeben")+" (ilustracija)"):"");
+  } else {
+    // Prvo prikaži lokalno ugrađenu ilustraciju; Openverse može je zamijeniti fotografijom.
+    const im=new Image(); im.loading="lazy"; im.decoding="async"; im.alt="Illustration: "+(n.img_q||n.t); im.src=fallback;
+    box.appendChild(im);
+    attachPhoto(n,box);
+  }
+  return frag;
+}
+function srcLine(n){const p=el("div","src");p.append("Ursprünglicher Artikel: ");const a=el("a",null,n.src||"Quelle öffnen");a.href=n.u;a.target="_blank";a.rel="noopener noreferrer";p.append(a," · "+fmt(n.date));return p;}
+function plate(n){const c=cat(n),p=el("span","plate",c.name);p.style.setProperty("--pc",c.color);return p;}
+
+const EDITORIAL = [
+ {t:"Stoner und Márquez: Gleicher Instinkt, andere MotoGP-Ära",s:"Zwei Champions, zwei Motorradgenerationen und dieselbe Obsession für die perfekte Kurvenfahrt. Was verbindet sie wirklich?",href:"stoner-marquez-zavoji.html",tag:"MOTOGP · ANALYSE",images:[
+  {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Casey_Stoner_2010_TT_Assen.jpg?width=1400",alt:"Casey Stoner auf der Ducati beim TT Assen 2010.",credit:"Morten Jensen / Wikimedia Commons, CC BY 2.0",link:"https://commons.wikimedia.org/wiki/File:Casey_Stoner_2010_TT_Assen.jpg"},
+  {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Marc_M%C3%A1rquez_2015_Misano_2.jpeg?width=1400",alt:"Marc Márquez auf der Repsol Honda beim GP von San Marino 2015.",credit:"Box Repsol / Wikimedia Commons, CC BY 2.0",link:"https://commons.wikimedia.org/wiki/File:Marc_M%C3%A1rquez_2015_Misano_2.jpeg"}
+ ]},
+ {t:"Marc Márquez gewinnt in Sepang und baut Führung aus: Achter Titel rückt näher",s:"Der siebte Saisonsieg und der 80. MotoGP-Triumph brachten ihm 44 Punkte Vorsprung ein. Acosta Zweiter, Alex Márquez Dritter.",href:"marc-marquez-pobjeda-sepang-vn-malezije-2026.html",tag:"MOTOGP · GP VON MALAYSIA",images:[]},
+ {t:"Acosta siegt im Sprint, Alex Márquez holt Pole in Sepang",s:"Alex Márquez war in der Qualifikation der Schnellste, und Pedro Acosta gewann den Sprint vor Marc Márquez.",href:"motogp-sepang-acosta-sprint-alex-marquez-pole-2026.html",tag:"MOTOGP · GP VON MALAYSIA",images:[]},
+ {t:"Antonelli kann in Mexiko Titel klarmachen, Ferrari vorerst am schnellsten",s:"Zwei Punkte trennen Kimi Antonelli vom Titel, aber Charles Leclerc war in beiden Freitagen-Trainings der Schnellste.",href:"f1-kimi-antonelli-meksiko-naslov-2026.html",tag:"FORMEL 1 · TITELKAMPF",images:[]},
+ {t:"Warum Mexiko eine technische Herausforderung für Formel-1-Boliden ist",s:"Die dünnere Luft auf über 2200 Metern verändert Aerodynamik, Kühlung und die Arbeit des Turboladers.",href:"zasto-je-meksiko-poseban-za-f1-visina-aerodinamika-2026.html",tag:"F1 · TECHNIK",images:[]},
+ {t:"Moto Guzzi The Trip: Neuer 500-ccm-Roadster für die A2-Kategorie",s:"Moto Guzzi erweitert sein Angebot mit einem neuen Roadster mit Parahllel-Zweizylinder, rund 48 PS und dem Schwerpunkt auf zugängliches Alltagsfahren.",href:"moto-guzzi-the-trip.html",tag:"MOTORRÄDER · NEUHEIT",images:[]},
+ {t:"Ein Schuss ins eigene Bein der Europäischen Union: Kernkraftwerke, Netz und Industrie",s:"Hat Europa zu schnell auf Kernenergie verzichtet? Wir vergleichen Emissionen, Stromnetze und Risiken für die industrielle Wettbewerbsfähigkeit.",href:"pucanj-u-nogu-europske-unije-nuklearne-elektrane.html",tag:"ENERGIE · ANALYSE",images:[]}
+];
+function renderHero(){
+ const lead=$("lead");lead.innerHTML="";const main=EDITORIAL[0];
+ const ph=el("div","ph editorial-ph");
+ const pics=el("div","editorial-photos");
+ for(const image of main.images){const im=el("img");im.src=image.src;im.alt=image.alt;im.loading="eager";pics.append(im);}
+ ph.append(pics);
+ const t=el("div","txt");t.append(el("span","plate","AUTORENBEITRAG"));const h=el("h2");const a=el("a",null,main.t);a.href=main.href;h.append(a);t.append(h,el("p",null,main.s));const more=el("a","read-more","Lesen Sie unsere Analyse →");more.href=main.href;t.append(more);lead.append(ph,t);
+ const side=$("side");side.innerHTML="";side.append(el("h2","side-heading","Aus der Redaktion"));
+ for(const item of EDITORIAL.slice(1)){const card=el("a","editorial-side");card.href=item.href;card.append(el("span","editorial-tag",item.tag),el("h3",null,item.t),el("p",null,item.s),el("span","read-more","Artikel lesen →"));side.append(card);}
+ const newsTitle=el("h2","side-heading","Kurz aus der Welt");side.append(newsTitle);
+ for(const n of NEWS.slice(0,4)){const card=el("article","mini-card"),tt=el("div","t");tt.append(plate(n));const mh=el("h3"),ml=el("a",null,n.t);ml.href=n.u;ml.target="_blank";ml.rel="noopener noreferrer";mh.append(ml);tt.append(mh,srcLine(n));card.append(tt);side.append(card);}
+ window._heroIds=new Set(NEWS.map(n=>n.u));
+}
+function chip(label,val,cur,color){const b=el("button","chip");b.type="button";b.dataset.v=val;b.setAttribute("aria-pressed",String(val===cur));if(color){const s=el("span","dot");s.style.background=color;b.append(s);}b.append(label);return b;}
+function renderNewsChips(){const box=$("newsChips");box.innerHTML="";box.append(chip("Alle","all",newsFilter));const present=new Set(NEWS.map(n=>n.c));for(const [k,v] of Object.entries(CATS)) if(present.has(k)) box.append(chip(v.name,k,newsFilter,v.color));}
+function renderNews(){
+  const list=$("newsList"); list.innerHTML="";
+  const hero=window._heroIds||new Set();
+  const items=NEWS.filter(n=>(newsFilter==="all"?!hero.has(n.u):n.c===newsFilter));
+  if(!items.length){list.append(el("div","empty","Keine Neuigkeiten in dieser Kategorie."));$("moreWrap").hidden=true;return;}
+  for(const n of items.slice(0,shown)){
+    const card=el("article","card");
+    const ph=photo(n,false); card.append(ph); card.querySelector(".ph").append(plate(n));
+    const b=el("div","body");
+    const articleHref=n.article||("clanak.html?u="+encodeURIComponent(n.u));
+    const h=el("h3"); const read=el("a",null,n.t); read.href=articleHref; h.append(read);
+    b.append(el("div","dt",fmt(n.date)), h, el("p","summary",n.s)); const more=el("a","read-more","Artikel lesen →"); more.href=articleHref; b.append(more);
+    b.append(srcLine(n));
+    if(n.img){const cr=el("div","credit");cr.append("Foto: ");const ca=el("a",null,n.img.by);ca.href=n.img.link||n.img.src;ca.target="_blank";ca.rel="noopener";cr.append(ca,", "+n.img.lic+(n.img.archival?" (arhivska fotografija)":" (fotografija)"));b.append(cr);}
+    card.append(b); list.append(card);
+  }
+  $("moreWrap").hidden=items.length<=shown;
+}
+$("newsChips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;newsFilter=b.dataset.v;shown=6;renderNewsChips();renderNews();});
+$("moreBtn").addEventListener("click",()=>{shown+=6;renderNews();});
+
+/* ---------- race ---------- */
+const SESS={FirstPractice:"1. Training",SecondPractice:"2. Training",ThirdPractice:"3. Training",SprintQualifying:"Sprint-Qualifying",SprintShootout:"Sprint-Qualifying",Sprint:"Sprint",Qualifying:"Qualifying"};
+function when(d,t){return new Date(d+"T"+(t||"12:00:00Z"));}
+function renderRace(r,schedule){
+  if(!r||!r.name) return;
+  $("utrka").hidden=false;
+  $("raceRound").textContent=`Formel 1 · ${r.round}. von ${r.rounds} Saisonrennen ${r.season}`;
+  $("raceName").textContent=r.name.replace("Grand Prix","GP");
+  const start=when(r.date,r.time);
+  $("raceWhere").textContent=`${r.circuit} · ${r.locality||""}${r.country?", "+r.country:""} · ${start.toLocaleString("de-DE",{weekday:"long",day:"numeric",month:"long",hour:"2-digit",minute:"2-digit"})}`;
+  const cnt=$("count");
+  function tick(){const ms=start-Date.now();cnt.innerHTML="";if(ms<=0){cnt.append(el("div",null,"Das Rennen läuft oder ist beendet"));return;}
+    const d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60;
+    for(const [v,l] of [[d,"dana"],[h,"sati"],[m,"minuta"]]){const b=el("div");b.append(el("b",null,String(v)),el("span",null,l));cnt.append(b);}}
+  tick(); setInterval(tick,30000);
+  // obris staze
+  const tr=$("track"); tr.innerHTML="";
+  if(r.track&&r.track.path){
+    const ns="http://www.w3.org/2000/svg", svg=document.createElementNS(ns,"svg");
+    svg.setAttribute("viewBox","0 0 1000 1000"); svg.setAttribute("role","img"); svg.setAttribute("aria-label","Streckenlayout "+r.circuit);
+    for(const c of ["base","line","run"]){const p=document.createElementNS(ns,"path");p.setAttribute("d",r.track.path);p.setAttribute("class",c);svg.append(p);}
+    const st=document.createElementNS(ns,"circle");st.setAttribute("cx",r.track.start[0]);st.setAttribute("cy",r.track.start[1]);st.setAttribute("r",18);st.setAttribute("fill","#fff");st.setAttribute("stroke","#F05A1A");st.setAttribute("stroke-width",8);svg.append(st);
+    tr.append(svg);
+    const run=svg.querySelector(".run"), L=run.getTotalLength();
+    const seg=L*0.08; run.style.strokeDasharray=`${seg} ${L}`; run.style.strokeDashoffset="0";
+    if(!matchMedia("(prefers-reduced-motion: reduce)").matches){
+      run.animate([{strokeDashoffset:0},{strokeDashoffset:-L}],{duration:9000,iterations:Infinity,easing:"linear"});
+    }
+  }
+  const f=$("trackFacts"); f.innerHTML="";
+  const facts=[];
+  if(r.track&&r.track.length_m) facts.push([(r.track.length_m/1000).toFixed(3).replace(".",",")+" km","Streckenlänge"]);
+  if(r.track&&r.track.firstgp) facts.push([String(r.track.firstgp),"erster Formel-1-GP"]);
+  if(r.track&&r.track.opened) facts.push([String(r.track.opened),"otvorena"]);
+  if(r.track&&r.track.altitude!=null) facts.push([r.track.altitude+" m","Höhenlage"]);
+  for(const [b,s] of facts){const d=el("div");d.append(el("b",null,b),el("span",null,s));f.append(d);}
+  // pobjednici
+  const w=$("winners"); w.innerHTML="";
+  if(!(r.winners||[]).length) w.append(el("li",null,"Neue Strecke – noch kein Sieger."));
+  for(const x of r.winners||[]){const li=el("li");li.append(el("span","y",x.season),el("span","n",x.driver),el("span","tm",x.team+(x.grid?` · Start ${x.grid}.`:"")));w.append(li);}
+  // poredak
+  const bars=$("bars"); bars.innerHTML="";
+  const s=r.standings||[]; const max=s.length?s[0].points:1;
+  if(r.standings_round) $("standTitle").textContent=`Meisterschaftsstand nach dem ${r.standings_round}. Rennen`;
+  for(const x of s){
+    const row=el("div","brow"); row.title=`${x.driver} (${x.team}) – ${x.points} bodova, ${x.wins} pobjeda`;
+    const trk=el("div","tr"), fill=el("div","f"); trk.append(fill);
+    row.append(el("span","p",x.pos+"."), el("span","c",x.code||x.driver.split(" ").pop().slice(0,3).toUpperCase()), trk, el("span","pt",String(Math.round(x.points))));
+    bars.append(row); requestAnimationFrame(()=>requestAnimationFrame(()=>{fill.style.width=(x.points/max*100)+"%";}));
+  }
+  // sesije
+  const ss=$("sess"); ss.innerHTML="";
+  const list=Object.entries(r.sessions||{}).map(([k,v])=>[SESS[k]||k,when(v.date,v.time)]);
+  list.push(["Rennen",start]); list.sort((a,b)=>a[1]-b[1]);
+  for(const [k,d] of list){const li=el("li");li.append(el("strong",null,k),el("span",null,d.toLocaleString("de-DE",{weekday:"short",day:"numeric",month:"numeric",hour:"2-digit",minute:"2-digit"})));ss.append(li);}
+  renderSchedule(schedule);
+}
+function renderSchedule(list){
+  const ol=$("sched"); ol.innerHTML=""; const today=new Date().toISOString().slice(0,10);
+  for(const e of (list||[]).filter(e=>e.date>=today).slice(0,6)){
+    const li=el("li"); const w=el("span","w",e.title); w.append(el("small",null,e.note||""));
+    li.append(el("span","d",fmt(e.date)), w); ol.append(li);
+  }
+}
+
+/* ---------- people & routes ---------- */
+function renderDriverNews(){
+  const box=$("driverNews"); box.innerHTML="";
+  const items=DRIVERS.slice(0,4); $("driverNewsWrap").hidden=!items.length;
+  for(const n of items){
+    const card=el("article","card");
+    card.append(photo(n,false));
+    const b=el("div","body"); const h=el("h3"); const a=el("a",null,n.t); a.href="clanak.html?u="+encodeURIComponent(n.u); h.append(a);
+    b.append(el("div","dt",fmt(n.date)),h,el("p",null,n.s)); const more=el("a","read-more","Artikel lesen →"); more.href="clanak.html?u="+encodeURIComponent(n.u); b.append(more,srcLine(n));
+    if(n.img){const cr=el("div","credit");cr.append("Foto: ");const ca=el("a",null,n.img.by);ca.href=n.img.link||n.img.src;ca.target="_blank";ca.rel="noopener";cr.append(ca,", "+n.img.lic+" (ilustracija)");b.append(cr);}
+    card.append(b); box.append(card);
+  }
+}
+function renderPeople(){const list=$("peopleList");list.innerHTML="";for(const p of PEOPLE){const e=el("article","person");e.style.setProperty("--pc",p.c);
+  e.innerHTML=`<span class="ini" aria-hidden="true"></span><h3></h3><p class="team"></p><dl><div><dt>Was er privat fährt</dt><dd class="a"></dd></div><div><dt>Hobbys</dt><dd class="b"></dd></div><div><dt>Interessantes Detail</dt><dd class="f"></dd></div></dl><span class="src">Quelle: <a target="_blank" rel="noopener"></a></span>`;
+  e.querySelector(".ini").textContent=p.n.split(" ").map(w=>w[0]).join("");e.querySelector("h3").textContent=p.n;e.querySelector(".team").textContent=p.team;
+  e.querySelector(".a").textContent=p.car;e.querySelector(".b").textContent=p.hobby;e.querySelector(".f").textContent=p.fact;const a=e.querySelector("a");a.href=p.u;a.textContent=p.src;list.append(e);}}
+function renderRouteChips(){const box=$("routeChips");box.innerHTML="";box.append(chip("Alle","all",routeFilter));for(const [k,v] of Object.entries(REGIONS)) box.append(chip(v,k,routeFilter));}
+function renderRoutes(){const list=$("routeList");list.innerHTML="";for(const r of ROUTES.filter(x=>routeFilter==="all"||x.r===routeFilter)){const e=el("article","route");
+  e.innerHTML=`<header><h3></h3><span class="km">ca. ${r.km} km</span></header><div><ol class="line"></ol><p class="desc"></p>${r.warn?'<span class="warn"></span>':''}</div><div><ul class="rfacts"><li><span>Region</span>${REGIONS[r.r]}</li><li><span>Charakter</span>${r.tip}</li><li><span>Saison</span>${r.season}</li><li><span>Anspruch</span>${r.diff}</li></ul><a class="go" target="_blank" rel="noopener">In Google Maps öffnen</a></div>`;
+  e.querySelector("h3").textContent=r.n;const ol=e.querySelector(".line");for(const p of r.pts) ol.append(el("li",null,p));e.querySelector(".desc").textContent=r.desc;if(r.warn)e.querySelector(".warn").textContent=r.warn;e.querySelector(".go").href=gm(r.pts);list.append(e);}}
+$("routeChips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;routeFilter=b.dataset.v;renderRouteChips();renderRoutes();});
+
+/* ---------- stats ---------- */
+function hr(n){return String(n).replace(".",",");}
+function renderStats(){
+  document.querySelectorAll(".sbars").forEach(box=>{
+    const data=JSON.parse(box.dataset.bars), max=Math.max(...data.map(d=>d[1])), hl=box.dataset.hl, u=box.dataset.unit||"";
+    for(const [l,v] of data){const r=el("div","sbar"+(l===hl?" hl":""));const t=el("div","t"),f=el("div","f");f.dataset.w=(v/max*100);t.append(f);r.append(el("span","l",l),t,el("span","v",hr(v)+" "+u));box.append(r);}
+  });
+  document.querySelectorAll(".stack").forEach(box=>{
+    const data=JSON.parse(box.dataset.stack); const line=el("div","barline"); line.setAttribute("role","img");
+    line.setAttribute("aria-label",data.map(d=>d[0]+" "+hr(d[1])+" %").join(", "));
+    const leg=el("ul","leg");
+    for(const [l,v,c] of data){const sg=el("div","seg");sg.style.background=c;sg.dataset.w=v;sg.title=l+": "+hr(v)+" %";line.append(sg);
+      const li=el("li");const i=el("i");i.style.background=c;li.append(i,l,el("b",null,hr(v)+" %"));leg.append(li);}
+    box.append(line,leg);
+  });
+  const grow=root=>root.querySelectorAll("[data-w]").forEach(x=>x.style.width=x.dataset.w+"%");
+  const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){grow(e.target);so.unobserve(e.target);}}),{threshold:.3});
+  document.querySelectorAll(".stat").forEach(x=>so.observe(x));
+}
+renderStats();
+
+/* ---------- load ---------- */
+async function getJSON(f){const r=await fetch(f+"?v="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error(r.status);return r.json();}
+async function load(){
+  let sched=[];
+  try{const d=await getJSON("../news_de.json");const all=d.items||[];DRIVERS=all.filter(n=>n.c==="kaciga");NEWS=all.filter(n=>n.c!=="kaciga");sched=d.schedule||[];
+    const u=new Date(d.updated);if(!isNaN(u))$("updated").textContent="Nachrichten aktualisiert "+u.toLocaleString("de-DE",{day:"numeric",month:"numeric",hour:"2-digit",minute:"2-digit"});
+  }catch(e){}
+  renderHero();renderNewsChips();renderNews();renderDriverNews();
+  try{renderRace(await getJSON("../race.json"),sched);}catch(e){}
+}
+renderPeople();renderRouteChips();renderRoutes();load();
+
+/* ---------- gear shifter ---------- */
+const knob=$("knob"),gname=$("gearname"),gears=[...document.querySelectorAll(".gate button")];
+function setGear(id){const b=gears.find(g=>g.dataset.t===id);if(!b)return;knob.style.left=b.style.left;knob.style.top=b.style.top;gears.forEach(g=>g.setAttribute("aria-current",String(g===b)));gname.textContent=b.dataset.n;$("shkn").textContent=b.textContent;$("shname").textContent=b.dataset.n.replace(/^.+?:\s*/,"");
+  document.querySelectorAll(".nav a").forEach(a=>a.setAttribute("aria-current",String(a.getAttribute("href")==="#"+id)));}
+const shifter=document.querySelector(".shifter"),shtoggle=$("shtoggle");
+function shOpen(o){shifter.classList.toggle("open",o);shtoggle.setAttribute("aria-expanded",String(o));shtoggle.setAttribute("aria-label",(o?"Schließen":"Öffnen")+" Menü – Navigation nach Bereichen");}
+shtoggle.addEventListener("click",()=>shOpen(!shifter.classList.contains("open")));
+document.addEventListener("click",e=>{if(!shifter.contains(e.target))shOpen(false);});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&shifter.classList.contains("open")){shOpen(false);shtoggle.focus();}});
+gears.forEach(b=>b.addEventListener("click",()=>{const t=$(b.dataset.t);setGear(b.dataset.t);shOpen(false);if(t&&!t.hidden)t.scrollIntoView();}));
+const io=new IntersectionObserver(es=>{for(const e of es) if(e.isIntersecting) setGear(e.target.id);},{rootMargin:"-45% 0px -50% 0px"});
+["vrh","novosti","povratak","utrka","brojke","vozaci","rute"].forEach(id=>{const x=$(id);if(x)io.observe(x);});
+const NAVMAP={"sve-vijesti":"novosti"};
+// MotoGP shortcut from the editorial hub
+document.querySelectorAll("[data-return-category]").forEach(b=>b.addEventListener("click",()=>{
+  newsFilter=b.dataset.returnCategory;shown=6;renderNewsChips();renderNews();
+  document.getElementById("sve-vijesti").scrollIntoView({behavior:"smooth"});
+}));
+
+</script>
+
+<!-- Google Analytics 4: učitava se tek nakon izričitog pristanka korisnika -->
+<style>
+#okretaji-consent{position:fixed;z-index:9999;left:16px;right:16px;bottom:16px;max-width:760px;margin:auto;padding:18px;background:#fff;color:#0D2B3E;border:1px solid #D3E2EA;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.22);font:16px/1.5 system-ui,sans-serif}
+#okretaji-consent p{margin:0 0 12px}#okretaji-consent a{color:#1C5A86}
+#okretaji-consent .consent-actions{display:flex;gap:10px;flex-wrap:wrap}
+#okretaji-consent button{padding:10px 14px;border-radius:8px;border:1px solid #0D2B3E;font-weight:700;cursor:pointer}
+#okretaji-consent .accept{background:#0D2B3E;color:#fff}#okretaji-consent .reject{background:#fff;color:#0D2B3E}
+</style>
+<div id="okretaji-consent" role="dialog" aria-label="Analytik-Einstellungen" aria-live="polite" hidden>
+  <p><strong>Besucheranalyse</strong><br>Mit Ihrer Einwilligung nutzen wir Google Analytics, um die Zugriffe auf das Portal zu verstehen. Analyse-Tools werden nicht geladen, wenn Sie ablehnen.</p>
+  <p><a href="privatnost.html">Datenschutzbestimmungen lesen</a></p>
+  <div class="consent-actions">
+    <button class="accept" type="button" id="okretaji-consent-yes">Analytik akzeptieren</button>
+    <button class="reject" type="button" id="okretaji-consent-no">Ablehnen</button>
+  </div>
+</div>
+<script>
+(function(){
+  var key='okretaji_analytics_consent';
+  function loadAnalytics(){
+    if(window.__okretajiAnalyticsLoaded)return;
+    window.__okretajiAnalyticsLoaded=true;
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){window.dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js',new Date());
+    gtag('config','G-426646FTQH',{anonymize_ip:true});
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-426646FTQH';
+    document.head.appendChild(s);
+  }
+  var banner=document.getElementById('okretaji-consent');
+  try{
+    var saved=localStorage.getItem(key);
+    if(saved==='granted')loadAnalytics();
+    else if(saved!=='denied')banner.hidden=false;
+    document.getElementById('okretaji-consent-yes').addEventListener('click',function(){
+      localStorage.setItem(key,'granted');banner.hidden=true;loadAnalytics();
+    });
+    document.getElementById('okretaji-consent-no').addEventListener('click',function(){
+      localStorage.setItem(key,'denied');banner.hidden=true;
+    });
+  }catch(e){banner.hidden=false;}
+})();
+</script>
+
+</body>
+</html>
