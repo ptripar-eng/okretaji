@@ -417,7 +417,7 @@ footer p{margin:0 0 8px;max-width:80ch}
       </article>
       <article class="explain" style="--pc:var(--green)">
         <p class="eyebrow">Energie</p><h3>Wie grün ist Energie wirklich?</h3>
-        <p>Solargewinnungs- und Windkraftanlagen verursachen bei Produktion, Bau und Entsorgung Emissionen. Für einen fairen Vergleich müssen die Emissionen pro erzeugter Kilowattstunde über die gesamte Lebensdauer berechnet werden.</p>
+        <p>Solar- und Windkraftanlagen verursachen bei Produktion, Bau und Entsorgung Emissionen. Für einen fairen Vergleich müssen die Emissionen pro erzeugter Kilowattstunde über die gesamte Lebensdauer berechnet werden.</p>
         <a href="https://www.ipcc.ch/report/ar6/wg3/" target="_blank" rel="noopener">IPCC: Minderung des Klimawandels</a>
       </article>
       <article class="explain" style="--pc:var(--orange)">
@@ -476,7 +476,7 @@ footer p{margin:0 0 8px;max-width:80ch}
     <p>Die Kilometerzahlen der Routen sind ungefähr. Vor den Alpenpässen prüfen, ob die Straße geöffnet ist – die meisten werden von November bis Mai gesperrt.</p>
     <p class="upd" id="updated"></p>
     <div class="social-follow" aria-label="Folgen Sie Okretaji in den sozialen Medien">
-      <strong>Folgen Sie Okretaji</strong> <a href="https://www.facebook.com/okretaji/?locale=hr_HR" target="_blank" rel="noopener noreferrer" aria-label="Pratite Okretaje na Facebooku">f&nbsp; Facebook</a> <a class="ig" href="https://www.instagram.com/okretaji/" target="_blank" rel="noopener noreferrer" aria-label="Pratite Okretaje na Instagramu">◎&nbsp; Instagram</a>
+      <strong>Folgen Sie Okretaji</strong> <a href="https://www.facebook.com/okretaji/?locale=hr_HR" target="_blank" rel="noopener noreferrer" aria-label="Folgen Sie Okretaji auf Facebook">f&nbsp; Facebook</a> <a class="ig" href="https://www.instagram.com/okretaji/" target="_blank" rel="noopener noreferrer" aria-label="Folgen Sie Okretaji auf Instagram">◎&nbsp; Instagram</a>
       <p class="social-note">Neue Nachrichten, Motorsport, Technik und Energie — folgen Sie uns und beteiligen Sie sich an der Diskussion.</p>
     </div>
     <nav class="footerlinks" aria-label="Informationen über das Portal"><a href="o-nama.html">Über uns</a><a href="kontakt.html">Kontakt</a><a href="privatnost.html">Datenschutz</a></nav>
@@ -532,27 +532,27 @@ const ROUTES = [
    desc:"Jadranska magistrala von Rijeka nach Karlobag mit dem Meer auf der ganzen Strecke zur Rechten, gefolgt vom Serpentinenanstieg nach Baške Oštarije. Vorsicht vor der Bora – auf diesem Abschnitt kann sie gefährlich sein.",
    tip:"Obala, prijevoj", season:"April – Oktober", diff:"Mittel", warn:"Bura – HAK vor Abfahrt prüfen"},
   {r:"de", n:"Gorski kotar und Kupa-Tal", km:"90", pts:["Grobnik","Fužine","Lokve","Delnice","Brod na Kupi"],
-   desc:"Šumske ceste kroz Gorski kotar, uz jezera Bajer i Lokvarka, pa spust u dolinu Kupe uz granicu sa Slovenijom. Ljeti osvježenje, ujesen prekrasne boje.",
-   tip:"Šuma, rijeka", season:"Svibanj – listopad", diff:"Gemütlich"},
-  {r:"de", n:"Biokovo – Sveti Jure", km:"25", pts:["Makarska","Park prirode Biokovo","Sveti Jure, Biokovo"],
-   desc:"Uska cesta do 1762 m iznad Makarske, s jednim od najljepših pogleda na Jadran. Naplata ulaza u park, promet ograničen.",
-   tip:"Planinska cesta", season:"Svibanj – listopad", diff:"Zahtjevno"},
+   desc:"Waldstraßen durch den Gorski kotar, vorbei an den Seen Bajer und Lokvarka, dann hinunter ins Kupa-Tal an der Grenze zu Slowenien. Im Sommer eine Erfrischung, im Herbst herrliche Farben.",
+   tip:"Šuma, rijeka", season:"Mai – Oktober", diff:"Gemütlich"},
+  {r:"de", n:"Biokovo – Sveti Jure", km:"25", pts:["Makarska","Naturpark Biokovo","Sveti Jure, Biokovo"],
+   desc:"Schmale Straße auf 1762 m über Makarska mit einem der schönsten Blicke auf die Adria. Eintritt in den Park kostenpflichtig, Verkehr beschränkt.",
+   tip:"Bergstraße", season:"Mai – Oktober", diff:"Anspruchsvoll"},
   {r:"slo", n:"Vršič", km:"50", pts:["Kranjska Gora","Vršič","Trenta","Bovec"],
-   desc:"Najviši cestovni prijevoj u Sloveniji, 1611 m, s 50 numeriranih serpentina – na sjevernoj strani popločenih kockom. Spust prema Trenti vodi u dolinu Soče.",
-   tip:"Prijevoj, serpentine", season:"Svibanj – listopad", diff:"Zahtjevno", warn:"Zimi zatvoren"},
+   desc:"Der höchste Straßenpass Sloweniens, 1611 m, mit 50 nummerierten Kehren – auf der Nordseite mit Kopfsteinpflaster. Die Abfahrt nach Trenta führt ins Soča-Tal.",
+   tip:"Prijevoj, serpentine", season:"Mai – Oktober", diff:"Anspruchsvoll", warn:"Im Winter gesperrt"},
   {r:"slo", n:"Mangartsko sedlo", km:"12", pts:["Log pod Mangartom","Mangartsko sedlo"],
-   desc:"Najviša cesta Slovenije penje se do oko 2050 m kroz tunele isklesane u stijeni. Kratka, ali spektakularna; lako se spaja s Vršičem i Predilom.",
-   tip:"Visokoplaninska", season:"Lipanj – listopad", diff:"Zahtjevno", warn:"Cestarina, zimi zatvoren"},
-  {r:"ita", n:"Sella Ronda, Dolomiti", km:"55", pts:["Passo Sella","Passo Pordoi","Passo Campolongo","Passo Gardena"],
-   desc:"Krug oko masiva Sella preko četiri prijevoja iznad 1800 m. Dolomiti u punom sjaju, ali ljeti vrlo prometno – kreni rano ujutro.",
-   tip:"Četiri prijevoja", season:"Lipanj – rujan", diff:"Mittel", warn:"Zimi zatvoreno"},
+   desc:"Sloweniens höchste Straße steigt durch in den Fels gehauene Tunnel auf rund 2050 m. Kurz, aber spektakulär; lässt sich gut mit Vršič und Predil verbinden.",
+   tip:"Hochgebirgsstraße", season:"Juni – Oktober", diff:"Anspruchsvoll", warn:"Mautpflichtig, im Winter gesperrt"},
+  {r:"ita", n:"Sella Ronda, Dolomiten", km:"55", pts:["Passo Sella","Passo Pordoi","Passo Campolongo","Passo Gardena"],
+   desc:"Runde um das Sella-Massiv über vier Pässe oberhalb von 1800 m. Die Dolomiten in voller Pracht, im Sommer aber sehr viel Verkehr – früh morgens losfahren.",
+   tip:"Vier Pässe", season:"Juni – September", diff:"Mittel", warn:"Im Winter gesperrt"},
   {r:"ita", n:"Passo dello Stelvio", km:"50", pts:["Prato allo Stelvio","Passo dello Stelvio","Bormio"],
-   desc:"Legendarni prijevoj na 2757 m s 48 serpentina na strani od Prata. Spust prema Bormiu je brži i otvoreniji. Za motoriste obavezna stanica barem jednom.",
-   tip:"Legenda Alpa", season:"Lipanj – rujan", diff:"Zahtjevno", warn:"Zimi zatvoren"}
+   desc:"Legendärer Pass auf 2757 m mit 48 Kehren auf der Seite von Prad. Die Abfahrt nach Bormio ist schneller und offener. Für Motorradfahrer mindestens einmal Pflicht.",
+   tip:"Alpenlegende", season:"Juni – September", diff:"Anspruchsvoll", warn:"Im Winter gesperrt"}
 ];
 
 const PEOPLE = [
-  {n:"Max Verstappen", team:"F1, Red Bull – četverostruki prvak", c:"var(--blue)",
+  {n:"Max Verstappen", team:"F1, Red Bull – viermaliger Weltmeister", c:"var(--blue)",
    car:"Er hat kein festes Alltagsauto, sondern wechselt aus seiner Sammlung ab: Aston Martin Valkyrie, Porsche 911 GT3 RS, Honda NSX Type S (Hondas Geschenk für den zweiten Titel). Sein erstes Auto war ein gelber Renault Clio.",
    hobby:"Sim-Racing. Seit 2015 fährt er für das virtuelle Team Redline und absolviert Rennen sogar im Hotelzimmer an Rennwochenenden. Der Simulator zu Hause ist Zehntausende von Dollars wert.",
    fact:"Er möchte über ein eigenes GT3-Team talentierte Sim-Fahrer in den echten Motorsport bringen, da sich viele Karting nicht leisten können.",
