@@ -11,7 +11,7 @@
 <meta property="og:title" content="Okretaji – pokrećemo znatiželju">
 <meta property="og:description" content="Auto, moto, motosport, tehnologija i energija pod povećalom.">
 <meta property="og:url" content="https://okretaji.com/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%81%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -57,7 +57,7 @@ img{max-width:100%;display:block}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:31;background:var(--bg)}
 .bar .wrap{display:flex;align-items:center;gap:22px;height:56px}
 .mini{font:900 1.6rem/1 "Big Shoulders Display",Impact,sans-serif;text-decoration:none;display:flex;align-items:center;gap:6px;flex:none}
-.mini svg{width:26px;height:20px}
+.mini img{width:28px;height:28px;display:block;flex:none;border-radius:6px}
 .nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1}
 .nav::-webkit-scrollbar{display:none}
 .nav a{white-space:nowrap;text-decoration:none;font-weight:600;font-size:.95rem;padding:6px 12px;border-radius:999px;color:var(--muted)}
@@ -71,8 +71,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .livery i:first-child{background:var(--orange)}
 .livery i:last-child{background:var(--powder);opacity:.85}
 .mast .wrap{position:relative}
-.logo{margin:0;font:900 clamp(4.2rem,14vw,10.5rem)/.8 "Big Shoulders Display",Impact,sans-serif;letter-spacing:-.01em;color:var(--navy);display:flex;align-items:flex-end;gap:.08em}
-.logo svg{width:.6em;height:.6em;margin-bottom:.06em;flex:none}
+.logo{margin:0;display:block;max-width:900px}\n.logo img{display:block;width:100%;height:auto;max-height:300px;object-fit:contain;object-position:left center}
 .tag{margin:22px 0 0;font-weight:600;font-size:1.02rem;color:var(--muted);max-width:60ch}
 #needle{transform-origin:50px 54px;transform:rotate(30deg)}
 @media (prefers-reduced-motion:no-preference){
@@ -321,7 +320,7 @@ footer p{margin:0 0 8px;max-width:80ch}
 <body>
 <header class="bar">
   <div class="wrap">
-    <a class="mini" href="#vrh" aria-label="Okretaji – na vrh"><svg viewBox="0 0 100 70" aria-hidden="true"><path d="M14 58 A40 40 0 0 1 75 20" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round"/><path d="M75 20 A40 40 0 0 1 88 58" fill="none" stroke="var(--orange)" stroke-width="11" stroke-linecap="round"/></svg>Okretaji</a>
+    <a class="mini" href="#vrh" aria-label="Okretaji – na vrh"><img src="/favicon.svg" alt="" width="28" height="28">Okretaji</a>
     <nav class="nav" aria-label="Glavne rubrike">
       <a href="#novosti" aria-current="true">Najnovije</a><a href="rubrika.html?k=motorsport">Motorsport</a><a href="rubrika.html?k=automobili">Automobili</a><a href="rubrika.html?k=motocikli">Motocikli</a><a href="rubrika.html?k=tehnika">Tehnika</a><a href="rubrika.html?k=energija">Energija i mobilnost</a><a href="rubrika.html?k=regija">Regija</a>
     </nav>
@@ -331,13 +330,7 @@ footer p{margin:0 0 8px;max-width:80ch}
 <div class="mast" id="vrh">
   <div class="livery" aria-hidden="true"><i></i><i></i></div>
   <div class="wrap">
-    <h1 class="logo">
-      <svg viewBox="0 0 100 70" aria-hidden="true">
-        <path d="M14 58 A40 40 0 0 1 75 20" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"/>
-        <path d="M75 20 A40 40 0 0 1 88 58" fill="none" stroke="var(--orange)" stroke-width="9" stroke-linecap="round"/>
-        <g id="needle"><line x1="50" y1="54" x2="50" y2="18" stroke="var(--orange)" stroke-width="6" stroke-linecap="round"/></g>
-        <circle cx="50" cy="54" r="8" fill="currentColor"/>
-      </svg>Okretaji</h1>
+    <h1 class="logo"><img src="/brand-logo.svg" alt="Okretaji — auto, moto, sport"></h1>
     <p class="tag">Auto, moto i motosport, tehnologija i energija – plus ceste koje vrijedi odvoziti.</p>
   </div>
 </div>
