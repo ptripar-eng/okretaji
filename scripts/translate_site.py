@@ -432,6 +432,20 @@ def pages():
 
 
 def load_mem(lang):
+    """Prevodilačka memorija + ručni urednički ispravci (i18n/<jezik>-ispravci.json imaju prednost)."""
+    p = os.path.join(I18N, lang + ".json")
+    mem = json.load(open(p, encoding="utf-8")) if os.path.exists(p) else {}
+    fx = os.path.join(I18N, lang + "-ispravci.json")
+    if os.path.exists(fx):
+        for k, v in json.load(open(fx, encoding="utf-8")).items():
+            if valid(k, v):
+                mem[re.sub(r"\s+", " ", k.strip())] = v
+            else:
+                print("Neispravan ručni ispravak (oznake se ne podudaraju):", k[:60])
+    return mem
+
+
+def load_mem_raw(lang):
     p = os.path.join(I18N, lang + ".json")
     return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else {}
 
@@ -505,6 +519,10 @@ def fill_missing(lang, mem, wanted):
         if not res:
             continue
         for s, t in zip(batch, res):
+            if isinstance(t, str) and t.strip() == s.strip() and re.search(
+                    r"\b(i|je|na|u|za|se|od|ili|što|kako|su|nije|prije|bez|kao|iz|koji|koja)\b", s.lower()):
+                print("Gemini vratio neprevedeni niz, ponovit će se:", s[:60])
+                continue
             if valid(s, t):
                 mem[s] = re.sub(r"\s+", " ", t.strip()); done += 1
             else:
@@ -531,8 +549,9 @@ def main():
         Builder(None, {}, coll).html(src)
     for lang in LANGS:
         mem = load_mem(lang)
+        before = load_mem_raw(lang)
         n = fill_missing(lang, mem, list(coll))
-        if n:
+        if n or mem != before:
             save_mem(lang, mem)
         os.makedirs(os.path.join(ROOT, lang), exist_ok=True)
         miss = 0
