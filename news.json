@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T17:57+00:00",
+ "updated": "2026-11-01T22:09+00:00",
  "items": [
   {
    "c": "energy",
@@ -86,6 +86,18 @@
    "hr": true
   },
   {
+   "c": "f1",
+   "src": "The Race",
+   "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNX1dBcE44SWdibkdxR3NKc1pKRE96MDUzcVpYdlhhQkhLSTBzVElzeGd2Vl9VYVdQRlNjTktxOGhIN0E1QXlWempBZGZXRGNfMlFzRi1WdEpRVkJ4MW9URVFLMUs1ZzNRNkRpbG15TndkTk1SRnV3UE9INHpRXzdYaEotS0VtLWFFMHFMM3A5SWVMZy1UYzVWQ0U4SURQY0dxS3c?oc=5",
+   "date": "2026-11-01T14:46+00:00",
+   "img_q": "F1 2026 Mexican Grand Prix starting grid with four penalties - The Race",
+   "t": "Startni poredak za Veliku nagradu Meksika 2026. s četiri kazne",
+   "s": "Objavljen je startni poredak za Veliku nagradu Meksika Formule 1 2026. godine, koji uključuje ukupno četiri kazne za vozače.",
+   "orig_t": "F1 2026 Mexican Grand Prix starting grid with four penalties - The Race",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
    "c": "motogp",
    "src": "Crash.net",
    "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZmRkUHZ4MHotMGdDT1hDbWpzUk1JTFpVQlJlZk1reDBGSTJXX0ZybU9FeUVOeVIxUi1fNWhhbVNndWZxY3lwdFZidXREUzF6Q003ZU9QRkgtR0VVdGVKUFRac3owRlA5V0ROenZBZDMtYm82T1NaZjFQVDVkQ0xwbWRaTXdYaGIxWEJYRklHUDZaY00tdDlWME1ja19sc2s?oc=5",
@@ -154,6 +166,18 @@
    "t": "Na prodaju je moćni motocikl koji je nekada vozio James May",
    "s": "Poznati televizijski voditelj James May prodaje svoj snažan Hondin motocikl. Riječ je o jednoj od najopasnijih cestovnih jurilica tog proizvođača.",
    "orig_t": "You Can Buy James May's Awesome Honda Superbike",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "motogp",
+   "src": "Crash.net",
+   "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNm9UYW1CMUFLQjBCMEJOZXl2ZFJvN3VPOG9wQmJ2NjdHU3JhRk01ZE5uRVUzQ19lamtNblNYY3RVYU5FcjJxdTdfaXhiZ0RYUU5HWEJFY3hVODZKYlFqVkpiVnJtSnN2WklCY3NLV0NNdG41Uy1sYUEyMVdDdEpHMXdQM1lWRlcyZFEwUDF1Z1dBWTNtaTZYMjRkc0JOUWNUNkt4R2FUNnItQ1ozVzNOODB2VlM0UQ?oc=5",
+   "date": "2026-11-01T12:54+00:00",
+   "img_q": "Yamaha’s Qatar bombshell has triggered a power struggle MotoGP may lose - Crash.net",
+   "t": "Yamahina objava u Kataru potaknula borbu za prevlast u MotoGP-u",
+   "s": "Yamahina iznenadna objava tijekom natjecanja u Kataru pokrenula je unutarnje sukobe i borbu za utjecaj. Takav razvoj događaja mogao bi imati negativne posljedice za cijelo prvenstvo MotoGP.",
+   "orig_t": "Yamaha’s Qatar bombshell has triggered a power struggle MotoGP may lose - Crash.net",
    "summary_version": 3,
    "hr": true
   },
@@ -350,54 +374,6 @@
    "hr": true
   },
   {
-   "c": "f1",
-   "src": "The Race",
-   "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOX3VTT2d3c09XVWdEQ0NLMGVMWDJkbkVEUEcyWjdxZncwNk82U29NVUREQWJMY3F1UnlKRG1wQjFmUFZscFFGVHpWaDIySjRubVl3RGN2bG5YUkpCbnFYanZiMmo3UFp3STEtWlItNk1LYU9XVFBIdmNVTWZrQlRPVEtZYlU2UQ?oc=5",
-   "date": "2026-10-31T19:02+00:00",
-   "img_q": "F1 2026 Mexican Grand Prix practice results - The Race",
-   "t": "Rezultati slobodnih treninga za Veliku nagradu Meksika Formule 1 2026.",
-   "s": "Dostupni su službeni rezultati slobodnih treninga uoči utrke za Veliku nagradu Meksika Formule 1 u sezoni 2026. godine.",
-   "orig_t": "F1 2026 Mexican Grand Prix practice results - The Race",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "f1",
-   "src": "The Race",
-   "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQ1ZqZDFYNjY0NGNhbG1LMTNvVFNKSjVPbWZuNlNPdm5TbG02aU92N1BuRU5PYkJ4a3JGQ0s4a3Q5aUt5VnM0YWZRamFxTVNnRWJJd3ZuczVRZzdwOE1TTThRZDhtUHpBNGVESzh4U0htdFVJbm95QURtZjVmR3ZaQXdzZDE?oc=5",
-   "date": "2026-10-31T18:58+00:00",
-   "img_q": "What happened in F1 Mexican GP final practice - The Race",
-   "t": "Što se dogodilo na posljednjem treningu za Veliku nagradu Meksika u Formuli 1",
-   "s": "Analiza događaja s posljednjeg slobodnog treninga uoči utrke za Veliku nagradu Meksika donosi pregled ključnih trenutaka i stanja na stazi prema izvještaju portala The Race.",
-   "orig_t": "What happened in F1 Mexican GP final practice - The Race",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "f1",
-   "src": "Autosport",
-   "u": "https://www.autosport.com/f1/news/f1-mexico-gp-norris-tops-final-practice-by-0001s-from-antonelli/10870228",
-   "date": "2026-10-31T18:44+00:00",
-   "img_q": "F1 Mexico GP: Norris tops final practice by 0.001s from Antonelli",
-   "t": "Norris najbrži na posljednjem treningu Velike nagrade Meksika",
-   "s": "Aktualni svjetski prvak Lando Norris ostvario je najbolje vrijeme na posljednjem slobodnom treningu uoči utrke za Veliku nagradu Meksika, tijesno nadmašivši vodećeg u prvenstvu Kimija Antonellija na stazi Autodromo Hermanos Rodriguez.",
-   "orig_t": "F1 Mexico GP: Norris tops final practice by 0.001s from Antonelli",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
-   "c": "energy",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/31/record-demand-catches-some-oems-with-their-pants-down-europe-september-2026",
-   "date": "2026-10-31T18:43+00:00",
-   "img_q": "Record Demand Catches (Some) OEMs with Their Pants Down — Europe September 2026",
-   "t": "Europsko tržište u rujnu zabilježilo rekordni udio električnih automobila",
-   "s": "U europskim je državama tijekom rujna zabilježen rekordni udio potpuno električnih automobila od 31 posto uz 422.000 registracija, čime su ujedno ostvarili najbržu stopu rasta u posljednje tri godine.",
-   "orig_t": "Record Demand Catches (Some) OEMs with Their Pants Down — Europe September 2026",
-   "summary_version": 3,
-   "hr": true
-  },
-  {
    "c": "tech",
    "src": "Autosport",
    "u": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPV0pIN0NaaHFKdUxmMUJqaHY0cmUyZTRoS0I3OFVEMnczNzBBVzdTTVRMTDZGaUozNFFpcGFBdGQzaVdwTVp5b3ZYRmoyOU8tLXNBYS01S2RXdjlRTE1Ka3BTTktPY091ZEpIM3A0ck5CdkJaS05iZmo0NDBlLVVxZmdR?oc=5",
@@ -458,6 +434,18 @@
    "hr": true
   },
   {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/space/2026/10/think-you-can-save-the-hubble-space-telescope-nasa-wants-to-know",
+   "date": "2026-10-31T00:07+00:00",
+   "img_q": "Once again, NASA is asking for ideas to rescue Hubble from certain death",
+   "t": "NASA ponovno traži ideje za spašavanje teleskopa Hubble",
+   "s": "Američka svemirska agencija ponovno prikuplja prijedloge za podizanje orbite i spašavanje svemirskog teleskopa Hubble. Sličan poziv raspisan je i prije četiri godine, ali tada nije rezultirao konkretnim pomakom.",
+   "orig_t": "Once again, NASA is asking for ideas to rescue Hubble from certain death",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
    "c": "moto",
    "src": "RideApart.com",
    "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPLWg4T0ZHNVdKOFBHVnBHT044MVRzTWs4T2lPa0NESmw2YUhKc0szVkJBUW94LVFZdHRlVzU3WUJseXBqRkRDZW9QV3Z5MlNUV1BES1llMFFEeGs0NUQ4TlZOSFgwZkNsRGhkT09TNC1xd0RjUUdKNlVvdlFGWkh6bVUtZ3RNbFFob1Vpa0Z6V0hyWGpCeVFnaXZseUV0Zw?oc=5",
@@ -466,6 +454,18 @@
    "t": "Izvršni direktor Harley-Davidsona poručio da marka neće spašavati LiveWire",
    "s": "Izvršni direktor Harley-Davidsona izjavio je kako tvrtka neće spašavati svoj električni brend LiveWire. Ova odluka može utjecati na daljnji razvoj i poslovanje spomenutog proizvođača električnih motocikala.",
    "orig_t": "Harley-Davidson Isn't Going To Save LiveWire, Says CEO - RideApart.com",
+   "summary_version": 3,
+   "hr": true
+  },
+  {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813760/2027-polaris-rzr-pro-r-factory-boost-race-spec-utv-price-features-horsepower",
+   "date": "2026-10-30T17:40+00:00",
+   "img_q": "The Polaris RZR Pro R Factory Boost Is The Most-Powerful, Most Expensive UTV Ever",
+   "t": "Polaris RZR Pro R Factory Boost je najsnažniji i najskuplji UTV",
+   "s": "Novi Polaris RZR Pro R Factory Boost ističe se kao najsnažnije i najskuplje vozilo tipa UTV na tržištu, s vrtoglavom cijenom od 200.000 dolara.",
+   "orig_t": "The Polaris RZR Pro R Factory Boost Is The Most-Powerful, Most Expensive UTV Ever",
    "summary_version": 3,
    "hr": true
   },

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T17:57+00:00",
+ "updated": "2026-11-01T22:09+00:00",
  "lang": "de",
  "items": [
   {
@@ -87,6 +87,18 @@
    "lang": "de"
   },
   {
+   "c": "f1",
+   "src": "The Race",
+   "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNX1dBcE44SWdibkdxR3NKc1pKRE96MDUzcVpYdlhhQkhLSTBzVElzeGd2Vl9VYVdQRlNjTktxOGhIN0E1QXlWempBZGZXRGNfMlFzRi1WdEpRVkJ4MW9URVFLMUs1ZzNRNkRpbG15TndkTk1SRnV3UE9INHpRXzdYaEotS0VtLWFFMHFMM3A5SWVMZy1UYzVWQ0U4SURQY0dxS3c?oc=5",
+   "date": "2026-11-01T14:46+00:00",
+   "img_q": "F1 2026 Mexican Grand Prix starting grid with four penalties - The Race",
+   "t": "Startaufstellung für den Großen Preis von Mexiko 2026 mit vier Strafen",
+   "s": "Die Startaufstellung für den Großen Preis von Mexiko der Formel 1 2026 wurde veröffentlicht und beinhaltet insgesamt vier Fahreroventilen.",
+   "orig_t": "F1 2026 Mexican Grand Prix starting grid with four penalties - The Race",
+   "summary_version": 3,
+   "lang": "de"
+  },
+  {
    "c": "motogp",
    "src": "Crash.net",
    "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZmRkUHZ4MHotMGdDT1hDbWpzUk1JTFpVQlJlZk1reDBGSTJXX0ZybU9FeUVOeVIxUi1fNWhhbVNndWZxY3lwdFZidXREUzF6Q003ZU9QRkgtR0VVdGVKUFRac3owRlA5V0ROenZBZDMtYm82T1NaZjFQVDVkQ0xwbWRaTXdYaGIxWEJYRklHUDZaY00tdDlWME1ja19sc2s?oc=5",
@@ -155,6 +167,18 @@
    "t": "Mächtiges Motorrad, das einst James May fuhr, steht zum Verkauf",
    "s": "Der bekannte Fernsehmoderator James May verkauft sein kraftvolles Honda-Motorrad. Es handelt sich dabei um eines der gefährlichsten Straßenmotorräder dieses Herstellers.",
    "orig_t": "You Can Buy James May's Awesome Honda Superbike",
+   "summary_version": 3,
+   "lang": "de"
+  },
+  {
+   "c": "motogp",
+   "src": "Crash.net",
+   "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNm9UYW1CMUFLQjBCMEJOZXl2ZFJvN3VPOG9wQmJ2NjdHU3JhRk01ZE5uRVUzQ19lamtNblNYY3RVYU5FcjJxdTdfaXhiZ0RYUU5HWEJFY3hVODZKYlFqVkpiVnJtSnN2WklCY3NLV0NNdG41Uy1sYUEyMVdDdEpHMXdQM1lWRlcyZFEwUDF1Z1dBWTNtaTZYMjRkc0JOUWNUNkt4R2FUNnItQ1ozVzNOODB2VlM0UQ?oc=5",
+   "date": "2026-11-01T12:54+00:00",
+   "img_q": "Yamaha’s Qatar bombshell has triggered a power struggle MotoGP may lose - Crash.net",
+   "t": "Yamahas Ankündigung in Katar löst Machtkampf in der MotoGP aus",
+   "s": "Yamahas überraschende Ankündigung während des Wettbewerbs in Katar hat interne Konflikte und einen Machtkampf ausgelöst. Diese Entwicklung könnte negative Folgen für die gesamte MotoGP-Meisterschaft haben.",
+   "orig_t": "Yamaha’s Qatar bombshell has triggered a power struggle MotoGP may lose - Crash.net",
    "summary_version": 3,
    "lang": "de"
   },
@@ -351,54 +375,6 @@
    "lang": "de"
   },
   {
-   "c": "f1",
-   "src": "The Race",
-   "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOX3VTT2d3c09XVWdEQ0NLMGVMWDJkbkVEUEcyWjdxZncwNk82U29NVUREQWJMY3F1UnlKRG1wQjFmUFZscFFGVHpWaDIySjRubVl3RGN2bG5YUkpCbnFYanZiMmo3UFp3STEtWlItNk1LYU9XVFBIdmNVTWZrQlRPVEtZYlU2UQ?oc=5",
-   "date": "2026-10-31T19:02+00:00",
-   "img_q": "F1 2026 Mexican Grand Prix practice results - The Race",
-   "t": "Ergebnisse des freien Trainings zum Formel-1-Großen Preis von Mexiko 2026",
-   "s": "Die offiziellen Ergebnisse des freien Trainings vor dem Formel-1-Rennen zum Großen Preis von Mexiko in der Saison 2026 sind verfügbar.",
-   "orig_t": "F1 2026 Mexican Grand Prix practice results - The Race",
-   "summary_version": 3,
-   "lang": "de"
-  },
-  {
-   "c": "f1",
-   "src": "The Race",
-   "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQ1ZqZDFYNjY0NGNhbG1LMTNvVFNKSjVPbWZuNlNPdm5TbG02aU92N1BuRU5PYkJ4a3JGQ0s4a3Q5aUt5VnM0YWZRamFxTVNnRWJJd3ZuczVRZzdwOE1TTThRZDhtUHpBNGVESzh4U0htdFVJbm95QURtZjVmR3ZaQXdzZDE?oc=5",
-   "date": "2026-10-31T18:58+00:00",
-   "img_q": "What happened in F1 Mexican GP final practice - The Race",
-   "t": "Was im letzten Training für den Großen Preis von Mexiko in der Formel 1 geschah",
-   "s": "Die Analyse der Ereignisse aus dem letzten freien Training vor dem Großen Preis von Mexiko bietet laut dem Bericht des Portals The Race eine Übersicht der Schlüsselmomente und der Situation auf der Strecke.",
-   "orig_t": "What happened in F1 Mexican GP final practice - The Race",
-   "summary_version": 3,
-   "lang": "de"
-  },
-  {
-   "c": "f1",
-   "src": "Autosport",
-   "u": "https://www.autosport.com/f1/news/f1-mexico-gp-norris-tops-final-practice-by-0001s-from-antonelli/10870228",
-   "date": "2026-10-31T18:44+00:00",
-   "img_q": "F1 Mexico GP: Norris tops final practice by 0.001s from Antonelli",
-   "t": "Norris Schnellster im letzten Training des Großen Preises von Mexiko",
-   "s": "Der amtierende Weltmeister Lando Norris erzielte im letzten freien Training vor dem Großen Preis von Mexiko die Bestzeit und schlug dabei den Führenden der Meisterschaft Kimi Antonelli auf dem Autodromo Hermanos Rodriguez knapp.",
-   "orig_t": "F1 Mexico GP: Norris tops final practice by 0.001s from Antonelli",
-   "summary_version": 3,
-   "lang": "de"
-  },
-  {
-   "c": "energy",
-   "src": "CleanTechnica",
-   "u": "https://cleantechnica.com/2026/10/31/record-demand-catches-some-oems-with-their-pants-down-europe-september-2026",
-   "date": "2026-10-31T18:43+00:00",
-   "img_q": "Record Demand Catches (Some) OEMs with Their Pants Down — Europe September 2026",
-   "t": "Europäischer Markt verzeichnet im September Rekordanteil an Elektroautos",
-   "s": "In den europäischen Ländern wurde im September ein Rekordanteil an rein elektrischen Autos von 31 Prozent bei 422.000 Zulassungen verzeichnet, womit sie gleichzeitig die schnellste Wachstumsrate der letzten drei Jahre erzielten.",
-   "orig_t": "Record Demand Catches (Some) OEMs with Their Pants Down — Europe September 2026",
-   "summary_version": 3,
-   "lang": "de"
-  },
-  {
    "c": "tech",
    "src": "Autosport",
    "u": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPV0pIN0NaaHFKdUxmMUJqaHY0cmUyZTRoS0I3OFVEMnczNzBBVzdTTVRMTDZGaUozNFFpcGFBdGQzaVdwTVp5b3ZYRmoyOU8tLXNBYS01S2RXdjlRTE1Ka3BTTktPY091ZEpIM3A0ck5CdkJaS05iZmo0NDBlLVVxZmdR?oc=5",
@@ -459,6 +435,18 @@
    "lang": "de"
   },
   {
+   "c": "tech",
+   "src": "Ars Technica",
+   "u": "https://arstechnica.com/space/2026/10/think-you-can-save-the-hubble-space-telescope-nasa-wants-to-know",
+   "date": "2026-10-31T00:07+00:00",
+   "img_q": "Once again, NASA is asking for ideas to rescue Hubble from certain death",
+   "t": "NASA sucht erneut Ideen zur Rettung des Hubble-Teleskops",
+   "s": "Die US-Raumfahrtagentur sammelt erneut Vorschläge zur Anhebung der Umlaufbahn und zur Rettung des Weltraumteleskops Hubble. Ein ähnlicher Aufruf wurde bereits vor vier Jahren gestartet, führte damals jedoch zu keinem konkreten Fortschritt.",
+   "orig_t": "Once again, NASA is asking for ideas to rescue Hubble from certain death",
+   "summary_version": 3,
+   "lang": "de"
+  },
+  {
    "c": "moto",
    "src": "RideApart.com",
    "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPLWg4T0ZHNVdKOFBHVnBHT044MVRzTWs4T2lPa0NESmw2YUhKc0szVkJBUW94LVFZdHRlVzU3WUJseXBqRkRDZW9QV3Z5MlNUV1BES1llMFFEeGs0NUQ4TlZOSFgwZkNsRGhkT09TNC1xd0RjUUdKNlVvdlFGWkh6bVUtZ3RNbFFob1Vpa0Z6V0hyWGpCeVFnaXZseUV0Zw?oc=5",
@@ -467,6 +455,18 @@
    "t": "Harley-Davidson-Chef erklärt, dass die Marke LiveWire nicht retten wird",
    "s": "Der CEO von Harley-Davidson erklärte, dass das Unternehmen seine Elektromarke LiveWire nicht retten werde. Diese Entscheidung könnte die weitere Entwicklung und das Geschäft des genannten Elektromotorradherstellers beeinflussen.",
    "orig_t": "Harley-Davidson Isn't Going To Save LiveWire, Says CEO - RideApart.com",
+   "summary_version": 3,
+   "lang": "de"
+  },
+  {
+   "c": "moto",
+   "src": "RideApart",
+   "u": "https://www.rideapart.com/news/813760/2027-polaris-rzr-pro-r-factory-boost-race-spec-utv-price-features-horsepower",
+   "date": "2026-10-30T17:40+00:00",
+   "img_q": "The Polaris RZR Pro R Factory Boost Is The Most-Powerful, Most Expensive UTV Ever",
+   "t": "Polaris RZR Pro R Factory Boost ist das stärkste und teuerste UTV",
+   "s": "Das neue Polaris RZR Pro R Factory Boost sticht als das leistungsstärkste und teuerste UTV auf dem Markt hervor, mit einem astronomischen Preis von 200.000 US-Dollar.",
+   "orig_t": "The Polaris RZR Pro R Factory Boost Is The Most-Powerful, Most Expensive UTV Ever",
    "summary_version": 3,
    "lang": "de"
   },
