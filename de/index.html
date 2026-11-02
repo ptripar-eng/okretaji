@@ -810,11 +810,25 @@ async function hydrateEditorialDates(){
  renderHero();
 }
 function editorialVisual(item){
- if(item.images&&item.images.length)return item.images[0].src;
- const auto=item.href.includes("dizalica"),moto=item.tag.includes("MOTOGP")||item.tag.includes("MOTOCIKLI"),energy=item.tag.includes("ENERGIJA");
- const bg=auto?"#123c56":moto?"#322e42":energy?"#245044":"#17334a";
- const motif=auto?'<path d="M110 360L175 275H465L535 360Z" fill="#b8dbe8"/><path d="M175 275L220 225H408L465 275" fill="#e2f1f7"/><circle cx="215" cy="365" r="40" fill="#081924" stroke="#f6f7f7" stroke-width="13"/><circle cx="450" cy="365" r="40" fill="#081924" stroke="#f6f7f7" stroke-width="13"/><path d="M570 190v130m-55-65h110m-93-46l75 92m0-92l-75 92" stroke="#82d7ff" stroke-width="12" stroke-linecap="round"/>':moto?'<circle cx="190" cy="365" r="70" fill="none" stroke="#d9e7f0" stroke-width="17"/><circle cx="475" cy="365" r="70" fill="none" stroke="#d9e7f0" stroke-width="17"/><path d="M190 365L275 260L365 365L475 365L390 220L310 220L275 260" stroke="#ff742d" stroke-width="23" fill="none" stroke-linejoin="round"/><path d="M320 185L410 210L450 275" stroke="#f5f8fb" stroke-width="24" fill="none"/>':energy?'<path d="M110 390V210L205 155L290 210V390M160 390V290H235V390" stroke="#cde5ec" stroke-width="17" fill="none"/><path d="M395 390V160M395 160L330 265M395 160L475 260M395 160L400 60" stroke="#f4f8fa" stroke-width="17" fill="none"/>':'<path d="M80 340Q200 120 370 230T660 120" stroke="#ff742d" stroke-width="42" fill="none"/><path d="M80 420Q220 250 400 340T660 250" stroke="#d5e9f5" stroke-width="25" fill="none"/>';
- const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480"><rect width="720" height="480" fill="'+bg+'"/><circle cx="650" cy="80" r="210" fill="#ff681f" opacity=".14"/><path d="M0 450L720 270" stroke="#ff681f" stroke-width="12" opacity=".7"/>'+motif+'</svg>';
+ if(item.images && item.images.length && item.images[0].src)return item.images[0].src;
+ // Unique article-specific editorial placeholder, not a generic stock photo.
+ // Never imply a real person, event or product is pictured when no verified image exists.
+ const title=item.t||"Okretaji",key=item.href||title;
+ let seed=0;for(let i=0;i<key.length;i++)seed=(Math.imul(seed,31)+key.charCodeAt(i))>>>0;
+ const palettes=[["#14364a","#f05a1a"],["#183d4e","#65b6d8"],["#26384c","#e59a42"],["#153f3c","#a7cfb2"],["#37324c","#ec704e"],["#123a58","#f7bd64"],["#31505b","#e58e4e"],["#2f4057","#9fd6de"]];
+ const [bg,accent]=palettes[seed%palettes.length];
+ let motif="";
+ if(/dizalica|toplin|električn|poticaj/i.test(title)){
+   motif='<path d="M95 333l75-98h352l92 98" fill="none" stroke="#e4f5fa" stroke-width="14"/><path d="M191 237l64-68h200l64 68" fill="#8fc8db"/><circle cx="200" cy="350" r="42" fill="#122735" stroke="#f4f7fa" stroke-width="12"/><circle cx="510" cy="350" r="42" fill="#122735" stroke="#f4f7fa" stroke-width="12"/><path d="M650 160v142m-49-71h98" stroke="'+accent+'" stroke-width="13"/>';
+ }else if(/márquez|acosta|motogp|sepang|motor|guzzi/i.test(title)){
+   motif='<circle cx="190" cy="356" r="62" fill="none" stroke="#dce8ef" stroke-width="16"/><circle cx="487" cy="356" r="62" fill="none" stroke="#dce8ef" stroke-width="16"/><path d="M190 356l112-124 93 124h92l-99-158h-81" fill="none" stroke="'+accent+'" stroke-width="19" stroke-linejoin="round"/><path d="M300 190l72-45 82 48" fill="none" stroke="#fff" stroke-width="16"/>';
+ }else if(/nuklear|energij|unij|mrež/i.test(title)){
+   motif='<circle cx="362" cy="263" r="24" fill="'+accent+'"/><ellipse cx="362" cy="263" rx="205" ry="74" fill="none" stroke="#d4ebef" stroke-width="12" transform="rotate(35 362 263)"/><ellipse cx="362" cy="263" rx="205" ry="74" fill="none" stroke="#d4ebef" stroke-width="12" transform="rotate(-35 362 263)"/><ellipse cx="362" cy="263" rx="205" ry="74" fill="none" stroke="'+accent+'" stroke-width="12"/>';
+ }else{
+   motif='<path d="M70 330Q160 190 310 244T650 153" fill="none" stroke="'+accent+'" stroke-width="40" stroke-linecap="round"/><path d="M70 410Q190 283 350 337T650 260" fill="none" stroke="#d3e9f1" stroke-width="22" stroke-linecap="round"/>';
+ }
+ const num=String(seed%900+100),tag=(item.tag||"OKRETAJI").split("·")[0].trim().slice(0,24);
+ const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img"><rect width="720" height="480" fill="'+bg+'"/><rect x="0" y="0" width="720" height="11" fill="'+accent+'"/><circle cx="660" cy="60" r="180" fill="'+accent+'" opacity=".12"/>'+motif+'<rect x="26" y="25" width="310" height="52" rx="8" fill="#081e2b" opacity=".9"/><text x="42" y="58" fill="#fff" font-family="Arial,sans-serif" font-size="25" font-weight="bold">'+tag+'</text><text x="640" y="450" fill="#fff" font-size="16" font-family="Arial,sans-serif" opacity=".7">OKRETAJI / '+num+'</text></svg>';
  return "data:image/svg+xml;charset=UTF-8,"+encodeURIComponent(svg);
 }
 
@@ -830,15 +844,16 @@ function renderCategoryMagazine(){
  categories.forEach((c,i)=>{
   const a=el("a");a.href=c.href;
   const img=el("img");img.loading="lazy";img.alt="";
-  const item=EDITORIAL.find(x=>i===0?x.tag.includes("ENERGIJA"):i===1?x.tag.includes("MOTOCIKLI"):i===2?x.tag.includes("ENERGIJA"):x.tag.includes("ANALIZA"));
-  img.src=item?editorialVisual(item):editorialVisual(EDITORIAL[i]);
+  const topicPatterns=[/poticaji.*električne/i,/guzzi|motocikl/i,/nuklear|energij|toplin/i,/meksiko.*tehnički|analiza/i];
+  const item=EDITORIAL.find(x=>topicPatterns[i].test(x.t))||EDITORIAL[(i+1)%EDITORIAL.length];
+  img.src=editorialVisual(item);
   const title=el("div","cat-title");title.append(el("span",null,c.icon),c.title);
   a.append(img,title,el("div","cat-caption",c.description));box.append(a);
  });
 }
 
 function renderHero(){
- const items=[...EDITORIAL].sort((a,b)=>(Date.parse(editorialDate(b))||0)-(Date.parse(editorialDate(a))||0));
+ const items=[...new Map(EDITORIAL.map(item=>[item.href,item])).values()].sort((a,b)=>(Date.parse(editorialDate(b))||0)-(Date.parse(editorialDate(a))||0));
  const main=items[0],lead=$("lead");lead.innerHTML="";
  const ph=el("div","ph");const im=el("img");im.src=editorialVisual(main);im.alt="Tematska ilustracija: "+main.t;im.loading="eager";ph.append(im);
  const t=el("div","txt");t.append(el("span","plate",main.tag));const h=el("h2"),a=el("a",null,main.t);a.href=main.href;h.append(a);t.append(h,el("p",null,main.s));const more=el("a","read-more","Artikel lesen →");more.href=main.href;t.append(more);lead.append(ph,t);
