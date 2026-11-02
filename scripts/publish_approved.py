@@ -72,6 +72,7 @@ def publish_instagram(item,token,user_id,image_url):
     return result.get("id")
 
 def main():
+    global IG_USER
     if len(sys.argv)<3: raise SystemExit("Upotreba: publish_approved.py <slug> <facebook|instagram|both>")
     slug,target=sys.argv[1],sys.argv[2]
     data=json.loads(QUEUE.read_text(encoding="utf-8"))
