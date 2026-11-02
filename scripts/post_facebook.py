@@ -88,29 +88,23 @@ def usable_photo(article):
 
 
 def make_message(article):
-    category = str(article.get("c") or "").lower()
-    meta = CATEGORY.get(category, {
-        "tag": "#Okretaji #AutoMoto",
-        "question": "Što vi mislite? Napišite svoje mišljenje.",
-        "follow": "Pratite Okretaje za nove priče iz svijeta vozila i tehnologije.",
-    })
+    """Kratak urednički opis bez generičkih pitanja i reklamnih fraza."""
     title = " ".join(str(article.get("t") or "").split()).strip()
     summary = " ".join(str(article.get("s") or "").split()).strip()
-    source = str(article.get("src") or "izvor").strip()
-    source_url = (article.get("u") or "").strip()
+    source = str(article.get("src") or "").strip()
+    source_url = str(article.get("u") or "").strip()
     article_path = str(article.get("article") or "").strip().lstrip("/")
-    article_url = f"https://okretaji.com/{article_path}" if article_path else "https://okretaji.com/#novosti"
+    article_url = f"https://okretaji.com/{article_path}" if article_path else ""
     image = article.get("img") or {}
-    photo_credit = f"📷 Foto: {image.get('by')} · {image.get('lic')} · {image.get('link')}"
-    return (
-        f"🏁 {title}\n\n{summary}\n\n"
-        f"💬 {meta['question']}\n\n"
-        f"👉 {meta['follow']}\n"
-        f"🌐 Pročitajte na Okretajima: {article_url}\n"
-        f"Izvor: {source} — {source_url}\n"
-        f"{photo_credit}\n\n"
-        f"{meta['tag']} #Okretaji"
-    )
+    credit = "Foto: " + " · ".join(str(x) for x in (image.get("by"), image.get("lic")) if x)
+    parts = [title, summary]
+    if article_url:
+        parts.append("Više: " + article_url)
+    if source and source_url:
+        parts.append("Izvor: " + source + " — " + source_url)
+    if image.get("link"):
+        parts.append(credit + " · " + str(image["link"]))
+    return "\\n\\n".join(part for part in parts if part).replace("\\n", "\n")[:1800]
 
 
 def choose_candidates(candidates, slots):
