@@ -49,6 +49,10 @@ jobs:
           curl -fsSL -o .fonts/BigShouldersDisplay.ttf "$base/bigshouldersdisplay/BigShouldersDisplay%5Bwght%5D.ttf"
           curl -fsSL -o .fonts/Barlow-Medium.ttf "$base/barlow/Barlow-Medium.ttf"
           curl -fsSL -o .fonts/Barlow-Bold.ttf "$base/barlow/Barlow-Bold.ttf"
+      - name: Postavi git identitet
+        run: |
+          git config user.name "okretaji-bot"
+          git config user.email "okretaji-bot@users.noreply.github.com"
       - name: Objavi samo odobreni nacrt
         run: python scripts/publish_approved.py "${{ inputs.slug }}" "${{ inputs.target }}"
         env:
