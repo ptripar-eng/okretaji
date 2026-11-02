@@ -328,7 +328,20 @@ section{padding-top:42px}.return-section{padding-top:35px}.return-card{min-heigh
 @media(max-width:700px){.bar .wrap{height:56px}.hero{margin-top:10px}.lead{min-height:480px}.lead .txt{max-width:100%;padding:22px}.lead .ph:after{background:linear-gradient(0deg,rgba(2,17,27,.98),rgba(2,17,27,.1) 90%)}.lead h2{font-size:2.8rem}.side{grid-template-columns:1fr}.editorial-gallery{grid-template-columns:1fr 1fr}.gallery-card{min-height:190px}.gallery-card b{font-size:1.35rem}}
 @media(max-width:460px){.editorial-gallery{grid-template-columns:1fr}.gallery-card{min-height:210px}}
 </style>
-</head>
+<style id="magazine-fixes">
+/* Layout matches the editorial mockup: hero, image cards, then data sections. */
+#novosti{scroll-margin-top:70px}
+.hero .lead{display:flex!important;min-height:510px!important}
+.hero .lead .ph{position:absolute!important;inset:0!important;width:100%;height:100%;padding:0!important;display:block!important}
+.hero .lead .ph img{width:100%;height:100%;object-fit:cover}
+.hero .lead .txt{position:relative!important;z-index:2!important;padding:32px!important}
+.hero .lead .txt h2{font-size:clamp(2.5rem,4.1vw,4.7rem)!important}
+.editorial-gallery{margin:16px 0 0!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+#utrka{margin-top:28px;padding:32px 0}
+#brojke,#sve-vijesti,#povratak{padding-top:32px}
+@media(max-width:700px){.hero .lead .txt{padding:20px!important}.editorial-gallery{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:460px){.editorial-gallery{grid-template-columns:1fr!important}}
+</style></head>
 <body><!--lang-sw--><nav class="lang-sw" aria-label="Jezik"><a href="/" hreflang="hr" lang="hr" aria-current="true">HR</a><a href="/en/" hreflang="en" lang="en">EN</a><a href="/de/" hreflang="de" lang="de">DE</a></nav><script>document.querySelectorAll('.lang-sw a').forEach(function(a){a.href=a.getAttribute('href')+location.search+location.hash})</script><!--/lang-sw-->
 <header class="bar">
   <div class="wrap">
@@ -353,6 +366,7 @@ section{padding-top:42px}.return-section{padding-top:35px}.return-card{min-heigh
       <article class="lead" id="lead"></article>
       <div class="side" id="side"></div>
     </div>
+    <div class="editorial-gallery" id="editorialGallery" aria-label="Izdvojeni članci uredništva"></div>
   </div>
 
   <section class="race" id="utrka" aria-labelledby="h-utrka" hidden>
@@ -381,7 +395,6 @@ section{padding-top:42px}.return-section{padding-top:35px}.return-card{min-heigh
   </section>
 
   <div class="wrap">
-    <div class="wrap"><div class="editorial-gallery" id="editorialGallery" aria-label="Izdvojeni članci uredništva"></div></div>
 <section id="brojke" aria-labelledby="h-brojke">
       <div class="sh"><span class="gear" aria-hidden="true">3</span><h2 id="h-brojke">U brojkama</h2><p>Promet, emisije i električna vozila – činjenice bez navijanja.</p></div>
       <div class="stats">
