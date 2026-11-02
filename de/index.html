@@ -65,13 +65,13 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .upd{font-size:.78rem;color:#6F8C9E;margin-top:14px}
 
 /* ---------- masthead ---------- */
-.mast{position:relative;overflow:hidden;padding:26px 0 8px}
-.livery{position:absolute;left:-10%;right:-10%;top:58px;height:96px;transform:skewY(-4deg);pointer-events:none}
+.mast{position:relative;overflow:hidden;padding:14px 0 4px}
+.livery{display:none}
 .livery i{display:block;height:50%}
 .livery i:first-child{background:var(--orange)}
 .livery i:last-child{background:var(--powder);opacity:.85}
 .mast .wrap{position:relative}
-.logo{margin:0;display:block;max-width:900px}\n.logo img{display:block;width:100%;height:auto;max-height:300px;object-fit:contain;object-position:left center}
+.logo{margin:0;display:block;max-width:470px}\n.logo img{display:block;width:100%;height:auto;max-height:118px;object-fit:contain;object-position:left center}
 .tag{margin:22px 0 0;font-weight:600;font-size:1.02rem;color:var(--muted);max-width:60ch}
 #needle{transform-origin:50px 54px;transform:rotate(30deg)}
 @media (prefers-reduced-motion:no-preference){
@@ -108,7 +108,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 a.card:hover .ph img,.lead:hover .ph img{transform:scale(1.04)}
 
 /* ---------- hero ---------- */
-.editorial-ph{display:block;background:#102b3d}.editorial-photos{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;gap:3px;background:#0d2b3e}.editorial-photos img{width:100%;height:100%;min-width:0;object-fit:cover;filter:saturate(.9)}.editorial-photos img:first-child{object-position:48% center}.editorial-photos img:last-child{object-position:52% center}.editorial-ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,20,30,.04) 18%,rgba(5,20,30,.16) 38%,rgba(5,20,30,.94) 100%)}.editorial-side{display:block;padding:17px 18px;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);text-decoration:none}.editorial-side h3{font:800 1.55rem/1.02 "Big Shoulders Display",Impact,sans-serif;margin:8px 0}.editorial-side p{font-size:.92rem;color:var(--muted);margin:0 0 10px}.editorial-tag{font-size:.72rem;font-weight:800;letter-spacing:.08em;color:var(--orange)}.side-heading:not(:first-child){margin-top:8px}
+.editorial-ph{display:block;background:#102b3d}.editorial-photos{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;gap:3px;background:#0d2b3e}.editorial-photos:has(img:only-child){grid-template-columns:1fr}.editorial-photos img{width:100%;height:100%;min-width:0;object-fit:cover;filter:saturate(.9)}.editorial-photos img:first-child{object-position:48% center}.editorial-photos img:last-child{object-position:52% center}.editorial-ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,20,30,.04) 18%,rgba(5,20,30,.16) 38%,rgba(5,20,30,.94) 100%)}.editorial-side{display:block;padding:17px 18px;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);text-decoration:none}.editorial-side h3{font:800 1.55rem/1.02 "Big Shoulders Display",Impact,sans-serif;margin:8px 0}.editorial-side p{font-size:.92rem;color:var(--muted);margin:0 0 10px}.editorial-tag{font-size:.72rem;font-weight:800;letter-spacing:.08em;color:var(--orange)}.side-heading:not(:first-child){margin-top:8px}
 @media(max-width:760px){.lead{min-height:430px}.lead .txt{padding:22px}.editorial-photos img{object-position:center}.side{gap:12px}.editorial-side{padding:14px 16px}}
 .hero{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:22px;margin:30px 0 0}
 .lead{position:relative;border-radius:10px;overflow:hidden;box-shadow:var(--shadow);background:var(--deep);min-height:480px;display:flex;align-items:flex-end;color:#fff}
@@ -651,10 +651,7 @@ function srcLine(n){const p=el("div","src");p.append("Ursprünglicher Artikel: "
 function plate(n){const c=cat(n),p=el("span","plate",c.name);p.style.setProperty("--pc",c.color);return p;}
 
 const EDITORIAL = [
- {t:"Stoner und Márquez: Gleicher Instinkt, andere MotoGP-Ära",s:"Zwei Champions, zwei Motorradgenerationen und dieselbe Obsession für die perfekte Kurvenfahrt. Was verbindet sie wirklich?",href:"stoner-marquez-zavoji.html",tag:"MOTOGP · ANALYSE",images:[
-  {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Casey_Stoner_2010_TT_Assen.jpg?width=1400",alt:"Casey Stoner auf der Ducati beim TT Assen 2010.",credit:"Morten Jensen / Wikimedia Commons, CC BY 2.0",link:"https://commons.wikimedia.org/wiki/File:Casey_Stoner_2010_TT_Assen.jpg"},
-  {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Marc_M%C3%A1rquez_2015_Misano_2.jpeg?width=1400",alt:"Marc Márquez auf der Repsol Honda beim GP von San Marino 2015.",credit:"Box Repsol / Wikimedia Commons, CC BY 2.0",link:"https://commons.wikimedia.org/wiki/File:Marc_M%C3%A1rquez_2015_Misano_2.jpeg"}
- ]},
+ {t:"Kimi Antonelli ist Weltmeister: historischer Titel mit 20 Jahren",s:"Ein dritter Platz in Mexiko reichte dem Mercedes-Piloten, um sich den Titel zu sichern und zum jüngsten Formel-1-Weltmeister der Geschichte zu werden.",href:"kimi-antonelli-od-kartinga-do-f1-prvaka-2026.html",tag:"FORMEL 1 · WELTMEISTER",images:[{src:"https://scontent-vie1-1.xx.fbcdn.net/v/t39.30808-6/886770592_122097023721539294_6417676721007144567_n.jpg?stp=dst-jpg_tt6&cstp=mx1402x1122&ctp=s1402x1122&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6H_hieLvV1cQ7kNvwFxfMhQ&_nc_oc=AdqoCmgHvoAXn9yC_qmwqreKAAkvHFqHYx9_u7O-N0aMkJOQtNICv1mhZMRZSE8vTGc&_nc_zt=23&_nc_ht=scontent-vie1-1.xx&_nc_gid=l5l4nMjPgUV126U7WYOZ_w&_nc_ss=7b2a8&oh=00_AQTP61lpjuEJYlvZnMkSbU3Ir3f2iKBHr9iZ4AxI9sjjlQ&oe=6AEE0449",alt:"Kimi Antonelli – Formel-1-Weltmeister 2026",credit:"Okretaji",link:"https://www.instagram.com/okretaji/"}]},
  {t:"Marc Márquez gewinnt in Sepang und baut Führung aus: Achter Titel rückt näher",s:"Der siebte Saisonsieg und der 80. MotoGP-Triumph brachten ihm 44 Punkte Vorsprung ein. Acosta Zweiter, Alex Márquez Dritter.",href:"marc-marquez-pobjeda-sepang-vn-malezije-2026.html",tag:"MOTOGP · GP VON MALAYSIA",images:[]},
  {t:"Acosta siegt im Sprint, Alex Márquez holt Pole in Sepang",s:"Alex Márquez war in der Qualifikation der Schnellste, und Pedro Acosta gewann den Sprint vor Marc Márquez.",href:"motogp-sepang-acosta-sprint-alex-marquez-pole-2026.html",tag:"MOTOGP · GP VON MALAYSIA",images:[]},
  {t:"Antonelli kann in Mexiko Titel klarmachen, Ferrari vorerst am schnellsten",s:"Zwei Punkte trennen Kimi Antonelli vom Titel, aber Charles Leclerc war in beiden Freitagen-Trainings der Schnellste.",href:"f1-kimi-antonelli-meksiko-naslov-2026.html",tag:"FORMEL 1 · TITELKAMPF",images:[]},
