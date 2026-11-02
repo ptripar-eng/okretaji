@@ -75,20 +75,24 @@ def usable_photo(article):
 
 
 def caption(article):
+    """Informativan opis bez emojija, generičkih pitanja i spam hashtagova."""
     category = str(article.get("c") or "").lower()
-    source = clean(article.get("src")) or "izvor"
-    source_url = str(article.get("u") or "").strip()
+    title = clean(article.get("t"))
+    summary = clean(article.get("s"))
     article_path = str(article.get("article") or "").strip().lstrip("/")
-    article_url = f"https://okretaji.com/{article_path}" if article_path else "https://okretaji.com/#novosti"
+    source = clean(article.get("src"))
+    source_url = str(article.get("u") or "").strip()
     image = article.get("img") or {}
-    photo_credit = f"📷 Foto: {image.get('by')} · {image.get('lic')} · {image.get('link')}"
-    return (
-        f"🏁 {clean(article.get('t'))}\n\n{clean(article.get('s'))}\n\n"
-        "Pratite @okretaji za auto-moto sport, tehnologiju i energiju. "
-        f"Cijeli članak: {article_url} (poveznica je i u opisu profila).\n\n"
-        f"Izvor: {source} · {source_url}\n"
-        f"{photo_credit}\n\n{TAGS.get(category, '#Okretaji #AutoMoto')} #Okretaji"
-    )[:2200]
+    parts = [title, summary]
+    if article_path:
+        parts.append("Detaljnije na okretaji.com (poveznica u profilu).")
+    if source and source_url:
+        parts.append(f"Izvor: {source} — {source_url}")
+    if image.get("link"):
+        parts.append("Foto: " + clean(image.get("by")) + " · " + clean(image.get("lic")) + " · " + str(image["link"]))
+    tags = TAGS.get(category, "#AutoMoto")
+    parts.append(tags + " #Okretaji")
+    return "\\n\\n".join(part for part in parts if part).replace("\\n", "\n")[:2200]
 
 
 def choose_article(articles, state, now):
