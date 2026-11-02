@@ -1,16 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
-<title id="title">Okretaji — auto, moto, sport</title><desc id="desc">Crni i bijeli logotip s crvenim okretomjerom i kazaljkom u crvenom području.</desc>
-<defs><linearGradient id="metal" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#bfc5cc"/></linearGradient></defs>
-<rect width="1200" height="380" rx="30" fill="#090b0f"/>
-<g transform="translate(34 22)">
-<path d="M45 278 A150 150 0 0 1 327 78" fill="none" stroke="#f3f4f6" stroke-width="27" stroke-linecap="round"/>
-<path d="M327 78 A150 150 0 0 1 345 278" fill="none" stroke="#ed1c24" stroke-width="27" stroke-linecap="round"/>
-<path d="M93 244 L117 220 M132 164 L148 142 M193 113 L199 84 M258 115 L273 91" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
-<path d="M188 244 L315 96" stroke="#ed1c24" stroke-width="19" stroke-linecap="round"/>
-<circle cx="188" cy="244" r="25" fill="#ed1c24" stroke="#fff" stroke-width="7"/>
-<path d="M15 310 H362" stroke="#ed1c24" stroke-width="12"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 190" role="img" aria-labelledby="title desc">
+<title id="title">Okretaji</title><desc id="desc">Logotip Okretaji s crvenim okretomjerom i tamnoplavim nazivom.</desc>
+<g transform="translate(10 10)">
+<path d="M18 145 A76 76 0 0 1 162 42" fill="none" stroke="#0D2B3E" stroke-width="15" stroke-linecap="round"/>
+<path d="M162 42 A76 76 0 0 1 178 145" fill="none" stroke="#F05A1A" stroke-width="15" stroke-linecap="round"/>
+<path d="M43 126 L56 113 M64 83 L76 70 M103 60 L106 44 M138 62 L149 49" fill="none" stroke="#0D2B3E" stroke-width="7" stroke-linecap="round"/>
+<path d="M101 126 L164 49" stroke="#F05A1A" stroke-width="11" stroke-linecap="round"/>
+<circle cx="101" cy="126" r="13" fill="#F05A1A" stroke="#0D2B3E" stroke-width="4"/>
 </g>
-<text x="430" y="224" fill="url(#metal)" font-family="Arial,Helvetica,sans-serif" font-size="150" font-style="italic" font-weight="900" letter-spacing="-7">OKRETAJI</text>
-<path d="M430 260 H1120" stroke="#ed1c24" stroke-width="10"/>
-<text x="438" y="320" fill="#f4f4f5" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700" letter-spacing="13">AUTO  •  MOTO  •  SPORT</text>
+<text x="225" y="122" fill="#0D2B3E" font-family="Arial,Helvetica,sans-serif" font-size="112" font-style="italic" font-weight="900" letter-spacing="-5">OKRETAJI</text>
+<path d="M230 145 H970" stroke="#F05A1A" stroke-width="7" stroke-linecap="round"/>
+<text x="235" y="178" fill="#4F6979" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" letter-spacing="8">AUTO  •  MOTO  •  SPORT</text>
 </svg>
