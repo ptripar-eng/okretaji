@@ -453,7 +453,7 @@ footer{background:#03111a}
   <div class="livery" aria-hidden="true"><i></i><i></i></div>
   <div class="wrap">
     <h1 class="logo"><img src="/brand-logo.svg" alt="Okretaji — cars, bikes, sport"></h1>
-    <p class="tag">Auto, moto i motosport, tehnologija i energija.</p>
+    <p class="tag">Cars, motorcycles and motorsport, technology and energy.</p>
   </div>
 </div>
 
@@ -463,7 +463,7 @@ footer{background:#03111a}
       <article class="lead" id="lead"></article>
       <div class="side" id="side"></div>
     </div>
-    <div class="editorial-gallery" id="editorialGallery" aria-label="Izdvojeni članci uredništva"></div><nav id="categoryMagazine" class="category-magazine" aria-label="Istražite rubrike"></nav>
+    <div class="editorial-gallery" id="editorialGallery" aria-label="Editor's picks"></div><nav id="categoryMagazine" class="category-magazine" aria-label="Explore categories"></nav>
   </div>
 
   <section class="race" id="utrka" aria-labelledby="h-utrka" hidden>
@@ -484,7 +484,7 @@ footer{background:#03111a}
         </div>
       </div>
       <div class="rgrid" style="margin-top:22px">
-        <div class="rcard"><h3>Raspored vikenda (lokalno vrijeme)</h3><ul class="sess" id="sess"></ul></div>
+        <div class="rcard"><h3>Weekend schedule (local time)</h3><ul class="sess" id="sess"></ul></div>
         <div class="rcard"><h3>Upcoming races</h3><ol class="sched" id="sched"></ol></div>
       </div>
       <p class="rnote">Data: <a href="https://github.com/jolpica/jolpica-f1" target="_blank" rel="noopener">Jolpica F1 API</a>; track layout: <a href="https://github.com/bacinger/f1-circuits" target="_blank" rel="noopener">bacinger/f1-circuits</a> (MIT license).</p>
@@ -563,9 +563,9 @@ footer{background:#03111a}
       <div class="return-grid">
         <article class="return-card"><span class="return-kicker">Motorsport</span><h3>MotoGP up close</h3><p>News, race schedule, riders and the key stories from motorcycle racing's premier class — with a separate F1 section.</p><a href="motogp.html">MotoGP race schedule →</a><button type="button" data-return-category="motogp">MotoGP news →</button></article>
         <article class="return-card"><span class="return-kicker">Then and now</span><h3>Stoner and Márquez: how do they ride through a corner?</h3><p>A comparison of riding styles, statistics and the impact of changing MotoGP bikes — with sources and a clear line between data and conclusions.</p><a href="stoner-marquez-zavoji.html">Read the analysis →</a></article>
-        <article class="return-card"><span class="return-kicker">Buying without guesswork</span><h3>Car and motorcycle comparisons</h3><p>Usporedbe cijene, potrošnje, performansi i troškova održavanja, uz jasno odvajanje podataka proizvođača od neovisnih mjerenja.</p><a href="usporedbe.html">Open the comparison guide →</a></article>
+        <article class="return-card"><span class="return-kicker">Buying without guesswork</span><h3>Car and motorcycle comparisons</h3><p>Comparisons of price, consumption, performance and maintenance costs, with a clear separation of manufacturer data from independent measurements.</p><a href="usporedbe.html">Open the comparison guide →</a></article>
         <article class="return-card"><span class="return-kicker">Garage</span><h3>Practical technical guides</h3><p>Maintenance, tyres, brakes, drivetrain, diagnostics and electric vehicles — step by step, with sources and safety notes.</p><a href="tehnicki-vodici.html">Open technical guides →</a></article>
-        <article class="return-card"><span class="return-kicker">On the road</span><h3>Istrian and Alpine motorcycle routes</h3><p>Istarske i alpske ceste, prijedlozi ruta, zanimljiva stajanja i savjeti za planiranje vožnje.</p><a href="#rute">Select route →</a></article>
+        <article class="return-card"><span class="return-kicker">On the road</span><h3>Istrian and Alpine motorcycle routes</h3><p>Istrian and Alpine roads, route suggestions, interesting stops and driving planning tips.</p><a href="#rute">Select route →</a></article>
       </div>
     </section>
 
@@ -774,13 +774,13 @@ function srcLine(n){const p=el("div","src");p.append("Original article: ");const
 function plate(n){const c=cat(n),p=el("span","plate",c.name);p.style.setProperty("--pc",c.color);return p;}
 
 const EDITORIAL = [
- {t:"Croatian EV incentives 2026: application rules and prices after the grant",s:"Up to €9,000 in support for an electric car: application rules, buying abroad, a comparison of 26 models and the €35,000 threshold.",href:"poticaji-za-elektricne-aute-2026-sto-se-isplati.html",tag:"ENERGY · ANALYSIS",published:"2026-11-02T12:00:00+01:00",images:[{src:"https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Close-up_of_an_electric_car_charging_station.jpg/1280px-Close-up_of_an_electric_car_charging_station.jpg",alt:"Ilustracija električnog automobila i državnih poticaja"}]},
+ {t:"Croatian EV incentives 2026: application rules and prices after the grant",s:"Up to €9,000 in support for an electric car: application rules, buying abroad, a comparison of 26 models and the €35,000 threshold.",href:"poticaji-za-elektricne-aute-2026-sto-se-isplati.html",tag:"ENERGY · ANALYSIS",published:"2026-11-02T12:00:00+01:00",images:[{src:"https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Close-up_of_an_electric_car_charging_station.jpg/1280px-Close-up_of_an_electric_car_charging_station.jpg",alt:"Illustration of an electric car and state subsidies"}]},
 
- {t:"Kimi Antonelli svjetski prvak: povijesni naslov s 20 godina",s:"Treće mjesto u Meksiku bilo je dovoljno da Mercedesov vozač osvoji naslov i postane najmlađi svjetski prvak u povijesti Formule 1.",href:"kimi-antonelli-od-kartinga-do-f1-prvaka-2026.html",tag:"FORMULA 1 · SVJETSKI PRVAK",images:[{src:"https://scontent-vie1-1.xx.fbcdn.net/v/t39.30808-6/886770592_122097023721539294_6417676721007144567_n.jpg?stp=dst-jpg_tt6&cstp=mx1402x1122&ctp=s1402x1122&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6H_hieLvV1cQ7kNvwFxfMhQ&_nc_oc=AdqoCmgHvoAXn9yC_qmwqreKAAkvHFqHYx9_u7O-N0aMkJOQtNICv1mhZMRZSE8vTGc&_nc_zt=23&_nc_ht=scontent-vie1-1.xx&_nc_gid=l5l4nMjPgUV126U7WYOZ_w&_nc_ss=7b2a8&oh=00_AQTP61lpjuEJYlvZnMkSbU3Ir3f2iKBHr9iZ4AxI9sjjlQ&oe=6AEE0449",alt:"Kimi Antonelli – svjetski prvak Formule 1 2026.",credit:"Okretaji",link:"https://www.instagram.com/okretaji/"}]},
- {t:"Dizalica topline u električnom autu: isplati li se doplatiti?",s:"Zimi električni auti gube u prosjeku petinu dometa. Koliko vraća dizalica topline, koliko košta i kome se isplati.",href:"dizalica-topline-u-elektricnom-autu-isplati-li-se-2026.html",tag:"ENERGY · ANALYSIS",images:[]},
+ {t:"Kimi Antonelli world champion: historic title at 20 years of age",s:"Third place in Mexico was enough for the Mercedes driver to win the title and become the youngest Formula 1 world champion in history.",href:"kimi-antonelli-od-kartinga-do-f1-prvaka-2026.html",tag:"FORMULA 1 · WORLD CHAMPION",images:[{src:"https://scontent-vie1-1.xx.fbcdn.net/v/t39.30808-6/886770592_122097023721539294_6417676721007144567_n.jpg?stp=dst-jpg_tt6&cstp=mx1402x1122&ctp=s1402x1122&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6H_hieLvV1cQ7kNvwFxfMhQ&_nc_oc=AdqoCmgHvoAXn9yC_qmwqreKAAkvHFqHYx9_u7O-N0aMkJOQtNICv1mhZMRZSE8vTGc&_nc_zt=23&_nc_ht=scontent-vie1-1.xx&_nc_gid=l5l4nMjPgUV126U7WYOZ_w&_nc_ss=7b2a8&oh=00_AQTP61lpjuEJYlvZnMkSbU3Ir3f2iKBHr9iZ4AxI9sjjlQ&oe=6AEE0449",alt:"Kimi Antonelli – Formula 1 world champion 2026.",credit:"Okretaji",link:"https://www.instagram.com/okretaji/"}]},
+ {t:"Heat pump in an electric car: is it worth the extra cost?",s:"In winter, electric cars lose an average of a fifth of their range. How much does a heat pump recover, how much does it cost and who is it worth it for?",href:"dizalica-topline-u-elektricnom-autu-isplati-li-se-2026.html",tag:"ENERGY · ANALYSIS",images:[]},
  {t:"Marc Márquez wins at Sepang and extends his lead: eighth title drawing closer",s:"His seventh win of the season and 80th MotoGP triumph earned him a 44-point advantage. Acosta second, Alex Márquez third.",href:"marc-marquez-pobjeda-sepang-vn-malezije-2026.html",tag:"MOTOGP · MALAYSIAN GP",images:[]},
  {t:"Acosta triumphs in sprint, Alex Márquez takes pole at Sepang",s:"Alex Márquez was fastest in qualifying, while Pedro Acosta won the sprint ahead of Marc Márquez.",href:"motogp-sepang-acosta-sprint-alex-marquez-pole-2026.html",tag:"MOTOGP · MALAYSIAN GP",images:[]},
- {t:"Verstappen pobijedio u Meksiku, Antonelli osigurao naslov prvaka",s:"Verstappen je slavio ispred Hamiltona, a treće mjesto bilo je dovoljno Antonelliju da s 20 godina postane najmlađi prvak Formule 1.",href:"kimi-antonelli-od-kartinga-do-f1-prvaka-2026.html",tag:"FORMULA 1 · REZULTAT VN MEKSIKA",images:[]},
+ {t:"Verstappen wins in Mexico, Antonelli secures championship title",s:"Verstappen triumphed ahead of Hamilton, and third place was enough for Antonelli to become the youngest Formula 1 champion at 20 years of age.",href:"kimi-antonelli-od-kartinga-do-f1-prvaka-2026.html",tag:"FORMULA 1 · MEXICAN GP RESULT",images:[]},
  {t:"Why Mexico is a technical challenge for Formula 1 cars",s:"The thinner air at over 2,200 metres alters aerodynamics, cooling and turbocharger operation.",href:"zasto-je-meksiko-poseban-za-f1-visina-aerodinamika-2026.html",tag:"F1 · TECHNOLOGY",images:[]},
  {t:"Moto Guzzi The Trip: new 500cc roadster for the A2 category",s:"Moto Guzzi expands its range with a new parallel-twin roadster, around 48 bhp and an emphasis on accessible everyday riding.",href:"moto-guzzi-the-trip.html",tag:"MOTORCYCLES · NEW MODEL",images:[]},
  {t:"An own goal by the European Union: nuclear power, the grid and industry",s:"Has Europe given up on nuclear energy too quickly? We compare emissions, power grids and risks to industrial competitiveness.",href:"pucanj-u-nogu-europske-unije-nuklearne-elektrane.html",tag:"ENERGY · ANALYSIS",images:[]}
@@ -801,7 +801,7 @@ async function hydrateEditorialDates(){
      else{
        const body=doc.querySelector("header .small,header time");
        const text=body?.textContent||"";
-       const months={"siječnja":0,"veljače":1,"ožujka":2,"travnja":3,"svibnja":4,"lipnja":5,"srpnja":6,"kolovoza":7,"rujna":8,"listopada":9,"studenoga":10,"prosinca":11};
+       const months={"January":0,"February":1,"March":2,"travnja":3,"svibnja":4,"lipnja":5,"srpnja":6,"kolovoza":7,"rujna":8,"listopada":9,"studenoga":10,"prosinca":11};
        const m=text.match(/(\\d{1,2})\\.\\s*([a-zčćžšđ]+)\\s+(20\\d{2})/i);
        if(m&&months[m[2].toLowerCase()]!==undefined)item.published=new Date(Date.UTC(+m[3],months[m[2].toLowerCase()],+m[1],12)).toISOString();
      }
@@ -835,10 +835,10 @@ function editorialVisual(item){
 function renderCategoryMagazine(){
  const box=document.getElementById("categoryMagazine");if(!box)return;
  const categories=[
-  {title:"Cars",icon:"▰",description:"Novosti, usporedbe i tehnologija na četiri kotača",href:"rubrika.html?k=automobili",seed:"automobili"},
-  {title:"Motorcycles",icon:"✦",description:"Motocikli, testovi i putovanja",href:"rubrika.html?k=motocikli",seed:"motocikli"},
-  {title:"Tehnika i energija",icon:"ϟ",description:"Što stvarno donose nove tehnologije?",href:"rubrika.html?k=tehnika",seed:"energija"},
-  {title:"Kolumne",icon:"✎",description:"Analize, mišljenja i priče s ceste",href:"rubrika.html?k=regija",seed:"kolumne"}
+  {title:"Cars",icon:"▰",description:"News, comparisons and four-wheeled technology",href:"rubrika.html?k=automobili",seed:"automobili"},
+  {title:"Motorcycles",icon:"✦",description:"Motorcycles, tests and journeys",href:"rubrika.html?k=motocikli",seed:"motocikli"},
+  {title:"Engineering and energy",icon:"ϟ",description:"What do new technologies really bring?",href:"rubrika.html?k=tehnika",seed:"energija"},
+  {title:"Columns",icon:"✎",description:"Analyses, opinions and stories from the road",href:"rubrika.html?k=regija",seed:"kolumne"}
  ];
  box.replaceChildren();
  categories.forEach((c,i)=>{
@@ -855,9 +855,9 @@ function renderCategoryMagazine(){
 function renderHero(){
  const items=[...new Map(EDITORIAL.map(item=>[item.href,item])).values()].sort((a,b)=>(Date.parse(editorialDate(b))||0)-(Date.parse(editorialDate(a))||0));
  const main=items[0],lead=$("lead");lead.innerHTML="";
- const ph=el("div","ph");const im=el("img");im.src=editorialVisual(main);im.alt="Tematska ilustracija: "+main.t;im.loading="eager";ph.append(im);
+ const ph=el("div","ph");const im=el("img");im.src=editorialVisual(main);im.alt="Thematic illustration: "+main.t;im.loading="eager";ph.append(im);
  const t=el("div","txt");t.append(el("span","plate",main.tag));const h=el("h2"),a=el("a",null,main.t);a.href=main.href;h.append(a);t.append(h,el("p",null,main.s));const more=el("a","read-more","Read article →");more.href=main.href;t.append(more);lead.append(ph,t);
- const side=$("side");side.innerHTML="";side.append(el("h2","side-heading","Najnovije iz uredništva"));
+ const side=$("side");side.innerHTML="";side.append(el("h2","side-heading","Latest from the editorial office"));
  for(const item of items.slice(1,6)){const card=el("a","editorial-side");card.href=item.href;const thumb=el("img","thumb");thumb.src=editorialVisual(item);thumb.alt="";thumb.loading="lazy";const info=el("div");info.append(el("span","editorial-tag",item.tag),el("h3",null,item.t),el("span","editorial-date",(editorialDate(item)?new Date(editorialDate(item)).toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"}):"From the editorial desk")));card.append(thumb,info);side.append(card);}
  const gallery=document.getElementById("editorialGallery");if(gallery){gallery.innerHTML="";for(const item of items.slice(1,7)){const card=el("a","gallery-card");card.href=item.href;const img=el("img");img.src=editorialVisual(item);img.alt="";img.loading="lazy";const copy=el("div","gallery-copy");copy.append(el("small",null,item.tag),el("b",null,item.t));card.append(img,copy);gallery.append(card);}}
  renderCategoryMagazine();
