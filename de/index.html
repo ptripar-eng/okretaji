@@ -814,8 +814,8 @@ const EDITORIAL = [
 
 /* Search every editorial article, including items outside the homepage selection. */
 const SEARCH_EXTRA = [
- {t:"Stoner und Márquez: gleicher Instinkt, eine andere MotoGP-Ära",s:"Fahrstile, Linkskurven, Dirt-Track und die Entwicklung der MotoGP-Motorräder.",href:"stoner-marquez-zavoji.html",tag:"MOTOGP"},
- {t:"Antonelli kann in Mexiko den Titel holen, doch Ferrari gibt zunächst das Tempo vor",s:"Vorschau auf den Mexiko-GP: Antonellis Titelchance und Ferraris Tempo im Training.",href:"f1-kimi-antonelli-meksiko-naslov-2026.html",tag:"FORMULA 1"}
+ {t:"Stoner und Márquez: Gleicher Instinkt, andere MotoGP-Ära",s:"Analyse von Fahrstil, Linkskurven, Dirt-Track und den Veränderungen der MotoGP-Motorräder.",href:"stoner-marquez-zavoji.html",tag:"MOTOGP"},
+ {t:"Antonelli kann in Mexiko Titel sichern, aber Ferrari gibt vorerst das Tempo vor",s:"Vorschau auf den GP von Mexiko: Antonellis Titelchance und Ferraris Tempo im Training.",href:"f1-kimi-antonelli-meksiko-naslov-2026.html",tag:"FORMULA 1"}
 ];
 function normalizeSearch(value){return value.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/đ/g,"d").replace(/Đ/g,"D").toLowerCase();}
 function findArticles(query){
@@ -833,7 +833,7 @@ function renderArticleSearch(){
  const list=$("articleSearchList");list.replaceChildren();
  if(!visible){$("articleSearchStatus").textContent="";return;}
  const matches=findArticles(query);
- $("articleSearchStatus").textContent=matches.length?"Gefundene Artikel: "+matches.length:"Keine Artikel gefunden. Versuche einen anderen Suchbegriff.";
+ $("articleSearchStatus").textContent=matches.length?"Gefundene Artikel: "+matches.length:"Keine Artikel gefunden. Versuchen Sie es mit einem anderen Begriff.";
  for(const item of matches){
   const card=el("a","search-result");card.href=item.href;
   card.append(el("small",null,item.tag),el("h3",null,item.t),el("p",null,item.s));list.append(card);
