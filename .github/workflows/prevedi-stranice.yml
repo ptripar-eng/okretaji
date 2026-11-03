@@ -31,12 +31,12 @@ jobs:
         run: python scripts/translate_site.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-flash-latest
+          GEMINI_MODEL: gemini-flash-lite-latest
       - name: Prijevod vijesti
         run: python scripts/translate_news.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-flash-latest
+          GEMINI_MODEL: gemini-flash-lite-latest
       - name: Spremi prijevode
         run: |
           git config user.name "okretaji-bot"
