@@ -316,19 +316,27 @@ footer p{margin:0 0 8px;max-width:80ch}
 }
  .read-more{display:inline-block;margin:8px 0 10px;color:var(--orange);font-weight:800;text-decoration:none}.read-more:hover{text-decoration:underline}
 .hero{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(280px,1fr);gap:24px;align-items:start}.lead{display:block;min-width:0}.editorial-ph{aspect-ratio:16/9;background:linear-gradient(135deg,#0D2B3E 0%,#174B68 58%,#F05A1A 58%,#F05A1A 62%,#0D2B3E 62%);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(22px,4vw,48px);color:#fff;border-radius:14px}.editorial-mark{font:900 clamp(2rem,5vw,4.5rem)/1 "Big Shoulders Display",sans-serif;letter-spacing:.04em}.editorial-category{font-weight:800;letter-spacing:.16em}.lead .txt{padding:20px 4px}.lead .txt h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.04}.side{display:block;min-width:0}.side-heading{margin:0 0 12px;font:900 1.35rem "Barlow",sans-serif;border-bottom:3px solid var(--orange);padding-bottom:10px}.side .mini-card{display:block;padding:14px 0;border-bottom:1px solid var(--line)}.side .mini-card .ph{display:none}.side .mini-card .t{padding:0}.side .mini-card h3{font-size:1.05rem;line-height:1.2;margin:7px 0}.side .mini-card p{font-size:.9rem;margin:6px 0}.side .mini-card .src{font-size:.75rem}@media(max-width:760px){.hero{grid-template-columns:1fr}.side{margin-top:16px}.side .mini-card{padding:12px 0}}
-/* Article archive and accessible title/summary search */
-.article-search{padding:24px 0}
-.article-search label{display:block;font-weight:800;margin-bottom:8px}
-.article-search-controls{display:flex;gap:10px;flex-wrap:wrap}
-.article-search input{flex:1 1 220px;min-width:0;padding:13px 16px;border:1px solid #7d929f;border-radius:8px;font:inherit;background:#fff;color:#0d2b3e}
-.article-search button{padding:12px 18px;border:1px solid #0d2b3e;border-radius:8px;background:#0d2b3e;color:#fff;font:inherit;font-weight:700;cursor:pointer}
-.article-search :is(input,button,a):focus-visible{outline:3px solid #f05a1a;outline-offset:3px}
-#articleSearchList{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}
-.search-result{display:block;padding:20px;border:1px solid #cad7df;border-radius:10px;text-decoration:none;background:#fff;color:#0d2b3e}
+/* Compact editorial search */
+
+.article-search{padding:10px 0 14px}
+.article-search form{display:flex;justify-content:flex-end}
+.article-search label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.article-search-controls{display:flex;align-items:center;gap:12px;flex-wrap:nowrap;max-width:100%}
+.article-search input{flex:0 1 200px;width:200px;min-width:80px;height:32px;padding:5px 10px;border:1px solid #ffffff26;border-radius:5px;font:400 .82rem/1.3 Barlow,system-ui,sans-serif;background:#ffffff06;color:inherit}
+.article-search input::placeholder{color:#a9bbc6}
+.article-search input:focus{border-color:#9bb3c2;background:#ffffff0a}
+.article-search button{padding:5px 0;border:0;border-radius:0;background:none;color:#b5c6d0;font:500 .78rem/1.3 Barlow,system-ui,sans-serif;white-space:nowrap;cursor:pointer}
+.article-search button:hover{color:#fff;text-decoration:underline}
+.article-search :is(input,button,a):focus-visible{outline:2px solid #f05a1a;outline-offset:3px}
+#articleSearchResults{margin-top:14px}
+#articleSearchStatus{font-size:.85rem;color:#b5c6d0}
+#articleSearchList{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px}
+.search-result{display:block;padding:16px;border:1px solid #cad7df;border-radius:8px;text-decoration:none;background:#fff;color:#0d2b3e}
 .search-result:hover{border-color:#f05a1a}
-.search-result h3{font-size:1.15rem;line-height:1.4;margin:6px 0}
-.search-result p{margin:0;font-size:.95rem;line-height:1.6}
+.search-result h3{font-size:1.05rem;line-height:1.4;margin:6px 0}
+.search-result p{margin:0;font-size:.9rem;line-height:1.5}
 .search-result small{font-weight:700;color:#855010}
+@media(max-width:480px){.article-search input{width:170px;flex-basis:170px}.article-search-controls{gap:10px}}
 </style>
 
 <style id="magazine-redesign">
@@ -477,7 +485,7 @@ footer{background:#03111a}
     <section id="pretraga" class="article-search" aria-labelledby="searchLabel">
       <form id="articleSearchForm" role="search">
         <label id="searchLabel" for="articleSearch">Artikel durchsuchen</label>
-        <div class="article-search-controls"><input id="articleSearch" type="search" placeholder="Suchbegriff, z. B. Moto Guzzi" autocomplete="off" aria-controls="articleSearchResults"><button id="allArticles" type="button" aria-expanded="false" aria-controls="articleSearchResults">Alle Artikel</button></div>
+        <div class="article-search-controls"><input id="articleSearch" type="search" placeholder="Suchen…" autocomplete="off" aria-controls="articleSearchResults"><button id="allArticles" type="button" aria-expanded="false" aria-controls="articleSearchResults">Alle Artikel</button></div>
       </form>
       <div id="articleSearchResults" hidden><p id="articleSearchStatus" role="status"></p><div id="articleSearchList"></div></div>
     </section>
@@ -583,7 +591,7 @@ footer{background:#03111a}
     <section id="povratak" class="return-section" aria-labelledby="h-povratak">
       <div class="sh"><span class="gear" aria-hidden="true">↻</span><h2 id="h-povratak">Gründe für die Rückkehr</h2><p>Mehr als Tagesnachrichten: nützliche Inhalte, die es wert sind, gespeichert und wieder aufgerufen zu werden.</p></div>
       <div class="return-grid">
-        <article class="return-card"><span class="return-kicker">Motorsport</span><h3>MotoGP hautnah</h3><p>Neuigkeiten, Rennkalender, Fahrer und die wichtigsten Geschichten aus der Königsklasse des Motorradsports – mit einer eigenen Rubrik für die F1.</p><a href="motogp.html">MotoGP-Rennkalender →</a><button type="button" data-return-category="motogp">MotoGP-News →</button></article>
+        <article class="return-card"><span class="return-kicker">Motorsport</span><h3>MotoGP hautnah</h3><p>Neuigkeiten, Rennkalender, Fahrer und die wichtigsten Geschichten aus der Königsklasse des Motorradsports – mit einer eigenen Rubrik für die F1.</p><a href="motogp.html">MotoGP-Rennkalender →</a><a href="rubrika.html?k=motorsport">MotoGP-Artikel →</a></article>
         <article class="return-card"><span class="return-kicker">Früher und heute</span><h3>Stoner und Márquez: Wie fahren sie durch die Kurve?</h3><p>Vergleich von Fahrstilen, Statistiken und den Auswirkungen von Änderungen an MotoGP-Motorrädern – mit Quellen und einer klaren Unterscheidung zwischen Daten und Schlussfolgerungen.</p><a href="stoner-marquez-zavoji.html">Analyse lesen →</a></article>
         <article class="return-card"><span class="return-kicker">Kauf ohne Rätselraten</span><h3>Auto- und Motorradvergleiche</h3><p>Vergleiche von Preis, Verbrauch, Leistung und Unterhaltskosten, bei klarer Trennung von Herstellerdaten und unabhängigen Messungen.</p><a href="usporedbe.html">Vergleichsratgeber öffnen →</a></article>
         <article class="return-card"><span class="return-kicker">Garage</span><h3>Praktische Technik-Ratgeber</h3><p>Wartung, Reifen, Bremsen, Antriebsstrang, Diagnose und Elektrofahrzeuge – Schritt für Schritt, mit Quellen und Sicherheitshinweisen.</p><a href="tehnicki-vodici.html">Technische Anleitungen öffnen →</a></article>
@@ -591,16 +599,11 @@ footer{background:#03111a}
       </div>
     </section>
 
-    <section id="sve-vijesti" aria-labelledby="h-novosti" style="padding-top:60px" hidden>
-      <div class="sh"><span class="gear" aria-hidden="true">1</span><h2 id="h-novosti">Alle Nachrichten</h2><p>Auswahl des Wichtigsten aus der Auto-Moto-Welt und dem Motorsport.</p></div>
-      <div class="chips" id="newsChips" role="group" aria-label="Nachrichten filtern"></div>
-      <div class="grid" id="newsList"></div>
-      <div class="more" id="moreWrap" hidden><button type="button" id="moreBtn">Mehr anzeigen</button></div>
-    </section>
+    
 
     <section id="vozaci" aria-labelledby="h-vozaci">
       <div class="sh"><span class="gear" aria-hidden="true">4</span><h2 id="h-vozaci">Hinter dem Helm</h2><p>Was sie fahren, wenn sie nicht auf der Strecke sind, womit sie sich beschäftigen und was sie selbst veröffentlichen.</p></div>
-      <div id="driverNewsWrap" hidden><h3 class="subh">Neuestes aus dem Leben der Fahrer</h3><div class="grid dgrid" id="driverNews"></div></div>
+      
       <div class="people" id="peopleList"></div>
     </section>
 
@@ -619,7 +622,7 @@ footer{background:#03111a}
     <p>Bei jeder Nachricht ist die Quelle angegeben. Okretaji bringt eine Auswahl von Themen aus der Welt der Autos, Motorräder, des Motorsports, der Technik und Energie.</p>
     
     <p>Die Kilometerzahlen der Routen sind ungefähr. Vor den Alpenpässen prüfen, ob die Straße geöffnet ist – die meisten werden von November bis Mai gesperrt.</p>
-    <p class="upd" id="updated"></p>
+    
     <div class="social-follow" aria-label="Folgen Sie Okretaji in den sozialen Medien">
       <strong>Folgen Sie Okretaji</strong> <a href="https://www.facebook.com/okretaji/?locale=hr_HR" target="_blank" rel="noopener noreferrer" aria-label="Folgen Sie Okretaji auf Facebook">f&nbsp; Facebook</a> <a class="ig" href="https://www.instagram.com/okretaji/" target="_blank" rel="noopener noreferrer" aria-label="Folgen Sie Okretaji auf Instagram">◎&nbsp; Instagram</a>
       <p class="social-note">Neue Nachrichten, Motorsport, Technik und Energie — folgen Sie uns und beteiligen Sie sich an der Diskussion.</p>
@@ -730,7 +733,7 @@ const PEOPLE = [
 ];
 
 
-let NEWS=[], DRIVERS=[], newsFilter="all", routeFilter="all", shown=6;
+let routeFilter="all";
 const $=id=>document.getElementById(id);
 function fmt(iso){const d=new Date(iso);return isNaN(d)?"":d.getDate()+". "+(d.getMonth()+1)+".";}
 function el(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;}
@@ -922,28 +925,6 @@ function renderHero(){
  window._heroIds=new Set();
 }
 function chip(label,val,cur,color){const b=el("button","chip");b.type="button";b.dataset.v=val;b.setAttribute("aria-pressed",String(val===cur));if(color){const s=el("span","dot");s.style.background=color;b.append(s);}b.append(label);return b;}
-function renderNewsChips(){const box=$("newsChips");box.innerHTML="";box.append(chip("Alle","all",newsFilter));const present=new Set(NEWS.map(n=>n.c));for(const [k,v] of Object.entries(CATS)) if(present.has(k)) box.append(chip(v.name,k,newsFilter,v.color));}
-function renderNews(){
-  const list=$("newsList"); list.innerHTML="";
-  const hero=window._heroIds||new Set();
-  const items=NEWS.filter(n=>(newsFilter==="all"?!hero.has(n.u):n.c===newsFilter));
-  if(!items.length){list.append(el("div","empty","Keine Neuigkeiten in dieser Kategorie."));$("moreWrap").hidden=true;return;}
-  for(const n of items.slice(0,shown)){
-    const card=el("article","card");
-    const ph=photo(n,false); card.append(ph); card.querySelector(".ph").append(plate(n));
-    const b=el("div","body");
-    const articleHref=n.article||("clanak.html?u="+encodeURIComponent(n.u));
-    const h=el("h3"); const read=el("a",null,n.t); read.href=articleHref; h.append(read);
-    b.append(el("div","dt",fmt(n.date)), h, el("p","summary",n.s)); const more=el("a","read-more","Artikel lesen →"); more.href=articleHref; b.append(more);
-    b.append(srcLine(n));
-    if(n.img){const cr=el("div","credit");cr.append("Foto: ");const ca=el("a",null,n.img.by);ca.href=n.img.link||n.img.src;ca.target="_blank";ca.rel="noopener";cr.append(ca,", "+n.img.lic+(n.img.archival?" (arhivska fotografija)":" (fotografija)"));b.append(cr);}
-    card.append(b); list.append(card);
-  }
-  $("moreWrap").hidden=items.length<=shown;
-}
-$("newsChips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;newsFilter=b.dataset.v;shown=6;renderNewsChips();renderNews();});
-$("moreBtn").addEventListener("click",()=>{shown+=6;renderNews();});
-
 /* ---------- race ---------- */
 const SESS={FirstPractice:"1. Training",SecondPractice:"2. Training",ThirdPractice:"3. Training",SprintQualifying:"Sprint-Qualifying",SprintShootout:"Sprint-Qualifying",Sprint:"Sprint",Qualifying:"Qualifying"};
 function when(d,t){return new Date(d+"T"+(t||"12:00:00Z"));}
@@ -1010,18 +991,6 @@ function renderSchedule(list){
 }
 
 /* ---------- people & routes ---------- */
-function renderDriverNews(){
-  const box=$("driverNews"); box.innerHTML="";
-  const items=DRIVERS.slice(0,4); $("driverNewsWrap").hidden=!items.length;
-  for(const n of items){
-    const card=el("article","card");
-    card.append(photo(n,false));
-    const b=el("div","body"); const h=el("h3"); const a=el("a",null,n.t); a.href="clanak.html?u="+encodeURIComponent(n.u); h.append(a);
-    b.append(el("div","dt",fmt(n.date)),h,el("p",null,n.s)); const more=el("a","read-more","Artikel lesen →"); more.href="clanak.html?u="+encodeURIComponent(n.u); b.append(more,srcLine(n));
-    if(n.img){const cr=el("div","credit");cr.append("Foto: ");const ca=el("a",null,n.img.by);ca.href=n.img.link||n.img.src;ca.target="_blank";ca.rel="noopener";cr.append(ca,", "+n.img.lic+" (ilustracija)");b.append(cr);}
-    card.append(b); box.append(card);
-  }
-}
 function renderPeople(){const list=$("peopleList");list.innerHTML="";for(const p of PEOPLE){const e=el("article","person");e.style.setProperty("--pc",p.c);
   e.innerHTML=`<span class="ini" aria-hidden="true"></span><h3></h3><p class="team"></p><dl><div><dt>Was er privat fährt</dt><dd class="a"></dd></div><div><dt>Hobbys</dt><dd class="b"></dd></div><div><dt>Interessantes Detail</dt><dd class="f"></dd></div></dl><span class="src">Quelle: <a target="_blank" rel="noopener"></a></span>`;
   e.querySelector(".ini").textContent=p.n.split(" ").map(w=>w[0]).join("");e.querySelector("h3").textContent=p.n;e.querySelector(".team").textContent=p.team;
@@ -1057,10 +1026,9 @@ renderStats();
 async function getJSON(f){const r=await fetch(f+"?v="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error(r.status);return r.json();}
 async function load(){
   let sched=[];
-  try{const d=await getJSON("../news_de.json");const all=d.items||[];DRIVERS=all.filter(n=>n.c==="kaciga");NEWS=all.filter(n=>n.c!=="kaciga");sched=d.schedule||[];
-    const u=new Date(d.updated);if(!isNaN(u))$("updated").textContent="Nachrichten aktualisiert "+u.toLocaleString("de-DE",{day:"numeric",month:"numeric",hour:"2-digit",minute:"2-digit"});
+  try{const d=await getJSON("../news_de.json");sched=d.schedule||[];
   }catch(e){}
-  renderHero();hydrateEditorialDates();renderNewsChips();renderNews();renderDriverNews();
+  renderHero();hydrateEditorialDates();
   try{renderRace(await getJSON("../race.json"),sched);}catch(e){}
 }
 renderPeople();renderRouteChips();renderRoutes();load();
@@ -1077,13 +1045,6 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&shifter.classList.c
 gears.forEach(b=>b.addEventListener("click",()=>{const t=$(b.dataset.t);setGear(b.dataset.t);shOpen(false);if(t&&!t.hidden)t.scrollIntoView();}));
 const io=new IntersectionObserver(es=>{for(const e of es) if(e.isIntersecting) setGear(e.target.id);},{rootMargin:"-45% 0px -50% 0px"});
 ["vrh","novosti","povratak","utrka","brojke","vozaci","rute"].forEach(id=>{const x=$(id);if(x)io.observe(x);});
-const NAVMAP={"sve-vijesti":"novosti"};
-// MotoGP shortcut from the editorial hub
-document.querySelectorAll("[data-return-category]").forEach(b=>b.addEventListener("click",()=>{
-  newsFilter=b.dataset.returnCategory;shown=6;renderNewsChips();renderNews();
-  document.getElementById("sve-vijesti").scrollIntoView({behavior:"smooth"});
-}));
-
 </script>
 
 <!-- Google Analytics 4: učitava se tek nakon izričitog pristanka korisnika -->

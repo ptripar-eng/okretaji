@@ -26,8 +26,9 @@ jobs:
           python -m json.tool news.json > /dev/null
       - name: Provjeri sintaksu Python skripti
         run: python -m py_compile scripts/*.py
-      - name: Provjeri vijesti i ukloni duple slike u radnom prostoru
-        run: python scripts/check_news.py
+      - name: Potvrdi da su automatske vijesti uklonjene
+        run: |
+          python -c "import json; d=json.load(open('news.json')); assert d.get('automatic_news') is False and d['items'] == []"
       - name: Test Facebooka u probnom načinu rada
         env:
           DRY_RUN: "1"

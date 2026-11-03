@@ -1,9 +1,9 @@
-name: Osvježi vijesti
+name: Osvježi podatke utrka
 
 on:
   schedule:
-    - cron: "17 */6 * * *"   # svaka 6 sati
-  workflow_dispatch:          # ručno pokretanje iz kartice Actions
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -15,83 +15,19 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install feedparser requests trafilatura pillow
-      - name: Vijesti
-        run: python scripts/update_news.py
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-flash-lite-latest
-      - name: Fotografije
-        run: python scripts/add_images.py
-        continue-on-error: true
-      - name: Provjera vijesti i jedinstvenosti fotografija
-        run: python scripts/check_news.py
-      - name: Provjera sintakse Python skripti
-        run: python -m py_compile scripts/*.py
-      - name: Najava utrke
+      - run: pip install requests
+      # Automatske vijesti i društvene objave uklonjene po uredničkoj odluci.
+      - name: Podaci sljedeće utrke
         run: python scripts/race_preview.py
-        continue-on-error: true
-      - name: Prijevod vijesti (EN/DE)
-        run: python scripts/translate_news.py
-        continue-on-error: true
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-flash-lite-latest
-      - name: Spremi promjene
+      - name: Spremi podatke utrke
         run: |
           git config user.name "okretaji-bot"
           git config user.email "okretaji-bot@users.noreply.github.com"
-          git add news.json
-          [ -f images.json ] && git add images.json
-          [ -f race.json ] && git add race.json
-          for f in news_en.json news_de.json i18n/news-en.json i18n/news-de.json; do [ -f "$f" ] && git add "$f" || true; done
-          git diff --cached --quiet || (git commit -m "Automatsko osvježavanje vijesti" && git pull --rebase && git push)
-      - name: Fontovi za kartice društvenih mreža
-        continue-on-error: true
-        run: |
-          mkdir -p .fonts
-          base=https://raw.githubusercontent.com/google/fonts/main/ofl
-          curl -fsSL -o .fonts/BigShouldersDisplay.ttf "$base/bigshouldersdisplay/BigShouldersDisplay%5Bwght%5D.ttf"
-          curl -fsSL -o .fonts/Barlow-Medium.ttf "$base/barlow/Barlow-Medium.ttf"
-          curl -fsSL -o .fonts/Barlow-Bold.ttf "$base/barlow/Barlow-Bold.ttf"
-      - name: Facebook (automatski ako su Meta pristupni podaci postavljeni)
-        run: python scripts/post_facebook.py
-        continue-on-error: true
-        env:
-          # Objavljuj uživo samo kad su oba Meta secreta postavljena; inače ostani u DRY_RUN.
-          DRY_RUN: ${{ secrets.FB_PAGE_ID != '' && secrets.FB_PAGE_TOKEN != '' && '0' || '1' }}
-          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
-          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
-      - name: Instagram (uživo kad je varijabla IG_LIVE = 1)
-        run: python scripts/post_instagram.py
-        continue-on-error: true
-        env:
-          # Instagram koristi isti Meta token kao Facebook; IG_USER_ID se dohvaća sa stranice.
-          IG_DRY_RUN: ${{ secrets.FB_PAGE_ID != '' && secrets.FB_PAGE_TOKEN != '' && '0' || '1' }}
-          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
-          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-
-      - name: Instagram Story (jedna dnevno, automatski)
-        run: python scripts/post_instagram_story.py
-        continue-on-error: true
-        env:
-          IG_LIVE: '0'
-          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
-          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-      - name: Spremi evidenciju društvenih objava
-        if: always() && (hashFiles('posted.json') != '' || hashFiles('instagram_posted.json') != '' || hashFiles('instagram_stories.json') != '')
-        run: |
-          [ -f posted.json ] && git add posted.json || true
-          [ -f instagram_posted.json ] && git add instagram_posted.json || true
-          [ -f instagram_stories.json ] && git add instagram_stories.json || true
-          git diff --cached --quiet || (git config user.name "okretaji-bot" && git config user.email "okretaji-bot@users.noreply.github.com" && git commit -m "Ažuriraj evidenciju društvenih objava" && git pull --rebase && git push)
+          git add race.json
+          git diff --cached --quiet || (git commit -m "Osvježi podatke utrke" && git pull --rebase && git push)
