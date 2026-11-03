@@ -315,7 +315,21 @@ footer p{margin:0 0 8px;max-width:80ch}
   .sbar .l{font-size:.88rem}
 }
  .read-more{display:inline-block;margin:8px 0 10px;color:var(--orange);font-weight:800;text-decoration:none}.read-more:hover{text-decoration:underline}
-.hero{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(280px,1fr);gap:24px;align-items:start}.lead{display:block;min-width:0}.editorial-ph{aspect-ratio:16/9;background:linear-gradient(135deg,#0D2B3E 0%,#174B68 58%,#F05A1A 58%,#F05A1A 62%,#0D2B3E 62%);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(22px,4vw,48px);color:#fff;border-radius:14px}.editorial-mark{font:900 clamp(2rem,5vw,4.5rem)/1 "Big Shoulders Display",sans-serif;letter-spacing:.04em}.editorial-category{font-weight:800;letter-spacing:.16em}.lead .txt{padding:20px 4px}.lead .txt h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.04}.side{display:block;min-width:0}.side-heading{margin:0 0 12px;font:900 1.35rem "Barlow",sans-serif;border-bottom:3px solid var(--orange);padding-bottom:10px}.side .mini-card{display:block;padding:14px 0;border-bottom:1px solid var(--line)}.side .mini-card .ph{display:none}.side .mini-card .t{padding:0}.side .mini-card h3{font-size:1.05rem;line-height:1.2;margin:7px 0}.side .mini-card p{font-size:.9rem;margin:6px 0}.side .mini-card .src{font-size:.75rem}@media(max-width:760px){.hero{grid-template-columns:1fr}.side{margin-top:16px}.side .mini-card{padding:12px 0}}</style>
+.hero{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(280px,1fr);gap:24px;align-items:start}.lead{display:block;min-width:0}.editorial-ph{aspect-ratio:16/9;background:linear-gradient(135deg,#0D2B3E 0%,#174B68 58%,#F05A1A 58%,#F05A1A 62%,#0D2B3E 62%);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(22px,4vw,48px);color:#fff;border-radius:14px}.editorial-mark{font:900 clamp(2rem,5vw,4.5rem)/1 "Big Shoulders Display",sans-serif;letter-spacing:.04em}.editorial-category{font-weight:800;letter-spacing:.16em}.lead .txt{padding:20px 4px}.lead .txt h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.04}.side{display:block;min-width:0}.side-heading{margin:0 0 12px;font:900 1.35rem "Barlow",sans-serif;border-bottom:3px solid var(--orange);padding-bottom:10px}.side .mini-card{display:block;padding:14px 0;border-bottom:1px solid var(--line)}.side .mini-card .ph{display:none}.side .mini-card .t{padding:0}.side .mini-card h3{font-size:1.05rem;line-height:1.2;margin:7px 0}.side .mini-card p{font-size:.9rem;margin:6px 0}.side .mini-card .src{font-size:.75rem}@media(max-width:760px){.hero{grid-template-columns:1fr}.side{margin-top:16px}.side .mini-card{padding:12px 0}}
+/* Article archive and accessible title/summary search */
+.article-search{padding:24px 0}
+.article-search label{display:block;font-weight:800;margin-bottom:8px}
+.article-search-controls{display:flex;gap:10px;flex-wrap:wrap}
+.article-search input{flex:1 1 220px;min-width:0;padding:13px 16px;border:1px solid #7d929f;border-radius:8px;font:inherit;background:#fff;color:#0d2b3e}
+.article-search button{padding:12px 18px;border:1px solid #0d2b3e;border-radius:8px;background:#0d2b3e;color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.article-search :is(input,button,a):focus-visible{outline:3px solid #f05a1a;outline-offset:3px}
+#articleSearchList{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}
+.search-result{display:block;padding:20px;border:1px solid #cad7df;border-radius:10px;text-decoration:none;background:#fff;color:#0d2b3e}
+.search-result:hover{border-color:#f05a1a}
+.search-result h3{font-size:1.15rem;line-height:1.4;margin:6px 0}
+.search-result p{margin:0;font-size:.95rem;line-height:1.6}
+.search-result small{font-weight:700;color:#855010}
+</style>
 
 <style id="magazine-redesign">
 :root,:root[data-theme="dark"]{--bg:#061924;--card:#102b3c;--ink:#f1f7fb;--muted:#9bb4c5;--line:#25475b;--orange:#ff681f;--deep:#061924;--shadow:0 8px 24px rgba(0,0,0,.18);color-scheme:dark}
@@ -459,6 +473,14 @@ footer{background:#03111a}
 
 <main>
   <div class="wrap">
+    
+    <section id="pretraga" class="article-search" aria-labelledby="searchLabel">
+      <form id="articleSearchForm" role="search">
+        <label id="searchLabel" for="articleSearch">Artikel durchsuchen</label>
+        <div class="article-search-controls"><input id="articleSearch" type="search" placeholder="Suchbegriff, z. B. Moto Guzzi" autocomplete="off" aria-controls="articleSearchResults"><button id="allArticles" type="button" aria-expanded="false" aria-controls="articleSearchResults">Alle Artikel</button></div>
+      </form>
+      <div id="articleSearchResults" hidden><p id="articleSearchStatus" role="status"></p><div id="articleSearchList"></div></div>
+    </section>
     <div class="hero" id="novosti">
       <article class="lead" id="lead"></article>
       <div class="side" id="side"></div>
@@ -785,6 +807,42 @@ const EDITORIAL = [
  {t:"Moto Guzzi The Trip: Neuer 500-ccm-Roadster für die A2-Kategorie",s:"Moto Guzzi erweitert sein Angebot mit einem neuen Roadster mit Parahllel-Zweizylinder, rund 48 PS und dem Schwerpunkt auf zugängliches Alltagsfahren.",href:"moto-guzzi-the-trip.html",tag:"MOTORRÄDER · NEUHEIT",images:[]},
  {t:"Ein Schuss ins eigene Bein der Europäischen Union: Kernkraftwerke, Netz und Industrie",s:"Hat Europa zu schnell auf Kernenergie verzichtet? Wir vergleichen Emissionen, Stromnetze und Risiken für die industrielle Wettbewerbsfähigkeit.",href:"pucanj-u-nogu-europske-unije-nuklearne-elektrane.html",tag:"ENERGIE · ANALYSE",images:[]}
 ];
+
+
+/* Search every editorial article, including items outside the homepage selection. */
+const SEARCH_EXTRA = [
+ {t:"Stoner und Márquez: gleicher Instinkt, eine andere MotoGP-Ära",s:"Fahrstile, Linkskurven, Dirt-Track und die Entwicklung der MotoGP-Motorräder.",href:"stoner-marquez-zavoji.html",tag:"MOTOGP"},
+ {t:"Antonelli kann in Mexiko den Titel holen, doch Ferrari gibt zunächst das Tempo vor",s:"Vorschau auf den Mexiko-GP: Antonellis Titelchance und Ferraris Tempo im Training.",href:"f1-kimi-antonelli-meksiko-naslov-2026.html",tag:"FORMULA 1"}
+];
+function normalizeSearch(value){return value.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/đ/g,"d").replace(/Đ/g,"D").toLowerCase();}
+function findArticles(query){
+ const words=normalizeSearch(query).trim().split(/\s+/).filter(Boolean);
+ const items=[...new Map([...EDITORIAL,...SEARCH_EXTRA].map(item=>[item.href,item])).values()];
+ return items.filter(item=>words.every(word=>normalizeSearch([item.t,item.s,item.tag,item.href].join(" ")).includes(word)));
+}
+const searchInput=$("articleSearch"),allArticles=$("allArticles");
+let archiveOpen=false;
+function renderArticleSearch(){
+ const query=searchInput.value.trim(),visible=Boolean(query)||archiveOpen;
+ $("articleSearchResults").hidden=!visible;
+ allArticles.setAttribute("aria-expanded",String(visible));
+ allArticles.textContent=visible?"Ergebnisse schließen":"Alle Artikel";
+ const list=$("articleSearchList");list.replaceChildren();
+ if(!visible){$("articleSearchStatus").textContent="";return;}
+ const matches=findArticles(query);
+ $("articleSearchStatus").textContent=matches.length?"Gefundene Artikel: "+matches.length:"Keine Artikel gefunden. Versuche einen anderen Suchbegriff.";
+ for(const item of matches){
+  const card=el("a","search-result");card.href=item.href;
+  card.append(el("small",null,item.tag),el("h3",null,item.t),el("p",null,item.s));list.append(card);
+ }
+}
+searchInput.addEventListener("input",renderArticleSearch);
+$("articleSearchForm").addEventListener("submit",event=>{event.preventDefault();archiveOpen=true;renderArticleSearch();});
+allArticles.addEventListener("click",()=>{
+ if(searchInput.value.trim()||archiveOpen){searchInput.value="";archiveOpen=false;}else{archiveOpen=true;}
+ renderArticleSearch();
+});
+searchInput.addEventListener("keydown",event=>{if(event.key==="Escape"){searchInput.value="";archiveOpen=false;renderArticleSearch();}});
 
 function editorialDate(item){return item.published||null;}
 async function hydrateEditorialDates(){
