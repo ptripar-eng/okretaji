@@ -903,12 +903,16 @@ function renderCategoryMagazine(){
   {title:"Columns",icon:"✎",description:"Analyses, opinions and stories from the road",href:"rubrika.html?k=regija",seed:"kolumne"}
  ];
  box.replaceChildren();
- categories.forEach((c,i)=>{
+ categories.forEach(c=>{
   const a=el("a");a.href=c.href;
   const img=el("img");img.loading="lazy";img.alt="";
-  const topicPatterns=[/poticaji.*električne/i,/guzzi|motocikl/i,/nuklear|energij|toplin/i,/meksiko.*tehnički|analiza/i];
-  const item=EDITORIAL.find(x=>topicPatterns[i].test(x.t))||EDITORIAL[(i+1)%EDITORIAL.length];
-  img.src=editorialVisual(item);
+  const categoryImages={
+   automobili:"/images/rubrike/automobili.jpg",
+   motocikli:"/images/rubrike/motocikli.jpg",
+   energija:"/images/rubrike/tehnika-energija.jpg",
+   kolumne:"/images/rubrike/kolumne.jpg"
+  };
+  img.src=categoryImages[c.seed];img.width=900;img.height=600;img.decoding="async";
   const title=el("div","cat-title");title.append(el("span",null,c.icon),c.title);
   a.append(img,title,el("div","cat-caption",c.description));box.append(a);
  });
