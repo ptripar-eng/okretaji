@@ -10,3 +10,5 @@ Automatski hrvatski auto-moto i tehnološki portal
 - Napomena za sljedeće uređivanje (ChatGPT/Claude): provjeriti prikaz nakon GitHub Pages objave i po potrebi dodati prijevode EN/DE. Vijesti opisuju trening/kvalifikacije, ne kasnije rezultate utrka.
 
 - Ispravak 7.11.2026.: generičke SVG ilustracije u oba nova članka zamijenjene stvarnim arhivskim fotografijama Marca Bezzecchija (Aprilia, Malezija 2025.) i Maxa Verstappena (Red Bull, Japan 2025.). Fotografije: Liauzh / Wikimedia Commons, CC BY-SA 4.0. Izričito označene kao arhivske; povezane i na naslovnici kroz EDITORIAL.images i og:image.
+
+- Dopuna 7.11.2026.: MotoGP Katar članak proširen strategijom izbora guma, rekordnim kvalifikacijama, Martínovom reakcijom, Acostom, Dixonovim povratkom i Yamahinim povlačenjem (Crash.net, Reuters). F1 São Paulo članak proširen kaznama za pogonske jedinice, Hamiltonovim dimom u kokpitu, Strollovim ERS problemom, završnim simulacijama na mekim gumama, kišom, Hülkenbergom i Bortoletom (FIA, Formula1.com). Fotografije i naslovnica nisu mijenjane.
