@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T13:39+00:00",
+ "updated": "2026-11-08T22:14+00:00",
  "season": "2026",
  "round": 20,
  "rounds": 23,
@@ -29,6 +29,12 @@
  },
  "winners": [
   {
+   "season": "2026",
+   "driver": "Lando Norris",
+   "team": "McLaren",
+   "grid": null
+  },
+  {
    "season": "2025",
    "driver": "Lando Norris",
    "team": "McLaren",
@@ -51,12 +57,6 @@
    "driver": "George Russell",
    "team": "Mercedes",
    "grid": "1"
-  },
-  {
-   "season": "2021",
-   "driver": "Lewis Hamilton",
-   "team": "Mercedes",
-   "grid": "10"
   }
  ],
  "standings": [
@@ -65,7 +65,7 @@
    "driver": "Andrea Kimi Antonelli",
    "code": "ANT",
    "team": "Mercedes",
-   "points": 380.0,
+   "points": 390.0,
    "wins": 9
   },
   {
@@ -73,31 +73,31 @@
    "driver": "Max Verstappen",
    "code": "VER",
    "team": "Red Bull",
-   "points": 261.0,
+   "points": 279.0,
    "wins": 3
   },
   {
    "pos": 3,
-   "driver": "Lewis Hamilton",
-   "code": "HAM",
-   "team": "Ferrari",
-   "points": 259.0,
-   "wins": 1
-  },
-  {
-   "pos": 4,
    "driver": "George Russell",
    "code": "RUS",
    "team": "Mercedes",
-   "points": 250.0,
+   "points": 262.0,
    "wins": 3
+  },
+  {
+   "pos": 4,
+   "driver": "Lewis Hamilton",
+   "code": "HAM",
+   "team": "Ferrari",
+   "points": 261.0,
+   "wins": 1
   },
   {
    "pos": 5,
    "driver": "Charles Leclerc",
    "code": "LEC",
    "team": "Ferrari",
-   "points": 245.0,
+   "points": 251.0,
    "wins": 1
   },
   {
@@ -105,15 +105,15 @@
    "driver": "Lando Norris",
    "code": "NOR",
    "team": "McLaren",
-   "points": 221.0,
-   "wins": 2
+   "points": 246.0,
+   "wins": 3
   },
   {
    "pos": 7,
    "driver": "Oscar Piastri",
    "code": "PIA",
    "team": "McLaren",
-   "points": 144.0,
+   "points": 152.0,
    "wins": 0
   },
   {
@@ -121,7 +121,7 @@
    "driver": "Isack Hadjar",
    "code": "HAD",
    "team": "Red Bull",
-   "points": 107.0,
+   "points": 122.0,
    "wins": 0
   },
   {
@@ -129,7 +129,7 @@
    "driver": "Liam Lawson",
    "code": "LAW",
    "team": "RB F1 Team",
-   "points": 83.0,
+   "points": 87.0,
    "wins": 0
   },
   {
