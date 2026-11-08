@@ -27,7 +27,7 @@ def validate(item):
         errors.append("invalid status")
     if item.get("status") == "approved" and item.get("verified") is not True:
         errors.append("approved content must be fact checked")
-    if item.get("media_type") == "reel":
+    if item.get("status") == "approved" and (item.get("editor_approved") is not True or not item.get("approved_at")):\n        errors.append("explicit editor approval and timestamp required")\n    if item.get("media_type") == "reel":\n        if item.get("status") == "approved" and item.get("reel_approved") is not True:\n            errors.append("reel requires separate editor approval")
         media = urlparse(item.get("media_url", ""))
         if media.scheme != "https" or not media.netloc:
             errors.append("reel needs a public HTTPS video URL")
