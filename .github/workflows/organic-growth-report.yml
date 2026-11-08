@@ -1,0 +1,22 @@
+name: Organic growth report
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 7 * * *'
+permissions:
+  contents: read
+jobs:
+  validate-and-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate editorial queue and calculate metrics
+        run: python automation/growth.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: organic-growth-report
+          path: automation/report.json
+          retention-days: 30
