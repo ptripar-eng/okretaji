@@ -14,3 +14,6 @@ Run `python automation/growth.py`. Optional `--metrics metrics.csv` accepts: `da
 Before enabling Meta posting, verify existing workflows, permissions, page/IG IDs, token validity, deduplication and retry handling. Implement a separate explicit publishing switch, default off. For Reels use the official media-container/status/publish flow; never publish until the container is ready. Do not publish unverified results or unlicensed media.
 
 No ads or paid APIs are required.
+
+## Mandatory editor approval
+The owner may propose topics at any time. AI suggestions remain drafts. Before an item is eligible for publishing, require `status: approved`, `verified: true`, `editor_approved: true`, and a nonempty `approved_at` timestamp. A Reel additionally requires `reel_approved: true`. Any substantive text, title, image, or video edit after approval invalidates approval and returns the item to draft. Publishing integrations must enforce these checks server-side; this repository currently does not publish automatically.
