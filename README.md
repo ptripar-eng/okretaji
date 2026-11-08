@@ -18,3 +18,5 @@ Automatski hrvatski auto-moto i tehnološki portal
 - `index.html`: nova zasebna rubrika `#aktualno` za kratke vijesti i rezultate, kartice s fotografijama i linkovima, arhivski linkovi na treninge; stari trening članci uklonjeni iz niza `EDITORIAL` kako ne bi dominirali sekcijom `Analize i teme`. Analize ostaju u uredničkom prikazu, bez promjene ostalih rubrika.
 - Fotografije su arhivske s Wikimedia Commonsa, s oznakom autora/licence u člancima. Provjeriti dostupnost izvornih datoteka i učitavanje na GitHub Pages. Provjeriti i prevesti nove članke na EN/DE prije oglašavanja višejezičnosti.
 - Važno za Claude i ChatGPT: nove vijesti dodavati u zasebni blok `#aktualno`, ne u `EDITORIAL` namijenjen analizama; objavljivati samo provjerene službene rezultate završenih sesija.
+
+- Ispravak 8.11.2026.: uklonjena javna rečenica „Odvojeno od analiza i autorskih tema.”, poveznica preimenovana u „Više članaka”, a javni naslov sekcije u „Izdvojeni članci”. Interna urednička podjela ostaje u strukturi, ali ne objašnjava se posjetiteljima.
