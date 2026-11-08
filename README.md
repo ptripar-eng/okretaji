@@ -20,3 +20,5 @@ Automatski hrvatski auto-moto i tehnološki portal
 - Važno za Claude i ChatGPT: nove vijesti dodavati u zasebni blok `#aktualno`, ne u `EDITORIAL` namijenjen analizama; objavljivati samo provjerene službene rezultate završenih sesija.
 
 - Ispravak 8.11.2026.: uklonjena javna rečenica „Odvojeno od analiza i autorskih tema.”, poveznica preimenovana u „Više članaka”, a javni naslov sekcije u „Izdvojeni članci”. Interna urednička podjela ostaje u strukturi, ali ne objašnjava se posjetiteljima.
+
+- Ispravak 8.11.2026.: u F1 kvalifikacijskom i MotoGP sprint članku uklonjene generičke metanapomene o statusu rezultata/arhivi i zamijenjene novinarskim završecima. U budućim vijestima ne pisati čitateljima što članak 'uključuje' ili 'ne uključuje'; izravno izvještavati o događaju, posljedicama i sljedećem sportskom pitanju.
