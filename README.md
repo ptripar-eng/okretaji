@@ -32,3 +32,11 @@ Automatski hrvatski auto-moto i tehnološki portal
 - 8.11.2026. navečer: objavljen članak `motogp-katar-bezzecchi-pobjeda-marquez-drugi-2026.html` i dodan na početak rubrike `#aktualno` u `index.html`. Naslov: „Bezzecchijev odgovor Márquezu: od subotnjeg pada do pobjede u Kataru”. U članku je postolje Bezzecchi–Márquez–Fernández prema korisnikovoj informaciji; **u trenutku objave neovisni službeni izvor za nedjeljni konačni poredak nije bio dostupan**. Ne iznositi nepotvrđene zaostatke, krugove ili pozicije 4–10. OBAVEZNO naknadno usporediti s MotoGP službenim rezultatima i ispraviti eventualne razlike. Fotografija je arhivska Wikimedia Commons, s atribucijom i oznakom „Ilustracija.”. Nije objavljeno na Facebooku ili Instagramu.
 
 - Uredničko pravilo 8.11.2026.: u javnim člancima ne dodavati završne blokove poput „Izvori za kontekst vikenda”, „Izvori i službeni rezultati” ili bibliografije. Izvore provjeravati interno i po potrebi ih dati uredniku u razgovoru; poveznice u samom tekstu koristiti samo kada su stvarno novinarski korisne. Uklonjen blok izvora iz nedjeljnog izvještaja o Kataru. Fotografije i dalje moraju imati zakonski potrebnu atribuciju/licencu.
+
+## SEO provjera — 9. studenoga 2026.
+- Google Search Console izvoz (6./9.11.): 47 URL-ova "Otkriveno – trenutačno nije indeksirano"; dodatno 3 "Pretraženo – nije indeksirano", 3 kanonska duplikata i 3 preusmjeravanja. To samo po sebi ne dokazuje tehničku grešku.
+- Provjeren `robots.txt`: dopušta pristup svim botovima i navodi sitemap.
+- Provjereni primjeri HR/EN/DE članka o dizalici topline imaju ispravne samoreferencijalne canonical oznake; ne mijenjati ih naslijepo.
+- U `sitemap.xml` dodano pet novih članaka od 7. i 8.11.2026. (MotoGP Katar trening, sprint i utrka; F1 São Paulo trening i kvalifikacije). Ne dodavati nepostojeće prijevode.
+- Za daljnju provjeru: usporediti sve HTML datoteke sa sitemapom, pregledati hreflang i unutarnje poveznice; potvrditi HTTP status i Googleovu odabranu kanonsku adresu u URL Inspection; zatim ponovno predati sitemap. GitHub izvorni kod nije dokaz produkcijskog HTTP statusa.
+- Pravilo za ChatGPT i Claude: svaku novu objavljenu HTML stranicu dodati u sitemap, samo ako zaista postoji; promjene evidentirati ovdje.
