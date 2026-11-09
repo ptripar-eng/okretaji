@@ -47,3 +47,8 @@ Automatski hrvatski auto-moto i tehnološki portal
 - Fotografija: postojeća arhivska Wikimedia Commons fotografija Verstappena iz Japana 2025. (Liauzh, CC BY-SA 4.0), označena „Ilustracija.”; nije predstavljena kao fotografija s Brazila.
 - Pripremljena strategija organskog rasta: kratka FB/IG objava i Reel o proboju P21→P2. Društvene objave i Reel nisu automatski objavljeni; potrebno je zasebno odobrenje konačnog materijala i prava na videosnimke.
 - Nisu izrađeni EN/DE prijevodi, stoga za ovaj članak nisu dodane nepostojeće hreflang adrese. Provjeriti produkcijski GitHub Pages prikaz nakon deploya.
+
+## Urednički nacrt — 9.11.2026. (Gianna i Alessandro Nannini)
+- Dodan `editorial/drafts/reel-nannini-2026-11-10.md`: scenarij za vertikalni Reel od 22–25 sekundi, prijedlog opisa i produkcijska pravila. Nacrt nije javno objavljen.
+- Sljedeći koraci: provjeriti povijesne činjenice, pribaviti fotografije s odgovarajućim pravima, montirati video, poslati uredniku na odobrenje. Ne koristiti stare Yamaha snimke niti nelicenciranu glazbu/F1 prijenose.
+- Pravilo: ništa ne objavljivati na webu, Facebooku ili Instagramu bez uredničkog odobrenja konačne verzije.
