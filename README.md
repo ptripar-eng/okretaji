@@ -40,3 +40,10 @@ Automatski hrvatski auto-moto i tehnološki portal
 - U `sitemap.xml` dodano pet novih članaka od 7. i 8.11.2026. (MotoGP Katar trening, sprint i utrka; F1 São Paulo trening i kvalifikacije). Ne dodavati nepostojeće prijevode.
 - Za daljnju provjeru: usporediti sve HTML datoteke sa sitemapom, pregledati hreflang i unutarnje poveznice; potvrditi HTTP status i Googleovu odabranu kanonsku adresu u URL Inspection; zatim ponovno predati sitemap. GitHub izvorni kod nije dokaz produkcijskog HTTP statusa.
 - Pravilo za ChatGPT i Claude: svaku novu objavljenu HTML stranicu dodati u sitemap, samo ako zaista postoji; promjene evidentirati ovdje.
+
+## Evidencija promjena — 9. studenoga 2026. (VN São Paula)
+- Objavljen provjereni F1 izvještaj i analiza: `f1-brazil-2026-verstappen-21-drugi-norris-mercedes.html`. Norris P1, Verstappen s P21 na P2, Hadjar P3; Mercedes konstruktorski prvak. Izvori provjere: FIA 8.11., Formula1.com izvještaj i rezultati 8.11., Pirelli izvještaj o gumama 8.11.
+- Nova vijest postavljena na početak rubrike `#aktualno` u `index.html`, dodana u `sitemap.xml`.
+- Fotografija: postojeća arhivska Wikimedia Commons fotografija Verstappena iz Japana 2025. (Liauzh, CC BY-SA 4.0), označena „Ilustracija.”; nije predstavljena kao fotografija s Brazila.
+- Pripremljena strategija organskog rasta: kratka FB/IG objava i Reel o proboju P21→P2. Društvene objave i Reel nisu automatski objavljeni; potrebno je zasebno odobrenje konačnog materijala i prava na videosnimke.
+- Nisu izrađeni EN/DE prijevodi, stoga za ovaj članak nisu dodane nepostojeće hreflang adrese. Provjeriti produkcijski GitHub Pages prikaz nakon deploya.
