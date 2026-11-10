@@ -5,4 +5,51 @@
 <h2>Why were tyres more important than raw speed?</h2><p>According to Pirelli, track temperature at the start was only 16 °C. Everyone started on intermediate tyres, designed for wet conditions. As the asphalt dried, those tyres overheated and degraded rapidly. Switching to soft slick tyres was therefore inevitable, but on sections of the still-slippery track they needed to be brought into their operating temperature window quickly and carefully.</p><p>It was precisely the difference in warm-up after the initial pit stops that helped Norris catch Antonelli. However, his mistakes cannot be boiled down to tyres alone: the driver himself also reported a suspected technical issue. Russell, on the other hand, lost control exiting the pits and clipped the barrier. When the rain returned towards the end of the race, Mercedes gained better late-race pace by pitting Russell earlier for intermediate tyres, so Antonelli handed fourth place over by team order.</p>
 <h2>Norris won because he best tied together three different races</h2><p>Brazil essentially offered three races in one: a wet start, a drying middle phase and a wet finish once again. After a poorer start, Norris stayed patient, nailed the crucial phase of switching to slick tyres and then controlled his lead. Even the return of rain couldn't take victory away from him. His third win of the season might not have been the most spectacular drive of the day, but it was the most complete.</p><p>A special irony for Mercedes: Antonelli squandered a chance for victory, Russell lost time through his own mistake, but fourth and fifth places were enough for the team to secure the constructors' championship. Speed wins races; points throughout the season win championships.</p>
 <h2>Final standings: the top ten</h2><table><thead><tr><th>Pos.</th><th>Driver</th><th>Team</th></tr></thead><tbody><tr><td>1</td><td>Lando Norris</td><td>McLaren</td></tr><tr><td>2</td><td>Max Verstappen</td><td>Red Bull</td></tr><tr><td>3</td><td>Isack Hadjar</td><td>Red Bull</td></tr><tr><td>4</td><td>George Russell</td><td>Mercedes</td></tr><tr><td>5</td><td>Kimi Antonelli</td><td>Mercedes</td></tr><tr><td>6</td><td>Oscar Piastri</td><td>McLaren</td></tr><tr><td>7</td><td>Liam Lawson</td><td>Racing Bulls</td></tr><tr><td>8</td><td>Charles Leclerc</td><td>Ferrari</td></tr><tr><td>9</td><td>Lewis Hamilton</td><td>Ferrari</td></tr><tr><td>10</td><td>Nico Hülkenberg</td><td>Audi</td></tr></tbody></table>
-<h2>What remains after Interlagos?</h2><p>Verstappen proved once again that starting position is not a sentence. Norris showed how much a cool head is worth when conditions change from lap to lap. And on the very same day, Mercedes received both a warning and confirmation: the car can be exceptionally fast, but tyre management and driver errors still decide victory. They lost the race in Brazil, but won the championship.</p><footer><a href="/en/#aktualno">← Other latest news</a></footer></main></body></html>
+<h2>What remains after Interlagos?</h2><p>Verstappen proved once again that starting position is not a sentence. Norris showed how much a cool head is worth when conditions change from lap to lap. And on the very same day, Mercedes received both a warning and confirmation: the car can be exceptionally fast, but tyre management and driver errors still decide victory. They lost the race in Brazil, but won the championship.</p><footer><a href="/en/#aktualno">← Other latest news</a></footer></main>
+<!-- Google Analytics 4: učitava se tek nakon izričitog pristanka korisnika -->
+<style>
+#okretaji-consent{position:fixed;z-index:9999;left:16px;right:16px;bottom:16px;max-width:760px;margin:auto;padding:18px;background:#fff;color:#0D2B3E;border:1px solid #D3E2EA;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.22);font:16px/1.5 system-ui,sans-serif}
+#okretaji-consent p{margin:0 0 12px}#okretaji-consent a{color:#1C5A86}
+#okretaji-consent .consent-actions{display:flex;gap:10px;flex-wrap:wrap}
+#okretaji-consent button{padding:10px 14px;border-radius:8px;border:1px solid #0D2B3E;font-weight:700;cursor:pointer}
+#okretaji-consent .accept{background:#0D2B3E;color:#fff}#okretaji-consent .reject{background:#fff;color:#0D2B3E}
+</style>
+<div id="okretaji-consent" role="dialog" aria-label="Analytics settings" aria-live="polite" hidden>
+  <p><strong>Visitor analytics</strong><br>With your consent, we use Google Analytics to understand portal traffic. Analytical tools will not load if you decline.</p>
+  <p><a href="privatnost.html">Read privacy information</a></p>
+  <div class="consent-actions">
+    <button class="accept" type="button" id="okretaji-consent-yes">I accept analytics</button>
+    <button class="reject" type="button" id="okretaji-consent-no">Decline</button>
+  </div>
+</div>
+<script>
+(function(){
+  var key='okretaji_analytics_consent';
+  function loadAnalytics(){
+    if(window.__okretajiAnalyticsLoaded)return;
+    window.__okretajiAnalyticsLoaded=true;
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){window.dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js',new Date());
+    gtag('config','G-426646FTQH',{anonymize_ip:true});
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-426646FTQH';
+    document.head.appendChild(s);
+  }
+  var banner=document.getElementById('okretaji-consent');
+  try{
+    var saved=localStorage.getItem(key);
+    if(saved==='granted')loadAnalytics();
+    else if(saved!=='denied')banner.hidden=false;
+    document.getElementById('okretaji-consent-yes').addEventListener('click',function(){
+      localStorage.setItem(key,'granted');banner.hidden=true;loadAnalytics();
+    });
+    document.getElementById('okretaji-consent-no').addEventListener('click',function(){
+      localStorage.setItem(key,'denied');banner.hidden=true;
+    });
+  }catch(e){banner.hidden=false;}
+})();
+</script>
+</body></html>
