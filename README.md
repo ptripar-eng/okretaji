@@ -65,4 +65,4 @@ Automatski hrvatski auto-moto i tehnološki portal
 
 ## Evidencija promjena — 10. studenoga 2026. (naslovnica Reela)
 
-- Izrađena vertikalna ilustracija 9:16 s Johnom Lennonom i Alessandrom Nanninijem za Reel Okretaja. Naslov na vizualu: „Što spaja Lennona i Nanninija?”. Vizual je generirana montaža, a status je nacrt za odabir naslovnice u Business Suiteu.
+- Ispravljena vertikalna naslovnica 9:16 za Reel Okretaja. Prikazuje rock pjevačicu Giannu Nannini i njezina brata Alessandra Nanninija, vozača Formule 1. Naslov na vizualu glasi „Sestra na pozornici, brat u Formuli 1”. Generirana ilustracija pripremljena je za odabir naslovnice u Business Suiteu.
