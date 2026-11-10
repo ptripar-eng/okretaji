@@ -5,4 +5,51 @@
 <h2>Zašto su gume bile važnije od sirove brzine?</h2><p>Prema Pirelliju, temperatura staze na početku bila je samo 16 °C. Svi su startali na intermediate gumama, namijenjenima vlažnoj podlozi. Kako se asfalt sušio, te su se gume pregrijavale i ubrzano trošile. Prelazak na mekane slick gume zato je bio neizbježan, ali na dijelovima još skliske staze trebalo ih je brzo i pažljivo dovesti u radni temperaturni raspon.</p><p>Upravo je razlika u zagrijavanju nakon prvih zaustavljanja pomogla Norrisu da sustigne Antonellija. No njegove pogreške nije moguće svesti samo na gume: sam vozač prijavio je i sumnju na tehnički problem. Russell je, pak, pri izlasku iz boksa izgubio kontrolu i okrznuo zaštitni zid. Kada se kiša vratila pred kraj utrke, Mercedes je ranijim prelaskom Russella na intermediate gume dobio bolji završni tempo pa je Antonelli po momčadskoj naredbi prepustio četvrto mjesto.</p>
 <h2>Norris je pobijedio jer je najbolje povezao tri različite utrke</h2><p>Brazil je zapravo ponudio tri utrke u jednoj: mokri početak, sve suši srednji dio i ponovno mokru završnicu. Norris je nakon lošijeg starta ostao strpljiv, pogodio ključnu fazu prelaska na slick gume i potom kontrolirao prednost. Ni povratak kiše nije mu oduzeo pobjedu. Njegova treća pobjeda sezone možda nije bila najspektakularnija vožnja dana, ali je bila najpotpunija.</p><p>Posebna ironija za Mercedes: Antonelli je prokockao priliku za pobjedu, Russell je izgubio vrijeme vlastitom pogreškom, ali četvrto i peto mjesto bili su dovoljni da momčad osigura konstruktorski naslov. Brzina osvaja utrke; bodovi tijekom cijele sezone osvajaju prvenstva.</p>
 <h2>Konačni poredak: prvih deset</h2><table><thead><tr><th>Mj.</th><th>Vozač</th><th>Momčad</th></tr></thead><tbody><tr><td>1</td><td>Lando Norris</td><td>McLaren</td></tr><tr><td>2</td><td>Max Verstappen</td><td>Red Bull</td></tr><tr><td>3</td><td>Isack Hadjar</td><td>Red Bull</td></tr><tr><td>4</td><td>George Russell</td><td>Mercedes</td></tr><tr><td>5</td><td>Kimi Antonelli</td><td>Mercedes</td></tr><tr><td>6</td><td>Oscar Piastri</td><td>McLaren</td></tr><tr><td>7</td><td>Liam Lawson</td><td>Racing Bulls</td></tr><tr><td>8</td><td>Charles Leclerc</td><td>Ferrari</td></tr><tr><td>9</td><td>Lewis Hamilton</td><td>Ferrari</td></tr><tr><td>10</td><td>Nico Hülkenberg</td><td>Audi</td></tr></tbody></table>
-<h2>Što ostaje nakon Interlagosa?</h2><p>Verstappen je ponovno dokazao da startna pozicija nije presuda. Norris je pokazao koliko vrijedi mirna glava kada se uvjeti mijenjaju iz kruga u krug. A Mercedes je istoga dana dobio i upozorenje i potvrdu: bolid može biti iznimno brz, no upravljanje gumama i pogreške vozača i dalje odlučuju o pobjedi. U Brazilu su izgubili utrku, ali osvojili prvenstvo.</p><footer><a href="/#aktualno">← Ostale aktualne vijesti</a></footer></main></body></html>
+<h2>Što ostaje nakon Interlagosa?</h2><p>Verstappen je ponovno dokazao da startna pozicija nije presuda. Norris je pokazao koliko vrijedi mirna glava kada se uvjeti mijenjaju iz kruga u krug. A Mercedes je istoga dana dobio i upozorenje i potvrdu: bolid može biti iznimno brz, no upravljanje gumama i pogreške vozača i dalje odlučuju o pobjedi. U Brazilu su izgubili utrku, ali osvojili prvenstvo.</p><footer><a href="/#aktualno">← Ostale aktualne vijesti</a></footer></main>
+<!-- Google Analytics 4: učitava se tek nakon izričitog pristanka korisnika -->
+<style>
+#okretaji-consent{position:fixed;z-index:9999;left:16px;right:16px;bottom:16px;max-width:760px;margin:auto;padding:18px;background:#fff;color:#0D2B3E;border:1px solid #D3E2EA;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.22);font:16px/1.5 system-ui,sans-serif}
+#okretaji-consent p{margin:0 0 12px}#okretaji-consent a{color:#1C5A86}
+#okretaji-consent .consent-actions{display:flex;gap:10px;flex-wrap:wrap}
+#okretaji-consent button{padding:10px 14px;border-radius:8px;border:1px solid #0D2B3E;font-weight:700;cursor:pointer}
+#okretaji-consent .accept{background:#0D2B3E;color:#fff}#okretaji-consent .reject{background:#fff;color:#0D2B3E}
+</style>
+<div id="okretaji-consent" role="dialog" aria-label="Postavke analitike" aria-live="polite" hidden>
+  <p><strong>Analitika posjeta</strong><br>Uz tvoju privolu koristimo Google Analytics kako bismo razumjeli posjećenost portala. Analitički alati neće se učitati ako odbiješ.</p>
+  <p><a href="privatnost.html">Pročitaj informacije o privatnosti</a></p>
+  <div class="consent-actions">
+    <button class="accept" type="button" id="okretaji-consent-yes">Prihvaćam analitiku</button>
+    <button class="reject" type="button" id="okretaji-consent-no">Odbijam</button>
+  </div>
+</div>
+<script>
+(function(){
+  var key='okretaji_analytics_consent';
+  function loadAnalytics(){
+    if(window.__okretajiAnalyticsLoaded)return;
+    window.__okretajiAnalyticsLoaded=true;
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){window.dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag('js',new Date());
+    gtag('config','G-426646FTQH',{anonymize_ip:true});
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-426646FTQH';
+    document.head.appendChild(s);
+  }
+  var banner=document.getElementById('okretaji-consent');
+  try{
+    var saved=localStorage.getItem(key);
+    if(saved==='granted')loadAnalytics();
+    else if(saved!=='denied')banner.hidden=false;
+    document.getElementById('okretaji-consent-yes').addEventListener('click',function(){
+      localStorage.setItem(key,'granted');banner.hidden=true;loadAnalytics();
+    });
+    document.getElementById('okretaji-consent-no').addEventListener('click',function(){
+      localStorage.setItem(key,'denied');banner.hidden=true;
+    });
+  }catch(e){banner.hidden=false;}
+})();
+</script>
+</body></html>
