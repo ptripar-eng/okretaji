@@ -62,3 +62,7 @@ Automatski hrvatski auto-moto i tehnološki portal
 - [Provjeri Meta vezu](https://github.com/ptripar-eng/okretaji/actions/workflows/provjeri-meta-vezu.yml) ručno pokreće vlasnik na grani `main`. Provjera čita identitet Facebook stranice, povezani Instagram i pristup Instagram računu postojećim vjerodajnicama. U zapis izlazi samo ishod provjere. Uspješan rezultat potvrđuje čitanje; provjera ovlasti za objavu ostaje za prvu izričito odobrenu objavu.
 - [Provjera od 10.11.2026.](https://github.com/ptripar-eng/okretaji/actions/runs/42778849065) uspješno je potvrdila da GitHub s postojećim vjerodajnicama čita Facebook stranicu Okretaji i povezani Instagram @okretaji. Ovlasti za objavu provjeravaju se pri prvoj izričito odobrenoj objavi.
 - Meta vjerodajnice se unose izravno u GitHub Actions Secrets ako ih treba obnoviti. Njihove vrijednosti ne idu u chat, README, nacrte ili repozitorij. Za pregled rezultata koristi postojeći organski pristup. Dodatne ovlasti dodjeljuju se samo kada postojeća veza ne pokriva potreban zadatak.
+
+## Evidencija promjena — 10. studenoga 2026. (naslovnica Reela)
+
+- Izrađena vertikalna ilustracija 9:16 s Johnom Lennonom i Alessandrom Nanninijem za Reel Okretaja. Naslov na vizualu: „Što spaja Lennona i Nanninija?”. Vizual je generirana montaža, a status je nacrt za odabir naslovnice u Business Suiteu.
