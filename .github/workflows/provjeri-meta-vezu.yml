@@ -1,0 +1,70 @@
+name: Provjeri Meta vezu
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check:
+    if: >-
+      github.repository == 'ptripar-eng/okretaji' &&
+      github.ref == 'refs/heads/main' &&
+      github.actor == github.repository_owner &&
+      github.triggering_actor == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Provjeri Facebook stranicu i povezani Instagram
+        env:
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import http.client
+          import json
+          import os
+          from urllib.parse import urlencode
+
+          PAGE_ID = "1430056876857240"
+          IG_ID = "17841415305333499"
+
+          def graph(token, node, fields, label):
+              connection = http.client.HTTPSConnection("graph.facebook.com", timeout=15)
+              try:
+                  query = urlencode({"fields": fields})
+                  connection.request("GET", f"/v24.0/{node}?{query}", headers={"Authorization": f"Bearer {token}"})
+                  response = connection.getresponse()
+                  status = response.status
+                  data = json.loads(response.read())
+              except (OSError, http.client.HTTPException, ValueError):
+                  raise SystemExit(f"{label}: Meta odgovor nije dostupan ili nije valjan.") from None
+              finally:
+                  connection.close()
+              if status != 200 or not isinstance(data, dict) or "error" in data:
+                  raise SystemExit(f"{label}: Meta je odbila čitanje (HTTP {status}).")
+              return data
+
+          page_token = os.environ["FB_PAGE_TOKEN"].strip()
+          if os.environ["FB_PAGE_ID"].strip() != PAGE_ID or not page_token:
+              raise SystemExit("GitHub: nedostaje Facebook token ili ID stranice nije očekivani.")
+          ig_id = os.environ["IG_USER_ID"].strip()
+          if ig_id and ig_id != IG_ID:
+              raise SystemExit("GitHub: IG_USER_ID nije očekivani račun.")
+
+          if graph(page_token, "me", "id", "Facebook prijava").get("id") != PAGE_ID:
+              page_token = graph(page_token, PAGE_ID, "access_token", "Pristup stranici").get("access_token")
+              if not page_token or graph(page_token, "me", "id", "Facebook stranica").get("id") != PAGE_ID:
+                  raise SystemExit("Facebook: vjerodajnica ne predstavlja očekivanu stranicu.")
+          print("Facebook Okretaji: potvrđen pristup stranici.")
+
+          page = graph(page_token, PAGE_ID, "instagram_business_account", "Instagram veza")
+          if (page.get("instagram_business_account") or {}).get("id") != IG_ID:
+              raise SystemExit("Instagram: stranica nema očekivani povezani račun.")
+          ig_token = os.environ["IG_ACCESS_TOKEN"].strip() or page_token
+          if graph(ig_token, IG_ID, "id", "Instagram pristup").get("id") != IG_ID:
+              raise SystemExit("Instagram: vjerodajnica ne daje očekivani račun.")
+          print("Instagram @okretaji: potvrđena veza i pristup.")
+          PY
