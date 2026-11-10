@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 190" role="img" aria-labelledby="title desc">
 <title id="title">Okretaji</title><desc id="desc">Logotip Okretaji s crvenim okretomjerom i tamnoplavim nazivom.</desc>
 <g transform="translate(10 10)">
-<path d="M18 145 A76 76 0 0 1 162 42" fill="none" stroke="#0D2B3E" stroke-width="15" stroke-linecap="round"/>
-<path d="M162 42 A76 76 0 0 1 178 145" fill="none" stroke="#F05A1A" stroke-width="15" stroke-linecap="round"/>
+<path d="M20.057714 145 A90 90 0 0 1 161.63961 36.36039" fill="none" stroke="#0D2B3E" stroke-width="15" stroke-linecap="round"/>
+<path d="M161.63961 36.36039 A90 90 0 0 1 175.942286 145" fill="none" stroke="#F05A1A" stroke-width="15" stroke-linecap="round"/>
 <path d="M43 126 L56 113 M64 83 L76 70 M103 60 L106 44 M138 62 L149 49" fill="none" stroke="#0D2B3E" stroke-width="7" stroke-linecap="round"/>
 <path d="M101 126 L164 49" stroke="#F05A1A" stroke-width="11" stroke-linecap="round"/>
 <circle cx="101" cy="126" r="13" fill="#F05A1A" stroke="#0D2B3E" stroke-width="4"/>
