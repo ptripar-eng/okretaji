@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, os, subprocess, sys, time
+import json, os, re, subprocess, sys, time
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -12,7 +12,7 @@ API="https://graph.facebook.com/"+os.getenv("META_GRAPH_VERSION","v24.0")
 PAGE_ID=os.getenv("FB_PAGE_ID","").strip()
 PAGE_TOKEN=os.getenv("FB_PAGE_TOKEN","").strip()
 IG_USER=os.getenv("IG_USER_ID","").strip()
-IG_TOKEN=(os.getenv("IG_ACCESS_TOKEN") or PAGE_TOKEN).strip()
+IG_TOKEN=os.getenv("IG_ACCESS_TOKEN","").strip()
 REPO=os.getenv("GITHUB_REPOSITORY","ptripar-eng/okretaji")
 TZ=ZoneInfo("Europe/Zagreb")
 
@@ -24,28 +24,52 @@ def save(data):
 
 def api_post(path,data,files=None):
     r=requests.post(f"{API}/{path}",data=data,files=files,timeout=60)
-    try: payload=r.json()
-    except ValueError: payload={"error":{"message":r.text[:500]}}
-    if not r.ok or payload.get("error"): raise RuntimeError(json.dumps(payload.get("error",payload),ensure_ascii=False)[:800])
+    return api_payload(r)
+
+def api_payload(response):
+    try:
+        payload = response.json()
+    except ValueError:
+        raise RuntimeError(f"Meta je vratila neispravan odgovor (HTTP {response.status_code}).") from None
+    if not response.ok or payload.get("error"):
+        error = payload.get("error", {})
+        code = error.get("code")
+        detail = f", Meta kod {code}" if isinstance(code, int) else ""
+        raise RuntimeError(f"Meta zahtjev nije uspio (HTTP {response.status_code}{detail}).")
     return payload
 
 def page_token():
     from meta_token import resolve_page_token
-    return resolve_page_token(API,PAGE_ID,PAGE_TOKEN)
+    try:
+        return resolve_page_token(API,PAGE_ID,PAGE_TOKEN)
+    except (RuntimeError, ValueError):
+        raise RuntimeError("Meta token nije valjan ili ne daje pristup Facebook stranici.") from None
 
 def make_card(item):
     from social_card import make_card as render
     article={"t":item["title"],"s":item.get("summary") or item["title"],"c":item.get("category","moto"),"src":"Okretaji"}
     name=f"{datetime.now(TZ):%Y%m%d-%H%M%S}-{item['slug']}.jpg"
-    path=render(article,CARDS/name)
-    rel=path.relative_to(ROOT).as_posix()
-    git("add",rel)
-    git("commit","-m","Pripremi vizual za objavu: "+item["title"][:55])
-    git("push")
-    sha=git("rev-parse","HEAD")
-    url=f"https://raw.githubusercontent.com/{REPO}/{sha}/{rel}"
+    return render(article,CARDS/name)
+
+def save_remote(data, message, image=None):
+    save(data)
+    paths = [QUEUE.relative_to(ROOT).as_posix()]
+    if image is not None:
+        paths.append(image.relative_to(ROOT).as_posix())
+    git("add", "--", *paths)
+    git("commit", "-m", message)
+    try:
+        git("push", "origin", "HEAD:refs/heads/main")
+    except subprocess.CalledProcessError:
+        raise RuntimeError("GitHub nije spremio stanje. Provjeri main i Meta Sadržaj prije novog pokušaja.") from None
+    return git("rev-parse", "HEAD")
+
+def public_card_url(path, revision):
+    rel = path.relative_to(ROOT).as_posix()
+    url = f"https://raw.githubusercontent.com/{REPO}/{revision}/{rel}"
     for _ in range(12):
-        if requests.head(url,timeout=15).status_code==200: return path,url
+        if requests.head(url, timeout=15).status_code == 200:
+            return url
         time.sleep(3)
     raise RuntimeError("Javna URL adresa vizuala nije dostupna nakon commita.")
 
@@ -62,8 +86,7 @@ def publish_instagram(item,token,user_id,image_url):
     for _ in range(12):
         time.sleep(3)
         r=requests.get(f"{API}/{cid}",params={"fields":"status_code","access_token":token},timeout=20)
-        payload=r.json()
-        if payload.get("error"): raise RuntimeError(json.dumps(payload["error"],ensure_ascii=False)[:700])
+        payload=api_payload(r)
         status=payload.get("status_code","")
         if status=="FINISHED": break
         if status in ("ERROR","EXPIRED"): raise RuntimeError("Instagram obrada nije uspjela: "+status)
@@ -72,47 +95,71 @@ def publish_instagram(item,token,user_id,image_url):
     return result.get("id")
 
 def main():
-    global IG_USER
-    if len(sys.argv)<3: raise SystemExit("Upotreba: publish_approved.py <slug> <facebook|instagram|both>")
-    slug,target=sys.argv[1],sys.argv[2]
-    data=json.loads(QUEUE.read_text(encoding="utf-8"))
-    items=data.get("items",[])
-    item=next((x for x in items if x.get("slug")==slug),None)
-    if not item: raise SystemExit("Nacrt nije pronađen: "+slug)
-    if item.get("approved") is not True: raise SystemExit("Objava nije odobrena. U social/queue.json postavi approved: true.")
-    already=item.get("published_to",{})
-    requested={"facebook","instagram"} if target=="both" else {target}
-    if requested.issubset(set(already)): raise SystemExit("Odabrani kanal(i) već imaju objavu; zaštita od duplikata je aktivna.")
-    if not item.get("title") or not item.get("facebook") or not item.get("instagram"): raise SystemExit("Nedostaje naslov ili tekst objave.")
-    article_url="https://okretaji.com/"+item.get("article","")
-    if not item.get("article","").endswith(".html"): raise SystemExit("Neispravna poveznica članka.")
-    token=None
-    if target in ("facebook","both","instagram"):
-        if not PAGE_ID or not PAGE_TOKEN: raise SystemExit("Nedostaju GitHub Secrets FB_PAGE_ID i FB_PAGE_TOKEN.")
-        token=page_token()
-    image_path,image_url=make_card(item)
-    if target in ("facebook","both"):
-        post_id=(item.get("published_to",{}).get("facebook") or {}).get("id")
-        if not post_id: post_id=publish_facebook(item,token,image_path)
-        if not post_id: raise RuntimeError("Facebook nije vratio ID objave.")
-        item.setdefault("published_to",{})["facebook"]={"id":post_id,"at":datetime.now(TZ).isoformat(timespec="seconds")}
-        save(data); print("Facebook objavljeno:",post_id)
-    if target in ("instagram","both"):
-        if not IG_USER:
-            page=requests.get(f"{API}/{PAGE_ID}",params={"fields":"instagram_business_account","access_token":token},timeout=20).json()
-            IG_USER=(page.get("instagram_business_account") or {}).get("id","")
-        if not IG_USER: raise SystemExit("Nije pronađen povezani Instagram poslovni račun. Postavi IG_USER_ID ili poveži račun sa stranicom.")
-        ig_token=IG_TOKEN or token
-        media_id=(item.get("published_to",{}).get("instagram") or {}).get("id")
-        if not media_id: media_id=publish_instagram(item,ig_token,IG_USER,image_url)
-        if not media_id: raise RuntimeError("Instagram nije vratio ID objave.")
-        item.setdefault("published_to",{})["instagram"]={"id":media_id,"at":datetime.now(TZ).isoformat(timespec="seconds")}
-        save(data); print("Instagram objavljeno:",media_id)
-    required={"facebook"} if target=="facebook" else {"instagram"} if target=="instagram" else {"facebook","instagram"}
-    if required.issubset(set(item.get("published_to",{}))):
-        item["status"]="published"
-        item["approved"]=False
-        save(data)
-    print("Završeno:",slug,target)
+    if len(sys.argv) != 3:
+        raise SystemExit("Upotreba: publish_approved.py <slug> <facebook|instagram|both>")
+    slug, target = sys.argv[1:]
+    if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug):
+        raise SystemExit("Neispravna oznaka nacrta.")
+    if target not in ("facebook", "instagram", "both"):
+        raise SystemExit("Nepoznat kanal objave.")
+    requested = ("facebook", "instagram") if target == "both" else (target,)
 
-if __name__=="__main__": main()
+    data = json.loads(QUEUE.read_text(encoding="utf-8"))
+    matches = [item for item in data.get("items", []) if item.get("slug") == slug]
+    if len(matches) != 1:
+        raise SystemExit("Očekuje se točno jedan nacrt s tom oznakom.")
+    item = matches[0]
+    if item.get("approved") is not True:
+        raise SystemExit("Objava nije odobrena.")
+    published = item.setdefault("published_to", {})
+    pending = item.setdefault("publishing_to", {})
+    if any(channel in pending for channel in requested):
+        raise SystemExit("Prethodni pokušaj nema potvrđen ishod. Provjeri Meta Sadržaj prije novog pokušaja.")
+    remaining = [channel for channel in requested if channel not in published]
+    if not remaining:
+        raise SystemExit("Odabrani kanali već imaju evidentiranu objavu.")
+    if not item.get("title") or any(not item.get(channel) for channel in remaining):
+        raise SystemExit("Nedostaje naslov ili tekst objave.")
+    if not item.get("article", "").endswith(".html"):
+        raise SystemExit("Neispravna poveznica članka.")
+    if not PAGE_ID or not PAGE_TOKEN:
+        raise SystemExit("Nedostaju GitHub Secrets FB_PAGE_ID i FB_PAGE_TOKEN.")
+    token = page_token()
+    ig_user = IG_USER
+    if "instagram" in remaining:
+        response = requests.get(
+            f"{API}/{PAGE_ID}",
+            params={"fields": "instagram_business_account", "access_token": token},
+            timeout=20,
+        )
+        linked_ig_user = str((api_payload(response).get("instagram_business_account") or {}).get("id", ""))
+        if not linked_ig_user or (ig_user and ig_user != linked_ig_user):
+            raise SystemExit("Povezani Instagram račun nedostaje ili se ne podudara s IG_USER_ID.")
+        ig_user = linked_ig_user
+
+    image = make_card(item)
+    for channel in remaining:
+        pending[channel] = {"at": datetime.now(TZ).isoformat(timespec="seconds")}
+        revision = save_remote(data, f"Zabilježi početak objave: {slug} ({channel})", image)
+        if channel == "facebook":
+            post_id = publish_facebook(item, token, image)
+        else:
+            post_id = publish_instagram(item, IG_TOKEN or token, ig_user, public_card_url(image, revision))
+        if not post_id:
+            raise RuntimeError("Meta nije vratila ID objave.")
+        published[channel] = {"id": post_id, "at": datetime.now(TZ).isoformat(timespec="seconds")}
+        del pending[channel]
+        if all(channel in published for channel in requested):
+            item["status"] = "published"
+            item["approved"] = False
+            if not pending:
+                del item["publishing_to"]
+        print(f"Meta ID ({channel}): {post_id}", flush=True)
+        save_remote(data, f"Zabilježi dovršenu objavu: {slug} ({channel})")
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except requests.RequestException:
+        raise SystemExit("Meta ili dohvat vizuala nije dostupan. Provjeri stanje prije ponavljanja.") from None

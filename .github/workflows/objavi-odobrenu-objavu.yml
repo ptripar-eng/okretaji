@@ -15,6 +15,10 @@ on:
           - facebook
           - instagram
           - both
+      approved_revision:
+        description: "Puni SHA commita s pregledanim tekstovima na main"
+        required: true
+        type: string
       confirm:
         description: "Potvrđujem da je nacrt pregledan i odobren"
         required: true
@@ -30,13 +34,20 @@ concurrency:
 
 jobs:
   publish:
-    if: ${{ inputs.confirm == true }}
+    if: >-
+      github.repository == 'ptripar-eng/okretaji' &&
+      github.ref == 'refs/heads/main' &&
+      github.actor == github.repository_owner &&
+      github.triggering_actor == github.repository_owner &&
+      github.run_attempt == '1' &&
+      inputs.confirm == true &&
+      inputs.approved_revision == github.sha
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -54,18 +65,12 @@ jobs:
           git config user.name "okretaji-bot"
           git config user.email "okretaji-bot@users.noreply.github.com"
       - name: Objavi samo odobreni nacrt
-        run: python scripts/publish_approved.py "${{ inputs.slug }}" "${{ inputs.target }}"
+        run: python scripts/publish_approved.py "$SOCIAL_SLUG" "$SOCIAL_TARGET"
         env:
+          SOCIAL_SLUG: ${{ inputs.slug }}
+          SOCIAL_TARGET: ${{ inputs.target }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-      - name: Spremi status objave čak i ako je drugi kanal zakazao
-        if: always()
-        run: |
-          git config user.name "okretaji-bot"
-          git config user.email "okretaji-bot@users.noreply.github.com"
-          git add social/queue.json social/cards
-          git diff --cached --quiet || git commit -m "Zabilježi ručno odobrenu objavu"
-          git push
