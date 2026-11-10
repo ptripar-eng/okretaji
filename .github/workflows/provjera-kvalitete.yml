@@ -26,6 +26,8 @@ jobs:
           python -m json.tool news.json > /dev/null
       - name: Provjeri sintaksu Python skripti
         run: python -m py_compile scripts/*.py
+      - name: Provjeri sitemap i kanonske adrese
+        run: python scripts/update_sitemap.py --check
       - name: Potvrdi da su automatske vijesti uklonjene
         run: |
           python -c "import json; d=json.load(open('news.json')); assert d.get('automatic_news') is False and d['items'] == []"

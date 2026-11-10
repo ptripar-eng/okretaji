@@ -12,6 +12,8 @@ Pokretanje:  python scripts/translate_site.py            (gradi sve)
 """
 import glob, json, os, re, sys, time
 
+from update_sitemap import update_sitemap
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 I18N = os.path.join(ROOT, "i18n")
 SITE = "https://okretaji.com"
@@ -490,6 +492,8 @@ def gemini(batch, lang):
     for attempt in range(3):
         try:
             r = requests.post(url, headers={"x-goog-api-key": API_KEY}, json=payload, timeout=90)
+            if r.status_code >= 400:
+                print("Gemini HTTP %s (%s)." % (r.status_code, lang))
             if r.status_code == 429:
                 time.sleep(30); continue
             r.raise_for_status()
@@ -574,25 +578,6 @@ def main():
             with open(path, "w", encoding="utf-8") as f:
                 f.write(new)
     update_sitemap()
-
-
-def update_sitemap():
-    p = os.path.join(ROOT, "sitemap.xml")
-    if not os.path.exists(p):
-        return
-    xml = open(p, encoding="utf-8").read()
-    locs = [l for l in re.findall(r"<loc>([^<]+)</loc>", xml) if not re.match(SITE + r"/(en|de)/", l)]
-    rows = []
-    for l in locs:
-        rest = l[len(SITE) + 1:] if l.startswith(SITE + "/") else None
-        rows.append("  <url><loc>%s</loc></url>" % l)
-        if rest is not None:
-            for lang in LANGS:
-                rows.append("  <url><loc>%s/%s/%s</loc></url>" % (SITE, lang, rest))
-    new = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-           + "\n".join(rows) + "\n</urlset>\n")
-    if new != xml:
-        open(p, "w", encoding="utf-8").write(new)
 
 
 if __name__ == "__main__":
