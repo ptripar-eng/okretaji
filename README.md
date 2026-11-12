@@ -66,3 +66,11 @@ Automatski hrvatski auto-moto i tehnološki portal
 ## Evidencija promjena — 10. studenoga 2026. (naslovnica Reela)
 
 - Ispravljena vertikalna naslovnica 9:16 za Reel Okretaja. Prikazuje rock pjevačicu Giannu Nannini i njezina brata Alessandra Nanninija, vozača Formule 1. Naslov na vizualu glasi „Sestra na pozornici, brat u Formuli 1”. Generirana ilustracija pripremljena je za odabir naslovnice u Business Suiteu.
+
+## Strateška odluka — 12. studenoga 2026.
+- Okretaji.com se pozicionira kao digitalni auto-moto magazin, ne agregator brzih vijesti. Primarni sadržaj: originalne analize, tehnička objašnjenja, testovi, usporedbe i zanimljive priče; uz selektivne važne dnevne vijesti iz F1, MotoGP-a, automobila, motocikala, tehnologije i energetike.
+- Urednički cilj: čitatelju objasniti zašto se nešto dogodilo i što to znači, a ne samo prepričati činjenice koje već prikazuje Google ili AI sažetak.
+- Početna hipoteza za planiranje sadržaja: 20% kratke vijesti, 50% analize/objašnjenja, 30% testovi/usporedbe/originalne teme; omjer testirati prema analitici, ne tretirati kao dokazano optimalan.
+- Reels i društvene mreže služe otkrivanju brenda; web je odredište za dubinske članke. Nema masovnog generičkog AI sadržaja.
+- ChatGPT i Claude trebaju proaktivno predlagati uredničke i produktne promjene, evidentirati ih u README-u, ali prije javne objave svakog konačnog članka, vizuala ili društvene objave tražiti izričito odobrenje urednika. Bez plaćenih oglasa bez odobrenja.
+- Ovaj zapis dokumentira odluku o strategiji; ne predstavlja implementaciju novih rubrika ili objavu sadržaja.
