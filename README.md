@@ -74,3 +74,10 @@ Automatski hrvatski auto-moto i tehnološki portal
 - Reels i društvene mreže služe otkrivanju brenda; web je odredište za dubinske članke. Nema masovnog generičkog AI sadržaja.
 - ChatGPT i Claude trebaju proaktivno predlagati uredničke i produktne promjene, evidentirati ih u README-u, ali prije javne objave svakog konačnog članka, vizuala ili društvene objave tražiti izričito odobrenje urednika. Bez plaćenih oglasa bez odobrenja.
 - Ovaj zapis dokumentira odluku o strategiji; ne predstavlja implementaciju novih rubrika ili objavu sadržaja.
+
+## Plan redizajna — 12. studenoga 2026. (odobren vizualni smjer)
+- Urednik je odabrao smjer B: moderan svijetli automobilski magazin s odmjerenim sportskim elementima smjera A. Ovo je odobrenje vizualnog smjera, ne automatsko odobrenje javne objave redizajna ili novih članaka.
+- Prije implementacije: pregledati postojeći index.html i očuvati funkcionalne F1/MotoGP odbrojivače, postojeće članke, navigaciju, mobilni prikaz, SEO i pristupačnost.
+- Plan naslovnice: jedna istaknuta urednička priča s kvalitetnom fotografijom; zatim analize/testovi/usporedbe; jasno dostupne rubrike F1, MotoGP, automobili, motocikli, tehnologija i energija; kratke vijesti sekundarno.
+- Vizualni principi: svijetla podloga, čitljiva tipografija, prozračne kartice, dosljedne fotografije, umjeren sportski akcent; bez generičkih ponovljenih slika.
+- Sljedeće: pripremiti konkretne izmjene i pregled prije javnog deploya; urednik potvrđuje konačni izgled. Svaku stvarnu promjenu koda i objavu zasebno evidentirati ovdje.
