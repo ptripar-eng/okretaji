@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Okretaji – Auto, Moto, Motorsport, Technologie und Energie</title>
 <meta name="description" content="Okretaji bringt Neuigkeiten aus der Auto- und Motorradwelt, Formel-1-Vorschauen mit Statistiken und Streckenumrissen, Geschichten hinter dem Helm sowie Motorradtouren durch Kroatien und die Region.">
-<meta name="theme-color" content="#0D2B3E">
+<meta name="theme-color" content="#faf9f6">
 <link rel="canonical" href="https://okretaji.com/de/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Okretaji – wir wecken Neugier">
@@ -79,17 +79,6 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
   @keyframes rev{0%{transform:rotate(-120deg)}55%{transform:rotate(108deg)}75%{transform:rotate(80deg)}100%{transform:rotate(30deg)}}
 }
 
-
-/* ---------- reasons to return ---------- */
-.return-section{padding-top:60px}
-.return-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-.return-card{display:flex;flex-direction:column;min-height:245px;padding:22px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
-.return-kicker{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
-.return-card h3{font:800 1.65rem/1.05 "Big Shoulders Display",Impact,sans-serif;margin:12px 0}
-.return-card p{color:var(--muted);font-size:.95rem;margin:0 0 18px}
-.return-card a,.return-card button{margin-top:auto;align-self:flex-start;border:0;background:none;padding:0;color:var(--ink);font:700 .95rem/1.4 "Barlow",sans-serif;text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:4px;cursor:pointer}
-@media(max-width:900px){.return-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:520px){.return-grid{grid-template-columns:1fr}.return-card{min-height:0}}
 
 /* ---------- shared bits ---------- */
 .plate{display:inline-flex;align-items:center;font-weight:700;font-size:.78rem;letter-spacing:.02em;padding:3px 10px;border-radius:999px;color:#fff;background:var(--pc,var(--ink))}
@@ -339,142 +328,22 @@ footer p{margin:0 0 8px;max-width:80ch}
 @media(max-width:480px){.article-search input{width:170px;flex-basis:170px}.article-search-controls{gap:10px}}
 </style>
 
-<style id="magazine-redesign">
-:root,:root[data-theme="dark"]{--bg:#061924;--card:#102b3c;--ink:#f1f7fb;--muted:#9bb4c5;--line:#25475b;--orange:#ff681f;--deep:#061924;--shadow:0 8px 24px rgba(0,0,0,.18);color-scheme:dark}
-body{background:#061924}.wrap{max-width:1510px;padding:0 16px}.bar{background:#071c29;border-bottom:1px solid #244357}.bar .wrap{height:68px}.mini{font-size:2rem;color:#fff}.nav a{font-size:.98rem;color:#b5c9d5}.nav a:hover,.nav a[aria-current=true]{background:#ff681f;color:white}
-.mast{padding:4px 0}.mast .wrap{display:none}.upd{margin:5px 0;color:#9bb4c5}
-.hero{grid-template-columns:minmax(0,2.6fr) minmax(315px,.9fr);gap:16px;margin:14px 0 0;align-items:stretch}.lead{min-height:520px;border:1px solid #31546a;border-radius:16px;display:flex;align-items:flex-end;background:#0b3044}.lead .ph{inset:0;aspect-ratio:auto}.lead .ph:after{background:linear-gradient(90deg,rgba(2,17,27,.94) 0%,rgba(2,17,27,.64) 46%,rgba(2,17,27,.08) 100%)}.lead .txt{padding:36px;max-width:66%;color:#fff}.lead h2{font-size:clamp(2.6rem,4.6vw,5.2rem);line-height:.94;max-width:15ch}.lead p{font-size:1.1rem;color:#d6e9f4}.lead .read-more{display:inline-flex;background:var(--orange);color:#fff;border-radius:999px;padding:11px 20px;text-decoration:none}.side{background:#081e2b;border:1px solid #24475c;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:0}.side-heading{color:#fff;font-size:1.5rem;border-bottom:1px solid #315064;padding-bottom:12px}.editorial-side{border:0;border-bottom:1px solid #315064;border-radius:0;box-shadow:none;padding:12px 0;background:transparent;display:grid;grid-template-columns:90px 1fr;gap:12px;align-items:center}.editorial-side .thumb{width:90px;height:78px;object-fit:cover;border-radius:9px;background:#17465e}.editorial-side h3{font-size:1.35rem;color:#fff;margin:4px 0}.editorial-side p{display:none}.editorial-side .read-more{display:none}.editorial-side .editorial-tag{font-size:.65rem}.editorial-side .editorial-date{font-size:.74rem;color:#9bb4c5}.side .mini-card{display:none}
-.editorial-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:16px 0 0}.gallery-card{position:relative;display:flex;align-items:flex-end;min-height:235px;overflow:hidden;border:1px solid #34566c;border-radius:14px;text-decoration:none;background:#173c51;color:#fff}.gallery-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.gallery-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(2,14,24,.95),rgba(2,14,24,.05) 80%)}.gallery-card .gallery-copy{position:relative;z-index:1;padding:18px}.gallery-card b{font:900 1.65rem/1.05 "Big Shoulders Display",Impact,sans-serif;display:block;margin-top:7px}.gallery-card small{font-weight:800;color:#ff8c50}.gallery-card:hover img{transform:scale(1.04);transition:transform .3s}
-section{padding-top:42px}.return-section{padding-top:35px}.return-card{min-height:190px}.grid{gap:16px}.card{border:1px solid #25475b}.card .ph{background:#153b50}.race{margin-top:42px}footer{margin-top:45px}
-@media(max-width:1050px){.hero{grid-template-columns:1fr}.side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px}.side-heading{grid-column:1/-1}.lead .txt{max-width:80%}}
-@media(max-width:700px){.bar .wrap{height:56px}.hero{margin-top:10px}.lead{min-height:480px}.lead .txt{max-width:100%;padding:22px}.lead .ph:after{background:linear-gradient(0deg,rgba(2,17,27,.98),rgba(2,17,27,.1) 90%)}.lead h2{font-size:2.8rem}.side{grid-template-columns:1fr}.editorial-gallery{grid-template-columns:1fr 1fr}.gallery-card{min-height:190px}.gallery-card b{font-size:1.35rem}}
-@media(max-width:460px){.editorial-gallery{grid-template-columns:1fr}.gallery-card{min-height:210px}}
-</style>
-<style id="magazine-fixes">
-/* Layout matches the editorial mockup: hero, image cards, then data sections. */
-#novosti{scroll-margin-top:70px}
-.hero .lead{display:flex!important;min-height:510px!important}
-.hero .lead .ph{position:absolute!important;inset:0!important;width:100%;height:100%;padding:0!important;display:block!important}
-.hero .lead .ph img{width:100%;height:100%;object-fit:cover}
-.hero .lead .txt{position:relative!important;z-index:2!important;padding:32px!important}
-.hero .lead .txt h2{font-size:clamp(2.5rem,4.1vw,4.7rem)!important}
-.editorial-gallery{margin:16px 0 0!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
-#utrka{margin-top:28px;padding:32px 0}
-#brojke,#sve-vijesti,#povratak{padding-top:32px}
-@media(max-width:700px){.hero .lead .txt{padding:20px!important}.editorial-gallery{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
-@media(max-width:460px){.editorial-gallery{grid-template-columns:1fr!important}}
-</style><style id="magazine-final">
-/* The editorial stream is a full-width image-led magazine, not a narrow news sidebar. */
-#editorialGallery .gallery-card:nth-child(-n+2){min-height:290px}
-#editorialGallery .gallery-card:nth-child(1){grid-column:span 1}
-#editorialGallery .gallery-card b{font-size:clamp(1.5rem,2.1vw,2.15rem);max-width:28ch;text-shadow:0 2px 8px #0018}
-#editorialGallery .gallery-card:hover{border-color:var(--orange)}
-#editorialGallery .gallery-card:focus-visible{outline:3px solid var(--orange)}
-#editorialGallery .gallery-card img{filter:saturate(1.15)}
-.hero .lead .ph img{filter:saturate(1.05) contrast(1.06)}
-.hero .lead .txt{max-width:70%}
-.hero .lead .txt .plate{background:#ff681f!important;color:#fff!important}
-.hero .side{max-height:520px;overflow-y:auto;scrollbar-color:#34546a transparent}
-#utrka{margin-top:30px}
-#brojke{padding-top:34px}
-#brojke .stats{gap:14px}
-.return-grid{gap:14px}
-@media(min-width:1051px){.hero{grid-template-columns:minmax(0,2.65fr) minmax(310px,.95fr)}}
-@media(max-width:1050px){.hero .side{max-height:none;overflow:visible}}
-@media(max-width:700px){.hero .lead .txt{max-width:100%}#editorialGallery .gallery-card:nth-child(-n+2){min-height:210px}}
-</style>
-<style id="okretaji-mockup-2026">
-/* Tamni urednički izgled prema odobrenoj maketi */
-:root,:root[data-theme="light"],:root[data-theme="dark"]{
- --bg:#041724;--card:#091d2a;--ink:#f7fafc;--muted:#a9c3d4;--line:#29495c;
- --orange:#ff6900;--powder:#85d9ff;--navy:#f7fafc;--deep:#05131e;
- --onorange:#fff;--shadow:none;color-scheme:dark
-}
-body{background:radial-gradient(ellipse at 55% 20%,#09314a 0,#041724 56%,#03121b 100%);color:#f7fafc}
-.wrap{max-width:1560px;padding:0 14px}
-.bar{background:#03131eeF;border-bottom:1px solid #24526b;backdrop-filter:blur(16px)}
-.bar .wrap{height:89px;gap:38px}
-.mini{font:italic 900 clamp(1.8rem,2.8vw,3rem)/1 "Barlow",sans-serif;letter-spacing:-.06em;color:white;text-transform:uppercase}
-.mini img{width:45px;height:45px;border-radius:0}
-.nav{gap:12px;align-items:center;justify-content:space-evenly}
-.nav a{color:#fff;font:800 clamp(.92rem,1.45vw,1.3rem)/1 "Big Shoulders Display",Impact,sans-serif;padding:13px 18px;border-radius:30px}
-.nav a:hover,.nav a[aria-current="true"]{background:#ff6900;color:#fff}
-.mast{display:none}
-.lang-sw{background:#03131e!important;position:absolute;right:8px;top:90px;z-index:10;border:0!important;opacity:.72}
-main>.wrap:first-child{padding-top:0}
-.hero{grid-template-columns:minmax(0,2.75fr) minmax(305px,.95fr)!important;gap:18px;margin:16px 0 0}
-.hero .lead{min-height:405px!important;border:1px solid #2c6888;border-radius:17px;overflow:hidden}
-.hero .lead .ph:after{background:linear-gradient(90deg,rgba(1,12,22,.94) 0%,rgba(1,12,22,.6) 38%,rgba(1,12,22,.03) 83%),linear-gradient(0deg,rgba(1,12,22,.4),transparent 70%)}
-.hero .lead .txt{max-width:66%;padding:24px 28px!important}
-.hero .lead .txt .plate{border-radius:9px;background:linear-gradient(95deg,#ff5700,#ffb000)!important;color:white!important;font-size:1rem}
-.hero .lead h2,.hero .lead .txt h2{font:italic 900 clamp(2.6rem,4.2vw,4.9rem)/.96 "Big Shoulders Display",Impact,sans-serif!important;max-width:19ch}
-.hero .lead p{font-size:clamp(1rem,1.4vw,1.3rem);color:#b9e8ff;line-height:1.24;max-width:35ch}
-.read-more{display:inline-block;text-decoration:none;background:#ff6900;color:white!important;border-radius:50px;padding:8px 22px;font-weight:800}
-.hero .side{background:#051721;max-height:none!important;overflow:visible!important;border:1px solid #284b60;border-radius:18px;padding:13px 12px;display:block}
-.side-heading{font:900 2rem/1 "Big Shoulders Display",Impact,sans-serif;margin:0;padding:0 8px 12px;border-bottom:1px solid #264b60}
-.side-heading:before{content:"◷";color:#ff6900;margin-right:9px}
-.editorial-side{display:grid;grid-template-columns:114px minmax(0,1fr);gap:13px;background:none;border:0;border-bottom:1px solid #264b60;border-radius:0;box-shadow:none;padding:12px 0}
-.editorial-side .thumb{width:114px;height:86px;object-fit:cover;border-radius:10px;background:#12394f}
-.editorial-side h3{font:800 1.2rem/1.07 "Big Shoulders Display",Impact,sans-serif;margin:4px 0}
-.editorial-side .editorial-tag{font-size:.7rem;color:#ff8500}
-.editorial-side .editorial-date{font-size:.75rem;color:#a4b7c5}
-.editorial-gallery{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:15px!important;margin-top:15px!important}
-#editorialGallery .gallery-card{min-height:188px!important;border-radius:16px;border:1px solid #6295ac}
-#editorialGallery .gallery-card:nth-child(n+3){display:none}
-#editorialGallery .gallery-card .gallery-copy{padding:18px 22px}
-#editorialGallery .gallery-card small{display:inline-block;background:#d92318;color:white;padding:4px 9px;border-radius:8px}
-#editorialGallery .gallery-card b{font:900 clamp(1.5rem,2.15vw,2.4rem)/1 "Big Shoulders Display",Impact,sans-serif;max-width:27ch}
-.category-magazine{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0 0}
-.category-magazine a{min-height:255px;position:relative;display:flex;align-items:flex-end;padding:17px;border:1px solid #79a8ba;border-radius:17px;overflow:hidden;text-decoration:none;background:#10334a}
-.category-magazine img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .35s}
-.category-magazine a:hover img{transform:scale(1.06)}
-.category-magazine a:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#02121eeF,transparent 83%)}
-.category-magazine .cat-caption{position:relative;z-index:1;font:900 clamp(1.25rem,1.8vw,1.9rem)/1.1 "Big Shoulders Display",Impact,sans-serif;text-shadow:0 2px 6px #0009}
-.category-magazine .cat-title{position:absolute;top:14px;left:16px;z-index:1;font:900 1.55rem "Big Shoulders Display",Impact,sans-serif;text-shadow:0 2px 8px #000}
-.category-magazine .cat-title span{color:#fff;margin-right:6px}
-section{padding-top:40px}
-.card{border:1px solid #2b5369}
-.card .body{background:#091f30}
-footer{background:#03111a}
-@media(max-width:1050px){
- .bar .wrap{gap:12px}.nav{justify-content:flex-start}
- .hero{grid-template-columns:1fr!important}.hero .side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
- .hero .side .side-heading{grid-column:1/-1}
- .hero .lead .txt{max-width:76%}
- .category-magazine{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-@media(max-width:680px){
- .bar .wrap{height:64px}.mini{font-size:1.7rem}.mini img{width:30px;height:30px}
- .nav a{padding:9px 12px}.lang-sw{top:65px}
- .hero{margin-top:12px}
- .hero .lead{min-height:410px!important}
- .hero .lead .txt{max-width:100%;padding:20px!important}
- .hero .lead .ph:after{background:linear-gradient(0deg,#01101a 0%,#01101acc 38%,transparent 95%)}
- .hero .lead h2,.hero .lead .txt h2{font-size:clamp(2.3rem,9vw,3.8rem)!important}
- .hero .side{display:block}
- .editorial-gallery{grid-template-columns:1fr!important}
- #editorialGallery .gallery-card{min-height:205px!important}
- .category-magazine{gap:10px}
- .category-magazine a{min-height:205px;padding:12px}
- .category-magazine .cat-title{font-size:1.2rem;left:11px}
- .category-magazine .cat-caption{font-size:1.25rem}
-}
-@media(max-width:390px){.category-magazine{grid-template-columns:1fr}.category-magazine a{min-height:175px}}
-</style><style id="live-news-style">.live-news{padding:32px 0 28px!important;border-bottom:1px solid var(--line)}.live-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:20px}.live-kicker{color:var(--orange);font-size:.76rem;font-weight:800;letter-spacing:.09em}.live-head h2{font:900 clamp(2.2rem,4.8vw,3.5rem)/1 "Big Shoulders Display",Impact,sans-serif;margin:6px 0}.live-head p{margin:0;color:var(--muted);max-width:65ch}.live-head>a{white-space:nowrap;font-weight:700;text-underline-offset:4px}.live-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.live-card{display:grid;grid-template-columns:42% 1fr;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);text-decoration:none}.live-card img{width:100%;height:100%;min-height:215px;object-fit:cover}.live-card>div{padding:18px}.live-card span{font-size:.72rem;font-weight:800;letter-spacing:.06em;color:var(--orange)}.live-card h3{font:800 1.7rem/1.04 "Big Shoulders Display",Impact,sans-serif;margin:9px 0}.live-card p{font-size:.9rem;margin:0 0 12px}.live-card small,.live-archive{color:var(--muted)}.live-archive{font-size:.9rem;margin:15px 0 0}.live-archive a{text-underline-offset:3px}@media(max-width:900px){.live-grid{grid-template-columns:1fr}}@media(max-width:520px){.live-card{grid-template-columns:1fr}.live-card img{height:190px;min-height:0}.live-head{display:block}.live-head>a{display:inline-block;margin-top:12px}}</style><style>
+<link rel="stylesheet" href="/magazin.css">
+<style id="live-news-style">.live-news{padding:32px 0 28px!important;border-bottom:1px solid var(--line)}.live-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:20px}.live-kicker{color:var(--orange);font-size:.76rem;font-weight:800;letter-spacing:.09em}.live-head h2{font:900 clamp(2.2rem,4.8vw,3.5rem)/1 "Big Shoulders Display",Impact,sans-serif;margin:6px 0}.live-head p{margin:0;color:var(--muted);max-width:65ch}.live-head>a{white-space:nowrap;font-weight:700;text-underline-offset:4px}.live-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.live-card{display:grid;grid-template-columns:42% 1fr;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);text-decoration:none}.live-card img{width:100%;height:100%;min-height:215px;object-fit:cover}.live-card>div{padding:18px}.live-card span{font-size:.72rem;font-weight:800;letter-spacing:.06em;color:var(--orange)}.live-card h3{font:800 1.7rem/1.04 "Big Shoulders Display",Impact,sans-serif;margin:9px 0}.live-card p{font-size:.9rem;margin:0 0 12px}.live-card small,.live-archive{color:var(--muted)}.live-archive{font-size:.9rem;margin:15px 0 0}.live-archive a{text-underline-offset:3px}@media(max-width:900px){.live-grid{grid-template-columns:1fr}}@media(max-width:520px){.live-card{grid-template-columns:1fr}.live-card img{height:190px;min-height:0}.live-head{display:block}.live-head>a{display:inline-block;margin-top:12px}}</style><style>
 .motogp-preview{margin-top:38px;border-top:1px solid rgba(255,255,255,.18);padding-top:34px}.motogp-heading{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:18px}.motogp-heading h3{font:900 clamp(2rem,4vw,3rem)/1 "Big Shoulders Display",Impact,sans-serif;margin:6px 0;color:#fff}.motogp-heading a{color:#fff;text-underline-offset:4px}.motogp-label{font-weight:800;font-size:.8rem;letter-spacing:.12em;color:var(--orange)}.motogp-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:22px}.motogp-track svg{display:block;width:100%;height:auto;max-height:280px;margin-top:14px}.motogp-track .road{fill:none;stroke:rgba(255,255,255,.15);stroke-width:24;stroke-linejoin:round;stroke-linecap:round}.motogp-track .outline{fill:none;stroke:#e8f1f7;stroke-width:8;stroke-linejoin:round;stroke-linecap:round}.motogp-track .moving{fill:none;stroke:var(--orange);stroke-width:9;stroke-linecap:round;stroke-linejoin:round}@media(max-width:780px){.motogp-layout{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){.motogp-track .moving{display:none}}
 </style>
 <!--hreflang--><link rel="alternate" hreflang="hr" href="https://okretaji.com/"><link rel="alternate" hreflang="en" href="https://okretaji.com/en/"><link rel="alternate" hreflang="de" href="https://okretaji.com/de/"><link rel="alternate" hreflang="x-default" href="https://okretaji.com/"><style id="lang-sw-css">.lang-sw{display:flex;justify-content:flex-end;gap:4px;padding:5px 16px;background:#0D2B3E;border-bottom:1px solid #ffffff14;font:700 .74rem/1.4 Barlow,system-ui,sans-serif;letter-spacing:.08em}.lang-sw a{color:#cfe3ef;text-decoration:none;padding:2px 8px;border-radius:999px}.lang-sw a:hover,.lang-sw a:focus-visible{color:#fff;background:#ffffff1f}.lang-sw a[aria-current=true]{background:var(--orange,#F05A1A);color:#fff}</style><!--/hreflang--></head>
-<body><!--lang-sw--><nav class="lang-sw" aria-label="Sprache"><a href="/" hreflang="hr" lang="hr">HR</a><a href="/en/" hreflang="en" lang="en">EN</a><a href="/de/" hreflang="de" lang="de" aria-current="true">DE</a></nav><script>document.querySelectorAll('.lang-sw a').forEach(function(a){a.href=a.getAttribute('href')+location.search+location.hash})</script><!--/lang-sw-->
+<body id="vrh"><!--lang-sw--><nav class="lang-sw" aria-label="Sprache"><a href="/" hreflang="hr" lang="hr">HR</a><a href="/en/" hreflang="en" lang="en">EN</a><a href="/de/" hreflang="de" lang="de" aria-current="true">DE</a></nav><script>document.querySelectorAll('.lang-sw a').forEach(function(a){a.href=a.getAttribute('href')+location.search+location.hash})</script><!--/lang-sw-->
 <header class="bar">
   <div class="wrap">
     <a class="mini" href="#vrh" aria-label="Okretaji – nach oben"><img src="/favicon.svg" alt="" width="28" height="28">Okretaji</a>
     <nav class="nav" aria-label="Hauptkategorien">
-      <a href="#novosti" aria-current="true">Neueste</a><a href="rubrika.html?k=motorsport">Motorsport</a><a href="rubrika.html?k=automobili">Autos</a><a href="rubrika.html?k=motocikli">Motorräder</a><a href="rubrika.html?k=tehnika">Technik</a><a href="rubrika.html?k=energija">Energie & Mobilität</a><a href="rubrika.html?k=regija">Region</a>
+      <a href="#novosti" aria-current="true">Najnovije</a><a href="#utrka">F1</a><a href="#motogp-preview">MotoGP</a><a href="rubrika.html?k=motorsport">Motorsport</a><a href="rubrika.html?k=automobili">Automobili</a><a href="rubrika.html?k=motocikli">Motocikli</a><a href="rubrika.html?k=tehnika">Tehnika</a><a href="rubrika.html?k=energija">Energija i mobilnost</a><a href="rubrika.html?k=regija">Regija</a>
     </nav>
   </div>
 </header>
 
-<div class="mast" id="vrh">
+<div class="mast">
   <div class="livery" aria-hidden="true"><i></i><i></i></div>
   <div class="wrap">
     <h1 class="logo"><img src="/brand-logo.svg" alt="Okretaji — Auto, Moto, Sport"></h1>
@@ -492,11 +361,14 @@ footer{background:#03111a}
       </form>
       <div id="articleSearchResults" hidden><p id="articleSearchStatus" role="status"></p><div id="articleSearchList"></div></div>
     </section>
-    <section id="aktualno" class="live-news" aria-labelledby="aktualno-title"><div class="live-head"><div><span class="live-kicker">MOTOSPORT / ERGEBNISSE</span><h2 id="aktualno-title">Aktuelle Nachrichten und Ergebnisse</h2><p>Das Neueste von Rennen, Trainingseinheiten, Qualifying und Ergebnissen.</p></div><a href="#novosti">Weitere Artikel ↓</a></div><div class="live-grid"><a class="live-card" href="f1-brazil-2026-verstappen-21-drugi-norris-mercedes.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2025%20Japan%20GP%20-%20Red%20Bull%20-%20Max%20Verstappen%20-%20Race.jpg?width=1600" alt="Max Verstappen im Red Bull, Illustration" loading="lazy"><div><span>FORMEL 1 · BRASILIEN · RENNEN</span><h3>Vom 21. Platz aufs Podest: Verstappens Spektakel in Brasilien</h3><p>Norris siegt, Antonelli verliert die Führung und Mercedes holt trotz Problemen den Titel. Analyse des Regenrennens.</p><small>9.11.2026 · GP von São Paulo</small></div></a><a class="live-card" href="motogp-katar-bezzecchi-pobjeda-marquez-drugi-2026.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/MotoGP%202025%20Malaysian%20Grand%20Prix%20-%20Aprilia%20Racing%20-%20Marco%20Bezzecchi.jpg?width=1600" alt="Marco Bezzecchi auf Aprilia, Illustration" loading="lazy"><div><span>MOTOGP · KATAR · RENNEN</span><h3>Bezzecchis Antwort an Márquez: Vom Sturz zum Sieg</h3><p>Bezzecchi Erster, Márquez Zweiter, Fernández Dritter. Aprilia schlägt nach dramatischem Sprint zurück.</p><small>8.11.2026. · Großer Preis von Katar</small></div></a><a class="live-card" href="motogp-katar-sprint-marquez-pobjeda-2026.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/MotoGP%202025%20Malaysian%20Grand%20Prix%20-%20Aprilia%20Racing%20-%20Marco%20Bezzecchi.jpg?width=1600" alt="Archivfoto von Marco Bezzecchi" loading="lazy"><div><span>MOTOGP · KATAR · SPRINT</span><h3>Márquez siegt, Bezzecchi stürzt im Kampf um die Führung</h3><p>Di Giannantonio Zweiter, Martín Dritter. Márquez kann heute den Titel holen.</p><small>7.11.2026 · Endergebnisse des Sprints</small></div></a><a class="live-card" href="f1-sao-paulo-kvalifikacije-norris-pole-2026.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2025%20Japan%20GP%20-%20Red%20Bull%20-%20Max%20Verstappen%20-%20Race.jpg?width=1600" alt="Archivfoto von Max Verstappen" loading="lazy"><div><span>F1 · SÃO PAULO · QUALIFYING</span><h3>Norris holt Pole im Regen, Strafen verändern die Startaufstellung</h3><p>Russell Zweiter, Antonelli Dritter; Verstappen startet vom Ende des Feldes.</p><small>7.11.2026 · Endergebnisse des Qualifyings</small></div></a></div><p class="live-archive">Früher: <a href="motogp-katar-bezzecchi-pole-2026.html">MotoGP-Training und -Qualifying</a> · <a href="f1-sao-paulo-verstappen-treci-trening-2026.html">F1-Drittes Freies Training</a></p></section><div class="live-head" style="margin-top:30px;margin-bottom:0"><div><span class="live-kicker">REDAKTIONELLE INHALTE</span><h2>Ausgewählte Artikel</h2><p>Technik, Vergleiche, Ratgeber und Autorenkommentare.</p></div></div><div class="hero" id="novosti">
+    <div class="hero" id="novosti">
       <article class="lead" id="lead"></article>
-      <div class="side" id="side"></div>
+
     </div>
-    <div class="editorial-gallery" id="editorialGallery" aria-label="Ausgewählte Artikel der Redaktion"></div><nav id="categoryMagazine" class="category-magazine" aria-label="Rubriken erkunden"></nav>
+    <section aria-labelledby="editorial-title">
+      <div class="editorial-heading"><h2 id="editorial-title">Empfehlungen der Redaktion</h2></div>
+      <div class="editorial-gallery" id="editorialGallery"></div>
+    </section>
   </div>
 
   <section class="race" id="utrka" aria-labelledby="h-utrka" hidden>
@@ -529,7 +401,8 @@ footer{background:#03111a}
   </section>
 
   <div class="wrap">
-<section id="brojke" aria-labelledby="h-brojke">
+    <section id="aktualno" class="live-news" aria-labelledby="aktualno-title"><div class="live-head"><div><span class="live-kicker">MOTOSPORT / ERGEBNISSE</span><h2 id="aktualno-title">Aktuelle Nachrichten und Ergebnisse</h2><p>Das Neueste von Rennen, Trainingseinheiten, Qualifying und Ergebnissen.</p></div><a href="#novosti">Weitere Artikel ↓</a></div><div class="live-grid"><a class="live-card" href="f1-brazil-2026-verstappen-21-drugi-norris-mercedes.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2025%20Japan%20GP%20-%20Red%20Bull%20-%20Max%20Verstappen%20-%20Race.jpg?width=1600" alt="Max Verstappen im Red Bull, Illustration" loading="lazy"><div><span>FORMEL 1 · BRASILIEN · RENNEN</span><h3>Vom 21. Platz aufs Podest: Verstappens Spektakel in Brasilien</h3><p>Norris siegt, Antonelli verliert die Führung und Mercedes holt trotz Problemen den Titel. Analyse des Regenrennens.</p><small>9.11.2026 · GP von São Paulo</small></div></a><a class="live-card" href="motogp-katar-bezzecchi-pobjeda-marquez-drugi-2026.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/MotoGP%202025%20Malaysian%20Grand%20Prix%20-%20Aprilia%20Racing%20-%20Marco%20Bezzecchi.jpg?width=1600" alt="Marco Bezzecchi auf Aprilia, Illustration" loading="lazy"><div><span>MOTOGP · KATAR · RENNEN</span><h3>Bezzecchis Antwort an Márquez: Vom Sturz zum Sieg</h3><p>Bezzecchi Erster, Márquez Zweiter, Fernández Dritter. Aprilia schlägt nach dramatischem Sprint zurück.</p><small>8.11.2026. · Großer Preis von Katar</small></div></a><a class="live-card" href="motogp-katar-sprint-marquez-pobjeda-2026.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/MotoGP%202025%20Malaysian%20Grand%20Prix%20-%20Aprilia%20Racing%20-%20Marco%20Bezzecchi.jpg?width=1600" alt="Archivfoto von Marco Bezzecchi" loading="lazy"><div><span>MOTOGP · KATAR · SPRINT</span><h3>Márquez siegt, Bezzecchi stürzt im Kampf um die Führung</h3><p>Di Giannantonio Zweiter, Martín Dritter. Márquez kann heute den Titel holen.</p><small>7.11.2026 · Endergebnisse des Sprints</small></div></a><a class="live-card" href="f1-sao-paulo-kvalifikacije-norris-pole-2026.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2025%20Japan%20GP%20-%20Red%20Bull%20-%20Max%20Verstappen%20-%20Race.jpg?width=1600" alt="Archivfoto von Max Verstappen" loading="lazy"><div><span>F1 · SÃO PAULO · QUALIFYING</span><h3>Norris holt Pole im Regen, Strafen verändern die Startaufstellung</h3><p>Russell Zweiter, Antonelli Dritter; Verstappen startet vom Ende des Feldes.</p><small>7.11.2026 · Endergebnisse des Qualifyings</small></div></a></div><p class="live-archive">Früher: <a href="motogp-katar-bezzecchi-pole-2026.html">MotoGP-Training und -Qualifying</a> · <a href="f1-sao-paulo-verstappen-treci-trening-2026.html">F1-Drittes Freies Training</a></p></section>
+    <section id="brojke" aria-labelledby="h-brojke">
       <div class="sh"><span class="gear" aria-hidden="true">3</span><h2 id="h-brojke">In Zahlen</h2><p>Verkehr, Emissionen und Elektrofahrzeuge – Fakten ohne Schönfärberei.</p></div>
       <div class="stats">
         <article class="stat wide">
@@ -568,7 +441,7 @@ footer{background:#03111a}
           <p class="ssrc">Quelle: <a href="https://www.eea.europa.eu/en/analysis/publications/sustainability-of-europes-mobility-systems-2025/climate" target="_blank" rel="noopener">Europäische Umweltagentur, 2025.</a></p>
         </article>
       </div>
-      <h3 class="subh" style="margin-top:34px">Technik und Energie – Ratgeber</h3>
+      <h3 class="subh" style="margin-top:34px">Technik und Energie</h3>
       <div class="explain-grid">
       <article class="explain" style="--pc:var(--blue)">
         <p class="eyebrow">Technologie</p><h3>Elektro- oder Benzinantrieb?</h3>
@@ -593,20 +466,6 @@ footer{background:#03111a}
     </div>
     <p class="editorial-note">Kurzratgeber zur Orientierung im Thema. Jede Behauptung hat eine Quelle, und gemessene Daten werden von Schätzungen und Prognosen getrennt.</p>
     </section>
-
-
-    <section id="povratak" class="return-section" aria-labelledby="h-povratak">
-      <div class="sh"><span class="gear" aria-hidden="true">↻</span><h2 id="h-povratak">Gründe für die Rückkehr</h2><p>Mehr als Tagesnachrichten: nützliche Inhalte, die es wert sind, gespeichert und wieder aufgerufen zu werden.</p></div>
-      <div class="return-grid">
-        <article class="return-card"><span class="return-kicker">Motorsport</span><h3>MotoGP hautnah</h3><p>Neuigkeiten, Rennkalender, Fahrer und die wichtigsten Geschichten aus der Königsklasse des Motorradsports – mit einer eigenen Rubrik für die F1.</p><a href="motogp.html">MotoGP-Rennkalender →</a><a href="rubrika.html?k=motorsport">MotoGP-Artikel →</a></article>
-        <article class="return-card"><span class="return-kicker">Früher und heute</span><h3>Stoner und Márquez: Wie fahren sie durch die Kurve?</h3><p>Vergleich von Fahrstilen, Statistiken und den Auswirkungen von Änderungen an MotoGP-Motorrädern – mit Quellen und einer klaren Unterscheidung zwischen Daten und Schlussfolgerungen.</p><a href="stoner-marquez-zavoji.html">Analyse lesen →</a></article>
-        <article class="return-card"><span class="return-kicker">Kauf ohne Rätselraten</span><h3>Auto- und Motorradvergleiche</h3><p>Vergleiche von Preis, Verbrauch, Leistung und Unterhaltskosten, bei klarer Trennung von Herstellerdaten und unabhängigen Messungen.</p><a href="usporedbe.html">Vergleichsratgeber öffnen →</a></article>
-        <article class="return-card"><span class="return-kicker">Garage</span><h3>Praktische Technik-Ratgeber</h3><p>Wartung, Reifen, Bremsen, Antriebsstrang, Diagnose und Elektrofahrzeuge – Schritt für Schritt, mit Quellen und Sicherheitshinweisen.</p><a href="tehnicki-vodici.html">Technische Anleitungen öffnen →</a></article>
-        <article class="return-card"><span class="return-kicker">Unterwegs</span><h3>Istrische und alpine Motorradrouten</h3><p>Istrische und alpine Straßen, Routenvorschläge, interessante Stopps und Tipps für die Fahrtenplanung.</p><a href="#rute">Route wählen →</a></article>
-      </div>
-    </section>
-
-    
 
     <section id="vozaci" aria-labelledby="h-vozaci">
       <div class="sh"><span class="gear" aria-hidden="true">4</span><h2 id="h-vozaci">Hinter dem Helm</h2><p>Was sie fahren, wenn sie nicht auf der Strecke sind, womit sie sich beschäftigen und was sie selbst veröffentlichen.</p></div>
@@ -806,9 +665,9 @@ function srcLine(n){const p=el("div","src");p.append("Ursprünglicher Artikel: "
 function plate(n){const c=cat(n),p=el("span","plate",c.name);p.style.setProperty("--pc",c.color);return p;}
 
 const EDITORIAL = [
- {"t":"Pirelli steigt in die MotoGP ein","s":"Pirelli ersetzt 2027 Michelin, während die Reifendruck-Überwachungsregel bestehen bleibt und die Taktik der Fahrer beeinflusst.","href":"motogp-gume-2027-pirelli-umjesto-michelina.html","tag":"MOTOGP · ANALYSE","published":"2026-11-11T20:37:25+01:00","images":[{"src":"images/motogp-gume-2027.jpg","alt":"Illustration der Reifendruckmessung an einem vorderen Slick-Reifen eines Rennmotorrads"}]},
- {"t":"Zwei neue Boliden aus China?","s":"BYD und Geely haben mit der FIA gesprochen. Was trennt den chinesischen Hersteller vom Platz in der Startaufstellung?","href":"dva-nova-bolida-iz-kine.html","tag":"FORMEL 1 · ANALYSE","published":"2026-11-11T10:21:30+01:00","images":[{"src":"images/sangaj-vn-kine-2010.jpg","alt":"Archivfoto vom Großen Preis von China 2010 auf dem Shanghai International Circuit"}]},
- {"t":"Gianna Nannini und die Formel 1?","s":"Vom Sieg in Suzuka bis zur Rückkehr ans Steuer des Alfa. Die Geschichte über Alessandro Nannini und seine Schwester Gianna.","href":"gianna-nannini-i-formula-1.html","tag":"FORMEL 1 · HINTER DEM HELM","published":"2026-11-10T19:33:11+01:00","images":[{"src":"images/alessandro-nannini-spa-1989.jpg","alt":"Alessandro Nannini im Benetton beim GP von Belgien 1989."}]},
+ {"t":"Pirelli steigt in die MotoGP ein","s":"Pirelli ersetzt 2027 Michelin, während die Reifendruck-Überwachungsregel bestehen bleibt und die Taktik der Fahrer beeinflusst.","href":"motogp-gume-2027-pirelli-umjesto-michelina.html","tag":"MOTOGP · ANALYSE","published":"2026-11-11T20:37:25+01:00","images":[{"src":"/images/motogp-gume-2027.jpg","alt":"Illustration der Reifendruckmessung an einem vorderen Slick-Reifen eines Rennmotorrads"}]},
+ {"t":"Zwei neue Boliden aus China?","s":"BYD und Geely haben mit der FIA gesprochen. Was trennt den chinesischen Hersteller vom Platz in der Startaufstellung?","href":"dva-nova-bolida-iz-kine.html","tag":"FORMEL 1 · ANALYSE","published":"2026-11-11T10:21:30+01:00","images":[{"src":"/images/sangaj-vn-kine-2010.jpg","alt":"Archivfoto vom Großen Preis von China 2010 auf dem Shanghai International Circuit"}]},
+ {"t":"Gianna Nannini und die Formel 1?","s":"Vom Sieg in Suzuka bis zur Rückkehr ans Steuer des Alfa. Die Geschichte über Alessandro Nannini und seine Schwester Gianna.","href":"gianna-nannini-i-formula-1.html","tag":"FORMEL 1 · HINTER DEM HELM","published":"2026-11-10T19:33:11+01:00","images":[{"src":"/images/alessandro-nannini-spa-1989.jpg","alt":"Alessandro Nannini im Benetton beim GP von Belgien 1989."}]},
  {"t":"Euro-Normen: sauberer Auspuff, leere Seele","s":"Klang, Gasannahme und Motorcharakter: Was geht verloren, wenn Motorräder sauberer und die Displays immer größer werden?","href":"euro-norme-cist-ispuh-prazna-dusa.html","tag":"MOTORRÄDER · KOMMENTAR","published":"2026-11-05T20:30:00+01:00","images":[{"src":"https://images.pexels.com/photos/3284232/pexels-photo-3284232.jpeg?auto=compress&cs=tinysrgb&w=1600","alt":"Rote Vespa auf einer gepflasterten Straße vor alten Hausfassaden"}]},
  {t:"Welches Werkzeug für eine mehrtägige Motorradreise durch Europa",s:"Reifenkit, am eigenen Motorrad erprobte Schlüssel und Ausrüstung, die bestimmte Länder gesetzlich vorschreiben.",href:"alat-za-motoristicko-putovanje-po-europi.html",tag:"MOTOCIKLI &middot; VODIČ",published:"2026-11-04T09:00:00+01:00",images:[{src:"https://images.pexels.com/photos/8550669/pexels-photo-8550669.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",alt:"Hände mit Werkzeug bei der Wartung eines Motorrads"}]},
  {t:"Kroatische E-Auto-Förderung 2026: Antragsregeln und Preise nach der Förderung",s:"Bis zu 9.000 Euro Förderung für ein Elektroauto: Antragsregeln, Kauf im Ausland, Vergleich von 26 Modellen und die Grenze von 35.000 Euro.",href:"poticaji-za-elektricne-aute-2026-sto-se-isplati.html",tag:"ENERGIE · ANALYSE",published:"2026-11-02T12:00:00+01:00",images:[{src:"https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Close-up_of_an_electric_car_charging_station.jpg/1280px-Close-up_of_an_electric_car_charging_station.jpg",alt:"Illustration eines Elektroautos und staatlicher Förderungen"}]},
@@ -860,7 +719,7 @@ allArticles.addEventListener("click",()=>{
 searchInput.addEventListener("keydown",event=>{if(event.key==="Escape"){searchInput.value="";archiveOpen=false;renderArticleSearch();}});
 
 function editorialDate(item){return item.published||null;}
-async function hydrateEditorialDates(){
+async function hydrateEditorialDates(picks){
  await Promise.all(EDITORIAL.map(async item=>{
    try{
      const r=await fetch(item.href,{cache:"no-store"});
@@ -880,7 +739,7 @@ async function hydrateEditorialDates(){
      }
    }catch(e){}
  }));
- renderHero();
+ renderHero(picks);
 }
 function editorialVisual(item){
  if(item.images && item.images.length && item.images[0].src)return item.images[0].src;
@@ -905,39 +764,23 @@ function editorialVisual(item){
  return "data:image/svg+xml;charset=UTF-8,"+encodeURIComponent(svg);
 }
 
-function renderCategoryMagazine(){
- const box=document.getElementById("categoryMagazine");if(!box)return;
- const categories=[
-  {title:"Autos",icon:"▰",description:"News, Vergleiche und Technologie auf vier Rädern",href:"rubrika.html?k=automobili",seed:"automobili"},
-  {title:"Motorräder",icon:"✦",description:"Motorräder, Tests und Reisen",href:"rubrika.html?k=motocikli",seed:"motocikli"},
-  {title:"Technik und Energie",icon:"ϟ",description:"Was bringen neue Technologien wirklich?",href:"rubrika.html?k=tehnika",seed:"energija"},
-  {title:"Kolumnen",icon:"✎",description:"Analysen, Meinungen und Geschichten von der Straße",href:"rubrika.html?k=regija",seed:"kolumne"}
- ];
- box.replaceChildren();
- categories.forEach(c=>{
-  const a=el("a");a.href=c.href;
-  const img=el("img");img.loading="lazy";img.alt="";
-  const categoryImages={
-   automobili:"/images/rubrike/automobili.jpg",
-   motocikli:"/images/rubrike/motocikli.jpg",
-   energija:"/images/rubrike/tehnika-energija.jpg",
-   kolumne:"/images/rubrike/kolumne.jpg"
-  };
-  img.src=categoryImages[c.seed];img.width=900;img.height=600;img.decoding="async";
-  const title=el("div","cat-title");title.append(el("span",null,c.icon),c.title);
-  a.append(img,title,el("div","cat-caption",c.description));box.append(a);
- });
-}
-
-function renderHero(){
+function renderHero(picks){
  const items=[...new Map(EDITORIAL.map(item=>[item.href,item])).values()].sort((a,b)=>(Date.parse(editorialDate(b))||0)-(Date.parse(editorialDate(a))||0));
- const main=items[0],lead=$("lead");lead.innerHTML="";
- const ph=el("div","ph");const im=el("img");im.src=editorialVisual(main);im.alt="Thematische Illustration: "+main.t;im.loading="eager";ph.append(im);
+ const byHref=new Map(items.map(item=>[item.href,item]));
+ const selected=[...new Set(picks)].map(href=>byHref.get(href)).filter(Boolean);
+ const stories=[...new Set([...selected,...items])];
+ const main=stories[0],lead=$("lead");lead.innerHTML="";
+ const ph=el("div","ph");const im=el("img");im.src=editorialVisual(main);im.alt=main.images?.[0]?.alt||"";im.fetchPriority="high";ph.append(im);
  const t=el("div","txt");t.append(el("span","plate",main.tag));const h=el("h2"),a=el("a",null,main.t);a.href=main.href;h.append(a);t.append(h,el("p",null,main.s));const more=el("a","read-more","Artikel lesen →");more.href=main.href;t.append(more);lead.append(ph,t);
- const side=$("side");side.innerHTML="";side.append(el("h2","side-heading","Das Neueste aus der Redaktion"));
- for(const item of items.slice(1,6)){const card=el("a","editorial-side");card.href=item.href;const thumb=el("img","thumb");thumb.src=editorialVisual(item);thumb.alt="";thumb.loading="lazy";const info=el("div");info.append(el("span","editorial-tag",item.tag),el("h3",null,item.t),el("span","editorial-date",(editorialDate(item)?new Date(editorialDate(item)).toLocaleDateString("de-DE",{day:"numeric",month:"long",year:"numeric"}):"Aus der Redaktion")));card.append(thumb,info);side.append(card);}
- const gallery=document.getElementById("editorialGallery");if(gallery){gallery.innerHTML="";for(const item of items.slice(1,7)){const card=el("a","gallery-card");card.href=item.href;const img=el("img");img.src=editorialVisual(item);img.alt="";img.loading="lazy";const copy=el("div","gallery-copy");copy.append(el("small",null,item.tag),el("b",null,item.t));card.append(img,copy);gallery.append(card);}}
- renderCategoryMagazine();
+ const gallery=$("editorialGallery");
+ gallery.replaceChildren();
+ for(const item of stories.slice(1,4)){
+   const card=el("a","gallery-card");card.href=item.href;
+   const image=el("img");image.src=editorialVisual(item);image.alt="";image.loading="lazy";
+   const copy=el("div","gallery-copy");
+   copy.append(el("small",null,item.tag),el("b",null,item.t),el("p",null,item.s));
+   card.append(image,copy);gallery.append(card);
+ }
  window._heroIds=new Set();
 }
 function chip(label,val,cur,color){const b=el("button","chip");b.type="button";b.dataset.v=val;b.setAttribute("aria-pressed",String(val===cur));if(color){const s=el("span","dot");s.style.background=color;b.append(s);}b.append(label);return b;}
@@ -1041,10 +884,13 @@ renderStats();
 /* ---------- load ---------- */
 async function getJSON(f){const r=await fetch(f+"?v="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error(r.status);return r.json();}
 async function load(){
-  let sched=[];
-  try{const d=await getJSON("../news_de.json");sched=d.schedule||[];
-  }catch(e){}
-  renderHero();hydrateEditorialDates();
+  const [picks, news] = await Promise.all([
+    getJSON("/izdvojeno.json").catch(() => []),
+    getJSON("../news_de.json").catch(() => ({}))
+  ]);
+  const selection=Array.isArray(picks)?picks:[];
+  renderHero(selection);hydrateEditorialDates(selection);
+  const sched=news.schedule||[];
   try{renderRace(await getJSON("../race.json"),sched);}catch(e){}
 }
 renderPeople();renderRouteChips();renderRoutes();load();
@@ -1060,7 +906,7 @@ document.addEventListener("click",e=>{if(!shifter.contains(e.target))shOpen(fals
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&shifter.classList.contains("open")){shOpen(false);shtoggle.focus();}});
 gears.forEach(b=>b.addEventListener("click",()=>{const t=$(b.dataset.t);setGear(b.dataset.t);shOpen(false);if(t&&!t.hidden)t.scrollIntoView();}));
 const io=new IntersectionObserver(es=>{for(const e of es) if(e.isIntersecting) setGear(e.target.id);},{rootMargin:"-45% 0px -50% 0px"});
-["vrh","novosti","povratak","utrka","brojke","vozaci","rute"].forEach(id=>{const x=$(id);if(x)io.observe(x);});
+["novosti","utrka","brojke","vozaci","rute"].forEach(id=>{const x=$(id);if(x)io.observe(x);});
 </script>
 
 <script>
