@@ -81,3 +81,11 @@ Automatski hrvatski auto-moto i tehnološki portal
 - Plan naslovnice: jedna istaknuta urednička priča s kvalitetnom fotografijom; zatim analize/testovi/usporedbe; jasno dostupne rubrike F1, MotoGP, automobili, motocikli, tehnologija i energija; kratke vijesti sekundarno.
 - Vizualni principi: svijetla podloga, čitljiva tipografija, prozračne kartice, dosljedne fotografije, umjeren sportski akcent; bez generičkih ponovljenih slika.
 - Sljedeće: pripremiti konkretne izmjene i pregled prije javnog deploya; urednik potvrđuje konačni izgled. Svaku stvarnu promjenu koda i objavu zasebno evidentirati ovdje.
+
+
+## Provjera rasporeda F1 i MotoGP — 15. studenoga 2026.
+- Javno dostupna `/motogp.html` pogrešno prikazuje Maleziju (30.10.–1.11.) kao sljedeću utrku; poredak je označen datumom 30.10.2026. Potrebna je automatska sinkronizacija i zasebne provjere rezultata.
+- Naslovnica `/index.html` ispravno najavljuje Portugal 22.11., ali u popisu preostalih MotoGP utrka još prikazuje završeni Katar 8.11. Potrebno filtrirati završene utrke po datumu završetka, ne samo mijenjati odbrojavanje.
+- Preostale MotoGP utrke: Portugal 20.–22.11. i Valencija 27.–29.11.; preostale F1 utrke: Las Vegas 19.–21.11., Katar 27.–29.11. i Abu Dhabi 4.–6.12. (datumi vikenda lokalno; za hrvatski prikaz konvertirati vremenske zone).
+- ZA IMPLEMENTACIJU: jedan centralni strojno čitljiv kalendar za naslovnicu i rubne stranice, redovito osvježavanje putem GitHub Actions, automatski prijelaz na sljedeću utrku tek nakon završetka prethodne, filtriranje završenih utrka, pravilna vremenska zona Europe/Zagreb, status kraja sezone i priprema nove sezone. Za MotoGP poredak koristiti provjeren službeni izvor, s oznakom vremena zadnje uspješne sinkronizacije; pri pogrešci ne prikazivati zastarjele podatke kao aktualne. Uvesti testove i upozorenje na neuspješno ažuriranje.
+- Ovaj zapis je evidencija provjere i zahtjeva; **automatizacija i popravci još nisu implementirani niti objavljeni**. Ne tvrditi suprotno bez provjere koda, Actions izvršavanja i produkcijske stranice.
