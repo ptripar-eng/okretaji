@@ -26,11 +26,11 @@
 <main class="wrap">
 <div class="hero">
 <section class="panel">
-<span class="badge">Next GP · 30 October – 1 November</span>
-<h2 style="margin-top:16px">Malaysian Grand Prix</h2>
-<p>Sepang International Circuit · Sepang, Malaysia</p>
+<span class="badge" id="nextBadge">Next GP · loading</span>
+<h2 style="margin-top:16px" id="nextName">Loading calendar…</h2>
+<p id="nextCircuit">Checking next race</p>
 <div class="count" id="count"><div><b>--</b><span>days</span></div><div><b>--</b><span>hours</span></div><div><b>--</b><span>minutes</span></div></div>
-<p class="small" id="countNote">Countdown to the start of the race weekend (Friday, local time).</p>
+<p class="small" id="countNote">Countdown to the start of the main race in Croatian time.</p>
 <div class="links"><a href="https://www.motogp.com/en/calendar/2026" target="_blank" rel="noopener noreferrer">Official MotoGP Calendar ↗</a><a href="https://www.motogp.com/" target="_blank" rel="noopener noreferrer">MotoGP.com ↗</a></div>
 </section>
 <div class="hero-photo"><img src="https://live.staticflickr.com/5625/30498612082_792b0a706f_b.jpg" alt="Marc Márquez on a Honda through a corner at the Sepang circuit, 2016 Malaysian GP. Illustrative photo." width="1024" height="683" loading="eager"><span class="photo-credit">Illustration: Sepang 2016. Photo: <a href="https://www.flickr.com/photos/48027348@N04/30498612082" target="_blank" rel="noopener noreferrer">Box Repsol</a>, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a></span></div>
@@ -59,8 +59,8 @@
 </section>
 <div class="grid">
 <section class="panel">
-<h2>Circuit: Sepang</h2>
-<div class="track">
+<h2 id="trackName">Next race circuit</h2>
+<div class="track" id="trackGraphic">
 <svg viewBox="0 0 420 300" role="img" aria-label="Schematic layout of the circuit, not an exact blueprint of Sepang">
 <path d="M88 210 L70 168 Q55 143 80 119 L120 87 Q145 65 173 83 L211 110 Q231 126 254 107 L286 76 Q312 56 336 79 L358 109 Q371 132 350 151 L315 178 Q294 195 310 216 L332 239 Q345 258 318 264 L272 267 Q247 268 238 246 L222 217 Q210 198 186 211 L150 231 Q122 244 105 227 Z"/>
 <path class="glow" d="M88 210 L70 168 Q55 143 80 119 L120 87 Q145 65 173 83 L211 110 Q231 126 254 107 L286 76 Q312 56 336 79 L358 109 Q371 132 350 151 L315 178 Q294 195 310 216 L332 239 Q345 258 318 264 L272 267 Q247 268 238 246 L222 217 Q210 198 186 211 L150 231 Q122 244 105 227 Z"/>
@@ -71,8 +71,8 @@
 <section class="panel">
 <h2>Weekend summary</h2>
 <div class="facts">
-<div class="fact"><strong>Sepang</strong><span>Circuit</span></div>
-<div class="fact"><strong>Malaysia</strong><span>Host country</span></div>
+<div class="fact"><strong id="factCircuit">—</strong><span>Circuit</span></div>
+<div class="fact"><strong id="factCountry">—</strong><span>Host country</span></div>
 <div class="fact"><strong>3 days</strong><span>Race weekend</span></div>
 <div class="fact"><strong>Check</strong><span>Exact session times</span></div>
 </div>
@@ -81,11 +81,7 @@
 </div>
 <section class="panel">
 <h2>Season finale schedule</h2>
-<table><thead><tr><th>Date</th><th>Grand Prix</th><th>Circuit</th></tr></thead><tbody>
-<tr class="next"><td>30. 10. – 1. 11.</td><td>Malaysia</td><td>Sepang International Circuit</td></tr>
-<tr><td>6. – 8. 11.</td><td>Qatar</td><td>Lusail International Circuit</td></tr>
-<tr><td>20. – 22. 11.</td><td>Portugal</td><td>Autódromo Internacional do Algarve</td></tr>
-<tr><td>27. – 29. 11.</td><td>Valencia</td><td>Circuit Ricardo Tormo</td></tr>
+<table><thead><tr><th>Date</th><th>Grand Prix</th><th>Circuit</th></tr></thead><tbody id="upcomingRaces">
 </tbody></table>
 <p class="small">Times are according to the 2026 season calendar and are subject to change. Check the official website before the event.</p>
 </section>
@@ -95,14 +91,26 @@
 <div class="links"><a href="index.html#sve-vijesti">MotoGP news on the homepage ↗</a><a href="https://www.motogp.com/en/calendar/2026" target="_blank" rel="noopener noreferrer">Official calendar ↗</a></div>
 </section>
 </main>
-<footer><div class="wrap">Okretaji · Motorsport, technology, and roads. The countdown uses the start of the weekend according to local Malaysian time; check official data for the exact time.</div></footer>
+<footer><div class="wrap">Okretaji · Motorsport, technology and roads. The countdown uses the main race time in the Europe/Zagreb timezone. Please confirm dates in the official calendar.</div></footer>
 <script>
-(function(){
- const target=new Date("2026-10-30T00:00:00+08:00");
- const box=document.getElementById("count"),note=document.getElementById("countNote");
- function tick(){let ms=target-Date.now();if(ms<=0){box.innerHTML="<div style='grid-column:1/-1'><b>The weekend has started</b><span>Check session schedule</span></div>";note.textContent="For the exact time of each session, check the official calendar.";return}
- const vals=[[Math.floor(ms/86400000),"dana"],[Math.floor(ms/3600000)%24,"sati"],[Math.floor(ms/60000)%60,"minuta"]];
- box.innerHTML="";for(const [n,l] of vals){const d=document.createElement("div"),b=document.createElement("b"),s=document.createElement("span");b.textContent=n;s.textContent=l;d.append(b,s);box.append(d)}
+(async function(){
+ const $=id=>document.getElementById(id);
+ const fmt=d=>new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"long",year:"numeric",hour:"2-digit",minute:"2-digit",timeZone:"Europe/Zagreb"}).format(new Date(d));
+ let races=[];
+ try{const response=await fetch("/motogp-calendar.json",{cache:"no-cache"});if(!response.ok)throw Error("Kalendar");const data=await response.json();races=data.motogp||[];}
+ catch(e){$("nextName").textContent="Calendar currently unavailable";$("nextCircuit").textContent="Check the official MotoGP calendar.";return;}
+ function tick(){
+  const now=Date.now(),upcoming=races.filter(r=>Date.parse(r.end||r.start)>now),race=upcoming[0];
+  $("upcomingRaces").replaceChildren(...upcoming.map((r,i)=>{const tr=document.createElement("tr");if(i===0)tr.className="next";for(const v of [r.weekend||fmt(r.start),r.name,r.circuit]){const td=document.createElement("td");td.textContent=v;tr.append(td)}return tr}));
+  if(!race){$("nextBadge").textContent="MotoGP · 2026 season."; $("nextName").textContent="The season has finished";$("nextCircuit").textContent="Waiting for the confirmed calendar of the next season";$("count").textContent="";$("countNote").textContent="";return}
+  if($("nextName").dataset.round!==String(race.round)){
+   $("nextName").dataset.round=String(race.round);$("nextBadge").textContent="Next GP · "+(race.weekend||"");$("nextName").textContent=race.name;$("nextCircuit").textContent=race.circuit+" · "+race.country+" · "+fmt(race.start);
+   $("trackName").textContent="Circuit: "+race.circuit;$("factCircuit").textContent=race.circuit;$("factCountry").textContent=race.country;
+   const graphic=$("trackGraphic");graphic.replaceChildren();const ns="http://www.w3.org/2000/svg",svg=document.createElementNS(ns,"svg");svg.setAttribute("viewBox","0 0 820 390");svg.setAttribute("role","img");svg.setAttribute("aria-label","Schematic track outline "+race.circuit);for(const cls of ["","glow"]){const p=document.createElementNS(ns,"path");p.setAttribute("d",race.path);if(cls)p.setAttribute("class",cls);svg.append(p)}graphic.append(svg);const note=document.createElement("p");note.textContent="Schematic track illustration.";graphic.append(note);
+  }
+  const diff=Math.max(0,Date.parse(race.start)-now);
+  if(!diff){$("count").textContent="The race is underway or has recently finished";return}
+  $("count").replaceChildren(...[[Math.floor(diff/86400000),"dana"],[Math.floor(diff/3600000)%24,"sati"],[Math.floor(diff/60000)%60,"minuta"]].map(([n,label])=>{const d=document.createElement("div"),b=document.createElement("b"),span=document.createElement("span");b.textContent=n;span.textContent=label;d.append(b,span);return d}));
  }
  tick();setInterval(tick,30000);
 })();
