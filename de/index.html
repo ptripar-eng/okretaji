@@ -665,6 +665,7 @@ function srcLine(n){const p=el("div","src");p.append("Ursprünglicher Artikel: "
 function plate(n){const c=cat(n),p=el("span","plate",c.name);p.style.setProperty("--pc",c.color);return p;}
 
 const EDITORIAL = [
+ {"t":"Márquez kann schon am Samstag Champion werden: Was er in Portugal braucht?","s":"Sechzig Punkte Vorsprung vor Martín. Alle Szenarien für den Gewinn des MotoGP-Titels in Portimão.","href":"marc-marquez-naslov-portugal-motogp-2026.html","tag":"MOTOGP · PORTUGAL","published":"2026-11-17T15:45:00+01:00","images":[{"src":"https://commons.wikimedia.org/wiki/Special:FilePath/MotoGP%202026%20Austria%20Nr.%2093%20M%C3%A1rquez%20(2).jpg?width=1600","alt":"Marc Márquez auf Ducati, GP von Österreich 2026, Illustration"}]},
  {"t":"Wie setzte sich der 1,0-Liter-Turbo durch?","s":"Warum Hersteller den Hubraum verkleinerten, wie sie die Leistung beibehielten und was höhere Belastungen für Kolben, Kurbelwelle und Lager bedeuten.","href":"kako-smo-dosli-do-1-0-turba.html","tag":"AUTOMOBILE · TECHNIK","published":"2026-11-16","images":[{"src":"/images/1-0-turbo-okretaji.jpg","alt":"Turbolader, Kolben und Pleuel auf einer Werkbank"}]},
  {"t":"Pirelli steigt in die MotoGP ein","s":"Pirelli ersetzt 2027 Michelin, während die Reifendruck-Überwachungsregel bestehen bleibt und die Taktik der Fahrer beeinflusst.","href":"motogp-gume-2027-pirelli-umjesto-michelina.html","tag":"MOTOGP · ANALYSE","published":"2026-11-11T20:37:25+01:00","images":[{"src":"/images/motogp-gume-2027.jpg","alt":"Illustration der Reifendruckmessung an einem vorderen Slick-Reifen eines Rennmotorrads"}]},
  {"t":"Zwei neue Boliden aus China?","s":"BYD und Geely haben mit der FIA gesprochen. Was trennt den chinesischen Hersteller vom Platz in der Startaufstellung?","href":"dva-nova-bolida-iz-kine.html","tag":"FORMEL 1 · ANALYSE","published":"2026-11-11T10:21:30+01:00","images":[{"src":"/images/sangaj-vn-kine-2010.jpg","alt":"Archivfoto vom Großen Preis von China 2010 auf dem Shanghai International Circuit"}]},
@@ -769,7 +770,7 @@ function renderHero(picks){
  const items=[...new Map(EDITORIAL.map(item=>[item.href,item])).values()].sort((a,b)=>(Date.parse(editorialDate(b))||0)-(Date.parse(editorialDate(a))||0));
  const byHref=new Map(items.map(item=>[item.href,item]));
  const selected=[...new Set(picks)].map(href=>byHref.get(href)).filter(Boolean);
- const stories=[...new Set([...selected,...items])];
+ const stories=items; // Najnovije prvo; ručni odabiri više ne nadjačavaju datum.
  const main=stories[0],lead=$("lead");lead.innerHTML="";
  const ph=el("div","ph");const im=el("img");im.src=editorialVisual(main);im.alt=main.images?.[0]?.alt||"";im.fetchPriority="high";ph.append(im);
  const t=el("div","txt");t.append(el("span","plate",main.tag));const h=el("h2"),a=el("a",null,main.t);a.href=main.href;h.append(a);t.append(h,el("p",null,main.s));const more=el("a","read-more","Artikel lesen →");more.href=main.href;t.append(more);lead.append(ph,t);
