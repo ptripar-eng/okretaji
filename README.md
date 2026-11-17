@@ -94,3 +94,9 @@ Automatski hrvatski auto-moto i tehnološki portal
 - `motogp-calendar.json` zajednički je izvor za naslovnicu i `motogp.html` (Portugal i Valencija). Obje stranice sada u pregledniku biraju sljedeću nezavršenu utrku prema `end`, uklanjaju završene iz prikaza, računaju odbrojavanje prema `start` i prikazuju kraj sezone. Datum i vrijeme su ISO 8601 s eksplicitnim pomakom; prikaz Europe/Zagreb.
 - Uklonjen zastarjeli statični MotoGP raspored Malezije/Katara i odbrojavanje Malezije na `motogp.html`. F1 `race.json` već se ažurira (15.11.2026. 06:44 UTC) i pokazuje Las Vegas; izvorni postojeći postupak osvježavanja F1 nije mijenjan.
 - VAŽNO: klijentski automatski prijelaz između utrka sada je implementiran; **automatsko preuzimanje promjena službenog MotoGP kalendara i ažuriranje MotoGP poretka još nisu implementirani**. Podaci u JSON-u moraju se ažurirati pri službenim izmjenama; ne predstavljati statične bodove od 30.10. kao aktualne. Provjeriti javni GitHub Pages deploy.
+
+## Evidencija promjena — 17. studenoga 2026. (Márquez Portugal)
+- Na izričito odobrenje urednika objavljen članak `marc-marquez-naslov-portugal-motogp-2026.html` s izračunom osvajanja MotoGP naslova u Portugalu. Službena provjera: https://www.motogp.com/en/news/2026/11/17/how-can-marc-marquez-be-crowned-world-champion-in-portugal/1185545
+- Naslovnica `index.html`: članak dodan na početak rubrike `#aktualno`. Dodan i u `sitemap.xml`, bez izmišljanja EN/DE prijevoda.
+- Naslovna fotografija: Marc Márquez na Ducatiju GP26, VN Austrije 2026.; autor Lukas Raich, Wikimedia Commons, CC BY-SA 4.0. Izvor: https://commons.wikimedia.org/wiki/File:MotoGP_2026_Austria_Nr._93_M%C3%A1rquez_(2).jpg . Uz fotografiju je navedena atribucija, licenca i oznaka „Ilustracija”.
+- Društvene mreže nisu objavljene. Nakon GitHub Pages deploya provjeriti dostupnost članka, fotografije i kartice na naslovnici.
