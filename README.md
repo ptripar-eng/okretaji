@@ -102,3 +102,5 @@ Automatski hrvatski auto-moto i tehnološki portal
 - Društvene mreže nisu objavljene. Nakon GitHub Pages deploya provjeriti dostupnost članka, fotografije i kartice na naslovnici.
 
 - 17.11.2026.: pripremljeni neobjavljeni nacrti Instagram carousela i Facebook objave za Márquezovu računicu u Portugalu u `social/drafts/marquez-portugal-2026-11-17.md`. Stvarni carousel vizuali nisu izrađeni; čeka se izrada, pregled i uredničko odobrenje prije objave.
+
+- 17.11.2026.: ispravljen poredak naslovnice: glavna vijest i izdvojeni članci sada prate datum objave u `EDITORIAL`, bez nadjačavanja ručnim izborom. Dodan Márquez/Portugal 2026. u `EDITORIAL` kako bi bio prikazan na vrhu. Rubrika `#aktualno` i dalje ima zaseban ručno održavan popis; za potpunu automatizaciju treba jedinstveni izvor članaka.
