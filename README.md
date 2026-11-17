@@ -100,3 +100,5 @@ Automatski hrvatski auto-moto i tehnološki portal
 - Naslovnica `index.html`: članak dodan na početak rubrike `#aktualno`. Dodan i u `sitemap.xml`, bez izmišljanja EN/DE prijevoda.
 - Naslovna fotografija: Marc Márquez na Ducatiju GP26, VN Austrije 2026.; autor Lukas Raich, Wikimedia Commons, CC BY-SA 4.0. Izvor: https://commons.wikimedia.org/wiki/File:MotoGP_2026_Austria_Nr._93_M%C3%A1rquez_(2).jpg . Uz fotografiju je navedena atribucija, licenca i oznaka „Ilustracija”.
 - Društvene mreže nisu objavljene. Nakon GitHub Pages deploya provjeriti dostupnost članka, fotografije i kartice na naslovnici.
+
+- 17.11.2026.: pripremljeni neobjavljeni nacrti Instagram carousela i Facebook objave za Márquezovu računicu u Portugalu u `social/drafts/marquez-portugal-2026-11-17.md`. Stvarni carousel vizuali nisu izrađeni; čeka se izrada, pregled i uredničko odobrenje prije objave.
