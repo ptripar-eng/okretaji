@@ -119,4 +119,4 @@ inp.addEventListener('input',update);update();
 
 const canvas=document.getElementById('chart'),ctx=canvas.getContext('2d');function plot(){const w=canvas.clientWidth,h=290,ratio=window.devicePixelRatio||1;canvas.width=w*ratio;canvas.height=h*ratio;ctx.setTransform(ratio,0,0,ratio,0,0);ctx.clearRect(0,0,w,h);let L=45,R=15,T=15,B=36,x=v=>L+(v-8000)/(34000-8000)*(w-L-R),y=v=>h-B-(v-200)/(600-200)*(h-T-B);ctx.font='12px system-ui';ctx.fillStyle='#4f6979';ctx.strokeStyle='#d3e2ea';[200,300,400,500,600].forEach(v=>{ctx.beginPath();ctx.moveTo(L,y(v));ctx.lineTo(w-R,y(v));ctx.stroke();ctx.fillText(String(v),7,y(v)+4)});[10000,20000,30000].forEach(v=>ctx.fillText(v/1000+'k €',x(v)-15,h-11));d.forEach(([name,p,km])=>{ctx.beginPath();ctx.fillStyle=['Leapmotor T03','Hyundai Inster','MG S5 EV','Tesla Model 3','GAC Aion UT'].includes(name)?'#f05a1a':'#1f78b0';ctx.arc(x(p-subsidy(p)),y(km),5,0,Math.PI*2);ctx.fill()})}plot();addEventListener('resize',plot);
 })();
-</script></body></html>
+</script><script src="/analytics-consent.js" defer></script></body></html>

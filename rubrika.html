@@ -29,4 +29,4 @@ document.getElementById('count').textContent=items.length+" članaka";
 const root=document.getElementById('cards');
 if(!items.length){root.innerHTML='<p class="empty">'+"U ovoj rubrici još nema autorskih članaka."+'</p>';}
 else root.innerHTML=items.map(n=>'<article class="card"><div class="card-body"><span class="meta">'+esc(n.tag)+'</span><h3>'+esc(n.t)+'</h3><p>'+esc(n.s)+'</p><a href="'+esc(n.href)+'">'+"Pročitaj više →"+'</a></div></article>').join('');
-</script></body></html>
+</script><script src="/analytics-consent.js" defer></script></body></html>

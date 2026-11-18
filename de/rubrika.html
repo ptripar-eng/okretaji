@@ -29,4 +29,4 @@ document.getElementById('count').textContent=items.length+" Artikel";
 const root=document.getElementById('cards');
 if(!items.length){root.innerHTML='<p class="empty">'+"In dieser Rubrik gibt es noch keine Autorenartikel."+'</p>';}
 else root.innerHTML=items.map(n=>'<article class="card"><div class="card-body"><span class="meta">'+esc(n.tag)+'</span><h3>'+esc(n.t)+'</h3><p>'+esc(n.s)+'</p><a href="'+esc(n.href)+'">'+"Mehr lesen →"+'</a></div></article>').join('');
-</script></body></html>
+</script><script src="/analytics-consent.js" defer></script></body></html>
