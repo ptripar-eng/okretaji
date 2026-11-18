@@ -1,0 +1,44 @@
+name: Jedinstvena analitika uz privolu
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/analytics-consent.yml'
+      - 'scripts/ensure_analytics.py'
+      - 'analytics-consent.js'
+      - '**/*.html'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: okretaji-analytics-consent-main
+  cancel-in-progress: false
+
+jobs:
+  ensure-consent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout website
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply consent tracking to every HTML page
+        run: python3 scripts/ensure_analytics.py
+
+      - name: Test all HTML pages
+        run: python3 scripts/ensure_analytics.py --check
+
+      - name: Commit sitewide fix (only when necessary)
+        run: |
+          if ! git diff --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A -- '*.html'
+            git commit -m "Fix consent-based analytics on all website pages"
+            git push origin HEAD:main
+          else
+            echo "All pages already use the shared consent analytics script."
+          fi
