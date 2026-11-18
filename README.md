@@ -117,3 +117,11 @@ Automatski hrvatski auto-moto i tehnološki portal
 - Windsor.ai trenutno vraća praznu listu povezanih računa za dostupni priključak, pa kroz njega nije moguće očitati GA4/Meta statistiku.
 - Pokušaj čitanja Meta Business Suite Insightsa u postojećem TinyFish profilu (18.11.2026.) **nije uspio**: sesija spremljena pod Facebook prijavom više ne autentificira Business Suite; preglednik završava na Facebook login zaslonu. Nije izvedena prijava, promjena računa ni objava. Da bi se očitali organski rezultati potrebno je samo ponovno potvrditi prijavu u tom profilu (ne slati lozinku u chat) ili izvesti nov, isključivo čitajući GitHub Actions postupak korištenjem postojećih prava nakon zasebnog pregleda.
 - Urednički nacrt o Mercedesovu turbu naknadno je ažuriran: novi izvještaji 18.11. navode Antonellijevu moguću odvojenu kaznu za **šesti ICE** (5 mjesta), nevezanu uz njegovu ugradnju novog turba. Prije odobrenja objave provjeriti službeni FIA dokument; članak i dalje **nije objavljen**.
+
+
+## Provjera pristupa i FB objava za angažman — 18.11.2026. (nastavak)
+- Ponovno potvrđen pristup GitHub repozitoriju `ptripar-eng/okretaji`; pročitan postojeći urednički nacrt `editorial/drafts/las-vegas-turbo-antonelli-russell-2026-11-18.md`. Pristup repozitoriju nije blokiran.
+- Ponovna provjera Windsor.ai `get_connectors` vratila je praznu listu: **0 računa iz te veze**. Time nisu dobiveni GA4 ili Meta organski podaci; **ne zaključivati da sam GA4/Meta nije postavljen niti da nema posjeta**.
+- Uspoređena današnja F1 objava: Mercedesov novi turbo za Antonellija bez kazne za turbo; Russell bi za novi turbo dobio pet mjesta kazne. Antonellijeva zasebna moguća kazna za ICE namjerno je izostavljena iz objave namijenjene publici jer ne treba riskirati nepotvrđenu tvrdnju.
+- Dodan neobjavljeni, samostalni Facebook tekst u `social/drafts/mercedes-las-vegas-facebook-2026-11-18.md` s preporučenom i kraćom varijantom, bez potrebe za fotografijom, povezivanjem s neobjavljenim člankom ili oglašavanjem. Cilj: provjeriti reakciju na uredničko pitanje, a ne dijeliti još jedan link.
+- **Javna objava nije provedena**; traži se izričito uredničko odobrenje odabrane verzije po postojećem pravilu. Nemojte smatrati nacrt objavljenim. Za stvarne metrike potreban je povezan izvor/ovlašteni izvještaj.
