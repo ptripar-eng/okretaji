@@ -708,7 +708,8 @@ function normalizeSearch(value){return value.normalize("NFD").replace(/[\u0300-\
 function findArticles(query){
  const words=normalizeSearch(query).trim().split(/\s+/).filter(Boolean);
  const items=[...new Map([...STORIES,...SEARCH_EXTRA].map(item=>[item.href,item])).values()];
- return items.filter(item=>words.every(word=>normalizeSearch([item.t,item.s,item.tag,item.href].join(" ")).includes(word)));
+ return items.filter(item=>words.every(word=>normalizeSearch([item.t,item.s,item.tag,item.href].join(" ")).includes(word)))
+  .sort((a,b)=>(Date.parse(b.published)||0)-(Date.parse(a.published)||0));
 }
 const searchInput=$("articleSearch"),allArticles=$("allArticles");
 let archiveOpen=false;
