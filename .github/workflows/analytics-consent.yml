@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/analytics-consent.yml'
       - 'scripts/ensure_analytics.py'
+      - 'scripts/sync_editorial_index.py'
+      - 'sitemap.xml'
       - 'analytics-consent.js'
       - '**/*.html'
   workflow_dispatch:
@@ -27,6 +29,12 @@ jobs:
 
       - name: Apply consent tracking to every HTML page
         run: python3 scripts/ensure_analytics.py
+
+      - name: Synchronize latest editorial articles and archive
+        run: python3 scripts/sync_editorial_index.py
+
+      - name: Test automatic editorial archive
+        run: python3 scripts/sync_editorial_index.py --check
 
       - name: Test all HTML pages
         run: python3 scripts/ensure_analytics.py --check
