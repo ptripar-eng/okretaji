@@ -1,0 +1,24 @@
+name: Provjera poveznica za organske kampanje
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/utm_links.py'
+      - '.github/workflows/utm-link-check.yml'
+  pull_request:
+    paths:
+      - 'scripts/utm_links.py'
+      - '.github/workflows/utm-link-check.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  self-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate safe UTM attribution URLs
+        run: python3 scripts/utm_links.py --self-test
