@@ -1,0 +1,40 @@
+name: Okretaji — stvarni kadrovi, urednički Reel (bez objave)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/real-footage-reel-preview.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-unpublished-reel:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install video tooling
+        run: |
+          python -m pip install Pillow==11.3.0
+          ffmpeg -version | head -n 1
+      - name: Verify licensed source footage and build real action Reel
+        run: python scripts/build_real_footage_reel.py
+      - name: Ensure final MP4 and QA files exist
+        run: |
+          test -s build/deliverables/okretaji_moto_guma_stvarne_snimke_1080x1920.mp4
+          test -s build/deliverables/okretaji_moto_guma_naslovnica.jpg
+          test -s build/deliverables/okretaji_stvarni_kadrovi_kontrola.jpg
+          ffprobe -v error -show_entries format=duration,size -of default=noprint_wrappers=1 build/deliverables/okretaji_moto_guma_stvarne_snimke_1080x1920.mp4
+      - name: Upload only as workflow artifact (never auto-publish)
+        uses: actions/upload-artifact@v4
+        with:
+          name: okretaji-unpublished-real-motorcycle-reel
+          path: build/deliverables/
+          retention-days: 30
+          if-no-files-found: error
