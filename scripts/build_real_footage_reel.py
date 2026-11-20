@@ -132,13 +132,13 @@ def overlay_png(index: int, title: str, subtitle: str, eyebrow: str) -> Path:
     return path
 
 
-def encode_segment(index: int, clip: Path, overlay: Path, offset: float, seconds: float) -> Path:
+def encode_segment(index: int, clip: Path, overlay: Path, offset: float, seconds: float, framing: float) -> Path:
     dest = WORK / f"segment_{index:02d}.mp4"
     fx = (
         "fps=24,"
         "scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,"
-        "crop=1080:1920,"
-        "eq=contrast=1.08:saturation=1.10:brightness=-0.015,"
+        f"crop=1080:1920:(in_w-out_w)*{framing:.2f}:0,"
+        "eq=contrast=1.06:saturation=1.12:brightness=0.025:gamma=1.08,"
         "format=yuv420p"
     )
     # Text appears over actual moving footage; fade over first 0.12 s.
@@ -197,7 +197,7 @@ def main() -> None:
     segments = []
     for i, (name, duration, offset, title, subtitle, eyebrow) in enumerate(CLIPS, 1):
         img = overlay_png(i, title, subtitle, eyebrow)
-        segments.append(encode_segment(i, source[name], img, offset, duration))
+        segments.append(encode_segment(i, source[name], img, offset, duration, 0.28 if name == "wheel" else 0.50))
 
     filelist = WORK / "concat.txt"
     filelist.write_text(
