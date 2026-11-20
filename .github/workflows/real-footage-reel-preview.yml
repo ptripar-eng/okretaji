@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/real-footage-reel-preview.yml'
+      - 'scripts/build_real_footage_reel.py'
   workflow_dispatch:
 
 permissions:
