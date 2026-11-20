@@ -55,9 +55,9 @@ def run(*args: str) -> None:
     subprocess.run([str(x) for x in args], check=True)
 
 
-def download_asset(url: str, name: str) -> Path:
+def download_asset(url: str, name: str, min_bytes: int = 250_000) -> Path:
     dest = WORK / name
-    if dest.is_file() and dest.stat().st_size > 250_000:
+    if dest.is_file() and dest.stat().st_size > min_bytes:
         return dest
     for attempt in range(3):
         try:
@@ -67,7 +67,7 @@ def download_asset(url: str, name: str) -> Path:
                     raise ValueError(f"HTTP {r.status} for {name}")
                 while chunk := r.read(1 << 20):
                     out.write(chunk)
-            if dest.stat().st_size < 250_000:
+            if dest.stat().st_size < min_bytes:
                 raise ValueError(f"Unexpectedly small asset {name}: {dest.stat().st_size}")
             return dest
         except Exception as exc:
@@ -209,8 +209,8 @@ def main() -> None:
         "-c", "copy", "-movflags", "+faststart", str(silent))
 
     # Real motorcycles recorded by Mixkit, not synthetic simulated sounds.
-    rev = download_asset(SOUND["rev"][0], "mixkit_real_motorcycle_rev.wav")
-    passing = download_asset(SOUND["pass"][0], "mixkit_real_bike_pass.wav")
+    rev = download_asset(SOUND["rev"][0], "mixkit_real_motorcycle_rev.wav", 10_000)
+    passing = download_asset(SOUND["pass"][0], "mixkit_real_bike_pass.wav", 10_000)
     final = OUT / "okretaji_moto_guma_stvarne_snimke_1080x1920.mp4"
     run(
         "ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
