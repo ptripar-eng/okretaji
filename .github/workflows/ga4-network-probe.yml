@@ -1,9 +1,6 @@
 name: On-demand GA4 real network probe
 
 on:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/ga4-network-probe.yml']
   workflow_dispatch:
 
 permissions:
