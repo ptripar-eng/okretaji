@@ -295,3 +295,35 @@ Automatski hrvatski auto-moto i tehnološki portal
 - Jučer 20.11. nije potvrđena javna urednička objava. Današnji prioritet: provjereni F1 tekst umjesto prepričavanja jučerašnjeg FP1; nakon toga eventualni rezultat MotoGP sprinta. **Nije objavljeno na webu/Meta kanalima** jer je prema trajnom uredničkom pravilu potrebno izričito odobrenje konačne verzije. Za objavljivanje su nužni odobren tekst i fotografija s pravima, potom ugradnja u HTML, index.html i sitemap.xml te produkcijska provjera.
 
 - **Urednička korekcija 21.11.2026.:** na urednikov zahtjev iz nacrta `editorial/drafts/las-vegas-antonelli-verstappen-kvalifikacije-2026-11-21.md` izbačena generička završna rečenica s oznakom „Za pamćenje”. Instagram carousel i opis prepisani u sažetiji, prirodniji hrvatski novinarski stil. Trajno pravilo: izbjegavati metatekst („za pamćenje”, „ključna poruka”, generičke pouke) i fraze koje zvuče strojno; završavati konkretnom informacijom ili novinarskom poantom. Vizuali za IG nisu izrađeni, objava nije provedena.
+
+## Kontrola rasta — 21. studenoga 2026. (juče 20.11.; od 19.11.)
+
+**Izvor i vrijeme provjere:** Windsor.ai povezani računi GA4 `okretaji.com` (property 560973418), Instagram `@okretaji` i Facebook Organic Page `Okretaji`. Izravni upiti 21.11.2026. za kalendarske dane 19. i 20.11.2026.; za GA4 dodatno 18.11. radi usporedbe. Dnevne vrijednosti mogu naknadno biti revidirane. Ne miješati GA4 sesije, GA4 page_view, Instagram preglede medija i Facebook impresije.
+
+| Metrika | 19.11.2026. | 20.11.2026. | Ukupno 19.–20.11. / napomena |
+|---|---:|---:|---|
+| GA4 sesije | nema vraćenog retka | **4** | **4 evidentirane** (19.11. bez podataka, nije dokaz nule) |
+| GA4 pregledi stranica | nema vraćenog retka | **21** | **21 evidentiran** |
+| GA4 aktivni korisnici | nema retka | **2** | Nije zbroj jedinstvenih korisnika |
+| GA4 engaged sessions | nema retka | **2** | **2 evidentirane** |
+| GA4 google / organic sesije | nema retka | **3** | **3 evidentirane** |
+| GA4 direct / none sesije | nema retka | **1** | **1 evidentirana** |
+| IG dnevni doseg (računi) | 54 | **26** | 80 zbrojenih dnevnih dosega, **nije** 80 jedinstvenih osoba |
+| IG dnevni prikazi (account Views) | 77 | **39** | **116** prikaza, ne miješati s media_views |
+| IG angažirani računi | 3 | **2** | 5 zbrojenih dnevnih angažmana, ne jedinstvenih |
+| IG novi pratitelji (follower_count_1d) | 2 | **0** | 2 nova prema dnevnom polju; neto promjena nije potvrđena |
+| FB impresije | **226** | **24** | **250** (sve organski, plaćeno 0) |
+| FB dnevni jedinstveni prikazani računi | **216** | **21** | Zbroj 237 nije dvodnevni unique reach |
+| FB angažmani objava | 5 | **0** | **5** |
+| FB dnevni novi pratitelji | 0 | **0** | **0** |
+| FB stranica: ukupno lajkova / follows | 8 / 8 | **8 / 8** | Bez promjene |
+
+**Ključni nalaz: GA4 mjerenje članaka nakon ispravka sada je potvrđeno za 20.11.2026.** Windsor.ai GA4 vraća 21 događaj `page_view`, 4 `session_start`, 9 `scroll` i 22 `user_engagement`. Putanje stranica daju 21 pregled; među hrvatskim člancima pojedinačno **`/dva-nova-bolida-iz-kine.html` 1 pregled** i **`/f1-brazil-2026-verstappen-21-drugi-norris-mercedes.html` 1 pregled**. Naslovnica `/` ima 7 pregleda; `/o-nama.html` 3, `/rubrika.html` 2, `/kontakt.html` 1, a ostalo uključuje EN/DE stranice. Ovo **potvrđuje da se mjere otvaranja hrvatskih članaka**, ali ne dokazuje da je baš određeni testni klik poslije ispravka zabilježen ili da su sve sesije ispravno atribuirane. GA4 za 19.11. i dalje ne vraća redak; posljednji stariji dostupni datum je 18.11. (2 sesije i 2 pregleda). **Ne prikazivati 19.11. kao dokazano 0**. Za 20.11. GA4 izvor sesije: **3 google / organic**, **1 (direct) / (none)**; sve 4 sesije i svih 21 pregled iz zemlje Croatia. Landing-page upit vraća 4 sesije s ulazom `/` — dakle **nema dokaza da su Google posjete izravno sletjele na članke**, i ne treba pripisivati dva članka organskom Google prometu bez spajanja izvora i putanje.
+
+**Instagram — razlika account vs media:** `reach` 26 (20.11.), `views` 39 (20.11.); prethodni dan 54 / 77. Jedini Reel pronađen za period 19.–20.11. je [MotoGP/Pirelli](https://www.instagram.com/reel/Df7ZEWlsDrt/), objavljen 19.11. u 15:22 UTC: **91 kumulativni media_views** i **75 kumulativni media_reach** na dan provjere, ne jučerašnji pregledi; `media_reel_skip_rate=0.795` (~79,5 %), `media_reel_avg_watch_time=3824` u jedinici koju konektor ne objašnjava (ne pretvarati u sekunde bez potvrde). Dnevni IG reach follower/nonfollower: 19.11. 14/40, 20.11. **4/22**; 20.11. 22 od 26 dosegnutih nisu pratitelji. IG `followers_count` na dan provjere **329**, naspram **331** iz prethodne provjere (pad 2, iako dnevno polje novih pratitelja ne iskazuje odlaske); IG `follows_count=423`, `media_count=34`. IG `audience_country_size` za HR **44**, isto kao prethodno; to je **demografska struktura pratitelja, ne dnevni doseg hrvatskih korisnika**. Od 329 pratitelja oko 13,4 % označeno HR, uz napomenu da IG demografska distribucija ne mora uključivati svakog pratitelja i da nije podatak o kvaliteti posjeta portalu.
+
+**Facebook:** 20.11. 24 impresije, 21 unique, 0 interakcija; 19.11. Windsor.ai sada vraća **226** impresija i **216** unique, naspram ranijeg očitanja **224 / 214** — povijesna korekcija za +2, ne dodatni novi doseg. Svi prikazi organski, plaćeni 0. Dnevni pad impresija 226 → 24 i IG reach 54 → 26 ne smije se tumačiti kao gubitak hrvatske publike bez duljeg niza i uvida u sadržaj.
+
+**Urednički zaključak i sljedeće provjere:** GA4 prvi put potvrđuje stvarne prikaze dvaju hrvatskih članaka i 3 organske Google sesije, ali obujam je premalen za zaključke o uspjehu SEO-a. Prioritet: pratiti po danima `page_path` + `screen_page_views`, zasebno `session_source_medium` + `sessions`, te provjeriti zašto je 19.11. prazan (retencija, aktivacija/consent ili odgođena obrada) i jesu li ispravno postavljeni UTM-ovi FB/IG linkova. Budući da je 20.11. samo 1 direct sesija i 0 potvrđenih FB/IG referral sesija, društveni prikazi još nisu dokaz dolaska na portal. IG Reel s 79,5 % preskakanja opravdava zamjenu generičke animirane grafike stvarnim kadrovima i jačim uvodom; pratiti media skip rate i watch time, ne samo media_views. Ne objavljivati niti mijenjati produkcijske članke ili društvene objave bez uredničkog odobrenja; 0 € oglasa.
+
+**Status:** provjera provedena, README dopunjen 21.11.2026.; nisu mijenjani produkcijski članci, Instagram ni Facebook.
