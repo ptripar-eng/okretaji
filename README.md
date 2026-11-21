@@ -350,3 +350,10 @@ Automatski hrvatski auto-moto i tehnološki portal
 - `social/queue.json`: upisane Meta potvrde i kanali u `published_to`, postavljen `approved:false` i `status:published` radi sprečavanja dupliranja; ne pokretati GitHubov postupak objave ponovno za isti slug.
 - Web-članak naknadno stilski dorađen: uklonjen metatekst koji urednički komentira vlastitu provjeru činjenica i općenit završetak. Prije budućih objava uvijek dovršiti novinarski stil i fotografije; urednik izričito ne želi generičke fraze poput „Za pamćenje”.
 - Buduća nadogradnja: izraditi stvarni 5-slajdni carousel sa samostalno izrađenim/licenciranim slikama i provjeriti treba li ga uopće dodatno objavljivati (ne duplicirati ovu objavu bez nove uredničke odluke). MotoGP Portugal sprint je sljedeća potencijalna vijest nakon službenih rezultata, nije sada objavljen.
+
+
+## Ispravak Instagram objave — 21.11.2026., nakon korisnikova zahtjeva
+- Urednik je izričito zatražio brisanje pogrešne pojedinačne Instagram objave i objavu dogovorenog višeslajdnog carousela umjesto ponovljene arhivske fotografije Verstappena pod naslovom o Antonelliju.
+- Generirano je pet novih 4:5 grafičkih slajdova s tekstovima o Antonellijevu vremenu, kazni i startnom poretku. **Nisu objavljeni**: fotografije su zasad u privremenom radnom okruženju, a Instagram API za carousel zahtijeva javno dostupne JPEG URL-ove.
+- Pokušaj trajnog brisanja Instagram medija `18454232074135225` putem Windsor.ai `instagram.delete_media` **nije uspio**: API je vratio da media ID ne postoji ili ne pripada povezanom računu `17841415305333499`. Upit `instagram.media_info` za 20.–22.11. vratio je 0 zapisa, tako da stvarni ID nije potvrđen. **Ne tvrditi da je stara objava obrisana.**
+- Ne objavljivati još jedan nasumični pojedinačni post, ne koristiti istu fotografiju pod pogrešnim naslovom. Prije sljedećeg pokušaja utvrditi pravi Instagram media ID ili pristup Business Suiteu; za carousel javno hostati pet provjerenih grafika ili napraviti potpuno animirani Reel prema dogovoru.
