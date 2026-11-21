@@ -9,8 +9,22 @@
       "summary": "Antonelli najbrži u Las Vegasu, ali Verstappen starta prvi nakon pet mjesta kazne. Objašnjavamo kaznu i ulogu zavjetrine.",
       "facebook": "Antonelli je odvozio najbrži krug kvalifikacija u Las Vegasu. Verstappen je bio sporiji 0,258 sekundi — ali starta prvi.\n\nAntonelli zbog kazne za pogonsku jedinicu pada na šesto mjesto, a Russell se probija u prvi startni red uz Maxa. Mercedes ima brzinu, no u Las Vegasu jedan brzi krug nije cijela priča.\n\nZašto se to dogodilo: https://okretaji.com/f1-las-vegas-antonelli-verstappen-kvalifikacije-2026.html\n\n#Formula1 #LasVegasGP #Okretaji",
       "instagram": "Antonelli je bio brži od Verstappena za 0,258 sekundi. I svejedno neće startati prvi.\n\nKazna od pet mjesta šalje ga na šestu poziciju, a Verstappenu otvara pole position.\n\nMercedes je pokazao brzinu, ali u Las Vegasu računica pogonskih jedinica može biti jednako važna kao jedan savršen krug.\n\nHoće li Antonelli uspjeti nadoknaditi izgubljeno u utrci?\n\nCijela analiza na Okretaji.com – poveznica u profilu.\n\n#F1 #LasVegasGP #Formula1 #MercedesF1 #Okretaji",
-      "approved": true,
-      "status": "approved"
+      "approved": false,
+      "status": "published",
+      "published_to": {
+        "instagram": {
+          "id": "18454232074135225",
+          "at": "2026-11-21",
+          "format": "single_image",
+          "note": "Windsor.ai create_image_post; nije carousel"
+        },
+        "facebook": {
+          "id": "1430056876857240_122112763941539294",
+          "at": "2026-11-21",
+          "format": "link_post",
+          "note": "Windsor.ai create_post"
+        }
+      }
     },
     {
       "article": "stoner-marquez-zavoji.html",
