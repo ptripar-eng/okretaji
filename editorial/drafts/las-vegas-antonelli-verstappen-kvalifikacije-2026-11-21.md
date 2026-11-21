@@ -35,7 +35,6 @@ Na štoperici — Antonelli. U borbi za poziciju na startu — Verstappen. A Mer
 
 To je i razlog zbog kojeg ne treba unaprijed proglasiti Verstappena favoritom samo na temelju pole positiona. Antonelli je dokazao da može odvoziti najbrži krug, a Russell starta pokraj Maxa. Nedjeljna priča zato nije tek lov šestoplasiranog na vodećega: to je ogled između čiste brzine, položaja na stazi, guma i odluka koje su momčadi donosile tjednima prije Las Vegasa.
 
-**Za pamćenje:** u modernoj Formuli 1 možete pobijediti u kvalifikacijama i svejedno izgubiti pet mjesta prije nego što utrka uopće počne.
 
 ---
 
@@ -57,11 +56,20 @@ Pitanje za utrku: može li Antonelli s šestog mjesta uhvatiti Verstappena?
 
 [Poveznica nakon objave članka]
 
-## Instagram carousel — nacrt, vizuali nisu izrađeni
-1. „BIO JE NAJBRŽI. STARTA ŠESTI.”
-2. „Antonelli 1:33.893 — Verstappen +0,258 s.”
-3. „Pet mjesta kazne za pogonsku jedinicu.”
-4. „Max dobiva pole, Russell kreće drugi.”
-5. „Kako zavjetrina mijenja krug u Las Vegasu? Više na Okretaji.com.”
+## Instagram carousel — urednički nacrt, vizuali nisu izrađeni
+1. „NAJBRŽI U KVALIFIKACIJAMA. ALI NE I NA POLEU.”
+2. „Antonelli: 1:33.893. Verstappen: +0,258 s.”
+3. „Pet mjesta kazne spušta Antonellija na šesto mjesto.”
+4. „Verstappen prvi, Russell uz njega. Mercedesova brzina nije nestala — samo je startni raspored drukčiji.”
+5. „U Las Vegasu nije dovoljno imati najbrži krug.”
+
+### Instagram opis (hrvatski)
+Antonelli je bio brži od Verstappena za 0,258 sekundi. I svejedno neće startati prvi.
+
+Kazna od pet mjesta šalje ga na šestu poziciju, a Verstappenu otvara pole position. Mercedes je pokazao brzinu, ali u Las Vegasu računica pogonskih jedinica može biti jednako važna kao jedan savršen krug.
+
+Hoće li Antonelli uspjeti nadoknaditi izgubljeno u utrci?
+
+#F1 #LasVegasGP #Formula1 #MercedesF1 #Okretaji
 
 Ne objavljivati bez odobrenja urednika i gotovih provjerenih vizuala.
