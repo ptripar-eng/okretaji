@@ -1,4 +1,4 @@
-# Márquez je bio krug i pol od naslova. Onda je u Portimãu ostao bez svega.
+# Márquez je bio krug i pol od naslova.
 
 **Urednički nacrt za Okretaji.com | 21. studenoga 2026. | MotoGP**
 **Status:** spremno za završni urednički pregled, nije javno objavljeno
