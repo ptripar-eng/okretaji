@@ -401,3 +401,9 @@ Automatski hrvatski auto-moto i tehnološki portal
 - Za daljnje objavljivanje sadržaja prioritet ima ovaj vremenski osjetljiv članak, a ne ponovno korištenje starih fotografija pod pogrešnim naslovima. Nakon odobrenja potrebno je napraviti javni HTML, naslovnicu, sitemap, provjeru produkcije i tek onda Meta objave. Oprez: sedmodnevni eksperiment Reelsa 8–12 s ostaje aktivan urednički plan, ne obećanje dohvata.
 
 - **Urednička korekcija 21.11.2026. navečer:** naslov nacrta portugalskog MotoGP sprinta skraćen na „Márquez je bio krug i pol od naslova.” po urednikovoj izričitoj uputi. Druga rečenica uklonjena iz naslova; tekst ostaje neobjavljen nacrt.
+
+
+## MotoGP Reel — 21.11.2026. 20:03 UTC
+- Na urednikov upit „Gdje je video” dovršen je i tehnički provjeren vertikalni Reel **9 sekundi, 720×1280, H.264/AAC**, lokalno `/mnt/data/Okretaji_Marquez_Portimao_Reel_9s_final.mp4` (oko 1,1 MB). Sadrži tri brza segmenta (Márquez blizu naslova, pad bez bodova, pobjeda Bezzecchija i +55 bodova), blagi pomak kadra te originalni sintetizirani zvuk. Potvrđena reprodukcija ffprobe i potpuno dekodiranje.
+- **Važno:** podloga je generirana AI ilustracija prepoznatljivog vozača #93 u Ducati opremi, nije autentična snimka subotnje utrke niti pada; vidljiva trajna oznaka „ILUSTRACIJA • NIJE SNIMKA PADA”. Zato je ovo kratki informativni Reel s ilustracijom, a ne arhivska foto/video dokumentacija.
+- Video nije objavljen na Facebooku/Instagramu; spreman je za ručni pregled i objavu. Za iduću iteraciju bolje koristiti stvarne licencirane fotografije, jer urednik preferira stvarne vozače i originalni sportski materijal.
