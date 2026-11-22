@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T07:01+00:00",
+ "updated": "2026-11-22T19:48+00:00",
  "season": "2026",
  "round": 21,
  "rounds": 23,
@@ -29,6 +29,12 @@
  },
  "winners": [
   {
+   "season": "2026",
+   "driver": "Max Verstappen",
+   "team": "Red Bull",
+   "grid": "1"
+  },
+  {
    "season": "2025",
    "driver": "Max Verstappen",
    "team": "Red Bull",
@@ -53,7 +59,7 @@
    "driver": "Andrea Kimi Antonelli",
    "code": "ANT",
    "team": "Mercedes",
-   "points": 390.0,
+   "points": 402.0,
    "wins": 9
   },
   {
@@ -61,47 +67,47 @@
    "driver": "Max Verstappen",
    "code": "VER",
    "team": "Red Bull",
-   "points": 279.0,
-   "wins": 3
+   "points": 304.0,
+   "wins": 4
   },
   {
    "pos": 3,
-   "driver": "George Russell",
-   "code": "RUS",
-   "team": "Mercedes",
-   "points": 262.0,
-   "wins": 3
-  },
-  {
-   "pos": 4,
    "driver": "Lewis Hamilton",
    "code": "HAM",
    "team": "Ferrari",
-   "points": 261.0,
+   "points": 267.0,
    "wins": 1
+  },
+  {
+   "pos": 4,
+   "driver": "George Russell",
+   "code": "RUS",
+   "team": "Mercedes",
+   "points": 264.0,
+   "wins": 3
   },
   {
    "pos": 5,
-   "driver": "Charles Leclerc",
-   "code": "LEC",
-   "team": "Ferrari",
-   "points": 249.0,
-   "wins": 1
-  },
-  {
-   "pos": 6,
    "driver": "Lando Norris",
    "code": "NOR",
    "team": "McLaren",
-   "points": 246.0,
+   "points": 264.0,
    "wins": 3
+  },
+  {
+   "pos": 6,
+   "driver": "Charles Leclerc",
+   "code": "LEC",
+   "team": "Ferrari",
+   "points": 250.0,
+   "wins": 1
   },
   {
    "pos": 7,
    "driver": "Oscar Piastri",
    "code": "PIA",
    "team": "McLaren",
-   "points": 152.0,
+   "points": 167.0,
    "wins": 0
   },
   {
@@ -125,7 +131,7 @@
    "driver": "Pierre Gasly",
    "code": "GAS",
    "team": "Alpine F1 Team",
-   "points": 42.0,
+   "points": 52.0,
    "wins": 0
   }
  ],
