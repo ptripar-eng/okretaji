@@ -431,3 +431,11 @@ Izvor: izravna očitanja Windsor.ai povezanih računa GA4 `okretaji.com` (proper
 3. Sadržajno se pokazuje da Márquez Reel (165 medijskih pregleda, skip 62,5%) zadržava gledatelje bolje od Pirellija (92, skip 79,7%); no uzorak i vremena objave nisu usporedivi, pa testirati stvarne snimke i snažan početak, bez obećanja viralnosti.
 4. Ponovno očitati GA4 za 19.11. i razjasniti nedostajući dan; posebno pratiti hrvatske članke, `page_view`, Google organic i izvore sesija. Odvojiti FB impresije, IG doseg, IG dnevne `views`, IG `media_views`, GA4 sesije i GA4 preglede stranica.
 5. Ovaj zapis **ne mijenja produkcijske članke**, ne objavljuje na webu/Meta i ne koristi plaćene oglase.
+
+
+### 22.11.2026. — Hitni kreativni paket: Márquez MotoGP naslov
+- Korisnik javlja da je Marc Márquez završio deveti u GP Portugala i osvojio naslov prvaka 2026. Službenu potvrdu konačnog plasmana nije bilo moguće neovisno dohvatiti u trenutku izrade; prije javne objave urednički potvrditi konačne rezultate.
+- Izrađena AI ilustrirana vertikalna naslovnica s natpisom „Deveti u utrci. Prvi na svijetu.”, red Ducati i oznakom Okretaji.com; uz objavu označiti **AI ilustracija**, nije autentična fotografija slavlja.
+- Izrađen vertikalni Reel 720×1280, 7 sekundi, MP4/H.264/AAC, s blagom animacijom i originalnim zvučnim efektom, bez tuđih snimki/glazbe. Lokalni artefakt: `okretaji_marquez_2026_REEL_FINAL.mp4` (nije automatski prenesen na Meta).
+- Instagram/Facebook tekst: „Deveti u utrci. Prvi na svijetu. Marc Márquez nije morao pobijediti u Portugalu. Deveto mjesto bilo je dovoljno za naslov svjetskog prvaka MotoGP-a 2026. Jučer pad, danas slavlje. Broj 93 ponovno je na vrhu svijeta! Je li Márquez najveći svih vremena ili je Rossi za vas i dalje broj jedan?”
+- Ne tvrditi da je objava stvarno objavljena na društvenim mrežama bez potvrde API-ja.
