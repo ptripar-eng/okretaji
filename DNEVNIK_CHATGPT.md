@@ -1,3 +1,11 @@
+## 2026-11-23 — Facebook objava i Instagram paket za CVT
+
+- Nakon korisnikova OK na prikazani tekst objavljena Facebook objava s poveznicom na automatik-ili-cvt.html. API vratio ID 1430056876857240_122113810983539294. Javni prikaz nije zasebno provjeren.
+- Izrađen originalan Reel: 12 s, 1080x1920, 30 fps, H.264/AAC. Animacija okretaja AT/CVT i sintetizirani zvuk jasno označeni kao ilustracija, bez tuđih videosnimki ili glazbe. Službeni brand-logo.svg gore na videu, naslovnici i Storyju.
+- Datoteke: Okretaji_AT_CVT_Reel.mp4, Okretaji_AT_CVT_Naslovnica.jpg, Okretaji_AT_CVT_Story.jpg, Objave.txt; radna mapa /workspace/scratch/cfa721e4a75c/cvt-social/ s render.py i logo.svg.
+- Vizualno pregledana četiri kadra, ispravljeni prozirnost loga i preklapanje grafa s tekstom. ffprobe potvrdio format i trajanje; završni video cijeli dekodiran bez pogreške.
+- Instagram Reel i Story još nisu objavljeni. Story treba link naljepnicu na članak; URL i opis su u Objave.txt. README nije mijenjan.
+
 # Dnevnik ChatGPT/Codex
 
 ## 2026-11-23 — Objavljen članak o automatiku i CVT-u
