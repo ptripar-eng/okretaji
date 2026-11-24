@@ -1,3 +1,10 @@
+## 2026-11-24 — Izradena nova fotografska CVT naslovnica
+
+- Izradeni CVT-Foto-objava/compose_editorial.py i Okretaji_CVT_krupni_kadar.jpg (1080x1350): stvarna CC0 Aisin fotografija preko cijelog formata, gradijent radi citljivosti, naslov Zasto ne salta? i logo gore. Otvoren pregled; nisu mijenjani dijelovi mehanizma. Nova slika libfile_07fc69969c948191ae965fff4fe9b907; ranija slika nije zamijenjena.
+- Pronasao Bosch sluzbene CVT videozapise dp8lHBDFhpo i bwKKGdU0fjU. Prava za preradu tih videa nisu potvrdena. Nije preuzet ni izraden novi Reel. Ne predstavljati naslovnicu kao dovrsen video.
+- Bosch press prikaz CVT4EV preuzet u CVT-Bosch/Bosch-CVT-original.jpg; izvor https://www.bosch-presse.de/pressportal/de/en/continuously-variable-transmission-for-electric-light-commercial-vehicles-245640.html izricito dopusta press uporabu uz Picture: Bosch. To je sluzbeni tehnicki prikaz CVT4EV, nije fotografija klasicnog CVT-a niti dozvola za druge Bosch videe. Nije upotrijebljen u isporucenoj naslovnici.
+- Nema objave na mreze ni promjene weba. Otvoreno: pronaci snimku s potvrdjenim pravom prerade za Reel. Izvorne i ranije odbacene animacije nisu koristene.
+
 ## 2026-11-24 — Vizualni smjer prema primjerima Interesting Engineeringa
 
 - Na korisnikov zahtjev pregledani IE primjeri prozirnog mlaznog motora (Warped Perception), Wankel motora i medijski paket. Pregled ogranicen na web primjere; nije obavljen pregled cijelog Instagram profila. Izvori: https://interestingengineering.com/how-to/youtuber-builds-transparent-jet-engine-to-show-how-it-works i https://interestingengineering.com/videos/explore-a-wankel-engine-in-this-cool-see-through-video-series .
