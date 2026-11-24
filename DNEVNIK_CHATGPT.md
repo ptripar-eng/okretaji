@@ -1,3 +1,13 @@
+## 2026-11-24 — CVT Reel objavljen na Facebooku i Instagramu
+
+- Korisnik izricito odobrio privremeni prijenos videa/naslovnice na Litterbox (12 h) nakon sto je objasnjen javni pristup i ranije automatsko odbijanje. Prenesen odobreni v4 video i naslovnica. Ne predstavljati ranije odbijanje kao uspjesan prijenos.
+- Odobren opis s dijakriticima: Toyotin Direct Shift-CVT krece preko zupcanika, a onda pogon preuzima celicni remen i dalje nema klasicnog saltanja. Prazan red, Animacija: Toyota Motor Corporation. Bez dodatnih hashtagova i suvisnih recenica.
+- Facebook create_reel potvrdio objavu: video 1194925363481319, post 1430056876857240_122114231289539294. Poveznica https://www.facebook.com/reel/1194925363481319/ . Naknadni get_data s poljima id/description/video_permalink_url i rasponom 1.–25.11. potvrdio tocan opis i jednu CVT videoobjavu u vracenih 20 videa. Ne objavljivati ponovno.
+- Instagram prvi create_video_post sa zasebnom naslovnicom izricito vratio container ERROR (nije objavljeno). Uzrok nije pouzdano utvrden. Provjeren javni video URL (HTTP 206, video/mp4) i format izvornika (H264,1080x1920,30fps,AAC mono,20s). Napravljen dodatni tehnicki izvoz Okretaji_CVT_Instagram.mp4 sa stereo AAC, SAR1, bt709 i H264 level4.1; vizualni sadrzaj isti, naslovnica prvi kadar (thumb_offset 0).
+- Drugi Instagram create_video_post potvrdio objavu, media 18123212189281548, share_to_feed true. Naknadni read media_id/media_permalink potvrdio https://www.instagram.com/reel/DgIsNpPMTRu/ . Jedna uspjesna create akcija po mrezi; ne ponavljati objavljivanje. Globalna postavka crosspostinga nije promijenjena niti potvrdjena u UI-u.
+- Vazno za buduce provjere: uski raspon i kombinacija timestamp/created_time polja vracali su prazne rezultate cak nakon potvrdene objave. Siri raspon i jednostavnija polja vratili objavljeni sadrzaj. Prazan analiticki rezultat nije dokaz da objava ne postoji.
+- Lokalno CVT-Toyota-Reel/upload_for_publishing.py (prima pojedinacna imena datoteka), publishing_urls.json (privremene poveznice), Okretaji_CVT_Instagram.mp4 i Objava_status.txt. Library v4 izvornih medija nije mijenjan; dodatni izvoz sluzi platformskom prijenosu. Web nije mijenjan, Story nije objavljen. Stari Facebook clanak s poveznicom ostaje zasebna ranija objava.
+
 ## 2026-11-24 — Zahtjev objavi sve; prijenos medija blokiran
 
 - Korisnik izricito trazio trenutnu objavu CVT Reela na Instagram/Facebook s njegovom zadnjom recenicom. Windsor potvrdio oba racuna i postojece akcije create_video_post / create_reel. Nema danasnjih objava u dostupnim get_data rezultatima; Facebook list_scheduled_posts vratio nema zakazanih objava. force_refresh nije dopusten trial planom pa rezultati nisu jamstvo potpunog aktualnog stanja.
