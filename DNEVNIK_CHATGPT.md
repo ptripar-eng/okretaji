@@ -1,3 +1,10 @@
+## 2026-11-24 — Priprema CVT objave za 19:30; ceka prijavu
+
+- Korisnik odobrio zadnji video i trazio Instagram/Facebook u 19:30 uz izricitu zastitu od dupliciranja preko automatskog dijeljenja. Cilj 24.11.2026. 19:30 Europe/Zagreb, 18:30 UTC.
+- Windsor potvrdio povezane Instagram 17841415305333499 (@okretaji) i Facebook Page 1430056876857240 (Okretaji). list_scheduled_posts vratio nema zakazanih Facebook objava. To nije potvrda Instagram reda ili postavki crosspostinga.
+- Pokusaj citanja Business Suite Plannera kroz prethodno prijavljeni TinyFish pristup zavrsio na prijavi. Automatsko dijeljenje nije provjereno. Korisniku postavljeno konkretno pitanje za ponovno povezivanje; bez novih pokusaja prijave do odgovora.
+- Pripremljeni CVT-Toyota-Reel/Opis_1930.txt i Plan_1930.txt. Video v4 i naslovnica v4 ostaju odobreni; nema promjene medija. Nista nije zakazano niti objavljeno. Ne tvrditi suprotno. Windsor Instagram video i Facebook Reel akcije ne podrzavaju zakazivanje. Nije kreiran podsjetnik kao zamjena za zakazanu objavu.
+
 ## 2026-11-24 — Jasniji natpis CVT videa prema korisnikovoj uputi
 
 - Umjesto Ima prvu stavljen naslov KRECE ZUPCANICIMA. i prvi opis Kao i ostali mjenjaci. (u datotekama hrvatski dijakritici). Drugi opis Potom pogon preuzima celicni remen. Time se jasnije objasnjava prijelaz sa zupcanickog prijenosa na remen. Izricaj je korisnikov; ne generalizirati ga na svaki moguci tip prijenosa u strucnom tekstu.
