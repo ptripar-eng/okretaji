@@ -1,3 +1,10 @@
+## 2026-11-24 — Prerađen CVT Reel i vizuali
+
+- Trajna korisnikova uputa: na vizuale i video ne stavljati suvišne donje rečenice poput ilustrativni/sintetizirani i slične napomene; minimalan tekst. Potrebno objašnjenje ide u opis, bez lažnog predstavljanja prikaza kao stvarne snimke konkretnog auta.
+- Izrađena nova originalna animacija, 10 s: krupni planetarni sklop automatika pa CVT remenice s pomicanjem remena. Minimalni naslov, veći prikaz mehanizma, bez opisnih podnožja. Nova naslovnica Zašto ne šalta? i usklađen Story.
+- Lokalno CVT-Social-v2/render.cs te Okretaji_AT_CVT_Reel.mp4 i Okretaji_AT_CVT_Naslovnica.jpg. Pregledana četiri kadra i naslovnica; cijeli završni video dekodiran bez pogreške. Originalno sintetizirani zvuk i pojednostavljen prikaz principa, bez tuđih videosnimki ili glazbe.
+- Postojeći Reel i naslovnica uspješno zamijenjeni istim Library ID-ovima, verzija 1; Story usklađen u istom predmetu. Stare poveznice otvaraju nove verzije. Nema objave na Instagramu ni promjene javnog članka u ovom zahvatu. Lokalni DNEVNIK_CHATGPT.md također dopunjen; README nije mijenjan.
+
 ## 2026-11-23 — Facebook objava i Instagram paket za CVT
 
 - Nakon korisnikova OK na prikazani tekst objavljena Facebook objava s poveznicom na automatik-ili-cvt.html. API vratio ID 1430056876857240_122113810983539294. Javni prikaz nije zasebno provjeren.
