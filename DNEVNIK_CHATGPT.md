@@ -1,3 +1,11 @@
+## 2026-11-24 — Odbačene CVT animacije; pripremljena stvarna fotografija
+
+- Korisnik ocijenio dosadašnje animacije nerealističnima i neprikladnima ozbiljnom portalu. Sve prethodne CVT animacije označiti kao ODBAČENE za objavu, iako tehnički dekodiraju bez greške. Tehnička ispravnost nije potvrda uredničke kvalitete. Ne nazivati takve radove spremnima za objavu.
+- Pregledani potencijalni izvori videozapisa; nije potvrđen dovoljno kvalitetan kandidat s jasnom dozvolom za preradu u Reel. Nije traženo dopuštenje autora niti poslana poruka. YouTube prikazi u članku ostaju odvojeni od prava na preuzimanje i preradu.
+- Pronađena stvarna fotografija Aisinova CVT-a s prijenosom za polazak: autor TTTNIS, Wikimedia Commons File:Aisin small torque capacity CVT with starting gear.jpg, 2997x3394, CC0. Fotografija preuzeta i otvorena. Izvor i licencija spremljeni u CVT-Foto-objava/Opis_i_izvor.txt. Fotografski dijelovi nisu mijenjani, fotografija skalirana u urednički okvir.
+- Pripremljena objava 1080x1350 s kratkim naslovom Automatik. Bez šaltanja. i logom gore. Datoteka Okretaji_CVT_stvarna_fotografija.jpg spremljena kao libfile_5271cdeeedf48191a41071673d9d0de6. Izvorna fotografija i compose.py ostaju lokalno u CVT-Foto-objava.
+- Nije objavljeno na Instagramu ili Facebooku; ranija Facebook poveznica na članak nije mijenjana. Ovaj korak je priprema fotografske alternative, ne novi Reel.
+
 ## 2026-11-24 — Nova prerada CVT videa i naslovnice
 
 - Po korisnikovoj primjedbi izrađen novi paket: softverski 3D prikaz metalnih remenica, segmentiranog remena i planetarnog sklopa uz promjenu kuta kamere. Sintetizirani zvuk prati prikaz; prvi kadar nova naslovnica. Video 10,8 s, 1080x1920, H.264/AAC. Nema donjih opisnih rečenica.
