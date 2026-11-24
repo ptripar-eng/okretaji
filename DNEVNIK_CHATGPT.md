@@ -1,3 +1,11 @@
+## 2026-11-24 — Márquez dokumentarna kompilacija: priprema i izvorna arhiva
+
+- Po korisnikovu OK krenuto u pripremu stvarne 35–40 s kompilacije od početaka do desetog ukupnog naslova. U editorial/marquez-deset-naslova-montaza.md spremljeni montažni raspored, kandidati i status svakog izvora; to nije gotov video.
+- Chrome cloud preglednikom pretražen Red Bull Content Pool: 65 video rezultata za Marc Marquez. Otvoren CP-V-39176 Newscut International / All In, 8:46, asset AAMKUWQ8NRRFIIP0MGUV. Preuzimanje i Licensing traže prijavu. Nije pregledan cijeli video ni preuzet preview; ne tvrditi da su dječji kadrovi/rivali već potvrđeni. Pronađeni i kandidati intervjua 2021/2022 i podcasta 2023.
+- MotoGP Help Center izričito ograničava uporabu videa izvan službenih kanala. Nisam preuzeo njihov dokumentarac niti tražio prava porukom. Za nastavak treba prijava/uvjeti Red Bull materijala ili drugi konkretno dopušteni izvornici.
+- Aktualne službene MotoGP/Ducati objave navode P8 u Portugalu 2026.; raniji korisnikov P9 i prethodne naše objave nesuglasni. Novi video ne smije ponavljati P9. Nema tvrdnje da su ranije objave ovim ispravljene.
+- Ništa nije objavljeno na mrežama, nema gotovog MP4-a. README drugog asistenta nije mijenjan.
+
 ## 2026-11-24 — CVT Reel objavljen na Facebooku i Instagramu
 
 - Korisnik izricito odobrio privremeni prijenos videa/naslovnice na Litterbox (12 h) nakon sto je objasnjen javni pristup i ranije automatsko odbijanje. Prenesen odobreni v4 video i naslovnica. Ne predstavljati ranije odbijanje kao uspjesan prijenos.
