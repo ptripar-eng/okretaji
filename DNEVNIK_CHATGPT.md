@@ -1,3 +1,9 @@
+## 2026-11-24 — Jasniji natpis CVT videa prema korisnikovoj uputi
+
+- Umjesto Ima prvu stavljen naslov KRECE ZUPCANICIMA. i prvi opis Kao i ostali mjenjaci. (u datotekama hrvatski dijakritici). Drugi opis Potom pogon preuzima celicni remen. Time se jasnije objasnjava prijelaz sa zupcanickog prijenosa na remen. Izricaj je korisnikov; ne generalizirati ga na svaki moguci tip prijenosa u strucnom tekstu.
+- Promijenjen CVT-Toyota-Reel/build.py; ponovno izradeni 20-sekundni video i naslovnica. Vizualno pregledana kontaktna ploca, provjereni dijakritici i citljivost, MP4 cijeli dekodiran bez greske.
+- Reel libfile_3de35086c97481919524621e0455be3f, naslovnica libfile_f3a96d842c9881918c4745360eb8b854 i Story libfile_1e8748c7eb448191aa4dc413ef424a7e uspjesno zamijenjeni na v4. Nema objave na mrezama ni promjene weba.
+
 ## 2026-11-24 — Dovrsen CVT Reel iz sluzbene Toyota animacije
 
 - Prosirena pretraga izvora; pronadena izvorna profesionalna animacija Toyota Motor Corporation, Direct Shift-CVT: A New Type of Continuously Variable Transmission, 26. 2. 2018. Sluzbeni izvor https://global.toyota/en/mobility/tnga/powertrain2018/cvt/ . Download Agreement u sluzbenom detail.bundle.js dopusta urednicku uporabu; opci uvjeti izricito upucuju na taj sporazum za download materijale. Preuzet 20180226_01_01_en.mp4 preko fieldId 31759283, 56587151 bajtova; bez skidanja YouTube kopije.
