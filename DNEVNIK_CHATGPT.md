@@ -1,3 +1,10 @@
+## 2026-11-24 — Zahtjev objavi sve; prijenos medija blokiran
+
+- Korisnik izricito trazio trenutnu objavu CVT Reela na Instagram/Facebook s njegovom zadnjom recenicom. Windsor potvrdio oba racuna i postojece akcije create_video_post / create_reel. Nema danasnjih objava u dostupnim get_data rezultatima; Facebook list_scheduled_posts vratio nema zakazanih objava. force_refresh nije dopusten trial planom pa rezultati nisu jamstvo potpunog aktualnog stanja.
+- Gotove datoteke v4 potvrdene lokalno (video 6580362 bajta) i Library prepare_materialize potvrdio v4. Windsor trazi javni izravni URL; Library transfer vraca workspace_path bez download URL-a. Git HTTPS pristup lokalno odbijen schannel SEC_E_NO_CREDENTIALS, bez promjene git konfiguracije i bez pristupa tajnama.
+- Izradena CVT-Toyota-Reel/upload_for_publishing.py za privremenu medijsku poveznicu (12h) na Litterbox. Automatska sigurnosna provjera odbila izvrsavanje jer korisnik odobrio objavu Instagram/Facebook, ali ne prijenos tog videa i naslovnice na vanjski javni hosting. Ne zaobilaziti odbijanje drugim servisom ili izvrsavanjem. Korisnik obavijesten; treba konkretno odobrenje vanjskog privremenog hostinga ili drugi stvarno raspoloziv odobreni kanal prijenosa.
+- Nijedna create_video_post/create_reel akcija nije pozvana; nista nije objavljeno. Nema zakazane automatizacije. Prijedlog tocno odobrenog opisa: Toyotin Direct Shift-CVT krece preko zupcanika, a onda pogon preuzima celicni remen i dalje nema klasicnog saltanja. Izvor animacije Toyota Motor Corporation.
+
 ## 2026-11-24 — Priprema CVT objave za 19:30; ceka prijavu
 
 - Korisnik odobrio zadnji video i trazio Instagram/Facebook u 19:30 uz izricitu zastitu od dupliciranja preko automatskog dijeljenja. Cilj 24.11.2026. 19:30 Europe/Zagreb, 18:30 UTC.
