@@ -1,3 +1,10 @@
+## 2026-11-24 — Vizualni smjer prema primjerima Interesting Engineeringa
+
+- Na korisnikov zahtjev pregledani IE primjeri prozirnog mlaznog motora (Warped Perception), Wankel motora i medijski paket. Pregled ogranicen na web primjere; nije obavljen pregled cijelog Instagram profila. Izvori: https://interestingengineering.com/how-to/youtuber-builds-transparent-jet-engine-to-show-how-it-works i https://interestingengineering.com/videos/explore-a-wankel-engine-in-this-cool-see-through-video-series .
+- Urednicki standard za Okretaje: prvo pronaci vizualno zanimljiv stvarni proces ili kvalitetnu tehnicki tocnu animaciju, zatim pisati objavu. Krupni kadar vaznog dijela; prvi kadar pokazuje radnju; jedan jasan fenomen po kratkom videu; naslov 3–6 rijeci; diskretan logo; bez dugih uvoda i suvisnih podnozja. Ovo su nase preporuke izvedene iz primjera, ne tvrdnja da IE sve objave radi tako.
+- CVT treba prikazivati pomicanje remena po remenicama i promjenu radnog promjera; klasicni AT stvarni planetarni sklop ili profesionalan presjek. Fotografija izlozenog CVT-a sama po sebi nije dovrseno rjesenje za privlacan Reel. Odbacene ranije animacije ostaju odbacene.
+- IE poveznice na autore korisne su za pronalazenje izvornih snimki; njihovo prikazivanje na IE nije dokaz prava za nasu preradu. Nista nije preuzeto za objavu niti objavljeno; referentni kadar lokalno ie-reference.jpg sluzi samo internoj analizi.
+
 ## 2026-11-24 — Odbačene CVT animacije; pripremljena stvarna fotografija
 
 - Korisnik ocijenio dosadašnje animacije nerealističnima i neprikladnima ozbiljnom portalu. Sve prethodne CVT animacije označiti kao ODBAČENE za objavu, iako tehnički dekodiraju bez greške. Tehnička ispravnost nije potvrda uredničke kvalitete. Ne nazivati takve radove spremnima za objavu.
