@@ -1,3 +1,10 @@
+## 2026-11-24 — Nova prerada CVT videa i naslovnice
+
+- Po korisnikovoj primjedbi izrađen novi paket: softverski 3D prikaz metalnih remenica, segmentiranog remena i planetarnog sklopa uz promjenu kuta kamere. Sintetizirani zvuk prati prikaz; prvi kadar nova naslovnica. Video 10,8 s, 1080x1920, H.264/AAC. Nema donjih opisnih rečenica.
+- Nova naslovnica generirana kao fotografski stilizirana urednička ilustracija s naslovom Zašto ne šalta?, nije fotografija konkretnog mjenjača. Upotrijebljena i za početak videa i Story. Animacija je pojednostavljen prikaz, bez tvrdnje o mjerenju određenog vozila.
+- Lokalni izvori i rezultati: CVT-Social-v3/render.py, finish.py, cover_asset.png, Okretaji_AT_CVT_Reel_Novi.mp4, Okretaji_AT_CVT_Naslovnica.jpg. Pregledana završna kontaktna ploča, cijeli završni MP4 dekodiran bez pogreške.
+- Tri postojeće datoteke uspješno zamijenjene na verziju 2: Reel libfile_3de35086c97481919524621e0455be3f, naslovnica libfile_f3a96d842c9881918c4745360eb8b854, Story libfile_1e8748c7eb448191aa4dc413ef424a7e. Nije objavljeno na društvenim mrežama ni mijenjan javni članak. README nije diran.
+
 ## 2026-11-24 — Prerađen CVT Reel i vizuali
 
 - Trajna korisnikova uputa: na vizuale i video ne stavljati suvišne donje rečenice poput ilustrativni/sintetizirani i slične napomene; minimalan tekst. Potrebno objašnjenje ide u opis, bez lažnog predstavljanja prikaza kao stvarne snimke konkretnog auta.
