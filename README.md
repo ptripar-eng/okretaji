@@ -492,3 +492,4 @@ Izvor: Windsor.ai, povezani GA4 okretaji.com, Instagram okretaji, Facebook Organ
 ## Instagram Story — 26.11.2026.
 
 - Izrađena vertikalna karikatura na engleskom „Clean Exhaust. Empty Soul.” za [komentar o Euro normama](https://okretaji.com/en/euro-norme-cist-ispuh-prazna-dusa.html). Prodavač demonstrira televizor na motociklu, uz repliku „The engine? Barely audible. The TV? Surround sound.” Ispod potpisa Okretaji.com ostavljen je prostor za naljepnicu s poveznicom. Vizual je pripremljen za objavu.
+- Nova verzija za Story: karikatura vozača koji zakreće ručicu gasa dok veliki zaslon prikazuje „LOADING THROTTLE…”. Format 9:16, engleski natpis i prostor ispod potpisa za poveznicu na članak.
