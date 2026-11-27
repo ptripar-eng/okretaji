@@ -507,3 +507,5 @@ Izvor: Windsor.ai, povezani GA4 okretaji.com, Instagram okretaji, Facebook Organ
 
 - Pregledana je uporaba „što” i „šta” u hrvatskim člancima. U standardnom uredničkom tekstu upotrebljavamo „što” u pitanjima i izrazima poput „ono što”, „nakon što” i „tako što”. Kad odnosna rečenica pobliže određuje imenicu, biramo oblik „koji”, „koja” ili „koje” gdje je prirodan i jasan. Govor u izravnim citatima zadržavamo.
 - U 13 hrvatskih članaka popravljeni su gramatičko slaganje, nejasne odnosne rečenice, suvišne konstrukcije i čitljivost.
+
+- Dopuna provjere hrvatskih tekstova: pregledani su č i ć u tekstu, naslovima i opisima svih 27 članaka. U članku o Marcu Simoncelliju i Hondi vraćeni su izostavljeni dijakritički znakovi i popravljeni oštećeni znakovi u imenima i razdjelnicima.
