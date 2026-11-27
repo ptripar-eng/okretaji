@@ -499,4 +499,4 @@ Izvor: Windsor.ai, povezani GA4 okretaji.com, Instagram okretaji, Facebook Organ
 - Vijest `marc-marquez-oprostaj-valencia-motogp-2026.html` dodana na vrh rubrike Aktualne vijesti i u sitemap. Potvrda povlačenja i prvog treninga iz službenih izvještaja MotoGP-a, ugovor i okolnosti odluke prema Reutersu.
 - Naslovna fotografija prikazuje Márqueza u Austriji 2026. (Lukas Raich / Wikimedia Commons, CC BY-SA 4.0), označena je kao ilustracija.
 
-- Instagram: objava s arhivskom fotografijom potvrđena (Meta ID 18125324578932196). Facebook objava nije poslana dok se ne potvrdi pravo korištenja fotografije s današnjeg treninga u Valenciji.
+- Instagram: objava s arhivskom fotografijom potvrđena (Meta ID 18125324578932196). Facebook objava s fotografijom iz Austrije objavljena je nakon potvrde urednika (Meta ID 1430056876857240_122115285969539294).
