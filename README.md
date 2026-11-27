@@ -493,3 +493,8 @@ Izvor: Windsor.ai, povezani GA4 okretaji.com, Instagram okretaji, Facebook Organ
 
 - Izrađena vertikalna karikatura na engleskom „Clean Exhaust. Empty Soul.” za [komentar o Euro normama](https://okretaji.com/en/euro-norme-cist-ispuh-prazna-dusa.html). Prodavač demonstrira televizor na motociklu, uz repliku „The engine? Barely audible. The TV? Surround sound.” Ispod potpisa Okretaji.com ostavljen je prostor za naljepnicu s poveznicom. Vizual je pripremljen za objavu.
 - Nova verzija za Story: karikatura vozača koji zakreće ručicu gasa dok veliki zaslon prikazuje „LOADING THROTTLE…”. Format 9:16, engleski natpis i prostor ispod potpisa za poveznicu na članak.
+
+## 27. studenoga 2026. — Oproštaj Marca Márqueza
+
+- Vijest `marc-marquez-oprostaj-valencia-motogp-2026.html` dodana na vrh rubrike Aktualne vijesti i u sitemap. Potvrda povlačenja i prvog treninga iz službenih izvještaja MotoGP-a, ugovor i okolnosti odluke prema Reutersu.
+- Naslovna fotografija prikazuje Márqueza u Austriji 2026. (Lukas Raich / Wikimedia Commons, CC BY-SA 4.0), označena je kao ilustracija.
