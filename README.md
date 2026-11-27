@@ -500,3 +500,5 @@ Izvor: Windsor.ai, povezani GA4 okretaji.com, Instagram okretaji, Facebook Organ
 - Naslovna fotografija prikazuje Márqueza u Austriji 2026. (Lukas Raich / Wikimedia Commons, CC BY-SA 4.0), označena je kao ilustracija.
 
 - Instagram: objava s arhivskom fotografijom potvrđena (Meta ID 18125324578932196). Facebook objava s fotografijom iz Austrije objavljena je nakon potvrde urednika (Meta ID 1430056876857240_122115285969539294).
+
+- U hrvatskoj vijesti o oproštaju dodana je poveznica na prethodnu najavu i računicu za naslov u Portugalu, u odlomku o osvajanju naslova.
