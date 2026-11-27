@@ -502,3 +502,8 @@ Izvor: Windsor.ai, povezani GA4 okretaji.com, Instagram okretaji, Facebook Organ
 - Instagram: objava s arhivskom fotografijom potvrđena (Meta ID 18125324578932196). Facebook objava s fotografijom iz Austrije objavljena je nakon potvrde urednika (Meta ID 1430056876857240_122115285969539294).
 
 - U hrvatskoj vijesti o oproštaju dodana je poveznica na prethodnu najavu i računicu za naslov u Portugalu, u odlomku o osvajanju naslova.
+
+## Jezična provjera članaka — 27. studenoga 2026.
+
+- Pregledana je uporaba „što” i „šta” u hrvatskim člancima. U standardnom uredničkom tekstu upotrebljavamo „što” u pitanjima i izrazima poput „ono što”, „nakon što” i „tako što”. Kad odnosna rečenica pobliže određuje imenicu, biramo oblik „koji”, „koja” ili „koje” gdje je prirodan i jasan. Govor u izravnim citatima zadržavamo.
+- U 13 hrvatskih članaka popravljeni su gramatičko slaganje, nejasne odnosne rečenice, suvišne konstrukcije i čitljivost.
