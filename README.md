@@ -509,3 +509,10 @@ Izvor: Windsor.ai, povezani GA4 okretaji.com, Instagram okretaji, Facebook Organ
 - U 13 hrvatskih članaka popravljeni su gramatičko slaganje, nejasne odnosne rečenice, suvišne konstrukcije i čitljivost.
 
 - Dopuna provjere hrvatskih tekstova: pregledani su č i ć u tekstu, naslovima i opisima svih 27 članaka. U članku o Marcu Simoncelliju i Hondi vraćeni su izostavljeni dijakritički znakovi i popravljeni oštećeni znakovi u imenima i razdjelnicima.
+
+## Rast Facebooka i Instagrama — 28. studenoga 2026.
+
+- Provjereni organski podaci za 14.–27. studenoga. Facebook je porastao sa 7 na 10 pratitelja. Instagram ima 330 pratitelja na dan provjere i bilježi 49 novih praćenja u promatranom razdoblju, od kojih 32 u prva dva dana. Nova praćenja su bruto metrika. Za pregledane Reelse nema dostupne atribucije novih praćenja po objavi.
+- Facebook: Reel o Simoncellijevoj Hondi ima 16 reakcija, Márquezov Reel „Krug i pol od naslova” 12. Instagram: Verstappen je dosegnuo 186 računa, Simoncelli 141, Márquez 140 i Toyotin CVT 139. Doseg i reakcije služe za izbor tema za pokus.
+- Predložen sedmodnevni organski pokus. Dva kratka Reelsa na hrvatskom, bez govora, sa stvarnim kadrovima za koje imamo pravo uporabe. Prva tema je zaštita u MotoGP-u, s odvojenim ulogama kombinezona, zračnog jastuka i klizača. Druga tema je Toyota Direct Shift-CVT. Na Facebooku prvo provjeriti mogućnost poziva ljudima koji su reagirali na Simoncellijev Reel. Nakon sedam dana usporediti neto promjenu pratitelja po profilu te doseg među nepratiteljima i dijeljenja gdje su dostupni.
+- U ovom koraku provjerena je analitika i evidentiran prijedlog pokusa. Objave i pozivi čekaju provedbu.
